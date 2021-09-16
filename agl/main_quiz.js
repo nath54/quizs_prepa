@@ -22,7 +22,7 @@ window.nb_questions = 0
 window.dernieres_reponses = [];
 window.questions_ratees = [];
 window.questions_reussies = [];
-window.sens = 1; // 0 = fr -> agl,  1 = agl -> fr,  2 = les deux
+window.sens = 0; // 0 = fr -> agl,  1 = agl -> fr,  2 = les deux
 window.etape = 0;
 window.pourcentages = [];
 
@@ -239,7 +239,7 @@ function prepareQuestion() {
     // SI LA QUESTION A DEJA ETE REUSSIE
     if (window.questions_reussies.includes(idq)) {
         // ON VA AVOIR 50 % DE CHANCE DE LA RELANCER EN QUESTION RATEE
-        if (randInt(1, 2) == 1) {
+        if (window.questions_ratees.length > 0 && randInt(1, 2) == 1) {
             idq = randChoice(window.questions_ratees);
         }
     }
@@ -255,7 +255,7 @@ function prepareQuestion() {
         window.reponse = window.questions[idq][1];
         window.sens_question = 1;
     } else {
-        if (randInt(1, 2) == 1) {
+        if (randChoice([1, 2]) == 1) {
             window.question = window.questions[idq][1];
             window.reponse = window.questions[idq][0];
             window.sens_question = 0;
@@ -326,7 +326,7 @@ function init() {
     const urlParams = new URLSearchParams(queryString);
     if (urlParams.has("theme")) {
         window.theme = urlParams.get("theme");
-        if (!keys(Quizs).includes(window.theme)) {
+        if (!keys(Quizs).includes(window.theme) && window.theme != "all") {
             // ON VA FAIRE UN THEME AU HASARD
             window.theme = randChoice(keys(Quizs));
         }
@@ -335,7 +335,14 @@ function init() {
         window.theme = randChoice(keys(Quizs));
     }
     // ON INITIALIZE
-    window.questions = Quizs[window.theme];
+
+    if (window.theme == "all") {
+        for (themes of Object.keys(Quizs)) {
+            window.questions = window.questions.concat(Quizs[themes]);
+        }
+    } else {
+        window.questions = Quizs[window.theme];
+    }
     // ON COMMENCE LE QUIZ
     prepareQuestion();
     //
@@ -357,3 +364,15 @@ document.body.addEventListener("keydown", (e) => {
         return false;
     }
 });
+
+function set_sens(sens) {
+    window.sens = sens;
+    //
+    for (x = 0; x <= 2; x++) {
+        if (x == sens) {
+            document.getElementById("bt_sens_" + x).setAttribute("class", "btn btn-primary");
+        } else {
+            document.getElementById("bt_sens_" + x).setAttribute("class", "btn btn-outline-primary");
+        }
+    }
+}
