@@ -1,0 +1,22 @@
+* {
+    background-color: #121212;
+    color: #BB86FC;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.05em;
+}
+
+#input_reponse {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 6px;
+    padding-left: 15px;
+}
+
+#input_reponse:active,
+#input_reponse:focus {
+    box-shadow: 0px 0px 1px 1px purple;
+}
+
+#input_reponse:hover {
+    box-shadow: 0px 0px 2px 2px purple;
+}
