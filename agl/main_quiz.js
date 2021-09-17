@@ -126,7 +126,7 @@ function affGraphe() {
         return 0;
     }
 
-    var tc = 10;
+    var tc = 3;
     if (window.pourcentages[0] > 70) { ctx.fillStyle = "green"; } else if (window.pourcentages[0] > 50) { ctx.fillStyle = "orange"; } else { ctx.fillStyle = "red"; }
     ctx.fillRect(x0 - tc / 2, y0 - window.pourcentages[0] - tc / 2, tc, tc);
     //pourcentages
@@ -150,7 +150,7 @@ function affGraphe() {
             }
         }
         ctx.fillRect(x0 + (x1 - x0) / (window.pourcentages.length - 1) * x - tc / 2, y0 - window.pourcentages[x] - tc / 2, tc, tc);
-        ctx.lineWidth = 3;
+        ctx.lineWidth = 2;
         ctx.beginPath();
         ctx.moveTo(x0 + (x1 - x0) / (window.pourcentages.length - 1) * (x - 1), y0 - window.pourcentages[x - 1]);
         ctx.lineTo(x0 + (x1 - x0) / (window.pourcentages.length - 1) * x, y0 - window.pourcentages[x]);

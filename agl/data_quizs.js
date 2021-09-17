@@ -116,7 +116,7 @@ const quiz_science = [
 ];
 
 const quiz_women = [
-    ["female", "du sece féminin"],
+    ["female", "du sexe féminin"],
     ["women's status in society", "la place des femmes dans la société"],
     ["gender imbalance", "le déséquilibre entre les sexes"],
     ["gender inequalities", "les inégalités entre les hommes et les femmes"],
