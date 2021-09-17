@@ -16,7 +16,7 @@ const quiz_science = [
     ["a physicist", "un physicien"],
     ["chemistry", "la chimie"],
     ["a chemist", "un chimiste"],
-    ["an astronomer", "un astronaute"],
+    ["an astronomer", "un astronome"],
     ["computer science", "l'informatique"],
     ["a computer scientist", "un informaticien"],
     ["knowledge", "la connaissance"],
