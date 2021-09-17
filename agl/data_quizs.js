@@ -198,7 +198,7 @@ const quiz_women = [
     ["to discriminate against somebody", "introduire une discrimination contre quelqu'un"],
     ["to be discriminated against", "être victime de discrimination"],
     ["harassment", "le harcèlement"],
-    ["sexual harrassment", "le harcèlement sexuel"],
+    ["sexual harassment", "le harcèlement sexuel"],
     ["parity", "la parité"],
     ["under-represented", "sous-représenté"],
     ["to introduce quotas", "instaurer des quotas"],

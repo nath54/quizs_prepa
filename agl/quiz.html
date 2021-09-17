@@ -16,14 +16,14 @@
 
     <div class="modal-body">
 
-        <div class="col-md-3 ml-auto mx-auto mt-5" style="text-align:center;">
+        <div class="col-md-3 ml-auto mx-auto mt-4" style="text-align:center;">
             <h1 style="text-align:center;" id="question">Question</h1>
             <i id="mot_a_traduire"></i>
 
             <hr />
 
             <div id="block_input">
-                <div class="p-auto d-flex flex-row">
+                <div class="p-auto d-flex flex-column flex-lg-row">
                     <input id="input_reponse" placeholder="reponse" class="m-2 formcontrol" />
                     <button class="btn btn-outline-primary m-2" onclick="etapeSuivante();">Répondre</button>
                 </div>
@@ -43,15 +43,15 @@
 
             <div class="mx-auto">
                 <p id="score">Score : 0 / 0</p>
-                <canvas id="canvas" width=500 height=150></canvas>
+                <canvas id="canvas" width=300 height=150></canvas>
             </div>
 
             <hr />
 
             <div class="flex-row">
-                <button id="bt_sens_0" onclick="set_sens(0);" class="btn btn-primary">Francais vers Anglais</button>
-                <button id="bt_sens_1" onclick="set_sens(1);" class="btn btn-outline-primary">Anglais vers Francais</button>
-                <button id="bt_sens_2" onclick="set_sens(2);" class="btn btn-outline-primary">Les 2 sens</button>
+                <button id="bt_sens_0" onclick="set_sens(0);" class="btn btn-primary m-1">Francais vers Anglais</button>
+                <button id="bt_sens_1" onclick="set_sens(1);" class="btn btn-outline-primary m-1">Anglais vers Francais</button>
+                <button id="bt_sens_2" onclick="set_sens(2);" class="btn btn-outline-primary m-1">Les 2 sens</button>
             </div>
 
         </div>

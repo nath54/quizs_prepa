@@ -26,6 +26,9 @@ window.sens = 0; // 0 = fr -> agl,  1 = agl -> fr,  2 = les deux
 window.etape = 0;
 window.pourcentages = [];
 
+const cantx = 300;
+const canty = 150;
+
 function randInt(a, b) {
     return parseInt(a + Math.random() * (b - a));
 }
@@ -76,21 +79,18 @@ function ajouteDernieresReponses(juste) { // juste = 0 ou 1
 }
 
 function affGraphe() {
-    if (window.pourcentages.length <= 1) {
-        return 0;
-    }
     if (document.getElementById("canvas").style.display == "none") {
         document.getElementById("canvas").style.display = "block";
     }
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
     ctx.fillStyle = "black";
-    ctx.fillRect(0, 0, 500, 150);
+    ctx.fillRect(0, 0, cantx, canty);
 
-    var x0 = 20;
-    var y0 = 130;
-    var x1 = 480;
-    var y1 = 30;
+    var x0 = 10;
+    var y0 = canty - 10;
+    var x1 = cantx - 10;
+    var y1 = 20;
 
     //quadrillage
 
@@ -120,6 +120,11 @@ function affGraphe() {
     ctx.lineTo(x1, y1);
     ctx.stroke();
     ctx.closePath();
+
+
+    if (window.pourcentages.length <= 1) {
+        return 0;
+    }
 
     var tc = 10;
     if (window.pourcentages[0] > 70) { ctx.fillStyle = "green"; } else if (window.pourcentages[0] > 50) { ctx.fillStyle = "orange"; } else { ctx.fillStyle = "red"; }
@@ -345,6 +350,7 @@ function init() {
     // ON COMMENCE LE QUIZ
     prepareQuestion();
     //
+    affGraphe();
 }
 
 function etapeSuivante() {
@@ -371,9 +377,9 @@ function set_sens(sens) {
     //
     for (x = 0; x <= 2; x++) {
         if (x == sens) {
-            document.getElementById("bt_sens_" + x).setAttribute("class", "btn btn-primary");
+            document.getElementById("bt_sens_" + x).setAttribute("class", "btn btn-primary m-1");
         } else {
-            document.getElementById("bt_sens_" + x).setAttribute("class", "btn btn-outline-primary");
+            document.getElementById("bt_sens_" + x).setAttribute("class", "btn btn-outline-primary m-1");
         }
     }
 }
