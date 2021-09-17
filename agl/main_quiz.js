@@ -271,7 +271,7 @@ function prepareQuestion() {
         }
     }
     // ON VA AFFICHER LA QUESTION
-    if (window.question_sens == 0) {
+    if (window.sens_question == 0) {
         document.getElementById("question").innerHTML = "Traduire en anglais :";
     } else {
         document.getElementById("question").innerHTML = "Traduire en français :";
