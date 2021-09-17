@@ -22,16 +22,21 @@
 
             <hr />
 
-            <div id="block_input" class="p-auto d-flex flex-row">
-                <input id="input_reponse" placeholder="reponse" class="m-2 formcontrol" />
-                <button class="btn btn-outline-primary m-2" onclick="traiteReponse();">Répondre</button>
+            <div id="block_input">
+                <div class="p-auto d-flex flex-row">
+                    <input id="input_reponse" placeholder="reponse" class="m-2 formcontrol" />
+                    <button class="btn btn-outline-primary m-2" onclick="etapeSuivante();">Répondre</button>
+                </div>
             </div>
 
-            <div id="block_result">
-                <h4 id="bonne_rep" style="color:green;">Bonne réponse !</h4>
-                <h4 id="mauvaise_rep" style="color:red;">Mauvaise réponse !</h4>
-                <p>La bonne réponse était : </p>
-                <i id="bonne_reponse">bonne réponse</i>
+            <div id="block_result" style="display:none;">
+                <div class="p-auto d-flex flex-column">
+                    <h4 id="bonne_rep" style="color:green;">Bonne réponse !</h4>
+                    <h4 id="mauvaise_rep" style="color:red;">Mauvaise réponse !</h4>
+                    <p>La bonne réponse était : </p>
+                    <i id="bonne_reponse">bonne réponse</i>
+                    <button class="btn btn-outline-primary m-2" onclick="etapeSuivante();">Suivant</button>
+                </div>
             </div>
 
             <hr />

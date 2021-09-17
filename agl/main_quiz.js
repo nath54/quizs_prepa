@@ -11,7 +11,7 @@ LE QUIZ SE COMPORTE EN PLUSIEURS ETAPES :
 
 */
 
-window.theme = "science";
+window.themes = [];
 window.questions = [];
 window.question_id = null;
 window.question = null;
@@ -324,31 +324,36 @@ function init() {
     // ON RECUPERE LE THEME
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    if (urlParams.has("theme")) {
-        window.theme = urlParams.get("theme");
-        if (!keys(Quizs).includes(window.theme) && window.theme != "all") {
-            // ON VA FAIRE UN THEME AU HASARD
-            window.theme = randChoice(keys(Quizs));
-        }
+    if (urlParams.has("themes")) {
+        window.themes = urlParams.get("themes").split(",");
+        console.log("aa", window.themes);
     } else {
-        // ON VA FAIRE UN THEME AU HASARD
-        window.theme = randChoice(keys(Quizs));
+        // ON VA RENVOYER SUR LA PAGE D'INDEX
+        window.location.href = "index.html"
     }
     // ON INITIALIZE
-
-    if (window.theme == "all") {
-        for (themes of Object.keys(Quizs)) {
-            window.questions = window.questions.concat(Quizs[themes]);
+    for (theme of window.themes) {
+        if (Object.keys(Quizs).includes(theme)) {
+            window.questions = window.questions.concat(Quizs[theme]);
         }
-    } else {
-        window.questions = Quizs[window.theme];
+    }
+    if (window.questions.length == 0) {
+        // ON VA RENVOYER SUR LA PAGE D'INDEX
+        window.location.href = "index.html";
+        return;
     }
     // ON COMMENCE LE QUIZ
     prepareQuestion();
     //
 }
 
-
+function etapeSuivante() {
+    if (window.etape == 1) {
+        traiteReponse();
+    } else {
+        prepareQuestion();
+    }
+}
 
 // EVENTS
 
@@ -356,11 +361,7 @@ document.body.addEventListener("keydown", (e) => {
     if (!e) e = window.event;
     var keyCode = e.code || e.key;
     if (keyCode == 'Enter') {
-        if (window.etape == 1) {
-            traiteReponse();
-        } else {
-            prepareQuestion();
-        }
+        etapeSuivante();
         return false;
     }
 });
