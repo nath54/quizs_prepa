@@ -123,7 +123,7 @@ const quiz_women = [
     ["gender war", "la guerre entre les sexes"],
     ["a chauviniste", "un phallocrate"],
     ["machismo", "le machisme"],
-    ["misoginy", "la misogynie"],
+    ["misogyny", "la misogynie"],
     ["a misoginist", "un misogyne"],
     ["sexism", "le sexisme"],
     ["sexist prejudice", "des préjugés sexistes"],
