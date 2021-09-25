@@ -210,9 +210,103 @@ const quiz_women = [
     ["to achieve equality with men", "atteindre l'égalité avec les hommes"]
 ];
 
+const quiz_abortion = [
+    ["to become pregnant", "tomber enceinte"],
+    ["to be 6 week pregnant", "être enceinte de 6 semaines"],
+    [
+        ["to have an ultrasound", "to have a scan"],
+        ["passer une échographie", "faire une échographie"]
+    ],
+    ["pregnancy", "la grossesse"],
+    ["teenage pregnancy", "les adolescentes enceintes"],
+    ["a pregnancy test", "un test de grossesse"],
+    ["a childbearing age", "un âge de procréer"],
+    [
+        ["womb", "uterus"], "uterus"
+    ],
+    ["motherhood", "la maternité"],
+    ["women's reproductive rights", "droits des femmes en matière de reproduction"],
+    ["an embryo", "un embryon"],
+    [
+        ["a foetus", "a fetus"], "un foetus"
+    ],
+    ["an abortion", "un avortement"],
+    ["a termination of pregnancy", ["une interruption volontaire de grossesse", "une IVG"]],
+    ["a late abortion", "un avortement tardif"],
+    ["to have an abortion", ["avorter", "se faire avorter"]],
+    ["to abort an unwanted baby", "avorter d'un bébé non désiré"],
+    ["to terminate a pregnancy", ["pratiquer une IVG", "se faire faire une IVG"]],
+    [
+        ["to perform abortions", "to carry out abortions"], "pratiquer l'avortement"
+    ],
+    ["an abortion clinic", "une clinique pratiquant l'abortion"],
+    ["to induce an abortion", "provoquer un avortement"],
+    ["self-induced abortion", "avortement que l'on a provoqué soi-même"],
+    ["backstreet abortion", "avortement clandestin"],
+    ["an abortionist", ["un avorteur", "un faiseur d'ange"]],
+    ["a maternity hospital", "une maternité"],
+    [
+        ["a gynecologist", "a gynaecologist"], "un gynécologue"
+    ],
+    ["a midwife", "une sage-femme"],
+    ["to go on maternity leave", "partir en congé maternité"],
+    [
+        ["parental leave", "career break"], "congé parental"
+    ],
+    ["a birth", "une naissance"],
+    ["the birth rate", ["le taux de natalité", "la natalité"]],
+    ["to give birth to a boy", "accoucher d'un garçon"],
+    ["to give birth to a girl", "accoucher d'une fille"],
+    ["a premature baby", "un prématuré"],
+    ["an incubator", "une couveuse"],
+    ["to have a miscarriage", "faire une fausse couche"],
+    ["to die in childbirth", "mourir en couches"],
+    ["a stillborn baby", "un enfant mort-né"],
+    ["female infanticide", ["infanticide féminin", "féminicide"]],
+    ["a means of contraception", "un moyen de contraception"],
+    ["birth control", "le contrôle des naissances"],
+    ["family planning", "le planning familial"],
+    ["the (contraceptive) pill", "la pilule (contraceptive)"],
+    ["the morning-after pill", "la pilule du lendemain"],
+    ["to be on the pill", "prendre la pilule"],
+    ["a contraceptive", "un contraceptif"],
+    ["vasectomy", "la vasectomie"],
+    ["a condom", "un préservatif"],
+    [
+        ["a coil", "an intra-uterine device", "an UID"], "un stérilet"
+    ],
+    ["rape", "le viol"],
+    ["incest", "inceste"],
+    ["a controversy", "une polémique"],
+    [
+        ["a controversial issue", "a contentious issue"], "un problème controversé"
+    ],
+    ["abortion is a divisive issue", "l'abortion divise l'opinion"],
+    ["the public are split", "l'opinion est divisé"],
+    ["a hot-button issue", ["un problème sensible", "un problème qui suscite de vives réactions"]],
+    ["a pro-life lobby", "le lobby des opposants à l'avortement"],
+    [
+        ["to oppose abortion", "to object to abortion"],
+        ["être contre l'avortement", "s'opposer à l'avortement"]
+    ],
+    [
+        ["a pro-life campaigner", "a pro-life activist", "a pro-lifer"], "un militant contre l'avortement",
+    ],
+    [
+        ["a pro-choice campaigner", "a pro-choice activist"], "un militant pour le droit à l'avortement",
+    ],
+    ["to be pro-choice", "être en faveur de l'avortement"],
+    ["to legalise abortion", ["légaliser l'avortement", "autoriser l'avortement"]],
+    [
+        ["to ban abortion", "to outlaw abortion"], "interdire l'avortement"
+    ]
+];
+
+
 // TOUS LES QUIZS SONT DANS LA VARIABLE QUIZS
 
 const Quizs = {
     "science": quiz_science,
-    "women": quiz_women
+    "women": quiz_women,
+    "abortion": quiz_abortion
 };

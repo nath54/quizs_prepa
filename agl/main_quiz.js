@@ -276,44 +276,100 @@ function prepareQuestion() {
     } else {
         document.getElementById("question").innerHTML = "Traduire en français :";
     }
-    document.getElementById("mot_a_traduire").innerHTML = window.question;
+    //
+    if (typeof window.question == "string") {
+        document.getElementById("mot_a_traduire").innerHTML = window.question;
+    } else {
+        var txt = "";
+        var first = 1;
+        for (quest of window.question) {
+            if (first) { first = 0; } else { txt += " <b> ou </b> "; }
+            txt += quest;
+        }
+        document.getElementById("mot_a_traduire").innerHTML = txt;
+    }
     document.getElementById("block_input").style.display = "block";
     document.getElementById("block_result").style.display = "none";
     document.getElementById("input_reponse").value = "";
 }
 
+function test_reponse(reponse_utilisateur, reponse) {
+
+    return est_bonne_reponse;
+}
+
 function traiteReponse() {
     window.etape = 2;
-    // ON VA RECUPERER LA REPONSE DE L'UTILISATEUR
+    // ON VA RECUPERER LA REPONWSE DE L'UTILISATEUR
     var reponse_utilisateur = document.getElementById("input_reponse").value;
     var est_bonne_reponse = 0;
     // ON VA LA COMPARER AVEC LA BONNE REPONSE
-    if (traiteText(reponse_utilisateur) == traiteText(window.reponse)) {
-        est_bonne_reponse = 1;
-        window.score++;
-        document.getElementById("bonne_rep").style.display = "block";
-        document.getElementById("mauvaise_rep").style.display = "none";
-        //
-        if (window.questions_ratees.includes(window.question_id)) {
-            window.questions_ratees = removeItemOnce(window.questions_ratees, window.question_id);
+    if (typeof window.reponse == "string") {
+        if (traiteText(reponse_utilisateur) == traiteText(window.reponse)) {
+            est_bonne_reponse = 1;
+            window.score++;
+            document.getElementById("bonne_rep").style.display = "block";
+            document.getElementById("mauvaise_rep").style.display = "none";
+            //
+            if (window.questions_ratees.includes(window.question_id)) {
+                window.questions_ratees = removeItemOnce(window.questions_ratees, window.question_id);
+            }
+            if (!window.questions_reussies.includes(window.question_id)) {
+                window.questions_reussies.push(window.question_id);
+            }
+        } else {
+            document.getElementById("bonne_rep").style.display = "none";
+            document.getElementById("mauvaise_rep").style.display = "block";
+            //
+            if (window.questions_reussies.includes(window.question_id)) {
+                window.questions_reussies = removeItemOnce(window.questions_reussies, window.question_id);
+            }
+            if (!window.questions_ratees.includes(window.question_id)) {
+                window.questions_ratees.push(window.question_id);
+            }
         }
-        if (!window.questions_reussies.includes(window.question_id)) {
-            window.questions_reussies.push(window.question_id);
-        }
+        document.getElementById("bonne_reponse").innerHTML = window.reponse;
     } else {
-        document.getElementById("bonne_rep").style.display = "none";
-        document.getElementById("mauvaise_rep").style.display = "block";
+        var bonne_rep = 0;
+        var txt = "";
+        var first = 1;
+        for (repon of window.reponse) {
+            if (first) { first = 0; } else { txt += " <b> ou </b> "; }
+            txt += " " + repon + " ";
+            //
+            if (traiteText(reponse_utilisateur) == traiteText(repon)) {
+                bonne_rep = 1;
+                break;
+            }
+        }
         //
-        if (window.questions_reussies.includes(window.question_id)) {
-            window.questions_reussies = removeItemOnce(window.questions_reussies, window.question_id);
+        if (bonne_rep) {
+            est_bonne_reponse = 1;
+            window.score++;
+            document.getElementById("bonne_rep").style.display = "block";
+            document.getElementById("mauvaise_rep").style.display = "none";
+            //
+            if (window.questions_ratees.includes(window.question_id)) {
+                window.questions_ratees = removeItemOnce(window.questions_ratees, window.question_id);
+            }
+            if (!window.questions_reussies.includes(window.question_id)) {
+                window.questions_reussies.push(window.question_id);
+            }
+        } else {
+            document.getElementById("bonne_rep").style.display = "none";
+            document.getElementById("mauvaise_rep").style.display = "block";
+            //
+            if (window.questions_reussies.includes(window.question_id)) {
+                window.questions_reussies = removeItemOnce(window.questions_reussies, window.question_id);
+            }
+            if (!window.questions_ratees.includes(window.question_id)) {
+                window.questions_ratees.push(window.question_id);
+            }
         }
-        if (!window.questions_ratees.includes(window.question_id)) {
-            window.questions_ratees.push(window.question_id);
-        }
+        document.getElementById("bonne_reponse").innerHTML = txt;
     }
     ajouteDernieresReponses(est_bonne_reponse);
     //
-    document.getElementById("bonne_reponse").innerHTML = window.reponse;
     document.getElementById("block_input").style.display = "none";
     document.getElementById("block_result").style.display = "block";
     window.nb_questions++;
