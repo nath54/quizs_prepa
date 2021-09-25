@@ -146,7 +146,7 @@ const quiz_women = [
     ["women of childbearing age", "les femmes en âge d'avoir des enfants"],
     ["the pill", "la pilule"],
     ["the contraceptive pill", "la pilule contraceptive"],
-    ["to be on the pull", "prendre la pilule"],
+    ["to be on the pill", "prendre la pilule"],
     ["to go on maternity leave", "prendre congé maternité"],
     ["parental leave", "congé parental"],
     ["to look after one's children", "s'occuper de ses enfants"],
