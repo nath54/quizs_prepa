@@ -387,7 +387,6 @@ function init() {
     const urlParams = new URLSearchParams(queryString);
     if (urlParams.has("themes")) {
         window.themes = urlParams.get("themes").split(",");
-        console.log("aa", window.themes);
     } else {
         // ON VA RENVOYER SUR LA PAGE D'INDEX
         window.location.href = "index.html"

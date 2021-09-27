@@ -20,3 +20,23 @@
 #input_reponse:hover {
     box-shadow: 0px 0px 2px 2px purple;
 }
+
+.tabcol1 {
+    padding-right: 15px;
+    text-align: right;
+    word-wrap: unset;
+}
+
+.tabcol2 {
+    padding-left: 15px;
+    text-align: left;
+    word-wrap: unset;
+}
+
+table,
+tr,
+td {
+    border: 1px solid grey;
+    padding: 6px;
+    border-collapse: collapse;
+}
