@@ -23,7 +23,7 @@
 
 .tabcol1 {
     padding-right: 15px;
-    text-align: right;
+    text-align: left;
     word-wrap: unset;
 }
 
@@ -31,6 +31,7 @@
     padding-left: 15px;
     text-align: left;
     word-wrap: unset;
+    color: #ab99fa;
 }
 
 table,

@@ -214,8 +214,7 @@ const quiz_abortion = [
     ["to become pregnant", "tomber enceinte"],
     ["to be 6 week pregnant", "être enceinte de 6 semaines"],
     [
-        ["to have an ultrasound", "to have a scan"],
-        ["passer une échographie", "faire une échographie"]
+        "to have an ultrasound (scan)", ["passer une échographie", "faire une échographie"]
     ],
     ["pregnancy", "la grossesse"],
     ["teenage pregnancy", "les adolescentes enceintes"],
