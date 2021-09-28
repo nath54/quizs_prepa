@@ -499,12 +499,284 @@ const quizs_voc_action = [
     ["unexpected", "inattendu"]
 ];
 
+const quiz_computer_science = [
+    ["information", ["l'information", "les données"]],
+    [
+        ["information technology", "IT"], "les technologies de l'information"
+    ],
+    ["the information revolution", "la révolution de l'informatique"],
+    [
+        ["the computer age", "the information age"], "l'ère de l'informatique"
+    ],
+    [
+        ["computer science", "computing"], "l'informatique"
+    ],
+    ["to be computer literate", "savoir utiliser un ordinateur"],
+    [
+        ["a computer scientist", "a computer engineer", "an IT specialist"], "un informaticien"
+    ],
+    [
+        ["a programmer", "a programer"], "un programmeur"
+    ],
+    ["software engineer", "ingénieur en logiciel"],
+    ["to computerize", "informatiser"],
+    ["computerization", "l'informatisation"],
+    [
+        ["a computer geek", "a computer nerd", "a techie"],
+        ["un mordu d'informatique", "un fana"]
+    ],
+    ["the digerati", "les gens qui s'y connaissent en informatique"],
+    ["digital natives", "la génération de ceux qui sont nés à l'ère de l'informatique"],
+    [
+        ["computerese", "computerspeak"], "le jargon des informaticiens"
+    ],
+    ["a (micro-)processor", "un (micro-)processeur"],
+    ["a chip", "une puce (éléctronique)"],
+    ["a byte", "un octet"],
+    ["a megabyte", "un méga-octet"],
+    ["a gigabyte", "un giga-octet"],
+    ["digital", "numérique"],
+    [
+        ["to digitize", "to digitalize"],
+        ["numériser", "digitaliser"]
+    ],
+    ["digitization", "numérisation"],
+    ["the digital era", "l'ère numérique"],
+    ["the digital divide", "le fossé numérique"],
+    ["hardware", "le matériel"],
+    ["the mainframe (computer)", "une unité centrale"],
+    [
+        ["a PC", "a personal computer"],
+        ["un PC", "un ordinateur personnel"]
+    ],
+    ["a home computer", "un ordinateur familial"],
+    ["a server", "un serveur"],
+    ["a desktop (computer)", "un ordinateur de bureau"],
+    ["a laptop (computer)", "un ordinateur portable"],
+    ["a palmtop (computer)", "un ordinateur de poche"],
+    ["a netbook", "un netbook"],
+    [
+        ["a tablet computer", "a tablet PC"], "un ordinateur tablette"
+    ],
+    ["an e-reader", "une liseuse"],
+    ["memory", "la mémoire"],
+    [
+        ["read-only memory", "ROM"], "la mémoire morte"
+    ],
+    [
+        ["random access memory", "RAM"],
+        ["la mémoire RAM", "la mémoire vive"]
+    ],
+    [
+        ["a memory stick", "a USB key"], "une clé USB"
+    ],
+    ["a hard disk", "un disque dur"],
+    ["a screen", "un écran"],
+    ["a touchscreen", "un écran tactile"],
+    ["a printer", "une imprimante"],
+    ["a key", "une touche"],
+    ["a keyboard", "un clavier"],
+    ["a mousepad", "un tapis de souris"],
+    [
+        ["to enter a word", "to type in a word"],
+        ["saisir un mot", "entrer un mot"]
+    ],
+    ["to click an icon", "cliquer sur une icône"],
+    ["to double click", "double-cliquer"],
+    [
+        ["with a few clicks", "in a few clicks"], "en quelques clics"
+    ],
+    [
+        ["to cut and past", "to copy and paste"], "copier-coller"
+    ],
+    ["to scroll something up", ["dérouler vers le haut", "faire défiler vers le haut"]],
+    ["to scroll something down", ["dérouler bers le bas", "faire défiler vers le bas"]],
+    ["to sort", "trier"],
+    [
+        ["to delete", "to erase"], "effacer"
+    ],
+    ["to save", ["sauvegarder", "enregistrer"]],
+    ["to store information", "stocker des données"],
+    ["to backup copy", "une copie de sauvegarde"],
+    ["to print", ["imprimer", "tirer"]],
+    ["to print-out", "une sortie imprimante"],
+    ["software", "des logiciels"],
+    [
+        ["a software programme", "a piece of software", "an application"], "un logiciel"
+    ],
+    [
+        ["to upgrade", "to update"], "mettre à jour"
+    ],
+    ["a word processor", "un traitement de texte"],
+    ["a spreadsheet", "un tableur"],
+    ["a database", "une base de donnée"],
+    ["user-friendly", "convivial"],
+    [
+        ["freeware", "shareware"], "des logiciels gratuits"
+    ],
+    ["a bug", "un bogue"],
+    ["a virus", "un virus"],
+    ["to hack into a system", ["pénétrer dans un système", "s'introduire dans un système"]],
+    ["to crack a code", ["trouver un code", "déchiffrer un code"]],
+    ["to crack a password", "trouver un mot de passe"],
+    [
+        ["a hacker", "a cracker"],
+        ["un pirate informatique", "un hacker"]
+    ],
+    ["digital piracy", "le piratage sur internet"],
+    ["a videogame", "un jeu vidéo"],
+    ["a videogamer", "un joueur de jeu vidéo"],
+    ["a videogame console", "une console de jeu vidéo"],
+    [
+        ["a massively multiplayer online role-playing game", "a MMORPG"], "un MMORPG"
+    ],
+    ["an avatar", "un avatar"]
+];
+
+const quiz_internet = [
+    ["information highways", "les autoroutes de l'information"],
+    [
+        ["information technology", "IT"], "les technologies de l'information"
+    ],
+    ["the information revolution", "la révolution de l'informatique"],
+    ["the flow of information", ["le flux d'information", "la circulation des informations"]],
+    ["information processing", "le traitement de l'information"],
+    ["to process data", "traiter des données"],
+    ["cyberspace", "le cyberespace"],
+    ["cloud computing", ["informatique en nuage", "dématérialisé", "infonuagique"]],
+    ["a network", "un réseau"],
+    ["the web", "la toile"],
+    ["a link", "un lien"],
+    ["a hyperlink", "un lien hypertexte"],
+    ["a portal", "un portail"],
+    [
+        ["a username", "a login (name)"],
+        ["un identifiant", "un nom d'utilisateur"]
+    ],
+    ["a password", "un mot de passe"],
+    ["a nickname", "un pseudo(nyme)"],
+    ["an alias", "un alias"],
+    ["personal data", "des données personnelles"],
+    ["confidential data", "des données confidentielles"],
+    [
+        ["to type in", "to enter one's password"], "taper son mot de passe"
+    ],
+    ["to install a firewall", "installer un pare-feu"],
+    [
+        ["to surf on the internet", "to surf the net"], "surfer sur internet"
+    ],
+    [
+        ["to go online", "to use the internet", "to browse the net"], "aller sur internet"
+    ],
+    [
+        ["an Internet user", "a web user", "a web surfer"], "un internaute"
+    ],
+    ["a browser", "un navigateur"],
+    ["a search engine", "un moteur de recherche"],
+    ["to type", "taper (à la machine)"],
+    ["to download", "télécharger"],
+    ["to upload", "télécharger (vers un serveur)"],
+    [
+        ["to visit a website", "to check a website"],
+        ["aller sur un site internet", "visiter un site internet"]
+    ],
+    [
+        ["to log in to a site", "to log on to a site"], "se connecter à un site"
+    ],
+    ["to log off", "se déconnecter"],
+    ["a messaging service", "une messagerie"],
+    ["to check one's mail", ["regarder son courrier", "vérifier son courrier"]],
+    ["to forward a message", "faire suivre un message"],
+    ["to send an attachment", "envoyer une pièce jointe"],
+    ["an auction site", "un site de vente aux enchères"],
+    ["an internet recruitment site", "un site de recrutement sur internet"],
+    ["a chat room", ["un salon de discussion", "un forum"]],
+    ["a dating site", "un site de rencontres"],
+    ["social media", "les réseaux sociaux"],
+    ["a video-sharing site", "un site d'hébergement de vidéos"],
+    ["to post a video", "mettre une vidéo en ligne"],
+    [
+        ["to meet somebody face to face", "to meet somebody offline"], "rencontrer quelqu'un physiquement"
+    ],
+    ["a server", "un serveur"],
+    ["to host a site", "héberger un site"],
+    ["high-speed internet access", "le haut débit"],
+    ["broadband", "à large bande"],
+    [
+        ["ADSL", "broadband access"], "ADSL"
+    ],
+    [
+        ["a service provider", "an Internet access provider", "an ISP"], "un fournisseur d'accès (internet)"
+    ],
+    ["to have access to a website", "avoir accès à un site"],
+    ["to access a website", ["accéder à un site", "avoir accès à un site"]],
+    ["to access an information", ["accéder à des informations", "avoir accès à des informations"]],
+    ["to restrict internet access", ["limiter l'accès à internet", "filtrer l'accès à internet"]],
+    [
+        ["to deny somebody access to a site", "to refuse somebody access to a site"], "refuser à quelqu'un l'accès à un site"
+    ],
+    ["censorship", "la censure"],
+    ["a blogger", "un blogueur"],
+    [
+        ["to circumvent censorship", "to bypass censorship"], "contourner la censure"
+    ],
+    ["e-business", ["l'e-commerce", "le commerce électronique"]],
+    ["online shopping", "le commerce en ligne"],
+    ["to cybershop", "faire ses courses en ligne"],
+    [
+        ["a hacker", "a cracker"],
+        ["un hacker", "un pirate informatique"]
+    ],
+    ["to hack into a system", "s'introduire dans un système informatique"],
+    ["to deface a site", "dégrader un site"],
+    ["a security breach", "une atteinte à la sécurité"],
+    [
+        ["to disable a site", "to crash a site"], "mettre un site hors d'état"
+    ],
+    ["cybercrime", "la cybercriminalité"],
+    ["cybertheft", "le vol de données électroniques"],
+    ["identity theft", "le vol d'identité"],
+    ["phising", "l'hameçonnage"],
+    ["cyberwar", ["la guerre informatique", "la guerre cybernétique"]],
+    ["cyberdefense", "la cyberdéfense"],
+    ["a filesharing site", "un site de partage de fichiers"],
+    ["to swap", "échanger"],
+    ["filesharers", "ceux qui partagent des fichiers"],
+    ["a music file", "un fichier de musique"],
+    ["a MP3 file", "un fichier MP3"],
+    ["an MP3 player", ["un lecteur MP3", "un baladeur MP3"]],
+    ["to stream music", ["écouter de la musique en ligne", "écouter de la musique en streaming"]],
+    ["a track", "un morceau (de musique)"],
+    ["pirated videos", "des vidéos piratées"],
+    ["to burn a CD", ["graver un CD", "griller un CD"]],
+    ["a telephone operator", "un opérateur téléphonique"],
+    ["intellectual property", "la propriété intellectuelle"],
+    ["a patent", "un brevet"],
+    ["copyrights", "les droits d'auteurs"],
+    ["regulation", "la réglementation"],
+    ["artistic copyright", "la propriété artistique"],
+    ["to charge somebody for something", "faire payer pour quelqu'un"],
+    ["to infringe on somebody's rights", ["léser les droits de quelqu'un", "porter atteinte aux droits de quelqu'un"]],
+    ["a copyright infringement", "une atteinte aux droits d'auteurs"],
+    ["copyright losses", "les pertes sur droit d'auteur"],
+    ["rights olders", "les détenteurs de droits (d'auteur)"],
+    ["to crack down on illegal downloading", "réprimer le téléchargement illégal"],
+    ["to disconnect user", "priver un internaute d'accès internet"],
+    ["to track somebody down", "traquer, retrouver, localiser quelqu'un"],
+    ["to prosecute somebody", "poursuivre quelqu'un en justice"],
+    ["a warning", "un avertissement"],
+    ["a fine", "une amende"],
+    ["to fine somebody", "condammer quelqu'un à une amende"]
+];
+
 // TOUS LES QUIZS SONT DANS LA VARIABLE QUIZS
 
 const Quizs = {
     "science": quiz_science,
     "women": quiz_women,
     "abortion": quiz_abortion,
+    "computer science": quiz_computer_science,
+    "internet": quiz_internet,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action
