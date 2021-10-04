@@ -1,9 +1,14 @@
-.box {
-    border-radius: 3px;
-    padding: 5px;
-    margin: 5px;
+.MathJax {
+    font-size: 0.95em !important;
 }
 
+.box {
+    border-radius: 3px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.definition,
 .definition * {
     background-color: rgb(0, 40, 5);
 }
@@ -12,22 +17,25 @@
     border: 1px solid rgb(35, 200, 100);
 }
 
+.proposition,
 .proposition * {
-    background-color: rgb(15, 10, 5);
+    background-color: rgb(34, 27, 0);
 }
 
 .proposition {
-    border: 1px solid rgb(150, 100, 50);
+    border: 1px solid rgb(189, 155, 43);
 }
 
+.propriete,
 .propriete * {
-    background-color: rgb(15, 10, 5);
+    background-color: rgb(34, 27, 0);
 }
 
 .propriete {
-    border: 1px solid rgb(150, 100, 50);
+    border: 1px solid rgb(189, 155, 43);
 }
 
+.theoreme,
 .theoreme * {
     background-color: rgb(40, 5, 6);
 }
@@ -36,6 +44,7 @@
     border: 1px thick double rgb(200, 50, 60);
 }
 
+.methode,
 .methode * {
     background-color: rgb(5, 6, 40);
 }

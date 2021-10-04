@@ -5,19 +5,19 @@
     font-size: 1.05em;
 }
 
-#input_reponse {
+input {
     border: 1px solid;
     border-radius: 5px;
     padding: 6px;
     padding-left: 15px;
 }
 
-#input_reponse:active,
-#input_reponse:focus {
+input:active,
+input:focus {
     box-shadow: 0px 0px 1px 1px purple;
 }
 
-#input_reponse:hover {
+input:hover {
     box-shadow: 0px 0px 2px 2px purple;
 }
 

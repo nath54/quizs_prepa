@@ -30,22 +30,6 @@ function init() {
 }
 
 
-function compile_txt(txt) {
-    var ntxt = txt;
-    const replacements = {
-        "#et": "$\\and$",
-        "#ou": "$\\or$",
-        "#implique": "$\\implies$",
-        "#equivaut": "$\\equiv$",
-    };
-    //
-    for (k of Object.keys(replacements)) {
-        while (ntxt.includes(k)) { ntxt = ntxt.replace(k, replacements[k]); }
-    }
-    return ntxt;
-}
-
-
 function affMots() {
     var main_container = document.getElementById("container");
     for (theme of Object.keys(window.cours)) {

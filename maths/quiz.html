@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ],
+
+        }
+    };
+</script>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz - Maths</title>
+    <link href="../style.css" rel="stylesheet" />
+    <link href="../bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <script src="../polyfill.min.js"></script>
+    <script src="../tex-mml-chtml.js"></script>
+</head>
+
+<body onload="init();">
+
+    <div class="modal-body">
+
+        <div class="col-md-4 ml-auto mx-auto mt-4" style="text-align:center;">
+            <h1 style="text-align:center;" id="question">Question</h1>
+            <i id="mot_a_traduire"></i>
+
+            <hr />
+
+            <div id="block_input">
+                <div class="p-auto d-flex flex-column flex-lg-row">
+                    <div id="input_simple" style="display: flexbox;">
+                        <input id="input_reponse" placeholder="reponse" class="m-2 formcontrol" />
+                    </div>
+                    <div id="input_double" style="display: flexbox;">
+                        <b>Hypothèses : </b>
+                        <input id="input_reponse_hypotheses" placeholder="hypothèses" class="m-2 formcontrol" />
+                        <b>Enoncé / Résultat(s) : </b>
+                        <input id="input_reponse_resultat" placeholder="énoncé / résultat(s)" class="m-2 formcontrol" />
+                    </div>
+                    <button class="btn btn-outline-primary m-2" onclick="etapeSuivante();">Répondre</button>
+                </div>
+            </div>
+
+            <div id="block_result" style="display:none;">
+                <div class="p-auto d-flex flex-column">
+                    <h4 id="bonne_rep" style="color:green;">Bonne réponse !</h4>
+                    <h4 id="mauvaise_rep" style="color:red;">Mauvaise réponse !</h4>
+                    <p>La bonne réponse était : </p>
+                    <div id="bonne_reponse_simple">
+                        <i id="bonne_reponse">bonne réponse</i>
+                    </div>
+                    <div id="bonne_reponse_double" class="p-auto d-flex flex-column">
+                        <b>Hypothèses :</b>
+                        <i id="bonne_reponse_hypotheses">bonne réponse</i>
+                        <b>Enoncé / Résultat(s) :</b>
+                        <i id="bonne_reponse_resultat">bonne réponse</i>
+                    </div>
+
+                    <button class="btn btn-outline-primary m-2" onclick="etapeSuivante();">Suivant</button>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="mx-auto">
+                <p id="score">Score : 0 / 0</p>
+                <canvas id="canvas" width=300 height=150></canvas>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="lib.js" type="text/javascript"></script>
+    <script src="data_quizs.js" type="text/javascript"></script>
+    <script src="main_quiz.js" type="text/javascript"></script>
+</body>
+
+</html>
