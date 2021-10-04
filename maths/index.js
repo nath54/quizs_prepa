@@ -48,7 +48,7 @@ function select_all() {
     }
 }
 
-function launch() {
+function launch_quiz() {
     var url = "quiz.html?themes=";
     var nb_themes = 0;
     //
@@ -71,8 +71,8 @@ function launch() {
 }
 
 
-function launch_liste_mots() {
-    var url = "liste_mots.html?themes=";
+function launch_cours() {
+    var url = "cours.html?themes=";
     var nb_themes = 0;
     //
     for (theme of Object.keys(window.themes_select)) {

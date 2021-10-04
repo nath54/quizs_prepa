@@ -1,0 +1,45 @@
+.box {
+    border-radius: 3px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.definition * {
+    background-color: rgb(0, 40, 5);
+}
+
+.definition {
+    border: 1px solid rgb(35, 200, 100);
+}
+
+.proposition * {
+    background-color: rgb(15, 10, 5);
+}
+
+.proposition {
+    border: 1px solid rgb(150, 100, 50);
+}
+
+.propriete * {
+    background-color: rgb(15, 10, 5);
+}
+
+.propriete {
+    border: 1px solid rgb(150, 100, 50);
+}
+
+.theoreme * {
+    background-color: rgb(40, 5, 6);
+}
+
+.theoreme {
+    border: 1px thick double rgb(200, 50, 60);
+}
+
+.methode * {
+    background-color: rgb(5, 6, 40);
+}
+
+.methode {
+    border: 1px dashed rgb(50, 60, 200);
+}
