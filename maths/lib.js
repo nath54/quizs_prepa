@@ -5,7 +5,10 @@ function compile_txt(txt) {
         "#ou": "$\\lor$",
         "#implique": "$\\implies$",
         "#equivaut": "$\\equiv$",
-        "#non": "$\\neg$"
+        "#non": "$\\neg$",
+        "#appartient": "$\\in$",
+        "#inclus": "$\\include$",
+        "#R": "$\\mathcal{R}$"
     };
     //
     for (k of Object.keys(replacements)) {

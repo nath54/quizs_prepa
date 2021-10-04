@@ -79,6 +79,28 @@ function affMots() {
                 var titre = document.createElement("h3");
                 titre.innerHTML = "Théorème : " + compile_txt(elt.titre);
                 box.appendChild(titre);
+
+
+                var ph = document.createElement("p");
+                ph.innerHTML = compile_txt(elt["hypotheses"]);
+                box.appendChild(ph);
+
+                var pr = document.createElement("p");
+                pr.innerHTML = compile_txt(elt["resultat"]);
+                box.appendChild(pr);
+            } else if (elt.type == "lemme") {
+                var titre = document.createElement("h3");
+                titre.innerHTML = "Lemme : " + compile_txt(elt.titre);
+                box.appendChild(titre);
+
+
+                var ph = document.createElement("p");
+                ph.innerHTML = compile_txt(elt["hypotheses"]);
+                box.appendChild(ph);
+
+                var pr = document.createElement("p");
+                pr.innerHTML = compile_txt(elt["resultat"]);
+                box.appendChild(pr);
             }
             //
             chapitre.appendChild(box);

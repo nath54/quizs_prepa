@@ -26,6 +26,8 @@ window.sens = 0; // 0 = fr -> agl,  1 = agl -> fr,  2 = les deux
 window.etape = 0;
 window.pourcentages = [];
 
+const types_simples = ["definition"];
+
 const cantx = 300;
 const canty = 150;
 
@@ -264,10 +266,12 @@ function prepareQuestion() {
     document.getElementById("input_reponse_resultat").value = "";
 
 
-    if (["definition"].includes(window.question.type)) {
+    if (types_simples.includes(window.question.type)) {
         document.getElementById("input_simple").style.display = "block";
         document.getElementById("input_double").style.display = "none";
+        document.getElementById("input_double").classList.remove("d-flex");
     } else {
+        document.getElementById("input_double").classList.add("d-flex");
         document.getElementById("input_double").style.display = "block";
         document.getElementById("input_simple").style.display = "none";
     }
@@ -284,7 +288,7 @@ function test_reponse(reponse_utilisateur, reponse) {
 function traiteReponse() {
     window.etape = 2;
     var est_bonne_reponse = 0;
-    if (["definition"].includes(window.question.type)) {
+    if (types_simples.includes(window.question.type)) {
         // ON VA RECUPERER LA REPONWSE DE L'UTILISATEUR
         var reponse_utilisateur = document.getElementById("input_reponse").value;
 
