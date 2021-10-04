@@ -40,13 +40,13 @@ const quiz_logique = [{
     {
         "type": "proposition",
         "titre": "Equivalence de l'impliquation",
-        "hypotheses": "$A$, $B$ et $C$ désignent des variables propositionnelles",
+        "hypotheses": "$A$ et $B$ désignent des variables propositionnelles",
         "resultat": "($A$ #implique $B$) #equivaut ($B$ #ou #non $A$)"
     },
     {
         "type": "proposition",
         "titre": "Contraposée",
-        "hypotheses": "$A$, $B$ et $C$ désignent des variables propositionnelles",
+        "hypotheses": "$A$ et $B$ désignent des variables propositionnelles",
         "resultat": "($A$ #implique $B$) #equivaut (#non $B$ #implique #non $A$)"
     }
 ];

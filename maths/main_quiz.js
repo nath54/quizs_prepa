@@ -203,6 +203,7 @@ function traiteText(txt) {
         "§": "",
         "_": "",
         "&": "",
+        "$": "",
         "#": "",
         "{": "",
         "[": "",
@@ -261,6 +262,7 @@ function prepareQuestion() {
     document.getElementById("input_reponse").value = "";
     document.getElementById("input_reponse_hypotheses").value = "";
     document.getElementById("input_reponse_resultat").value = "";
+
 
     if (["definition"].includes(window.question.type)) {
         document.getElementById("input_simple").style.display = "block";
