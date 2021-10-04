@@ -173,6 +173,7 @@ function traiteText(txt) {
     ntxt = txt
     ntxt = txt.toLowerCase();
     replacements = {
+        "#dans": "#appartient",
         "é": "e",
         "è": "e",
         "ê": "e",

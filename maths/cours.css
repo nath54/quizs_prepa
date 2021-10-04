@@ -1,5 +1,5 @@
 .MathJax {
-    font-size: 0.95em !important;
+    font-size: 1em !important;
 }
 
 .box {
@@ -41,7 +41,9 @@
 }
 
 .theoreme {
-    border: 1px thick double rgb(200, 50, 60);
+    border-color: rgb(200, 50, 60);
+    border-width: 10px;
+    border-style: double;
 }
 
 .methode,
