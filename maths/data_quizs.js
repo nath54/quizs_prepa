@@ -295,6 +295,18 @@ const quiz_relations = [{
         décroissante si \n\
         #pour_tout $(x,y)$ #dans $E^2$, $x$#<=$_E$ #implique $f(x)$#>=$_F f(y)$."
     },
+    {
+        "type": "definition",
+        "titre": "Ensemble inductif",
+        "hypotheses": "Soit $(E,$#<=$)$ un ensemble ordonné.",
+        "resultat": "On dit que $E$ est un ensemble inductif si pour tout sous-ensemble $F$ #inclus $E$ totalement ordonné, $F$ admet un majorant dans $E$."
+    },
+    {
+        "type": "theoreme",
+        "titre": "lemme de Zorn",
+        "hypotheses": "",
+        "resultat": "Tout ensemble inductif admet un élément maximal."
+    },
 ];
 
 /*
