@@ -154,8 +154,8 @@ const quiz_relations = [{
     {
         "type": "definition",
         "titre": "Congruence",
-        "hypotheses": "Soit $E$ un ensemble, muni d'un certain nombre d'opération #x1, #x2, ..., #xn.",
-        "resultat": "On dit qu'une relation d'équivalence @R est une congruence sur $(E, $#x1$,...,$#xn$)$ si \n #pour_tout $(x,y,x',y')$ #dans $E^4$, #pour_tout $i$ #dans #[[$1, n$#]], ($x$@R$x'$) #et ($y$@R$y'$) #implique ($x$ #xi $y$)@R($x'$ #xi $y'$)."
+        "hypotheses": "Soit $E$ un ensemble, muni d'un certain nombre d'opération #x$_1$, #x$_2$, ..., #x$_n$.",
+        "resultat": "On dit qu'une relation d'équivalence @R est une congruence sur $(E, $#x$_1,...,$#x$_n)$ si \n #pour_tout $(x,y,x',y')$ #dans $E^4$, #pour_tout $i$ #dans $[[1, n]]$, $(x$@R$x')$ #et $(y$@R$y')$ #implique $(x$#x$_i y)$@R$(x'$#x$_iy')$."
     },
     {
         "type": "proposition",
@@ -166,8 +166,8 @@ const quiz_relations = [{
     {
         "type": "proposition",
         "titre": "Passage au quotient des opérations",
-        "hypotheses": "Soit ($E$, #x1, ..., #xn) un ensemble muni de n lois d'opérations, et @R une congruence sur ($E$, #x1, ..., #xn).",
-        "resultat": "Alors on peut définir sur $E$/@R des lois #x1, ..., #xn telles que pour tout $i$ #dans $[[1, n]]$ et tout $(x, y)$ #dans $E^2$"
+        "hypotheses": "Soit $(E, $#x$_1, ..., $#x$_n)$ un ensemble muni de n lois d'opérations, et @R une congruence sur $(E, $#x$_1, ..., $#x$_n)$.",
+        "resultat": "Alors on peut définir sur $E$/@R des lois #x$_1$, ..., #x$_n$ telles que pour tout $i$ #dans $[[1, n]]$ et tout $(x, y)$ #dans $E^2$"
     },
     {
         "type": "corollaire",
@@ -248,6 +248,52 @@ const quiz_relations = [{
         "titre": "Existence d'un élément minimal dans un ensemble fini",
         "hypotheses": "Soit $E$ un ensemble ordonné et non vide.",
         "resultat": "Alors $E$ admet un élément minimal."
+    },
+    {
+        "type": "definition",
+        "titre": "Minorant",
+        "hypotheses": "Soit $(E,$#<=$)$ un ensemble muni d'une relation d'ordre. Soit $A$ #inclus $E$.",
+        "resultat": "Un minorant $m$ de $A$ est un élément $m$ #dans $E$ tel que : #pour_tout $a$  #dans $A$, $a$ #>= $m$."
+    },
+    {
+        "type": "definition",
+        "titre": "Majorant",
+        "hypotheses": "Soit $(E,$#<=$)$ un ensemble muni d'une relation d'ordre. Soit $A$ #inclus $E$.",
+        "resultat": "Un majorant $M$ de $A$ est un élément $M$ #dans $E$ tel que : #pour_tout $a$  #dans $A$, $a$ #<= $M$."
+    },
+    {
+        "type": "definition",
+        "titre": "Borne supérieure",
+        "hypotheses": "Soit $(E,$#<=$)$, et soit $A$ #inclus $E$",
+        "resultat": "La borne supérieure de $A$ est le plus petit des majorants de $A$, s'il existe."
+    },
+    {
+        "type": "definition",
+        "titre": "Borne inférieure",
+        "hypotheses": "Soit $(E,$#<=$)$, et soit $A$ #inclus $E$",
+        "resultat": "La borne inférieure de $A$ est le plus grand des minorants de $A$, s'il existe."
+    },
+    {
+        "type": "proposition",
+        "titre": "Maximum d'un sous-ensemble",
+        "hypotheses": "Soit $(E,$#<=$)$, et $A$ #inclus $E$.",
+        "resultat": "$A$ admet un maximum $M$ si et seulement si $A$ admet une borne supérieure $b$ et si $b$ #dans $A$. Dans ce cas $M=b$."
+    },
+    {
+        "type": "proposition",
+        "titre": "Minimum d'un sous-ensemble",
+        "hypotheses": "Soit $(E,$#<=$)$, et $A$ #inclus $E$.",
+        "resultat": "$A$ admet un minimum $m$ si et seulement si $A$ admet une borne inférieure $b$ et si $b$ #dans $A$. Dans ce cas $m=b$."
+    },
+    {
+        "type": "definition",
+        "titre": "Application croissante",
+        "hypotheses": "Soit $E$ et $F$ deux ensembles, munis chacun d'une relation d'ordre #<=$_E$ et #<=$_F$ respectivement.",
+        "resultat": "Une application $f: E$#fleche_droite$F$ est dite : \n\
+        croissante si \n\
+        #pour_tout $(x,y)$ #dans $E^2$, $x$#<=$_E$ #implique $f(x)$#<=$_F f(y)$,\n\
+        décroissante si \n\
+        #pour_tout $(x,y)$ #dans $E^2$, $x$#<=$_E$ #implique $f(x)$#>=$_F f(y)$."
     },
 ];
 
