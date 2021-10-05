@@ -51,6 +51,11 @@ function affMots() {
                 var titre = document.createElement("h3");
                 titre.innerHTML = "Définition : " + compile_txt(elt.titre);
                 box.appendChild(titre);
+
+                var ph = document.createElement("p");
+                ph.innerHTML = compile_txt(elt["hypotheses"]);
+                box.appendChild(ph);
+
                 var p = document.createElement("p");
                 p.innerHTML = compile_txt(elt["resultat"]);
                 box.appendChild(p);
@@ -91,6 +96,19 @@ function affMots() {
             } else if (elt.type == "lemme") {
                 var titre = document.createElement("h3");
                 titre.innerHTML = "Lemme : " + compile_txt(elt.titre);
+                box.appendChild(titre);
+
+
+                var ph = document.createElement("p");
+                ph.innerHTML = compile_txt(elt["hypotheses"]);
+                box.appendChild(ph);
+
+                var pr = document.createElement("p");
+                pr.innerHTML = compile_txt(elt["resultat"]);
+                box.appendChild(pr);
+            } else if (elt.type == "corollaire") {
+                var titre = document.createElement("h3");
+                titre.innerHTML = "Corollaire : " + compile_txt(elt.titre);
                 box.appendChild(titre);
 
 

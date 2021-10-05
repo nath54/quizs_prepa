@@ -63,3 +63,12 @@
 .lemme {
     border: 2px dashed rgb(107, 8, 82);
 }
+
+.corollaire,
+.corollaire * {
+    background-color: rgb(40, 5, 6);
+}
+
+.corollaire {
+    border: 2px dashed rgb(200, 50, 60);
+}

@@ -26,7 +26,7 @@ window.sens = 0; // 0 = fr -> agl,  1 = agl -> fr,  2 = les deux
 window.etape = 0;
 window.pourcentages = [];
 
-const types_simples = ["definition"];
+const types_simples = [];
 
 const cantx = 300;
 const canty = 150;
@@ -173,7 +173,6 @@ function traiteText(txt) {
     ntxt = txt
     ntxt = txt.toLowerCase();
     replacements = {
-        "#dans": "#appartient",
         "é": "e",
         "è": "e",
         "ê": "e",
@@ -255,7 +254,11 @@ function prepareQuestion() {
     } else if (window.question.type == "methode") {
         document.getElementById("question").innerHTML = "Donner la méthode suivante :";
     } else if (window.question.type == "theoreme") {
-        document.getElementById("question").innerHTML = "Donner le théorème suivante :";
+        document.getElementById("question").innerHTML = "Donner le théorème suivant :";
+    } else if (window.question.type == "lemme") {
+        document.getElementById("question").innerHTML = "Donner le lemme suivant :";
+    } else if (window.question.type == "corollaire") {
+        document.getElementById("question").innerHTML = "Donner le corollaire suivante :";
     }
     //
     document.getElementById("mot_a_traduire").innerHTML = compile_txt(window.question.titre);
@@ -320,7 +323,7 @@ function traiteReponse() {
         document.getElementById("bonne_reponse_simple").style.display = "block";
         document.getElementById("bonne_reponse_double").style.display = "none";
         document.getElementById("bonne_reponse").innerHTML = compile_txt(window.question.resultat);
-    } else if (["theoreme", "proposition"].includes(window.question.type)) {
+    } else {
 
         // ON VA RECUPERER LA REPONWSE DE L'UTILISATEUR
         var hypotheses_utilisateur = document.getElementById("input_reponse_hypotheses").value;
