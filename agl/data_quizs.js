@@ -759,7 +759,7 @@ const quiz_internet = [
     ["to infringe on somebody's rights", ["léser les droits de quelqu'un", "porter atteinte aux droits de quelqu'un"]],
     ["a copyright infringement", "une atteinte aux droits d'auteurs"],
     ["copyright losses", "les pertes sur droit d'auteur"],
-    ["rights olders", "les détenteurs de droits (d'auteur)"],
+    ["rights holders", "les détenteurs de droits (d'auteur)"],
     ["to crack down on illegal downloading", "réprimer le téléchargement illégal"],
     ["to disconnect user", "priver un internaute d'accès internet"],
     ["to track somebody down", "traquer, retrouver, localiser quelqu'un"],
