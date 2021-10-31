@@ -60,3 +60,29 @@ td {
 .check_box_bt:checked {
     background-color: green;
 }
+
+#card {
+    /* appearance */
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 15px;
+    /* size & position */
+    min-width: 50%;
+    max-width: 75%;
+    /* min-height: 250px; */
+    margin: auto;
+    padding: 10px;
+}
+
+#card * {
+    /* appearance */
+    background-color: white;
+    /* size & position */
+    margin: auto;
+    font-size: 1.3em;
+}
+
+.unselectable {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}

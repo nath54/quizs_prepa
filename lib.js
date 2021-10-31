@@ -20,8 +20,8 @@ function getCookie(cname) {
     return "";
 }
 
-function load_cookie() {
-    var txt = getCookie("disabled");
+function load_cookie(matiere = "anglais") {
+    var txt = getCookie(matiere + "_disabled");
     if (txt == "") {
         return [];
     }
@@ -38,9 +38,9 @@ function load_cookie() {
     }
 }
 
-function save_cookie(data_disabled) {
+function save_cookie(data_disabled, matiere = "anglais") {
     var txt = JSON.stringify(data_disabled);
-    setCookie("disabled", txt, 730);
+    setCookie(matiere + "_disabled", txt, 730);
 }
 
 
