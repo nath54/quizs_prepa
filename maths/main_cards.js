@@ -15,6 +15,9 @@ window.state = 0;
 
 window.agl = 0;
 
+window.deb_att = 0;
+const tps_attente = 100;
+
 const lim_agl = 0.4;
 
 function init() {
@@ -46,7 +49,7 @@ function init() {
         return;
     }
     //
-
+    next_question();
 }
 
 function next_question() {
@@ -54,26 +57,38 @@ function next_question() {
     if (window.questions.length > 0) {
         // On tire au hasard un question
         window.question_actu_id = parseInt(Math.random() * window.questions.length);
-        document.getElementById("card_titre").innerHTML = window.questions[window.question_actu_id].titre;
+        document.getElementById("card_titre").innerHTML = compile_txt(window.questions[window.question_actu_id].titre);
         document.getElementById("card_hypotheses").innerHTML = "";
         document.getElementById("card_resultat").innerHTML = "";
+        MathJax.typesetPromise();
         window.state = 1;
         // On affiche le score
         document.getElementById("score").innerHTML = "Score : " + score + " / " + nb_question;
         window.nb_question++;
+        // On fait attendre un peu avant de pouvoir reveal
+        var date = new Date();
+        window.deb_att = date.getTime();
     } // Sinon, on renvoie vers la page de fin
     else {
         window.state = 3;
-        document.getElementById("block_inputs").style.display = "none";
-        document.getElementById("block_fin").style.display = "initial";
+        document.getElementById("span_score").innerHTML = "" + score + " / " + nb_question;
+        document.getElementById("nb_cartes_justes").innerHTML = window.questions_justes.length;
+        document.getElementById("nb_cartes_fausses").innerHTML = window.questions_fausses.length;
+        document.getElementById("score").innerHTML = "Score : " + score + " / " + nb_question;
+        document.getElementById("block_input").style.display = "none";
+        document.getElementById("block_fin").style.display = "block";
     }
 }
 
 function reveal() {
     if (window.state == 1) {
-        document.getElementById("card_hypotheses").innerHTML = window.questions[window.question_actu_id].hypotheses;
-        document.getElementById("card_resultat").innerHTML = window.questions[window.question_actu_id].resultat;
-        window.state = 2;
+        var date = new Date();
+        if (date.getTime() - window.deb_att >= tps_attente) {
+            document.getElementById("card_hypotheses").innerHTML = compile_txt(window.questions[window.question_actu_id].hypotheses);
+            document.getElementById("card_resultat").innerHTML = compile_txt(window.questions[window.question_actu_id].resultat);
+            MathJax.typesetPromise();
+            window.state = 2;
+        }
     }
 }
 
@@ -84,7 +99,7 @@ function restart_all() {
     window.questions = window.questions_fausses.concat(window.questions_justes);
     window.questions_fausses = [];
     window.questions_justes = [];
-    document.getElementById("block_inputs").style.display = "initial";
+    document.getElementById("block_input").style.display = "block";
     document.getElementById("block_fin").style.display = "none";
     next_question();
 }
@@ -99,7 +114,7 @@ function restart_only_ratees() {
         window.questions = window.questions_fausses;
         window.questions_fausses = [];
         window.questions_justes = [];
-        document.getElementById("block_inputs").style.display = "initial";
+        document.getElementById("block_input").style.display = "block";
         document.getElementById("block_fin").style.display = "none";
         next_question();
     }
@@ -152,6 +167,7 @@ function click_up(e) {
             // C'est raté
             window.questions_fausses.push(window.questions[window.question_actu_id]);
             window.questions.splice(window.question_actu_id, 1);
+            next_question();
         } else if (window.agl == lim_agl) {
             // C'est juste
             window.questions_justes.push(window.questions[window.question_actu_id]);
@@ -159,5 +175,6 @@ function click_up(e) {
             window.score += 1;
             next_question();
         }
+        window.agl = 0;
     }
 }

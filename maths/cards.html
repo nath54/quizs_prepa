@@ -36,7 +36,7 @@
 
             <div id="block_input">
                 <div class="p-auto d-flex flex-column">
-                    <div id="card" onmousedown="card_mouse_down(event);">
+                    <div id="card" onclick="reveal();" onmousedown="card_mouse_down(event);" class="">
 
                         <h1 id="card_titre" unselectable="on" class="unselectable" style="margin-bottom: auto;">Titre</h1>
 
@@ -56,7 +56,7 @@
                 <div class="row">
 
                     <div class="col">
-                        <p>Vous avez réussi <span>0</span> cartes</p>
+                        <p>Vous avez réussi <span id="nb_cartes_justes">0</span> cartes</p>
                         <button onclick="restart_all();" class="btn btn-success m-2">Recommencer avec toutes les cartes</button>
                     </div>
                     <div class="col">
@@ -66,14 +66,14 @@
 
                 </div>
                 <div>
-                    <button onclick="window.location.url='index.html'" class="btn btn-primary m-2">Revenir au menu</button>
+                    <a href="index.html" class="btn btn-primary m-2">Revenir au menu</a>
                 </div>
             </div>
 
             <hr />
 
             <div class="mx-auto ">
-                <p id="score ">Score : 0 / 0</p>
+                <p id="score">Score : 0 / 0</p>
                 <!-- <canvas id="canvas " width=300 height=150></canvas> -->
             </div>
 
@@ -84,6 +84,7 @@
     <!-- Scripts -->
 
     <script src="lib.js " type="text/javascript "></script>
+    <script src="../lib.js " type="text/javascript "></script>
     <script src="data_quizs.js " type="text/javascript "></script>
     <script src="main_cards.js " type="text/javascript "></script>
 </body>
