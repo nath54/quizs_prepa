@@ -2,7 +2,7 @@
     background-color: #121212;
     color: #BB86FC;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 1.05em;
+    font-size: 1.03em;
 }
 
 input {
@@ -22,22 +22,40 @@ input:hover {
 }
 
 .tabcol1 {
-    padding-right: 15px;
+    padding-right: 10px;
     text-align: left;
-    word-wrap: unset;
+    word-wrap: break-word;
 }
 
 .tabcol2 {
-    padding-left: 15px;
+    padding-left: 10px;
     text-align: left;
-    word-wrap: unset;
+    word-wrap: break-word;
     color: #ab99fa;
+    max-width: 45%;
 }
 
 table,
 tr,
 td {
     border: 1px solid grey;
-    padding: 6px;
+    padding: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     border-collapse: collapse;
+}
+
+.check_box_bt {
+    max-width: 0.5em;
+    max-height: 0.5em;
+    border: none;
+    margin: 0;
+    padding: 6px;
+    vertical-align: middle;
+}
+
+.check_box_bt:active,
+.check_box_bt:hover,
+.check_box_bt:checked {
+    background-color: red;
 }

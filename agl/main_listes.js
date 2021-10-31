@@ -45,6 +45,14 @@ function affMots() {
         for (mot of window.vocs[theme]) {
             var ligne = document.createElement("tr");
             //
+            var select = document.createElement("td");
+            var cb = document.createElement("input");
+            cb.type = "checkbox";
+            cb.classList.add("form-check-input");
+            cb.classList.add("check_box_bt");
+            select.appendChild(cb);
+            ligne.appendChild(select);
+            //
             var fr = document.createElement("td");
             fr.classList.add("tabcol1");
             var agl = document.createElement("td");
@@ -55,7 +63,8 @@ function affMots() {
             ligne.appendChild(fr);
             ligne.appendChild(agl);
             tab.appendChild(ligne);
-            ligne.style.minWidth = "90%";
+            ligne.style.minWidth = "80%";
+            ligne.style.maxWidth = "92%";
         }
         main_container.appendChild(tab);
     }

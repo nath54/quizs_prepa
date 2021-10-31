@@ -54,6 +54,7 @@ const quiz_logique = [{
     }
 ];
 
+
 const quiz_relations = [{
         "type": "definition",
         "titre": "Relation binaire",
