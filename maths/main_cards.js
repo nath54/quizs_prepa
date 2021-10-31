@@ -7,7 +7,10 @@ window.click_x = 0;
 window.click_y = 0;
 window.is_clicked = false;
 
+
 function init() {
+    // ON RECUPERE LES COOKIES
+
     // ON RECUPERE LE THEME
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
