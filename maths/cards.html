@@ -38,15 +38,35 @@
                 <div class="p-auto d-flex flex-column">
                     <div id="card" onmousedown="card_mouse_down(event);">
 
-                        <h1 unselectable="on" class="unselectable" style="margin-bottom: auto;">Titre</h1>
+                        <h1 id="card_titre" unselectable="on" class="unselectable" style="margin-bottom: auto;">Titre</h1>
 
                         <hr style="height:25px;" />
 
-                        <i unselectable="on" class="unselectable" style="margin-top: auto;">Hypothèses</i>
+                        <i id="card_hypotheses" unselectable="on" class="unselectable" style="margin-top: auto;">Hypothèses</i>
 
-                        <p unselectable="on" class="unselectable">Résultat</p>
+                        <p id="card_resultat" unselectable="on" class="unselectable">Résultat</p>
 
                     </div>
+                </div>
+            </div>
+
+            <div id="block_fin" style="display:none;">
+                <h2>Vous avez parcouru toutes les cartes</h2>
+                <p>Votre score est de : <span id="span_score">0/0</span></p>
+                <div class="row">
+
+                    <div class="col">
+                        <p>Vous avez réussi <span>0</span> cartes</p>
+                        <button onclick="restart_all();" class="btn btn-success m-2">Recommencer avec toutes les cartes</button>
+                    </div>
+                    <div class="col">
+                        <p>Vous avez raté <span id="nb_cartes_fausses">0</span> cartes</p>
+                        <button onclick="restart_only_ratees();" class="btn btn-danger m-2">Recommencer avec les cartes ratées</button>
+                    </div>
+
+                </div>
+                <div>
+                    <button onclick="window.location.url='index.html'" class="btn btn-primary m-2">Revenir au menu</button>
                 </div>
             </div>
 
