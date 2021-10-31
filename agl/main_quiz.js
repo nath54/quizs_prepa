@@ -25,6 +25,7 @@ window.questions_reussies = [];
 window.sens = 0; // 0 = fr -> agl,  1 = agl -> fr,  2 = les deux
 window.etape = 0;
 window.pourcentages = [];
+window.disabled = [];
 
 const cantx = 300;
 const canty = 150;
@@ -382,6 +383,8 @@ function traiteReponse() {
 
 
 function init() {
+    // ON RECUPERE LES COOKIES
+    window.disabled = load_cookie();
     // ON RECUPERE LE THEME
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -394,7 +397,12 @@ function init() {
     // ON INITIALIZE
     for (theme of window.themes) {
         if (Object.keys(Quizs).includes(theme)) {
-            window.questions = window.questions.concat(Quizs[theme]);
+            for (mot of Quizs[theme]) {
+                if (!window.disabled.includes(mot[0])) {
+                    window.questions.push(mot);
+                }
+            }
+            // window.questions = window.questions.concat(Quizs[theme]);
         }
     }
     if (window.questions.length == 0) {

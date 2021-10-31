@@ -1,7 +1,12 @@
 window.themes = [];
-window.vocs = {
+window.vocs = {};
 
-}
+window.disabled = {};
+
+const CL_DISABLED = "rgb(50, 40, 40)";
+const CL_ENABLED = "#121212";
+
+var view = false;
 
 function init() {
     // ON RECUPERE LE THEME
@@ -11,7 +16,7 @@ function init() {
         window.themes = urlParams.get("themes").split(",");
     } else {
         // ON VA RENVOYER SUR LA PAGE D'INDEX
-        window.location.href = "index.html"
+        window.location.href = "index.html";
     }
     // ON INITIALIZE
     for (theme of window.themes) {
@@ -25,14 +30,17 @@ function init() {
         window.location.href = "index.html";
         return;
     }
+    // ON VA RECUPERER LES COOKIES
+    window.disabled = load_cookie();
     //
     affMots();
+    //
 }
-
 
 function affMots() {
     var main_container = document.getElementById("container");
     for (theme of Object.keys(window.vocs)) {
+        //
         var titre = document.createElement("h2");
         titre.innerHTML = theme + " : ";
         titre.style.marginTop = "25px";
@@ -43,15 +51,24 @@ function affMots() {
         var tab = document.createElement("table");
         //
         for (mot of window.vocs[theme]) {
+            //
+            var motIn = window.disabled.includes(mot[0]);
+            //
             var ligne = document.createElement("tr");
             //
             var select = document.createElement("td");
+            select.classList.add("view_select");
+            select.style.display = "none";
             var cb = document.createElement("input");
+            cb.id = "cb_" + mot[0];
             cb.type = "checkbox";
+            cb.checked = !motIn;
             cb.classList.add("form-check-input");
             cb.classList.add("check_box_bt");
+            cb.setAttribute("onclick", "cb_pressed(this);");
             select.appendChild(cb);
             ligne.appendChild(select);
+            //
             //
             var fr = document.createElement("td");
             fr.classList.add("tabcol1");
@@ -65,7 +82,59 @@ function affMots() {
             tab.appendChild(ligne);
             ligne.style.minWidth = "80%";
             ligne.style.maxWidth = "92%";
+            //
+            if (motIn) {
+                for (node of[select, fr, agl]) {
+                    node.style.backgroundColor = CL_DISABLED;
+                }
+            } else {
+                for (node of[select, fr, agl]) {
+                    ligne.style.backgroundColor = CL_ENABLED;
+                }
+            }
         }
         main_container.appendChild(tab);
+    }
+}
+
+function toggle_view() {
+    if (view) {
+        view = false;
+        for (n of document.getElementsByClassName("view_select")) {
+            n.style.display = "none";
+        }
+        document.getElementById("bt_view").classList.replace("btn-primary", "btn-outline-primary");
+        document.getElementById("bt_inverse").style.display = "none";
+    } else {
+        view = true;
+        for (n of document.getElementsByClassName("view_select")) {
+            n.style.display = "table-cell";
+        }
+        document.getElementById("bt_view").classList.replace("btn-outline-primary", "btn-primary");
+        document.getElementById("bt_inverse").style.display = "initial";
+    }
+}
+
+function cb_pressed(cb) {
+    var td = cb.parentNode;
+    var tr = td.parentNode;
+    var mot = cb.id.split("_")[1];
+    for (c of tr.children) {
+        if (cb.checked) {
+            c.style.backgroundColor = CL_ENABLED;
+            window.disabled = arrayRemove(window.disabled, mot);
+        } else {
+            c.style.backgroundColor = CL_DISABLED;
+            if (!window.disabled.includes(mot)) {
+                window.disabled.push(mot);
+            }
+        }
+    }
+    save_cookie(window.disabled);
+}
+
+function inverse_all() {
+    for (bt of document.getElementsByClassName("check_box_bt")) {
+        bt.click();
     }
 }
