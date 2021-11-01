@@ -396,6 +396,7 @@ function init() {
         window.location.href = "index.html?matiere=" + window.matiere;
         return;
     }
+    document.title = "Quiz - " + window.matiere;
     // ON COMMENCE LE QUIZ
     prepareQuestion();
     //

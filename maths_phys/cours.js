@@ -52,6 +52,7 @@ function init() {
     } else {
         window.location.href = "../index.html";
     }
+    document.title = "Cours - " + window.matiere;
     //
     script.type = "text/javascript";
     script.setAttribute("onload", "init_2();");
