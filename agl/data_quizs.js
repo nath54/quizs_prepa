@@ -781,3 +781,28 @@ const Quizs = {
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action
 };
+
+const VERSION_DATA_AGL = 1;
+// Ceci ne caractérise pas la version réelle de ce fichier
+// Mais plutôt la version des ids de chaque mots
+// C'est à dire que si je rajoute des mots tout en respectant le système d'id que j'ai mis en place,
+// Je ne devrais pas avoir à changer la version
+// Mais ca peut être pratique pour ne pas avoir trop de problèmes de cookies avec des ids différentes, etc...
+// Pour ne pas avoir de problemes de changement d'id
+// Il y aurait d'autres moyens de faire, mais j'ai un peu la flemme de tout mettre en place pour
+// Car le plus stable serait de rajouter directement dans ce fichier les 623 premiers ids
+
+// IL FAUT QUAND MÊME EVITER DE TROP CHANGER L'ORDRE DES VOCABS ET THEMES
+
+var id_q = 0;
+for (theme of Object.keys(Quizs)) {
+    for (question of Quizs[theme]) {
+        if (question.length == 2) {
+            question.push(id_q);
+            id_q++;
+        }
+    }
+}
+
+// NEXT FREE ID : 623 
+// console.log("NEXT FREE ID : ", id_q);

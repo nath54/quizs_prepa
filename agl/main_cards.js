@@ -20,9 +20,12 @@ const tps_attente = 100;
 
 const lim_agl = 0.4;
 
+var sens_0 = 1;
+var sens_1 = 0;
+
 function init() {
     // ON RECUPERE LES COOKIES
-    window.disabled = load_cookie("maths");
+    window.disabled = load_cookie(window.matiere);
     // ON RECUPERE LE THEME
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -32,12 +35,13 @@ function init() {
         // ON VA RENVOYER SUR LA PAGE D'INDEX
         window.location.href = "index.html";
     }
+    console.log("themes : ", window.themes);
     // ON INITIALIZE
     for (theme of window.themes) {
         if (Object.keys(Quizs).includes(theme)) {
             // window.questions = window.questions.concat(Quizs[theme]);
             for (question of Quizs[theme]) {
-                if (!window.disabled.includes(question.id)) {
+                if (!window.disabled.includes(question[2])) {
                     window.questions.push(question);
                 }
             }
@@ -45,6 +49,7 @@ function init() {
     }
     if (window.questions.length == 0) {
         // ON VA RENVOYER SUR LA PAGE D'INDEX
+        alert("pas de quest");
         window.location.href = "index.html";
         return;
     }
@@ -57,10 +62,8 @@ function next_question() {
     if (window.questions.length > 0) {
         // On tire au hasard un question
         window.question_actu_id = parseInt(Math.random() * window.questions.length);
-        document.getElementById("card_titre").innerHTML = compile_txt(window.questions[window.question_actu_id].titre);
-        document.getElementById("card_hypotheses").innerHTML = "";
-        document.getElementById("card_resultat").innerHTML = "";
-        MathJax.typesetPromise();
+        document.getElementById("card_titre").innerHTML = window.questions[window.question_actu_id][sens_0];
+        document.getElementById("card_traduction").innerHTML = "";
         card.style.rotate = "0rad";
         card.style.boxShadow = "none";
         window.state = 1;
@@ -86,9 +89,7 @@ function reveal() {
     if (window.state == 1) {
         var date = new Date();
         if (date.getTime() - window.deb_att >= tps_attente) {
-            document.getElementById("card_hypotheses").innerHTML = compile_txt(window.questions[window.question_actu_id].hypotheses);
-            document.getElementById("card_resultat").innerHTML = compile_txt(window.questions[window.question_actu_id].resultat);
-            MathJax.typesetPromise();
+            document.getElementById("card_traduction").innerHTML = window.questions[window.question_actu_id][sens_1];
             window.state = 2;
         }
     }
@@ -190,4 +191,8 @@ function click_up(e) {
         }
         window.agl = 0;
     }
+}
+
+function retour_index() {
+    window.location.href = "index.html";
 }

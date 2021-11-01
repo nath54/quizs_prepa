@@ -31,7 +31,15 @@ function init() {
         return;
     }
     // ON VA RECUPERER LES COOKIES
-    window.disabled = load_cookie();
+    // Si ce n'est plus la même version, on supprime les disabled précédents
+    var va = getCookie("version_agl");
+    if (va == "" || va != VERSION_DATA_AGL) {
+        window.disabled = [];
+        save_cookie(window.disabled, "anglais");
+        setCookie("version_agl", VERSION_DATA_AGL);
+    } else {
+        window.disabled = load_cookie();
+    }
     //
     affMots();
     //
@@ -52,7 +60,7 @@ function affMots() {
         //
         for (mot of window.vocs[theme]) {
             //
-            var motIn = window.disabled.includes(mot[0]);
+            var motIn = window.disabled.includes(mot[2]);
             //
             var ligne = document.createElement("tr");
             //
@@ -60,7 +68,7 @@ function affMots() {
             select.classList.add("view_select");
             select.style.display = "none";
             var cb = document.createElement("input");
-            cb.id = "cb_" + mot[0];
+            cb.id = "cb_" + mot[2];
             cb.type = "checkbox";
             cb.checked = !motIn;
             cb.classList.add("form-check-input");
@@ -105,6 +113,7 @@ function toggle_view() {
         }
         document.getElementById("bt_view").classList.replace("btn-primary", "btn-outline-primary");
         document.getElementById("bt_inverse").style.display = "none";
+        document.getElementById("bt_reset").style.display = "none";
     } else {
         view = true;
         for (n of document.getElementsByClassName("view_select")) {
@@ -112,21 +121,22 @@ function toggle_view() {
         }
         document.getElementById("bt_view").classList.replace("btn-outline-primary", "btn-primary");
         document.getElementById("bt_inverse").style.display = "initial";
+        document.getElementById("bt_reset").style.display = "initial";
     }
 }
 
 function cb_pressed(cb) {
     var td = cb.parentNode;
     var tr = td.parentNode;
-    var mot = cb.id.split("_")[1];
+    var id_mot = parseInt(cb.id.split("_")[1]);
     for (c of tr.children) {
         if (cb.checked) {
             c.style.backgroundColor = CL_ENABLED;
-            window.disabled = arrayRemove(window.disabled, mot);
+            window.disabled = arrayRemove(window.disabled, id_mot);
         } else {
             c.style.backgroundColor = CL_DISABLED;
-            if (!window.disabled.includes(mot)) {
-                window.disabled.push(mot);
+            if (!window.disabled.includes(id_mot)) {
+                window.disabled.push(id_mot);
             }
         }
     }
@@ -136,5 +146,13 @@ function cb_pressed(cb) {
 function inverse_all() {
     for (bt of document.getElementsByClassName("check_box_bt")) {
         bt.click();
+    }
+}
+
+function reset() {
+    for (bt of document.getElementsByClassName("check_box_bt")) {
+        if (!bt.checked) {
+            bt.click();
+        }
     }
 }

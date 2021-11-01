@@ -383,7 +383,7 @@ function init() {
         window.themes = urlParams.get("themes").split(",");
     } else {
         // ON VA RENVOYER SUR LA PAGE D'INDEX
-        window.location.href = "index.html"
+        window.location.href = "index.html?matiere=" + window.matiere;
     }
     // ON INITIALIZE
     for (theme of window.themes) {
@@ -393,7 +393,7 @@ function init() {
     }
     if (window.questions.length == 0) {
         // ON VA RENVOYER SUR LA PAGE D'INDEX
-        window.location.href = "index.html";
+        window.location.href = "index.html?matiere=" + window.matiere;
         return;
     }
     // ON COMMENCE LE QUIZ
@@ -420,3 +420,8 @@ document.body.addEventListener("keydown", (e) => {
         return false;
     }
 });
+
+
+function retour_index() {
+    window.location.href = "index.html?matiere=" + window.matiere;
+}

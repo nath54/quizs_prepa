@@ -1,8 +1,10 @@
+window.matiere = "maths";
 window.themes_select = {
 
 };
 
-function init() {
+function init_2() {
+    //
     for (theme of Object.keys(Quizs)) {
         var bt = document.createElement("a");
         bt.innerHTML = theme;
@@ -14,6 +16,30 @@ function init() {
         document.getElementById("liste_themes").appendChild(bt);
         window.themes_select[theme] = false;
     }
+}
+
+function init() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    if (urlParams.has("matiere")) {
+        window.matiere = urlParams.get("matiere");
+    } else {
+        // ON VA RENVOYER SUR LA PAGE D'INDEX
+        window.matiere = "maths"; // Par défaut, c'est les maths
+    }
+    // On va charger les données de quizs de la matière
+    var script = document.createElement("script");
+    if (matiere == "maths") {
+        script.src = "data_quizs_maths.js";
+    } else if (matiere == "physique") {
+        script.src = "data_quizs_physique.js";
+    } else {
+        window.location.href = "../index.html";
+    }
+    //
+    script.type = "text/javascript";
+    script.setAttribute("onload", "init_2();");
+    document.body.appendChild(script);
 }
 
 function toggle_theme(theme) {
@@ -49,7 +75,7 @@ function select_all() {
 }
 
 function launch_quiz() {
-    var url = "quiz.html?themes=";
+    var url = "quiz.html?matiere=" + window.matiere + "&themes=";
     var nb_themes = 0;
     //
     for (theme of Object.keys(window.themes_select)) {
@@ -72,7 +98,30 @@ function launch_quiz() {
 
 
 function launch_cours() {
-    var url = "cours.html?themes=";
+    var url = "cours.html?matiere=" + window.matiere + "&themes=";
+    var nb_themes = 0;
+    //
+    for (theme of Object.keys(window.themes_select)) {
+        if (window.themes_select[theme]) {
+            if (nb_themes > 0) {
+                url += ",";
+            }
+            url += theme;
+            nb_themes++;
+        }
+    }
+    //
+    if (nb_themes == 0) {
+        alert("Il faut avoir au moins selectionné un theme !");
+        return;
+    }
+    //
+    window.location.href = url;
+}
+
+
+function launch_cards() {
+    var url = "cards.html?matiere=" + window.matiere + "&themes=";
     var nb_themes = 0;
     //
     for (theme of Object.keys(window.themes_select)) {

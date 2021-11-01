@@ -339,9 +339,9 @@ const quiz_relations = [{
         "hypotheses": "Soit $E$ et $F$ deux ensembles, munis chacun d'une relation d'ordre #<=$_E$ et #<=$_F$ respectivement.",
         "resultat": "Une application $f: E$#fleche_droite$F$ est dite : \n\
         croissante si \n\
-        #pour_tout $(x,y)$ #dans $E^2$, $x$#<=$_E$ #implique $f(x)$#<=$_F f(y)$,\n\
+        #pour_tout $(x,y)$ #dans $E^2$, $x $#<=$_E y$ #implique $f(x)$#<=$_F f(y)$,\n\
         décroissante si \n\
-        #pour_tout $(x,y)$ #dans $E^2$, $x$#<=$_E$ #implique $f(x)$#>=$_F f(y)$.",
+        #pour_tout $(x,y)$ #dans $E^2$, $x $#<=$_E y$ #implique $f(x)$#>=$_F f(y)$.",
         "id": 47
     },
     {
@@ -376,6 +376,6 @@ const quiz_relations = [{
 // TOUS LES QUIZS SONT DANS LA VARIABLE QUIZS
 
 const Quizs = {
-    "Logique": quiz_logique,
+    "Logique (incomplet)": quiz_logique,
     "Relations": quiz_relations
 };

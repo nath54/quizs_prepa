@@ -72,3 +72,24 @@
 .corollaire {
     border: 2px dashed rgb(200, 50, 60);
 }
+
+.texte_physique,
+.texte_physique * {
+    background-color: rgb(46, 46, 46);
+}
+
+.texte_physique {
+    border: 2px dashed rgb(248, 248, 248);
+}
+
+.disabled {
+    background-color: rgb(26, 16, 16);
+    border: 1px solid grey;
+    border-radius: 0;
+}
+
+.disabled * {
+    background-color: rgb(26, 16, 16);
+    /* border: 1px solid grey;
+    border-radius: 0; */
+}

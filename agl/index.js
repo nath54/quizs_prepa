@@ -92,3 +92,27 @@ function launch_liste_mots() {
     //
     window.location.href = url;
 }
+
+
+
+function launch_cards() {
+    var url = "cards.html?themes=";
+    var nb_themes = 0;
+    //
+    for (theme of Object.keys(window.themes_select)) {
+        if (window.themes_select[theme]) {
+            if (nb_themes > 0) {
+                url += ",";
+            }
+            url += theme;
+            nb_themes++;
+        }
+    }
+    //
+    if (nb_themes == 0) {
+        alert("Il faut avoir au moins selectionné un theme !");
+        return;
+    }
+    //
+    window.location.href = url;
+}

@@ -398,7 +398,7 @@ function init() {
     for (theme of window.themes) {
         if (Object.keys(Quizs).includes(theme)) {
             for (mot of Quizs[theme]) {
-                if (!window.disabled.includes(mot[0])) {
+                if (!window.disabled.includes(mot[2])) {
                     window.questions.push(mot);
                 }
             }

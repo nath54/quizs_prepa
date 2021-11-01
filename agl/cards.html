@@ -1,22 +1,10 @@
 <!DOCTYPE html>
 <html>
 
-
-<script>
-    MathJax = {
-        tex: {
-            inlineMath: [
-                ['$', '$'],
-                ['\\(', '\\)']
-            ],
-        }
-    };
-</script>
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cards - Maths</title>
+    <title>Cards - Agl</title>
     <link href="../style.css" rel="stylesheet" />
     <link href="../bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,13 +26,11 @@
                 <div class="p-auto d-flex flex-column">
                     <div id="card" onclick="reveal();" onmousedown="card_mouse_down(event);" class="">
 
-                        <h1 id="card_titre" unselectable="on" class="unselectable" style="margin-bottom: auto;">Titre</h1>
+                        <h1 id="card_titre" unselectable="on" class="unselectable" style="margin-bottom: auto;">Mot</h1>
 
                         <hr style="height:25px;" />
 
-                        <i id="card_hypotheses" unselectable="on" class="unselectable" style="margin-top: auto;">Hypothèses</i>
-
-                        <p id="card_resultat" unselectable="on" class="unselectable">Résultat</p>
+                        <p id="card_traduction" unselectable="on" class="unselectable">Traduction</p>
 
                     </div>
                 </div>
@@ -66,7 +52,7 @@
 
                 </div>
                 <div>
-                    <a href="index.html" class="btn btn-primary m-2">Revenir au menu</a>
+                    <button onclick="retour_index();" class="btn btn-primary m-2">Revenir au menu</button>
                 </div>
             </div>
 
@@ -77,13 +63,16 @@
                 <!-- <canvas id="canvas " width=300 height=150></canvas> -->
             </div>
 
+            <hr />
+
+            <button onclick="retour_index();" class="btn btn-dark m-1">Retour</button>
+
         </div>
 
     </div>
 
     <!-- Scripts -->
 
-    <script src="lib.js " type="text/javascript "></script>
     <script src="../lib.js " type="text/javascript "></script>
     <script src="data_quizs.js " type="text/javascript "></script>
     <script src="main_cards.js " type="text/javascript "></script>

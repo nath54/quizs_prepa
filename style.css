@@ -52,13 +52,13 @@ td {
     margin: 0;
     padding: 6px;
     vertical-align: middle;
-    background-color: red;
+    background-color: red !important;
 }
 
 .check_box_bt:active,
 .check_box_bt:hover,
 .check_box_bt:checked {
-    background-color: green;
+    background-color: green !important;
 }
 
 #card {
@@ -83,7 +83,7 @@ td {
     background-color: white;
     /* size & position */
     margin: auto;
-    font-size: 1.0em;
+    font-size: 1.02em;
 }
 
 .unselectable {
