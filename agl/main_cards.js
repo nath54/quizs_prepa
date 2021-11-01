@@ -147,7 +147,7 @@ document.body.addEventListener('drag', e => { rotate(e); });
 document.body.addEventListener('touchmove', e => { rotate(e, true); });
 
 function rotate(e, touchscreen = false) {
-    var x, y;
+    var x, y, dy;
     if (window.state == 2 && window.is_clicked) {
         var card = document.getElementById("card");
         if (touchscreen) {
@@ -159,7 +159,7 @@ function rotate(e, touchscreen = false) {
             y = e.clientY;
         }
         var dx = x - window.click_x;
-        var dy = 100;
+        dy = 100;
         //
         if (dy > 0) {
             var agl = Math.atan(dx / dy);
