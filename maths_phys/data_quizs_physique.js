@@ -27,5 +27,5 @@ const quiz_propagation_signal = [{
 // TOUS LES QUIZS SONT DANS LA VARIABLE QUIZS
 
 const Quizs = {
-    "Propagation_signaux (incomplet)": quiz_propagation_signal
+    "Propagation_signaux - incomplet": quiz_propagation_signal
 };

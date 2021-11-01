@@ -124,10 +124,16 @@ function restart_only_ratees() {
 }
 
 
-function card_mouse_down(event) {
+function card_mouse_down(e, touchscreen = false) {
     if (window.state == 2) {
-        window.click_x = event.clientX;
-        window.click_y = event.clientY;
+        if (touchscreen) {
+            // console.log(e);
+            window.click_x = e.changedTouches[0].clientX;
+            window.click_y = e.changedTouches[0].clientY;
+        } else {
+            window.click_x = e.clientX;
+            window.click_y = e.clientY;
+        }
         window.is_clicked = true;
         card.style.rotate = "0rad";
         card.style.boxShadow = "none";
@@ -138,12 +144,20 @@ function card_mouse_down(event) {
 
 document.body.addEventListener('mousemove', e => { rotate(e); });
 document.body.addEventListener('drag', e => { rotate(e); });
+document.body.addEventListener('touchmove', e => { rotate(e, true); });
 
-function rotate(e) {
+function rotate(e, touchscreen = false) {
+    var x, y;
     if (window.state == 2 && window.is_clicked) {
         var card = document.getElementById("card");
-        var x = e.clientX;
-        var y = e.clientY;
+        if (touchscreen) {
+            // console.log(e);
+            x = e.changedTouches[0].clientX;
+            y = e.changedTouches[0].clientY;
+        } else {
+            x = e.clientX;
+            y = e.clientY;
+        }
         var dx = x - window.click_x;
         var dy = 100;
         //
@@ -169,6 +183,7 @@ function rotate(e) {
 
 document.body.addEventListener('mouseup', e => { click_up(e); });
 document.body.addEventListener('mouseleave', e => { click_up(e); });
+document.body.addEventListener('touchend', e => { click_up(e); });
 
 function click_up(e) {
     if (window.state == 2) {

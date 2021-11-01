@@ -376,6 +376,6 @@ const quiz_relations = [{
 // TOUS LES QUIZS SONT DANS LA VARIABLE QUIZS
 
 const Quizs = {
-    "Logique (incomplet)": quiz_logique,
+    "Logique - incomplet": quiz_logique,
     "Relations": quiz_relations
 };
