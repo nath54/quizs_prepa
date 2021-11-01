@@ -61,6 +61,8 @@ function next_question() {
         document.getElementById("card_hypotheses").innerHTML = "";
         document.getElementById("card_resultat").innerHTML = "";
         MathJax.typesetPromise();
+        card.style.rotate = "0rad";
+        card.style.boxShadow = "none";
         window.state = 1;
         // On affiche le score
         document.getElementById("score").innerHTML = "Score : " + score + " / " + nb_question;
@@ -127,6 +129,7 @@ function card_mouse_down(event) {
         window.click_y = event.clientY;
         window.is_clicked = true;
         card.style.rotate = "0rad";
+        card.style.boxShadow = "none";
         window.agl = 0;
     }
 }
@@ -150,6 +153,15 @@ function rotate(e) {
             // console.log("agl : ", agl);
             card.style.rotate = "" + agl + "rad";
             window.agl = agl;
+            //
+            if (agl < 0) {
+                var aa = Math.abs(agl);
+                card.style.boxShadow = "0 0 0 " + (aa / 2.0) + "rem red";
+            } else if (agl > 0) {
+                card.style.boxShadow = "0 0 0 " + (agl / 2.0) + "rem green";
+            } else {
+                card.style.boxShadow = "none";
+            }
         }
     }
 }
@@ -163,6 +175,7 @@ function click_up(e) {
         window.click_y = 0;
         window.is_clicked = false;
         card.style.rotate = "0rad";
+        card.style.boxShadow = "none";
         if (window.agl == -lim_agl) {
             // C'est raté
             window.questions_fausses.push(window.questions[window.question_actu_id]);
