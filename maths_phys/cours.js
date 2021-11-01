@@ -60,6 +60,7 @@ function init() {
 
 function affMots() {
     var main_container = document.getElementById("container");
+    main_container.innerHTML = "";
     for (theme of Object.keys(window.cours)) {
         var titre = document.createElement("h2");
         titre.innerHTML = theme + " : ";
