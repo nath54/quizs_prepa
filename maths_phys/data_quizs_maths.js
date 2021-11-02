@@ -360,14 +360,161 @@ const quiz_relations = [{
     },
 ];
 
+const quiz_reels = [{
+    "type": "proposition",
+    "titre": "Axiome de récurrence",
+    "hypotheses": "Soit $P$ définie sur $n \\in $#N",
+    "resultat": "$(P(0) \\land (\\forall n \\in $#N$, P(n) \\implies P(n+1)))) \\implies (\\forall n \\in $#N$, P(n))$",
+    "id": 50
+}, {
+    "type": "theoreme",
+    "titre": "propriété fondamentale de #N",
+    "hypotheses": "",
+    "resultat": "Tout sous-ensemble non vide et majoré de #N admet un plus grand élément",
+    "id": 51
+}, {
+    "type": "corollaire",
+    "titre": "Corollaire  de la propriété fondamentale de #N",
+    "hypotheses": "",
+    "resultat": "Tout sous-ensemble non vide de #N admet un plus petit élément.",
+    "id": 52
+}, {
+    "type": "theoreme",
+    "titre": "équivalence de la propriété fondamentale de #N",
+    "hypotheses": "",
+    "resultat": "La propriété fondamentale de #N est équivalente à l'axiome de récurrence.",
+    "id": 53
+}, {
+    "type": "proposition",
+    "titre": "Propriétés de l'addition et du produit d'entiers",
+    "hypotheses": "Soient $a$, $b$ et $c$ des éléments de #N",
+    "resultat": "<ul> <li>$a+0=0+a=a$ ($0$ est élément neutre pour $+$)</li> <li>$a \\times 0 = 0 \\times a = 0$ ($0$ est absorbant pour $\\times$) </li> <li>$a + 1 = 1 + a$</li> <li> $a \\times 1 = 1 \\times a = a$ ($1$ est neutre pour $\\times$) </li> <li>$(a+b)+c = a + (b + c)$ ($\\times$ est associative)</li> <li>$a+b=b+a$ ($+$ est commutative)</li> <li>$a \\times (b + c) = a \\times b + a \\times c$ ($\\times$ est distributive sur $+$)</li> <li>$a \\times b = b \\times a$ ($\\times$ est commutative) </li> <li>$(a \\times b) \\times c = a \\times (b \\times c)$ ($\\times$ est associative)</li> <li>$ab = 0  \\implies a = 0 \\lor b = 0$ (intégrité de $($#N$, \\times)$)</li> <li>$a + b = 0 \\implies a = 0 \\land b = 0$ </li> <li>$a + b = a + c \\implies b = c$ (régularité pour $+$)</li> <li>Si $a \\neq 0, ab = ac \\implies b = c$ (régularité pour $\\times$)</li> </ul>",
+    "id": 54
+}, {
+    "type": "proposition",
+    "titre": "Relation d'ordre, somme et produit",
+    "hypotheses": "Soit $a$, $b$, $c$ et $d$ des entiers naturels.",
+    "resultat": "<ul><li>Si $a \\leq c$ et $b \\leq d$ alors $a + b \\leq c + d$ avec égalité si et seulement si $a = c$ et $b = d$</li> <li>si $0 \\lt a \\leq c$ et $0 \\lt b \\leq d$ alors $ab \\leq cd$ avec égalité si et seulement si $a=c$ et $b=d$ </li></ul>",
+    "id": 55
+}, {
+    "type": "proposition",
+    "titre": "#Z peut être vu comme un prolongement de #N",
+    "hypotheses": "",
+    "resultat": "L'application : <br />$i: $#N$ \\rightarrow $#Z <br />$\\ n \\rightarrow \\overline{(n, 0)}$ <br /> est une injection compatible avec les lois $+$ et $\\times$.",
+    "id": 56
+}, {
+    "type": "proposition",
+    "titre": "Compatibilité de la relation d'ordre avec le produit",
+    "hypotheses": "",
+    "resultat": "<ol> <li>Soit $c \\in $#N$^*$. Alors, $\\forall (a,b) \\in $#Z$^2$, <br /> $a \\lt b \\iff ac \\lt bc$ et $a \\leq b \\iff ac \\leq bc$</li> <br /> <li>Soit $c \\in $#Z$^*$, <br /> $a \\lt b \\iff ac \\gt bc$ et $a \\leq b \\iff ac \\geq bc$</li> </ol>",
+    "id": 57
+}, {
+    "type": "definition",
+    "titre": "Notation usuelle pour un rationnel",
+    "hypotheses": "",
+    "resultat": "La classe $\\overline{(a,b)}$ du couple $(a, b)$ est notée $\\frac{a}{b}$.",
+    "id": 58
+}, {
+    "type": "theoreme",
+    "titre": "Définition de l'addition et du produit de rationnels",
+    "hypotheses": "",
+    "resultat": "Les lois définies sur #Z$\\times$#N$^*$ par $(a,b) + (c,d) = (ad+bc, bd)$ et $(a, b) \\times (c,d) = (ac, bd)$ passent au quotient, définissant sur #Q les lois pouvant être décrites avec les notations usuelles par : <br /> $\\frac{a}{b} + \\frac{c}{d} = \\frac{ad + bc}{bd}$ et $\\frac{a}{b} \\times \\frac{c}{d} = \\frac{ac}{bd}$",
+    "id": 59
+}, {
+    "type": "theoreme",
+    "titre": "Propriétés des lois de #Q",
+    "hypotheses": "",
+    "resultat": "<ul> <li>Les lois $+$ et $\\times$ sont associatives</li> <li>Les lois $+$ et $\\times$ sont commutatives</li> <li>La loi $\\times$ est distributive sur $+$</li> <li>L'élément $0=\\frac{0}{1}$ est neutre pour $+$, et tout élément $\\frac{a}{b}$ admet un opposé $\\frac{-a}{b}$</li> <li>Le rationnel $\\frac{a}{b}$ est égal = $0$ si et seulement si $a=0$</li> <li>L'élément $1=\\frac{1}{1}$ est neutre pour $\\times$, et tout élément $\\frac{a}{b}$ non nul est inversible, d'inverse $\\frac{b}{a}$</li> </ul> Ainsi que #Q est un corps.",
+    "id": 60
+}, {
+    "type": "remarque",
+    "titre": "inclusion de #Z dans #Q",
+    "hypotheses": "",
+    "resultat": "Les entiers $a \\in $#Z peuvent être identifiés aux rationnels $\\frac{a}{1}$ (dans le sens où $a \\rightarrow \\frac{a}{1}$ définit une injection de #Z dans #Q). Via cette identification, on peut considérer que #Z $\\subset$ #Q.",
+    "id": 61
+}, {
+    "type": "definition",
+    "titre": "Inégalité dans #Q",
+    "hypotheses": "Soit $q = \\frac{a}{b}$ et $r=\\frac{c}{d}$ deux rationnels (avec $b$ et $d$ dans #N$^*$).",
+    "resultat": "Alors le signe de l'entier relatif $ad-bc$ est indépendant de la représentation choisie (avec un dénominateur positif de $q$ et $q'$. On définit alors la relation d'ordre sur $q$ par : <br /> $q \\leq r \\iff ad - bc \\leq 0$",
+    "id": 62
+}, {
+    "type": "theoreme",
+    "titre": "Relation $\\leq$ sur #Q",
+    "hypotheses": "",
+    "resultat": "La relation $\\leq$ ainsi difinie sur #Q est une relation d'ordre total.",
+    "id": 63
+}, {
+    "type": "definition",
+    "titre": "Nombres incommensurables",
+    "hypotheses": "Soit $(x, y) \\in ($#R$^*)^2$",
+    "resultat": "On dit que $x$ et $y$ sont incommensurables si $\\frac{x}{y}$ est irrationnel.",
+    "id": 64
+}, {
+    "type": "proposition",
+    "titre": "Existence de nombres irrationnels",
+    "hypotheses": "",
+    "resultat": "Si $n$ n'est pas un carré parfait (donc si $n$ ne s'écrit pas sous la forme $n = m^2$ pour un certain entier $m$), alors $\\sqrt(N)$ est irrationnel.",
+    "id": 65
+}, {
+    "type": "axiome",
+    "titre": "Propriété fondamentale de #R",
+    "hypotheses": "Soit $E$ un sous-ensemble non vide et majoré de #R.",
+    "resultat": "Alors $E$ admet une borne supérieure dans #R.",
+    "id": 66
+}, {
+    "type": "theoreme",
+    "titre": "Propriété fondamentale de #R, exprimée avec la borne inférieure",
+    "hypotheses": "Soit $E$ un sous-ensemble non vide et minoré de #R.",
+    "resultat": "Alors $E$ admet une borne inférieure dans #R.",
+    "id": 67
+}, {
+    "type": "propriete",
+    "titre": "Relation d'ordre sur #R",
+    "hypotheses": "",
+    "resultat": "La relation d'ordre sur #R vérifie les 4 propriétés élémentaires suivants : <ol> <li>C'est une relation d'ordre totale</li> <li>$\\forall (x,y) \\in$#R$^2$, $x \\leq y \\iff y - x \\in$#R$_+$</li> <li> $\\forall (x,y) \\in ($#R$_+)^2$, $x+y \\geq 0$ avec égalité si et seulement si $x = y = 0$ </li> <li>$\\forall (x,y) \\in ($#R$_+)^2$, $xy \\geq 0$</li> </ol>",
+    "id": 68
+}, {
+    "type": "corollaire",
+    "titre": "Règle des signes pour le produit",
+    "hypotheses": "Soit $x$ et $y$ deux réels.",
+    "resultat": "<ol> <li>Si $x \\leq 0$ alors $-x \\geq 0$</li> <li>Si $x \\geq 0$, alors $-x \\leq 0$</li> <li>Si $x \\geq 0$#et$y \\leq 0$ ou si $x \\leq 0$#et$y \\geq 0$, alors $xy \\leq 0$</li> <li>Si $x \\leq 0$ et $y \\leq 0$, alors $xy \\geq 0$</li> </ol>",
+    "id": 69
+}, {
+    "type": "proposition",
+    "titre": "Manipulation élémentaires d'inégalités",
+    "hypotheses": "Soient $a$, $b$ et $c$ des réels.",
+    "resultat": "<ol> <li>Si $a \\leq b$ et $c \\leq d$, alors $a + c \\leq b + d$</li> <li>Si $a \\leq b$ alors $-b \\leq -a$ </li> <li>Si $a \\leq b$ et $c \\leq d$, alors $a-d \\leq b-c$</li> <li>Si $0 \\lt a \\leq b$ et $0 \\lt c \\leq d$, alors $0 \\lt ac \\leq bd$, avec égalité si et seulement si $a=b$ et $c=d$ </li> <li>Si $a \\geq 0$ et $c \\leq d$, alors $ac \\leq ad$</li> <li>Si $a \\leq 0$ et $c \\leq d$, alors $ac \\geq ad$</li> <li>Pour toutes les autres situations de produit d'inégalité, raisonner d'abord sur la valeur absolue, puis ajouter le signe</li> </ol>",
+    "id": 70
+}, {
+    "type": "methode",
+    "titre": "Majorer, minorer",
+    "hypotheses": "",
+    "resultat": "Pour obtenir des inégalités, on peut : <ul> <li>Tout passer du même côté (si l'inégalité est donnée) et essayer de factoriser pour déterminer le signe.</li> <li>Procéder par étude de fonction, si l'inégalité est donnée : on passe tout du même côté, et on étudie le signe de la fonction obtenue, grâce à une étude de variations.</li> <li>Utiliser une propriété de convexité ou de concavité : une fonction dérivable $f$ est convexe si $f'$ est croissante (donc la pente est de plus en plus forte). Intuitivement, la convexité se traduit par le fait que les tangentes sont sous la courbe, et les cordes sont au-dessus de la courbe.</li> <li>Utiliser des inégalités classiques (en premiere lieu l'inéaglité triangulaire, l'inégalité de Cauchy-Schwarz, l'inégalité arithmético-géométrique...). L'inégalité triangulaire est à utiliser dès lors qu'on cherche à majorer la valeur absolue (ou le module) d'une somme dont on sait majorer la valeur absolue de chaque terme : il faut d'abord sortir ces termes de la valeur absolue globale et ce grâce à l'inégalité triangulaire.</li> </ul>",
+    "id": 71
+}, {
+    "type": "definition",
+    "titre": "Valeur absolue",
+    "hypotheses": "Soit $x \\in $#R",
+    "resultat": "La valeur absolue de $x$, notée $|x|$, est la réel obtenu de $x$ en changeant si besoin son signe de sorte à obtenir une quantité positive : <br /> $\\left\\{ \\begin{array}{ll} x \\text{ si } x \\geq 0 \\\\ -x \\text{ si } x \\lt 0 \\end{array} \\right.$.",
+    "id": 72
+}, {
+    "type": "remarque",
+    "titre": "Utilisation de la valeur absolue",
+    "hypotheses": "",
+    "resultat": "La valeur absolue est souvent utilisée lorsqu'on veut montrer qu'une quantité reste bornée, c'est-à-dire peut être à la fois majorée et minorée. En effet, majorer $|A|$ revient à majorer et minorer $A$, puisque $|A| \\leq B$ équivaut à $-B \\leq A \\leq$",
+    "id": 73
+}];
+
 /*
 
-    {
+    ,{
         "type": "",
         "titre": "",
         "hypotheses": "",
-        "resultat": ""
-    },
+        "resultat": "",
+        "id": 0
+    }
 
 
 */
@@ -377,5 +524,6 @@ const quiz_relations = [{
 
 const Quizs = {
     "Logique - incomplet": quiz_logique,
-    "Relations": quiz_relations
+    "Relations": quiz_relations,
+    "Nombres réels": quiz_reels
 };

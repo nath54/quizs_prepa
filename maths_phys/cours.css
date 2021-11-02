@@ -46,6 +46,17 @@
     border-style: double;
 }
 
+.axiome,
+.axiome * {
+    background-color: rgb(7, 31, 75);
+}
+
+.axiome {
+    border-color: rgb(1, 71, 201);
+    border-width: 10px;
+    border-style: double;
+}
+
 .methode,
 .methode * {
     background-color: rgb(5, 6, 40);
@@ -71,6 +82,15 @@
 
 .corollaire {
     border: 2px dashed rgb(200, 50, 60);
+}
+
+.remarque,
+.remarque * {
+    background-color: rgb(2, 32, 41);
+}
+
+.remarque {
+    border: 2px solid rgb(3, 151, 209);
 }
 
 .texte_physique,

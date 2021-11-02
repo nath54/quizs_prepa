@@ -65,7 +65,7 @@ function affMots() {
     for (theme of Object.keys(window.cours)) {
         var titre = document.createElement("h2");
         titre.innerHTML = theme + " : ";
-        titre.style.marginTop = "25px";
+        titre.style.marginTop = "75px";
         main_container.appendChild(titre);
         main_container.appendChild(document.createElement("hr"));
         main_container.style.marginRight = "auto";
@@ -102,7 +102,7 @@ function affMots() {
             if (elt.hasOwnProperty("titre")) {
                 var complement_titre = "";
                 //
-                if (elt.type == "definition") { complement_titre = "Définition : "; } else if (elt.type == "proposition") { complement_titre = "Proposition : "; } else if (elt.type == "propriete") { complement_titre = "Propriété : "; } else if (elt.type == "theoreme") { complement_titre = "Théorème : "; } else if (elt.type == "methode") { complement_titre = "Méthode : "; } else if (elt.type == "lemme") { complement_titre = "Lemme : "; } else if (elt.type == "corollaire") { complement_titre = "Corollaire : "; }
+                if (elt.type == "definition") { complement_titre = "Définition : "; } else if (elt.type == "proposition") { complement_titre = "Proposition : "; } else if (elt.type == "propriete") { complement_titre = "Propriété : "; } else if (elt.type == "theoreme") { complement_titre = "Théorème : "; } else if (elt.type == "methode") { complement_titre = "Méthode : "; } else if (elt.type == "lemme") { complement_titre = "Lemme : "; } else if (elt.type == "corollaire") { complement_titre = "Corollaire : "; } else if (elt.type == "remarque") { complement_titre = "Remarque : "; }
                 //
                 var titre = document.createElement("h3");
                 titre.innerHTML = complement_titre + compile_txt(elt.titre);
@@ -117,9 +117,11 @@ function affMots() {
             box.appendChild(hr);
             //
             if (elt.hasOwnProperty("hypotheses")) {
-                var ph = document.createElement("p");
+                var ph = document.createElement("i");
                 ph.innerHTML = compile_txt(elt["hypotheses"]);
                 box.appendChild(ph);
+
+                box.append(document.createElement("br"));
             }
             if (elt.hasOwnProperty("resultat")) {
                 var pr = document.createElement("p");
