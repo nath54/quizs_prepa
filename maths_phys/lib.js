@@ -17,6 +17,7 @@ function compile_txt(txt) {
         "#Q": "$\\mathbb{Q}$",
         "#R": "$\\mathbb{R}$",
         "#C": "$\\mathbb{C}$",
+        "#D": "$\\mathbb{D}$",
         "#x": "$\\times$",
         "#pi": "$\\pi$",
         "#x_barre": "$\\overline{x}$",

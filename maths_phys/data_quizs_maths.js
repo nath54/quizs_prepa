@@ -361,150 +361,303 @@ const quiz_relations = [{
 ];
 
 const quiz_reels = [{
-    "type": "proposition",
-    "titre": "Axiome de récurrence",
-    "hypotheses": "Soit $P$ définie sur $n \\in $#N",
-    "resultat": "$(P(0) \\land (\\forall n \\in $#N$, P(n) \\implies P(n+1)))) \\implies (\\forall n \\in $#N$, P(n))$",
-    "id": 50
-}, {
-    "type": "theoreme",
-    "titre": "propriété fondamentale de #N",
-    "hypotheses": "",
-    "resultat": "Tout sous-ensemble non vide et majoré de #N admet un plus grand élément",
-    "id": 51
-}, {
-    "type": "corollaire",
-    "titre": "Corollaire  de la propriété fondamentale de #N",
-    "hypotheses": "",
-    "resultat": "Tout sous-ensemble non vide de #N admet un plus petit élément.",
-    "id": 52
-}, {
-    "type": "theoreme",
-    "titre": "équivalence de la propriété fondamentale de #N",
-    "hypotheses": "",
-    "resultat": "La propriété fondamentale de #N est équivalente à l'axiome de récurrence.",
-    "id": 53
-}, {
-    "type": "proposition",
-    "titre": "Propriétés de l'addition et du produit d'entiers",
-    "hypotheses": "Soient $a$, $b$ et $c$ des éléments de #N",
-    "resultat": "<ul> <li>$a+0=0+a=a$ ($0$ est élément neutre pour $+$)</li> <li>$a \\times 0 = 0 \\times a = 0$ ($0$ est absorbant pour $\\times$) </li> <li>$a + 1 = 1 + a$</li> <li> $a \\times 1 = 1 \\times a = a$ ($1$ est neutre pour $\\times$) </li> <li>$(a+b)+c = a + (b + c)$ ($\\times$ est associative)</li> <li>$a+b=b+a$ ($+$ est commutative)</li> <li>$a \\times (b + c) = a \\times b + a \\times c$ ($\\times$ est distributive sur $+$)</li> <li>$a \\times b = b \\times a$ ($\\times$ est commutative) </li> <li>$(a \\times b) \\times c = a \\times (b \\times c)$ ($\\times$ est associative)</li> <li>$ab = 0  \\implies a = 0 \\lor b = 0$ (intégrité de $($#N$, \\times)$)</li> <li>$a + b = 0 \\implies a = 0 \\land b = 0$ </li> <li>$a + b = a + c \\implies b = c$ (régularité pour $+$)</li> <li>Si $a \\neq 0, ab = ac \\implies b = c$ (régularité pour $\\times$)</li> </ul>",
-    "id": 54
-}, {
-    "type": "proposition",
-    "titre": "Relation d'ordre, somme et produit",
-    "hypotheses": "Soit $a$, $b$, $c$ et $d$ des entiers naturels.",
-    "resultat": "<ul><li>Si $a \\leq c$ et $b \\leq d$ alors $a + b \\leq c + d$ avec égalité si et seulement si $a = c$ et $b = d$</li> <li>si $0 \\lt a \\leq c$ et $0 \\lt b \\leq d$ alors $ab \\leq cd$ avec égalité si et seulement si $a=c$ et $b=d$ </li></ul>",
-    "id": 55
-}, {
-    "type": "proposition",
-    "titre": "#Z peut être vu comme un prolongement de #N",
-    "hypotheses": "",
-    "resultat": "L'application : <br />$i: $#N$ \\rightarrow $#Z <br />$\\ n \\rightarrow \\overline{(n, 0)}$ <br /> est une injection compatible avec les lois $+$ et $\\times$.",
-    "id": 56
-}, {
-    "type": "proposition",
-    "titre": "Compatibilité de la relation d'ordre avec le produit",
-    "hypotheses": "",
-    "resultat": "<ol> <li>Soit $c \\in $#N$^*$. Alors, $\\forall (a,b) \\in $#Z$^2$, <br /> $a \\lt b \\iff ac \\lt bc$ et $a \\leq b \\iff ac \\leq bc$</li> <br /> <li>Soit $c \\in $#Z$^*$, <br /> $a \\lt b \\iff ac \\gt bc$ et $a \\leq b \\iff ac \\geq bc$</li> </ol>",
-    "id": 57
-}, {
-    "type": "definition",
-    "titre": "Notation usuelle pour un rationnel",
-    "hypotheses": "",
-    "resultat": "La classe $\\overline{(a,b)}$ du couple $(a, b)$ est notée $\\frac{a}{b}$.",
-    "id": 58
-}, {
-    "type": "theoreme",
-    "titre": "Définition de l'addition et du produit de rationnels",
-    "hypotheses": "",
-    "resultat": "Les lois définies sur #Z$\\times$#N$^*$ par $(a,b) + (c,d) = (ad+bc, bd)$ et $(a, b) \\times (c,d) = (ac, bd)$ passent au quotient, définissant sur #Q les lois pouvant être décrites avec les notations usuelles par : <br /> $\\frac{a}{b} + \\frac{c}{d} = \\frac{ad + bc}{bd}$ et $\\frac{a}{b} \\times \\frac{c}{d} = \\frac{ac}{bd}$",
-    "id": 59
-}, {
-    "type": "theoreme",
-    "titre": "Propriétés des lois de #Q",
-    "hypotheses": "",
-    "resultat": "<ul> <li>Les lois $+$ et $\\times$ sont associatives</li> <li>Les lois $+$ et $\\times$ sont commutatives</li> <li>La loi $\\times$ est distributive sur $+$</li> <li>L'élément $0=\\frac{0}{1}$ est neutre pour $+$, et tout élément $\\frac{a}{b}$ admet un opposé $\\frac{-a}{b}$</li> <li>Le rationnel $\\frac{a}{b}$ est égal = $0$ si et seulement si $a=0$</li> <li>L'élément $1=\\frac{1}{1}$ est neutre pour $\\times$, et tout élément $\\frac{a}{b}$ non nul est inversible, d'inverse $\\frac{b}{a}$</li> </ul> Ainsi que #Q est un corps.",
-    "id": 60
-}, {
-    "type": "remarque",
-    "titre": "inclusion de #Z dans #Q",
-    "hypotheses": "",
-    "resultat": "Les entiers $a \\in $#Z peuvent être identifiés aux rationnels $\\frac{a}{1}$ (dans le sens où $a \\rightarrow \\frac{a}{1}$ définit une injection de #Z dans #Q). Via cette identification, on peut considérer que #Z $\\subset$ #Q.",
-    "id": 61
-}, {
-    "type": "definition",
-    "titre": "Inégalité dans #Q",
-    "hypotheses": "Soit $q = \\frac{a}{b}$ et $r=\\frac{c}{d}$ deux rationnels (avec $b$ et $d$ dans #N$^*$).",
-    "resultat": "Alors le signe de l'entier relatif $ad-bc$ est indépendant de la représentation choisie (avec un dénominateur positif de $q$ et $q'$. On définit alors la relation d'ordre sur $q$ par : <br /> $q \\leq r \\iff ad - bc \\leq 0$",
-    "id": 62
-}, {
-    "type": "theoreme",
-    "titre": "Relation $\\leq$ sur #Q",
-    "hypotheses": "",
-    "resultat": "La relation $\\leq$ ainsi difinie sur #Q est une relation d'ordre total.",
-    "id": 63
-}, {
-    "type": "definition",
-    "titre": "Nombres incommensurables",
-    "hypotheses": "Soit $(x, y) \\in ($#R$^*)^2$",
-    "resultat": "On dit que $x$ et $y$ sont incommensurables si $\\frac{x}{y}$ est irrationnel.",
-    "id": 64
-}, {
-    "type": "proposition",
-    "titre": "Existence de nombres irrationnels",
-    "hypotheses": "",
-    "resultat": "Si $n$ n'est pas un carré parfait (donc si $n$ ne s'écrit pas sous la forme $n = m^2$ pour un certain entier $m$), alors $\\sqrt(N)$ est irrationnel.",
-    "id": 65
-}, {
-    "type": "axiome",
-    "titre": "Propriété fondamentale de #R",
-    "hypotheses": "Soit $E$ un sous-ensemble non vide et majoré de #R.",
-    "resultat": "Alors $E$ admet une borne supérieure dans #R.",
-    "id": 66
-}, {
-    "type": "theoreme",
-    "titre": "Propriété fondamentale de #R, exprimée avec la borne inférieure",
-    "hypotheses": "Soit $E$ un sous-ensemble non vide et minoré de #R.",
-    "resultat": "Alors $E$ admet une borne inférieure dans #R.",
-    "id": 67
-}, {
-    "type": "propriete",
-    "titre": "Relation d'ordre sur #R",
-    "hypotheses": "",
-    "resultat": "La relation d'ordre sur #R vérifie les 4 propriétés élémentaires suivants : <ol> <li>C'est une relation d'ordre totale</li> <li>$\\forall (x,y) \\in$#R$^2$, $x \\leq y \\iff y - x \\in$#R$_+$</li> <li> $\\forall (x,y) \\in ($#R$_+)^2$, $x+y \\geq 0$ avec égalité si et seulement si $x = y = 0$ </li> <li>$\\forall (x,y) \\in ($#R$_+)^2$, $xy \\geq 0$</li> </ol>",
-    "id": 68
-}, {
-    "type": "corollaire",
-    "titre": "Règle des signes pour le produit",
-    "hypotheses": "Soit $x$ et $y$ deux réels.",
-    "resultat": "<ol> <li>Si $x \\leq 0$ alors $-x \\geq 0$</li> <li>Si $x \\geq 0$, alors $-x \\leq 0$</li> <li>Si $x \\geq 0$#et$y \\leq 0$ ou si $x \\leq 0$#et$y \\geq 0$, alors $xy \\leq 0$</li> <li>Si $x \\leq 0$ et $y \\leq 0$, alors $xy \\geq 0$</li> </ol>",
-    "id": 69
-}, {
-    "type": "proposition",
-    "titre": "Manipulation élémentaires d'inégalités",
-    "hypotheses": "Soient $a$, $b$ et $c$ des réels.",
-    "resultat": "<ol> <li>Si $a \\leq b$ et $c \\leq d$, alors $a + c \\leq b + d$</li> <li>Si $a \\leq b$ alors $-b \\leq -a$ </li> <li>Si $a \\leq b$ et $c \\leq d$, alors $a-d \\leq b-c$</li> <li>Si $0 \\lt a \\leq b$ et $0 \\lt c \\leq d$, alors $0 \\lt ac \\leq bd$, avec égalité si et seulement si $a=b$ et $c=d$ </li> <li>Si $a \\geq 0$ et $c \\leq d$, alors $ac \\leq ad$</li> <li>Si $a \\leq 0$ et $c \\leq d$, alors $ac \\geq ad$</li> <li>Pour toutes les autres situations de produit d'inégalité, raisonner d'abord sur la valeur absolue, puis ajouter le signe</li> </ol>",
-    "id": 70
-}, {
-    "type": "methode",
-    "titre": "Majorer, minorer",
-    "hypotheses": "",
-    "resultat": "Pour obtenir des inégalités, on peut : <ul> <li>Tout passer du même côté (si l'inégalité est donnée) et essayer de factoriser pour déterminer le signe.</li> <li>Procéder par étude de fonction, si l'inégalité est donnée : on passe tout du même côté, et on étudie le signe de la fonction obtenue, grâce à une étude de variations.</li> <li>Utiliser une propriété de convexité ou de concavité : une fonction dérivable $f$ est convexe si $f'$ est croissante (donc la pente est de plus en plus forte). Intuitivement, la convexité se traduit par le fait que les tangentes sont sous la courbe, et les cordes sont au-dessus de la courbe.</li> <li>Utiliser des inégalités classiques (en premiere lieu l'inéaglité triangulaire, l'inégalité de Cauchy-Schwarz, l'inégalité arithmético-géométrique...). L'inégalité triangulaire est à utiliser dès lors qu'on cherche à majorer la valeur absolue (ou le module) d'une somme dont on sait majorer la valeur absolue de chaque terme : il faut d'abord sortir ces termes de la valeur absolue globale et ce grâce à l'inégalité triangulaire.</li> </ul>",
-    "id": 71
-}, {
-    "type": "definition",
-    "titre": "Valeur absolue",
-    "hypotheses": "Soit $x \\in $#R",
-    "resultat": "La valeur absolue de $x$, notée $|x|$, est la réel obtenu de $x$ en changeant si besoin son signe de sorte à obtenir une quantité positive : <br /> $\\left\\{ \\begin{array}{ll} x \\text{ si } x \\geq 0 \\\\ -x \\text{ si } x \\lt 0 \\end{array} \\right.$.",
-    "id": 72
-}, {
-    "type": "remarque",
-    "titre": "Utilisation de la valeur absolue",
-    "hypotheses": "",
-    "resultat": "La valeur absolue est souvent utilisée lorsqu'on veut montrer qu'une quantité reste bornée, c'est-à-dire peut être à la fois majorée et minorée. En effet, majorer $|A|$ revient à majorer et minorer $A$, puisque $|A| \\leq B$ équivaut à $-B \\leq A \\leq$",
-    "id": 73
-}];
+        "type": "proposition",
+        "titre": "Axiome de récurrence",
+        "hypotheses": "Soit $P$ définie sur $n \\in $#N",
+        "resultat": "$(P(0) \\land (\\forall n \\in $#N$, P(n) \\implies P(n+1)))) \\implies (\\forall n \\in $#N$, P(n))$",
+        "id": 50
+    }, {
+        "type": "theoreme",
+        "titre": "propriété fondamentale de #N",
+        "hypotheses": "",
+        "resultat": "Tout sous-ensemble non vide et majoré de #N admet un plus grand élément",
+        "id": 51
+    }, {
+        "type": "corollaire",
+        "titre": "Corollaire  de la propriété fondamentale de #N",
+        "hypotheses": "",
+        "resultat": "Tout sous-ensemble non vide de #N admet un plus petit élément.",
+        "id": 52
+    }, {
+        "type": "theoreme",
+        "titre": "équivalence de la propriété fondamentale de #N",
+        "hypotheses": "",
+        "resultat": "La propriété fondamentale de #N est équivalente à l'axiome de récurrence.",
+        "id": 53
+    }, {
+        "type": "proposition",
+        "titre": "Propriétés de l'addition et du produit d'entiers",
+        "hypotheses": "Soient $a$, $b$ et $c$ des éléments de #N",
+        "resultat": "<ul> <li>$a+0=0+a=a$ ($0$ est élément neutre pour $+$)</li> <li>$a \\times 0 = 0 \\times a = 0$ ($0$ est absorbant pour $\\times$) </li> <li>$a + 1 = 1 + a$</li> <li> $a \\times 1 = 1 \\times a = a$ ($1$ est neutre pour $\\times$) </li> <li>$(a+b)+c = a + (b + c)$ ($\\times$ est associative)</li> <li>$a+b=b+a$ ($+$ est commutative)</li> <li>$a \\times (b + c) = a \\times b + a \\times c$ ($\\times$ est distributive sur $+$)</li> <li>$a \\times b = b \\times a$ ($\\times$ est commutative) </li> <li>$(a \\times b) \\times c = a \\times (b \\times c)$ ($\\times$ est associative)</li> <li>$ab = 0  \\implies a = 0 \\lor b = 0$ (intégrité de $($#N$, \\times)$)</li> <li>$a + b = 0 \\implies a = 0 \\land b = 0$ </li> <li>$a + b = a + c \\implies b = c$ (régularité pour $+$)</li> <li>Si $a \\neq 0, ab = ac \\implies b = c$ (régularité pour $\\times$)</li> </ul>",
+        "id": 54
+    }, {
+        "type": "proposition",
+        "titre": "Relation d'ordre, somme et produit",
+        "hypotheses": "Soit $a$, $b$, $c$ et $d$ des entiers naturels.",
+        "resultat": "<ul><li>Si $a \\leqslant c$ et $b \\leqslant d$ alors $a + b \\leqslant c + d$ avec égalité si et seulement si $a = c$ et $b = d$</li> <li>si $0 \\lt a \\leqslant c$ et $0 \\lt b \\leqslant d$ alors $ab \\leqslant cd$ avec égalité si et seulement si $a=c$ et $b=d$ </li></ul>",
+        "id": 55
+    }, {
+        "type": "proposition",
+        "titre": "#Z peut être vu comme un prolongement de #N",
+        "hypotheses": "",
+        "resultat": "L'application : <br />$i: $#N$ \\rightarrow $#Z <br />$\\ n \\rightarrow \\overline{(n, 0)}$ <br /> est une injection compatible avec les lois $+$ et $\\times$.",
+        "id": 56
+    }, {
+        "type": "proposition",
+        "titre": "Compatibilité de la relation d'ordre avec le produit",
+        "hypotheses": "",
+        "resultat": "<ol> <li>Soit $c \\in $#N$^*$. Alors, $\\forall (a,b) \\in $#Z$^2$, <br /> $a \\lt b \\iff ac \\lt bc$ et $a \\leqslant b \\iff ac \\leqslant bc$</li> <br /> <li>Soit $c \\in $#Z$^*$, <br /> $a \\lt b \\iff ac \\gt bc$ et $a \\leqslant b \\iff ac \\geqslant bc$</li> </ol>",
+        "id": 57
+    }, {
+        "type": "definition",
+        "titre": "Notation usuelle pour un rationnel",
+        "hypotheses": "",
+        "resultat": "La classe $\\overline{(a,b)}$ du couple $(a, b)$ est notée $\\frac{a}{b}$.",
+        "id": 58
+    }, {
+        "type": "theoreme",
+        "titre": "Définition de l'addition et du produit de rationnels",
+        "hypotheses": "",
+        "resultat": "Les lois définies sur #Z$\\times$#N$^*$ par $(a,b) + (c,d) = (ad+bc, bd)$ et $(a, b) \\times (c,d) = (ac, bd)$ passent au quotient, définissant sur #Q les lois pouvant être décrites avec les notations usuelles par : <br /> $\\frac{a}{b} + \\frac{c}{d} = \\frac{ad + bc}{bd}$ et $\\frac{a}{b} \\times \\frac{c}{d} = \\frac{ac}{bd}$",
+        "id": 59
+    }, {
+        "type": "theoreme",
+        "titre": "Propriétés des lois de #Q",
+        "hypotheses": "",
+        "resultat": "<ul> <li>Les lois $+$ et $\\times$ sont associatives</li> <li>Les lois $+$ et $\\times$ sont commutatives</li> <li>La loi $\\times$ est distributive sur $+$</li> <li>L'élément $0=\\frac{0}{1}$ est neutre pour $+$, et tout élément $\\frac{a}{b}$ admet un opposé $\\frac{-a}{b}$</li> <li>Le rationnel $\\frac{a}{b}$ est égal = $0$ si et seulement si $a=0$</li> <li>L'élément $1=\\frac{1}{1}$ est neutre pour $\\times$, et tout élément $\\frac{a}{b}$ non nul est inversible, d'inverse $\\frac{b}{a}$</li> </ul> Ainsi que #Q est un corps.",
+        "id": 60
+    }, {
+        "type": "remarque",
+        "titre": "inclusion de #Z dans #Q",
+        "hypotheses": "",
+        "resultat": "Les entiers $a \\in $#Z peuvent être identifiés aux rationnels $\\frac{a}{1}$ (dans le sens où $a \\rightarrow \\frac{a}{1}$ définit une injection de #Z dans #Q). Via cette identification, on peut considérer que #Z $\\subset$ #Q.",
+        "id": 61
+    }, {
+        "type": "definition",
+        "titre": "Inégalité dans #Q",
+        "hypotheses": "Soit $q = \\frac{a}{b}$ et $r=\\frac{c}{d}$ deux rationnels (avec $b$ et $d$ dans #N$^*$).",
+        "resultat": "Alors le signe de l'entier relatif $ad-bc$ est indépendant de la représentation choisie (avec un dénominateur positif de $q$ et $q'$. On définit alors la relation d'ordre sur $q$ par : <br /> $q \\leqslant r \\iff ad - bc \\leqslant 0$",
+        "id": 62
+    }, {
+        "type": "theoreme",
+        "titre": "Relation $\\leqslant$ sur #Q",
+        "hypotheses": "",
+        "resultat": "La relation $\\leqslant$ ainsi difinie sur #Q est une relation d'ordre total.",
+        "id": 63
+    }, {
+        "type": "definition",
+        "titre": "Nombres incommensurables",
+        "hypotheses": "Soit $(x, y) \\in ($#R$^*)^2$",
+        "resultat": "On dit que $x$ et $y$ sont incommensurables si $\\frac{x}{y}$ est irrationnel.",
+        "id": 64
+    }, {
+        "type": "proposition",
+        "titre": "Existence de nombres irrationnels",
+        "hypotheses": "",
+        "resultat": "Si $n$ n'est pas un carré parfait (donc si $n$ ne s'écrit pas sous la forme $n = m^2$ pour un certain entier $m$), alors $\\sqrt(N)$ est irrationnel.",
+        "id": 65
+    }, {
+        "type": "axiome",
+        "titre": "Propriété fondamentale de #R",
+        "hypotheses": "Soit $E$ un sous-ensemble non vide et majoré de #R.",
+        "resultat": "Alors $E$ admet une borne supérieure dans #R.",
+        "id": 66
+    }, {
+        "type": "theoreme",
+        "titre": "Propriété fondamentale de #R, exprimée avec la borne inférieure",
+        "hypotheses": "Soit $E$ un sous-ensemble non vide et minoré de #R.",
+        "resultat": "Alors $E$ admet une borne inférieure dans #R.",
+        "id": 67
+    }, {
+        "type": "propriete",
+        "titre": "Relation d'ordre sur #R",
+        "hypotheses": "",
+        "resultat": "La relation d'ordre sur #R vérifie les 4 propriétés élémentaires suivants : <ol> <li>C'est une relation d'ordre totale</li> <li>$\\forall (x,y) \\in$#R$^2$, $x \\leqslant y \\iff y - x \\in$#R$_+$</li> <li> $\\forall (x,y) \\in ($#R$_+)^2$, $x+y \\geqslant 0$ avec égalité si et seulement si $x = y = 0$ </li> <li>$\\forall (x,y) \\in ($#R$_+)^2$, $xy \\geqslant 0$</li> </ol>",
+        "id": 68
+    }, {
+        "type": "corollaire",
+        "titre": "Règle des signes pour le produit",
+        "hypotheses": "Soit $x$ et $y$ deux réels.",
+        "resultat": "<ol> <li>Si $x \\leqslant 0$ alors $-x \\geqslant 0$</li> <li>Si $x \\geqslant 0$, alors $-x \\leqslant 0$</li> <li>Si $x \\geqslant 0$#et$y \\leqslant 0$ ou si $x \\leqslant 0$#et$y \\geqslant 0$, alors $xy \\leqslant 0$</li> <li>Si $x \\leqslant 0$ et $y \\leqslant 0$, alors $xy \\geqslant 0$</li> </ol>",
+        "id": 69
+    }, {
+        "type": "proposition",
+        "titre": "Manipulation élémentaires d'inégalités",
+        "hypotheses": "Soient $a$, $b$ et $c$ des réels.",
+        "resultat": "<ol> <li>Si $a \\leqslant b$ et $c \\leqslant d$, alors $a + c \\leqslant b + d$</li> <li>Si $a \\leqslant b$ alors $-b \\leqslant -a$ </li> <li>Si $a \\leqslant b$ et $c \\leqslant d$, alors $a-d \\leqslant b-c$</li> <li>Si $0 \\lt a \\leqslant b$ et $0 \\lt c \\leqslant d$, alors $0 \\lt ac \\leqslant bd$, avec égalité si et seulement si $a=b$ et $c=d$ </li> <li>Si $a \\geqslant 0$ et $c \\leqslant d$, alors $ac \\leqslant ad$</li> <li>Si $a \\leqslant 0$ et $c \\leqslant d$, alors $ac \\geqslant ad$</li> <li>Pour toutes les autres situations de produit d'inégalité, raisonner d'abord sur la valeur absolue, puis ajouter le signe</li> </ol>",
+        "id": 70
+    }, {
+        "type": "methode",
+        "titre": "Majorer, minorer",
+        "hypotheses": "",
+        "resultat": "Pour obtenir des inégalités, on peut : <ul> <li>Tout passer du même côté (si l'inégalité est donnée) et essayer de factoriser pour déterminer le signe.</li> <li>Procéder par étude de fonction, si l'inégalité est donnée : on passe tout du même côté, et on étudie le signe de la fonction obtenue, grâce à une étude de variations.</li> <li>Utiliser une propriété de convexité ou de concavité : une fonction dérivable $f$ est convexe si $f'$ est croissante (donc la pente est de plus en plus forte). Intuitivement, la convexité se traduit par le fait que les tangentes sont sous la courbe, et les cordes sont au-dessus de la courbe.</li> <li>Utiliser des inégalités classiques (en premiere lieu l'inéaglité triangulaire, l'inégalité de Cauchy-Schwarz, l'inégalité arithmético-géométrique...). L'inégalité triangulaire est à utiliser dès lors qu'on cherche à majorer la valeur absolue (ou le module) d'une somme dont on sait majorer la valeur absolue de chaque terme : il faut d'abord sortir ces termes de la valeur absolue globale et ce grâce à l'inégalité triangulaire.</li> </ul>",
+        "id": 71
+    }, {
+        "type": "definition",
+        "titre": "Valeur absolue",
+        "hypotheses": "Soit $x \\in $#R",
+        "resultat": "La valeur absolue de $x$, notée $|x|$, est la réel obtenu de $x$ en changeant si besoin son signe de sorte à obtenir une quantité positive : <br /> $\\left\\{ \\begin{array}{ll} x \\text{ si } x \\geqslant 0 \\\\ -x \\text{ si } x \\lt 0 \\end{array} \\right.$.",
+        "id": 72
+    }, {
+        "type": "remarque",
+        "titre": "Utilisation de la valeur absolue",
+        "hypotheses": "",
+        "resultat": "La valeur absolue est souvent utilisée lorsqu'on veut montrer qu'une quantité reste bornée, c'est-à-dire peut être à la fois majorée et minorée. En effet, majorer $|A|$ revient à majorer et minorer $A$, puisque $|A| \\leqslant B$ équivaut à $-B \\leqslant A \\leqslant$",
+        "id": 73
+    }, {
+        "type": "definition",
+        "titre": "Partie positive d'un réel",
+        "hypotheses": "Soit $x \\in $#R",
+        "resultat": "On appelle <b>partie positive</b> de $x$, et on note $x^+$ le réel défini par : <br /> $x^+ = \\max(0, x) = \\left\\{ \\begin{array}{ll} x \\text{ si } x \\geqslant 0 \\\\ 0 \\text{ si } x \\lt 0 \\end{array} \\right.$",
+        "id": 74
+    }, {
+        "type": "definition",
+        "titre": "Partie négative d'un réel",
+        "hypotheses": "Soit $x \\in $#R",
+        "resultat": "On appelle <b>partie négative</b> de $x$, et on note $x^-$ le réel défini par : <br /> $x^- = -\\min(0, x) = \\max(0, -x) = \\left\\{ \\begin{array}{ll} x \\text{ si } - x \\lt 0 \\\\ 0 \\text{ si } x \\geqslant 0 \\end{array} \\right.$",
+        "id": 75
+    }, {
+        "type": "propriete",
+        "titre": "Propriétés des parties positives et négatives",
+        "hypotheses": "Soit $x$ un réel",
+        "resultat": "Alors : <ol> <li>$x^+ \\geqslant 0$ et $x^- \\geqslant 0$ </li>  <li>$x^+ = 0$ ou $x^- = 0$</li> <li>$x = x^+ - x^-$</li> <li>$\\forall(y,z) \\in $#R$_+$, si $x=y-z$ alors $y \\geqslant x^+$ et $z \\geqslant x^-$ </li>  <li>$|x| = x^+ + x^- = max(0, x) - min(0, -x)$</li> <li>$(-x)^+ = x^-$ et $(-x)^- = x^+$</li> </ol>",
+        "id": 76
+    }, {
+        "type": "corollaire",
+        "titre": "Inégalité triangulaires",
+        "hypotheses": "Soit $x$ et $y$ deux réels",
+        "resultat": "Alors : <ol> <li>$(x+y)^+ \\leqslant x^+ + y^+$</li> <li>$(x+y)^- \\leqslant x^- + y^-$</li> <li>$|x+y| \\leqslant |x| + |y|$</li> </ol> <br /> Chacune de ces inégalités est une égalité si et seulement si $x$ et $y$ sont de même signe.",
+        "id": 77
+    }, {
+        "type": "corollaire",
+        "titre": "Inégalité triangulaire pour les sommes",
+        "hypotheses": "Soit $(a_i)_{i \\in I}$ une famille finie de réels.",
+        "resultat": "Alors $|\\sum_{i=1}^{n}x_iy_i| \\leqslant \\sum_{i=1}^{n}|x_iy_i|$",
+        "id": 78
+    }, {
+        "type": "theoreme",
+        "titre": "Inégalité de Cauchy-Schwarz numérique",
+        "hypotheses": "Soient $x_1, ..., x_n, y_1, ..., y_n$ des réels.",
+        "resultat": "On a alors : <br /> $|\\sum_{i=1}^{n}x_iy_i|^2 \\leqslant (\\sum_{i=1}^{n}x^2_i)(\\sum_{i=1}^{n}y^2_i)$",
+        "id": 79
+    }, {
+        "type": "theoreme",
+        "titre": "Inégalité arithmético-géométrique",
+        "hypotheses": "",
+        "resultat": "Pour tout $X = (x_1, ..., x_n) \\in ($#R$_+^*)^n$, <br /> $\\frac{1}{n}(x_1 + ... + x_n) \\geqslant \\sqrt[\\leftroot{10}\\uproot{10}n]{x_1 \\times ... \\times x_n}$",
+        "id": 80
+    }, {
+        "type": "proposition",
+        "titre": "Propriété d'Archimède",
+        "hypotheses": "Soit $x$ et $y$ deux réels strictement positifs.",
+        "resultat": "Il existe un entier $n \\in $#N tel que $x \\lt ny$",
+        "id": 81
+    }, {
+        "type": "corollaire",
+        "titre": "Propriété d'Archimède appliquée au rationnels",
+        "hypotheses": "",
+        "resultat": "Pour tout $x \\gt 0$ et tout $y \\gt 0$, il existe un rationnel $r$ tel que $0 \\lt rx \\lt y$.",
+        "id": 82
+    }, {
+        "type": "theoreme",
+        "titre": "Division euclidienne",
+        "hypotheses": "Soit $x \\in $#R et $y \\in $#R$_+^*$",
+        "resultat": "Il existe un unique entier $n$ et un unique réel $r \\in [0, y[$ tels que $x = ny +r$",
+        "id": 83
+    }, {
+        "type": "definition",
+        "titre": "Densité dans #R",
+        "hypotheses": "",
+        "resultat": "Un sous ensemble $E$ de #R est dense dans #R si pour tout $(x,y) \\in $#R$^2$ tel que que $x < y$, il existe $z \\in E$ tel que $x \\lt z \\lt y$",
+        "id": 84
+    }, {
+        "type": "theoreme",
+        "titre": "Densité des rationnels et des irrationnels dans #R",
+        "hypotheses": "",
+        "resultat": "Les ensembles #Q et #R\\#Q sont denses dans #R.",
+        "id": 85
+    }, {
+        "type": "definition",
+        "titre": "Nombres algébriques, transcendants sur #Q",
+        "hypotheses": "Soit $x \\in $#R",
+        "resultat": "<ul> <li>On dit que $x$ est <b>algébrique</b> sur #Q s'il existe un polynôme $P$ à coefficients dans #Q tel que $P(x) = 0$</li> <li>On dit que $x$ est transcendant sur #Q s'il n'est pas algébrique</li> </ul>",
+        "id": 86
+    }, {
+        "type": "definition",
+        "titre": "Partie entière",
+        "hypotheses": "",
+        "resultat": "La partie entière d'un réel $x$, notée $\\lfloor x\\rfloor$ est le quotient de la division euclidienne par $1$. Il s'agit donc de l'unique entier $n$ tel qu'il existe $r \\in [0, 1[$ tel que $x=n + r$",
+        "id": 87
+    }, {
+        "type": "definition",
+        "titre": "Partie décimale",
+        "hypotheses": "",
+        "resultat": "Le réel $r$ de la définition de la partie entière (reste de la division euclidienne d'un réel $x$ par $1$) est parfois notée $\\{x\\}$, lorsqu'il n'y a pas de confusion possible avec la notation ensembliste désignant le singleton dont l'unique élément est $x$.",
+        "id": 88
+    }, {
+        "type": "proposition",
+        "titre": "Caractérisation de la partie entière",
+        "hypotheses": "Soit $x \\in $#R",
+        "resultat": "<ol> <li>$\\lfloor x\\rfloor = \\max\\{n \\in $#Z$ | n \\leqslant x\\}$</li> <li>$\\lfloor x \\rfloor = \\min\\{n \\in $#Z$ | n \\gt x \\} - 1$</li> <li>$\\lfloor x \\rfloor$ est l'unique entier tel que $\\lfloor x \\rfloor \\leqslant x \\lt \\lfloor x \\rfloor - 1$</li>  <li>$\\lfloor x \\rfloor$ est l'unique entier tel que $x - 1 \\lt \\lfloor x \\rfloor \\leqslant x$</li> </ol>",
+        "id": 89
+    }, {
+        "type": "definition",
+        "titre": "partie entière par excès",
+        "hypotheses": "",
+        "resultat": "On définit parfois aussi la partie entière par excès, notée $\\lceil x \\rceil$, comme étant le plus petit entier supérieur ou égal à $x$ : <br /> $\\lceil x \\rceil = \\min\\{ n \\in $#N$ | n \\geqslant x\\}$",
+        "id": 90
+    }, {
+        "type": "proposition",
+        "titre": "Relation entre partie entière et partie entière par excès",
+        "hypotheses": "Soit $x \\in $#R.",
+        "resultat": "On a alors : <ol> <li>$\\lceil x \\rceil = \\left \\{ \\begin{array}{ll} \\lfloor x \\rceil + 1 \\text{ si } x \\notin $#Z$ \\\\ \\lfloor x \\rfloor \\quad \\quad \\text{si } x \\in $#Z$ \\end{array}\\right.$</li>  <li>$\\lfloor -x \\rfloor = -\\lceil x \\rceil$</li> </ol>",
+        "id": 91
+    }, {
+        "type": "propriete",
+        "titre": "Propriétés de la partie entière",
+        "hypotheses": "",
+        "resultat": "<ol> <li>$\\forall x,y \\in $#R$, \\lfloor x \\rfloor + \\lfloor y \\rfloor + 1 \\geq \\lfloor x + y \\rfloor \\geq \\lfloor x \\rfloor + \\lfloor y \\rfloor$</li> <li>$\\forall x,y \\in $#R$_+, \\lfloor xy \\rfloor \\geq \\lfloor x \\rfloor \\times \\lfloor y \\rfloor $</li> <li>$\\forall x \\in $#R$, \\forall n \\in $#Z$, \\lfloor x + n \\rfloor = \\lfloor x \\rfloor + n$</li></ol>",
+        "id": 92
+    }, {
+        "type": "remarque",
+        "titre": "Notation des nombres décimaux",
+        "hypotheses": "",
+        "resultat": "<ul> <li>Nous notons #D l'ensemble des nombres décimaux, c'est à dire des réels $x$ tels qu'il existe $n \\in $#N tel que $10^{n}x$ est entier</li> <li>Etant donné $n \\in $#N, nous notons #D$_n$ l'ensemble des nombres décimaux tels que $10^{n}x \\in $#Z. Par exemble #D$_0 = $#Z et #D$_1$ sont les décimaux s'écrivant avec au plus un chiffre après la virgule.</li></ul>",
+        "id": 93
+    }, {
+        "type": "proposition",
+        "titre": "Approximation des décimales d'un réel $x$",
+        "hypotheses": "Soit $x$ un réel et $n \\in $#N$^*$",
+        "resultat": "Il existe un unique élément $y$ de #D$_n$ tel que $y_n \\leq x \\lt y_n + 10^{-n}$. <br /> <ul><li>Le décimal $y_n$ est appelé valeur approchée décimal à la précision $10^{-n}$ par défaut</li> <li>Le décimal $y_n + 10^{-n}$ est appelé valeur approchée décimale à la précision $10^{-n}$ par excès.</li> </ul>",
+        "id": 94
+    },
+    /* {
+        "type": "lemme",
+        "titre": "",
+        "hypotheses": "",
+        "resultat": "Pour tout $n \\in $#N$^*$, il existe $a_n \\in [[0, 9]]$ tel que $y_n - y_{n-1} = \\frac{a_n}{10^n}$",
+        "id": 95
+    }, */
+    {
+        "type": "theoreme",
+        "titre": "Existence du développement décimal de $x$",
+        "hypotheses": "Soit $x \\in $#R",
+        "resultat": "Il existe un entier relatif $y_0$ et pour tout $n \\in $#N$^*$, des entiers $a_n \\in [[0, 9]]$ tels que <br /> $x=y_0 + \\sum_{n+1}^{+\\infty} a_n10^{-n} = y_0 + \\lim_{N \\rightarrow +\\infty} \\sum_{n=1}^{N} a_n10^{-n}$.",
+        "id": 96
+    }, {
+        "type": "theoreme",
+        "titre": "Unicité du développement décimal de $x$",
+        "hypotheses": "Soit $x \\in $#R ",
+        "resultat": "<ol><li>Si $x$ n'est pas décimal, $x$ admet un unique développement décimal</li> <li>Si $x$ est décimal, $x$ admet exactement deux développements décimaux, l'un terminant uniquement par des $9$, l'autre terminant uniquement par des $0$</li> </ol>",
+        "id": 97
+    }, {
+        "type": "definition",
+        "titre": "Développement propre",
+        "hypotheses": "",
+        "resultat": "On appelle développement décimal propre de $x$ l'unique développement de $x$ si $x$ n'est pas décimal, ou l'unique développement de $x$ terminant par des $0$ si $x$ est décimal. Ainsi, tout réel admet un unique développement décimal propre.",
+        "id": 98
+    }
+];
 
 /*
 
@@ -525,5 +678,5 @@ const quiz_reels = [{
 const Quizs = {
     "Logique - incomplet": quiz_logique,
     "Relations": quiz_relations,
-    "Nombres réels": quiz_reels
+    "Nombres réels - incomplet": quiz_reels
 };
