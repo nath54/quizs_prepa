@@ -656,6 +656,102 @@ const quiz_reels = [{
         "hypotheses": "",
         "resultat": "On appelle développement décimal propre de $x$ l'unique développement de $x$ si $x$ n'est pas décimal, ou l'unique développement de $x$ terminant par des $0$ si $x$ est décimal. Ainsi, tout réel admet un unique développement décimal propre.",
         "id": 98
+    }, {
+        "type": "definition",
+        "titre": "Ensemble convexe",
+        "hypotheses": "Soit $E$ un sous-ensemble de #R$^n$.",
+        "resultat": "On dit que $E$ est convexe si et seulement si pour tout couple de points $A$ et $B$ de $E$, le segment $[AB]$ est entièrement inclus dans $E$.",
+        "id": 99
+    }, {
+        "type": "definition",
+        "titre": "Intervalle",
+        "hypotheses": "",
+        "resultat": "Un intervalle $I$ est un sous-ensemble convexe $I$ de #R, c'est-à-dire tel que : <br /> $\\forall (a,b) \\in I^2, \\forall x \\in $#R$, a \\leqslant x \\leqslant b \\implies x \\in I$",
+        "id": 100
+    }, {
+        "type": "theoreme",
+        "titre": "Inventaire des intervalles réels",
+        "hypotheses": "",
+        "resultat": "Tout intervalle $I$ de #R est d'une des formes suivantes, pour certaines valeurs réelles $a$ et $b$ : <ul> <li>$[a, b] = \\{x \\in $#R$, a \\leqslant x \\leqslant b \\}, a \\leqslant b$</li> <li>$]a, b[ = \\{x \\in $#R$, a \\lt x \\lt b \\}, a \\lt b$</li>  <li>$[a, b[ = \\{x \\in $#R$, a \\leqslant x \\lt b \\}, a \\lt b$</li> <li>$]a, b] = \\{x \\in $#R$, a \\lt x \\leqslantt b \\}, a \\lt b$</li> <li>$[a, +\\infty[ = \\{x \\in $#R$, x \\geqslant a \\}$</li> <li>$]a, +\\infty[ = \\{x \\in $#R$, x \\gt a \\}$</li> <li>$]-\\infty, b] = \\{x \\in $#R$, x \\leqslant b \\}$</li> <li>$]-\\infty, b[ = \\{x \\in $#R$, x \\lt b \\}$</li> <li>$]-\\infty, +\\infty = $#R</li> <li>$\\emptyset$</li> </ul>",
+        "id": 101
+    }, {
+        "type": "definition",
+        "titre": "Intervalles ouverts, fermés, semi-ouverts",
+        "hypotheses": "",
+        "resultat": "<ul> <li>On dit qu'un intervalle est ouvert s'il est de la forme $]a, b[, ]a, +\\infty[, ]-\\infty, b[, $#R ou $\\emptyset$</li> <li>On dit qu'un intervalle est fermé s'il est de la forme $[a, b], [a, +\\infty[, ]-\\infty, b]$ ou $\\emptyset$</li> <li>On dit qu'un intervalle est semi-ouvert s'il est de la forme $[a, b[$ ou $]a, b]$</li> </ul>",
+        "id": 102
+    }, {
+        "type": "definition",
+        "titre": "Boule dans #R$^n$",
+        "hypotheses": "Soit $x \\in $#R$^n$ et $r \\in $#R$_+$.",
+        "resultat": "<ol> <li>La boule ouverte de centre $x$ et de rayon $r$ est : $B(x, r) = \\{y \\in $#R$^n | d(y,x) \\lt r\\}$</li> <li>La boule fermée de centre $x$ et de rayon $r$ est : $\\overline{B}(x, r) = \\{ y \\in $#R$^n | d(y,x) \\leqslant r \\}$</li> </ol>",
+        "id": 103
+    }, {
+        "type": "remarque",
+        "titre": "Lien entre majoration de valeur absolue et appartenance à une boule",
+        "hypotheses": "",
+        "resultat": "Il est important de retenir qu'une majoration de certaines valeurs absolues se traduit par l'appartenance à une boule : <ul> <li>une majoration du type $|x - a| \\leqslant r$ traduit l'appartenance de $x$ à la boule fermée $\\overline{B}(a, r)$ de centre $a$ et de rayon $r$, donc à l'intervalle $[a-r,a+r]$</li> <li>une majoration du type $|x - a| \\lt r$ traduit l'appartenance de $x$ à la boule ouverte $B(a, r)$ de centre $a$ et de rayon $r$, donc à l'intervalle $]a-r,a+r[$</li> </ul>",
+        "id": 104
+    }, {
+        "type": "definition",
+        "titre": "Voisinage",
+        "hypotheses": "Soit $x \\in $#R$^n$.",
+        "resultat": "Un <b>voisinage</b> $V$ de $x$ est un sous-ensemble $V$ de #R$^n$ tel qu'il existe une boule ouverte centrée en $x$ entièrement contenue dans $V$ : $\\exists \\varepsilon \\gt 0, B(x,\\varepsilon) \\subset V$, i.e. $\\exists \\varepsilon \\gt 0, \\forall y \\in E, d(y,x) \\lt \\varepsilon \\implies y \\in V$",
+        "id": 105
+    }, {
+        "type": "definition",
+        "titre": "Sous-ensemble ouvert",
+        "hypotheses": "",
+        "resultat": "<ul> <li>Un <b>ouvert</b> de $U$ de #R$^n$ est un sous-ensemble $U$ de #R$^n$ qui est voisinage de tous ses points</li> <li>De manière équivalente, $U \\subset $#R$^n$ est ouvesrt si et seulement si : <br /> $\\forall x \\in U, \\exists \\varepsilon \\gt 0, B(x, \\varepsilon) \\subset U$ </li> </ul>",
+        "id": 106
+    }, {
+        "type": "definition",
+        "titre": "Sous-ensemble fermé",
+        "hypotheses": "",
+        "resultat": "Un sous-ensemble $F$ de #R$^n$ est <b>fermé</b> si son complémentaire $C_E F$ est <b>ouvert</b>",
+        "id": 107
+    }, {
+        "type": "proposition",
+        "titre": "Union/intersections d'ouverts et de fermés",
+        "hypotheses": "",
+        "resultat": "<ol> <li>Toute union quelconque d'ouverts est un ouvert</li> <li>Toute intersection d'un nombre fini d'ouverts est un ouvert</li> <li>Toute intersection quelconque de fermés est un fermé</li> <li>Toute union d'un nombre fini de fermés est un fermé</li> </ol>",
+        "id": 108
+    }, {
+        "type": "definition",
+        "titre": "Droite achevée réelle",
+        "hypotheses": "",
+        "resultat": "La droite achevée réelle, notée $\\overline{$#R$}$, est l'ensemble #R$ \\cup \\{-\\infty, + \\infty\\}$.",
+        "id": 109
+    }, {
+        "type": "definition",
+        "titre": "Relation d'ordre sur $\\overline{$#R$}$",
+        "hypotheses": "",
+        "resultat": "On peut prolonger l'ordre de #R en un ordre de $\\overline{$#R$}$ en posant : <br /> $\\forall x \\in \\overline{$#R$}, -\\infty \\leqslant x \\leqslant +\\infty$.",
+        "id": 110
+    }, {
+        "type": "definition",
+        "titre": "Règles calculatoires dans $\\overline{$#R$}$",
+        "hypotheses": "",
+        "resultat": "On peut prolonger partiellement les opérations de #R sur $\\overline{$#R$}$, en posant : <ul> <li>$-(+\\infty) = - \\infty$</li> <li>$\\forall x \\in \\overline{$#R$}\\text{\\ }\\{-\\infty\\}, x + (+\\infty) = +\\infty$</li> <li>$\\forall x \\in \\overline{$#R$}\\text{\\ }\\{+\\infty\\}, x + (-\\infty) = -\\infty$</li> <li>$\\frac{1}{+\\infty} = \\frac{1}{-\\infty} = 0$</li> <li>$\\forall x \\in \\overline{$#R$}_+^*, x \\times (+\\infty) = +\\infty, x \\times (-\\infty) = -\\infty$</li> <li>$\\forall x \\in \\overline{$#R$}_-^*, x \\times (+\\infty) = -\\infty, x \\times (-\\infty) = +\\infty$</li> </ul>",
+        "id": 111
+    }, {
+        "type": "definition",
+        "titre": "Formes indéterminées dans $\\overline{$#R$}$",
+        "hypotheses": "",
+        "resultat": "Les opérations suivantes ne sont pas définies, et définissent les formes indéterminées de la somme et du produit dans $\\overline{$#R$}$ : <ul> <li>$-\\infty + (+\\infty)$</li> <li>$0 \\times (+\\infty)$</li> <li>$0 \\times (-\\infty)$</li> </ul>",
+        "id": 112
+    }, {
+        "type": "proposition",
+        "titre": "Bornes supérieures dans $\\overline{$#R$}$",
+        "hypotheses": "",
+        "resultat": "Tous sous-ensemble $E$ de $\\overline{$#R$}$ admet une borne supérieure dans $\\overline{$#R$}$",
+        "id": 113
+    }, {
+        "type": "proposition",
+        "titre": "Bornes inférieures dans $\\overline{$#R$}$",
+        "hypotheses": "",
+        "resultat": "Tous sous-ensemble $E$ de $\\overline{$#R$}$ admet une borne inférieure dans $\\overline{$#R$}$",
+        "id": 114
     }
 ];
 
@@ -678,5 +774,5 @@ const quiz_reels = [{
 const Quizs = {
     "Logique - incomplet": quiz_logique,
     "Relations": quiz_relations,
-    "Nombres réels - incomplet": quiz_reels
+    "Nombres réels": quiz_reels
 };
