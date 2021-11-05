@@ -68,8 +68,8 @@ td {
     border: 2px solid grey;
     border-radius: 15px;
     /* size & position */
-    /* min-width: 50%;
-    max-width: 75%; */
+    /* min-width: 50%; */
+    max-width: 75%;
     /* min-height: 250px; */
     margin: auto;
     padding: 10px;
@@ -89,4 +89,12 @@ td {
 .unselectable {
     -moz-user-select: none;
     -webkit-user-select: none;
+}
+
+.scrolldiv {
+    overflow: scroll;
+}
+
+.little * {
+    font-size: 0.97em;
 }
