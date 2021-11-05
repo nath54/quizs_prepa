@@ -186,6 +186,13 @@ function rotate(e, touchscreen = false) {
             y = e.clientY;
         }
         var dx = x - window.click_x;
+        dy = y - window.click_y;
+        if (Math.abs(dy) > Math.abs(dx)) {
+            card.style.rotate = "0rad";
+            window.agl = 0;
+            card.style.boxShadow = "none";
+            return;
+        }
         dy = 100;
         //
         if (dy > 0) {

@@ -70,11 +70,14 @@ td {
     /* size & position */
     /* min-width: 50%; */
     max-width: 75%!important;
+    max-height: 60vh!important;
+    overflow-y: auto;
     /* min-height: 250px; */
     margin: auto;
     padding: 10px;
     /* */
     word-wrap: unset;
+    font-size: 3vh;
 }
 
 #card * {
