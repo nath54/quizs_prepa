@@ -35,8 +35,8 @@ const quiz_propagation_signal = [{
     "id": 6
 }, {
     "type": "definition",
-    "titre": "Signal éléctrique",
-    "resultat": "Un signal éléctrique correspond à la variation d'une grandeur physique comme la tension, le courant électrique ou le potentiel électrique dans un milieu conducteur.",
+    "titre": "Signal électrique",
+    "resultat": "Un signal électrique correspond à la variation d'une grandeur physique comme la tension, le courant électrique ou le potentiel électrique dans un milieu conducteur.",
     "id": 7
 }, {
     "type": "definition",
