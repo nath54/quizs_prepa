@@ -231,6 +231,11 @@ const quiz_propagation_signal = [{
     "id": 45
 }, {
     "type": "texte_physique",
+    "titre": "Tableau récapitulatif sur les grandeurs caractérisant la double périodicité de l'angle",
+    "resultat": "<table> <tr><td></td><td>Période</td><td>Fréquence</td><td>Pulsation</td></tr> <tr><td>temps</td><td>$T$</td><td>$f=\\frac{1}{T}$</td><td>$\\omega=\\frac{2\\pi}{T} = 2\\pi f$</td></tr> <tr><td>Espace</td> <td>$\\lambda = cT = \\frac{c}{f}$</td> <td>$\\sigma = \\frac{1}{\\lambda} = \\frac{f}{c}$</td> <td>$k=\\frac{2\\pi}{\\lambda} = 2\\pi\\sigma$</td> </tr>  </table>",
+    "id": 70
+}, {
+    "type": "texte_physique",
     "titre": "lien entre la période temporelle et la source",
     "resultat": "La période temporelle est imposée par la source, elle ne dépend pas du milieu de propagation.",
     "id": 46
@@ -239,6 +244,11 @@ const quiz_propagation_signal = [{
     "titre": "Intérêt des ondes harmoniques (=sinusoïdales)",
     "resultat": "L'onde harmonique est le maillon élémentaire de toute théorie des ondes.",
     "id": 47
+}, {
+    "type": "texte_physique",
+    "titre": "Phase d'un signal sinusoïdal",
+    "resultat": "$\\varphi(x) = -\\frac{2\\pi x}{\\lambda} + \\varphi_s = -kx + \\varphi_s$<br/>$\\varphi_s$ est la phase initiale.",
+    "id": 71
 }, {
     "type": "definition",
     "titre": "Onde plane",
@@ -362,6 +372,7 @@ const quiz_superposition_signaux_interference_ondes = [{
         "id": 0
     }
 
+    NEXT ID : 72
 
 */
 
