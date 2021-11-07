@@ -298,6 +298,13 @@ const quiz_modelisation_geometrique_systemes_solides = [{
     "id": 58
 }];
 
+const quiz_notions_prel_model_cin_sys = [{
+    "type": "definition",
+    "titre": "Produit vectoriel",
+    "resultat": "Le produit vectoriel est défini par la relation $\\vec{u} \\land \\vec{v} = ||\\vec{u}||\\circ||\\vec{v}||\\circ\\sin(\\theta)\\circ\\vec{n}$ <br/> <ul><li>où $\\theta = (\\vec{u}, \\vec{v})$</li><li>$\\vec{n}$ est le vecteur unitaire normal à $\\vec{u}$ et $\\vec{v}$ tel que $(\\vec{u}, \\vec{v}, \\vec{n})$ soit une base directe lorsque $\\theta$ est positif.</li></ul>",
+    "id": 59
+}];
+
 /*
 
     ,{
