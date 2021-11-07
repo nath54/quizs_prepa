@@ -49,6 +49,8 @@ function init() {
         script.src = "data_quizs_maths.js";
     } else if (matiere == "physique") {
         script.src = "data_quizs_physique.js";
+    } else if (matiere == "SI") {
+        script.src = "data_quizs_SI.js";
     } else {
         window.location.href = "../index.html";
     }
