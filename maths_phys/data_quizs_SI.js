@@ -145,6 +145,19 @@ const quiz_analyse_systemes_complexes = [{
     "id": 28
 }];
 
+const quiz_modelisation_geometrique_systemes_solides = [{
+    "type": "definition",
+    "titre": "Vecteur",
+    "hypotheses": "Soient deux points $A$ et $B$.",
+    "resultat": "Un vecteur $\\vec{AB}$ est défini par : <ul><li>Son support (droite $(AB)$)</li> <li>Son sens (de $A$ vers $B$)</li> <li>Sa norme (distance $AB$)</li> </ul>",
+    "id": 29
+}, {
+    "type": "definition",
+    "titre": "Base orthonormée",
+    "resultat": "L'association de trois vecteurs non liés forme  une base @B. On utilisera en SI unique des bases orthonormée directes $(\\vec{x}, \\vec{y}, \\vec{z})$ telles que : <ul><li>Les trois vecteurs sont <b>orthogonaux deux à deux</b></li> <li>Les trois vecteurs sont de <b>norme unitaire</b></li> <li>L'orientation des trois vecteurs est <b>directe</b>.</li> </ul> <br/> <img class=\"imgc\" src=\"res/base_ortho.png\" />",
+    "id": 30
+}];
+
 /*
 
     ,{
@@ -162,5 +175,6 @@ const quiz_analyse_systemes_complexes = [{
 // TOUS LES QUIZS SONT DANS LA VARIABLE QUIZS
 
 const Quizs = {
-    "Analyse des systèmes complexes": quiz_analyse_systemes_complexes
+    "Analyse des systèmes complexes": quiz_analyse_systemes_complexes,
+    "Modélisation géométrique des systèmes solides": quiz_modelisation_geometrique_systemes_solides,
 };

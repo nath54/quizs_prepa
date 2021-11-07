@@ -101,3 +101,8 @@ td {
 .little * {
     font-size: 0.97em;
 }
+
+.imgc {
+    max-width: 200px !important;
+    max-height: 200px !important;
+}

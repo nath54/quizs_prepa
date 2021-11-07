@@ -11,6 +11,7 @@ function compile_txt(txt) {
         "#dans": "$\\in$",
         "#inclus": "$\\subset$",
         "@R": "$\\mathcal{R}$",
+        "@B": "$\\mathcal{B}$",
         "#P": "$\\mathcal{P}$",
         "#N": "$\\mathbb{N}$",
         "#Z": "$\\mathbb{Z}$",
