@@ -156,6 +156,146 @@ const quiz_modelisation_geometrique_systemes_solides = [{
     "titre": "Base orthonormée",
     "resultat": "L'association de trois vecteurs non liés forme  une base @B. On utilisera en SI unique des bases orthonormée directes $(\\vec{x}, \\vec{y}, \\vec{z})$ telles que : <ul><li>Les trois vecteurs sont <b>orthogonaux deux à deux</b></li> <li>Les trois vecteurs sont de <b>norme unitaire</b></li> <li>L'orientation des trois vecteurs est <b>directe</b>.</li> </ul> <br/> <img class=\"imgc\" src=\"res/base_ortho.png\" />",
     "id": 30
+}, {
+    "type": "texte_physique",
+    "titre": "Composante d'un vecteur",
+    "resultat": "Tout vecteur $\\vec{V}$ est une combinaison linéaire des vecteurs de base : <br/> $\\vec{V} = V_x\\times\\vec{x} + V_y\\times\\vec{y} + V_z\\times\\vec{z}$<br/>$V_x$,$V_y$ et $V_z$ sont les composantes de $\\vec{V}$ dans la base $(\\vec{x}, \\vec{y}, \\vec{z})$.",
+    "id": 31
+}, {
+    "type": "texte_physique",
+    "titre": "Représentation plane d'une base orthonormée",
+    "resultat": "Deux des vecteurs sont représentés dans le plans. Le troisième vecteur est orthogonal au plan, il n'apparait pas dans une représentation plane, mais il est essentiel de faire apparaître son sens. <br/> Les vecteurs hors plan sont représentés avec $\\bigodot$ s'ils sont orientés vers nous, sinon, ils sont représentés par $\\bigotimes$.",
+    "id": 32
+}, {
+    "type": "texte_physique",
+    "titre": "Orienter un angle par rapport à un vecteur",
+    "resultat": "On peut définir, pour tout couple de vecteur $(\\vec{u}, \\vec{b})$, un angle $\\theta = (\\vec{u},\\vec{v})$ orienté par un vecteur $\\vec{z}$ normal au plan $(\\vec{u}, \\vec{v})$. L'angle $\\theta$ est compté comme positif ou négatif en fonction du sens de l'axe $\\vec{z}$",
+    "id": 33
+}, {
+    "type": "texte_physique",
+    "titre": "Produit scalaire",
+    "resultat": "Le produit scalaire est défini à partir de l'angle $\\theta = (\\vec{u}, \\vec{v})$ par la relation : <br/> <div style=\"border: 1px solid; padding-top:5px; padding-bottom: 5px;\">$\\vec{u} \\circ \\vec{v} = ||\\vec{u}|| \\circ ||\\vec{v}|| \\circ \\cos(\\vec{u},\\vec{v})$</div><br/>Avec $||\\vec{u}||=\\sqrt{u_x^2+u_y^2+u_z^2}$",
+    "id": 34
+}, {
+    "type": "texte_physique",
+    "titre": "Produit scalaire (Formule avec les composantes)",
+    "resultat": "Le produit scalaire peut éventuellement être calculé grâce aux composantes des vecteurs bases. Soit $\\vec{u} = \\left(\\begin{array}{ll} u_x\\\\ u_y\\\\ u_z \\end{array}\\right)_$@B et $\\vec{v} = \\left(\\begin{array}{ll} v_x\\\\ v_y\\\\ v_z \\end{array}\\right)_$@B, alors : <br/> <div style=\"border: 1px solid; padding-top:5px; padding-bottom: 5px; margin-top:5px;\">$\\vec{u}\\circ\\vec{v} = u_xv_x+u_yv_y+u_zv_z$</div>",
+    "id": 35
+}, {
+    "type": "methode",
+    "titre": "Produit scalaire (vecteurs orthogonaux ou colinéaires)",
+    "resultat": "<ul><li>Si $\\vec{u}$ et $\\vec{v}$ sont colinéaires et de même sens, on a $\\vec{u}\\circ\\vec{v} = ||\\vec{u}||\\circ||\\vec{v}||$</li><li>Si $\\vec{u}$ et $\\vec{v}$ sont colinéaires et de sens contraire, on a $\\vec{u}\\circ\\vec{v} = -||\\vec{u}||\\circ||\\vec{v}||$</li><li>Si $\\vec{u}$ et $\\vec{v}$ sont orthogonaux, on a $\\vec{u}\\circ\\vec{v} = 0$</li></ul>",
+    "id": 36
+}, {
+    "type": "texte_physique",
+    "titre": "Changement de base",
+    "resultat": "Soient deux base @B$_1$ et @B$_2$ mobiles l'une par rapport à l'autre et $\\vec{V}$ un vecteur.<br/>Les composantes du vecteur $\\vec{V}$ dans la base @B$_1$ sont notées $u_1$, $v_1$ et $w_1$. C'est à dire $\\vec{V} = \\left(\\begin{array}{ll} u_1\\\\ v_1\\\\ w_1 \\end{array}\\right)_{$@B$_1}$<br/>Changer $\\vec{V}$ de base consiste à déterminer les composantes de $\\vec{V}$ dans @B$_2$ telles que $\\vec{V} = \\left(\\begin{array}{ll} u_2 \\\\ v_2 \\\\ w_2 \\end{array}\\right)_{$@B$_2}$<br/>Le mouvement de @B$_2$ par rapport à @B$_1$ est caractérisé par trois rotations élémentaires. En SI, on décompose toujours les rotations en rotations élémentaires autour d'un vecteur de la base et on projette dans ces bases successives.",
+    "id": 37
+}, {
+    "type": "texte_physique",
+    "titre": "Changement de base autour de l'axe $\\vec{z}$",
+    "resultat": "<img src=\"res/chang_base.png\"/><br/>En utilisant la figure du changement de base, on obtient :<br/>$\\vec{x_2} = \\cos(\\theta)\\vec{x_1} + \\sin(\\theta)\\vec{y_1}$ <br/> $\\vec{y_2} = -\\sin(\\theta)\\vec{x_1} + \\cos(\\theta)\\vec{y_1}$<br/>$\\vec{x_1} = \\cos(\\theta)\\vec{x_2} - \\sin(\\theta)\\vec{y_2}$ <br/> $\\vec{y_1} = \\sin(\\theta)\\vec{x_2} + \\cos(\\theta)\\vec{y_2}$<br/><hr/>Ainsi, si $\\vec{V}=u_1\\vec{x_1}+v_1\\vec{y_1}+w_1\\vec{z_1}$,<br/>Alors $\\vec{V} = u_1\\times(\\cos(\\theta)\\vec{x_2}-\\sin(\\theta)\\vec{y_2} + v_1\\times(\\sin(\\theta)\\vec{x_2}+\\cos(\\theta)\\vec{y_2}) + w_1\\vec{z_1}$<br/> Donc $u_2 = u_1\\cos(\\theta) + v_1\\sin(\\theta)$ ; $v_2 = -u_1\\sin(\\theta) + v_1\\cos(\\theta)$ et $w_2 = w_1$",
+    "id": 38
+}, {
+    "type": "definition",
+    "titre": "Mécanisme",
+    "resultat": "Ensemble de pièces assemblées entre elles par des liaisons dans le but de réaliser une fonction déterminée.",
+    "id": 39
+}, {
+    "type": "definition",
+    "titre": "Solide indéformable $S$",
+    "resultat": "Solide tel que la distance entre deux points $A$ et $B$ appartenant à ce système reste constante au cours du temps : <br/> $\\forall A \\in S$ et $\\forall B \\in S$, $AB = cste$",
+    "id": 40
+}, {
+    "type": "texte_physique",
+    "titre": "Repère d'observation",
+    "resultat": "Un repère est défini par une origine $O$, et par une base orthonormée directe de trois vecteurs $(\\vec{x}, \\vec{y}, \\vec{z})$. L'ensemble {<i>orgine</i> + <i>base</i>} forme un repère spatial d'observation.",
+    "id": 41
+}, {
+    "type": "definition",
+    "titre": "Référentiel",
+    "resultat": "Ensemble formé par le repère <b>spatial</b> et le repère <b>temporel</b>.",
+    "id": 42
+}, {
+    "type": "definition",
+    "titre": "Repère cartésien",
+    "resultat": "Le <b>repère cartésien</b> est défini par un point et une base orthonormée directe.",
+    "id": 43
+}, {
+    "type": "texte_physique",
+    "titre": "Degrés de liberté d'un solide dans l'espace",
+    "resultat": "La position d'un solide $S_k$ par rapport à un solide $S_i$ dépend de six paramètres indépendants. Il est usuel en mécanique de considérer : <ul><li>Les trois coordonnées du point origine du repère @R$_k$ dans le repère @R$_i$ : $(T_x, T_y, T_z)$</li><li>Les trois angles définissant l'orientation de la base $(\\vec{x_k}, \\vec{y_k}, \\vec{z_k})$ du repère @R$_k$ par rapport à celle du repère @R$_i$ : $(R_x, R_y, R_z)$</li></ul>",
+    "id": 44
+}, {
+    "type": "definition",
+    "titre": "Degré de liberté (ddl)",
+    "resultat": "Possibilité de mouvement. Il existe donc au maximum six degrés de liberté (trois translations et trois rotations). <br/> ddl = 6 : il s'agit d'une liaison libre <br/> ddl = 0 : il s'agit d'un encastrement.",
+    "id": 45
+}, {
+    "type": "texte_physique",
+    "titre": "Liaison parfaite",
+    "resultat": "Une liaison est dite parfaite si : <ul><li>La géométrie du contact est parfaite (conditions vérifiées par les solides parfaits)</li> <li>Le contact entre les solides est sans adhérance (frottements négligés)</li> <li>Le contact est maintenu (jeux nuls)</li></ul>",
+    "id": 46
+}, {
+    "type": "texte_physique",
+    "titre": "Positionnement des repères en fonction des mouvements autorisés",
+    "resultat": "L'étude des mouvements autorisés entre les différents solides permet de proposer un paramétrage optimal du modèle cinématique en positionnant les repères de la façon suivante : <ul><li>Lorsque les deux solides sont en translation l'un par rapport à l'autre, les deux repères associés à ces solides sont positionnés de façon à avoir un axe commun qui coïncide avec l'axe de rotation</li> <li>Lorsque les deux solides sont en translation l'un par rapport à l'autre, les deux repères associés à ces solides sont positionnés de façon à avoir leurs trois axes parallèles, et l'un de ces axes coïncide avec la direction de la translation.</li></ul>",
+    "id": 47
+}, {
+    "type": "definition",
+    "titre": "Classe d'équivalence cinématique",
+    "resultat": "C'est l'ensemble des solides d'un mécanisme sans mouvements relatifs. Elles sont liées par des liaisons encastrement.",
+    "id": 48
+}, {
+    "type": "definition",
+    "titre": "Graphe de liaison",
+    "resultat": "C'est la représentation schématique du mécanisme par la synthétisation des liaisons entre classes d'équivalences. <br/> <ul><li>Les classes d'équivalence sont représentées par des cercles contenant le nom de la classe</li> <li>Les liaisons sont représentées par des arcs de courbes rejoignant les cercles. Le nom et les caractéristiques géométriques de la liaison sont indiqués près de l'arc.</li></ul>",
+    "id": 49
+}, {
+    "type": "texte_physique",
+    "titre": "Structures formées par les graphes de liaisons",
+    "resultat": "On distingue trois types de structures : <ul><li><b>Chaîne ouverte</b> : Association en série de solides et de liaisons</li> <li><b>Chaîne fermée</b> : Une ou plusieurs boucles apparaissent dans le graphe de liaison</li> <li><b>Chaîne complexe</b> : Association de chaînes ouvertes et fermées sur un même graphe.</li></ul>",
+    "id": 50
+}, {
+    "type": "definition",
+    "titre": "Schéma cinématique",
+    "resultat": "C'est un outil de représentation géométrique d'un mécanisme. <br/> Dans ce schéma : <ul><li>Les classes d'équivalences sont représentées par un segment</li> <li>Les liaisons sont représentées par un symbole normalisé (plan ou spatial). L'orientation et la position doivent être respectées.</li></ul>",
+    "id": 51
+}, {
+    "type": "texte_physique",
+    "titre": "Schéma cinématique minimal",
+    "resultat": "Certaines liaisons peuvent être regroupées en une seule liaison normalisée, on parle alors de <b>liaison équivalente</b>. Le schéma cinématique associé aux liaisons équivalentes est alors nommé <b>schéma cinématique minimal</b>. De même, le graphe des liaisons associé est dit <b>minimal</b>.",
+    "id": 52
+}, {
+    "type": "texte_physique",
+    "titre": "Vecteur position",
+    "resultat": "La position du point $M$, appartenant au solide $S_k$ en mouvement par rapport à un repère de référence @R$_i$, est variable avec le temps.<br/>Soit $O_i$ un point fixe de repère @R$_i$, le vecteur $\\vec{O_iM_i}$ variable avec le temps est appelé vecteur position du point $M_i$ relativement à @R$_i$.",
+    "id": 53
+}, {
+    "type": "definition",
+    "titre": "Trajectoire",
+    "resultat": "La trajectoire d'un point $M$ du solide $S_k$ en mouvement par rapport à un repère de référence @R$_i$ est l'ensemble des points $M_i(t)$ coïncidant à chaque instant avec le point $M$ au cours du déplacement du solide $S_k$.",
+    "id": 54
+}, {
+    "type": "texte_physique",
+    "titre": "Loi entrée-sortie géométrique",
+    "resultat": "C'est la relation entre un paramètre de position de la pièce supposée à la sortie d'un mécanisme, avec un paramètre de position de la pièce d'entrée.<br/> <ul><li><b>Paramètre d'entrée</b> : en général, paramètre associé au mouvement \"utile\" du mécanisme, c'est-à-dire celui pour la réalisation duquel il a été conçu.</li> <li><b>Paramètre de sortie</b> : en général piloté par l'utilisateur.</li></ul><br/>Cette relation ne fait intervenir aucun autre paramètre de liaison variable au cours du temps et dépend seulement des caractéristiques géométriques du mécanisme.",
+    "id": 55
+}, {
+    "type": "texte_physique",
+    "titre": "Fermeture angulaire",
+    "resultat": "Il s'agit d'écrire la relation de bouclage sur les angles mesurés dans un même plan. <br/> $(\\vec{x_0}, \\vec{x_0}) = (\\vec{x_0}, \\vec{x_1}) + (\\vec{x_1}, \\vec{x_2}) + ... + (\\vec{x_n}, \\vec{x_0}) = 0$",
+    "id": 56
+}, {
+    "type": "texte_physique",
+    "titre": "Fermeture linéaire",
+    "resultat": "Il s'agit d'écrire la fermeture vectorielle sur les vecteurs en positions en parcourant la chaîne de solides constituants la boucle. <br/> $\\vec{AB}+\\vec{BC}+\\vec{CD}+\\vec{DE}+\\vec{EA} = \\vec{0}$",
+    "id": 57
+}, {
+    "type": "methode",
+    "titre": "Faire disparaître les termmes non pertinents",
+    "resultat": "On pensera à utiliser certaines relations mathématiques intéressantes afin de faire disparaître les termes non pertinents pour l'étude : <ul><li>$\\cos^2(\\theta) + \\sin^2(\\theta) = 1$</li><li>$\\sin(\\arccos(\\theta)) = \\cos(\\arcsin(\\theta)) = \\sqrt{1-\\theta^2}$</li></ul>",
+    "id": 58
 }];
 
 /*
@@ -167,7 +307,7 @@ const quiz_modelisation_geometrique_systemes_solides = [{
         "id": 0
     }
 
-    NEXT ID : 28
+    NEXT ID : 59
 
 */
 
