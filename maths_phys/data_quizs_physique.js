@@ -1,10 +1,10 @@
 const quiz_propagation_signal = [{
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Les deux grands concepts de la physique classique que l'on peut associer à presques tous les phénomènes que l'on peut observer",
     "resultat": "Ondes et particules",
     "id": 0
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Il y a une grande différence entre les concepts d'ondes et de particules",
     "resultat": " - Le mot <b>particule</b> suggère une infime concentration de matière capable de transmettre de l'énergie et de la quantité de mouvement. <br/> - Le mot <b>onde</b> suggère exactement l'opposé, c'est à dire une transmission d'énergie qui utilise un espace relativement grand.",
     "id": 1
@@ -19,7 +19,7 @@ const quiz_propagation_signal = [{
     "resultat": "Une onde est une perturbation qui voyage ou se propage sans déplacement macroscopique de matière et transporte avec de l'énergie. <br /> Toute grandeur physique, nulle à l'état de repos, et apparaissant avec la perturbation s'appelle signal physique $s$ transporté par l'onde.",
     "id": 3
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Différents exemples de signaux",
     "resultat": "Il y a plusieur grandes catégories du signaux (ou ondes) mettant en évidence la grandeur physique qu'ils mettent en jeu. <br /> Il y a par exemple : <br /> <ul><li>Les signaux mécaniques</li><li>Les signaux acoustiques</li><li>Les signaux électriques</li><li>Les signaux électromagnétiques</li><li>Les ondes de matières</li></ul>",
     "id": 4
@@ -64,7 +64,7 @@ const quiz_propagation_signal = [{
     "resultat": "Toutes les substances, qu'elles soient gazeuses, liquides ou solides, ont tendance à revenir à leur pression d'origine lorsqu'on les perturbe; on peut y générer des ondes sonores.",
     "id": 12
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Signal périodique",
     "resultat": "Un signal périodique est caractérisé par un motif qui se répète. <br /> La durée de ce motif s'appelle <b>la période</b>. <br /> Soit $T$ la période d'un signal $s(t)$, on a alors $s(t+T)$ = $s(t)$.",
     "id": 13
@@ -94,7 +94,7 @@ const quiz_propagation_signal = [{
     "resultat": "L'opération qui consiste à déterminer les signaux sinusoïdaux, composant un signal donné, est appelée <b>\"analyse spectrale\"</b>",
     "id": 18
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Analyse de Fourier",
     "resultat": "On peut traiter un signal $s(t)$ commme une somme de fonctions sinusoïdales de la forme $A_k \\cos(2 \\pi f_k + \\varphi_k)$. <br /> On a donc : $s(t) = \\sum_k A_k \\cos(2 \\pi f_k + \\varphi_k)$",
     "id": 19
@@ -109,7 +109,7 @@ const quiz_propagation_signal = [{
     "resultat": "Le spectre du signal (appelé en général \"spectre de Fourier\") est l'ensemble des fréquences contenues dans la décomposition du signal $s(t)$.",
     "id": 21
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Représentation graphique du spectre",
     "resultat": "La représentation graphique des amplitudes $A_k$ en ordonnéee en fonction des $f_k$ en abscisse constitue le spectre en amplitude. <br /> Ce spectre d'amplitude peut être discontinu(=discret) ou continu; cela dépend de la nature du signal à décomposer.",
     "id": 22
@@ -119,12 +119,12 @@ const quiz_propagation_signal = [{
     "resultat": "Tout signal périodique de fréquence $f$ mais de forme quelconque peut s'écrire comme la superposition de signaux sinusoïdaux dont les fréquences $f_k$ sont des multiples entiers de $f$ à savoir $0, f, 2f, 3f, ..., kf, ...$ <br /> $s(t) = A_0 + \\sum_{k=1}^{\\infty} A_k \\cos(k\\omega t + \\varphi_k)$ <br /> ou $s(t) = A_0 + \\sum_{k=1}^{\\infty}(a_k \\cos(k\\omega t) + b_k \\sin(k \\omega t))$",
     "id": 23
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Continuité du spectre d'un signal périodique",
     "resultat": "Le spectre d'un signal périodique est discontinu; seules certaines fréquences bien définies existent. <br/> Le spectre d'un signal sinusoïdal ne comporte qu'une seule fréquence",
     "id": 24
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Spectre d'un signal non périodique",
     "resultat": "Le spectre, dans le cas d'un signal non périodique, devient continu.",
     "id": 25
@@ -139,7 +139,7 @@ const quiz_propagation_signal = [{
     "resultat": "Le daumaine audible, intervalle de fréquences $f_{son}$ percçues par l'oreille humaine, s'étend de $20$Hz à $20$kHz. C'est l'intervalle de fréquences perçues par un individu moyen. <br /> Les ondes de fréquence supérieure à $20$kHz sont qualifiées d'ultrason. <br /> Les ondes de fréquence inférieure à $20$Hz sont des infrasons.",
     "id": 27
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Célérité du son",
     "resultat": "La célérité du son dans l'air est $340$m/s et dans l'eau environ $1500$m/s.",
     "id": 28
@@ -154,7 +154,7 @@ const quiz_propagation_signal = [{
     "resultat": "Une <b>\"onde progressive\"</b> est la propagation d'une perturbation produisant sur son passage une variation des propriétés physiques locales du milieu. La perturbation du milieu qu'elle provoque s'éloigne de plus en plus de la source de l'onde au fur et à mesure que le temps s'écoule. <br /> Ce terme est esclusivement employé pour une onde sans atténuation ni déformation. <br /> L'onde peut à priori se propager dans toutes les directions possibles à partir de la source.",
     "id": 30
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Grandeur physique associée au signal d'une onde progressive.",
     "hypotheses": "Soit $s$ un signal de célérité $c$, émis au point $O$ et perçu au point $M$, avec $OM=d$. $\\tau = \\frac{d}{c}$",
     "resultat": "Si $s(O, t) = f(t)$ alors $s(M, t) = s(O, t-\\tau) = f(t-\\frac{d}{c})$. <br /> On écrit $s(M, t)$ pour exprimer la double dépendance spatiale et temporelle. <br/> On dit que le signal $s(M, t)$ est une onde progressivbe se propageant à la vitesse $c$.",
@@ -175,12 +175,12 @@ const quiz_propagation_signal = [{
     "resultat": "On appelle célérité d'une onde progressive la vitesse de propagation du signal, notée <b>c</b>.",
     "id": 34
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Célérité et milieu de propagation",
     "resultat": "La célérité d'une onde mécanique progressive dépend des caractéstiques physiques du milieu de propagation; en particulier elle dépend de : <ul> <li>sa <b>rigidité</b> (capacité à s'opposer à la déformation) : <b>c augmente avec la rigidité du milieu</b></li> <li>son <b>inertie</b> (capacité à s'opposer au changement de mouvement) caractérisé par sa masse linéique, surfacique ou volumique : <b>c diminue avec l'inertie du milieu</b>  </li> </ul>",
     "id": 35
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Exemples des célérités d'ondes classiques",
     "resultat": "<ul><li>Vibration transverse : $c = \\sqrt{\\frac{F}{\\mu}}$, $F$ tension de la corde (ou $T$), $\\mu$ masse linéique (g/m)</li> <li>Rides sur l'eau ($h$ << $\\lambda$) : $c = \\sqrt{gh}$, $g$ pesanteur (9.9 m/s)</li> <li>Son audible, Vibration longitudinale : $c = \\sqrt{\\frac{\\gamma p}{\\rho}} = \\sqrt{\\frac{\\gamma RT}{M}}$, $M$ masse molaire du gaz, $T$ température en Kelvin, $\\gamma$ coefficient sans dimension dépendant de la nature des molécules (1.4 en général), $p$ pression du gaz</li> <li>Lumière, Ondes radio : $c = \\frac{1}{\\sqrt{\\varepsilon_0 \\mu_0}}$, $\\varepsilon_0 = 8,85.10^{-12}$ <b> SI</b> permittivité du vide, $\\mu_0 = 4\\pi.10^{-7}$ <b> SI</b> perméabilité magnétique du vide</li> </ul>",
     "id": 36
@@ -190,22 +190,22 @@ const quiz_propagation_signal = [{
     "resultat": "Une onde progressive est dite à une dimension, si sa propagation se fait dans une seule direction : pour une onde mécanique, c'est assez fréquent.",
     "id": 37
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Notation d'un signal qui se propage",
     "resultat": "Un signal qui se propage se note $s(x,t)$, fonction de deux variables : la coordonnée $x$ selon l'axe $Ox$ et le temps $t \\implies s(x,t)$ est la valeur du signal à l'abscisse $x$, à l'instant $t$.",
     "id": 38
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Onde progressive se déplacant dans le sens des $x$ croissant",
     "resultat": "Dans une onde mécanique progressive se propageant à la célérité <b>c</b>, tout point $M$ du milieu matériel subit la même perturbation que celle de la source avec un décalage temporel. <br /> Le siganl émetteur en $O$ est une fonction du temps $s(O, t) = f(t)$ <br/> Si le signal se déplace dans le sens des $x$ croissant <br /> $s(M,t) = s(x,t) = s_M(t) = f(t - \\frac{x}{c}$",
     "id": 39
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Onde progressive se déplacant dans le sens des $x$ décroissant",
     "resultat": "Une onde progressive se propageant dans le sens des $x$ décroissants sans atténuation ni déformation est de la forme mathématique : $s(M, t) = s_M(t) = f(t+\\frac{x}{c})$",
     "id": 40
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Onde progressive se propageant sur l'axe $Ox$ sans atténuation ni déformation",
     "resultat": "Une onde progressive de célérité $c$ se propageant sur l'axe $Ox$ sans atténuation ni déformation est de la forme mathématique suivante : <br /> $s(M,t) = s_t(x) = F(x \\pm ct)$ si $s(M, 0) = F(x)$",
     "id": 41
@@ -215,7 +215,7 @@ const quiz_propagation_signal = [{
     "resultat": "On obtient l'expression de l'onde progressive $s(x,t)$ en fonction de la position et du temps <br /> $\\rightarrow$ soit en remplacant $x$ par $x \\pm ct$ dans la fonction $F(x) = s(x, 0)$ <br/> $\\rightarrow$ soit en remplacant $t$ par $t \\pm \\frac{x}{c}$ dans la fonction $f(t)=s(0,t)$ <br/> Le signe dépend du sens de propagation : $-$ vers les $x$ croissants et $+$ vers les $x$ décroissants. ",
     "id": 42
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Double périodicité d'une onde progressive périodique",
     "resultat": "Une onde progressive progressive de célérité $c$ possède <b>une double périodicité</b>, c'est-à-dire une période temporelle notée $T$ et une période spatiale (ou longueur d'onde) notée $\\lambda$. <br /> Les deux périodes sont reliées par : <br/> $\\lambda = cT$",
     "id": 43
@@ -225,27 +225,27 @@ const quiz_propagation_signal = [{
     "resultat": "On dit qu'une onde progressive est harmonique (ou sinusoïdale) lorsque le signal émis par la source en $O$ est une fonction sinusoïdale du temps correspondant à un oscillateur harmonique. <br /> Elle possède aussi la double périodicité temporelle et spatiale.",
     "id": 44
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Autre forme mathématique de l'onde",
     "resultat": "$s_M(x,t) = A\\cos(2\\pi \\frac{t}{T} - 2\\pi \\frac{x}{\\lambda} + \\varphi s) = A\\cos(2\\pi(\\frac{t}{T} - \\frac{x}{\\lambda}) + \\varphi s) = A\\cos(\\omega t - kx + \\varphi s)$",
     "id": 45
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Tableau récapitulatif sur les grandeurs caractérisant la double périodicité de l'angle",
     "resultat": "<table> <tr><td></td><td>Période</td><td>Fréquence</td><td>Pulsation</td></tr> <tr><td>temps</td><td>$T$</td><td>$f=\\frac{1}{T}$</td><td>$\\omega=\\frac{2\\pi}{T} = 2\\pi f$</td></tr> <tr><td>Espace</td> <td>$\\lambda = cT = \\frac{c}{f}$</td> <td>$\\sigma = \\frac{1}{\\lambda} = \\frac{f}{c}$</td> <td>$k=\\frac{2\\pi}{\\lambda} = 2\\pi\\sigma$</td> </tr>  </table>",
     "id": 70
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "lien entre la période temporelle et la source",
     "resultat": "La période temporelle est imposée par la source, elle ne dépend pas du milieu de propagation.",
     "id": 46
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Intérêt des ondes harmoniques (=sinusoïdales)",
     "resultat": "L'onde harmonique est le maillon élémentaire de toute théorie des ondes.",
     "id": 47
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Phase d'un signal sinusoïdal",
     "resultat": "$\\varphi(x) = -\\frac{2\\pi x}{\\lambda} + \\varphi_s = -kx + \\varphi_s$<br/>$\\varphi_s$ est la phase initiale.",
     "id": 71
@@ -298,27 +298,27 @@ const quiz_superposition_signaux_interference_ondes = [{
     "resultat": "Superposer des signaux veut dire sommer l'ensemble des signaux et pas seulement les amplitudes.",
     "id": 56
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Signal résultant de la superposition de deux signaux sinusoïdaux synchrones de même fréquence $f$",
     "resultat": "Le signal résultant de la superposition de deux signaux sinusoïdaux synchrones de même fréquence $f$ présentant un déphasage indépendant du temps, est une fonction sinusoïdale de <b>même fréquence $f$</b>. Il s'écrit <br/> $s(t) = A\\cos(\\omega t + \\varphi(M))$ <br/> Selon le type d'onde, les capteurs sont sensibles, soit à l'amplitude de l'onde, soit plus fréquemment à l'intensité de l'onde, qui elle, est proportionnellle au carré de l'amplitude. <br/> Les propriétés de l'amplitude permettent de décrire l'état ondulatoire observé en un point.",
     "id": 57
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Représentation de Fresnel",
     "resultat": "On peut utiliser la représentation graphique de Fresnel pour retrouver l'amplitude de l'onde résultante de la superposition des signaux de même fréquence. <br/> $\\vec{S} = \\vec{S_1} + \\vec{S_2}$ <br /> <img src=\"res/representation_fresnel.png\" />",
     "id": 58
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Superposition de deux signaus sinusoïdaux de même fréquence et d'amplitudes $A_1$ et $A_2$",
     "resultat": "Le signal résultant de la superposition de deux signaux sinusoïdaux de même fréquence, d'amplitudes $A_1$ et $A_2$ et de phases $\\varphi_1(M)$ et $\\varphi_2(M)$ est un signal sinusoïdal de même fréquence et d'amplitude : <br /> $A = \\sqrt{A_1^2 + A_2^2 + 2A_1A_2\\cos(\\Delta \\varphi)}$",
     "id": 59
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Phénomène d'interférence",
     "resultat": "Il y a interférence quand des ondes de même fréquences et présentant un déphasage $\\Delta \\varphi$ indépendant du temps se superposent. <br/> Le terme $2A_1A_2\\cos(\\Delta\\varphi)$ dans l'amplitude résultant de cette superposition est appelé <b>\"terme d'interférences\"</b>. <br.> $\\rightarrow$ On appelle aussi interférences les phénomènes par lequel la superposition de plusieurs ondes produit localement une amplitude qui est en général différente de la somme des amplitudes individuelles ou encore une intensité d'onde telle que <br/> $A^2 \\neq A_1^2 + A_2^2$<br/>Les intensités des ondes ne s'ajoutent pas.",
     "id": 60
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Etude du terme d'interférence",
     "resultat": "<div class=\"little scrolldiv\"><table> <tr><td>Interférences</td> <td>Constructives<br/>$A_1\\neq A_2$</td> <td>Destructives<br/>$A_1\\neq A_2$</td> <td>Constructives<br/>$A_1=A_2=A_0$</td> <td>Destructives<br/>$A_1=A_2=A_0$</td> </tr> <tr><td>Signaux/Ondes</td> <td>En phase</td> <td>En opposition de phase</td> <td>En phase</td> <td>En opposition de phase</td> </tr> <tr><td>Déphasage <br/>$\\Delta\\varphi=\\varphi_2-\\varphi_1$</td> <td>$\\Delta\\varphi = 2n\\pi$</td> <td>$\\Delta\\varphi$<br/>$=2n\\pi+\\pi/2$<br/>$=(2n+1)\\pi$</td> <td>$\\Delta\\varphi = 2n\\pi$</td> <td>$\\Delta\\varphi$<br/>$=2n\\pi+\\pi/2$<br/>$=(2n+1)\\pi$</td> </tr>  <tr><td>Terme d'interférences<br/>$2A_1A_2\\cos(\\Delta\\varphi)$</td> <td>$2A_1A_2$</td> <td>$-2A_1A_2$</td> <td>$2A_0^2$</td> <td>$-2A_0^2$</td> </tr> <tr><td>Amplitude du signal<br/>$A=\\sqrt{A_1^2+A_2^2+A_1A_2\\cos(\\Delta\\varphi)}$</td> <td>$A=A_1+A_2$</td> <td>$A=|A_1-A_2|$</td> <td>$A=2A_0$</td> <td>$A=0$</td> </tr></table></div>",
     "id": 61
@@ -328,17 +328,17 @@ const quiz_superposition_signaux_interference_ondes = [{
     "resultat": "On appelle différence de marche au point $M$, la quantité $\\delta(M) = S_1M-S_2M$ égale à la différence entre les chemins parcourus par les deux signaux depuis les sources",
     "id": 62
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Lien entre la différence de marche et la différence de phase",
     "resultat": "<b>La différence de marche $\\delta$ est liée à la différence de phase</b> entre les ondes arrivant au point $M$<br/>$\\Delta\\varphi = k\\delta = \\frac{2\\pi}{\\lambda}\\delta = \\frac{2\\pi}{\\lambda}(r_1-r_2)$",
     "id": 63
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Interférences constructives",
     "resultat": "L'amplitude résultante est maximale $A=2A_0$ ou $A_1+A_2$<br/>$\\Delta\\varphi = 2n\\pi, n\\in$#Z<br/><div style=\"border:1px solid; padding-bottom:5px; padding-top:5px;\"><b>Conditions d'interférences constructives : $\\Delta\\varphi = 2n\\pi$ ou $\\delta = n\\lambda, n\\in$#Z</div><br/><ul><li>n est entier relatif</li><li>Les deux signaux arrivant en $M$ sont en phase</li><li>La norme de $\\vec{S}$ est la somme des normes des deux vecteurs de Fresnel associé</li></ul></b>",
     "id": 64
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Interférences destructives",
     "resultat": "L'amplitude résultante est minimale ou nulle $A=0$ ou $|A_1-A_2|$<br/>$\\Delta\\varphi = 2n\\pi+\\pi = (2n+1)\\pi, n\\in$#Z<br/><div style=\"border:1px solid; padding-bottom:5px; padding-top:5px;\"><b>Conditions d'interférences destructives : $\\Delta\\varphi = (2n+1)\\pi$ ou $\\delta = (n+\\frac{1}{2})\\lambda, n\\in$#Z</div><br/><ul><li>Les deux signaux arrivant en $M$ sont en opposition phase</li><li><b>Attention : </b> les deux ondes on l'air de se détruire mutuellement mais ce n'est vrai que pour quelques points bien particuliers où les ondes se retrouvent en opposition de phase; en aucun cas les ondes se détruisent effectivement</li><li>L'intensité devient inférieure à la somme des intensités dans le cas d'interférences destructives</li></ul></b>",
     "id": 65
@@ -358,7 +358,7 @@ const quiz_superposition_signaux_interference_ondes = [{
     "resultat": "Lorsqu'une onde progressive sinusoïdale de longueur d'onde $\\lambda$ rencontre un obstacle de largeur $a$, l'ordre de grandeur de l'angle du faisceau $\\theta$ vérifie la relation<br/>$\\sin(\\theta)=\\frac{\\lambda}{a}$",
     "id": 68
 }, {
-    "type": "texte_physique",
+    "type": "texte",
     "titre": "Limites de la diffraction",
     "resultat": "On considère une onde plane (fronts d'onde plans) sinusoïdale de longueur d'onde $\\lambda$ qui arrive sur une fenêtre étroite de taille caractéristique $a$. Loin après l'obstace, <br/> $\\rightarrow$ si $a \\gg \\lambda$, la direction de l'onde n'est quasiment pas affectée par la présence de l'obstacle, l'onde est seulement diaphragnmée<br/>$\\rightarrow$ si $a \\gt \\lambda$, l'onde se propage <u>dans toutes les directions</u> mais elle possède des directions privilégies comprises dans un cône de demi-angle au sommet $\\theta_{max}$. $\\theta_{max}$ augmente quand $a$ diminue.",
     "id": 69
@@ -366,7 +366,7 @@ const quiz_superposition_signaux_interference_ondes = [{
 /*
 
     ,{
-        "type": "texte_physique",
+        "type": "texte",
         "titre": "",
         "resultat": "",
         "id": 0

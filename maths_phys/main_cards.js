@@ -96,7 +96,7 @@ function next_question() {
         // On affiche le score
         document.getElementById("score").innerHTML = "Score : " + score + " / " + nb_question;
         window.nb_question++;
-        // On fait atexte_physiquettendre un peu avant de pouvoir reveal
+        // On fait atextettendre un peu avant de pouvoir reveal
         var date = new Date();
         window.deb_att = date.getTime();
     } // Sinon, on renvoie vers la page de fin

@@ -94,12 +94,12 @@
     border: 2px solid rgb(3, 151, 209);
 }
 
-.texte_physique,
-.texte_physique * {
+.texte,
+.texte * {
     background-color: rgb(18, 26, 29);
 }
 
-.texte_physique {
+.texte {
     border: 2px dashed rgb(248, 248, 248);
 }
 

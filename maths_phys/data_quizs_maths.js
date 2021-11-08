@@ -839,8 +839,103 @@ const quiz_trigo = [{
     "type": "definition",
     "titre": "Cercle trigonométrique",
     "hypotheses": "",
-    "resultat": "Le cercle trigonométrique (ou cercle unité) est le sous ensemble de #C, noté #U (comme \"unité\"), constitué des nombres complexes de module $1$ : <br/> #U$ = \\{z \\in $#C$, |z| = 1\\}.",
+    "resultat": "Le cercle trigonométrique (ou cercle unité) est le sous ensemble de #C, noté #U (comme \"unité\"), constitué des nombres complexes de module $1$ : <br/> #U$ = \\{z \\in $#C$, |z| = 1\\}$. <br/> Le cercle trigonométrique correspond dans l'interprétation géométrique des complexes au cercle de centre $(0, 0)$ et de rayon $1$, de #R$^2$. <br/> <img style=\"background-color:white!important;\" class=\"imgc\" src=\"res/cercle_trigo.svg\" />",
     "id": 128
+}, {
+    "type": "definition",
+    "titre": "Fonctions trigonométriques",
+    "hypotheses": "Soit $x \\in $#R.",
+    "resultat": "On considère le cercle trigonométrique dans le plan euclidien canonoique. Soit $z$ le point du cercle trigonométrique tel que le rayon correspondant du cercle trigonométrique forme avec l'axe des réels un angle (orienté dans le sens direct) de $x$.<br/> On définit alors les fonctions cosinus, sinus et tangente par : <br/> $\\cos(x) = \\Re(x)$, $\\sin(x) = \\Im(z)$ et $\\tan(x) = \\frac{sin(x)}{cos(x)}$ si $cos(x)\\neq 0$",
+    "id": 129
+}, {
+    "type": "texte",
+    "titre": "Fonctions trigonométrique dans un triangle rectangle",
+    "hypotheses": "Soit $\\alpha$ un angle dans $]0, \\frac{\\pi}{2}[$.",
+    "resultat": "Si $ABC$ est un triangle rectangle en $A$, et d'angle en $B$ égal à $\\alpha$, alors <br/> $\\sin(x) = \\frac{\\text{côté opposé}}{\\text{hypoténuse}}$, $\\cos(x) = \\frac{\\text{côté adjacent}}{\\text{hypothénuse}}$, $\\tan(x) = \\frac{\\text{côté opposé}}{\\text{côté adjacent}}$.",
+    "id": 130
+}, {
+    "type": "definition",
+    "titre": "Cotangente",
+    "hypotheses": "Soit $x \\in $#R.",
+    "resultat": "La contangente est définie, pour tout $x$ tel que $\\sin(x) \\neq 0$, par : <br/> $\\text{cotan}(x) = \\frac{\\cos(x)}{\\sin(x)}.$",
+    "id": 131
+}, {
+    "type": "proposition",
+    "titre": "Domaines de définition des fonctions trigonométriques",
+    "hypotheses": "",
+    "resultat": "<ol><li>Les fonctions sin et cos sont définies sur #R</li> <li>La fonction tan est définie sur #R$\\backslash \\{\\frac{\\pi}{2} + n\\pi, n \\in $#Z$\\}$</li> <li>La fonction cotan est définie sur #R$\\backslash \\{n\\pi, n \\in $#Z$\\}$.</li></ol>",
+    "id": 132
+}, {
+    "type": "proposition",
+    "titre": "Périodicité de sin et cos",
+    "hypotheses": "",
+    "resultat": "sin et cos sont $2\\pi$-périodiques",
+    "id": 133
+}, {
+    "type": "proposition",
+    "titre": "Parité de sin et cos",
+    "hypotheses": "",
+    "resultat": "sin est impaire et cos est paire",
+    "id": 134
+}, {
+    "type": "proposition",
+    "titre": "$\\cos(\\pi+x)$",
+    "hypotheses": "",
+    "resultat": "$\\cos(\\pi+x) = -\\cos(x)$",
+    "id": 135
+}, {
+    "type": "proposition",
+    "titre": "$\\sin(\\pi+x)$",
+    "hypotheses": "",
+    "resultat": "$\\sin(\\pi+x) = -\\sin(x)$",
+    "id": 136
+}, {
+    "type": "proposition",
+    "titre": "$\\cos(\\pi-x)$",
+    "hypotheses": "",
+    "resultat": "$\\cos(\\pi-x) = -\\cos(x)$",
+    "id": 137
+}, {
+    "type": "proposition",
+    "titre": "$\\sin(\\pi-x)$",
+    "hypotheses": "",
+    "resultat": "$\\sin(\\pi-x) = \\sin(x)$",
+    "id": 138
+}, {
+    "type": "proposition",
+    "titre": "$\\cos(\\frac{\\pi}{2}-x)$",
+    "hypotheses": "",
+    "resultat": "$\\cos(\\frac{\\pi}{2}-x) = \\sin(x)$",
+    "id": 139
+}, {
+    "type": "proposition",
+    "titre": "$\\sin(\\frac{\\pi}{2}-x)$",
+    "hypotheses": "",
+    "resultat": "$\\sin(\\frac{\\pi}{2}-x) = \\cos(x)$",
+    "id": 140
+}, {
+    "type": "proposition",
+    "titre": "$\\cos(\\frac{\\pi}{2}+x)$",
+    "hypotheses": "",
+    "resultat": "$\\cos(\\frac{\\pi}{2}+x) = -\\sin(x)$",
+    "id": 141
+}, {
+    "type": "proposition",
+    "titre": "$\\sin(\\frac{\\pi}{2}+x)$",
+    "hypotheses": "",
+    "resultat": "$\\sin(\\frac{\\pi}{2}+x) = \\cos(x)$",
+    "id": 142
+}, {
+    "type": "proposition",
+    "titre": "Périodicité de tan et cotan",
+    "resultat": "tan et cotan sont $\\pi$-périodiques",
+    "id": 143
+}, {
+    "type": "proposition",
+    "titre": "Parité de tan et cotan",
+    "hypotheses": "",
+    "resultat": "tan et cotan sont impaires",
+    "id": 144
 }];
 
 /*
@@ -863,5 +958,6 @@ const Quizs = {
     "Logique - incomplet": quiz_logique,
     "Relations": quiz_relations,
     "Nombres réels": quiz_reels,
-    "Complexes": quiz_nb_complexes
+    "Complexes": quiz_nb_complexes,
+    "Trigonométrie - incomplet": quiz_trigo,
 };

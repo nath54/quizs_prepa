@@ -19,6 +19,7 @@ function compile_txt(txt) {
         "#R": "$\\mathbb{R}$",
         "#C": "$\\mathbb{C}$",
         "#D": "$\\mathbb{D}$",
+        "#U": "$\\mathbb{U}$",
         "#x": "$\\times$",
         "#pi": "$\\pi$",
         "#x_barre": "$\\overline{x}$",
