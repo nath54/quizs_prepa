@@ -928,6 +928,7 @@ const quiz_trigo = [{
 }, {
     "type": "proposition",
     "titre": "Périodicité de tan et cotan",
+    "hypotheses": "",
     "resultat": "tan et cotan sont $\\pi$-périodiques",
     "id": 143
 }, {
