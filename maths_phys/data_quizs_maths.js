@@ -755,6 +755,94 @@ const quiz_reels = [{
     }
 ];
 
+const quiz_nb_complexes = [{
+    "type": "definition",
+    "titre": "Ensemble #C des nombres complexes",
+    "hypotheses": "",
+    "resultat": "L'ensemble des nombres complexes #C est l'ensemble #R$^2$, muni des opérations suivantes : <ul><li>$(a, b) + (a',b') = (a+a', b+b')$</li> <li>$(a, b) \\times (a', b') = (aa' - bb', ab' + a'b)$</li></ul>",
+    "id": 115
+}, {
+    "type": "remarque",
+    "titre": "Injection de #R dans #C",
+    "hypotheses": "",
+    "resultat": "L'application $\\lambda \\rightarrow (\\lambda, 0)$ étant injective, on identifie un réel $\\lambda$ au complexe $(\\lambda, 0)$. Via cette définition, on peut considérer que #R$ \\in $#C, et on vérifie facilement que la somme et le produit défini sur #C prolongent les lois de #R.",
+    "id": 116
+}, {
+    "type": "definition",
+    "titre": "definition de la forme algébrique",
+    "hypotheses": "",
+    "resultat": "<ul><li>On note $1 = (1,0)$ et $i = (0, 1)$</li><li>On a alors, pour tout $z = (a,b) \\in $#C, <br/> $z = a\\times 1 + b\\times i =  a+ib$<br/>C'est la forme algébrique du nombre complexe $z$.</li></ul>",
+    "id": 117
+}, {
+    "type": "definition",
+    "titre": "Parties réelle/imaginaire",
+    "hypotheses": "",
+    "resultat": "<ul><li>Soit $z=a+ib$, avec $a,b \\in $#R. <br/> * Le réel $a$ est appelé <b>partie réelle de $z$</b>, et est noté $\\Re(z)$<br/> * Le réel $b$ est appelé <b>partie imaginaire de $z$</b>, et est noté $\\Im(z)$</li> <li>Un nombre $z \\in $#C tel que $\\Re(z) = 0$ est appelé <b>nombre imaginaire pur</b></li> <li>Un nombre $z \\in $#C vérifie $\\Im(z) = 0$ si et seulement si $z \\in $#R</li> </ul>",
+    "id": 118
+}, {
+    "type": "proposition",
+    "titre": "Propriétés liées au produit (nb complexes)",
+    "hypotheses": "",
+    "resultat": "<ol><li>$i^2=-1$</li> <li>Le produit $(a+ib)(a'+ib')$ est simplement obtenu par utilisation des règles de distributivité et par la relation $i^2=-1$</li> <li>Si $z\\neq0$, alors $z$ est inversible, et, si $z=a+ib$ avec $(a,b) \\in $#R$^2$, on a l'expression de l'inverse : <br/> $z^{-1} = \\frac{a-ib}{a^2+b^2}$</li></ol>",
+    "id": 119
+}, {
+    "type": "theoreme",
+    "titre": "Structure de #C",
+    "hypotheses": "",
+    "resultat": "L'ensemble #C muni des opérations ci-dessus est un corps.",
+    "id": 120
+}, {
+    "type": "definition",
+    "titre": "Affixe d'un point du plan",
+    "hypotheses": "Soit $A = (a,b)$ un point de #R$^2$.",
+    "resultat": "L'affixe du point $A$ est le nombre complexe $z_A = a+ib$.",
+    "id": 121
+}, {
+    "type": "theoreme",
+    "titre": "Théorème d'Alembert-Gauss",
+    "hypotheses": "",
+    "resultat": "Tout polynôme non constant à coefficients complexes admet au moins une racine dans #C.",
+    "id": 122
+}, {
+    "type": "definition",
+    "titre": "Conjugué d'un nombre complexe",
+    "hypotheses": "Soit $z = a+ib$ (avec $(a,b) \\in $#R$^2$) un nombre complexe.",
+    "resultat": "Le conjugué de $z$ est le nombre complexe <br/> $\\overline{z\\ } a - ib$",
+    "id": 123
+}, {
+    "type": "propriete",
+    "titre": "Propriétés de la conjugaison dans #C",
+    "hypotheses": "Soit $z$ et $z'$ deux nombres complexes.",
+    "resultat": "<ol><li>$\\overline{\\overline{z\\ }} = z$ (autrement dit, la conjugaison est une involution)</li> <li>$z = \\overline{z\\ } \\iff z \\in $#R</li> <li>$z = -\\overline{z\\ } \\iff z$ imaginaire pur</li> <li>$\\Re(z) = \\frac{z + \\overline{z\\ }}{2}$ et $\\Im(z) = \\frac{z - \\overline{z\\ }}{2}$</li> <li>$\\overline{z + z'} = \\overline{z\\ } + \\overline{z'}$, $\\overline{zz'} = \\overline{z\\ }\\times\\overline{z'}$, $\\overline{z^{-1}} = \\overline{z\\ }^{-1}$, $\\overline{(\\frac{z}{z'})} = \\frac{\\overline{z\\ }}{\\overline{z'}}$</li></ol>",
+    "id": 124
+}, {
+    "type": "definition",
+    "titre": "Module d'un nombre complexe",
+    "hypotheses": "Soit $(a,b) \\in $#R$^2$, et $z=a+ib$.",
+    "resultat": "Le module de $z$ est le réel positif défini par <br/> $|z| = \\sqrt{a^2 + b^2}$",
+    "id": 125
+}, {
+    "type": "propriete",
+    "titre": "Propriétés du module",
+    "hypotheses": "Soit $z$ et $z'$ deux nombres complexes.",
+    "resultat": "<ol><li>$z = 0 \\iff |z| = 0$</li> <li>$|\\Re(z)| \\leqslant |z| \\ $   et   $\\ |\\Im(z)| \\leqslant |z|$</li> <li>$|z|^2 = z\\overline{z\\ }$</li> <li>$|zz'| = |z|\\times|z'| \\ $ et si $z' \\neq 0$, $|\\frac{z}{z'}| = \\frac{|z|}{|z'|}$</li> <li>$|z| = |\\overline{z\\ }|$</li> <li>$|z + z'| = |z| + |z'|$</li></ol>",
+    "id": 126
+}, {
+    "type": "methode",
+    "titre": "Expression algébrique du quotient",
+    "hypotheses": "Soit $z_1$ et $z_2$ deux nombres complexes donnés sous forme algébrique avec $z_2 \\neq 0$.",
+    "resultat": "Pour trouver la forme algébrique du quotient $\\frac{z_1}{z_2}$, multipliez le dénominateur par $\\overline{z_2}$. De la sorte, le dénominateur est maintenant un réel.",
+    "id": 127
+}];
+
+const quiz_trigo = [{
+    "type": "definition",
+    "titre": "Cercle trigonométrique",
+    "hypotheses": "",
+    "resultat": "Le cercle trigonométrique (ou cercle unité) est le sous ensemble de #C, noté #U (comme \"unité\"), constitué des nombres complexes de module $1$ : <br/> #U$ = \\{z \\in $#C$, |z| = 1\\}.",
+    "id": 128
+}];
+
 /*
 
     ,{
@@ -774,5 +862,6 @@ const quiz_reels = [{
 const Quizs = {
     "Logique - incomplet": quiz_logique,
     "Relations": quiz_relations,
-    "Nombres réels": quiz_reels
+    "Nombres réels": quiz_reels,
+    "Complexes": quiz_nb_complexes
 };
