@@ -937,6 +937,264 @@ const quiz_trigo = [{
     "hypotheses": "",
     "resultat": "tan et cotan sont impaires",
     "id": 144
+}, {
+    "type": "proposition",
+    "titre": "$\\sin(0)$",
+    "hypotheses": "",
+    "resultat": "$\\sin(0) = 0$",
+    "id": 145
+}, {
+    "type": "proposition",
+    "titre": "$\\sin(\\frac{\\pi}{6})$",
+    "hypotheses": "",
+    "resultat": "$\\sin(\\frac{\\pi}{6}) = \\frac{1}{2}$",
+    "id": 146
+}, {
+    "type": "proposition",
+    "titre": "$\\sin(\\frac{\\pi}{4})$",
+    "hypotheses": "",
+    "resultat": "$\\sin(\\frac{\\pi}{4}) = \\frac{\\sqrt{2}}{2}$",
+    "id": 147
+}, {
+    "type": "proposition",
+    "titre": "$\\sin(\\frac{\\pi}{3})$",
+    "hypotheses": "",
+    "resultat": "$\\sin(\\frac{\\pi}{3}) = \\frac{\\sqrt{3}}{2}$",
+    "id": 148
+}, {
+    "type": "proposition",
+    "titre": "$\\sin(\\frac{\\pi}{2})$",
+    "hypotheses": "",
+    "resultat": "$\\sin(\\frac{\\pi}{2}) = 1$",
+    "id": 149
+}, {
+    "type": "proposition",
+    "titre": "$\\cos(0)$",
+    "hypotheses": "",
+    "resultat": "$\\cos(0) = 1$",
+    "id": 150
+}, {
+    "type": "proposition",
+    "titre": "$\\cos(\\frac{\\pi}{6})$",
+    "hypotheses": "",
+    "resultat": "$\\cos(\\frac{\\pi}{6}) = \\frac{\\sqrt{3}}{2}$",
+    "id": 151
+}, {
+    "type": "proposition",
+    "titre": "$\\cos(\\frac{\\pi}{4})$",
+    "hypotheses": "",
+    "resultat": "$\\cos(\\frac{\\pi}{4}) = \\frac{\\sqrt{2}}{2}$",
+    "id": 152
+}, {
+    "type": "proposition",
+    "titre": "$\\cos(\\frac{\\pi}{3})$",
+    "hypotheses": "",
+    "resultat": "$\\cos(\\frac{\\pi}{3}) = \\frac{1}{2}$",
+    "id": 153
+}, {
+    "type": "proposition",
+    "titre": "$\\cos(\\frac{\\pi}{2})$",
+    "hypotheses": "",
+    "resultat": "$\\cos(\\frac{\\pi}{2}) = 0$",
+    "id": 154
+}, {
+    "type": "proposition",
+    "titre": "$\\tan(0)$",
+    "hypotheses": "",
+    "resultat": "$\\tan(0) = 0$",
+    "id": 155
+}, {
+    "type": "proposition",
+    "titre": "$\\tan(\\frac{\\pi}{6})$",
+    "hypotheses": "",
+    "resultat": "$\\tan(\\frac{\\pi}{6}) = \\frac{1}{\\sqrt{3}}$",
+    "id": 156
+}, {
+    "type": "proposition",
+    "titre": "$\\tan(\\frac{\\pi}{4})$",
+    "hypotheses": "",
+    "resultat": "$\\tan(\\frac{\\pi}{4}) = 1$",
+    "id": 157
+}, {
+    "type": "proposition",
+    "titre": "$\\tan(\\frac{\\pi}{3})$",
+    "hypotheses": "",
+    "resultat": "$\\tan(\\frac{\\pi}{3}) = \\sqrt{3}$",
+    "id": 158
+}, {
+    "type": "proposition",
+    "titre": "$\\text{cotan}(\\frac{\\pi}{6})$",
+    "hypotheses": "",
+    "resultat": "$\\text{cotan}(\\frac{\\pi}{6}) = \\sqrt{3}$",
+    "id": 159
+}, {
+    "type": "proposition",
+    "titre": "$\\text{cotan}(\\frac{\\pi}{4})$",
+    "hypotheses": "",
+    "resultat": "$\\text{cotan}(\\frac{\\pi}{4}) = 1$",
+    "id": 160
+}, {
+    "type": "proposition",
+    "titre": "$\\text{cotan}(\\frac{\\pi}{3})$",
+    "hypotheses": "",
+    "resultat": "$\\text{cotan}(\\frac{\\pi}{3}) = \\frac{1}{\\sqrt{3}}$",
+    "id": 161
+}, {
+    "type": "proposition",
+    "titre": "$\\text{cotan}(\\frac{\\pi}{2})$",
+    "hypotheses": "",
+    "resultat": "$\\text{cotan}(\\frac{\\pi}{2}) = 0$",
+    "id": 162
+}, {
+    "type": "proposition",
+    "titre": "Identité remarquable ou théorème de Pythagore",
+    "hypotheses": "",
+    "resultat": "Pour tout $x \\in $#R, $\\sin^2(x) + \\cos^2(x) = 1$",
+    "id": 163
+}, {
+    "type": "proposition",
+    "titre": "$\\sin(a+b)$",
+    "hypotheses": "Soient $a$ et $b$ deux réels",
+    "resultat": "$\\sin(a+b) = \\sin(a)\\cos(b) + \\sin(b)\\cos(a)$",
+    "id": 164
+}, {
+    "type": "proposition",
+    "titre": "$\\sin(a-b)$",
+    "hypotheses": "Soient $a$ et $b$ deux réels",
+    "resultat": "$\\sin(a-b) = \\sin(a)\\cos(b) - \\sin(b)\\cos(a)$",
+    "id": 165
+}, {
+    "type": "proposition",
+    "titre": "$\\cos(a+b)$",
+    "hypotheses": "Soient $a$ et $b$ deux réels",
+    "resultat": "$\\cos(a+b) = \\cos(a)\\cos(b) - \\sin(a)\\sin(b)$",
+    "id": 166
+}, {
+    "type": "proposition",
+    "titre": "$\\cos(a-b)$",
+    "hypotheses": "Soient $a$ et $b$ deux réels",
+    "resultat": "$\\cos(a-b) = \\cos(a)\\cos(b) + \\sin(a)\\sin(b)$",
+    "id": 167
+}, {
+    "type": "proposition",
+    "titre": "$\\tan(a+b)$",
+    "hypotheses": "Soient $a$ et $b$ deux réels tels que $\\tan(a)$, $\\tan(b)$ et $\\tan(a+b)$ soient définis",
+    "resultat": "$\\tan(a+b) = \\frac{\\tan(a)+\\tan(b)}{1-\\tan(a)\\tan(b)}$",
+    "id": 168
+}, {
+    "type": "proposition",
+    "titre": "$\\tan(a-b)$",
+    "hypotheses": "Soient $a$ et $b$ deux réels tels que $\\tan(a)$, $\\tan(b)$ et $\\tan(a+b)$ soient définis",
+    "resultat": "$\\tan(a-b) = \\frac{\\tan(a)-\\tan(b)}{1+\\tan(a)\\tan(b)}$",
+    "id": 169
+}, {
+    "type": "proposition",
+    "titre": "$\\text{cotan}(a+b)$",
+    "hypotheses": "Soient $a$ et $b$ deux réels tels que $\\text{cotan}(a)$, $\\text{cotan}(b)$ et $\\text{cotan}(a+b)$ soient définis",
+    "resultat": "$\\text{cotan}(a+b) = \\frac{\\text{cotan}(a)\\text{cotan}(b)-1}{\\text{cotan}(a)+\\text{cotan}(b)}$",
+    "id": 170
+}, {
+    "type": "proposition",
+    "titre": "$\\sin(2a)$",
+    "hypotheses": "Soit $a$ un réel.",
+    "resultat": "$\\sin(2a) = 2\\sin(a)\\sin(b)$",
+    "id": 171
+}, {
+    "type": "proposition",
+    "titre": "$\\cos(2a)$",
+    "hypotheses": "Soit $a$ un réel.",
+    "resultat": "$\\cos(2a) = \\cos^2(a) - \\sin^2(a)$<br/>$ = 1 - 2\\sin^2(a)$<br/>$ = 2\\cos^2(a) - 1$",
+    "id": 172
+}, {
+    "type": "proposition",
+    "titre": "$\\tan(2a)$",
+    "hypotheses": "Soit $a$ un réel",
+    "resultat": "$\\ŧan(2a) = \\frac{2\\tan(a)}{1-\\tan^2(a)}$",
+    "id": 173
+}, {
+    "type": "proposition",
+    "titre": "$\\text{cotan}(2a)$",
+    "hypotheses": "Soit $a$ un réel.",
+    "resultat": "$\\text{cotan}(2a) = \\frac{\\text{cotan}^2(a) - 1}{2\\text{cotan}(a)}$",
+    "id": 174
+}, {
+    "type": "proposition",
+    "titre": "$\\cos^2(a)$",
+    "hypotheses": "Soit $a \\in $#R",
+    "resultat": "$\\cos^2(a) = \\frac{1 + \\cos^2(2a)}{2}$",
+    "id": 175
+}, {
+    "type": "proposition",
+    "titre": "$\\sin^2(a)$",
+    "hypotheses": "Soit $a \\in $#R",
+    "resultat": "$\\sin^2(a) = \\frac{1 - \\cos^2(2a)}{2}$",
+    "id": 176
+}, {
+    "type": "proposition",
+    "titre": "$\\sin(a)\\sin(b)$",
+    "hypotheses": "Soit $a$ et $b$ deux réel.",
+    "resultat": "$\\sin(a)\\sin(b) = \\frac{1}{2}[\\cos(a-b)-\\cos(a+b)]$",
+    "id": 177
+}, {
+    "type": "proposition",
+    "titre": "$\\cos(a)\\cos(b)$",
+    "hypotheses": "Soit $a$ et $b$ deux réel.",
+    "resultat": "$\\cos(a)\\cos(b) = \\frac{1}{2}[\\cos(a-b)+\\cos(a+b)]$",
+    "id": 178
+}, {
+    "type": "proposition",
+    "titre": "$\\sin(a)\\cos(b)$",
+    "hypotheses": "Soit $a$ et $b$ deux réel.",
+    "resultat": "$\\sin(a)\\cos(b) = \\frac{1}{2}[\\sin(a+b)-\\sin(a-b)]$",
+    "id": 179
+}, {
+    "type": "proposition",
+    "titre": "$\\sin(p)+\\sin(q)$",
+    "hypotheses": "Soit $p$ et $q$ deux réels.",
+    "resultat": "$\\sin(p)+\\sin(q) = 2\\sin(\\frac{p+q}{2})\\cos(\\frac{p-q}{2})$",
+    "id": 180
+}, {
+    "type": "proposition",
+    "titre": "$\\sin(p)-\\sin(q)$",
+    "hypotheses": "Soit $p$ et $q$ deux réels.",
+    "resultat": "$\\sin(p)-\\sin(q) = 2\\cos(\\frac{p+q}{2})\\sin(\\frac{p-q}{2})$",
+    "id": 181
+}, {
+    "type": "proposition",
+    "titre": "$\\cos(p)+\\cos(q)$",
+    "hypotheses": "Soit $p$ et $q$ deux réels.",
+    "resultat": "$\\cos(p)+\\cos(q) = 2\\cos(\\frac{p+q}{2})\\cos(\\frac{p-q}{2})$",
+    "id": 182
+}, {
+    "type": "proposition",
+    "titre": "$\\cos(p)-\\cos(q)$",
+    "hypotheses": "Soit $p$ et $q$ deux réels.",
+    "resultat": "$\\cos(p)-\\cos(q) = -2\\sin(\\frac{p+q}{2})\\sin(\\frac{p-q}{2})$",
+    "id": 183
+}, {
+    "type": "proposition",
+    "titre": "$\\sin(x)$ (Formule de l'arc moitié)",
+    "hypotheses": "Soit $x$ un réel tel que $t = \\tan(\\frac{x}{2})$ soit défini.",
+    "resultat": "$\\sin(x) = \\frac{2t}{1+t^2}$",
+    "id": 184
+}, {
+    "type": "proposition",
+    "titre": "$\\cos(x)$ (Formule de l'arc moitié)",
+    "hypotheses": "Soit $x$ un réel tel que $t = \\tan(\\frac{x}{2})$ soit défini.",
+    "resultat": "$\\cos(x) = \\frac{1-t^2}{1+t^2}$",
+    "id": 185
+}, {
+    "type": "proposition",
+    "titre": "$\\tan(x)$ (Formule de l'arc moitié)",
+    "hypotheses": "Soit $x$ un réel tel que $t = \\tan(\\frac{x}{2})$ soit défini.",
+    "resultat": "$\\tan(x) = \\frac{2t}{1-t^2}$, si $t\\neq\\pm1$",
+    "id": 186
+}, {
+    "type": "proposition",
+    "titre": "$a\\cos(x)+b\\sin(x)$ (Formule de factorisation)",
+    "hypotheses": "Soient $a$, $b$ et $c$ trois réels. $a \\neq 0$.",
+    "resultat": "$a\\cos(x) + b\\sin(x) = \\frac{a}{\\cos(\\varphi)} \\cos(x - \\varphi)$, où $\\tan(\\varphi) = \\frac{b}{a}$",
+    "id": 187
 }];
 
 /*
