@@ -86,7 +86,34 @@ function next_question() {
     if (window.questions.length > 0) {
         // On tire au hasard un question
         window.question_actu_id = parseInt(Math.random() * window.questions.length);
-        document.getElementById("card_titre").innerHTML = compile_txt(window.questions[window.question_actu_id].titre);
+        var txt_comp = "";
+        switch (window.questions[window.question_actu_id].type) {
+            case "definition":
+                txt_comp = "Définition : "
+                break
+            case "proposition":
+                txt_comp = "Proposition : "
+                break
+            case "lemme":
+                txt_comp = "Lemme : "
+                break
+            case "methode":
+                txt_comp = "Méthode : "
+                break
+            case "axiome":
+                txt_comp = "Axiome : "
+                break
+            case "corollaire":
+                txt_comp = "Corollaire : "
+                break
+            case "propriete":
+                txt_comp = "Propriété : "
+                break
+            default:
+                break
+        }
+
+        document.getElementById("card_titre").innerHTML = txt_comp + compile_txt(window.questions[window.question_actu_id].titre);
         document.getElementById("card_hypotheses").innerHTML = "";
         document.getElementById("card_resultat").innerHTML = "";
         MathJax.typesetPromise();

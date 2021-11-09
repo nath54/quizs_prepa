@@ -77,7 +77,6 @@ td {
     padding: 10px;
     /* */
     word-wrap: unset;
-    font-size: 3vh;
 }
 
 #card * {
@@ -86,7 +85,7 @@ td {
     background-color: white;
     /* size & position */
     margin: auto;
-    font-size: 1.02em;
+    font-size: clamp(14px, 2vw, 22px);
 }
 
 .unselectable {
