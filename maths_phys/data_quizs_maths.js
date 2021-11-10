@@ -1239,6 +1239,114 @@ const quiz_combi = [{
     "hypotheses": "Soit $A$, $B$, $A_1$, ..., $A_n$ des ensembles finis.",
     "resultat": "<ol><li>Si $A \\cap B = \\emptyset\\ $, alors $|A \\sqcup B| = |A| + |B|$</li> <li>Plus généralement, si pour tout $(i, j) \\in [[1, n]]^2$ tel que $i \\neq j$, $A_i \\cap A_j = \\emptyset\\ $, alors $|A_1 \\sqcup ... \\sqcup A_n| = |A_1| + ... + |A_n|$</li></ol>",
     "id": 194
+}, {
+    "type": "proposition",
+    "titre": "Cardinal d'un complémentaire",
+    "hypotheses": "",
+    "resultat": "Si $a \\subset B$, alors $|\\text{C}_BA|$ = |B| - |A|",
+    "id": 195
+}, {
+    "type": "corollaire",
+    "titre": "Cardinal d'un sous-ensemble",
+    "hypotheses": "",
+    "resultat": "Si $A \\subset B$, alors $|A| \\leqslant |B|$, avec égalité si et seulement si $A=B$.",
+    "id": 196
+}, {
+    "type": "proposition",
+    "titre": "Cardinal d'une union quelconque",
+    "hypotheses": "Soient $A$ et $B$ des ensembles finis.",
+    "resultat": "On a : $|A \\cup B| = |A| + |B| - |A \\cap B|$",
+    "id": 197
+}, {
+    "type": "theoreme",
+    "titre": "Formule du crible de Poincaré",
+    "hypotheses": "Soient $A_1, ..., A_n$ des ensembles finis.",
+    "resultat": "On a : $|A_1 \\cup ... \\cup A_n| = \\sum_{k=1}^{n}( (-1)^{k-1} \\sum_{1 \\leqslant i_{1} \\leqslant ... \\leqslant i_{k} \\leqslant n} |A_{i_1} \\cap ... \\cap A_{i_k}|)$ <br/> $ = \\sum_{I \\subset [[1,n]], I \\neq \\emptyset\\ }((-1)^{|I|-1}|\\bigcap_{i \\in I}(A_i)|)$",
+    "id": 198
+}, {
+    "type": "proposition",
+    "titre": "Cardinal d'un produit cartésien",
+    "hypotheses": "Soient $A$, $B$, $A1,...,A_n$ des ensembles finis.",
+    "resultat": "<ol><li>$|A \\times B| = |A| \\times |B|$</li> <li>Plus généralement, $|A_1 \\times ... \\times A_n| = \\Pi_{i=1}^n|A_i|$</li></ol>",
+    "id": 199
+}, {
+    "type": "proposition",
+    "titre": "Cardinal et injectivité",
+    "hypotheses": "Soient $E$ et $F$ deux ensembles finis, et soit $f: E \\longrightarrow F$ une application",
+    "resultat": "Si $f$ est injective, $\\text{Card}(E) \\leqslant \\text{Card}(F)$",
+    "id": 200
+}, {
+    "type": "proposition",
+    "titre": "Cardinal et surjectivité",
+    "hypotheses": "Soient $E$ et $F$ deux ensembles finis, et soit $f: E \\longrightarrow F$ une application",
+    "resultat": "Si $f$ est surjective, $\\text{Card}(E) \\geqslant \\text{Card}(F)$",
+    "id": 201
+}, {
+    "type": "proposition",
+    "titre": "Cardinal et bijectivité",
+    "hypotheses": "Soient $E$ et $F$ deux ensembles finis, et soit $f: E \\longrightarrow F$ une application",
+    "resultat": "Si $f$ est bijective, $\\text{Card}(E) = \\text{Card}(F)$",
+    "id": 202
+}, {
+    "type": "proposition",
+    "titre": "Caractérisation des bijections",
+    "hypotheses": "Soient $A$ et $B$ deux ensembles finsi de même cardinal, et $f: A \\longrightarrow B$.",
+    "resultat": "Les trois propriétés sont équivalentes : <ol><li>$f$ est bijective</li> <li>$f$ est injective</li> <li>$f$ est surjective</li> </ol>",
+    "id": 203
+}, {
+    "type": "proposition",
+    "titre": "Cardinal de l'ensemble des applications",
+    "hypotheses": "Soient $E$ et $F$ deux ensembles finis.<br/>On rappelle qu'on note $F^E$ l'ensemble des applications de $E$ vers $F$.",
+    "resultat": "$|F^E| = |E^F|$",
+    "id": 204
+}, {
+    "type": "definition",
+    "titre": "p-listes",
+    "hypotheses": "",
+    "resultat": "Une p-liste d'éléments de $F$ (ou p-uplet) est un élément ($x_1$, ..., $x_p$) de $F^p$.",
+    "id": 205
+}, {
+    "type": "proposition",
+    "titre": "Nombre de p-liste",
+    "hypotheses": "",
+    "resultat": "Le nombre de p-listes d'éléments de $F$ est $|F|^p$",
+    "id": 206
+}, {
+    "type": "proposition",
+    "titre": "Cardinal de l'ensemble des parties",
+    "hypotheses": "",
+    "resultat": "$|\\mathcal{P}(E)| = 2^{|E|}$",
+    "id": 207
+}, {
+    "type": "lemme",
+    "titre": "Lemme du berger",
+    "hypotheses": "Soit $f: E \\longrightarrow F$ une application surjective. <br/> On suppose qu'il existe un entier $k \\in \\mathbb{N}^*$ tel que pour tout $y \\in F$, $|f^{-1}(y)| = k$ (tous les éléments de $F$ ont le même nombre $k$ d'antécédents).",
+    "resultat": "$|E| = k \\times |F|$",
+    "id": 208
+}, {
+    "type": "theoreme",
+    "titre": "Dénombrement des injections",
+    "hypotheses": "Soit $A$ et $B$ deux ensembles de cardinaux respectifs $p$ et $n$.",
+    "resultat": "Alors si $p \\leqslant n$, le nombre d'injections de $A$ vers $B$ est $A_n^p  = \\frac{n!}{(n-p)!}$. <br/> Si $p \\gt n$, il n'existe pas d'injection de $A$ vers $B$.",
+    "id": 209
+}, {
+    "type": "proposition",
+    "titre": "Dénombrement des p-arrangements",
+    "hypotheses": "Soit $F$ de cardinal $n$ et $p \\leqslant n$.",
+    "resultat": "Le nombre de p-listes d'éléments distincts de $F$ (ou p-arrangements de $F$) est $A_n^p = \\frac{n!}{(n-p)!}$",
+    "id": 210
+}, {
+    "type": "corollaire",
+    "titre": "Nombre de permutations d'un ensemble",
+    "hypotheses": "$\\mathfrak{S}E$ représente l'ensemble des permutations de $E$",
+    "resultat": "<ol> <li>Soit $E$ un ensemble fini. Alors $|\\mathfrak{S} E| = |E|!$</li> <li>En particulier $|\\mathfrak{S}_n| = n!$</li></ol>",
+    "id": 211
+}, {
+    "type": "definition",
+    "titre": "Coefficient binomial",
+    "hypotheses": "",
+    "resultat": "Le coefficient binomial $\\binom{n}{k}$ est le nombre de parties à $k$ éléments de $[[1,n]]$",
+    "id": 212
 }]
 
 /*
