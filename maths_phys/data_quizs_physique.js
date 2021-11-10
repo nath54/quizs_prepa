@@ -335,12 +335,12 @@ const quiz_superposition_signaux_interference_ondes = [{
 }, {
     "type": "texte",
     "titre": "Interférences constructives",
-    "resultat": "L'amplitude résultante est maximale $A=2A_0$ ou $A_1+A_2$<br/>$\\Delta\\varphi = 2n\\pi, n\\in$#Z<br/><div style=\"border:1px solid; padding-bottom:5px; padding-top:5px;\"><b>Conditions d'interférences constructives : $\\Delta\\varphi = 2n\\pi$ ou $\\delta = n\\lambda, n\\in$#Z</div><br/><ul><li>n est entier relatif</li><li>Les deux signaux arrivant en $M$ sont en phase</li><li>La norme de $\\vec{S}$ est la somme des normes des deux vecteurs de Fresnel associé</li></ul></b>",
+    "resultat": "L'amplitude résultante est maximale $A=2A_0$ ou $A_1+A_2$<br/>$\\Delta\\varphi = 2n\\pi, n\\in\\bb{Z}$<br/><div style=\"border:1px solid; padding-bottom:5px; padding-top:5px;\"><b>Conditions d'interférences constructives : $\\Delta\\varphi = 2n\\pi$ ou $\\delta = n\\lambda, n\\in \\bb{Z}$</div><br/><ul><li>n est entier relatif</li><li>Les deux signaux arrivant en $M$ sont en phase</li><li>La norme de $\\vec{S}$ est la somme des normes des deux vecteurs de Fresnel associé</li></ul></b>",
     "id": 64
 }, {
     "type": "texte",
     "titre": "Interférences destructives",
-    "resultat": "L'amplitude résultante est minimale ou nulle $A=0$ ou $|A_1-A_2|$<br/>$\\Delta\\varphi = 2n\\pi+\\pi = (2n+1)\\pi, n\\in$#Z<br/><div style=\"border:1px solid; padding-bottom:5px; padding-top:5px;\"><b>Conditions d'interférences destructives : $\\Delta\\varphi = (2n+1)\\pi$ ou $\\delta = (n+\\frac{1}{2})\\lambda, n\\in$#Z</div><br/><ul><li>Les deux signaux arrivant en $M$ sont en opposition phase</li><li><b>Attention : </b> les deux ondes on l'air de se détruire mutuellement mais ce n'est vrai que pour quelques points bien particuliers où les ondes se retrouvent en opposition de phase; en aucun cas les ondes se détruisent effectivement</li><li>L'intensité devient inférieure à la somme des intensités dans le cas d'interférences destructives</li></ul></b>",
+    "resultat": "L'amplitude résultante est minimale ou nulle $A=0$ ou $|A_1-A_2|$<br/>$\\Delta\\varphi = 2n\\pi+\\pi = (2n+1)\\pi, n\\in \\bb{Z}$<br/><div style=\"border:1px solid; padding-bottom:5px; padding-top:5px;\"><b>Conditions d'interférences destructives : $\\Delta\\varphi = (2n+1)\\pi$ ou $\\delta = (n+\\frac{1}{2})\\lambda, n\\in \\bb{Z}$</div><br/><ul><li>Les deux signaux arrivant en $M$ sont en opposition phase</li><li><b>Attention : </b> les deux ondes on l'air de se détruire mutuellement mais ce n'est vrai que pour quelques points bien particuliers où les ondes se retrouvent en opposition de phase; en aucun cas les ondes se détruisent effectivement</li><li>L'intensité devient inférieure à la somme des intensités dans le cas d'interférences destructives</li></ul></b>",
     "id": 65
 }, {
     "type": "definition",

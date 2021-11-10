@@ -154,7 +154,7 @@ const quiz_modelisation_geometrique_systemes_solides = [{
 }, {
     "type": "definition",
     "titre": "Base orthonormée",
-    "resultat": "L'association de trois vecteurs non liés forme  une base @B. On utilisera en SI unique des bases orthonormée directes $(\\vec{x}, \\vec{y}, \\vec{z})$ telles que : <ul><li>Les trois vecteurs sont <b>orthogonaux deux à deux</b></li> <li>Les trois vecteurs sont de <b>norme unitaire</b></li> <li>L'orientation des trois vecteurs est <b>directe</b>.</li> </ul> <br/> <img class=\"imgc\" src=\"res/base_ortho.png\" />",
+    "resultat": "L'association de trois vecteurs non liés forme  une base $\\cal{B}$. On utilisera en SI unique des bases orthonormée directes $(\\vec{x}, \\vec{y}, \\vec{z})$ telles que : <ul><li>Les trois vecteurs sont <b>orthogonaux deux à deux</b></li> <li>Les trois vecteurs sont de <b>norme unitaire</b></li> <li>L'orientation des trois vecteurs est <b>directe</b>.</li> </ul> <br/> <img class=\"imgc\" src=\"res/base_ortho.png\" />",
     "id": 30
 }, {
     "type": "texte",
@@ -189,7 +189,7 @@ const quiz_modelisation_geometrique_systemes_solides = [{
 }, {
     "type": "texte",
     "titre": "Changement de base",
-    "resultat": "Soient deux base @B$_1$ et @B$_2$ mobiles l'une par rapport à l'autre et $\\vec{V}$ un vecteur.<br/>Les composantes du vecteur $\\vec{V}$ dans la base @B$_1$ sont notées $u_1$, $v_1$ et $w_1$. C'est à dire $\\vec{V} = \\left(\\begin{array}{ll} u_1\\\\ v_1\\\\ w_1 \\end{array}\\right)_{$@B$_1}$<br/>Changer $\\vec{V}$ de base consiste à déterminer les composantes de $\\vec{V}$ dans @B$_2$ telles que $\\vec{V} = \\left(\\begin{array}{ll} u_2 \\\\ v_2 \\\\ w_2 \\end{array}\\right)_{$@B$_2}$<br/>Le mouvement de @B$_2$ par rapport à @B$_1$ est caractérisé par trois rotations élémentaires. En SI, on décompose toujours les rotations en rotations élémentaires autour d'un vecteur de la base et on projette dans ces bases successives.",
+    "resultat": "Soient deux base$\\cal{B}_1$ et$\\cal{B}_2$ mobiles l'une par rapport à l'autre et $\\vec{V}$ un vecteur.<br/>Les composantes du vecteur $\\vec{V}$ dans la base$\\cal{B}_1$ sont notées $u_1$, $v_1$ et $w_1$. C'est à dire $\\vec{V} = \\left(\\begin{array}{ll} u_1\\\\ v_1\\\\ w_1 \\end{array}\\right)_{\\cal{B}_1}$<br/>Changer $\\vec{V}$ de base consiste à déterminer les composantes de $\\vec{V}$ dans$\\cal{B}_2$ telles que $\\vec{V} = \\left(\\begin{array}{ll} u_2 \\\\ v_2 \\\\ w_2 \\end{array}\\right)_{\\cal{B}_2}$<br/>Le mouvement de$\\cal{B}_2$ par rapport à$\\cal{B}_1$ est caractérisé par trois rotations élémentaires. En SI, on décompose toujours les rotations en rotations élémentaires autour d'un vecteur de la base et on projette dans ces bases successives.",
     "id": 37
 }, {
     "type": "texte",
@@ -224,7 +224,7 @@ const quiz_modelisation_geometrique_systemes_solides = [{
 }, {
     "type": "texte",
     "titre": "Degrés de liberté d'un solide dans l'espace",
-    "resultat": "La position d'un solide $S_k$ par rapport à un solide $S_i$ dépend de six paramètres indépendants. Il est usuel en mécanique de considérer : <ul><li>Les trois coordonnées du point origine du repère @R$_k$ dans le repère @R$_i$ : $(T_x, T_y, T_z)$</li><li>Les trois angles définissant l'orientation de la base $(\\vec{x_k}, \\vec{y_k}, \\vec{z_k})$ du repère @R$_k$ par rapport à celle du repère @R$_i$ : $(R_x, R_y, R_z)$</li></ul>",
+    "resultat": "La position d'un solide $S_k$ par rapport à un solide $S_i$ dépend de six paramètres indépendants. Il est usuel en mécanique de considérer : <ul><li>Les trois coordonnées du point origine du repère$\\cal{R}_k$ dans le repère$\\cal{R}_i$ : $(T_x, T_y, T_z)$</li><li>Les trois angles définissant l'orientation de la base $(\\vec{x_k}, \\vec{y_k}, \\vec{z_k})$ du repère$\\cal{R}_k$ par rapport à celle du repère$\\cal{R}_i$ : $(R_x, R_y, R_z)$</li></ul>",
     "id": 44
 }, {
     "type": "definition",
@@ -269,12 +269,12 @@ const quiz_modelisation_geometrique_systemes_solides = [{
 }, {
     "type": "texte",
     "titre": "Vecteur position",
-    "resultat": "La position du point $M$, appartenant au solide $S_k$ en mouvement par rapport à un repère de référence @R$_i$, est variable avec le temps.<br/>Soit $O_i$ un point fixe de repère @R$_i$, le vecteur $\\vec{O_iM_i}$ variable avec le temps est appelé vecteur position du point $M_i$ relativement à @R$_i$.",
+    "resultat": "La position du point $M$, appartenant au solide $S_k$ en mouvement par rapport à un repère de référence $\\cal{R}_i$, est variable avec le temps.<br/>Soit $O_i$ un point fixe de repère$\\cal{R}_i$, le vecteur $\\vec{O_iM_i}$ variable avec le temps est appelé vecteur position du point $M_i$ relativement à$\\cal{R}_i$.",
     "id": 53
 }, {
     "type": "definition",
     "titre": "Trajectoire",
-    "resultat": "La trajectoire d'un point $M$ du solide $S_k$ en mouvement par rapport à un repère de référence @R$_i$ est l'ensemble des points $M_i(t)$ coïncidant à chaque instant avec le point $M$ au cours du déplacement du solide $S_k$.",
+    "resultat": "La trajectoire d'un point $M$ du solide $S_k$ en mouvement par rapport à un repère de référence $\\cal{R}_i$ est l'ensemble des points $M_i(t)$ coïncidant à chaque instant avec le point $M$ au cours du déplacement du solide $S_k$.",
     "id": 54
 }, {
     "type": "texte",

@@ -21,44 +21,44 @@ const quiz_logique = [{
     },
     {
         "type": "proposition",
-        "titre": "Associativité du #ou",
+        "titre": "Associativité du $\\lor$",
         "hypotheses": "$A$, $B$ et $C$ désignent des variables propositionnelles",
-        "resultat": "($A$ #ou $B$) #ou $C$ #equivaut $A$ #ou ($B$ #ou $C$)",
+        "resultat": "$(A \\lor B) \\lor C \\iff A \\lor (B \\lor C)$",
         "id": 3
     },
     {
         "type": "proposition",
-        "titre": "Associativité du #et",
+        "titre": "Associativité du $\\land$",
         "hypotheses": "$A$, $B$ et $C$ désignent des variables propositionnelles",
-        "resultat": "($A$ #et $B$) #et $C$ #equivaut $A$ #et ($B$ #et $C$)",
+        "resultat": "$(A \\land B) \\land C \\iff A \\land (B \\land C)$",
         "id": 4
     },
     {
         "type": "proposition",
-        "titre": "Distributivité du #ou",
+        "titre": "Distributivité du $\\lor$",
         "hypotheses": "$A$, $B$ et $C$ désignent des variables propositionnelles",
-        "resultat": "$A$ #et($B$ #ou $C$) #equivaut($A$ #et $B$) #ou ($A$ #et $C$)",
+        "resultat": "$A \\land(B \\lor C) \\iff(A \\land B) \\lor (A \\land C)$",
         "id": 5
     },
     {
         "type": "proposition",
-        "titre": "Distributé du #et",
+        "titre": "Distributé du $\\land$",
         "hypotheses": "$A$, $B$ et $C$ désignent des variables propositionnelles",
-        "resultat": "$A$ #ou($B$ #et $C$) #equivaut($A$ #ou $B$) #et ($A$ #ou $C$)",
+        "resultat": "$A \\lor(B \\land C) \\iff(A \\lor B) \\land (A \\lor C)$",
         "id": 6
     },
     {
         "type": "proposition",
         "titre": "Equivalence de l'impliquation",
         "hypotheses": "$A$ et $B$ désignent des variables propositionnelles",
-        "resultat": "($A$ #implique $B$) #equivaut ($B$ #ou #non $A$)",
+        "resultat": "$(A \\implies B) \\iff (B \\lor \\neq A)$",
         "id": 7
     },
     {
         "type": "proposition",
         "titre": "Contraposée",
         "hypotheses": "$A$ et $B$ désignent des variables propositionnelles",
-        "resultat": "($A$ #implique $B$) #equivaut (#non $B$ #implique #non $A$)",
+        "resultat": "$(A \\implies B) \\iff (\\neq B \\implies \\neq A)$",
         "id": 8
     }
 ];
@@ -68,63 +68,63 @@ const quiz_relations = [{
         "type": "definition",
         "titre": "Relation binaire",
         "hypotheses": "",
-        "resultat": "Une relation binaire entre deux ensembles $E$ et $F$ est un sous-ensemble $G$ de $E$ #x$F$.",
+        "resultat": "Une relation binaire entre deux ensembles $E$ et $F$ est un sous-ensemble $G$ de $E \\times F$.",
         "id": 9
     },
     {
         "type": "definition",
         "titre": "Relation fonctionnelle",
         "hypotheses": "",
-        "resultat": "Une relation @R entre $E$ et $F$ est fonctionnelle si pout tout $x$ de $E$ il existe au plus un $y$ de $F$ tel que $x$@R$y$.",
+        "resultat": "Une relation $\\cal{R}$ entre $E$ et $F$ est fonctionnelle si pout tout $x$ de $E$ il existe au plus un $y$ de $F$ tel que $x\\cal{R}y$.",
         "id": 10
     },
     {
         "type": "definition",
         "titre": "Relation applicationnelle",
         "hypotheses": "",
-        "resultat": "Une relation @R entre $E$ et $F$ est applicationnelle si pout tout $x$ de $E$ il existe un et un seul $y$ de $F$ tel que $x$@R$y$.",
+        "resultat": "Une relation $\\cal{R}$ entre $E$ et $F$ est applicationnelle si pout tout $x$ de $E$ il existe un et un seul $y$ de $F$ tel que $x\\cal{R}y$.",
         "id": 11
     },
     {
         "type": "definition",
         "titre": "Reflexivité",
-        "hypotheses": "Soit @R une relation sur $E$.",
-        "resultat": "On dit que @R est réflexive si pour tout $x$ #dans $E$, $x$@R$x$.",
+        "hypotheses": "Soit $\\cal{R}$ une relation sur $E$.",
+        "resultat": "On dit que $\\cal{R}$ est réflexive si pour tout $x \\in E$, $x\\cal{R}x$.",
         "id": 12
     },
     {
         "type": "definition",
         "titre": "Irréflexivité",
-        "hypotheses": "Soit @R une relation sur $E$.",
-        "resultat": "On dit que @R est irréflexive si pour tout $x$ #dans $E$, on a #non ($x$@R$x$).",
+        "hypotheses": "Soit $\\cal{R}$ une relation sur $E$.",
+        "resultat": "On dit que $\\cal{R}$ est irréflexive si pour tout $x \\in E$, on a $\\ne  (x\\cal{R}x)$.",
         "id": 13
     },
     {
         "type": "definition",
         "titre": "Symétrie",
-        "hypotheses": "Soit @R une relation sur $E$.",
-        "resultat": "On dit que @R est symétrique si pour tout ($x$, $y$) #dans $E^2$, ($x$@R$y$) #implique ($y$@R$x$).",
+        "hypotheses": "Soit $\\cal{R}$ une relation sur $E$.",
+        "resultat": "On dit que $\\cal{R}$ est symétrique si pour tout $(x, y) \\in E^2$, $(x\\cal{R}y) \\implies (y\\cal{R}x)$.",
         "id": 14
     },
     {
         "type": "definition",
         "titre": "Antisymétrie",
-        "hypotheses": "Soit @R une relation sur $E$.",
-        "resultat": "On dit que @R est antisymétrique si pour tout ($x$, $y$) #dans $E^2$, ($x$@R$y$) #et ($y$@R$x$) #implique $x=y$.",
+        "hypotheses": "Soit $\\cal{R}$ une relation sur $E$.",
+        "resultat": "On dit que $\\cal{R}$ est antisymétrique si pour tout $(x, y) \\in E^2$, $(x\\cal{R}y) \\land (y\\cal{R}x) \\implies x=y$.",
         "id": 15
     },
     {
         "type": "definition",
         "titre": "Asymétrie",
-        "hypotheses": "Soit @R une relation sur $E$.",
-        "resultat": "On dit que @R est asymétrique si pour tout ($x$, $y$) #dans $E^2$, ($x$@R$y$) #implique #non ($y$@R$x$).",
+        "hypotheses": "Soit $\\cal{R}$ une relation sur $E$.",
+        "resultat": "On dit que $\\cal{R}$ est asymétrique si pour tout $(x, y) \\in E^2$, $(x\\cal{R}y) \\implies \\neq (y\\cal{R}x)$.",
         "id": 16
     },
     {
         "type": "definition",
         "titre": "Transitivité",
-        "hypotheses": "Soit @R une relation sur $E$.",
-        "resultat": "On dit que @R est transitive si pour tout ($x$, $y$, $z$) #dans $E^3$, ($x$@R$y$) #et ($y$@R$z$) #implique $x$@R$z$.",
+        "hypotheses": "Soit $\\cal{R}$ une relation sur $E$.",
+        "resultat": "On dit que $\\cal{R}$ est transitive si pour tout $(x, y, z) \\in E^3$, $(x\\cal{R}y) \\land (y\\cal{R}z) \\implies x\\cal{R}z$.",
         "id": 17
     },
     {
@@ -137,72 +137,71 @@ const quiz_relations = [{
     {
         "type": "definition",
         "titre": "Classe d'équivalence",
-        "hypotheses": "Soit @R une relation d'équivalence sur $E$, et $x$ #dans $E$.",
-        "resultat": "La classe d'équivalence de $x$ sous la relation @R est le sous ensemble $C_x$ de $E$ constitué des éléments en relation avec $x$ : $C_x = \\{x$ #dans $E | x$@R$y\\}$.",
+        "hypotheses": "Soit $\\cal{R}$ une relation d'équivalence sur $E$, et $x \\in E$.",
+        "resultat": "La classe d'équivalence de $x$ sous la relation $\\cal{R}$ est le sous ensemble $C_x$ de $E$ constitué des éléments en relation avec $x$ : $C_x = \\{x \\in E | x\\cal{R}y\\}$.",
         "id": 19
     },
     {
         "type": "lemme",
         "titre": "Classe d'équivalence",
         "hypotheses": "",
-        "resultat": "Si y et x sont dans une même classe d'équivalence, alors $y$@R$x$.",
+        "resultat": "Si y et x sont dans une même classe d'équivalence, alors $y\\cal{R}x$.",
         "id": 20
     },
     {
         "type": "theoreme",
         "titre": "Partition formée par les classes d'équivalence",
-        "hypotheses": "Soit $E$ un ensemble, et @R une relation d'équivalence sur $E$",
-        "resultat": "L'ensemble des classes d'équivalence sous @R forme une partition de $E$.",
+        "hypotheses": "Soit $E$ un ensemble, et $\\cal{R}$ une relation d'équivalence sur $E$",
+        "resultat": "L'ensemble des classes d'équivalence sous $\\cal{R}$ forme une partition de $E$.",
         "id": 21
     },
     {
         "type": "definition",
         "titre": "Ensemble quotient",
         "hypotheses": "",
-        "resultat": "L'ensemble des classes sous la relation @R s'appelle l'ensemble quotient de $E$ par @R, et est noté $E$/@R. C'est un sous-ensemble de #P($E$).",
+        "resultat": "L'ensemble des classes sous la relation $\\cal{R}$ s'appelle l'ensemble quotient de $E$ par $\\cal{R}$, et est noté $E/\\cal{R}$. C'est un sous-ensemble de $\\cal{P}(E)$.",
         "id": 22
     },
     {
         "type": "definition",
         "titre": "Projection canonique",
         "hypotheses": "",
-        "resultat": "On appelle projection canonique de $E$ sur $E/$@R l'application #pi@R qui à $x$ associe sa classe $#barre{x}$. Par définition, #pi@R est surjective, et vérifie : #pour_tout ($x$, $y$) #dans $E^2$, $x$@R$y$#equivalent#pi@R$(x)$$=$#pi@R$(y)$.",
+        "resultat": "On appelle projection canonique de $E$ sur $E/\\cal{R}$ l'application $\\pi\\cal{R}$ qui à $x$ associe sa classe $\\overline{x}$. Par définition, $\\pi\\cal{R}$ est surjective, et vérifie : $\\forall (x, y) \\in E^2$, $x\\cal{R}y\\iff\\pi\\cal{R}(x)=\\pi\\cal{R}(y)$.",
         "id": 23
     },
     {
         "type": "theoreme",
         "titre": "Factorisation d'une application constante sur les classes d'équivalence",
-        "hypotheses": "Soit $f: E$ #fleche_droite $F$. Alors les deux propriétés suivantes sont équivalentes.",
-        "resultat": "($i$) Pour tout ($x$, $y$) #dans $E^2$, $x$@R$y$ #implique $f(x) = f(y)$\n\
-            ($ii$) Il existe $g: E/$@R #fleche_droite $F$ tel que $f = g$ #rond #pi@R",
+        "hypotheses": "Soit $f: E \\rightarrow F$. Alors les deux propriétés suivantes sont équivalentes.",
+        "resultat": "($i$) Pour tout $(x, y) \\in E^2$, $x\\cal{R}y \\implies f(x) = f(y)$<br/>($ii$) Il existe $g: E/\\cal{R} \\rightarrow F$ tel que $f = g \\circ \\pi\\cal{R}$",
         "id": 24
     },
     {
         "type": "definition",
         "titre": "Congruence",
-        "hypotheses": "Soit $E$ un ensemble, muni d'un certain nombre d'opération #x$_1$, #x$_2$, ..., #x$_n$.",
-        "resultat": "On dit qu'une relation d'équivalence @R est une congruence sur $(E, $#x$_1,...,$#x$_n)$ si \n #pour_tout $(x,y,x',y')$ #dans $E^4$, #pour_tout $i$ #dans $[\\![1, n]\\!]$, $(x$@R$x')$ #et $(y$@R$y')$ #implique $(x$#x$_i y)$@R$(x'$#x$_iy')$.",
+        "hypotheses": "Soit $E$ un ensemble, muni d'un certain nombre d'opération $\\times_1, \\times_2, \\ldots, \\times_n$.",
+        "resultat": "On dit qu'une relation d'équivalence $\\cal{R}$ est une congruence sur $(E, \\times_1,\\ldots,\\times_n)$ si <br/> $\\forall (x,y,x',y') \\in E^4$, $\\forall i \\in [\\![1, n]\\!]$, $(x\\cal{R}x') \\land (y\\cal{R}y') \\implies (x\\times_i y)\\cal{R}(x'\\times_iy')$.",
         "id": 25
     },
     {
         "type": "proposition",
         "titre": "Congruence des entiers",
         "hypotheses": "",
-        "resultat": "La relation de congruence des entiers #equivaut$[n]$ est une congruence sur (#Z, $+$, #x).",
+        "resultat": "La relation de congruence des entiers $\\equiv[n]$ est une congruence sur $(\\bb{Z}, +, \\times)$",
         "id": 26
     },
     {
         "type": "proposition",
         "titre": "Passage au quotient des opérations",
-        "hypotheses": "Soit $(E, $#x$_1, ..., $#x$_n)$ un ensemble muni de n lois d'opérations, et @R une congruence sur $(E, $#x$_1, ..., $#x$_n)$.",
-        "resultat": "Alors on peut définir sur $E$/@R des lois #x$_1$, ..., #x$_n$ telles que pour tout $i$ #dans $[\\![1, n]\\!]$ et tout $(x, y)$ #dans $E^2$",
+        "hypotheses": "Soit $(E, \\times_1, \\ldots, \\times_n)$ un ensemble muni de $n$ lois d'opérations, et $\\cal{R}$ une congruence sur $(E, \\times_1, \\ldots, \\times_n)$.",
+        "resultat": "Alors on peut définir sur $E/\\cal{R}$ des lois $\\times_1, \\ldots, \\times_n$ telles que pour tout $i \\in [\\![1, n]\\!]$ et tout $(x, y) \\in E^2$ <br/> $$\\overline{x} \\times_i \\overline{y\\ } = \\overline{x \\times_i y}$$",
         "id": 27
     },
     {
         "type": "corollaire",
-        "titre": "Addition et multiplication de #Z/$n$#Z",
+        "titre": "Addition et multiplication de $\\bb{Z}/n\\bb{Z}$",
         "hypotheses": "",
-        "resultat": "On peut munir #Z/$n$#Z d'une addition $+$ et d'une multiplication #x telles que :\n#pour_tout $(x, y)$ #dans #Z$^2$, $(#barre{x} + #barre{y\\ }= #barre{x + y})\\ $   et   $\\ (#barre{x} #$x #barre{y\\ }= #barre{x #$x y})$.",
+        "resultat": "On peut munir $\\bb{Z}/n\\bb{Z}$ d'une addition $+$ et d'une multiplication $\\times$ telles que :<br/>$\\forall (x, y) \\in \\bb{Z}^2$, $(\\overline{x} + \\overline{y\\ }= \\overline{x + y})\\ $   et   $\\ (\\overline{x} \\times \\overline{y\\ }= \\overline{x \\times y})$.",
         "id": 28
     },
     {
@@ -230,57 +229,57 @@ const quiz_relations = [{
         "type": "proposition",
         "titre": "D'une relation d'ordre large à une relation d'ordre stricte",
         "hypotheses": "",
-        "resultat": "Toute relation d'ordre large #<= définit une relation d'ordre stricte par $x < y$ si et seulement si $x$ #<= $y$ et $x$ #different $y$",
+        "resultat": "Toute relation d'ordre large $\\leqslant$ définit une relation d'ordre stricte par $x < y$ si et seulement si $x \\leqslant y$ et $x \\neq y$",
         "id": 32
     },
     {
         "type": "proposition",
         "titre": "D'une relation d'ordre stricte à une relation d'ordre large",
         "hypotheses": "",
-        "resultat": "Toute relation d'ordre stricte $<$ définit une relation d'ordre large #<= par $x$ #<= $y$ si et seulement si $x < y$ ou $x=y$ ",
+        "resultat": "Toute relation d'ordre stricte $<$ définit une relation d'ordre large $\\leqslant$ par $x \\leqslant y$ si et seulement si $x < y$ ou $x=y$ ",
         "id": 33
     },
     {
         "type": "definition",
         "titre": "Ordre total/partiel",
-        "hypotheses": "Soit @R une relation d'ordre sur un ensemble $E$.",
-        "resultat": "On dit que @R est une relation d'ordre total si pour tout $(x, y)$ #dans $E^2$, soit $x$ #<= $y$ soit $y$ #<= $x$.\nDans le cas contraire, on dit que @R est une relation d'ordre partiel.",
+        "hypotheses": "Soit $\\cal{R}$ une relation d'ordre sur un ensemble $E$.",
+        "resultat": "On dit que $\\cal{R}$ est une relation d'ordre total si pour tout $(x, y) \\in E^2$, soit $x \\leqslant y$ soit $y \\leqslant x$.<br/>Dans le cas contraire, on dit que $\\cal{R}$ est une relation d'ordre partiel.",
         "id": 34
     },
     {
         "type": "definition",
         "titre": "Restriction d'une relation d'ordre",
-        "hypotheses": "Soit $E$ un ensemble muni d'une relation d'ordre @R, et $A$ un sous-ensemble de $E$.",
-        "resultat": "Alors @R définition sur A, une relation d'ordre @R' par : \n #pour_tout $(x, y)$ #dans $A^2$, $x$@R$'y$ #equivalent $x$@R$y$.\nIl s'agit de la restriction à $A$ de la relation @R, ou de la relation induite par @R sur $A$.",
+        "hypotheses": "Soit $E$ un ensemble muni d'une relation d'ordre $\\cal{R}$, et $A$ un sous-ensemble de $E$.",
+        "resultat": "Alors $\\cal{R}$ définition sur $A$, une relation d'ordre $\\cal{R}'$ par : <br/> $\\forall (x, y) \\in A^2$, $x\\cal{R}'y \\iff x\\cal{R}y$.<br/>Il s'agit de la restriction à $A$ de la relation $\\cal{R}$, ou de la relation induite par $\\cal{R}$ sur $A$.",
         "id": 35
     },
     {
         "type": "definition",
         "titre": "Minimum, maximum",
-        "hypotheses": "Soit $(E,$ #<= $)$ un ensemble muni d'une relation d'ordre.",
-        "resultat": "1) Un élément $m$ de $E$ est appelé plus petit élément de $E$ si : #pour_tout $m'$ #dans $E$, $m$ #<= $m'$.\n\
-        2) Un élémént $M$ de $E$ est appelé plus grand élément de $E$ si : #pour_tout $m'$ #dans $E$, $M$#>=$m'$.\n\
-        3) Etant donné un sous-ensemble $A$ de $E$, un élément minimum (resp maximum) de $A$ est un élément minimum (resp maximum) pour la relation d'ordre @R' induite par @R sur $A$.",
+        "hypotheses": "Soit $(E, \\leqslant )$ un ensemble muni d'une relation d'ordre.",
+        "resultat": "1) Un élément $m$ de $E$ est appelé plus petit élément de $E$ si : $\\forall m' \\in E$, $m \\leqslant m'$.<br/>\
+        2) Un élément $M$ de $E$ est appelé plus grand élément de $E$ si : $\\forall m' \\in E$, $M\\geqslant m'$.<br/>\
+        3) Etant donné un sous-ensemble $A$ de $E$, un élément minimum (resp maximum) de $A$ est un élément minimum (resp maximum) pour la relation d'ordre $\\cal{R}'$ induite par $\\cal{R}$ sur $A$.",
         "id": 36
     },
     {
         "type": "proposition",
         "titre": "Unicité du minimum",
         "hypotheses": "",
-        "resultat": "S'il existe, le plus petit élément de E (resp de $A$ #inclus $E$) est unique. De même pour le plus grand élémént.",
+        "resultat": "S'il existe, le plus petit élément de E (resp de $A \\subset E$) est unique. De même pour le plus grand élémént.",
         "id": 37
     },
     {
         "type": "definition",
         "titre": "Elément minimal",
-        "hypotheses": "Soit $(E,$#<=$)$ un ensemble muni d'une relation d'ordre.",
+        "hypotheses": "Soit $(E,\\leqslant)$ un ensemble muni d'une relation d'ordre.",
         "resultat": "Un élément $m$ de $E$ est appelé élément minimal de $E$ s'il n'existe pas d'élément $x$ de $E$ tel que $x < m$.",
         "id": 38
     },
     {
         "type": "definition",
         "titre": "Elément maximal",
-        "hypotheses": "Soit $(E,$#<=$)$ un ensemble muni d'une relation d'ordre.",
+        "hypotheses": "Soit $(E,\\leqslant)$ un ensemble muni d'une relation d'ordre.",
         "resultat": "Un élément $M$ de $E$ est appelé élément maximal de $E$ s'il n'existe pas d'élément $x$ de $E$ tel que $x > M$.",
         "id": 39
     },
@@ -294,61 +293,61 @@ const quiz_relations = [{
     {
         "type": "definition",
         "titre": "Minorant",
-        "hypotheses": "Soit $(E,$#<=$)$ un ensemble muni d'une relation d'ordre. Soit $A$ #inclus $E$.",
-        "resultat": "Un minorant $m$ de $A$ est un élément $m$ #dans $E$ tel que : #pour_tout $a$  #dans $A$, $a$ #>= $m$.",
+        "hypotheses": "Soit $(E,\\leqslant)$ un ensemble muni d'une relation d'ordre. Soit $A \\subset E$.",
+        "resultat": "Un minorant $m$ de $A$ est un élément $m \\in E$ tel que : $\\forall a \\in A$, $a \\geqslant m$.",
         "id": 41
     },
     {
         "type": "definition",
         "titre": "Majorant",
-        "hypotheses": "Soit $(E,$#<=$)$ un ensemble muni d'une relation d'ordre. Soit $A$ #inclus $E$.",
-        "resultat": "Un majorant $M$ de $A$ est un élément $M$ #dans $E$ tel que : #pour_tout $a$  #dans $A$, $a$ #<= $M$.",
+        "hypotheses": "Soit $(E,\\leqslant)$ un ensemble muni d'une relation d'ordre. Soit $A \\subset E$.",
+        "resultat": "Un majorant $M$ de $A$ est un élément $M \\in E$ tel que : $\\forall a \\in A$, $a \\leqslant M$.",
         "id": 42
     },
     {
         "type": "definition",
         "titre": "Borne supérieure",
-        "hypotheses": "Soit $(E,$#<=$)$, et soit $A$ #inclus $E$",
+        "hypotheses": "Soit $(E,\\leqslant)$, et soit $A \\subset E$",
         "resultat": "La borne supérieure de $A$ est le plus petit des majorants de $A$, s'il existe.",
         "id": 43
     },
     {
         "type": "definition",
         "titre": "Borne inférieure",
-        "hypotheses": "Soit $(E,$#<=$)$, et soit $A$ #inclus $E$",
+        "hypotheses": "Soit $(E,\\leqslant)$, et soit $A \\subset E$",
         "resultat": "La borne inférieure de $A$ est le plus grand des minorants de $A$, s'il existe.",
         "id": 44
     },
     {
         "type": "proposition",
         "titre": "Maximum d'un sous-ensemble",
-        "hypotheses": "Soit $(E,$#<=$)$, et $A$ #inclus $E$.",
-        "resultat": "$A$ admet un maximum $M$ si et seulement si $A$ admet une borne supérieure $b$ et si $b$ #dans $A$. Dans ce cas $M=b$.",
+        "hypotheses": "Soit $(E,\\leqslant)$, et $A \\subset E$.",
+        "resultat": "$A$ admet un maximum $M$ si et seulement si $A$ admet une borne supérieure $b$ et si $b \\in A$. Dans ce cas $M=b$.",
         "id": 45
     },
     {
         "type": "proposition",
         "titre": "Minimum d'un sous-ensemble",
-        "hypotheses": "Soit $(E,$#<=$)$, et $A$ #inclus $E$.",
-        "resultat": "$A$ admet un minimum $m$ si et seulement si $A$ admet une borne inférieure $b$ et si $b$ #dans $A$. Dans ce cas $m=b$.",
+        "hypotheses": "Soit $(E,\\leqslant)$, et $A \\subset E$.",
+        "resultat": "$A$ admet un minimum $m$ si et seulement si $A$ admet une borne inférieure $b$ et si $b \\in A$. Dans ce cas $m=b$.",
         "id": 46
     },
     {
         "type": "definition",
         "titre": "Application croissante",
-        "hypotheses": "Soit $E$ et $F$ deux ensembles, munis chacun d'une relation d'ordre #<=$_E$ et #<=$_F$ respectivement.",
-        "resultat": "Une application $f: E$#fleche_droite$F$ est dite : \n\
-        croissante si \n\
-        #pour_tout $(x,y)$ #dans $E^2$, $x $#<=$_E y$ #implique $f(x)$#<=$_F f(y)$,\n\
-        décroissante si \n\
-        #pour_tout $(x,y)$ #dans $E^2$, $x $#<=$_E y$ #implique $f(x)$#>=$_F f(y)$.",
+        "hypotheses": "Soit $E$ et $F$ deux ensembles, munis chacun d'une relation d'ordre $\\leqslant_E$ et $\\leqslant_F$ respectivement.",
+        "resultat": "Une application $f: E\\rightarrow F$ est dite : <br/>\
+        croissante si <br/>\
+        $\\forall (x,y) \\in E^2$, $x \\leqslant_E y \\implies f(x)\\leqslant_F f(y)$,<br/>\
+        décroissante si <br/>\
+        $\\forall (x,y) \\in E^2$, $x \\leqslant_E y \\implies f(x)\\geqslant_F f(y)$.",
         "id": 47
     },
     {
         "type": "definition",
         "titre": "Ensemble inductif",
-        "hypotheses": "Soit $(E,$#<=$)$ un ensemble ordonné.",
-        "resultat": "On dit que $E$ est un ensemble inductif si pour tout sous-ensemble $F$ #inclus $E$ totalement ordonné, $F$ admet un majorant dans $E$.",
+        "hypotheses": "Soit $(E,\\leqslant)$ un ensemble ordonné.",
+        "resultat": "On dit que $E$ est un ensemble inductif si pour tout sous-ensemble $F \\subset E$ totalement ordonné, $F$ admet un majorant dans $E$.",
         "id": 48
     },
     {
@@ -363,32 +362,32 @@ const quiz_relations = [{
 const quiz_reels = [{
         "type": "proposition",
         "titre": "Axiome de récurrence",
-        "hypotheses": "Soit $P$ définie sur $n \\in $#N",
-        "resultat": "$(P(0) \\land (\\forall n \\in $#N$, P(n) \\implies P(n+1)))) \\implies (\\forall n \\in $#N$, P(n))$",
+        "hypotheses": "Soit $P$ définie sur $n \\in \\bb{N}$",
+        "resultat": "$(P(0) \\land (\\forall n \\in \\bb{N}, P(n) \\implies P(n+1)))) \\implies (\\forall n \\in \\bb{N}, P(n))$",
         "id": 50
     }, {
         "type": "theoreme",
-        "titre": "propriété fondamentale de #N",
+        "titre": "propriété fondamentale de $\\bb{N}$",
         "hypotheses": "",
-        "resultat": "Tout sous-ensemble non vide et majoré de #N admet un plus grand élément",
+        "resultat": "Tout sous-ensemble non vide et majoré de $\\bb{N}$ admet un plus grand élément",
         "id": 51
     }, {
         "type": "corollaire",
-        "titre": "Corollaire  de la propriété fondamentale de #N",
+        "titre": "Corollaire  de la propriété fondamentale de $\\bb{N}$",
         "hypotheses": "",
-        "resultat": "Tout sous-ensemble non vide de #N admet un plus petit élément.",
+        "resultat": "Tout sous-ensemble non vide de $\\bb{N}$ admet un plus petit élément.",
         "id": 52
     }, {
         "type": "theoreme",
-        "titre": "équivalence de la propriété fondamentale de #N",
+        "titre": "équivalence de la propriété fondamentale de $\\bb{N}$",
         "hypotheses": "",
-        "resultat": "La propriété fondamentale de #N est équivalente à l'axiome de récurrence.",
+        "resultat": "La propriété fondamentale de $\\bb{N}$ est équivalente à l'axiome de récurrence.",
         "id": 53
     }, {
         "type": "proposition",
         "titre": "Propriétés de l'addition et du produit d'entiers",
-        "hypotheses": "Soient $a$, $b$ et $c$ des éléments de #N",
-        "resultat": "<ul> <li>$a+0=0+a=a$ ($0$ est élément neutre pour $+$)</li> <li>$a \\times 0 = 0 \\times a = 0$ ($0$ est absorbant pour $\\times$) </li> <li>$a + 1 = 1 + a$</li> <li> $a \\times 1 = 1 \\times a = a$ ($1$ est neutre pour $\\times$) </li> <li>$(a+b)+c = a + (b + c)$ ($\\times$ est associative)</li> <li>$a+b=b+a$ ($+$ est commutative)</li> <li>$a \\times (b + c) = a \\times b + a \\times c$ ($\\times$ est distributive sur $+$)</li> <li>$a \\times b = b \\times a$ ($\\times$ est commutative) </li> <li>$(a \\times b) \\times c = a \\times (b \\times c)$ ($\\times$ est associative)</li> <li>$ab = 0  \\implies a = 0 \\lor b = 0$ (intégrité de $($#N$, \\times)$)</li> <li>$a + b = 0 \\implies a = 0 \\land b = 0$ </li> <li>$a + b = a + c \\implies b = c$ (régularité pour $+$)</li> <li>Si $a \\neq 0, ab = ac \\implies b = c$ (régularité pour $\\times$)</li> </ul>",
+        "hypotheses": "Soient $a$, $b$ et $c$ des éléments de $\\bb{N}$",
+        "resultat": "<ul> <li>$a+0=0+a=a$ ($0$ est élément neutre pour $+$)</li> <li>$a \\times 0 = 0 \\times a = 0$ ($0$ est absorbant pour $\\times$) </li> <li>$a + 1 = 1 + a$</li> <li> $a \\times 1 = 1 \\times a = a$ ($1$ est neutre pour $\\times$) </li> <li>$(a+b)+c = a + (b + c)$ ($\\times$ est associative)</li> <li>$a+b=b+a$ ($+$ est commutative)</li> <li>$a \\times (b + c) = a \\times b + a \\times c$ ($\\times$ est distributive sur $+$)</li> <li>$a \\times b = b \\times a$ ($\\times$ est commutative) </li> <li>$(a \\times b) \\times c = a \\times (b \\times c)$ ($\\times$ est associative)</li> <li>$ab = 0  \\implies a = 0 \\lor b = 0$ (intégrité de $(\\bb{N}, \\times)$)</li> <li>$a + b = 0 \\implies a = 0 \\land b = 0$ </li> <li>$a + b = a + c \\implies b = c$ (régularité pour $+$)</li> <li>Si $a \\neq 0, ab = ac \\implies b = c$ (régularité pour $\\times$)</li> </ul>",
         "id": 54
     }, {
         "type": "proposition",
@@ -398,15 +397,15 @@ const quiz_reels = [{
         "id": 55
     }, {
         "type": "proposition",
-        "titre": "#Z peut être vu comme un prolongement de #N",
+        "titre": "$\\bb{Z}$ peut être vu comme un prolongement de $\\bb{N}$",
         "hypotheses": "",
-        "resultat": "L'application : <br />$i: $#N$ \\rightarrow $#Z <br />$\\ n \\rightarrow \\overline{(n, 0)}$ <br /> est une injection compatible avec les lois $+$ et $\\times$.",
+        "resultat": "L'application : <br />$i: \\bb{N} \\rightarrow \\bb{Z}$ <br />$\\ n \\rightarrow \\overline{(n, 0)}$ <br /> est une injection compatible avec les lois $+$ et $\\times$.",
         "id": 56
     }, {
         "type": "proposition",
         "titre": "Compatibilité de la relation d'ordre avec le produit",
         "hypotheses": "",
-        "resultat": "<ol> <li>Soit $c \\in $#N$^*$. Alors, $\\forall (a,b) \\in $#Z$^2$, <br /> $a \\lt b \\iff ac \\lt bc$ et $a \\leqslant b \\iff ac \\leqslant bc$</li> <br /> <li>Soit $c \\in $#Z$^*$, <br /> $a \\lt b \\iff ac \\gt bc$ et $a \\leqslant b \\iff ac \\geqslant bc$</li> </ol>",
+        "resultat": "<ol> <li>Soit $c \\in \\bb{N}^*$. Alors, $\\forall (a,b) \\in \\bb{Z}^2$, <br /> $a \\lt b \\iff ac \\lt bc$ et $a \\leqslant b \\iff ac \\leqslant bc$</li> <br /> <li>Soit $c \\in \\bb{Z}^*$, <br /> $a \\lt b \\iff ac \\gt bc$ et $a \\leqslant b \\iff ac \\geqslant bc$</li> </ol>",
         "id": 57
     }, {
         "type": "definition",
@@ -418,36 +417,36 @@ const quiz_reels = [{
         "type": "theoreme",
         "titre": "Définition de l'addition et du produit de rationnels",
         "hypotheses": "",
-        "resultat": "Les lois définies sur #Z$\\times$#N$^*$ par $(a,b) + (c,d) = (ad+bc, bd)$ et $(a, b) \\times (c,d) = (ac, bd)$ passent au quotient, définissant sur #Q les lois pouvant être décrites avec les notations usuelles par : <br /> $\\frac{a}{b} + \\frac{c}{d} = \\frac{ad + bc}{bd}$ et $\\frac{a}{b} \\times \\frac{c}{d} = \\frac{ac}{bd}$",
+        "resultat": "Les lois définies sur $\\bb{Z}\\times\\bb{N}^*$ par $(a,b) + (c,d) = (ad+bc, bd)$ et $(a, b) \\times (c,d) = (ac, bd)$ passent au quotient, définissant sur $\\bb{Q}$ les lois pouvant être décrites avec les notations usuelles par : <br /> $\\frac{a}{b} + \\frac{c}{d} = \\frac{ad + bc}{bd}$ et $\\frac{a}{b} \\times \\frac{c}{d} = \\frac{ac}{bd}$",
         "id": 59
     }, {
         "type": "theoreme",
-        "titre": "Propriétés des lois de #Q",
+        "titre": "Propriétés des lois de $\\bb{Q}$",
         "hypotheses": "",
-        "resultat": "<ul> <li>Les lois $+$ et $\\times$ sont associatives</li> <li>Les lois $+$ et $\\times$ sont commutatives</li> <li>La loi $\\times$ est distributive sur $+$</li> <li>L'élément $0=\\frac{0}{1}$ est neutre pour $+$, et tout élément $\\frac{a}{b}$ admet un opposé $\\frac{-a}{b}$</li> <li>Le rationnel $\\frac{a}{b}$ est égal = $0$ si et seulement si $a=0$</li> <li>L'élément $1=\\frac{1}{1}$ est neutre pour $\\times$, et tout élément $\\frac{a}{b}$ non nul est inversible, d'inverse $\\frac{b}{a}$</li> </ul> Ainsi que #Q est un corps.",
+        "resultat": "<ul> <li>Les lois $+$ et $\\times$ sont associatives</li> <li>Les lois $+$ et $\\times$ sont commutatives</li> <li>La loi $\\times$ est distributive sur $+$</li> <li>L'élément $0=\\frac{0}{1}$ est neutre pour $+$, et tout élément $\\frac{a}{b}$ admet un opposé $\\frac{-a}{b}$</li> <li>Le rationnel $\\frac{a}{b}$ est égal = $0$ si et seulement si $a=0$</li> <li>L'élément $1=\\frac{1}{1}$ est neutre pour $\\times$, et tout élément $\\frac{a}{b}$ non nul est inversible, d'inverse $\\frac{b}{a}$</li> </ul> Ainsi que $\\bb{Q}$ est un corps.",
         "id": 60
     }, {
         "type": "remarque",
-        "titre": "inclusion de #Z dans #Q",
+        "titre": "inclusion de $\\bb{Z}$ dans $\\bb{Q}$",
         "hypotheses": "",
-        "resultat": "Les entiers $a \\in $#Z peuvent être identifiés aux rationnels $\\frac{a}{1}$ (dans le sens où $a \\rightarrow \\frac{a}{1}$ définit une injection de #Z dans #Q). Via cette identification, on peut considérer que #Z $\\subset$ #Q.",
+        "resultat": "Les entiers $a \\in \\bb{Z}$ peuvent être identifiés aux rationnels $\\frac{a}{1}$ (dans le sens où $a \\rightarrow \\frac{a}{1}$ définit une injection de $\\bb{Z}$ dans $\\bb{Q}$). Via cette identification, on peut considérer que $\\bb{Z} \\subset \\bb{Q}$.",
         "id": 61
     }, {
         "type": "definition",
-        "titre": "Inégalité dans #Q",
-        "hypotheses": "Soit $q = \\frac{a}{b}$ et $r=\\frac{c}{d}$ deux rationnels (avec $b$ et $d$ dans #N$^*$).",
+        "titre": "Inégalité dans $\\bb{Q}$",
+        "hypotheses": "Soit $q = \\frac{a}{b}$ et $r=\\frac{c}{d}$ deux rationnels (avec $b$ et $d$ dans $\\bb{N}^*$).",
         "resultat": "Alors le signe de l'entier relatif $ad-bc$ est indépendant de la représentation choisie (avec un dénominateur positif de $q$ et $q'$. On définit alors la relation d'ordre sur $q$ par : <br /> $q \\leqslant r \\iff ad - bc \\leqslant 0$",
         "id": 62
     }, {
         "type": "theoreme",
-        "titre": "Relation $\\leqslant$ sur #Q",
+        "titre": "Relation $\\leqslant$ sur $\\bb{Q}$",
         "hypotheses": "",
-        "resultat": "La relation $\\leqslant$ ainsi difinie sur #Q est une relation d'ordre total.",
+        "resultat": "La relation $\\leqslant$ ainsi difinie sur $\\bb{Q}$ est une relation d'ordre total.",
         "id": 63
     }, {
         "type": "definition",
         "titre": "Nombres incommensurables",
-        "hypotheses": "Soit $(x, y) \\in ($#R$^*)^2$",
+        "hypotheses": "Soit $(x, y) \\in (\\bb{R}^*)^2$",
         "resultat": "On dit que $x$ et $y$ sont incommensurables si $\\frac{x}{y}$ est irrationnel.",
         "id": 64
     }, {
@@ -458,27 +457,27 @@ const quiz_reels = [{
         "id": 65
     }, {
         "type": "axiome",
-        "titre": "Propriété fondamentale de #R",
-        "hypotheses": "Soit $E$ un sous-ensemble non vide et majoré de #R.",
-        "resultat": "Alors $E$ admet une borne supérieure dans #R.",
+        "titre": "Propriété fondamentale de $\\bb{R}$",
+        "hypotheses": "Soit $E$ un sous-ensemble non vide et majoré de $\\bb{R}$.",
+        "resultat": "Alors $E$ admet une borne supérieure dans $\\bb{R}$.",
         "id": 66
     }, {
         "type": "theoreme",
-        "titre": "Propriété fondamentale de #R, exprimée avec la borne inférieure",
-        "hypotheses": "Soit $E$ un sous-ensemble non vide et minoré de #R.",
-        "resultat": "Alors $E$ admet une borne inférieure dans #R.",
+        "titre": "Propriété fondamentale de $\\bb{R}$, exprimée avec la borne inférieure",
+        "hypotheses": "Soit $E$ un sous-ensemble non vide et minoré de $\\bb{R}$.",
+        "resultat": "Alors $E$ admet une borne inférieure dans $\\bb{R}$.",
         "id": 67
     }, {
         "type": "propriete",
-        "titre": "Relation d'ordre sur #R",
+        "titre": "Relation d'ordre sur $\\bb{R}$",
         "hypotheses": "",
-        "resultat": "La relation d'ordre sur #R vérifie les 4 propriétés élémentaires suivants : <ol> <li>C'est une relation d'ordre totale</li> <li>$\\forall (x,y) \\in$#R$^2$, $x \\leqslant y \\iff y - x \\in$#R$_+$</li> <li> $\\forall (x,y) \\in ($#R$_+)^2$, $x+y \\geqslant 0$ avec égalité si et seulement si $x = y = 0$ </li> <li>$\\forall (x,y) \\in ($#R$_+)^2$, $xy \\geqslant 0$</li> </ol>",
+        "resultat": "La relation d'ordre sur $\\bb{R}$ vérifie les 4 propriétés élémentaires suivants : <ol> <li>C'est une relation d'ordre totale</li> <li>$\\forall (x,y) \\in\\bb{R}^2$, $x \\leqslant y \\iff y - x \\in\\bb{R}_+$</li> <li> $\\forall (x,y) \\in (\\bb{R}_+)^2$, $x+y \\geqslant 0$ avec égalité si et seulement si $x = y = 0$ </li> <li>$\\forall (x,y) \\in (\\bb{R}_+)^2$, $xy \\geqslant 0$</li> </ol>",
         "id": 68
     }, {
         "type": "corollaire",
         "titre": "Règle des signes pour le produit",
         "hypotheses": "Soit $x$ et $y$ deux réels.",
-        "resultat": "<ol> <li>Si $x \\leqslant 0$ alors $-x \\geqslant 0$</li> <li>Si $x \\geqslant 0$, alors $-x \\leqslant 0$</li> <li>Si $x \\geqslant 0$#et$y \\leqslant 0$ ou si $x \\leqslant 0$#et$y \\geqslant 0$, alors $xy \\leqslant 0$</li> <li>Si $x \\leqslant 0$ et $y \\leqslant 0$, alors $xy \\geqslant 0$</li> </ol>",
+        "resultat": "<ol> <li>Si $x \\leqslant 0$ alors $-x \\geqslant 0$</li> <li>Si $x \\geqslant 0$, alors $-x \\leqslant 0$</li> <li>Si $x \\geqslant 0\\land y \\leqslant 0$ ou si $x \\leqslant 0\\land y \\geqslant 0$, alors $xy \\leqslant 0$</li> <li>Si $x \\leqslant 0$ et $y \\leqslant 0$, alors $xy \\geqslant 0$</li> </ol>",
         "id": 69
     }, {
         "type": "proposition",
@@ -495,7 +494,7 @@ const quiz_reels = [{
     }, {
         "type": "definition",
         "titre": "Valeur absolue",
-        "hypotheses": "Soit $x \\in $#R",
+        "hypotheses": "Soit $x \\in \\bb{R}$",
         "resultat": "La valeur absolue de $x$, notée $|x|$, est la réel obtenu de $x$ en changeant si besoin son signe de sorte à obtenir une quantité positive : <br /> $\\left\\{ \\begin{array}{ll} x \\text{ si } x \\geqslant 0 \\\\ -x \\text{ si } x \\lt 0 \\end{array} \\right.$.",
         "id": 72
     }, {
@@ -507,20 +506,20 @@ const quiz_reels = [{
     }, {
         "type": "definition",
         "titre": "Partie positive d'un réel",
-        "hypotheses": "Soit $x \\in $#R",
+        "hypotheses": "Soit $x \\in \\bb{R}$",
         "resultat": "On appelle <b>partie positive</b> de $x$, et on note $x^+$ le réel défini par : <br /> $x^+ = \\max(0, x) = \\left\\{ \\begin{array}{ll} x \\text{ si } x \\geqslant 0 \\\\ 0 \\text{ si } x \\lt 0 \\end{array} \\right.$",
         "id": 74
     }, {
         "type": "definition",
         "titre": "Partie négative d'un réel",
-        "hypotheses": "Soit $x \\in $#R",
+        "hypotheses": "Soit $x \\in \\bb{R}$",
         "resultat": "On appelle <b>partie négative</b> de $x$, et on note $x^-$ le réel défini par : <br /> $x^- = -\\min(0, x) = \\max(0, -x) = \\left\\{ \\begin{array}{ll} x \\text{ si } - x \\lt 0 \\\\ 0 \\text{ si } x \\geqslant 0 \\end{array} \\right.$",
         "id": 75
     }, {
         "type": "propriete",
         "titre": "Propriétés des parties positives et négatives",
         "hypotheses": "Soit $x$ un réel",
-        "resultat": "Alors : <ol> <li>$x^+ \\geqslant 0$ et $x^- \\geqslant 0$ </li>  <li>$x^+ = 0$ ou $x^- = 0$</li> <li>$x = x^+ - x^-$</li> <li>$\\forall(y,z) \\in $#R$_+$, si $x=y-z$ alors $y \\geqslant x^+$ et $z \\geqslant x^-$ </li>  <li>$|x| = x^+ + x^- = max(0, x) - min(0, -x)$</li> <li>$(-x)^+ = x^-$ et $(-x)^- = x^+$</li> </ol>",
+        "resultat": "Alors : <ol> <li>$x^+ \\geqslant 0$ et $x^- \\geqslant 0$ </li>  <li>$x^+ = 0$ ou $x^- = 0$</li> <li>$x = x^+ - x^-$</li> <li>$\\forall(y,z) \\in \\bb{R}_+$, si $x=y-z$ alors $y \\geqslant x^+$ et $z \\geqslant x^-$ </li>  <li>$|x| = x^+ + x^- = max(0, x) - min(0, -x)$</li> <li>$(-x)^+ = x^-$ et $(-x)^- = x^+$</li> </ol>",
         "id": 76
     }, {
         "type": "corollaire",
@@ -544,13 +543,13 @@ const quiz_reels = [{
         "type": "theoreme",
         "titre": "Inégalité arithmético-géométrique",
         "hypotheses": "",
-        "resultat": "Pour tout $X = (x_1, ..., x_n) \\in ($#R$_+^*)^n$, <br /> $\\frac{1}{n}(x_1 + ... + x_n) \\geqslant \\sqrt[\\leftroot{10}\\uproot{10}n]{x_1 \\times ... \\times x_n}$",
+        "resultat": "Pour tout $X = (x_1, ..., x_n) \\in (\\bb{R}_+^*)^n$, <br /> $\\frac{1}{n}(x_1 + ... + x_n) \\geqslant \\sqrt[\\leftroot{10}\\uproot{10}n]{x_1 \\times ... \\times x_n}$",
         "id": 80
     }, {
         "type": "proposition",
         "titre": "Propriété d'Archimède",
         "hypotheses": "Soit $x$ et $y$ deux réels strictement positifs.",
-        "resultat": "Il existe un entier $n \\in $#N tel que $x \\lt ny$",
+        "resultat": "Il existe un entier $n \\in \\bb{N}$ tel que $x \\lt ny$",
         "id": 81
     }, {
         "type": "corollaire",
@@ -561,26 +560,26 @@ const quiz_reels = [{
     }, {
         "type": "theoreme",
         "titre": "Division euclidienne",
-        "hypotheses": "Soit $x \\in $#R et $y \\in $#R$_+^*$",
+        "hypotheses": "Soit $x \\in \\bb{R}$ et $y \\in \\bb{R}_+^*$",
         "resultat": "Il existe un unique entier $n$ et un unique réel $r \\in [0, y[$ tels que $x = ny +r$",
         "id": 83
     }, {
         "type": "definition",
-        "titre": "Densité dans #R",
+        "titre": "Densité dans $\\bb{R}$",
         "hypotheses": "",
-        "resultat": "Un sous ensemble $E$ de #R est dense dans #R si pour tout $(x,y) \\in $#R$^2$ tel que que $x < y$, il existe $z \\in E$ tel que $x \\lt z \\lt y$",
+        "resultat": "Un sous ensemble $E$ de $\\bb{R}$ est dense dans $\\bb{R}$ si pour tout $(x,y) \\in \\bb{R}^2$ tel que que $x < y$, il existe $z \\in E$ tel que $x \\lt z \\lt y$",
         "id": 84
     }, {
         "type": "theoreme",
-        "titre": "Densité des rationnels et des irrationnels dans #R",
+        "titre": "Densité des rationnels et des irrationnels dans $\\bb{R}$",
         "hypotheses": "",
-        "resultat": "Les ensembles #Q et #R\\#Q sont denses dans #R.",
+        "resultat": "Les ensembles $\\bb{Q}$ et $\\bb{R}\\backslash\\bb{Q}$ sont denses dans $\\bb{R}$.",
         "id": 85
     }, {
         "type": "definition",
-        "titre": "Nombres algébriques, transcendants sur #Q",
-        "hypotheses": "Soit $x \\in $#R",
-        "resultat": "<ul> <li>On dit que $x$ est <b>algébrique</b> sur #Q s'il existe un polynôme $P$ à coefficients dans #Q tel que $P(x) = 0$</li> <li>On dit que $x$ est transcendant sur #Q s'il n'est pas algébrique</li> </ul>",
+        "titre": "Nombres algébriques, transcendants sur $\\bb{Q}$",
+        "hypotheses": "Soit $x \\in \\bb{R}$",
+        "resultat": "<ul> <li>On dit que $x$ est <b>algébrique</b> sur $\\bb{Q}$ s'il existe un polynôme $P$ à coefficients dans $\\bb{Q}$ tel que $P(x) = 0$</li> <li>On dit que $x$ est transcendant sur $\\bb{Q}$ s'il n'est pas algébrique</li> </ul>",
         "id": 86
     }, {
         "type": "definition",
@@ -597,57 +596,57 @@ const quiz_reels = [{
     }, {
         "type": "proposition",
         "titre": "Caractérisation de la partie entière",
-        "hypotheses": "Soit $x \\in $#R",
-        "resultat": "<ol> <li>$\\lfloor x\\rfloor = \\max\\{n \\in $#Z$ | n \\leqslant x\\}$</li> <li>$\\lfloor x \\rfloor = \\min\\{n \\in $#Z$ | n \\gt x \\} - 1$</li> <li>$\\lfloor x \\rfloor$ est l'unique entier tel que $\\lfloor x \\rfloor \\leqslant x \\lt \\lfloor x \\rfloor - 1$</li>  <li>$\\lfloor x \\rfloor$ est l'unique entier tel que $x - 1 \\lt \\lfloor x \\rfloor \\leqslant x$</li> </ol>",
+        "hypotheses": "Soit $x \\in \\bb{R}$",
+        "resultat": "<ol> <li>$\\lfloor x\\rfloor = \\max\\{n \\in \\bb{Z} | n \\leqslant x\\}$</li> <li>$\\lfloor x \\rfloor = \\min\\{n \\in \\bb{Z} | n \\gt x \\} - 1$</li> <li>$\\lfloor x \\rfloor$ est l'unique entier tel que $\\lfloor x \\rfloor \\leqslant x \\lt \\lfloor x \\rfloor - 1$</li>  <li>$\\lfloor x \\rfloor$ est l'unique entier tel que $x - 1 \\lt \\lfloor x \\rfloor \\leqslant x$</li> </ol>",
         "id": 89
     }, {
         "type": "definition",
         "titre": "partie entière par excès",
         "hypotheses": "",
-        "resultat": "On définit parfois aussi la partie entière par excès, notée $\\lceil x \\rceil$, comme étant le plus petit entier supérieur ou égal à $x$ : <br /> $\\lceil x \\rceil = \\min\\{ n \\in $#N$ | n \\geqslant x\\}$",
+        "resultat": "On définit parfois aussi la partie entière par excès, notée $\\lceil x \\rceil$, comme étant le plus petit entier supérieur ou égal à $x$ : <br /> $\\lceil x \\rceil = \\min\\{ n \\in \\bb{N} | n \\geqslant x\\}$",
         "id": 90
     }, {
         "type": "proposition",
         "titre": "Relation entre partie entière et partie entière par excès",
-        "hypotheses": "Soit $x \\in $#R.",
-        "resultat": "On a alors : <ol> <li>$\\lceil x \\rceil = \\left \\{ \\begin{array}{ll} \\lfloor x \\rceil + 1 \\text{ si } x \\notin $#Z$ \\\\ \\lfloor x \\rfloor \\quad \\quad \\text{si } x \\in $#Z$ \\end{array}\\right.$</li>  <li>$\\lfloor -x \\rfloor = -\\lceil x \\rceil$</li> </ol>",
+        "hypotheses": "Soit $x \\in \\bb{R}$.",
+        "resultat": "On a alors : <ol> <li>$\\lceil x \\rceil = \\left \\{ \\begin{array}{ll} \\lfloor x \\rceil + 1 \\text{ si } x \\notin \\bb{Z} \\\\ \\lfloor x \\rfloor \\quad \\quad \\text{si } x \\in \\bb{Z} \\end{array}\\right.$</li>  <li>$\\lfloor -x \\rfloor = -\\lceil x \\rceil$</li> </ol>",
         "id": 91
     }, {
         "type": "propriete",
         "titre": "Propriétés de la partie entière",
         "hypotheses": "",
-        "resultat": "<ol> <li>$\\forall x,y \\in $#R$, \\lfloor x \\rfloor + \\lfloor y \\rfloor + 1 \\geq \\lfloor x + y \\rfloor \\geq \\lfloor x \\rfloor + \\lfloor y \\rfloor$</li> <li>$\\forall x,y \\in $#R$_+, \\lfloor xy \\rfloor \\geq \\lfloor x \\rfloor \\times \\lfloor y \\rfloor $</li> <li>$\\forall x \\in $#R$, \\forall n \\in $#Z$, \\lfloor x + n \\rfloor = \\lfloor x \\rfloor + n$</li></ol>",
+        "resultat": "<ol> <li>$\\forall x,y \\in \\bb{R}, \\lfloor x \\rfloor + \\lfloor y \\rfloor + 1 \\geq \\lfloor x + y \\rfloor \\geq \\lfloor x \\rfloor + \\lfloor y \\rfloor$</li> <li>$\\forall x,y \\in \\bb{R}_+, \\lfloor xy \\rfloor \\geq \\lfloor x \\rfloor \\times \\lfloor y \\rfloor $</li> <li>$\\forall x \\in \\bb{R}, \\forall n \\in \\bb{Z}, \\lfloor x + n \\rfloor = \\lfloor x \\rfloor + n$</li></ol>",
         "id": 92
     }, {
         "type": "remarque",
         "titre": "Notation des nombres décimaux",
         "hypotheses": "",
-        "resultat": "<ul> <li>Nous notons #D l'ensemble des nombres décimaux, c'est à dire des réels $x$ tels qu'il existe $n \\in $#N tel que $10^{n}x$ est entier</li> <li>Etant donné $n \\in $#N, nous notons #D$_n$ l'ensemble des nombres décimaux tels que $10^{n}x \\in $#Z. Par exemble #D$_0 = $#Z et #D$_1$ sont les décimaux s'écrivant avec au plus un chiffre après la virgule.</li></ul>",
+        "resultat": "<ul> <li>Nous notons $\\bb{d}$ l'ensemble des nombres décimaux, c'est à dire des réels $x$ tels qu'il existe $n \\in \\bb{N}$ tel que $10^{n}x$ est entier</li> <li>Etant donné $n \\in \\bb{N}$, nous notons $\\bb{d}_n$ l'ensemble des nombres décimaux tels que $10^{n}x \\in \\bb{Z}$. Par exemble $\\bb{d}_0 = \\bb{Z}$ et $\\bb{d}_1$ sont les décimaux s'écrivant avec au plus un chiffre après la virgule.</li></ul>",
         "id": 93
     }, {
         "type": "proposition",
         "titre": "Approximation des décimales d'un réel $x$",
-        "hypotheses": "Soit $x$ un réel et $n \\in $#N$^*$",
-        "resultat": "Il existe un unique élément $y$ de #D$_n$ tel que $y_n \\leq x \\lt y_n + 10^{-n}$. <br /> <ul><li>Le décimal $y_n$ est appelé valeur approchée décimal à la précision $10^{-n}$ par défaut</li> <li>Le décimal $y_n + 10^{-n}$ est appelé valeur approchée décimale à la précision $10^{-n}$ par excès.</li> </ul>",
+        "hypotheses": "Soit $x$ un réel et $n \\in \\bb{N}^*$",
+        "resultat": "Il existe un unique élément $y$ de $\\bb{d}_n$ tel que $y_n \\leq x \\lt y_n + 10^{-n}$. <br /> <ul><li>Le décimal $y_n$ est appelé valeur approchée décimal à la précision $10^{-n}$ par défaut</li> <li>Le décimal $y_n + 10^{-n}$ est appelé valeur approchée décimale à la précision $10^{-n}$ par excès.</li> </ul>",
         "id": 94
     },
-    /* {
+    {
         "type": "lemme",
-        "titre": "",
+        "titre": "Aproximation des décimales",
         "hypotheses": "",
-        "resultat": "Pour tout $n \\in $#N$^*$, il existe $a_n \\in [\\![0, 9]\\!]$ tel que $y_n - y_{n-1} = \\frac{a_n}{10^n}$",
+        "resultat": "Pour tout $n \\in \\bb{N}^*$, il existe $a_n \\in [\\![0, 9]\\!]$ tel que $y_n - y_{n-1} = \\frac{a_n}{10^n}$",
         "id": 95
-    }, */
+    },
     {
         "type": "theoreme",
         "titre": "Existence du développement décimal de $x$",
-        "hypotheses": "Soit $x \\in $#R",
-        "resultat": "Il existe un entier relatif $y_0$ et pour tout $n \\in $#N$^*$, des entiers $a_n \\in [\\![0, 9]\\!]$ tels que <br /> $x=y_0 + \\sum_{n+1}^{+\\infty} a_n10^{-n} = y_0 + \\lim_{N \\rightarrow +\\infty} \\sum_{n=1}^{N} a_n10^{-n}$.",
+        "hypotheses": "Soit $x \\in \\bb{R}$",
+        "resultat": "Il existe un entier relatif $y_0$ et pour tout $n \\in \\bb{N}^*$, des entiers $a_n \\in [\\![0, 9]\\!]$ tels que <br /> $x=y_0 + \\sum_{n+1}^{+\\infty} a_n10^{-n} = y_0 + \\lim_{N \\rightarrow +\\infty} \\sum_{n=1}^{N} a_n10^{-n}$.",
         "id": 96
     }, {
         "type": "theoreme",
         "titre": "Unicité du développement décimal de $x$",
-        "hypotheses": "Soit $x \\in $#R ",
+        "hypotheses": "Soit $x \\in \\bb{R}$",
         "resultat": "<ol><li>Si $x$ n'est pas décimal, $x$ admet un unique développement décimal</li> <li>Si $x$ est décimal, $x$ admet exactement deux développements décimaux, l'un terminant uniquement par des $9$, l'autre terminant uniquement par des $0$</li> </ol>",
         "id": 97
     }, {
@@ -659,32 +658,32 @@ const quiz_reels = [{
     }, {
         "type": "definition",
         "titre": "Ensemble convexe",
-        "hypotheses": "Soit $E$ un sous-ensemble de #R$^n$.",
+        "hypotheses": "Soit $E$ un sous-ensemble de $\\bb{R}^n$.",
         "resultat": "On dit que $E$ est convexe si et seulement si pour tout couple de points $A$ et $B$ de $E$, le segment $[AB]$ est entièrement inclus dans $E$.",
         "id": 99
     }, {
         "type": "definition",
         "titre": "Intervalle",
         "hypotheses": "",
-        "resultat": "Un intervalle $I$ est un sous-ensemble convexe $I$ de #R, c'est-à-dire tel que : <br /> $\\forall (a,b) \\in I^2, \\forall x \\in $#R$, a \\leqslant x \\leqslant b \\implies x \\in I$",
+        "resultat": "Un intervalle $I$ est un sous-ensemble convexe $I$ de $\\bb{R}$, c'est-à-dire tel que : <br /> $\\forall (a,b) \\in I^2, \\forall x \\in \\bb{R}, a \\leqslant x \\leqslant b \\implies x \\in I$",
         "id": 100
     }, {
         "type": "theoreme",
         "titre": "Inventaire des intervalles réels",
         "hypotheses": "",
-        "resultat": "Tout intervalle $I$ de #R est d'une des formes suivantes, pour certaines valeurs réelles $a$ et $b$ : <ul> <li>$[a, b] = \\{x \\in $#R$, a \\leqslant x \\leqslant b \\}, a \\leqslant b$</li> <li>$]a, b[ = \\{x \\in $#R$, a \\lt x \\lt b \\}, a \\lt b$</li>  <li>$[a, b[ = \\{x \\in $#R$, a \\leqslant x \\lt b \\}, a \\lt b$</li> <li>$]a, b] = \\{x \\in $#R$, a \\lt x \\leqslantt b \\}, a \\lt b$</li> <li>$[a, +\\infty[ = \\{x \\in $#R$, x \\geqslant a \\}$</li> <li>$]a, +\\infty[ = \\{x \\in $#R$, x \\gt a \\}$</li> <li>$]-\\infty, b] = \\{x \\in $#R$, x \\leqslant b \\}$</li> <li>$]-\\infty, b[ = \\{x \\in $#R$, x \\lt b \\}$</li> <li>$]-\\infty, +\\infty = $#R</li> <li>$\\emptyset$</li> </ul>",
+        "resultat": "Tout intervalle $I$ de $\\bb{R}$ est d'une des formes suivantes, pour certaines valeurs réelles $a$ et $b$ : <ul> <li>$[a, b] = \\{x \\in \\bb{R}, a \\leqslant x \\leqslant b \\}, a \\leqslant b$</li> <li>$]a, b[ = \\{x \\in \\bb{R}, a \\lt x \\lt b \\}, a \\lt b$</li>  <li>$[a, b[ = \\{x \\in \\bb{R}, a \\leqslant x \\lt b \\}, a \\lt b$</li> <li>$]a, b] = \\{x \\in \\bb{R}, a \\lt x \\leqslant b \\}, a \\lt b$</li> <li>$[a, +\\infty[ = \\{x \\in \\bb{R}, x \\geqslant a \\}$</li> <li>$]a, +\\infty[ = \\{x \\in \\bb{R}, x \\gt a \\}$</li> <li>$]-\\infty, b] = \\{x \\in \\bb{R}, x \\leqslant b \\}$</li> <li>$]-\\infty, b[ = \\{x \\in \\bb{R}, x \\lt b \\}$</li> <li>$]-\\infty, +\\infty = \\bb{R}$</li> <li>$\\emptyset$</li> </ul>",
         "id": 101
     }, {
         "type": "definition",
         "titre": "Intervalles ouverts, fermés, semi-ouverts",
         "hypotheses": "",
-        "resultat": "<ul> <li>On dit qu'un intervalle est ouvert s'il est de la forme $]a, b[, ]a, +\\infty[, ]-\\infty, b[, $#R ou $\\emptyset$</li> <li>On dit qu'un intervalle est fermé s'il est de la forme $[a, b], [a, +\\infty[, ]-\\infty, b]$ ou $\\emptyset$</li> <li>On dit qu'un intervalle est semi-ouvert s'il est de la forme $[a, b[$ ou $]a, b]$</li> </ul>",
+        "resultat": "<ul> <li>On dit qu'un intervalle est ouvert s'il est de la forme $]a, b[, ]a, +\\infty[, ]-\\infty, b[, \\bb{R}$ ou $\\emptyset$</li> <li>On dit qu'un intervalle est fermé s'il est de la forme $[a, b], [a, +\\infty[, ]-\\infty, b]$ ou $\\emptyset$</li> <li>On dit qu'un intervalle est semi-ouvert s'il est de la forme $[a, b[$ ou $]a, b]$</li> </ul>",
         "id": 102
     }, {
         "type": "definition",
-        "titre": "Boule dans #R$^n$",
-        "hypotheses": "Soit $x \\in $#R$^n$ et $r \\in $#R$_+$.",
-        "resultat": "<ol> <li>La boule ouverte de centre $x$ et de rayon $r$ est : $B(x, r) = \\{y \\in $#R$^n | d(y,x) \\lt r\\}$</li> <li>La boule fermée de centre $x$ et de rayon $r$ est : $\\overline{B}(x, r) = \\{ y \\in $#R$^n | d(y,x) \\leqslant r \\}$</li> </ol>",
+        "titre": "Boule dans $\\bb{R}^n$",
+        "hypotheses": "Soit $x \\in \\bb{R}^n$ et $r \\in \\bb{R}_+$.",
+        "resultat": "<ol> <li>La boule ouverte de centre $x$ et de rayon $r$ est : $B(x, r) = \\{y \\in \\bb{R}^n | d(y,x) \\lt r\\}$</li> <li>La boule fermée de centre $x$ et de rayon $r$ est : $\\overline{B}(x, r) = \\{ y \\in \\bb{R}^n | d(y,x) \\leqslant r \\}$</li> </ol>",
         "id": 103
     }, {
         "type": "remarque",
@@ -695,20 +694,20 @@ const quiz_reels = [{
     }, {
         "type": "definition",
         "titre": "Voisinage",
-        "hypotheses": "Soit $x \\in $#R$^n$.",
-        "resultat": "Un <b>voisinage</b> $V$ de $x$ est un sous-ensemble $V$ de #R$^n$ tel qu'il existe une boule ouverte centrée en $x$ entièrement contenue dans $V$ : $\\exists \\varepsilon \\gt 0, B(x,\\varepsilon) \\subset V$, i.e. $\\exists \\varepsilon \\gt 0, \\forall y \\in E, d(y,x) \\lt \\varepsilon \\implies y \\in V$",
+        "hypotheses": "Soit $x \\in \\bb{R}^n$.",
+        "resultat": "Un <b>voisinage</b> $V$ de $x$ est un sous-ensemble $V$ de $\\bb{R}^n$ tel qu'il existe une boule ouverte centrée en $x$ entièrement contenue dans $V$ : $\\exists \\varepsilon \\gt 0, B(x,\\varepsilon) \\subset V$, i.e. $\\exists \\varepsilon \\gt 0, \\forall y \\in E, d(y,x) \\lt \\varepsilon \\implies y \\in V$",
         "id": 105
     }, {
         "type": "definition",
         "titre": "Sous-ensemble ouvert",
         "hypotheses": "",
-        "resultat": "<ul> <li>Un <b>ouvert</b> de $U$ de #R$^n$ est un sous-ensemble $U$ de #R$^n$ qui est voisinage de tous ses points</li> <li>De manière équivalente, $U \\subset $#R$^n$ est ouvesrt si et seulement si : <br /> $\\forall x \\in U, \\exists \\varepsilon \\gt 0, B(x, \\varepsilon) \\subset U$ </li> </ul>",
+        "resultat": "<ul> <li>Un <b>ouvert</b> de $U$ de $\\bb{R}^n$ est un sous-ensemble $U$ de $\\bb{R}^n$ qui est voisinage de tous ses points</li> <li>De manière équivalente, $U \\subset \\bb{R}^n$ est ouvesrt si et seulement si : <br /> $\\forall x \\in U, \\exists \\varepsilon \\gt 0, B(x, \\varepsilon) \\subset U$ </li> </ul>",
         "id": 106
     }, {
         "type": "definition",
         "titre": "Sous-ensemble fermé",
         "hypotheses": "",
-        "resultat": "Un sous-ensemble $F$ de #R$^n$ est <b>fermé</b> si son complémentaire $C_E F$ est <b>ouvert</b>",
+        "resultat": "Un sous-ensemble $F$ de $\\bb{R}^n$ est <b>fermé</b> si son complémentaire $C_E F$ est <b>ouvert</b>",
         "id": 107
     }, {
         "type": "proposition",
@@ -720,105 +719,105 @@ const quiz_reels = [{
         "type": "definition",
         "titre": "Droite achevée réelle",
         "hypotheses": "",
-        "resultat": "La droite achevée réelle, notée $\\overline{$#R$}$, est l'ensemble #R$ \\cup \\{-\\infty, + \\infty\\}$.",
+        "resultat": "La droite achevée réelle, notée $\\overline{\\bb{R}}$, est l'ensemble $\\bb{R} \\cup \\{-\\infty, + \\infty\\}$.",
         "id": 109
     }, {
         "type": "definition",
-        "titre": "Relation d'ordre sur $\\overline{$#R$}$",
+        "titre": "Relation d'ordre sur $\\overline{\\bb{R}}$",
         "hypotheses": "",
-        "resultat": "On peut prolonger l'ordre de #R en un ordre de $\\overline{$#R$}$ en posant : <br /> $\\forall x \\in \\overline{$#R$}, -\\infty \\leqslant x \\leqslant +\\infty$.",
+        "resultat": "On peut prolonger l'ordre de $\\bb{R}$ en un ordre de $\\overline{\\bb{R}}$ en posant : <br /> $\\forall x \\in \\overline{\\bb{R}}, -\\infty \\leqslant x \\leqslant +\\infty$.",
         "id": 110
     }, {
         "type": "definition",
-        "titre": "Règles calculatoires dans $\\overline{$#R$}$",
+        "titre": "Règles calculatoires dans $\\overline{\\bb{R}}$",
         "hypotheses": "",
-        "resultat": "On peut prolonger partiellement les opérations de #R sur $\\overline{$#R$}$, en posant : <ul> <li>$-(+\\infty) = - \\infty$</li> <li>$\\forall x \\in \\overline{$#R$}\\text{\\ }\\{-\\infty\\}, x + (+\\infty) = +\\infty$</li> <li>$\\forall x \\in \\overline{$#R$}\\text{\\ }\\{+\\infty\\}, x + (-\\infty) = -\\infty$</li> <li>$\\frac{1}{+\\infty} = \\frac{1}{-\\infty} = 0$</li> <li>$\\forall x \\in \\overline{$#R$}_+^*, x \\times (+\\infty) = +\\infty, x \\times (-\\infty) = -\\infty$</li> <li>$\\forall x \\in \\overline{$#R$}_-^*, x \\times (+\\infty) = -\\infty, x \\times (-\\infty) = +\\infty$</li> </ul>",
+        "resultat": "On peut prolonger partiellement les opérations de $\\bb{R}$ sur $\\overline{\\bb{R}}$, en posant : <ul> <li>$-(+\\infty) = - \\infty$</li> <li>$\\forall x \\in \\overline{\\bb{R}}\\text{\\ }\\{-\\infty\\}, x + (+\\infty) = +\\infty$</li> <li>$\\forall x \\in \\overline{\\bb{R}}\\text{\\ }\\{+\\infty\\}, x + (-\\infty) = -\\infty$</li> <li>$\\frac{1}{+\\infty} = \\frac{1}{-\\infty} = 0$</li> <li>$\\forall x \\in \\overline{\\bb{R}}_+^*, x \\times (+\\infty) = +\\infty, x \\times (-\\infty) = -\\infty$</li> <li>$\\forall x \\in \\overline{\\bb{R}}_-^*, x \\times (+\\infty) = -\\infty, x \\times (-\\infty) = +\\infty$</li> </ul>",
         "id": 111
     }, {
         "type": "definition",
-        "titre": "Formes indéterminées dans $\\overline{$#R$}$",
+        "titre": "Formes indéterminées dans $\\overline{\\bb{R}}$",
         "hypotheses": "",
-        "resultat": "Les opérations suivantes ne sont pas définies, et définissent les formes indéterminées de la somme et du produit dans $\\overline{$#R$}$ : <ul> <li>$-\\infty + (+\\infty)$</li> <li>$0 \\times (+\\infty)$</li> <li>$0 \\times (-\\infty)$</li> </ul>",
+        "resultat": "Les opérations suivantes ne sont pas définies, et définissent les formes indéterminées de la somme et du produit dans $\\overline{\\bb{R}}$ : <ul> <li>$-\\infty + (+\\infty)$</li> <li>$0 \\times (+\\infty)$</li> <li>$0 \\times (-\\infty)$</li> </ul>",
         "id": 112
     }, {
         "type": "proposition",
-        "titre": "Bornes supérieures dans $\\overline{$#R$}$",
+        "titre": "Bornes supérieures dans $\\overline{\\bb{R}}$",
         "hypotheses": "",
-        "resultat": "Tous sous-ensemble $E$ de $\\overline{$#R$}$ admet une borne supérieure dans $\\overline{$#R$}$",
+        "resultat": "Tous sous-ensemble $E$ de $\\overline{\\bb{R}}$ admet une borne supérieure dans $\\overline{\\bb{R}}$",
         "id": 113
     }, {
         "type": "proposition",
-        "titre": "Bornes inférieures dans $\\overline{$#R$}$",
+        "titre": "Bornes inférieures dans $\\overline{\\bb{R}}$",
         "hypotheses": "",
-        "resultat": "Tous sous-ensemble $E$ de $\\overline{$#R$}$ admet une borne inférieure dans $\\overline{$#R$}$",
+        "resultat": "Tous sous-ensemble $E$ de $\\overline{\\bb{R}}$ admet une borne inférieure dans $\\overline{\\bb{R}}$",
         "id": 114
     }
 ];
 
 const quiz_nb_complexes = [{
     "type": "definition",
-    "titre": "Ensemble #C des nombres complexes",
+    "titre": "Ensemble $\\bb{C}$ des nombres complexes",
     "hypotheses": "",
-    "resultat": "L'ensemble des nombres complexes #C est l'ensemble #R$^2$, muni des opérations suivantes : <ul><li>$(a, b) + (a',b') = (a+a', b+b')$</li> <li>$(a, b) \\times (a', b') = (aa' - bb', ab' + a'b)$</li></ul>",
+    "resultat": "L'ensemble des nombres complexes $\\bb{C}$ est l'ensemble $\\bb{R}^2$, muni des opérations suivantes : <ul><li>$(a, b) + (a',b') = (a+a', b+b')$</li> <li>$(a, b) \\times (a', b') = (aa' - bb', ab' + a'b)$</li></ul>",
     "id": 115
 }, {
     "type": "remarque",
-    "titre": "Injection de #R dans #C",
+    "titre": "Injection de $\\bb{R}$ dans $\\bb{C}$",
     "hypotheses": "",
-    "resultat": "L'application $\\lambda \\rightarrow (\\lambda, 0)$ étant injective, on identifie un réel $\\lambda$ au complexe $(\\lambda, 0)$. Via cette définition, on peut considérer que #R$ \\in $#C, et on vérifie facilement que la somme et le produit défini sur #C prolongent les lois de #R.",
+    "resultat": "L'application $\\lambda \\rightarrow (\\lambda, 0)$ étant injective, on identifie un réel $\\lambda$ au complexe $(\\lambda, 0)$. Via cette définition, on peut considérer que $\\bb{R} \\in \\bb{C}$, et on vérifie facilement que la somme et le produit défini sur $\\bb{C}$ prolongent les lois de $\\bb{R}$.",
     "id": 116
 }, {
     "type": "definition",
     "titre": "definition de la forme algébrique",
     "hypotheses": "",
-    "resultat": "<ul><li>On note $1 = (1,0)$ et $i = (0, 1)$</li><li>On a alors, pour tout $z = (a,b) \\in $#C, <br/> $z = a\\times 1 + b\\times i =  a+ib$<br/>C'est la forme algébrique du nombre complexe $z$.</li></ul>",
+    "resultat": "<ul><li>On note $1 = (1,0)$ et $i = (0, 1)$</li><li>On a alors, pour tout $z = (a,b) \\in \\bb{C}$, <br/> $z = a\\times 1 + b\\times i =  a+ib$<br/>C'est la forme algébrique du nombre complexe $z$.</li></ul>",
     "id": 117
 }, {
     "type": "definition",
     "titre": "Parties réelle/imaginaire",
     "hypotheses": "",
-    "resultat": "<ul><li>Soit $z=a+ib$, avec $a,b \\in $#R. <br/> * Le réel $a$ est appelé <b>partie réelle de $z$</b>, et est noté $\\Re(z)$<br/> * Le réel $b$ est appelé <b>partie imaginaire de $z$</b>, et est noté $\\Im(z)$</li> <li>Un nombre $z \\in $#C tel que $\\Re(z) = 0$ est appelé <b>nombre imaginaire pur</b></li> <li>Un nombre $z \\in $#C vérifie $\\Im(z) = 0$ si et seulement si $z \\in $#R</li> </ul>",
+    "resultat": "<ul><li>Soit $z=a+ib$, avec $a,b \\in \\bb{R}$. <br/> * Le réel $a$ est appelé <b>partie réelle de $z$</b>, et est noté $\\Re(z)$<br/> * Le réel $b$ est appelé <b>partie imaginaire de $z$</b>, et est noté $\\Im(z)$</li> <li>Un nombre $z \\in \\bb{C}$ tel que $\\Re(z) = 0$ est appelé <b>nombre imaginaire pur</b></li> <li>Un nombre $z \\in \\bb{C}$ vérifie $\\Im(z) = 0$ si et seulement si $z \\in \\bb{R}$</li> </ul>",
     "id": 118
 }, {
     "type": "proposition",
     "titre": "Propriétés liées au produit (nb complexes)",
     "hypotheses": "",
-    "resultat": "<ol><li>$i^2=-1$</li> <li>Le produit $(a+ib)(a'+ib')$ est simplement obtenu par utilisation des règles de distributivité et par la relation $i^2=-1$</li> <li>Si $z\\neq0$, alors $z$ est inversible, et, si $z=a+ib$ avec $(a,b) \\in $#R$^2$, on a l'expression de l'inverse : <br/> $z^{-1} = \\frac{a-ib}{a^2+b^2}$</li></ol>",
+    "resultat": "<ol><li>$i^2=-1$</li> <li>Le produit $(a+ib)(a'+ib')$ est simplement obtenu par utilisation des règles de distributivité et par la relation $i^2=-1$</li> <li>Si $z\\neq0$, alors $z$ est inversible, et, si $z=a+ib$ avec $(a,b) \\in \\bb{R}^2$, on a l'expression de l'inverse : <br/> $z^{-1} = \\frac{a-ib}{a^2+b^2}$</li></ol>",
     "id": 119
 }, {
     "type": "theoreme",
-    "titre": "Structure de #C",
+    "titre": "Structure de $\\bb{C}$",
     "hypotheses": "",
-    "resultat": "L'ensemble #C muni des opérations ci-dessus est un corps.",
+    "resultat": "L'ensemble $\\bb{C}$ muni des opérations ci-dessus est un corps.",
     "id": 120
 }, {
     "type": "definition",
     "titre": "Affixe d'un point du plan",
-    "hypotheses": "Soit $A = (a,b)$ un point de #R$^2$.",
+    "hypotheses": "Soit $A = (a,b)$ un point de $\\bb{R}^2$.",
     "resultat": "L'affixe du point $A$ est le nombre complexe $z_A = a+ib$.",
     "id": 121
 }, {
     "type": "theoreme",
     "titre": "Théorème d'Alembert-Gauss",
     "hypotheses": "",
-    "resultat": "Tout polynôme non constant à coefficients complexes admet au moins une racine dans #C.",
+    "resultat": "Tout polynôme non constant à coefficients complexes admet au moins une racine dans $\\bb{C}$.",
     "id": 122
 }, {
     "type": "definition",
     "titre": "Conjugué d'un nombre complexe",
-    "hypotheses": "Soit $z = a+ib$ (avec $(a,b) \\in $#R$^2$) un nombre complexe.",
+    "hypotheses": "Soit $z = a+ib$ (avec $(a,b) \\in \\bb{R}^2$) un nombre complexe.",
     "resultat": "Le conjugué de $z$ est le nombre complexe <br/> $\\overline{z\\ } a - ib$",
     "id": 123
 }, {
     "type": "propriete",
-    "titre": "Propriétés de la conjugaison dans #C",
+    "titre": "Propriétés de la conjugaison dans $\\bb{C}$",
     "hypotheses": "Soit $z$ et $z'$ deux nombres complexes.",
-    "resultat": "<ol><li>$\\overline{\\overline{z\\ }} = z$ (autrement dit, la conjugaison est une involution)</li> <li>$z = \\overline{z\\ } \\iff z \\in $#R</li> <li>$z = -\\overline{z\\ } \\iff z$ imaginaire pur</li> <li>$\\Re(z) = \\frac{z + \\overline{z\\ }}{2}$ et $\\Im(z) = \\frac{z - \\overline{z\\ }}{2}$</li> <li>$\\overline{z + z'} = \\overline{z\\ } + \\overline{z'}$, $\\overline{zz'} = \\overline{z\\ }\\times\\overline{z'}$, $\\overline{z^{-1}} = \\overline{z\\ }^{-1}$, $\\overline{(\\frac{z}{z'})} = \\frac{\\overline{z\\ }}{\\overline{z'}}$</li></ol>",
+    "resultat": "<ol><li>$\\overline{\\overline{z\\ }} = z$ (autrement dit, la conjugaison est une involution)</li> <li>$z = \\overline{z\\ } \\iff z \\in \\bb{R}$</li> <li>$z = -\\overline{z\\ } \\iff z$ imaginaire pur</li> <li>$\\Re(z) = \\frac{z + \\overline{z\\ }}{2}$ et $\\Im(z) = \\frac{z - \\overline{z\\ }}{2}$</li> <li>$\\overline{z + z'} = \\overline{z\\ } + \\overline{z'}$, $\\overline{zz'} = \\overline{z\\ }\\times\\overline{z'}$, $\\overline{z^{-1}} = \\overline{z\\ }^{-1}$, $\\overline{(\\frac{z}{z'})} = \\frac{\\overline{z\\ }}{\\overline{z'}}$</li></ol>",
     "id": 124
 }, {
     "type": "definition",
     "titre": "Module d'un nombre complexe",
-    "hypotheses": "Soit $(a,b) \\in $#R$^2$, et $z=a+ib$.",
+    "hypotheses": "Soit $(a,b) \\in \\bb{R}^2$, et $z=a+ib$.",
     "resultat": "Le module de $z$ est le réel positif défini par <br/> $|z| = \\sqrt{a^2 + b^2}$",
     "id": 125
 }, {
@@ -839,12 +838,12 @@ const quiz_trigo = [{
     "type": "definition",
     "titre": "Cercle trigonométrique",
     "hypotheses": "",
-    "resultat": "Le cercle trigonométrique (ou cercle unité) est le sous ensemble de #C, noté #U (comme \"unité\"), constitué des nombres complexes de module $1$ : <br/> #U$ = \\{z \\in $#C$, |z| = 1\\}$. <br/> Le cercle trigonométrique correspond dans l'interprétation géométrique des complexes au cercle de centre $(0, 0)$ et de rayon $1$, de #R$^2$. <br/> <img style=\"background-color:white!important;\" class=\"imgc\" src=\"res/cercle_trigo.svg\" />",
+    "resultat": "Le cercle trigonométrique (ou cercle unité) est le sous ensemble de $\\bb{C}$, noté $\\bb{U}$ (comme \"unité\"), constitué des nombres complexes de module $1$ : <br/> $\\bb{U} = \\{z \\in \\bb{C}, |z| = 1\\}$. <br/> Le cercle trigonométrique correspond dans l'interprétation géométrique des complexes au cercle de centre $(0, 0)$ et de rayon $1$, de $\\bb{R}^2$. <br/> <img style=\"background-color:white!important;\" class=\"imgc\" src=\"res/cercle_trigo.svg\" />",
     "id": 128
 }, {
     "type": "definition",
     "titre": "Fonctions trigonométriques",
-    "hypotheses": "Soit $x \\in $#R.",
+    "hypotheses": "Soit $x \\in \\bb{R}$.",
     "resultat": "On considère le cercle trigonométrique dans le plan euclidien canonoique. Soit $z$ le point du cercle trigonométrique tel que le rayon correspondant du cercle trigonométrique forme avec l'axe des réels un angle (orienté dans le sens direct) de $x$.<br/> On définit alors les fonctions cosinus, sinus et tangente par : <br/> $\\cos(x) = \\Re(x)$, $\\sin(x) = \\Im(z)$ et $\\tan(x) = \\frac{sin(x)}{cos(x)}$ si $cos(x)\\neq 0$",
     "id": 129
 }, {
@@ -856,14 +855,14 @@ const quiz_trigo = [{
 }, {
     "type": "definition",
     "titre": "Cotangente",
-    "hypotheses": "Soit $x \\in $#R.",
+    "hypotheses": "Soit $x \\in \\bb{R}$.",
     "resultat": "La contangente est définie, pour tout $x$ tel que $\\sin(x) \\neq 0$, par : <br/> $\\text{cotan}(x) = \\frac{\\cos(x)}{\\sin(x)}.$",
     "id": 131
 }, {
     "type": "proposition",
     "titre": "Domaines de définition des fonctions trigonométriques",
     "hypotheses": "",
-    "resultat": "<ol><li>Les fonctions sin et cos sont définies sur #R</li> <li>La fonction tan est définie sur #R$\\backslash \\{\\frac{\\pi}{2} + n\\pi, n \\in $#Z$\\}$</li> <li>La fonction cotan est définie sur #R$\\backslash \\{n\\pi, n \\in $#Z$\\}$.</li></ol>",
+    "resultat": "<ol><li>Les fonctions sin et cos sont définies sur $\\bb{R}$</li> <li>La fonction tan est définie sur $\\bb{R}\\backslash \\{\\frac{\\pi}{2} + n\\pi, n \\in \\bb{Z}\\}$</li> <li>La fonction cotan est définie sur $\\bb{R}\\backslash \\{n\\pi, n \\in \\bb{Z}\\}$.</li></ol>",
     "id": 132
 }, {
     "type": "proposition",
@@ -1049,7 +1048,7 @@ const quiz_trigo = [{
     "type": "proposition",
     "titre": "Identité remarquable ou théorème de Pythagore",
     "hypotheses": "",
-    "resultat": "Pour tout $x \\in $#R, $\\sin^2(x) + \\cos^2(x) = 1$",
+    "resultat": "Pour tout $x \\in \\bb{R}$, $\\sin^2(x) + \\cos^2(x) = 1$",
     "id": 163
 }, {
     "type": "proposition",
@@ -1109,7 +1108,7 @@ const quiz_trigo = [{
     "type": "proposition",
     "titre": "$\\tan(2a)$",
     "hypotheses": "Soit $a$ un réel",
-    "resultat": "$\\ŧan(2a) = \\frac{2\\tan(a)}{1-\\tan^2(a)}$",
+    "resultat": "$\\tan(2a) = \\frac{2\\tan(a)}{1-\\tan^2(a)}$",
     "id": 173
 }, {
     "type": "proposition",
@@ -1120,13 +1119,13 @@ const quiz_trigo = [{
 }, {
     "type": "proposition",
     "titre": "$\\cos^2(a)$",
-    "hypotheses": "Soit $a \\in $#R",
+    "hypotheses": "Soit $a \\in \\bb{R}$",
     "resultat": "$\\cos^2(a) = \\frac{1 + \\cos^2(2a)}{2}$",
     "id": 175
 }, {
     "type": "proposition",
     "titre": "$\\sin^2(a)$",
-    "hypotheses": "Soit $a \\in $#R",
+    "hypotheses": "Soit $a \\in \\bb{R}$",
     "resultat": "$\\sin^2(a) = \\frac{1 - \\cos^2(2a)}{2}$",
     "id": 176
 }, {
@@ -1219,7 +1218,7 @@ const quiz_combi = [{
     "type": "lemme",
     "titre": "Bijections de $[\\![1, n]\\!]$ et $[\\![1, m]\\!]$",
     "hypotheses": "",
-    "resultat": "Tout sous ensemble $F$ de $$[\\![1, n]\\!]$ peut être mis en bijection avec un ensemble $[\\![1, m]\\!]$",
+    "resultat": "Tout sous ensemble $F$ de $[\\![1, n]\\!]$ peut être mis en bijection avec un ensemble $[\\![1, m]\\!]$",
     "id": 191
 }, {
     "type": "lemme",
@@ -1231,7 +1230,7 @@ const quiz_combi = [{
     "type": "proposition",
     "titre": "Cardinal d'un ensemble fini",
     "hypotheses": "Soit $E$ un ensemble fini.",
-    "resultat": "Il existeun unique entier $n$ tel qu'il existe une bijection $f: [\\![1,n]\\!] \\rightarrow E$. L'entier $n$ est appelé cardinal de $E$, et noté $|E|$, ou Card($E$).",
+    "resultat": "Il existe un unique entier $n$ tel qu'il existe une bijection $f: [\\![1,n]\\!] \\rightarrow E$. L'entier $n$ est appelé cardinal de $E$, et noté $|E|$, ou Card($E$).",
     "id": 193
 }, {
     "type": "proposition",
@@ -1357,7 +1356,7 @@ const quiz_combi = [{
     "type": "proposition",
     "titre": "Expression factorielle du coefficient binomial",
     "hypotheses": "",
-    "resultat": "Pour $k \\in [\\![0, n]\\!]$, $\\binom{n}{k} = \\frac{n!}{k!(n-k)!}",
+    "resultat": "Pour $k \\in [\\![0, n]\\!]$, $\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$",
     "id": 214
 }, {
     "type": "proposition",
@@ -1381,8 +1380,38 @@ const quiz_combi = [{
     "type": "methode",
     "titre": "Démonstration combinatoire d'une formule",
     "hypotheses": "",
-    "resultat": "<ol><li>Trouver un modèle adapté de la formule, autrement dit un ensemble d'objets dont le dénombrement fournira un des membres de l'égalité. Pour cela, il est préférable de s'aider du membre le plus simple de l'égalité</li> <li></li> </ol>",
+    "resultat": "<ol><li>Trouver un modèle adapté de la formule, autrement dit un ensemble d'objets dont le dénombrement fournira un des membres de l'égalité. Pour cela, il est préférable de s'aider du membre le plus simple de l'égalité</li> <li>Dénombrer cet ensemble de deux façons différentes. Souvent, on procède d'une part à un dénombrement direct, et d'autre part à un dénombrement après avoir effectué le tri (de façon formelle, cela revient à définir une partition de l'ensemble). Le résultat d'un dénombrement par tri se traduit par une somme.</li> <li>Evidemment, cette méhode n'est adaptée qu'à des formules portant sur des nombres entiers, si possible positifs. Il est parfois possible de se ramener à cette situation par un prétraitement de la formule à démontrer.</li></ol>",
     "id": 218
+}, {
+    "type": "proposition",
+    "titre": "Formule de Pascal (coefficients binomiaux)",
+    "hypotheses": "",
+    "resultat": "$\\binom{n}{k} = \\binom{n-1}{k-1} + {n-1}{k}$",
+    "id": 219
+}, {
+    "type": "proposition",
+    "titre": "$$\\sum_{k=0}^n \\binom{n}{k}$$",
+    "hypotheses": "",
+    "resultat": "$$\\sum_{k=0}^n \\binom{n}{k} = 2^n$$",
+    "id": 220
+}, {
+    "type": "proposition",
+    "titre": "Formule de Vandermonde (coefficients binomiaux)",
+    "hypotheses": "",
+    "resultat": "$$\\sum_{k=0}^n\\binom{N}{k}\\binom{M}{n-k} = \\binom{N+M}{n}$$",
+    "id": 221
+}, {
+    "type": "proposition",
+    "titre": "Formule de sommation sur une colonne",
+    "hypotheses": "",
+    "resultat": "$$\\sum_{k=0}^p\\binom{n+k}{n} = \\binom{n+p+1}{n+1}$$",
+    "id": 222
+}, {
+    "type": "proposition",
+    "titre": "$$\\sum_{k=0}^n = \\binom{k}{N}\\binom{n-k}{M}$$",
+    "hypotheses": "",
+    "resultat": "$$\\sum_{k=0}^n = \\binom{k}{N}\\binom{n-k}{M} = \\binom{n+1}{M+N+1}$$",
+    "id": 223
 }]
 
 /*
