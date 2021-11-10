@@ -166,7 +166,7 @@ const quiz_relations = [{
         "type": "definition",
         "titre": "Projection canonique",
         "hypotheses": "",
-        "resultat": "On appelle projection canonique de $E$ sur $E/\\cal{R}$ l'application $\\pi\\cal{R}$ qui à $x$ associe sa classe $\\overline{x}$. Par définition, $\\pi\\cal{R}$ est surjective, et vérifie : $\\forall (x, y) \\in E^2$, $x\\cal{R}y\\iff\\pi\\cal{R}(x)=\\pi\\cal{R}(y)$.",
+        "resultat": "On appelle projection canonique de $E$ sur $E/\\cal{R}$ l'application $\\pi\\cal{R}$ qui à $x$ associe sa classe $\\ol{x}$. Par définition, $\\pi\\cal{R}$ est surjective, et vérifie : $\\forall (x, y) \\in E^2$, $x\\cal{R}y\\iff\\pi\\cal{R}(x)=\\pi\\cal{R}(y)$.",
         "id": 23
     },
     {
@@ -194,14 +194,14 @@ const quiz_relations = [{
         "type": "proposition",
         "titre": "Passage au quotient des opérations",
         "hypotheses": "Soit $(E, \\times_1, \\ldots, \\times_n)$ un ensemble muni de $n$ lois d'opérations, et $\\cal{R}$ une congruence sur $(E, \\times_1, \\ldots, \\times_n)$.",
-        "resultat": "Alors on peut définir sur $E/\\cal{R}$ des lois $\\times_1, \\ldots, \\times_n$ telles que pour tout $i \\in [\\![1, n]\\!]$ et tout $(x, y) \\in E^2$ <br/> $$\\overline{x} \\times_i \\overline{y\\ } = \\overline{x \\times_i y}$$",
+        "resultat": "Alors on peut définir sur $E/\\cal{R}$ des lois $\\times_1, \\ldots, \\times_n$ telles que pour tout $i \\in [\\![1, n]\\!]$ et tout $(x, y) \\in E^2$ <br/> $$\\ol{x} \\times_i \\ol{y\\ } = \\ol{x \\times_i y}$$",
         "id": 27
     },
     {
         "type": "corollaire",
         "titre": "Addition et multiplication de $\\bb{Z}/n\\bb{Z}$",
         "hypotheses": "",
-        "resultat": "On peut munir $\\bb{Z}/n\\bb{Z}$ d'une addition $+$ et d'une multiplication $\\times$ telles que :<br/>$\\forall (x, y) \\in \\bb{Z}^2$, $(\\overline{x} + \\overline{y\\ }= \\overline{x + y})\\ $   et   $\\ (\\overline{x} \\times \\overline{y\\ }= \\overline{x \\times y})$.",
+        "resultat": "On peut munir $\\bb{Z}/n\\bb{Z}$ d'une addition $+$ et d'une multiplication $\\times$ telles que :<br/>$\\forall (x, y) \\in \\bb{Z}^2$, $(\\ol{x} + \\ol{y\\ }= \\ol{x + y})\\ $   et   $\\ (\\ol{x} \\times \\ol{y\\ }= \\ol{x \\times y})$.",
         "id": 28
     },
     {
@@ -399,7 +399,7 @@ const quiz_reels = [{
         "type": "proposition",
         "titre": "$\\bb{Z}$ peut être vu comme un prolongement de $\\bb{N}$",
         "hypotheses": "",
-        "resultat": "L'application : <br />$i: \\bb{N} \\rightarrow \\bb{Z}$ <br />$\\ n \\rightarrow \\overline{(n, 0)}$ <br /> est une injection compatible avec les lois $+$ et $\\times$.",
+        "resultat": "L'application : <br />$i: \\bb{N} \\rightarrow \\bb{Z}$ <br />$\\ n \\rightarrow \\ol{(n, 0)}$ <br /> est une injection compatible avec les lois $+$ et $\\times$.",
         "id": 56
     }, {
         "type": "proposition",
@@ -411,7 +411,7 @@ const quiz_reels = [{
         "type": "definition",
         "titre": "Notation usuelle pour un rationnel",
         "hypotheses": "",
-        "resultat": "La classe $\\overline{(a,b)}$ du couple $(a, b)$ est notée $\\frac{a}{b}$.",
+        "resultat": "La classe $\\ol{(a,b)}$ du couple $(a, b)$ est notée $\\frac{a}{b}$.",
         "id": 58
     }, {
         "type": "theoreme",
@@ -531,13 +531,13 @@ const quiz_reels = [{
         "type": "corollaire",
         "titre": "Inégalité triangulaire pour les sommes",
         "hypotheses": "Soit $(a_i)_{i \\in I}$ une famille finie de réels.",
-        "resultat": "Alors $|\\sum_{i=1}^{n}x_iy_i| \\leqslant \\sum_{i=1}^{n}|x_iy_i|$",
+        "resultat": "Alors $$|\\sum_{i=1}^{n}x_iy_i| \\leqslant \\sum_{i=1}^{n}|x_iy_i|$$",
         "id": 78
     }, {
         "type": "theoreme",
         "titre": "Inégalité de Cauchy-Schwarz numérique",
         "hypotheses": "Soient $x_1, ..., x_n, y_1, ..., y_n$ des réels.",
-        "resultat": "On a alors : <br /> $|\\sum_{i=1}^{n}x_iy_i|^2 \\leqslant (\\sum_{i=1}^{n}x^2_i)(\\sum_{i=1}^{n}y^2_i)$",
+        "resultat": "On a alors : <br /> $$|\\sum_{i=1}^{n}x_iy_i|^2 \\leqslant (\\sum_{i=1}^{n}x^2_i)(\\sum_{i=1}^{n}y^2_i)$$",
         "id": 79
     }, {
         "type": "theoreme",
@@ -641,7 +641,7 @@ const quiz_reels = [{
         "type": "theoreme",
         "titre": "Existence du développement décimal de $x$",
         "hypotheses": "Soit $x \\in \\bb{R}$",
-        "resultat": "Il existe un entier relatif $y_0$ et pour tout $n \\in \\bb{N}^*$, des entiers $a_n \\in [\\![0, 9]\\!]$ tels que <br /> $x=y_0 + \\sum_{n+1}^{+\\infty} a_n10^{-n} = y_0 + \\lim_{N \\rightarrow +\\infty} \\sum_{n=1}^{N} a_n10^{-n}$.",
+        "resultat": "Il existe un entier relatif $y_0$ et pour tout $n \\in \\bb{N}^*$, des entiers $a_n \\in [\\![0, 9]\\!]$ tels que <br /> $$x=y_0 + \\sum_{n+1}^{+\\infty} a_n10^{-n} = y_0 + \\lim_{N \\rightarrow +\\infty} \\sum_{n=1}^{N} a_n10^{-n}$$.",
         "id": 96
     }, {
         "type": "theoreme",
@@ -683,13 +683,13 @@ const quiz_reels = [{
         "type": "definition",
         "titre": "Boule dans $\\bb{R}^n$",
         "hypotheses": "Soit $x \\in \\bb{R}^n$ et $r \\in \\bb{R}_+$.",
-        "resultat": "<ol> <li>La boule ouverte de centre $x$ et de rayon $r$ est : $B(x, r) = \\{y \\in \\bb{R}^n | d(y,x) \\lt r\\}$</li> <li>La boule fermée de centre $x$ et de rayon $r$ est : $\\overline{B}(x, r) = \\{ y \\in \\bb{R}^n | d(y,x) \\leqslant r \\}$</li> </ol>",
+        "resultat": "<ol> <li>La boule ouverte de centre $x$ et de rayon $r$ est : $B(x, r) = \\{y \\in \\bb{R}^n | d(y,x) \\lt r\\}$</li> <li>La boule fermée de centre $x$ et de rayon $r$ est : $\\ol{B}(x, r) = \\{ y \\in \\bb{R}^n | d(y,x) \\leqslant r \\}$</li> </ol>",
         "id": 103
     }, {
         "type": "remarque",
         "titre": "Lien entre majoration de valeur absolue et appartenance à une boule",
         "hypotheses": "",
-        "resultat": "Il est important de retenir qu'une majoration de certaines valeurs absolues se traduit par l'appartenance à une boule : <ul> <li>une majoration du type $|x - a| \\leqslant r$ traduit l'appartenance de $x$ à la boule fermée $\\overline{B}(a, r)$ de centre $a$ et de rayon $r$, donc à l'intervalle $[a-r,a+r]$</li> <li>une majoration du type $|x - a| \\lt r$ traduit l'appartenance de $x$ à la boule ouverte $B(a, r)$ de centre $a$ et de rayon $r$, donc à l'intervalle $]a-r,a+r[$</li> </ul>",
+        "resultat": "Il est important de retenir qu'une majoration de certaines valeurs absolues se traduit par l'appartenance à une boule : <ul> <li>une majoration du type $|x - a| \\leqslant r$ traduit l'appartenance de $x$ à la boule fermée $\\ol{B}(a, r)$ de centre $a$ et de rayon $r$, donc à l'intervalle $[a-r,a+r]$</li> <li>une majoration du type $|x - a| \\lt r$ traduit l'appartenance de $x$ à la boule ouverte $B(a, r)$ de centre $a$ et de rayon $r$, donc à l'intervalle $]a-r,a+r[$</li> </ul>",
         "id": 104
     }, {
         "type": "definition",
@@ -719,37 +719,37 @@ const quiz_reels = [{
         "type": "definition",
         "titre": "Droite achevée réelle",
         "hypotheses": "",
-        "resultat": "La droite achevée réelle, notée $\\overline{\\bb{R}}$, est l'ensemble $\\bb{R} \\cup \\{-\\infty, + \\infty\\}$.",
+        "resultat": "La droite achevée réelle, notée $\\ol{\\bb{R}}$, est l'ensemble $\\bb{R} \\cup \\{-\\infty, + \\infty\\}$.",
         "id": 109
     }, {
         "type": "definition",
-        "titre": "Relation d'ordre sur $\\overline{\\bb{R}}$",
+        "titre": "Relation d'ordre sur $\\ol{\\bb{R}}$",
         "hypotheses": "",
-        "resultat": "On peut prolonger l'ordre de $\\bb{R}$ en un ordre de $\\overline{\\bb{R}}$ en posant : <br /> $\\forall x \\in \\overline{\\bb{R}}, -\\infty \\leqslant x \\leqslant +\\infty$.",
+        "resultat": "On peut prolonger l'ordre de $\\bb{R}$ en un ordre de $\\ol{\\bb{R}}$ en posant : <br /> $\\forall x \\in \\ol{\\bb{R}}, -\\infty \\leqslant x \\leqslant +\\infty$.",
         "id": 110
     }, {
         "type": "definition",
-        "titre": "Règles calculatoires dans $\\overline{\\bb{R}}$",
+        "titre": "Règles calculatoires dans $\\ol{\\bb{R}}$",
         "hypotheses": "",
-        "resultat": "On peut prolonger partiellement les opérations de $\\bb{R}$ sur $\\overline{\\bb{R}}$, en posant : <ul> <li>$-(+\\infty) = - \\infty$</li> <li>$\\forall x \\in \\overline{\\bb{R}}\\text{\\ }\\{-\\infty\\}, x + (+\\infty) = +\\infty$</li> <li>$\\forall x \\in \\overline{\\bb{R}}\\text{\\ }\\{+\\infty\\}, x + (-\\infty) = -\\infty$</li> <li>$\\frac{1}{+\\infty} = \\frac{1}{-\\infty} = 0$</li> <li>$\\forall x \\in \\overline{\\bb{R}}_+^*, x \\times (+\\infty) = +\\infty, x \\times (-\\infty) = -\\infty$</li> <li>$\\forall x \\in \\overline{\\bb{R}}_-^*, x \\times (+\\infty) = -\\infty, x \\times (-\\infty) = +\\infty$</li> </ul>",
+        "resultat": "On peut prolonger partiellement les opérations de $\\bb{R}$ sur $\\ol{\\bb{R}}$, en posant : <ul> <li>$-(+\\infty) = - \\infty$</li> <li>$\\forall x \\in \\ol{\\bb{R}}\\text{\\ }\\{-\\infty\\}, x + (+\\infty) = +\\infty$</li> <li>$\\forall x \\in \\ol{\\bb{R}}\\text{\\ }\\{+\\infty\\}, x + (-\\infty) = -\\infty$</li> <li>$\\frac{1}{+\\infty} = \\frac{1}{-\\infty} = 0$</li> <li>$\\forall x \\in \\ol{\\bb{R}}_+^*, x \\times (+\\infty) = +\\infty, x \\times (-\\infty) = -\\infty$</li> <li>$\\forall x \\in \\ol{\\bb{R}}_-^*, x \\times (+\\infty) = -\\infty, x \\times (-\\infty) = +\\infty$</li> </ul>",
         "id": 111
     }, {
         "type": "definition",
-        "titre": "Formes indéterminées dans $\\overline{\\bb{R}}$",
+        "titre": "Formes indéterminées dans $\\ol{\\bb{R}}$",
         "hypotheses": "",
-        "resultat": "Les opérations suivantes ne sont pas définies, et définissent les formes indéterminées de la somme et du produit dans $\\overline{\\bb{R}}$ : <ul> <li>$-\\infty + (+\\infty)$</li> <li>$0 \\times (+\\infty)$</li> <li>$0 \\times (-\\infty)$</li> </ul>",
+        "resultat": "Les opérations suivantes ne sont pas définies, et définissent les formes indéterminées de la somme et du produit dans $\\ol{\\bb{R}}$ : <ul> <li>$-\\infty + (+\\infty)$</li> <li>$0 \\times (+\\infty)$</li> <li>$0 \\times (-\\infty)$</li> </ul>",
         "id": 112
     }, {
         "type": "proposition",
-        "titre": "Bornes supérieures dans $\\overline{\\bb{R}}$",
+        "titre": "Bornes supérieures dans $\\ol{\\bb{R}}$",
         "hypotheses": "",
-        "resultat": "Tous sous-ensemble $E$ de $\\overline{\\bb{R}}$ admet une borne supérieure dans $\\overline{\\bb{R}}$",
+        "resultat": "Tous sous-ensemble $E$ de $\\ol{\\bb{R}}$ admet une borne supérieure dans $\\ol{\\bb{R}}$",
         "id": 113
     }, {
         "type": "proposition",
-        "titre": "Bornes inférieures dans $\\overline{\\bb{R}}$",
+        "titre": "Bornes inférieures dans $\\ol{\\bb{R}}$",
         "hypotheses": "",
-        "resultat": "Tous sous-ensemble $E$ de $\\overline{\\bb{R}}$ admet une borne inférieure dans $\\overline{\\bb{R}}$",
+        "resultat": "Tous sous-ensemble $E$ de $\\ol{\\bb{R}}$ admet une borne inférieure dans $\\ol{\\bb{R}}$",
         "id": 114
     }
 ];
@@ -806,13 +806,13 @@ const quiz_nb_complexes = [{
     "type": "definition",
     "titre": "Conjugué d'un nombre complexe",
     "hypotheses": "Soit $z = a+ib$ (avec $(a,b) \\in \\bb{R}^2$) un nombre complexe.",
-    "resultat": "Le conjugué de $z$ est le nombre complexe <br/> $\\overline{z\\ } a - ib$",
+    "resultat": "Le conjugué de $z$ est le nombre complexe <br/> $\\ol{z\\ } a - ib$",
     "id": 123
 }, {
     "type": "propriete",
     "titre": "Propriétés de la conjugaison dans $\\bb{C}$",
     "hypotheses": "Soit $z$ et $z'$ deux nombres complexes.",
-    "resultat": "<ol><li>$\\overline{\\overline{z\\ }} = z$ (autrement dit, la conjugaison est une involution)</li> <li>$z = \\overline{z\\ } \\iff z \\in \\bb{R}$</li> <li>$z = -\\overline{z\\ } \\iff z$ imaginaire pur</li> <li>$\\Re(z) = \\frac{z + \\overline{z\\ }}{2}$ et $\\Im(z) = \\frac{z - \\overline{z\\ }}{2}$</li> <li>$\\overline{z + z'} = \\overline{z\\ } + \\overline{z'}$, $\\overline{zz'} = \\overline{z\\ }\\times\\overline{z'}$, $\\overline{z^{-1}} = \\overline{z\\ }^{-1}$, $\\overline{(\\frac{z}{z'})} = \\frac{\\overline{z\\ }}{\\overline{z'}}$</li></ol>",
+    "resultat": "<ol><li>$\\ol{\\ol{z\\ }} = z$ (autrement dit, la conjugaison est une involution)</li> <li>$z = \\ol{z\\ } \\iff z \\in \\bb{R}$</li> <li>$z = -\\ol{z\\ } \\iff z$ imaginaire pur</li> <li>$\\Re(z) = \\frac{z + \\ol{z\\ }}{2}$ et $\\Im(z) = \\frac{z - \\ol{z\\ }}{2}$</li> <li>$\\ol{z + z'} = \\ol{z\\ } + \\ol{z'}$, $\\ol{zz'} = \\ol{z\\ }\\times\\ol{z'}$, $\\ol{z^{-1}} = \\ol{z\\ }^{-1}$, $\\ol{(\\frac{z}{z'})} = \\frac{\\ol{z\\ }}{\\ol{z'}}$</li></ol>",
     "id": 124
 }, {
     "type": "definition",
@@ -824,13 +824,13 @@ const quiz_nb_complexes = [{
     "type": "propriete",
     "titre": "Propriétés du module",
     "hypotheses": "Soit $z$ et $z'$ deux nombres complexes.",
-    "resultat": "<ol><li>$z = 0 \\iff |z| = 0$</li> <li>$|\\Re(z)| \\leqslant |z| \\ $   et   $\\ |\\Im(z)| \\leqslant |z|$</li> <li>$|z|^2 = z\\overline{z\\ }$</li> <li>$|zz'| = |z|\\times|z'| \\ $ et si $z' \\neq 0$, $|\\frac{z}{z'}| = \\frac{|z|}{|z'|}$</li> <li>$|z| = |\\overline{z\\ }|$</li> <li>$|z + z'| = |z| + |z'|$</li></ol>",
+    "resultat": "<ol><li>$z = 0 \\iff |z| = 0$</li> <li>$|\\Re(z)| \\leqslant |z| \\ $   et   $\\ |\\Im(z)| \\leqslant |z|$</li> <li>$|z|^2 = z\\ol{z\\ }$</li> <li>$|zz'| = |z|\\times|z'| \\ $ et si $z' \\neq 0$, $|\\frac{z}{z'}| = \\frac{|z|}{|z'|}$</li> <li>$|z| = |\\ol{z\\ }|$</li> <li>$|z + z'| = |z| + |z'|$</li></ol>",
     "id": 126
 }, {
     "type": "methode",
     "titre": "Expression algébrique du quotient",
     "hypotheses": "Soit $z_1$ et $z_2$ deux nombres complexes donnés sous forme algébrique avec $z_2 \\neq 0$.",
-    "resultat": "Pour trouver la forme algébrique du quotient $\\frac{z_1}{z_2}$, multipliez le dénominateur par $\\overline{z_2}$. De la sorte, le dénominateur est maintenant un réel.",
+    "resultat": "Pour trouver la forme algébrique du quotient $\\frac{z_1}{z_2}$, multipliez le dénominateur par $\\ol{z_2}$. De la sorte, le dénominateur est maintenant un réel.",
     "id": 127
 }];
 
@@ -1194,6 +1194,48 @@ const quiz_trigo = [{
     "hypotheses": "Soient $a$, $b$ et $c$ trois réels. $a \\neq 0$.",
     "resultat": "$a\\cos(x) + b\\sin(x) = \\frac{a}{\\cos(\\varphi)} \\cos(x - \\varphi)$, où $\\tan(\\varphi) = \\frac{b}{a}$",
     "id": 187
+}, {
+    "type": "definition",
+    "titre": "Exponentielle complexe",
+    "hypotheses": "",
+    "resultat": "On définit l'exponentielle complexe sur les nombres imaginaires purs par : <br/> $\\forall \\theta \\in \\bb{R}, e^{i\\theta} = \\cos(\\theta) + i\\sin(\\theta)$",
+    "id": 225
+}, {
+    "type": "proposition",
+    "titre": "Surjectivité de $e^{i\\theta}$",
+    "hypotheses": "",
+    "resultat": "La fonction $\\theta \\rightarrow e^{i\\theta}$ est surjective de $\\bb{R}$ sur $\\bb{U}$. Plus précisément, c'est une bijection de tout intervalle $]\\alpha, \\alpha + 2\\pi]$ sur $\\bb{U}$, ainsi que de tout intervalle $[\\alpha, \\alpha+2\\pi[$ sur $\\bb{U}$",
+    "id": 226
+}, {
+    "type": "corollaire",
+    "titre": "Propriété de la fonction définie par $(r, 0) \\rightarrow re^{i\\theta}$",
+    "hypotheses": "",
+    "resultat": "La fonction de $\\bb{R}_+^* \\times ]-\\pi, \\pi]$, sur $\\bb{C}^*$ définie par $(r, 0) \\rightarrow re^{i\\theta}$",
+    "id": 227
+}, {
+    "type": "definition",
+    "titre": "Forme trigonométrique de l'exponentielle complexe",
+    "hypotheses": "",
+    "resultat": "<ul> <li>Tout nombre complexe non nul $z$ s'écrit sous la forme $z = re^{i\\theta}$ appelé forme trigonométrique</li> <li>$r$ est unique, égal au module de $z$.</li> <li>$\\theta$ est unique modulo $2\\pi$, appelé argument de $z$.</li> <li>L'unique argument $\\theta$ de l'intervalle $]-\\pi, \\pi]$ est appelé argument principal de $z$, et est noté $\\arg(z)$</li></ul>",
+    "id": 228
+}, {
+    "type": "proposition",
+    "titre": "Formules d'Euler",
+    "hypotheses": "Soit $\\theta \\in \\bb{R}$",
+    "resultat": "$\\cos(\\theta) = \\frac{e^{i\\theta}+e^{-i\\theta}}{2}$ et $\\sin(\\theta) = \\frac{e^{i\\theta} - e^{-i\\theta}}{2i}$",
+    "id": 229
+}, {
+    "type": "theoreme",
+    "titre": "Formules trigonométriques d'addition",
+    "hypotheses": "",
+    "resultat": "Pour tout $(\\theta, \\theta') \\in \\bb{R}^2$, $e^{i(\\theta+\\theta')} = e^{i\\theta}e^{i\\theta'}$",
+    "id": 230
+}, {
+    "type": "corollaire",
+    "titre": "Formule de De Moivre",
+    "hypotheses": "",
+    "resultat": "Pour tout $\\theta \\in \\bb{R}$ et $n \\in \\bb{N}$ : <br/> $e^{in\\theta} = (e^{i\\theta})^n$, soit : $\\cos(n\\theta) + i\\sin(n\\theta) = (\\cos(\\theta) + i\\sin(\\theta))^n$",
+    "id": 231
 }];
 
 const quiz_combi = [{
@@ -1368,7 +1410,7 @@ const quiz_combi = [{
     "type": "theoreme",
     "titre": "Formule du binôme",
     "hypotheses": "",
-    "resultat": "Pour $n \\in \\mathbb{N}$, $(a+b)^n = \\sum_{k=0}^n\\binom{n}{k}a^kb^{n-k}$",
+    "resultat": "Pour $n \\in \\mathbb{N}$, $$(a+b)^n = \\sum_{k=0}^n\\binom{n}{k}a^kb^{n-k}$$",
     "id": 216
 }, {
     "type": "methode",
@@ -1386,7 +1428,7 @@ const quiz_combi = [{
     "type": "proposition",
     "titre": "Formule de Pascal (coefficients binomiaux)",
     "hypotheses": "",
-    "resultat": "$\\binom{n}{k} = \\binom{n-1}{k-1} + {n-1}{k}$",
+    "resultat": "$$\\binom{n}{k} = \\binom{n-1}{k-1} + \\binom{n-1}{k}$$",
     "id": 219
 }, {
     "type": "proposition",
@@ -1412,9 +1454,17 @@ const quiz_combi = [{
     "hypotheses": "",
     "resultat": "$$\\sum_{k=0}^n = \\binom{k}{N}\\binom{n-k}{M} = \\binom{n+1}{M+N+1}$$",
     "id": 223
+}, {
+    "type": "methode",
+    "titre": "simplifier un $(-1)^n$ associé à un coefficient binomial",
+    "hypotheses": "",
+    "resultat": "Remarquez qu'un signe $(-1)^n$ associé à un coefficient binomial correspond souvent à une comparaison de parités de cardinaux. On peut passer d'un cardinal pair à un cardinal impair, et vice-versa, en \"allumant ou éteignant\" un élément fixé à l'avance suivant qu'il est déjà ou non dans notre ensemble (plus précisement, il s'agit de l'opération $X \\rightarrow X \\Delta \\{x\\}$.)",
+    "id": 224
 }]
 
 /*
+
+    NEXT ID : 224
 
     ,{
         "type": "",
@@ -1423,8 +1473,6 @@ const quiz_combi = [{
         "resultat": "",
         "id": 0
     }
-
-
 */
 
 
@@ -1436,5 +1484,5 @@ const Quizs = {
     "Nombres réels": quiz_reels,
     "Complexes": quiz_nb_complexes,
     "Trigonométrie - incomplet": quiz_trigo,
-    "Combinatoire - incomplet": quiz_combi
+    "Combinatoire": quiz_combi
 };
