@@ -40,9 +40,9 @@ function compile_txt(txt) {
         "#>=": "$\\geqslant$",
         "#different": "$\\neq$",
         "#.": "\\dots",
-        "$$": " ",
-        "$ $": " ",
-        "$  $": " "
+        // "$$": " ",
+        // "$ $": " ",
+        // "$  $": " "
     };
     for (k of Object.keys(replacements)) {
         while (ntxt.includes(k)) { ntxt = ntxt.replace(k, replacements[k]); }

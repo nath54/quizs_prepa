@@ -9,7 +9,14 @@
                 ['$', '$'],
                 ['\\(', '\\)']
             ],
+            displayMath: [
+                ['$$', '$$'],
+                ['\[', '\]']
+            ],
+            macros: {
+                bb: ["\\mathbb{#1}", 1],
 
+            }
         }
     };
 </script>
@@ -36,6 +43,7 @@
 </style>
 
 <body onload="init();">
+
 
     <div class="modal-body">
 

@@ -181,7 +181,7 @@ const quiz_relations = [{
         "type": "definition",
         "titre": "Congruence",
         "hypotheses": "Soit $E$ un ensemble, muni d'un certain nombre d'opération #x$_1$, #x$_2$, ..., #x$_n$.",
-        "resultat": "On dit qu'une relation d'équivalence @R est une congruence sur $(E, $#x$_1,...,$#x$_n)$ si \n #pour_tout $(x,y,x',y')$ #dans $E^4$, #pour_tout $i$ #dans $[[1, n]]$, $(x$@R$x')$ #et $(y$@R$y')$ #implique $(x$#x$_i y)$@R$(x'$#x$_iy')$.",
+        "resultat": "On dit qu'une relation d'équivalence @R est une congruence sur $(E, $#x$_1,...,$#x$_n)$ si \n #pour_tout $(x,y,x',y')$ #dans $E^4$, #pour_tout $i$ #dans $[\\![1, n]\\!]$, $(x$@R$x')$ #et $(y$@R$y')$ #implique $(x$#x$_i y)$@R$(x'$#x$_iy')$.",
         "id": 25
     },
     {
@@ -195,7 +195,7 @@ const quiz_relations = [{
         "type": "proposition",
         "titre": "Passage au quotient des opérations",
         "hypotheses": "Soit $(E, $#x$_1, ..., $#x$_n)$ un ensemble muni de n lois d'opérations, et @R une congruence sur $(E, $#x$_1, ..., $#x$_n)$.",
-        "resultat": "Alors on peut définir sur $E$/@R des lois #x$_1$, ..., #x$_n$ telles que pour tout $i$ #dans $[[1, n]]$ et tout $(x, y)$ #dans $E^2$",
+        "resultat": "Alors on peut définir sur $E$/@R des lois #x$_1$, ..., #x$_n$ telles que pour tout $i$ #dans $[\\![1, n]\\!]$ et tout $(x, y)$ #dans $E^2$",
         "id": 27
     },
     {
@@ -635,14 +635,14 @@ const quiz_reels = [{
         "type": "lemme",
         "titre": "",
         "hypotheses": "",
-        "resultat": "Pour tout $n \\in $#N$^*$, il existe $a_n \\in [[0, 9]]$ tel que $y_n - y_{n-1} = \\frac{a_n}{10^n}$",
+        "resultat": "Pour tout $n \\in $#N$^*$, il existe $a_n \\in [\\![0, 9]\\!]$ tel que $y_n - y_{n-1} = \\frac{a_n}{10^n}$",
         "id": 95
     }, */
     {
         "type": "theoreme",
         "titre": "Existence du développement décimal de $x$",
         "hypotheses": "Soit $x \\in $#R",
-        "resultat": "Il existe un entier relatif $y_0$ et pour tout $n \\in $#N$^*$, des entiers $a_n \\in [[0, 9]]$ tels que <br /> $x=y_0 + \\sum_{n+1}^{+\\infty} a_n10^{-n} = y_0 + \\lim_{N \\rightarrow +\\infty} \\sum_{n=1}^{N} a_n10^{-n}$.",
+        "resultat": "Il existe un entier relatif $y_0$ et pour tout $n \\in $#N$^*$, des entiers $a_n \\in [\\![0, 9]\\!]$ tels que <br /> $x=y_0 + \\sum_{n+1}^{+\\infty} a_n10^{-n} = y_0 + \\lim_{N \\rightarrow +\\infty} \\sum_{n=1}^{N} a_n10^{-n}$.",
         "id": 96
     }, {
         "type": "theoreme",
@@ -1207,7 +1207,7 @@ const quiz_combi = [{
     "type": "definition",
     "titre": "Ensemble fini",
     "hypotheses": "Soit $E$ un ensemble.",
-    "resultat": "On dit que $E$ est fini si et seulement s'il existe un entier $n$ et une surjection $f: [[1,n]] \\rightarrow E$, où de façon équivalente s'il existe une injection $g : E \\rightarrow [[1,n]]$.",
+    "resultat": "On dit que $E$ est fini si et seulement s'il existe un entier $n$ et une surjection $f: [\\![1,n]\\!] \\rightarrow E$, où de façon équivalente s'il existe une injection $g : E \\rightarrow [\\![1,n]\\!]$.",
     "id": 189
 }, {
     "type": "proposition",
@@ -1217,27 +1217,27 @@ const quiz_combi = [{
     "id": 190
 }, {
     "type": "lemme",
-    "titre": "Bijections de $$[[1, n]]$ et $[[1, m]]$",
+    "titre": "Bijections de $[\\![1, n]\\!]$ et $[\\![1, m]\\!]$",
     "hypotheses": "",
-    "resultat": "Tout sous ensemble $F$ de $$[[1, n]]$ peut être mis en bijection avec un ensemble $[[1, m]]$",
+    "resultat": "Tout sous ensemble $F$ de $$[\\![1, n]\\!]$ peut être mis en bijection avec un ensemble $[\\![1, m]\\!]$",
     "id": 191
 }, {
     "type": "lemme",
-    "titre": "Egalité provenant de la bijection $[[1, n]] \\rightarrow [[1, m]]$",
+    "titre": "Egalité provenant de la bijection $[\\![1, n]\\!] \\rightarrow [\\![1, m]\\!]$",
     "hypotheses": "Soit $n$ et $m$ deux entiers.",
-    "resultat": "S'il existe une bijection de $[[1, n]]$ sur $[[1, m]]$, alors $n = m$.",
+    "resultat": "S'il existe une bijection de $[\\![1, n]\\!]$ sur $[\\![1, m]\\!]$, alors $n = m$.",
     "id": 192
 }, {
     "type": "proposition",
     "titre": "Cardinal d'un ensemble fini",
     "hypotheses": "Soit $E$ un ensemble fini.",
-    "resultat": "Il existeun unique entier $n$ tel qu'il existe une bijection $f: [[1,n]] \\rightarrow E$. L'entier $n$ est appelé cardinal de $E$, et noté $|E|$, ou Card($E$).",
+    "resultat": "Il existeun unique entier $n$ tel qu'il existe une bijection $f: [\\![1,n]\\!] \\rightarrow E$. L'entier $n$ est appelé cardinal de $E$, et noté $|E|$, ou Card($E$).",
     "id": 193
 }, {
     "type": "proposition",
     "titre": "Cardinal d'une union disjointe",
     "hypotheses": "Soit $A$, $B$, $A_1$, ..., $A_n$ des ensembles finis.",
-    "resultat": "<ol><li>Si $A \\cap B = \\emptyset\\ $, alors $|A \\sqcup B| = |A| + |B|$</li> <li>Plus généralement, si pour tout $(i, j) \\in [[1, n]]^2$ tel que $i \\neq j$, $A_i \\cap A_j = \\emptyset\\ $, alors $|A_1 \\sqcup ... \\sqcup A_n| = |A_1| + ... + |A_n|$</li></ol>",
+    "resultat": "<ol><li>Si $A \\cap B = \\emptyset\\ $, alors $|A \\sqcup B| = |A| + |B|$</li> <li>Plus généralement, si pour tout $(i, j) \\in [\\![1, n]\\!]^2$ tel que $i \\neq j$, $A_i \\cap A_j = \\emptyset\\ $, alors $|A_1 \\sqcup ... \\sqcup A_n| = |A_1| + ... + |A_n|$</li></ol>",
     "id": 194
 }, {
     "type": "proposition",
@@ -1261,7 +1261,7 @@ const quiz_combi = [{
     "type": "theoreme",
     "titre": "Formule du crible de Poincaré",
     "hypotheses": "Soient $A_1, ..., A_n$ des ensembles finis.",
-    "resultat": "On a : $|A_1 \\cup ... \\cup A_n| = \\sum_{k=1}^{n}( (-1)^{k-1} \\sum_{1 \\leqslant i_{1} \\leqslant ... \\leqslant i_{k} \\leqslant n} |A_{i_1} \\cap ... \\cap A_{i_k}|)$ <br/> $ = \\sum_{I \\subset [[1,n]], I \\neq \\emptyset\\ }((-1)^{|I|-1}|\\bigcap_{i \\in I}(A_i)|)$",
+    "resultat": "On a : $$|A_1 \\cup ... \\cup A_n| = \\sum_{k=1}^{n}( (-1)^{k-1} \\sum_{1 \\leqslant i_{1} \\leqslant ... \\leqslant i_{k} \\leqslant n} |A_{i_1} \\cap \\ldots\\! \\cap A_{i_k}|)$$ <br/> $$ = \\sum_{I \\subset [\\![1,n]\\!], I \\neq \\emptyset\\ }((-1)^{|I|-1}|\\bigcap_{i \\in I}(A_i)|)$$",
     "id": 198
 }, {
     "type": "proposition",
@@ -1345,8 +1345,44 @@ const quiz_combi = [{
     "type": "definition",
     "titre": "Coefficient binomial",
     "hypotheses": "",
-    "resultat": "Le coefficient binomial $\\binom{n}{k}$ est le nombre de parties à $k$ éléments de $[[1,n]]$",
+    "resultat": "Le coefficient binomial $\\binom{n}{k}$ est le nombre de parties à $k$ éléments de $[\\![1,n]\\!]$",
     "id": 212
+}, {
+    "type": "proposition",
+    "titre": "Sens général du coefficient binomial",
+    "hypotheses": "",
+    "resultat": "Le coefficient binomial $\\binom{n}{k}$ est plus généralement le nombre de sous-ensemble de cardinal $k$ de n'importe quel ensemble $E$ de cardinal $n$.",
+    "id": 213
+}, {
+    "type": "proposition",
+    "titre": "Expression factorielle du coefficient binomial",
+    "hypotheses": "",
+    "resultat": "Pour $k \\in [\\![0, n]\\!]$, $\\binom{n}{k} = \\frac{n!}{k!(n-k)!}",
+    "id": 214
+}, {
+    "type": "proposition",
+    "titre": "Propriétés du coefficient binomial",
+    "hypotheses": "Soit $(n,k) \\in \\mathbb{Z}^2$.",
+    "resultat": "<ol> <li>$\\binom{n}{k} = \\binom{n}{n-k}$ (symétrie)</li> <li>$k\\binom{n}{k} = n\\binom{n-1}{k-1}$ (formule du comité-président)</li> <li>si $(n,k) \\neq (-1, -1)$, $\\binom{n}{k} + \\binom{n}{k+1} = \\binom{n+1}{k+1}$</li> </ol>",
+    "id": 215
+}, {
+    "type": "theoreme",
+    "titre": "Formule du binôme",
+    "hypotheses": "",
+    "resultat": "Pour $n \\in \\mathbb{N}$, $(a+b)^n = \\sum_{k=0}^n\\binom{n}{k}a^kb^{n-k}$",
+    "id": 216
+}, {
+    "type": "methode",
+    "titre": "Principe fondamental du dénombrement",
+    "hypotheses": "",
+    "resultat": "Pour montrer que deux ensembles ont le même cardinal, il suffit de construire une bijection entre eux. Ainsi, pour déterminer le cardinal d'un ensemble, on le met souvent en bijection avec un ensemble \"de référence\" dont on connaît le cardinal.",
+    "id": 217
+}, {
+    "type": "methode",
+    "titre": "Démonstration combinatoire d'une formule",
+    "hypotheses": "",
+    "resultat": "<ol><li>Trouver un modèle adapté de la formule, autrement dit un ensemble d'objets dont le dénombrement fournira un des membres de l'égalité. Pour cela, il est préférable de s'aider du membre le plus simple de l'égalité</li> <li></li> </ol>",
+    "id": 218
 }]
 
 /*
