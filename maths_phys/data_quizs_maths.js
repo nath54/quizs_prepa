@@ -1197,6 +1197,50 @@ const quiz_trigo = [{
     "id": 187
 }];
 
+const quiz_combi = [{
+    "type": "definition",
+    "titre": "Définition de la cardinalité selon Frege",
+    "hypotheses": "",
+    "resultat": "On dit que deux ensembles $E$ et $F$ ont le même cardinal s'il existe une bijection de $E$ à $F$. On note $\\text{Card}(E) = \\text{Card}(F)$",
+    "id": 188
+}, {
+    "type": "definition",
+    "titre": "Ensemble fini",
+    "hypotheses": "Soit $E$ un ensemble.",
+    "resultat": "On dit que $E$ est fini si et seulement s'il existe un entier $n$ et une surjection $f: [[1,n]] \\rightarrow E$, où de façon équivalente s'il existe une injection $g : E \\rightarrow [[1,n]]$.",
+    "id": 189
+}, {
+    "type": "proposition",
+    "titre": "Sous-ensemble d'un ensemble fini",
+    "hypotheses": "Soit $F$ un sous ensemble de $E$.",
+    "resultat": "Si $E$ est fini, alors $F$ aussi.",
+    "id": 190
+}, {
+    "type": "lemme",
+    "titre": "Bijections de $$[[1, n]]$ et $[[1, m]]$",
+    "hypotheses": "",
+    "resultat": "Tout sous ensemble $F$ de $$[[1, n]]$ peut être mis en bijection avec un ensemble $[[1, m]]$",
+    "id": 191
+}, {
+    "type": "lemme",
+    "titre": "Egalité provenant de la bijection $[[1, n]] \\rightarrow [[1, m]]$",
+    "hypotheses": "Soit $n$ et $m$ deux entiers.",
+    "resultat": "S'il existe une bijection de $[[1, n]]$ sur $[[1, m]]$, alors $n = m$.",
+    "id": 192
+}, {
+    "type": "proposition",
+    "titre": "Cardinal d'un ensemble fini",
+    "hypotheses": "Soit $E$ un ensemble fini.",
+    "resultat": "Il existeun unique entier $n$ tel qu'il existe une bijection $f: [[1,n]] \\rightarrow E$. L'entier $n$ est appelé cardinal de $E$, et noté $|E|$, ou Card($E$).",
+    "id": 193
+}, {
+    "type": "proposition",
+    "titre": "Cardinal d'une union disjointe",
+    "hypotheses": "Soit $A$, $B$, $A_1$, ..., $A_n$ des ensembles finis.",
+    "resultat": "<ol><li>Si $A \\cap B = \\emptyset\\ $, alors $|A \\sqcup B| = |A| + |B|$</li> <li>Plus généralement, si pour tout $(i, j) \\in [[1, n]]^2$ tel que $i \\neq j$, $A_i \\cap A_j = \\emptyset\\ $, alors $|A_1 \\sqcup ... \\sqcup A_n| = |A_1| + ... + |A_n|$</li></ol>",
+    "id": 194
+}]
+
 /*
 
     ,{
@@ -1219,4 +1263,5 @@ const Quizs = {
     "Nombres réels": quiz_reels,
     "Complexes": quiz_nb_complexes,
     "Trigonométrie - incomplet": quiz_trigo,
+    "Combinatoire - incomplet": quiz_combi
 };
