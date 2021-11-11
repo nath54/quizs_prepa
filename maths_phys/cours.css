@@ -4,100 +4,52 @@
 }
 
 .box {
-    border-radius: 3px;
+    border-radius: 4px;
     padding: 15px;
-    margin: 15px;
+    margin: 25px;
     overflow-x: auto;
 }
 
-.definition,
-.definition * {
-    background-color: rgb(0, 15, 1);
+.box,
+.box * {
+    /* color: white !important */
+    background-color: #0a0a0a;
 }
 
 .definition {
-    border: 1px solid rgb(9, 65, 7);
-}
-
-.proposition,
-.proposition * {
-    background-color: rgb(34, 27, 0);
+    border: 1px solid rgb(34, 211, 18);
 }
 
 .proposition {
-    border: 1px solid rgb(189, 155, 43);
-}
-
-.propriete,
-.propriete * {
-    background-color: rgb(34, 27, 0);
+    border: 1px solid rgb(185, 175, 32);
 }
 
 .propriete {
-    border: 1px solid rgb(189, 155, 43);
-}
-
-.theoreme,
-.theoreme * {
-    background-color: rgb(40, 5, 6);
+    border: 1px solid rgb(199, 94, 8);
 }
 
 .theoreme {
-    border-color: rgb(200, 50, 60);
-    border-width: 10px;
-    border-style: double;
-}
-
-.axiome,
-.axiome * {
-    background-color: rgb(7, 31, 75);
+    border: 10px double red;
 }
 
 .axiome {
-    border-color: rgb(1, 71, 201);
-    border-width: 10px;
-    border-style: double;
-}
-
-.methode,
-.methode * {
-    background-color: rgb(5, 6, 40);
+    border: 10px double rgb(1, 71, 201)
 }
 
 .methode {
-    border: 2px dashed rgb(50, 60, 200);
-}
-
-.lemme,
-.lemme * {
-    background-color: rgb(40, 5, 30);
+    border: 2px dashed rgb(14, 27, 209);
 }
 
 .lemme {
-    border: 2px dashed rgb(107, 8, 82);
-}
-
-.corollaire,
-.corollaire * {
-    background-color: rgb(40, 5, 6);
+    border: 2px dashed rgb(155, 3, 117);
 }
 
 .corollaire {
-    border: 2px dashed rgb(200, 50, 60);
-}
-
-.remarque,
-.remarque * {
-    background-color: rgb(2, 32, 41);
+    border: 2px dashed rgb(223, 48, 59);
 }
 
 .remarque {
-    border: 2px solid rgb(3, 151, 209);
-}
-
-.texte,
-.texte * {
-    background-color: rgb(18, 26, 29);
+    border: 2px solid rgb(18, 153, 206);
 }
 
 .texte {

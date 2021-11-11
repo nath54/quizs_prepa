@@ -363,6 +363,139 @@ const quiz_superposition_signaux_interference_ondes = [{
     "resultat": "On considère une onde plane (fronts d'onde plans) sinusoïdale de longueur d'onde $\\lambda$ qui arrive sur une fenêtre étroite de taille caractéristique $a$. Loin après l'obstace, <br/> $\\rightarrow$ si $a \\gg \\lambda$, la direction de l'onde n'est quasiment pas affectée par la présence de l'obstacle, l'onde est seulement diaphragnmée<br/>$\\rightarrow$ si $a \\gt \\lambda$, l'onde se propage <u>dans toutes les directions</u> mais elle possède des directions privilégies comprises dans un cône de demi-angle au sommet $\\theta_{max}$. $\\theta_{max}$ augmente quand $a$ diminue.",
     "id": 69
 }];
+
+const quiz_cinematique_point = [{
+    "type": "texte",
+    "titre": "naissance de la mécanique",
+    "resultat": "Fondée sous forme moderne au $XVI^{\\text{ème}}$ et $XVII^{\\text{ème}}$ siècles par l'italien Galilée et l'anglais Newton,  la mécanique est la branche de la physique qui étudie et quantifie le mouvement, dans l'espace et au cours du temps, des objets matériels et propose des descriptions des causes de ces mouvements.",
+    "id": 72
+}, {
+    "type": "texte",
+    "titre": "Grandes idées de la mécanique",
+    "resultat": "Les grandes idées de la mécanique classique se séparent souvent en trois thèmes : <ul><li><b>La cinématique : </b>description du mouvement indépendamment des causes : <i>le point tout au début</i></li> <li><b>La dynamique : </b>on relie les causes physiques aux effets pour comprendre le \"pourquoi\" d'un mouvement; on introduit alors le concept de <i>\"force\"</i></li> <li><b>Les énergies</b></li></ul>",
+    "id": 73
+}, {
+    "type": "definition",
+    "titre": "Cinématique",
+    "resultat": "La cinématique est le domaine de la mécanique consacré à la description des mouvements du corps, sans faire référence aux causes qui les produisent.<br/>$\\rightarrow$La description du mouvement des points matériels et celle des solides dans différents systèmes de coordonnées, sont indispensables aux fondations de la mécanique.<br/>$\\rightarrow$En pratique, on peut considérer le mouvement d'un point, connu lorsqu'on est en mesure de le situer à chaque instant: le repérage d'un point dans l'espace et dans le temps fait appel à deux notions fondamentales et indépendantes : le référentiel et le système de coordonnées.<br/>$\\rightarrow$Le choix d'un référentiel conditionne la description de la nature du mouvement !",
+    "id": 74
+}, {
+    "type": "texte",
+    "titre": "Relativité du mouvement",
+    "resultat": "Le mouvement est toujours relatif à celui qui l'observe, c'est à dire ce que l'on appelle un référentiel d'étude",
+    "id": 75
+}, {
+    "type": "texte",
+    "titre": "Conditions pour décrire le mouvement d'un point",
+    "resultat": "Pour décrire le mouvement d'un point (ou même de n'importe quel système comme un solide), il est absolument nécessaire de choisir un \"observateur\" et un \"observé\".",
+    "id": 76
+}, {
+    "type": "definition",
+    "titre": "L'observé",
+    "resultat": "L'observé est le système étudié",
+    "id": 77
+}, {
+    "type": "definition",
+    "titre": "L'observateur",
+    "resultat": "L'oservateur est celui qui perçoit le mouvement.",
+    "id": 78
+}, {
+    "type": "texte",
+    "titre": "Définir le référentiel d'étude",
+    "resultat": "Définir l'observateur pour décrire un mouvement va se transformer en \"définir le référentiel d'étude\".",
+    "id": 79
+}, {
+    "type": "definition",
+    "titre": "notion de \"Solide\"",
+    "resultat": "Un solide est un système matériel (appelé S) dont les distances entre deux points quelconques de (S) restent invariable au cours du temps.<br/>Quelque soit N, P du solide (S), la distance $NP = ||\\vec{NP}||$ = constante.",
+    "id": 80
+}, {
+    "type": "definition",
+    "titre": "Repère spatial lié à l'observateur",
+    "resultat": "L'ensemble des systèmes d'axes de coordonnées liés à ce solide (S) constitue un repère spatial lié à l'observateur ou aussi au solide associé (S).",
+    "id": 81
+}, {
+    "type": "definition",
+    "titre": "Référentiel",
+    "resultat": "Un référentiel est donc l'ensemble constitué d'un repère spatial et d'une chronologie (=échelle de temps): $\\cal{R}(O, \\vec{u_x}, \\vec{u_y}, \\vec{u_z})$.<br/><br/>$\\rightarrow$ L'unité de mesure de temps dans le SI est la seconde<br/>$\\rightarrow$ Aucun problème de cinématique ou de mécanique ne peut être traité sans préciser au préalable le référentiel choisi.",
+    "id": 82
+}, {
+    "type": "texte",
+    "titre": "Référentiels et points",
+    "resultat": "Un référentiel n'est jamais lié à un point puisqu'un point n'est pas un solide de référence !",
+    "id": 83
+}, {
+    "type": "definition",
+    "titre": "Point matériel",
+    "resultat": "Un point est un objet de petite taille que l'on peut décrire par trois informations indépendantes: les coordonnées du point $M$.",
+    "id": 84
+}, {
+    "type": "propriete",
+    "titre": "Vecteur fonction vectorielle du temps",
+    "resultat": "Si le vecteur $\\vec{OM}$ est une fonction vectorielle du temps, alors les composantes sont des fonctions scalaires de $t$.<br/>La norme du vecteur position est une longueur $OM$.",
+    "id": 85
+}, {
+    "type": "texte",
+    "titre": "Rappels sur les vecteurs",
+    "resultat": "Un vecteur quelconque $\\vec{A}$ est une quantité physique qui est spécifié par : <ul><li>Sa direction</li><li>Son sens</li><li>Sa norme $||\\vec{A}||$</li><li>Eventuellement son point d'application</li></ul><br/><br/>Un scalaire au contraire est une quantité physique qui n'est spécifiée que par sa grandeur.",
+    "id": 86
+}, {
+    "type": "definition",
+    "titre": "Base",
+    "resultat": "Une base permet d'exprimer les composantes d'un vecteur (par exemple $A_x$,$A_y$,$A_z$) mais la définition d'un vecteur $\\vec{A}$ ne déped pas de la base choisie : cette base s'appelle \"base de projection\".",
+    "id": 87
+}, {
+    "type": "definition",
+    "titre": "projection de $\\vec{A}$ sur un vecteur unitaire $\\vec{u_x}$",
+    "resultat": "On appelle \"projection de $\\vec{A}$\" sur un vecteur unitaire $\\vec{u_x}$ le produit scalaire suivant : $A_x = \\vec{A}\\times\\vec{u_x} = ||\\vec{A}||\\cos(\\theta)$",
+    "id": 88
+}, {
+    "type": "texte",
+    "titre": "Repérage en coordonnées cartésiennes",
+    "resultat": "Les coordonnées du point mobile $M$ sont $\\{x, y, z\\}$.<br/>On utilise des bases orthonormées directes: les veteurs de base sont donc : <ul><li>Normés</li><li>Deux à deux orthogonause</li><li>Forment une base directe</li></ul><br/>Un point $M$ est repéré par son vecteur position $\\vec{OM}$; et ce vecteur est caractérisé par ses composantes cartésiennes $\\vec{OM} = x\\vec{u_x}+y\\vec{u_y}+z\\vec{u_z}$.<br/>La distance $OM$ est la norme du vecteur $\\vec{OM}$ soit $OM = \\sqrt{x^2+y^2+z^2}$",
+    "id": 89
+}, {
+    "type": "texte",
+    "titre": "Repérage en coordonnées cylindriques",
+    "resultat": "Les coordonnées du point $M$ sont : $\\{r, \\theta, z\\}$ (deux longeurs et un angle).<br/><ul><li>Les vecteurs de base \"cylindriques\" suivent le mouvement du point $M$ donc ce sont des vecteurs de base \"mobiles\".</li> <li>La distance $OH$ peut s'appeler $r$ ou bien dans certains cas $\\rho$: attention, cela représente la distance du point $M$ à l'axe $O_z$</li> <li>On peut écrire le vecteur position: $\\vec{OM} = \\vec{OH} + \\vec{HM} = r\\vec{u_r} + z \\vec{u_z}$</li></ul>",
+    "id": 90
+}, {
+    "type": "texte",
+    "titre": "Coordonnées polaires",
+    "resultat": "La réduction des coordonnées cylindriques dans un plan s'appelle les coordonnées polaires.<br/><ul><li>Selon les exercices dans le plan $xOy$, la distance $OM$ s'appelle $r$ ou $\\rho$ (pour ne pas confondre avec le $r$ des coordonnées sphériques)</li> <li>Le vecteur unitaire $\\vec{u_r}$ (ou $\\vec{u_{\\rho}}$) s'appelle le  vecteur unitaire radial, et le vecteur $\\vec{u_{\\theta}}$ s'appelle vecteur unitaire ortho-radial</li> <li>Bien sur, il y a un lien entre les coordonnées cartésiennes et les coordonnées polaires : $\\left \\{ \\begin{array}{ll} x = r\\cos(\\theta) \\\\ y=r\\sin(\\theta)\\end{array} \\right.$, $r = \\sqrt{x^2+y^2}$, $\\tan(\\alpha) = \\frac{x}{y}$</li></ul>",
+    "id": 91
+}, {
+    "type": "texte",
+    "titre": "Utilisation du système de repérage cylindrique",
+    "resultat": "Ce système de coordonnées cylindriques s'utilise lorsqu'il existe une direction privilégiée (en général l'axe $z$) : mouvements circulaires ou mouvement hélicoïdal, le mouvement se fait dans le plan orthogonal à cette direction privilégiée.",
+    "id": 92
+}, {
+    "type": "texte",
+    "titre": "Repérage en coordonnées sphériques",
+    "resultat": "Les coordonnées du point $M$ sont : $\\{r, \\theta, \\varphi\\}$.<br/>- Les vecteurs de base suivent aussi le mouvement du point $M$ donc ce sont des vecteurs de base \"mobiles\".<br/>$r$ est ici la distance de $M$ à l'origine $O$. $\\vec{OM} = r\\vec{u_r}$.<br/>- Le vecteur $\\vec{u_r}$ est appelé vecteur unitaire radial; son expression a l'air simple mais seulement en apparence !!, car ce vecteur dépend des deux variables angulaires $\\theta$ et $\\varphi$.<br/>- Il y a un lien entre les coordonnées cartésienne et les coordonnées sphériques : $$\\left \\{ \\begin{array}{ll} x=r\\sin(\\theta)\\cos(\\varphi) \\\\ y = r\\sin(\\theta)\\sin(\\varphi) \\\\ z = r\\cos(\\theta) \\end{array} \\right.$$",
+    "id": 93
+}, {
+    "type": "texte",
+    "titre": "Cercle osculateur",
+    "resultat": "Lorsque la trajectoire que suit le point $M$ est connue, il est possible de repérer le point sur la courbe représentant cette trajectoire. On choisit sur la courbe orientée un point origine $\\Omega$ et on définit \"l'abscisse curviligne $s$\" comme la mesure algébrique, sur la courbe, de la distance $\\Omega M$.<br/>Le cercle de centre $C$ et de rayon $\\rho$ qui tangente localement en $M$ la trajectoire du point mobile est appelée cercle osculateur. Le rayon $\\rho$ de ce cercle correspond alors au rayon de courbure de la trajectoire au point considérer et $C$ est le centre de courbure.",
+    "id": 94
+}, {
+    "type": "texte",
+    "titre": "Base de Frenet",
+    "resultat": "En chaque point $M$ de la courbe on définit la base de Frenet $\\{\\vec{u_T}, \\vec{u_N}\\} avec : <br/> $\\rightarrow \\vec{u_T}$ Vecteur unitaire tangent à la courbe en $M$ et orienté dans le sens positif choisi.<br/> $\\rightarrow \\vec{u_N} Vecteur perpendiculaire à $\\vec{u_T}$ et orienté vers le centre de courbure (de $M$ vers $C$).<br/>Cette base est \"mobile\" dans le repère.",
+    "id": 95
+}, {
+    "type": "texte",
+    "titre": "Base de Frenet dans le cas d'un mouvement circulaire",
+    "resultat": "Dans le cas d'un mouvement circulaire, le vecteur tangent corrspond au vecteur ortho-radial et le vecteur normal est l'opposé du vecteur radial; le centre de courbure du cercle est constant et le rayon de courbure est tout simplement le rayon du cercle $R$.",
+    "id": 96
+}, {
+    "type": "definition",
+    "titre": "Trajectoire d'un point",
+    "resultat": "La trajectoire de $M$ dans un référentiel $\\cal{R}$ est l'ensemble des positions successivement occupées par le point $M$ au cours du temps. Cette trajectoire dépend du choix du référentiel $\\cal{R}$, c'est à dire l'observateur.",
+    "id": 97
+}];
+
 /*
 
     ,{
@@ -381,5 +514,6 @@ const quiz_superposition_signaux_interference_ondes = [{
 
 const Quizs = {
     "Propagation signaux": quiz_propagation_signal,
-    "Superposition de signaux/interférences de deux ondes": quiz_superposition_signaux_interference_ondes
+    "Superposition de signaux/interférences de deux ondes": quiz_superposition_signaux_interference_ondes,
+    "Cinématique du point": quiz_cinematique_point
 };
