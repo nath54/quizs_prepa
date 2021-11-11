@@ -20,6 +20,8 @@ const tps_attente = 100;
 
 const lim_agl = 0.4;
 
+var IS_OVERFLOWING = false;
+
 function init() {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -112,7 +114,7 @@ function next_question() {
             default:
                 break
         }
-
+        document.getElementById("bt_known").style.display = "none";
         document.getElementById("card_titre").innerHTML = txt_comp + compile_txt(window.questions[window.question_actu_id].titre);
         document.getElementById("card_hypotheses").innerHTML = "";
         document.getElementById("card_resultat").innerHTML = "";
@@ -148,6 +150,10 @@ function reveal() {
             document.getElementById("card_resultat").innerHTML = compile_txt(window.questions[window.question_actu_id].resultat);
             MathJax.typesetPromise();
             window.state = 2;
+        }
+        IS_OVERFLOWING = isOverflown(document.getElementById("card"));
+        if (IS_OVERFLOWING) {
+            document.getElementById("bt_known").style.display = "block";
         }
     }
 }
@@ -200,7 +206,7 @@ function card_mouse_down(e, touchscreen = false) {
 
 document.body.addEventListener('mousemove', e => { rotate(e); });
 document.body.addEventListener('drag', e => { rotate(e); });
-document.body.addEventListener('touchmove', e => { rotate(e, true); });
+document.body.addEventListener('touchmove', e => { if (!IS_OVERFLOWING) { rotate(e, true); } });
 
 function rotate(e, touchscreen = false) {
     var x, y, dy;
@@ -246,7 +252,7 @@ function rotate(e, touchscreen = false) {
 
 document.body.addEventListener('mouseup', e => { click_up(e); });
 document.body.addEventListener('mouseleave', e => { click_up(e); });
-document.body.addEventListener('touchend', e => { click_up(e); });
+document.body.addEventListener('touchend', e => { if (!IS_OVERFLOWING) { click_up(e); } });
 
 function click_up(e) {
     if (window.state == 2) {
@@ -269,6 +275,19 @@ function click_up(e) {
         }
         window.agl = 0;
     }
+}
+
+function card_known() {
+    window.questions_justes.push(window.questions[window.question_actu_id]);
+    window.questions.splice(window.question_actu_id, 1);
+    window.score += 1;
+    next_question();
+}
+
+function card_not_known() {
+    window.questions_fausses.push(window.questions[window.question_actu_id]);
+    window.questions.splice(window.question_actu_id, 1);
+    next_question();
 }
 
 function retour_index() {

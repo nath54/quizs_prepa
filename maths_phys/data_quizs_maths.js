@@ -187,7 +187,7 @@ const quiz_relations = [{
         "type": "proposition",
         "titre": "Congruence des entiers",
         "hypotheses": "",
-        "resultat": "La relation de congruence des entiers $\\equiv[n]$ est une congruence sur $(\\bb{Z}, +, \\times)$",
+        "resultat": "La relation de congruence des entiers $\\equiv[n]$ est une congruence sur $(\\Z, +, \\times)$",
         "id": 26
     },
     {
@@ -199,9 +199,9 @@ const quiz_relations = [{
     },
     {
         "type": "corollaire",
-        "titre": "Addition et multiplication de $\\bb{Z}/n\\bb{Z}$",
+        "titre": "Addition et multiplication de $\\Z/n\\Z$",
         "hypotheses": "",
-        "resultat": "On peut munir $\\bb{Z}/n\\bb{Z}$ d'une addition $+$ et d'une multiplication $\\times$ telles que :<br/>$\\forall (x, y) \\in \\bb{Z}^2$, $(\\ol{x} + \\ol{y\\ }= \\ol{x + y})\\ $   et   $\\ (\\ol{x} \\times \\ol{y\\ }= \\ol{x \\times y})$.",
+        "resultat": "On peut munir $\\Z/n\\Z$ d'une addition $+$ et d'une multiplication $\\times$ telles que :<br/>$\\forall (x, y) \\in \\Z^2$, $(\\ol{x} + \\ol{y\\ }= \\ol{x + y})\\ $   et   $\\ (\\ol{x} \\times \\ol{y\\ }= \\ol{x \\times y})$.",
         "id": 28
     },
     {
@@ -362,32 +362,32 @@ const quiz_relations = [{
 const quiz_reels = [{
         "type": "proposition",
         "titre": "Axiome de récurrence",
-        "hypotheses": "Soit $P$ définie sur $n \\in \\bb{N}$",
-        "resultat": "$(P(0) \\land (\\forall n \\in \\bb{N}, P(n) \\implies P(n+1)))) \\implies (\\forall n \\in \\bb{N}, P(n))$",
+        "hypotheses": "Soit $P$ définie sur $n \\in \\N$",
+        "resultat": "$(P(0) \\land (\\forall n \\in \\N, P(n) \\implies P(n+1)))) \\implies (\\forall n \\in \\N, P(n))$",
         "id": 50
     }, {
         "type": "theoreme",
-        "titre": "propriété fondamentale de $\\bb{N}$",
+        "titre": "propriété fondamentale de $\\N$",
         "hypotheses": "",
-        "resultat": "Tout sous-ensemble non vide et majoré de $\\bb{N}$ admet un plus grand élément",
+        "resultat": "Tout sous-ensemble non vide et majoré de $\\N$ admet un plus grand élément",
         "id": 51
     }, {
         "type": "corollaire",
-        "titre": "Corollaire  de la propriété fondamentale de $\\bb{N}$",
+        "titre": "Corollaire  de la propriété fondamentale de $\\N$",
         "hypotheses": "",
-        "resultat": "Tout sous-ensemble non vide de $\\bb{N}$ admet un plus petit élément.",
+        "resultat": "Tout sous-ensemble non vide de $\\N$ admet un plus petit élément.",
         "id": 52
     }, {
         "type": "theoreme",
-        "titre": "équivalence de la propriété fondamentale de $\\bb{N}$",
+        "titre": "équivalence de la propriété fondamentale de $\\N$",
         "hypotheses": "",
-        "resultat": "La propriété fondamentale de $\\bb{N}$ est équivalente à l'axiome de récurrence.",
+        "resultat": "La propriété fondamentale de $\\N$ est équivalente à l'axiome de récurrence.",
         "id": 53
     }, {
         "type": "proposition",
         "titre": "Propriétés de l'addition et du produit d'entiers",
-        "hypotheses": "Soient $a$, $b$ et $c$ des éléments de $\\bb{N}$",
-        "resultat": "<ul> <li>$a+0=0+a=a$ ($0$ est élément neutre pour $+$)</li> <li>$a \\times 0 = 0 \\times a = 0$ ($0$ est absorbant pour $\\times$) </li> <li>$a + 1 = 1 + a$</li> <li> $a \\times 1 = 1 \\times a = a$ ($1$ est neutre pour $\\times$) </li> <li>$(a+b)+c = a + (b + c)$ ($\\times$ est associative)</li> <li>$a+b=b+a$ ($+$ est commutative)</li> <li>$a \\times (b + c) = a \\times b + a \\times c$ ($\\times$ est distributive sur $+$)</li> <li>$a \\times b = b \\times a$ ($\\times$ est commutative) </li> <li>$(a \\times b) \\times c = a \\times (b \\times c)$ ($\\times$ est associative)</li> <li>$ab = 0  \\implies a = 0 \\lor b = 0$ (intégrité de $(\\bb{N}, \\times)$)</li> <li>$a + b = 0 \\implies a = 0 \\land b = 0$ </li> <li>$a + b = a + c \\implies b = c$ (régularité pour $+$)</li> <li>Si $a \\neq 0, ab = ac \\implies b = c$ (régularité pour $\\times$)</li> </ul>",
+        "hypotheses": "Soient $a$, $b$ et $c$ des éléments de $\\N$",
+        "resultat": "<ul> <li>$a+0=0+a=a$ ($0$ est élément neutre pour $+$)</li> <li>$a \\times 0 = 0 \\times a = 0$ ($0$ est absorbant pour $\\times$) </li> <li>$a + 1 = 1 + a$</li> <li> $a \\times 1 = 1 \\times a = a$ ($1$ est neutre pour $\\times$) </li> <li>$(a+b)+c = a + (b + c)$ ($\\times$ est associative)</li> <li>$a+b=b+a$ ($+$ est commutative)</li> <li>$a \\times (b + c) = a \\times b + a \\times c$ ($\\times$ est distributive sur $+$)</li> <li>$a \\times b = b \\times a$ ($\\times$ est commutative) </li> <li>$(a \\times b) \\times c = a \\times (b \\times c)$ ($\\times$ est associative)</li> <li>$ab = 0  \\implies a = 0 \\lor b = 0$ (intégrité de $(\\N, \\times)$)</li> <li>$a + b = 0 \\implies a = 0 \\land b = 0$ </li> <li>$a + b = a + c \\implies b = c$ (régularité pour $+$)</li> <li>Si $a \\neq 0, ab = ac \\implies b = c$ (régularité pour $\\times$)</li> </ul>",
         "id": 54
     }, {
         "type": "proposition",
@@ -397,15 +397,15 @@ const quiz_reels = [{
         "id": 55
     }, {
         "type": "proposition",
-        "titre": "$\\bb{Z}$ peut être vu comme un prolongement de $\\bb{N}$",
+        "titre": "$\\Z$ peut être vu comme un prolongement de $\\N$",
         "hypotheses": "",
-        "resultat": "L'application : <br />$i: \\bb{N} \\rightarrow \\bb{Z}$ <br />$\\ n \\rightarrow \\ol{(n, 0)}$ <br /> est une injection compatible avec les lois $+$ et $\\times$.",
+        "resultat": "L'application : <br />$i: \\N \\rightarrow \\Z$ <br />$\\ n \\rightarrow \\ol{(n, 0)}$ <br /> est une injection compatible avec les lois $+$ et $\\times$.",
         "id": 56
     }, {
         "type": "proposition",
         "titre": "Compatibilité de la relation d'ordre avec le produit",
         "hypotheses": "",
-        "resultat": "<ol> <li>Soit $c \\in \\bb{N}^*$. Alors, $\\forall (a,b) \\in \\bb{Z}^2$, <br /> $a \\lt b \\iff ac \\lt bc$ et $a \\leqslant b \\iff ac \\leqslant bc$</li> <br /> <li>Soit $c \\in \\bb{Z}^*$, <br /> $a \\lt b \\iff ac \\gt bc$ et $a \\leqslant b \\iff ac \\geqslant bc$</li> </ol>",
+        "resultat": "<ol> <li>Soit $c \\in \\N^*$. Alors, $\\forall (a,b) \\in \\Z^2$, <br /> $a \\lt b \\iff ac \\lt bc$ et $a \\leqslant b \\iff ac \\leqslant bc$</li> <br /> <li>Soit $c \\in \\Z^*$, <br /> $a \\lt b \\iff ac \\gt bc$ et $a \\leqslant b \\iff ac \\geqslant bc$</li> </ol>",
         "id": 57
     }, {
         "type": "definition",
@@ -417,36 +417,36 @@ const quiz_reels = [{
         "type": "theoreme",
         "titre": "Définition de l'addition et du produit de rationnels",
         "hypotheses": "",
-        "resultat": "Les lois définies sur $\\bb{Z}\\times\\bb{N}^*$ par $(a,b) + (c,d) = (ad+bc, bd)$ et $(a, b) \\times (c,d) = (ac, bd)$ passent au quotient, définissant sur $\\bb{Q}$ les lois pouvant être décrites avec les notations usuelles par : <br /> $\\frac{a}{b} + \\frac{c}{d} = \\frac{ad + bc}{bd}$ et $\\frac{a}{b} \\times \\frac{c}{d} = \\frac{ac}{bd}$",
+        "resultat": "Les lois définies sur $\\Z\\times\\N^*$ par $(a,b) + (c,d) = (ad+bc, bd)$ et $(a, b) \\times (c,d) = (ac, bd)$ passent au quotient, définissant sur $\\Q$ les lois pouvant être décrites avec les notations usuelles par : <br /> $\\frac{a}{b} + \\frac{c}{d} = \\frac{ad + bc}{bd}$ et $\\frac{a}{b} \\times \\frac{c}{d} = \\frac{ac}{bd}$",
         "id": 59
     }, {
         "type": "theoreme",
-        "titre": "Propriétés des lois de $\\bb{Q}$",
+        "titre": "Propriétés des lois de $\\Q$",
         "hypotheses": "",
-        "resultat": "<ul> <li>Les lois $+$ et $\\times$ sont associatives</li> <li>Les lois $+$ et $\\times$ sont commutatives</li> <li>La loi $\\times$ est distributive sur $+$</li> <li>L'élément $0=\\frac{0}{1}$ est neutre pour $+$, et tout élément $\\frac{a}{b}$ admet un opposé $\\frac{-a}{b}$</li> <li>Le rationnel $\\frac{a}{b}$ est égal = $0$ si et seulement si $a=0$</li> <li>L'élément $1=\\frac{1}{1}$ est neutre pour $\\times$, et tout élément $\\frac{a}{b}$ non nul est inversible, d'inverse $\\frac{b}{a}$</li> </ul> Ainsi que $\\bb{Q}$ est un corps.",
+        "resultat": "<ul> <li>Les lois $+$ et $\\times$ sont associatives</li> <li>Les lois $+$ et $\\times$ sont commutatives</li> <li>La loi $\\times$ est distributive sur $+$</li> <li>L'élément $0=\\frac{0}{1}$ est neutre pour $+$, et tout élément $\\frac{a}{b}$ admet un opposé $\\frac{-a}{b}$</li> <li>Le rationnel $\\frac{a}{b}$ est égal = $0$ si et seulement si $a=0$</li> <li>L'élément $1=\\frac{1}{1}$ est neutre pour $\\times$, et tout élément $\\frac{a}{b}$ non nul est inversible, d'inverse $\\frac{b}{a}$</li> </ul> Ainsi que $\\Q$ est un corps.",
         "id": 60
     }, {
         "type": "remarque",
-        "titre": "inclusion de $\\bb{Z}$ dans $\\bb{Q}$",
+        "titre": "inclusion de $\\Z$ dans $\\Q$",
         "hypotheses": "",
-        "resultat": "Les entiers $a \\in \\bb{Z}$ peuvent être identifiés aux rationnels $\\frac{a}{1}$ (dans le sens où $a \\rightarrow \\frac{a}{1}$ définit une injection de $\\bb{Z}$ dans $\\bb{Q}$). Via cette identification, on peut considérer que $\\bb{Z} \\subset \\bb{Q}$.",
+        "resultat": "Les entiers $a \\in \\Z$ peuvent être identifiés aux rationnels $\\frac{a}{1}$ (dans le sens où $a \\rightarrow \\frac{a}{1}$ définit une injection de $\\Z$ dans $\\Q$). Via cette identification, on peut considérer que $\\Z \\subset \\Q$.",
         "id": 61
     }, {
         "type": "definition",
-        "titre": "Inégalité dans $\\bb{Q}$",
-        "hypotheses": "Soit $q = \\frac{a}{b}$ et $r=\\frac{c}{d}$ deux rationnels (avec $b$ et $d$ dans $\\bb{N}^*$).",
+        "titre": "Inégalité dans $\\Q$",
+        "hypotheses": "Soit $q = \\frac{a}{b}$ et $r=\\frac{c}{d}$ deux rationnels (avec $b$ et $d$ dans $\\N^*$).",
         "resultat": "Alors le signe de l'entier relatif $ad-bc$ est indépendant de la représentation choisie (avec un dénominateur positif de $q$ et $q'$. On définit alors la relation d'ordre sur $q$ par : <br /> $q \\leqslant r \\iff ad - bc \\leqslant 0$",
         "id": 62
     }, {
         "type": "theoreme",
-        "titre": "Relation $\\leqslant$ sur $\\bb{Q}$",
+        "titre": "Relation $\\leqslant$ sur $\\Q$",
         "hypotheses": "",
-        "resultat": "La relation $\\leqslant$ ainsi difinie sur $\\bb{Q}$ est une relation d'ordre total.",
+        "resultat": "La relation $\\leqslant$ ainsi difinie sur $\\Q$ est une relation d'ordre total.",
         "id": 63
     }, {
         "type": "definition",
         "titre": "Nombres incommensurables",
-        "hypotheses": "Soit $(x, y) \\in (\\bb{R}^*)^2$",
+        "hypotheses": "Soit $(x, y) \\in (\\R^*)^2$",
         "resultat": "On dit que $x$ et $y$ sont incommensurables si $\\frac{x}{y}$ est irrationnel.",
         "id": 64
     }, {
@@ -457,21 +457,21 @@ const quiz_reels = [{
         "id": 65
     }, {
         "type": "axiome",
-        "titre": "Propriété fondamentale de $\\bb{R}$",
-        "hypotheses": "Soit $E$ un sous-ensemble non vide et majoré de $\\bb{R}$.",
-        "resultat": "Alors $E$ admet une borne supérieure dans $\\bb{R}$.",
+        "titre": "Propriété fondamentale de $\\R$",
+        "hypotheses": "Soit $E$ un sous-ensemble non vide et majoré de $\\R$.",
+        "resultat": "Alors $E$ admet une borne supérieure dans $\\R$.",
         "id": 66
     }, {
         "type": "theoreme",
-        "titre": "Propriété fondamentale de $\\bb{R}$, exprimée avec la borne inférieure",
-        "hypotheses": "Soit $E$ un sous-ensemble non vide et minoré de $\\bb{R}$.",
-        "resultat": "Alors $E$ admet une borne inférieure dans $\\bb{R}$.",
+        "titre": "Propriété fondamentale de $\\R$, exprimée avec la borne inférieure",
+        "hypotheses": "Soit $E$ un sous-ensemble non vide et minoré de $\\R$.",
+        "resultat": "Alors $E$ admet une borne inférieure dans $\\R$.",
         "id": 67
     }, {
         "type": "propriete",
-        "titre": "Relation d'ordre sur $\\bb{R}$",
+        "titre": "Relation d'ordre sur $\\R$",
         "hypotheses": "",
-        "resultat": "La relation d'ordre sur $\\bb{R}$ vérifie les 4 propriétés élémentaires suivants : <ol> <li>C'est une relation d'ordre totale</li> <li>$\\forall (x,y) \\in\\bb{R}^2$, $x \\leqslant y \\iff y - x \\in\\bb{R}_+$</li> <li> $\\forall (x,y) \\in (\\bb{R}_+)^2$, $x+y \\geqslant 0$ avec égalité si et seulement si $x = y = 0$ </li> <li>$\\forall (x,y) \\in (\\bb{R}_+)^2$, $xy \\geqslant 0$</li> </ol>",
+        "resultat": "La relation d'ordre sur $\\R$ vérifie les 4 propriétés élémentaires suivants : <ol> <li>C'est une relation d'ordre totale</li> <li>$\\forall (x,y) \\in\\R^2$, $x \\leqslant y \\iff y - x \\in\\R_+$</li> <li> $\\forall (x,y) \\in (\\R_+)^2$, $x+y \\geqslant 0$ avec égalité si et seulement si $x = y = 0$ </li> <li>$\\forall (x,y) \\in (\\R_+)^2$, $xy \\geqslant 0$</li> </ol>",
         "id": 68
     }, {
         "type": "corollaire",
@@ -494,7 +494,7 @@ const quiz_reels = [{
     }, {
         "type": "definition",
         "titre": "Valeur absolue",
-        "hypotheses": "Soit $x \\in \\bb{R}$",
+        "hypotheses": "Soit $x \\in \\R$",
         "resultat": "La valeur absolue de $x$, notée $|x|$, est la réel obtenu de $x$ en changeant si besoin son signe de sorte à obtenir une quantité positive : <br /> $\\left\\{ \\begin{array}{ll} x \\text{ si } x \\geqslant 0 \\\\ -x \\text{ si } x \\lt 0 \\end{array} \\right.$.",
         "id": 72
     }, {
@@ -506,20 +506,20 @@ const quiz_reels = [{
     }, {
         "type": "definition",
         "titre": "Partie positive d'un réel",
-        "hypotheses": "Soit $x \\in \\bb{R}$",
+        "hypotheses": "Soit $x \\in \\R$",
         "resultat": "On appelle <b>partie positive</b> de $x$, et on note $x^+$ le réel défini par : <br /> $x^+ = \\max(0, x) = \\left\\{ \\begin{array}{ll} x \\text{ si } x \\geqslant 0 \\\\ 0 \\text{ si } x \\lt 0 \\end{array} \\right.$",
         "id": 74
     }, {
         "type": "definition",
         "titre": "Partie négative d'un réel",
-        "hypotheses": "Soit $x \\in \\bb{R}$",
+        "hypotheses": "Soit $x \\in \\R$",
         "resultat": "On appelle <b>partie négative</b> de $x$, et on note $x^-$ le réel défini par : <br /> $x^- = -\\min(0, x) = \\max(0, -x) = \\left\\{ \\begin{array}{ll} x \\text{ si } - x \\lt 0 \\\\ 0 \\text{ si } x \\geqslant 0 \\end{array} \\right.$",
         "id": 75
     }, {
         "type": "propriete",
         "titre": "Propriétés des parties positives et négatives",
         "hypotheses": "Soit $x$ un réel",
-        "resultat": "Alors : <ol> <li>$x^+ \\geqslant 0$ et $x^- \\geqslant 0$ </li>  <li>$x^+ = 0$ ou $x^- = 0$</li> <li>$x = x^+ - x^-$</li> <li>$\\forall(y,z) \\in \\bb{R}_+$, si $x=y-z$ alors $y \\geqslant x^+$ et $z \\geqslant x^-$ </li>  <li>$|x| = x^+ + x^- = max(0, x) - min(0, -x)$</li> <li>$(-x)^+ = x^-$ et $(-x)^- = x^+$</li> </ol>",
+        "resultat": "Alors : <ol> <li>$x^+ \\geqslant 0$ et $x^- \\geqslant 0$ </li>  <li>$x^+ = 0$ ou $x^- = 0$</li> <li>$x = x^+ - x^-$</li> <li>$\\forall(y,z) \\in \\R_+$, si $x=y-z$ alors $y \\geqslant x^+$ et $z \\geqslant x^-$ </li>  <li>$|x| = x^+ + x^- = max(0, x) - min(0, -x)$</li> <li>$(-x)^+ = x^-$ et $(-x)^- = x^+$</li> </ol>",
         "id": 76
     }, {
         "type": "corollaire",
@@ -543,13 +543,13 @@ const quiz_reels = [{
         "type": "theoreme",
         "titre": "Inégalité arithmético-géométrique",
         "hypotheses": "",
-        "resultat": "Pour tout $X = (x_1, ..., x_n) \\in (\\bb{R}_+^*)^n$, <br /> $\\frac{1}{n}(x_1 + ... + x_n) \\geqslant \\sqrt[\\leftroot{10}\\uproot{10}n]{x_1 \\times ... \\times x_n}$",
+        "resultat": "Pour tout $X = (x_1, ..., x_n) \\in (\\R_+^*)^n$, <br /> $\\frac{1}{n}(x_1 + ... + x_n) \\geqslant \\sqrt[\\leftroot{10}\\uproot{10}n]{x_1 \\times ... \\times x_n}$",
         "id": 80
     }, {
         "type": "proposition",
         "titre": "Propriété d'Archimède",
         "hypotheses": "Soit $x$ et $y$ deux réels strictement positifs.",
-        "resultat": "Il existe un entier $n \\in \\bb{N}$ tel que $x \\lt ny$",
+        "resultat": "Il existe un entier $n \\in \\N$ tel que $x \\lt ny$",
         "id": 81
     }, {
         "type": "corollaire",
@@ -560,26 +560,26 @@ const quiz_reels = [{
     }, {
         "type": "theoreme",
         "titre": "Division euclidienne",
-        "hypotheses": "Soit $x \\in \\bb{R}$ et $y \\in \\bb{R}_+^*$",
+        "hypotheses": "Soit $x \\in \\R$ et $y \\in \\R_+^*$",
         "resultat": "Il existe un unique entier $n$ et un unique réel $r \\in [0, y[$ tels que $x = ny +r$",
         "id": 83
     }, {
         "type": "definition",
-        "titre": "Densité dans $\\bb{R}$",
+        "titre": "Densité dans $\\R$",
         "hypotheses": "",
-        "resultat": "Un sous ensemble $E$ de $\\bb{R}$ est dense dans $\\bb{R}$ si pour tout $(x,y) \\in \\bb{R}^2$ tel que que $x < y$, il existe $z \\in E$ tel que $x \\lt z \\lt y$",
+        "resultat": "Un sous ensemble $E$ de $\\R$ est dense dans $\\R$ si pour tout $(x,y) \\in \\R^2$ tel que que $x < y$, il existe $z \\in E$ tel que $x \\lt z \\lt y$",
         "id": 84
     }, {
         "type": "theoreme",
-        "titre": "Densité des rationnels et des irrationnels dans $\\bb{R}$",
+        "titre": "Densité des rationnels et des irrationnels dans $\\R$",
         "hypotheses": "",
-        "resultat": "Les ensembles $\\bb{Q}$ et $\\bb{R}\\backslash\\bb{Q}$ sont denses dans $\\bb{R}$.",
+        "resultat": "Les ensembles $\\Q$ et $\\R\\backslash\\Q$ sont denses dans $\\R$.",
         "id": 85
     }, {
         "type": "definition",
-        "titre": "Nombres algébriques, transcendants sur $\\bb{Q}$",
-        "hypotheses": "Soit $x \\in \\bb{R}$",
-        "resultat": "<ul> <li>On dit que $x$ est <b>algébrique</b> sur $\\bb{Q}$ s'il existe un polynôme $P$ à coefficients dans $\\bb{Q}$ tel que $P(x) = 0$</li> <li>On dit que $x$ est transcendant sur $\\bb{Q}$ s'il n'est pas algébrique</li> </ul>",
+        "titre": "Nombres algébriques, transcendants sur $\\Q$",
+        "hypotheses": "Soit $x \\in \\R$",
+        "resultat": "<ul> <li>On dit que $x$ est <b>algébrique</b> sur $\\Q$ s'il existe un polynôme $P$ à coefficients dans $\\Q$ tel que $P(x) = 0$</li> <li>On dit que $x$ est transcendant sur $\\Q$ s'il n'est pas algébrique</li> </ul>",
         "id": 86
     }, {
         "type": "definition",
@@ -596,57 +596,57 @@ const quiz_reels = [{
     }, {
         "type": "proposition",
         "titre": "Caractérisation de la partie entière",
-        "hypotheses": "Soit $x \\in \\bb{R}$",
-        "resultat": "<ol> <li>$\\lfloor x\\rfloor = \\max\\{n \\in \\bb{Z} | n \\leqslant x\\}$</li> <li>$\\lfloor x \\rfloor = \\min\\{n \\in \\bb{Z} | n \\gt x \\} - 1$</li> <li>$\\lfloor x \\rfloor$ est l'unique entier tel que $\\lfloor x \\rfloor \\leqslant x \\lt \\lfloor x \\rfloor - 1$</li>  <li>$\\lfloor x \\rfloor$ est l'unique entier tel que $x - 1 \\lt \\lfloor x \\rfloor \\leqslant x$</li> </ol>",
+        "hypotheses": "Soit $x \\in \\R$",
+        "resultat": "<ol> <li>$\\lfloor x\\rfloor = \\max\\{n \\in \\Z | n \\leqslant x\\}$</li> <li>$\\lfloor x \\rfloor = \\min\\{n \\in \\Z | n \\gt x \\} - 1$</li> <li>$\\lfloor x \\rfloor$ est l'unique entier tel que $\\lfloor x \\rfloor \\leqslant x \\lt \\lfloor x \\rfloor - 1$</li>  <li>$\\lfloor x \\rfloor$ est l'unique entier tel que $x - 1 \\lt \\lfloor x \\rfloor \\leqslant x$</li> </ol>",
         "id": 89
     }, {
         "type": "definition",
         "titre": "partie entière par excès",
         "hypotheses": "",
-        "resultat": "On définit parfois aussi la partie entière par excès, notée $\\lceil x \\rceil$, comme étant le plus petit entier supérieur ou égal à $x$ : <br /> $\\lceil x \\rceil = \\min\\{ n \\in \\bb{N} | n \\geqslant x\\}$",
+        "resultat": "On définit parfois aussi la partie entière par excès, notée $\\lceil x \\rceil$, comme étant le plus petit entier supérieur ou égal à $x$ : <br /> $\\lceil x \\rceil = \\min\\{ n \\in \\N | n \\geqslant x\\}$",
         "id": 90
     }, {
         "type": "proposition",
         "titre": "Relation entre partie entière et partie entière par excès",
-        "hypotheses": "Soit $x \\in \\bb{R}$.",
-        "resultat": "On a alors : <ol> <li>$\\lceil x \\rceil = \\left \\{ \\begin{array}{ll} \\lfloor x \\rceil + 1 \\text{ si } x \\notin \\bb{Z} \\\\ \\lfloor x \\rfloor \\quad \\quad \\text{si } x \\in \\bb{Z} \\end{array}\\right.$</li>  <li>$\\lfloor -x \\rfloor = -\\lceil x \\rceil$</li> </ol>",
+        "hypotheses": "Soit $x \\in \\R$.",
+        "resultat": "On a alors : <ol> <li>$\\lceil x \\rceil = \\left \\{ \\begin{array}{ll} \\lfloor x \\rceil + 1 \\text{ si } x \\notin \\Z \\\\ \\lfloor x \\rfloor \\quad \\quad \\text{si } x \\in \\Z \\end{array}\\right.$</li>  <li>$\\lfloor -x \\rfloor = -\\lceil x \\rceil$</li> </ol>",
         "id": 91
     }, {
         "type": "propriete",
         "titre": "Propriétés de la partie entière",
         "hypotheses": "",
-        "resultat": "<ol> <li>$\\forall x,y \\in \\bb{R}, \\lfloor x \\rfloor + \\lfloor y \\rfloor + 1 \\geq \\lfloor x + y \\rfloor \\geq \\lfloor x \\rfloor + \\lfloor y \\rfloor$</li> <li>$\\forall x,y \\in \\bb{R}_+, \\lfloor xy \\rfloor \\geq \\lfloor x \\rfloor \\times \\lfloor y \\rfloor $</li> <li>$\\forall x \\in \\bb{R}, \\forall n \\in \\bb{Z}, \\lfloor x + n \\rfloor = \\lfloor x \\rfloor + n$</li></ol>",
+        "resultat": "<ol> <li>$\\forall x,y \\in \\R, \\lfloor x \\rfloor + \\lfloor y \\rfloor + 1 \\geq \\lfloor x + y \\rfloor \\geq \\lfloor x \\rfloor + \\lfloor y \\rfloor$</li> <li>$\\forall x,y \\in \\R_+, \\lfloor xy \\rfloor \\geq \\lfloor x \\rfloor \\times \\lfloor y \\rfloor $</li> <li>$\\forall x \\in \\R, \\forall n \\in \\Z, \\lfloor x + n \\rfloor = \\lfloor x \\rfloor + n$</li></ol>",
         "id": 92
     }, {
         "type": "remarque",
         "titre": "Notation des nombres décimaux",
         "hypotheses": "",
-        "resultat": "<ul> <li>Nous notons $\\bb{d}$ l'ensemble des nombres décimaux, c'est à dire des réels $x$ tels qu'il existe $n \\in \\bb{N}$ tel que $10^{n}x$ est entier</li> <li>Etant donné $n \\in \\bb{N}$, nous notons $\\bb{d}_n$ l'ensemble des nombres décimaux tels que $10^{n}x \\in \\bb{Z}$. Par exemble $\\bb{d}_0 = \\bb{Z}$ et $\\bb{d}_1$ sont les décimaux s'écrivant avec au plus un chiffre après la virgule.</li></ul>",
+        "resultat": "<ul> <li>Nous notons $\\D$ l'ensemble des nombres décimaux, c'est à dire des réels $x$ tels qu'il existe $n \\in \\N$ tel que $10^{n}x$ est entier</li> <li>Etant donné $n \\in \\N$, nous notons $\\D_n$ l'ensemble des nombres décimaux tels que $10^{n}x \\in \\Z$. Par exemble $\\D_0 = \\Z$ et $\\D_1$ sont les décimaux s'écrivant avec au plus un chiffre après la virgule.</li></ul>",
         "id": 93
     }, {
         "type": "proposition",
         "titre": "Approximation des décimales d'un réel $x$",
-        "hypotheses": "Soit $x$ un réel et $n \\in \\bb{N}^*$",
-        "resultat": "Il existe un unique élément $y$ de $\\bb{d}_n$ tel que $y_n \\leq x \\lt y_n + 10^{-n}$. <br /> <ul><li>Le décimal $y_n$ est appelé valeur approchée décimal à la précision $10^{-n}$ par défaut</li> <li>Le décimal $y_n + 10^{-n}$ est appelé valeur approchée décimale à la précision $10^{-n}$ par excès.</li> </ul>",
+        "hypotheses": "Soit $x$ un réel et $n \\in \\N^*$",
+        "resultat": "Il existe un unique élément $y$ de $\\D_n$ tel que $y_n \\leq x \\lt y_n + 10^{-n}$. <br /> <ul><li>Le décimal $y_n$ est appelé valeur approchée décimal à la précision $10^{-n}$ par défaut</li> <li>Le décimal $y_n + 10^{-n}$ est appelé valeur approchée décimale à la précision $10^{-n}$ par excès.</li> </ul>",
         "id": 94
     },
     {
         "type": "lemme",
         "titre": "Aproximation des décimales",
         "hypotheses": "",
-        "resultat": "Pour tout $n \\in \\bb{N}^*$, il existe $a_n \\in [\\![0, 9]\\!]$ tel que $y_n - y_{n-1} = \\frac{a_n}{10^n}$",
+        "resultat": "Pour tout $n \\in \\N^*$, il existe $a_n \\in [\\![0, 9]\\!]$ tel que $y_n - y_{n-1} = \\frac{a_n}{10^n}$",
         "id": 95
     },
     {
         "type": "theoreme",
         "titre": "Existence du développement décimal de $x$",
-        "hypotheses": "Soit $x \\in \\bb{R}$",
-        "resultat": "Il existe un entier relatif $y_0$ et pour tout $n \\in \\bb{N}^*$, des entiers $a_n \\in [\\![0, 9]\\!]$ tels que <br /> $$x=y_0 + \\sum_{n+1}^{+\\infty} a_n10^{-n} = y_0 + \\lim_{N \\rightarrow +\\infty} \\sum_{n=1}^{N} a_n10^{-n}$$.",
+        "hypotheses": "Soit $x \\in \\R$",
+        "resultat": "Il existe un entier relatif $y_0$ et pour tout $n \\in \\N^*$, des entiers $a_n \\in [\\![0, 9]\\!]$ tels que <br /> $$x=y_0 + \\sum_{n+1}^{+\\infty} a_n10^{-n} = y_0 + \\lim_{N \\rightarrow +\\infty} \\sum_{n=1}^{N} a_n10^{-n}$$.",
         "id": 96
     }, {
         "type": "theoreme",
         "titre": "Unicité du développement décimal de $x$",
-        "hypotheses": "Soit $x \\in \\bb{R}$",
+        "hypotheses": "Soit $x \\in \\R$",
         "resultat": "<ol><li>Si $x$ n'est pas décimal, $x$ admet un unique développement décimal</li> <li>Si $x$ est décimal, $x$ admet exactement deux développements décimaux, l'un terminant uniquement par des $9$, l'autre terminant uniquement par des $0$</li> </ol>",
         "id": 97
     }, {
@@ -658,32 +658,32 @@ const quiz_reels = [{
     }, {
         "type": "definition",
         "titre": "Ensemble convexe",
-        "hypotheses": "Soit $E$ un sous-ensemble de $\\bb{R}^n$.",
+        "hypotheses": "Soit $E$ un sous-ensemble de $\\R^n$.",
         "resultat": "On dit que $E$ est convexe si et seulement si pour tout couple de points $A$ et $B$ de $E$, le segment $[AB]$ est entièrement inclus dans $E$.",
         "id": 99
     }, {
         "type": "definition",
         "titre": "Intervalle",
         "hypotheses": "",
-        "resultat": "Un intervalle $I$ est un sous-ensemble convexe $I$ de $\\bb{R}$, c'est-à-dire tel que : <br /> $\\forall (a,b) \\in I^2, \\forall x \\in \\bb{R}, a \\leqslant x \\leqslant b \\implies x \\in I$",
+        "resultat": "Un intervalle $I$ est un sous-ensemble convexe $I$ de $\\R$, c'est-à-dire tel que : <br /> $\\forall (a,b) \\in I^2, \\forall x \\in \\R, a \\leqslant x \\leqslant b \\implies x \\in I$",
         "id": 100
     }, {
         "type": "theoreme",
         "titre": "Inventaire des intervalles réels",
         "hypotheses": "",
-        "resultat": "Tout intervalle $I$ de $\\bb{R}$ est d'une des formes suivantes, pour certaines valeurs réelles $a$ et $b$ : <ul> <li>$[a, b] = \\{x \\in \\bb{R}, a \\leqslant x \\leqslant b \\}, a \\leqslant b$</li> <li>$]a, b[ = \\{x \\in \\bb{R}, a \\lt x \\lt b \\}, a \\lt b$</li>  <li>$[a, b[ = \\{x \\in \\bb{R}, a \\leqslant x \\lt b \\}, a \\lt b$</li> <li>$]a, b] = \\{x \\in \\bb{R}, a \\lt x \\leqslant b \\}, a \\lt b$</li> <li>$[a, +\\infty[ = \\{x \\in \\bb{R}, x \\geqslant a \\}$</li> <li>$]a, +\\infty[ = \\{x \\in \\bb{R}, x \\gt a \\}$</li> <li>$]-\\infty, b] = \\{x \\in \\bb{R}, x \\leqslant b \\}$</li> <li>$]-\\infty, b[ = \\{x \\in \\bb{R}, x \\lt b \\}$</li> <li>$]-\\infty, +\\infty = \\bb{R}$</li> <li>$\\emptyset$</li> </ul>",
+        "resultat": "Tout intervalle $I$ de $\\R$ est d'une des formes suivantes, pour certaines valeurs réelles $a$ et $b$ : <ul> <li>$[a, b] = \\{x \\in \\R, a \\leqslant x \\leqslant b \\}, a \\leqslant b$</li> <li>$]a, b[ = \\{x \\in \\R, a \\lt x \\lt b \\}, a \\lt b$</li>  <li>$[a, b[ = \\{x \\in \\R, a \\leqslant x \\lt b \\}, a \\lt b$</li> <li>$]a, b] = \\{x \\in \\R, a \\lt x \\leqslant b \\}, a \\lt b$</li> <li>$[a, +\\infty[ = \\{x \\in \\R, x \\geqslant a \\}$</li> <li>$]a, +\\infty[ = \\{x \\in \\R, x \\gt a \\}$</li> <li>$]-\\infty, b] = \\{x \\in \\R, x \\leqslant b \\}$</li> <li>$]-\\infty, b[ = \\{x \\in \\R, x \\lt b \\}$</li> <li>$]-\\infty, +\\infty = \\R$</li> <li>$\\emptyset$</li> </ul>",
         "id": 101
     }, {
         "type": "definition",
         "titre": "Intervalles ouverts, fermés, semi-ouverts",
         "hypotheses": "",
-        "resultat": "<ul> <li>On dit qu'un intervalle est ouvert s'il est de la forme $]a, b[, ]a, +\\infty[, ]-\\infty, b[, \\bb{R}$ ou $\\emptyset$</li> <li>On dit qu'un intervalle est fermé s'il est de la forme $[a, b], [a, +\\infty[, ]-\\infty, b]$ ou $\\emptyset$</li> <li>On dit qu'un intervalle est semi-ouvert s'il est de la forme $[a, b[$ ou $]a, b]$</li> </ul>",
+        "resultat": "<ul> <li>On dit qu'un intervalle est ouvert s'il est de la forme $]a, b[, ]a, +\\infty[, ]-\\infty, b[, \\R$ ou $\\emptyset$</li> <li>On dit qu'un intervalle est fermé s'il est de la forme $[a, b], [a, +\\infty[, ]-\\infty, b]$ ou $\\emptyset$</li> <li>On dit qu'un intervalle est semi-ouvert s'il est de la forme $[a, b[$ ou $]a, b]$</li> </ul>",
         "id": 102
     }, {
         "type": "definition",
-        "titre": "Boule dans $\\bb{R}^n$",
-        "hypotheses": "Soit $x \\in \\bb{R}^n$ et $r \\in \\bb{R}_+$.",
-        "resultat": "<ol> <li>La boule ouverte de centre $x$ et de rayon $r$ est : $B(x, r) = \\{y \\in \\bb{R}^n | d(y,x) \\lt r\\}$</li> <li>La boule fermée de centre $x$ et de rayon $r$ est : $\\ol{B}(x, r) = \\{ y \\in \\bb{R}^n | d(y,x) \\leqslant r \\}$</li> </ol>",
+        "titre": "Boule dans $\\R^n$",
+        "hypotheses": "Soit $x \\in \\R^n$ et $r \\in \\R_+$.",
+        "resultat": "<ol> <li>La boule ouverte de centre $x$ et de rayon $r$ est : $B(x, r) = \\{y \\in \\R^n | d(y,x) \\lt r\\}$</li> <li>La boule fermée de centre $x$ et de rayon $r$ est : $\\ol{B}(x, r) = \\{ y \\in \\R^n | d(y,x) \\leqslant r \\}$</li> </ol>",
         "id": 103
     }, {
         "type": "remarque",
@@ -694,20 +694,20 @@ const quiz_reels = [{
     }, {
         "type": "definition",
         "titre": "Voisinage",
-        "hypotheses": "Soit $x \\in \\bb{R}^n$.",
-        "resultat": "Un <b>voisinage</b> $V$ de $x$ est un sous-ensemble $V$ de $\\bb{R}^n$ tel qu'il existe une boule ouverte centrée en $x$ entièrement contenue dans $V$ : $\\exists \\varepsilon \\gt 0, B(x,\\varepsilon) \\subset V$, i.e. $\\exists \\varepsilon \\gt 0, \\forall y \\in E, d(y,x) \\lt \\varepsilon \\implies y \\in V$",
+        "hypotheses": "Soit $x \\in \\R^n$.",
+        "resultat": "Un <b>voisinage</b> $V$ de $x$ est un sous-ensemble $V$ de $\\R^n$ tel qu'il existe une boule ouverte centrée en $x$ entièrement contenue dans $V$ : $\\exists \\varepsilon \\gt 0, B(x,\\varepsilon) \\subset V$, i.e. $\\exists \\varepsilon \\gt 0, \\forall y \\in E, d(y,x) \\lt \\varepsilon \\implies y \\in V$",
         "id": 105
     }, {
         "type": "definition",
         "titre": "Sous-ensemble ouvert",
         "hypotheses": "",
-        "resultat": "<ul> <li>Un <b>ouvert</b> de $U$ de $\\bb{R}^n$ est un sous-ensemble $U$ de $\\bb{R}^n$ qui est voisinage de tous ses points</li> <li>De manière équivalente, $U \\subset \\bb{R}^n$ est ouvesrt si et seulement si : <br /> $\\forall x \\in U, \\exists \\varepsilon \\gt 0, B(x, \\varepsilon) \\subset U$ </li> </ul>",
+        "resultat": "<ul> <li>Un <b>ouvert</b> de $U$ de $\\R^n$ est un sous-ensemble $U$ de $\\R^n$ qui est voisinage de tous ses points</li> <li>De manière équivalente, $U \\subset \\R^n$ est ouvesrt si et seulement si : <br /> $\\forall x \\in U, \\exists \\varepsilon \\gt 0, B(x, \\varepsilon) \\subset U$ </li> </ul>",
         "id": 106
     }, {
         "type": "definition",
         "titre": "Sous-ensemble fermé",
         "hypotheses": "",
-        "resultat": "Un sous-ensemble $F$ de $\\bb{R}^n$ est <b>fermé</b> si son complémentaire $C_E F$ est <b>ouvert</b>",
+        "resultat": "Un sous-ensemble $F$ de $\\R^n$ est <b>fermé</b> si son complémentaire $C_E F$ est <b>ouvert</b>",
         "id": 107
     }, {
         "type": "proposition",
@@ -719,105 +719,105 @@ const quiz_reels = [{
         "type": "definition",
         "titre": "Droite achevée réelle",
         "hypotheses": "",
-        "resultat": "La droite achevée réelle, notée $\\ol{\\bb{R}}$, est l'ensemble $\\bb{R} \\cup \\{-\\infty, + \\infty\\}$.",
+        "resultat": "La droite achevée réelle, notée $\\ol{\\R}$, est l'ensemble $\\R \\cup \\{-\\infty, + \\infty\\}$.",
         "id": 109
     }, {
         "type": "definition",
-        "titre": "Relation d'ordre sur $\\ol{\\bb{R}}$",
+        "titre": "Relation d'ordre sur $\\ol{\\R}$",
         "hypotheses": "",
-        "resultat": "On peut prolonger l'ordre de $\\bb{R}$ en un ordre de $\\ol{\\bb{R}}$ en posant : <br /> $\\forall x \\in \\ol{\\bb{R}}, -\\infty \\leqslant x \\leqslant +\\infty$.",
+        "resultat": "On peut prolonger l'ordre de $\\R$ en un ordre de $\\ol{\\R}$ en posant : <br /> $\\forall x \\in \\ol{\\R}, -\\infty \\leqslant x \\leqslant +\\infty$.",
         "id": 110
     }, {
         "type": "definition",
-        "titre": "Règles calculatoires dans $\\ol{\\bb{R}}$",
+        "titre": "Règles calculatoires dans $\\ol{\\R}$",
         "hypotheses": "",
-        "resultat": "On peut prolonger partiellement les opérations de $\\bb{R}$ sur $\\ol{\\bb{R}}$, en posant : <ul> <li>$-(+\\infty) = - \\infty$</li> <li>$\\forall x \\in \\ol{\\bb{R}}\\text{\\ }\\{-\\infty\\}, x + (+\\infty) = +\\infty$</li> <li>$\\forall x \\in \\ol{\\bb{R}}\\text{\\ }\\{+\\infty\\}, x + (-\\infty) = -\\infty$</li> <li>$\\frac{1}{+\\infty} = \\frac{1}{-\\infty} = 0$</li> <li>$\\forall x \\in \\ol{\\bb{R}}_+^*, x \\times (+\\infty) = +\\infty, x \\times (-\\infty) = -\\infty$</li> <li>$\\forall x \\in \\ol{\\bb{R}}_-^*, x \\times (+\\infty) = -\\infty, x \\times (-\\infty) = +\\infty$</li> </ul>",
+        "resultat": "On peut prolonger partiellement les opérations de $\\R$ sur $\\ol{\\R}$, en posant : <ul> <li>$-(+\\infty) = - \\infty$</li> <li>$\\forall x \\in \\ol{\\R}\\text{\\ }\\{-\\infty\\}, x + (+\\infty) = +\\infty$</li> <li>$\\forall x \\in \\ol{\\R}\\text{\\ }\\{+\\infty\\}, x + (-\\infty) = -\\infty$</li> <li>$\\frac{1}{+\\infty} = \\frac{1}{-\\infty} = 0$</li> <li>$\\forall x \\in \\ol{\\R}_+^*, x \\times (+\\infty) = +\\infty, x \\times (-\\infty) = -\\infty$</li> <li>$\\forall x \\in \\ol{\\R}_-^*, x \\times (+\\infty) = -\\infty, x \\times (-\\infty) = +\\infty$</li> </ul>",
         "id": 111
     }, {
         "type": "definition",
-        "titre": "Formes indéterminées dans $\\ol{\\bb{R}}$",
+        "titre": "Formes indéterminées dans $\\ol{\\R}$",
         "hypotheses": "",
-        "resultat": "Les opérations suivantes ne sont pas définies, et définissent les formes indéterminées de la somme et du produit dans $\\ol{\\bb{R}}$ : <ul> <li>$-\\infty + (+\\infty)$</li> <li>$0 \\times (+\\infty)$</li> <li>$0 \\times (-\\infty)$</li> </ul>",
+        "resultat": "Les opérations suivantes ne sont pas définies, et définissent les formes indéterminées de la somme et du produit dans $\\ol{\\R}$ : <ul> <li>$-\\infty + (+\\infty)$</li> <li>$0 \\times (+\\infty)$</li> <li>$0 \\times (-\\infty)$</li> </ul>",
         "id": 112
     }, {
         "type": "proposition",
-        "titre": "Bornes supérieures dans $\\ol{\\bb{R}}$",
+        "titre": "Bornes supérieures dans $\\ol{\\R}$",
         "hypotheses": "",
-        "resultat": "Tous sous-ensemble $E$ de $\\ol{\\bb{R}}$ admet une borne supérieure dans $\\ol{\\bb{R}}$",
+        "resultat": "Tous sous-ensemble $E$ de $\\ol{\\R}$ admet une borne supérieure dans $\\ol{\\R}$",
         "id": 113
     }, {
         "type": "proposition",
-        "titre": "Bornes inférieures dans $\\ol{\\bb{R}}$",
+        "titre": "Bornes inférieures dans $\\ol{\\R}$",
         "hypotheses": "",
-        "resultat": "Tous sous-ensemble $E$ de $\\ol{\\bb{R}}$ admet une borne inférieure dans $\\ol{\\bb{R}}$",
+        "resultat": "Tous sous-ensemble $E$ de $\\ol{\\R}$ admet une borne inférieure dans $\\ol{\\R}$",
         "id": 114
     }
 ];
 
 const quiz_nb_complexes = [{
     "type": "definition",
-    "titre": "Ensemble $\\bb{C}$ des nombres complexes",
+    "titre": "Ensemble $\\C$ des nombres complexes",
     "hypotheses": "",
-    "resultat": "L'ensemble des nombres complexes $\\bb{C}$ est l'ensemble $\\bb{R}^2$, muni des opérations suivantes : <ul><li>$(a, b) + (a',b') = (a+a', b+b')$</li> <li>$(a, b) \\times (a', b') = (aa' - bb', ab' + a'b)$</li></ul>",
+    "resultat": "L'ensemble des nombres complexes $\\C$ est l'ensemble $\\R^2$, muni des opérations suivantes : <ul><li>$(a, b) + (a',b') = (a+a', b+b')$</li> <li>$(a, b) \\times (a', b') = (aa' - bb', ab' + a'b)$</li></ul>",
     "id": 115
 }, {
     "type": "remarque",
-    "titre": "Injection de $\\bb{R}$ dans $\\bb{C}$",
+    "titre": "Injection de $\\R$ dans $\\C$",
     "hypotheses": "",
-    "resultat": "L'application $\\lambda \\rightarrow (\\lambda, 0)$ étant injective, on identifie un réel $\\lambda$ au complexe $(\\lambda, 0)$. Via cette définition, on peut considérer que $\\bb{R} \\in \\bb{C}$, et on vérifie facilement que la somme et le produit défini sur $\\bb{C}$ prolongent les lois de $\\bb{R}$.",
+    "resultat": "L'application $\\lambda \\rightarrow (\\lambda, 0)$ étant injective, on identifie un réel $\\lambda$ au complexe $(\\lambda, 0)$. Via cette définition, on peut considérer que $\\R \\in \\C$, et on vérifie facilement que la somme et le produit défini sur $\\C$ prolongent les lois de $\\R$.",
     "id": 116
 }, {
     "type": "definition",
     "titre": "definition de la forme algébrique",
     "hypotheses": "",
-    "resultat": "<ul><li>On note $1 = (1,0)$ et $i = (0, 1)$</li><li>On a alors, pour tout $z = (a,b) \\in \\bb{C}$, <br/> $z = a\\times 1 + b\\times i =  a+ib$<br/>C'est la forme algébrique du nombre complexe $z$.</li></ul>",
+    "resultat": "<ul><li>On note $1 = (1,0)$ et $i = (0, 1)$</li><li>On a alors, pour tout $z = (a,b) \\in \\C$, <br/> $z = a\\times 1 + b\\times i =  a+ib$<br/>C'est la forme algébrique du nombre complexe $z$.</li></ul>",
     "id": 117
 }, {
     "type": "definition",
     "titre": "Parties réelle/imaginaire",
     "hypotheses": "",
-    "resultat": "<ul><li>Soit $z=a+ib$, avec $a,b \\in \\bb{R}$. <br/> * Le réel $a$ est appelé <b>partie réelle de $z$</b>, et est noté $\\Re(z)$<br/> * Le réel $b$ est appelé <b>partie imaginaire de $z$</b>, et est noté $\\Im(z)$</li> <li>Un nombre $z \\in \\bb{C}$ tel que $\\Re(z) = 0$ est appelé <b>nombre imaginaire pur</b></li> <li>Un nombre $z \\in \\bb{C}$ vérifie $\\Im(z) = 0$ si et seulement si $z \\in \\bb{R}$</li> </ul>",
+    "resultat": "<ul><li>Soit $z=a+ib$, avec $a,b \\in \\R$. <br/> * Le réel $a$ est appelé <b>partie réelle de $z$</b>, et est noté $\\Re(z)$<br/> * Le réel $b$ est appelé <b>partie imaginaire de $z$</b>, et est noté $\\Im(z)$</li> <li>Un nombre $z \\in \\C$ tel que $\\Re(z) = 0$ est appelé <b>nombre imaginaire pur</b></li> <li>Un nombre $z \\in \\C$ vérifie $\\Im(z) = 0$ si et seulement si $z \\in \\R$</li> </ul>",
     "id": 118
 }, {
     "type": "proposition",
     "titre": "Propriétés liées au produit (nb complexes)",
     "hypotheses": "",
-    "resultat": "<ol><li>$i^2=-1$</li> <li>Le produit $(a+ib)(a'+ib')$ est simplement obtenu par utilisation des règles de distributivité et par la relation $i^2=-1$</li> <li>Si $z\\neq0$, alors $z$ est inversible, et, si $z=a+ib$ avec $(a,b) \\in \\bb{R}^2$, on a l'expression de l'inverse : <br/> $z^{-1} = \\frac{a-ib}{a^2+b^2}$</li></ol>",
+    "resultat": "<ol><li>$i^2=-1$</li> <li>Le produit $(a+ib)(a'+ib')$ est simplement obtenu par utilisation des règles de distributivité et par la relation $i^2=-1$</li> <li>Si $z\\neq0$, alors $z$ est inversible, et, si $z=a+ib$ avec $(a,b) \\in \\R^2$, on a l'expression de l'inverse : <br/> $z^{-1} = \\frac{a-ib}{a^2+b^2}$</li></ol>",
     "id": 119
 }, {
     "type": "theoreme",
-    "titre": "Structure de $\\bb{C}$",
+    "titre": "Structure de $\\C$",
     "hypotheses": "",
-    "resultat": "L'ensemble $\\bb{C}$ muni des opérations ci-dessus est un corps.",
+    "resultat": "L'ensemble $\\C$ muni des opérations ci-dessus est un corps.",
     "id": 120
 }, {
     "type": "definition",
     "titre": "Affixe d'un point du plan",
-    "hypotheses": "Soit $A = (a,b)$ un point de $\\bb{R}^2$.",
+    "hypotheses": "Soit $A = (a,b)$ un point de $\\R^2$.",
     "resultat": "L'affixe du point $A$ est le nombre complexe $z_A = a+ib$.",
     "id": 121
 }, {
     "type": "theoreme",
     "titre": "Théorème d'Alembert-Gauss",
     "hypotheses": "",
-    "resultat": "Tout polynôme non constant à coefficients complexes admet au moins une racine dans $\\bb{C}$.",
+    "resultat": "Tout polynôme non constant à coefficients complexes admet au moins une racine dans $\\C$.",
     "id": 122
 }, {
     "type": "definition",
     "titre": "Conjugué d'un nombre complexe",
-    "hypotheses": "Soit $z = a+ib$ (avec $(a,b) \\in \\bb{R}^2$) un nombre complexe.",
+    "hypotheses": "Soit $z = a+ib$ (avec $(a,b) \\in \\R^2$) un nombre complexe.",
     "resultat": "Le conjugué de $z$ est le nombre complexe <br/> $\\ol{z\\ } a - ib$",
     "id": 123
 }, {
     "type": "propriete",
-    "titre": "Propriétés de la conjugaison dans $\\bb{C}$",
+    "titre": "Propriétés de la conjugaison dans $\\C$",
     "hypotheses": "Soit $z$ et $z'$ deux nombres complexes.",
-    "resultat": "<ol><li>$\\ol{\\ol{z\\ }} = z$ (autrement dit, la conjugaison est une involution)</li> <li>$z = \\ol{z\\ } \\iff z \\in \\bb{R}$</li> <li>$z = -\\ol{z\\ } \\iff z$ imaginaire pur</li> <li>$\\Re(z) = \\frac{z + \\ol{z\\ }}{2}$ et $\\Im(z) = \\frac{z - \\ol{z\\ }}{2}$</li> <li>$\\ol{z + z'} = \\ol{z\\ } + \\ol{z'}$, $\\ol{zz'} = \\ol{z\\ }\\times\\ol{z'}$, $\\ol{z^{-1}} = \\ol{z\\ }^{-1}$, $\\ol{(\\frac{z}{z'})} = \\frac{\\ol{z\\ }}{\\ol{z'}}$</li></ol>",
+    "resultat": "<ol><li>$\\ol{\\ol{z\\ }} = z$ (autrement dit, la conjugaison est une involution)</li> <li>$z = \\ol{z\\ } \\iff z \\in \\R$</li> <li>$z = -\\ol{z\\ } \\iff z$ imaginaire pur</li> <li>$\\Re(z) = \\frac{z + \\ol{z\\ }}{2}$ et $\\Im(z) = \\frac{z - \\ol{z\\ }}{2}$</li> <li>$\\ol{z + z'} = \\ol{z\\ } + \\ol{z'}$, $\\ol{zz'} = \\ol{z\\ }\\times\\ol{z'}$, $\\ol{z^{-1}} = \\ol{z\\ }^{-1}$, $\\ol{(\\frac{z}{z'})} = \\frac{\\ol{z\\ }}{\\ol{z'}}$</li></ol>",
     "id": 124
 }, {
     "type": "definition",
     "titre": "Module d'un nombre complexe",
-    "hypotheses": "Soit $(a,b) \\in \\bb{R}^2$, et $z=a+ib$.",
+    "hypotheses": "Soit $(a,b) \\in \\R^2$, et $z=a+ib$.",
     "resultat": "Le module de $z$ est le réel positif défini par <br/> $|z| = \\sqrt{a^2 + b^2}$",
     "id": 125
 }, {
@@ -838,12 +838,12 @@ const quiz_trigo = [{
     "type": "definition",
     "titre": "Cercle trigonométrique",
     "hypotheses": "",
-    "resultat": "Le cercle trigonométrique (ou cercle unité) est le sous ensemble de $\\bb{C}$, noté $\\bb{U}$ (comme \"unité\"), constitué des nombres complexes de module $1$ : <br/> $\\bb{U} = \\{z \\in \\bb{C}, |z| = 1\\}$. <br/> Le cercle trigonométrique correspond dans l'interprétation géométrique des complexes au cercle de centre $(0, 0)$ et de rayon $1$, de $\\bb{R}^2$. <br/> <img style=\"background-color:white!important;\" class=\"imgc\" src=\"res/cercle_trigo.svg\" />",
+    "resultat": "Le cercle trigonométrique (ou cercle unité) est le sous ensemble de $\\C$, noté $\\bb{U}$ (comme \"unité\"), constitué des nombres complexes de module $1$ : <br/> $\\bb{U} = \\{z \\in \\C, |z| = 1\\}$. <br/> Le cercle trigonométrique correspond dans l'interprétation géométrique des complexes au cercle de centre $(0, 0)$ et de rayon $1$, de $\\R^2$. <br/> <img style=\"background-color:white!important;\" class=\"imgc\" src=\"res/cercle_trigo.svg\" />",
     "id": 128
 }, {
     "type": "definition",
     "titre": "Fonctions trigonométriques",
-    "hypotheses": "Soit $x \\in \\bb{R}$.",
+    "hypotheses": "Soit $x \\in \\R$.",
     "resultat": "On considère le cercle trigonométrique dans le plan euclidien canonoique. Soit $z$ le point du cercle trigonométrique tel que le rayon correspondant du cercle trigonométrique forme avec l'axe des réels un angle (orienté dans le sens direct) de $x$.<br/> On définit alors les fonctions cosinus, sinus et tangente par : <br/> $\\cos(x) = \\Re(x)$, $\\sin(x) = \\Im(z)$ et $\\tan(x) = \\frac{sin(x)}{cos(x)}$ si $cos(x)\\neq 0$",
     "id": 129
 }, {
@@ -855,14 +855,14 @@ const quiz_trigo = [{
 }, {
     "type": "definition",
     "titre": "Cotangente",
-    "hypotheses": "Soit $x \\in \\bb{R}$.",
+    "hypotheses": "Soit $x \\in \\R$.",
     "resultat": "La contangente est définie, pour tout $x$ tel que $\\sin(x) \\neq 0$, par : <br/> $\\text{cotan}(x) = \\frac{\\cos(x)}{\\sin(x)}.$",
     "id": 131
 }, {
     "type": "proposition",
     "titre": "Domaines de définition des fonctions trigonométriques",
     "hypotheses": "",
-    "resultat": "<ol><li>Les fonctions sin et cos sont définies sur $\\bb{R}$</li> <li>La fonction tan est définie sur $\\bb{R}\\backslash \\{\\frac{\\pi}{2} + n\\pi, n \\in \\bb{Z}\\}$</li> <li>La fonction cotan est définie sur $\\bb{R}\\backslash \\{n\\pi, n \\in \\bb{Z}\\}$.</li></ol>",
+    "resultat": "<ol><li>Les fonctions sin et cos sont définies sur $\\R$</li> <li>La fonction tan est définie sur $\\R\\backslash \\{\\frac{\\pi}{2} + n\\pi, n \\in \\Z\\}$</li> <li>La fonction cotan est définie sur $\\R\\backslash \\{n\\pi, n \\in \\Z\\}$.</li></ol>",
     "id": 132
 }, {
     "type": "proposition",
@@ -1048,7 +1048,7 @@ const quiz_trigo = [{
     "type": "proposition",
     "titre": "Identité remarquable ou théorème de Pythagore",
     "hypotheses": "",
-    "resultat": "Pour tout $x \\in \\bb{R}$, $\\sin^2(x) + \\cos^2(x) = 1$",
+    "resultat": "Pour tout $x \\in \\R$, $\\sin^2(x) + \\cos^2(x) = 1$",
     "id": 163
 }, {
     "type": "proposition",
@@ -1119,13 +1119,13 @@ const quiz_trigo = [{
 }, {
     "type": "proposition",
     "titre": "$\\cos^2(a)$",
-    "hypotheses": "Soit $a \\in \\bb{R}$",
+    "hypotheses": "Soit $a \\in \\R$",
     "resultat": "$\\cos^2(a) = \\frac{1 + \\cos^2(2a)}{2}$",
     "id": 175
 }, {
     "type": "proposition",
     "titre": "$\\sin^2(a)$",
-    "hypotheses": "Soit $a \\in \\bb{R}$",
+    "hypotheses": "Soit $a \\in \\R$",
     "resultat": "$\\sin^2(a) = \\frac{1 - \\cos^2(2a)}{2}$",
     "id": 176
 }, {
@@ -1198,19 +1198,19 @@ const quiz_trigo = [{
     "type": "definition",
     "titre": "Exponentielle complexe",
     "hypotheses": "",
-    "resultat": "On définit l'exponentielle complexe sur les nombres imaginaires purs par : <br/> $\\forall \\theta \\in \\bb{R}, e^{i\\theta} = \\cos(\\theta) + i\\sin(\\theta)$",
+    "resultat": "On définit l'exponentielle complexe sur les nombres imaginaires purs par : <br/> $\\forall \\theta \\in \\R, e^{i\\theta} = \\cos(\\theta) + i\\sin(\\theta)$",
     "id": 225
 }, {
     "type": "proposition",
     "titre": "Surjectivité de $e^{i\\theta}$",
     "hypotheses": "",
-    "resultat": "La fonction $\\theta \\rightarrow e^{i\\theta}$ est surjective de $\\bb{R}$ sur $\\bb{U}$. Plus précisément, c'est une bijection de tout intervalle $]\\alpha, \\alpha + 2\\pi]$ sur $\\bb{U}$, ainsi que de tout intervalle $[\\alpha, \\alpha+2\\pi[$ sur $\\bb{U}$",
+    "resultat": "La fonction $\\theta \\rightarrow e^{i\\theta}$ est surjective de $\\R$ sur $\\bb{U}$. Plus précisément, c'est une bijection de tout intervalle $]\\alpha, \\alpha + 2\\pi]$ sur $\\bb{U}$, ainsi que de tout intervalle $[\\alpha, \\alpha+2\\pi[$ sur $\\bb{U}$",
     "id": 226
 }, {
     "type": "corollaire",
     "titre": "Propriété de la fonction définie par $(r, 0) \\rightarrow re^{i\\theta}$",
     "hypotheses": "",
-    "resultat": "La fonction de $\\bb{R}_+^* \\times ]-\\pi, \\pi]$, sur $\\bb{C}^*$ définie par $(r, 0) \\rightarrow re^{i\\theta}$",
+    "resultat": "La fonction de $\\R_+^* \\times ]-\\pi, \\pi]$, sur $\\C^*$ définie par $(r, 0) \\rightarrow re^{i\\theta}$",
     "id": 227
 }, {
     "type": "definition",
@@ -1221,21 +1221,219 @@ const quiz_trigo = [{
 }, {
     "type": "proposition",
     "titre": "Formules d'Euler",
-    "hypotheses": "Soit $\\theta \\in \\bb{R}$",
+    "hypotheses": "Soit $\\theta \\in \\R$",
     "resultat": "$\\cos(\\theta) = \\frac{e^{i\\theta}+e^{-i\\theta}}{2}$ et $\\sin(\\theta) = \\frac{e^{i\\theta} - e^{-i\\theta}}{2i}$",
     "id": 229
 }, {
     "type": "theoreme",
     "titre": "Formules trigonométriques d'addition",
     "hypotheses": "",
-    "resultat": "Pour tout $(\\theta, \\theta') \\in \\bb{R}^2$, $e^{i(\\theta+\\theta')} = e^{i\\theta}e^{i\\theta'}$",
+    "resultat": "Pour tout $(\\theta, \\theta') \\in \\R^2$, $e^{i(\\theta+\\theta')} = e^{i\\theta}e^{i\\theta'}$",
     "id": 230
 }, {
     "type": "corollaire",
     "titre": "Formule de De Moivre",
     "hypotheses": "",
-    "resultat": "Pour tout $\\theta \\in \\bb{R}$ et $n \\in \\bb{N}$ : <br/> $e^{in\\theta} = (e^{i\\theta})^n$, soit : $\\cos(n\\theta) + i\\sin(n\\theta) = (\\cos(\\theta) + i\\sin(\\theta))^n$",
+    "resultat": "Pour tout $\\theta \\in \\R$ et $n \\in \\N$ : <br/> $e^{in\\theta} = (e^{i\\theta})^n$, soit : $\\cos(n\\theta) + i\\sin(n\\theta) = (\\cos(\\theta) + i\\sin(\\theta))^n$",
     "id": 231
+}, {
+    "type": "methode",
+    "titre": "Principe de symétrisation des arguments",
+    "hypotheses": "",
+    "resultat": "Cette méthode permet d'exprimer une somme ou une différence de deux exponentielles à l'aide des fonctions trigonométriques. C'est notamment intéressant pour obtenir la partie réelle et la partie imaginaire sous forme factorisée.<br/> Soit $a$ et $b$ deux réels. Alors : <ul><li>$$e^{ia} + e^{ib} = e^{i\\frac{a+b}{2}}(e^{i\\frac{a-b}{2}} + e^{-i\\frac{a-b}{2}}) = 2\\cos(\\frac{a-b}{2})e^{i\\frac{a+b}{2}}$$</li> <li>$$e^{ia} - e^{ib} = e^{i\\frac{a+b}{2}}(e^{i\\frac{a-b}{2}} - e^{-i\\frac{a-b}{2}}) = 2i\\sin(\\frac{a-b}{2})e^{i\\frac{a+b}{2}}$$</li></ul>",
+    "id": 232
+}, {
+    "type": "methode",
+    "titre": "Linéarisation",
+    "hypotheses": "",
+    "resultat": "Le but est d'exprimer $\\cos^n(\\theta)$ ou $\\sin^n(\\theta)$ en fonction de $\\cos(k\\theta)$ et $\\sin(k\\theta)$, $k \\in \\N$. Principe du calcul : <ol><li>Exprimer $\\cos(\\theta)$ ou $\\sin(\\theta)$ à l'aide des formules d'Euler.</li> <li>Développer à l'aide de la formule du binôme de Newton</li> <li>Regrouper dans le développement les exponentielles conjuguées et les réexprimer à l'aide des fonctions sin et cos en utilisant la formule d'Euler dans l'autre sens.</li></ol>",
+    "id": 233
+}, {
+    "type": "methode",
+    "titre": "\"délinéarisation\", ou les polynômes de Tchébychev",
+    "hypotheses": "",
+    "resultat": "Cela consiste à écrire $\\cos(n\\theta)$ ou $\\sin(n\\theta)$ en fonction des puissances de $\\cos(x)$ et/ou $\\sin(x)$. Le principe du calcul : <ol><li>On utilise la formule de De Moivre pour exprimer $\\cos(n\\theta)$ ou $\\sin(n\\theta)$ comme une partie réelle ou imaginaire de $\\cos(\\theta)+i\\sin(\\theta))^n$</li> <li>On développe cette expression à l'aide de la formule du binôme de Newton</li> <li>On utilise l'identité remarquable $\\sin^2(x)+\\cos^2(x) = 1$ pour exprimer la partie réelle (ou imaginaire) sous forme d'un polynôme en $\\cos(x)$(pour $\\cos(n\\theta)$) ou le produit de $\\cos(x)$ par un polynôme en $\\sin(x)$(pour $\\sin(n\\theta)$)</li></ol>",
+    "id": 234
+}, {
+    "type": "methode",
+    "titre": "Sommes de sin et cos",
+    "hypotheses": "",
+    "resultat": "Le principe général est d'écrire une somme de sin (ou de cos) sous la forme de la partie imaginaire (ou réelle) d'une somme exponentielles. On peut alors souvent exploiter le caractère géométrique du terme $e^{in\\theta}$, par utilisation des propriétés des sommes géométriques, ou de la formule du binôme, etc...",
+    "id": 235
+}, {
+    "type": "texte",
+    "titre": "Exemple du noyau de Dirichlet",
+    "hypotheses": "Soit $a$ et $b$ deux réels, avec $b\\not\\equiv0[2\\pi]$.",
+    "resultat": "$$\\text{Soit } C = \\cos(a) + \\cos(a+b) + \\cos(a+2b) + \\ldots + \\cos(a+nb) = \\sum_{k=0}^n\\cos(a+kb)$$.<br/>$$\\text{Alors : } C = \\cos(a + \\frac{bn}{2}) \\times \\frac{\\sin(\\frac{n+\\! 1}{2}\\times b)}{\\sin(\\frac{b}{2})}$$",
+    "id": 236
+}, {
+    "type": "definition",
+    "titre": "Exponentielle complexe",
+    "hypotheses": "Soit $z$ un nombre complexe.",
+    "resultat": "On définit alors $e^z = e^{\\Re(z)}\\times e^{i\\Im(z)}$",
+    "id": 237
+}, {
+    "type": "proposition",
+    "titre": "$Re(e^z)$",
+    "hypotheses": "",
+    "resultat": "$\\Re(e^z) = e^{\\Re(z)}\\cos(\\Im(z))$",
+    "id": 238
+}, {
+    "type": "proposition",
+    "titre": "$\\Im(z)$",
+    "hypotheses": "",
+    "resultat": "$\\Im(e^z) = e^{\\Re(z)}\\sin(\\Im(z))$",
+    "id": 239
+}, {
+    "type": "proposition",
+    "titre": "$|e^z|$",
+    "hypotheses": "",
+    "resultat": "$|e^z| = e^{\\Re(z)}$",
+    "id": 240
+}, {
+    "type": "proposition",
+    "titre": "$\\arg(e^z)$",
+    "hypotheses": "",
+    "resultat": "$\\arg(e^z) = \\Im(z) [2\\pi]$",
+    "id": 241
+}, {
+    "type": "theoreme",
+    "titre": "Propriété d'addition (exponentielle complexe)",
+    "hypotheses": "Soit $(z, z') \\in \\C$",
+    "resultat": "$e^{z+z'} = e^ze^{z'}$",
+    "id": 242
+}, {
+    "type": "proposition",
+    "titre": "Cas d'égalité (exponentielle complexe)",
+    "hypotheses": "Soit $(z,z') \\in \\C^2$",
+    "resultat": "On a $e^z = e^{z'}$ si et seulement si $\\Re(z) = \\Re(z')$ et $\\Im(z) = \\Im(z')\\mod[2\\pi]$, autrement dit, si $z-z' \\in 2i\\pi\\Z$.",
+    "id": 243
+}, {
+    "type": "proposition",
+    "titre": "Recherche de l'image réciproque",
+    "hypotheses": "Soit $a \\in \\C^2$",
+    "resultat": "<ul><li>si $a = 0$, l'équation $e^z=a$ n'a pas de solutions</li> <li>si $a \\neq 0$, l'équation $e^z = a$ a une infinité de solutions, décrites par : <br/> $\\Re(z) = \\ln(|a|)$  et  $\\Im(z) \\equiv \\arg(a)[2\\pi]$</li></ul>",
+    "id": 244
+}, {
+    "type": "definition",
+    "titre": "Racines n-ièmes, groupe $\\bb{U}_n$",
+    "hypotheses": "",
+    "resultat": "<ul><li>Soit $n \\in \\N^*$ et $z\\in\\Z$. Une racine n-ième de $z$ est une racine (complexe) du polynôme $X^n - z$, donc un nombre complexe $\\omega$ tel que $\\omega^n=z$</li> <li>Une racine n-ième de l'unité est une racine n-ième de 1</li> <li>L'ensemble des racines n-ième de l'unité est noté $\\bb{U}_n$.</li></ul>",
+    "id": 245
+}, {
+    "type": "proposition",
+    "titre": "Explicitation des racines de l'unité",
+    "hypotheses": "",
+    "resultat": "Le groupe $\\bb{U}_n$ des racines n-ièmes de l'unité est constitué de $n$ éléments deux à deux distincts et donnés par : <br/> $$\\bb{U}_n = \\{ \\omega_k = e^{i\\frac{2\\pi k}{n}}, k \\in [\\![0, n-1]\\!] \\}$$",
+    "id": 246
+}, {
+    "type": "proposition",
+    "titre": "Racines n-ième de $z$",
+    "hypotheses": "Soit $z = re^{i\\theta}$ un nombre complexe",
+    "resultat": "<ol><li>Une racine n-ième particulière de $z$ est $\\z_0 = \\sqrt[n]{r}\\times e^{i\\frac{\\theta}{n}}$</li> <li>$z$ possède exactement $n$ racines n-ièmes, données par : <br/> $\\xi_k = z_0\\omega, \\omega \\in \\bb{U}_n$, <br/>où $\\omega_0, \\ldots, \\omega_{n-1}$ sont les racines n-ièmes de l'unité</li> <li>Ainsi, pour $z = re^{i\\theta}$, on obtient la description explicite des racines n-ièmes : <br/> $$\\xi_k = \\sqrt[n]{r}\\times e^{i\\frac{\\theta + 2k\\pi}{n}}, k \\in [\\![0, n-1]\\!]$$ </li></ol> <br/> <img class=\"imgc\" src=\"res/n_roots.png\" />",
+    "id": 247
+}, {
+    "type": "proposition",
+    "titre": "$$\\sum_{i=0}^{n-1}\\omega^i$$",
+    "hypotheses": "Soit $\\omega \\in \\bb{U}_n \\backslash \\{1\\}.$",
+    "resultat": "$$\\sum_{i=0}^{n-1}\\omega^i = 0$$",
+    "id": 248
+}, {
+    "type": "corollaire",
+    "titre": "Somme des racines n-ièmes de l'unité",
+    "hypotheses": "Soit $n \\in \\N \\backslash \\{1\\}.$",
+    "resultat": "$$\\sum_{\\omega \\in \\bb{U}_n} \\omega = 0$$",
+    "id": 249
+}, {
+    "type": "corollaire",
+    "titre": "Somme des racines n-ième de $z$",
+    "hypotheses": "Soit $n \\geqslant 2$, et $\\{\\xi_0, \\ldots, \\xi_{n-1}\\}$ l'ensemble des racines n-ièmes de $z$",
+    "resultat": "$$\\sum_{k=0}^{n-1} \\xi_k = 0$$",
+    "id": 250
+}, {
+    "type": "definition",
+    "titre": "Le complexe $j$",
+    "hypotheses": "",
+    "resultat": "On note $j$ la racine cubique de l'unité $j = e^{i\\frac{2\\pi}{3}} = -\\frac{1}{2} + i\\frac{\\sqrt{3}}{2}$.",
+    "id": 251
+}, {
+    "type": "proposition",
+    "titre": "Propriétés de j",
+    "hypotheses": "",
+    "resultat": "<ol><li>$j^3 = 1$, donc $j^n = j^r$, où $r$ est le reste de la division de $n$ par $3$</li> <li>$\\ol{j\\ } = j^2$</li> <li>$j^2 + j + 1 = 0$</li></ol>",
+    "id": 252
+}, {
+    "type": "proposition",
+    "titre": "Racines 6-ièmes de 1",
+    "hypotheses": "",
+    "resultat": "Les racines 6-ièmes de 1 sont, par ordre croissant d'arguments positifs : <br/> $1, -j^2, j, -1, j^2, -j$",
+    "id": 253
+}, {
+    "type": "methode",
+    "titre": "Recherche de racines carrées sous forme algébrique",
+    "hypotheses": "Soit $z=a+ib$ un nombre complexe sous forme algébrique $(a, b \\in \\R)$.",
+    "resultat": "Pour trouver les racines carrées sous forme algébrique : <br/> <ol> <li>Considérer une racine $z'=c+id$</li> <li>Identifier les parties imaginaires et réelles dans l'égalité $(z')^2 = z$ : en retenir essentiellement la valeur de $c^2 - d^2$ et le signe de $cd$</li> <li>Donner l'égalité des modules de $(z')^4$ et de $z^2$. Cela donne la valeur de $c^2+d^2$</li> <li>Résoudre le système en $c^2$ et $d^2$ donné par les équations ci-dessus.</li> <li>Des quatres solutions pour le couple $(c,d)$ garder les deux seules qui donnent le bon signe de $cd$</li> </ol>",
+    "id": 254
+}, {
+    "type": "definition",
+    "titre": "Affixes",
+    "hypotheses": "",
+    "resultat": "<ol><li>L'affixe d'un point $(a,b)\\in\\R^2$ est le complexe $z_A = a+ib$</li> <li>L'affixe d'un vecteur $\\vec{u} =\\!\\binom{a}{b}$ de $\\R^2$ est le complexe $z_{\\vec{u}} = a+ib$</li></ol>",
+    "id": 255
+}, {
+    "type": "proposition",
+    "titre": "Affixe d'un vecteur défini par un bipoint",
+    "hypotheses": "Soient $A$ et $B$ deux points d'affixe $z_A$ et $z_B$.",
+    "resultat": "$z_{\\vec{AB}} = z_B - z_A$",
+    "id": 256
+}, {
+    "type": "proposition",
+    "titre": "Norme d'un vecteur",
+    "hypotheses": "Soit $\\vec{u}$ un vecteur de $\\R^2$ d'affixe $z_{\\vec{u}}$",
+    "resultat": "||\\vec{u}|| = |z_{\\vec{u}|",
+    "id": 257
+}, {
+    "type": "proposition",
+    "titre": "Interprétation géométrique de $\\frac{b-a}{c-a}$",
+    "hypotheses": "Soient $a$, $b$ et $c$ trois complexes, et $A$, $B$ et $C$ les points de $\\R^2$ d'affixe $a$, $b$ et $c$.",
+    "resultat": "$$\\arg{\\frac{b-a}{c-a} = (\\vec{AC}, \\vec{AB})$$",
+    "id": 258
+}, {
+    "type": "proposition",
+    "titre": "Caractérisation de l'alignement et de l'orthogonalité",
+    "hypotheses": "Soient $A$, $B$ et $C$ trois points distincts, d'affixes $a$, $b$ et $c$.",
+    "resultat": "<ol><li>$A$, $B$ et $C$ sont alignés si et seulement si $\\frac{b-a}{c-a} \\in \\R$</li> <li>$(AB) et (AC)$ sont perpendiculaires si et seulement si $\\frac{b-a}{c-a} \\in i\\R$</li></ol>",
+    "id": 259
+}, {
+    "type": "proposition",
+    "titre": "Interprétation complexe des transformations du plan",
+    "hypotheses": "Soientt $\\vec{u}$ un vecteur du plan d'affixe $z_u$, $A$ un point du pla, d'affixe $z_A$, $\\theta$ et $\\lambda$ des réels, et $D$ une droite passant par le point $A$ et de vecteur directeur $\\vec{u}$",
+    "resultat": "<ol><li>La translation de vecteur $\\vec{u}$ correspond dans $\\C$ à la fonction $z \\rightarrow z + z_u$</li> <li>La rotation de centre $A$ et d'angle $\\theta$ (dans le sens trigonométrique, ou direct) correspond dans $\\C$ à la fonction $z \\rightarrow z_A + e^{i\\theta}(z-z_A)$</li> <li>L'homothétie de centre $A$ et de rapport $\\lambda$ correspond dans $\\C$ à la fonction $z \\rightarrow z_A + \\lambda(z-z_A)$</li> <li>La symétrie orthogonale d'axe $D$ (ou reflexion d'axe $D$) est donnée par la fonction $z\\rightarrow z_u^2 (\\ol{z\\ } - \\ol{z_A}) + z_A$</li></ol>",
+    "id": 260
+}, {
+    "type": "texte",
+    "titre": "rotation d'angle $\\frac{\\pi}{2}$(Cas particulier)",
+    "hypotheses": "",
+    "resultat": "La rotation d'angle $\\frac{\\pi}{2}$ se traduit par une multiplication par $i$ (s'en souvenir dans des contextes d'orthogonalité !)",
+    "id": 261
+}, {
+    "type": "texte",
+    "titre": "rotation d'angle $\\frac{\\pi}{3}$",
+    "hypotheses": "",
+    "resultat": "La rotation d'angle $\\frac{\\pi}{3}$ se traduit par la multiplication par $j$.",
+    "id": 262
+}, {
+    "type": "texte",
+    "titre": "rotation d'angle $\\frac{\\pi}{6}$",
+    "hypotheses": "",
+    "resultat": "La rotation d'angle $\\frac{\\pi}{6}$ se traduit par la multiplication par $-\\ol{j\\ } = -j^2$.",
+    "id": 263
+}, {
+    "type": "theoreme",
+    "titre": "Interprétation des transformations affines de $\\C$",
+    "hypotheses": "Soit $\\varphi : z \\rightarrow ax+b, a \\neq 0$ ",
+    "resultat": "<ul><li>Si $a=1$, $\\varphi$ représente une translation</li> <li>Si $a = \\lambda e^{i\\theta} \\neq 1$, il existe un point $C$ tel que $\\varphi$ représente la composée d'une rotation d'angle $\\theta$ de centre $C$ et d'une homothétie de rapport $\\lambda$ de même centre $C$.</li></ul>",
+    "id": 264
 }];
 
 const quiz_combi = [{
@@ -1361,7 +1559,7 @@ const quiz_combi = [{
 }, {
     "type": "lemme",
     "titre": "Lemme du berger",
-    "hypotheses": "Soit $f: E \\longrightarrow F$ une application surjective. <br/> On suppose qu'il existe un entier $k \\in \\mathbb{N}^*$ tel que pour tout $y \\in F$, $|f^{-1}(y)| = k$ (tous les éléments de $F$ ont le même nombre $k$ d'antécédents).",
+    "hypotheses": "Soit $f: E \\longrightarrow F$ une application surjective. <br/> On suppose qu'il existe un entier $k \\in \\N^*$ tel que pour tout $y \\in F$, $|f^{-1}(y)| = k$ (tous les éléments de $F$ ont le même nombre $k$ d'antécédents).",
     "resultat": "$|E| = k \\times |F|$",
     "id": 208
 }, {
@@ -1403,14 +1601,14 @@ const quiz_combi = [{
 }, {
     "type": "proposition",
     "titre": "Propriétés du coefficient binomial",
-    "hypotheses": "Soit $(n,k) \\in \\mathbb{Z}^2$.",
+    "hypotheses": "Soit $(n,k) \\in \\Z^2$.",
     "resultat": "<ol> <li>$\\binom{n}{k} = \\binom{n}{n-k}$ (symétrie)</li> <li>$k\\binom{n}{k} = n\\binom{n-1}{k-1}$ (formule du comité-président)</li> <li>si $(n,k) \\neq (-1, -1)$, $\\binom{n}{k} + \\binom{n}{k+1} = \\binom{n+1}{k+1}$</li> </ol>",
     "id": 215
 }, {
     "type": "theoreme",
     "titre": "Formule du binôme",
     "hypotheses": "",
-    "resultat": "Pour $n \\in \\mathbb{N}$, $$(a+b)^n = \\sum_{k=0}^n\\binom{n}{k}a^kb^{n-k}$$",
+    "resultat": "Pour $n \\in \\N$, $$(a+b)^n = \\sum_{k=0}^n\\binom{n}{k}a^kb^{n-k}$$",
     "id": 216
 }, {
     "type": "methode",
