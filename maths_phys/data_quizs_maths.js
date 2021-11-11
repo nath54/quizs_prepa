@@ -1705,6 +1705,6 @@ const Quizs = {
     "Relations": quiz_relations,
     "Nombres réels": quiz_reels,
     "Complexes": quiz_nb_complexes,
-    "Trigonométrie - incomplet": quiz_trigo,
+    "Trigonométrie": quiz_trigo,
     "Combinatoire": quiz_combi
 };
