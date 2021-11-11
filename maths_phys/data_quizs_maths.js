@@ -832,6 +832,198 @@ const quiz_nb_complexes = [{
     "hypotheses": "Soit $z_1$ et $z_2$ deux nombres complexes donnés sous forme algébrique avec $z_2 \\neq 0$.",
     "resultat": "Pour trouver la forme algébrique du quotient $\\frac{z_1}{z_2}$, multipliez le dénominateur par $\\ol{z_2}$. De la sorte, le dénominateur est maintenant un réel.",
     "id": 127
+}, {
+    "type": "definition",
+    "titre": "Exponentielle complexe",
+    "hypotheses": "Soit $z$ un nombre complexe.",
+    "resultat": "On définit alors $e^z = e^{\\Re(z)}\\times e^{i\\Im(z)}$",
+    "id": 237
+}, {
+    "type": "proposition",
+    "titre": "$Re(e^z)$",
+    "hypotheses": "",
+    "resultat": "$\\Re(e^z) = e^{\\Re(z)}\\cos(\\Im(z))$",
+    "id": 238
+}, {
+    "type": "proposition",
+    "titre": "$\\Im(z)$",
+    "hypotheses": "",
+    "resultat": "$\\Im(e^z) = e^{\\Re(z)}\\sin(\\Im(z))$",
+    "id": 239
+}, {
+    "type": "proposition",
+    "titre": "$|e^z|$",
+    "hypotheses": "",
+    "resultat": "$|e^z| = e^{\\Re(z)}$",
+    "id": 240
+}, {
+    "type": "proposition",
+    "titre": "$\\arg(e^z)$",
+    "hypotheses": "",
+    "resultat": "$\\arg(e^z) = \\Im(z) [2\\pi]$",
+    "id": 241
+}, {
+    "type": "theoreme",
+    "titre": "Propriété d'addition (exponentielle complexe)",
+    "hypotheses": "Soit $(z, z') \\in \\C$",
+    "resultat": "$e^{z+z'} = e^ze^{z'}$",
+    "id": 242
+}, {
+    "type": "proposition",
+    "titre": "Cas d'égalité (exponentielle complexe)",
+    "hypotheses": "Soit $(z,z') \\in \\C^2$",
+    "resultat": "On a $e^z = e^{z'}$ si et seulement si $\\Re(z) = \\Re(z')$ et $\\Im(z) = \\Im(z')\\mod[2\\pi]$, autrement dit, si $z-z' \\in 2i\\pi\\Z$.",
+    "id": 243
+}, {
+    "type": "proposition",
+    "titre": "Recherche de l'image réciproque",
+    "hypotheses": "Soit $a \\in \\C^2$",
+    "resultat": "<ul><li>si $a = 0$, l'équation $e^z=a$ n'a pas de solutions</li> <li>si $a \\neq 0$, l'équation $e^z = a$ a une infinité de solutions, décrites par : <br/> $\\Re(z) = \\ln(|a|)$  et  $\\Im(z) \\equiv \\arg(a)[2\\pi]$</li></ul>",
+    "id": 244
+}, {
+    "type": "definition",
+    "titre": "Racines n-ièmes, groupe $\\bb{U}_n$",
+    "hypotheses": "",
+    "resultat": "<ul><li>Soit $n \\in \\N^*$ et $z\\in\\Z$. Une racine n-ième de $z$ est une racine (complexe) du polynôme $X^n - z$, donc un nombre complexe $\\omega$ tel que $\\omega^n=z$</li> <li>Une racine n-ième de l'unité est une racine n-ième de 1</li> <li>L'ensemble des racines n-ième de l'unité est noté $\\bb{U}_n$.</li></ul>",
+    "id": 245
+}, {
+    "type": "proposition",
+    "titre": "Explicitation des racines de l'unité",
+    "hypotheses": "",
+    "resultat": "Le groupe $\\bb{U}_n$ des racines n-ièmes de l'unité est constitué de $n$ éléments deux à deux distincts et donnés par : <br/> $$\\bb{U}_n = \\{ \\omega_k = e^{i\\frac{2\\pi k}{n}}, k \\in [\\![0, n-1]\\!] \\}$$",
+    "id": 246
+}, {
+    "type": "proposition",
+    "titre": "Racines n-ième de $z$",
+    "hypotheses": "Soit $z = re^{i\\theta}$ un nombre complexe",
+    "resultat": "<ol><li>Une racine n-ième particulière de $z$ est $\\z_0 = \\sqrt[n]{r}\\times e^{i\\frac{\\theta}{n}}$</li> <li>$z$ possède exactement $n$ racines n-ièmes, données par : <br/> $\\xi_k = z_0\\omega, \\omega \\in \\bb{U}_n$, <br/>où $\\omega_0, \\ldots, \\omega_{n-1}$ sont les racines n-ièmes de l'unité</li> <li>Ainsi, pour $z = re^{i\\theta}$, on obtient la description explicite des racines n-ièmes : <br/> $$\\xi_k = \\sqrt[n]{r}\\times e^{i\\frac{\\theta + 2k\\pi}{n}}, k \\in [\\![0, n-1]\\!]$$ </li></ol> <br/> <img class=\"imgc\" src=\"res/n_roots.png\" />",
+    "id": 247
+}, {
+    "type": "proposition",
+    "titre": "$$\\sum_{i=0}^{n-1}\\omega^i$$",
+    "hypotheses": "Soit $\\omega \\in \\bb{U}_n \\backslash \\{1\\}.$",
+    "resultat": "$$\\sum_{i=0}^{n-1}\\omega^i = 0$$",
+    "id": 248
+}, {
+    "type": "corollaire",
+    "titre": "Somme des racines n-ièmes de l'unité",
+    "hypotheses": "Soit $n \\in \\N \\backslash \\{1\\}.$",
+    "resultat": "$$\\sum_{\\omega \\in \\bb{U}_n} \\omega = 0$$",
+    "id": 249
+}, {
+    "type": "corollaire",
+    "titre": "Somme des racines n-ième de $z$",
+    "hypotheses": "Soit $n \\geqslant 2$, et $\\{\\xi_0, \\ldots, \\xi_{n-1}\\}$ l'ensemble des racines n-ièmes de $z$",
+    "resultat": "$$\\sum_{k=0}^{n-1} \\xi_k = 0$$",
+    "id": 250
+}, {
+    "type": "definition",
+    "titre": "Le complexe $j$",
+    "hypotheses": "",
+    "resultat": "On note $j$ la racine cubique de l'unité $j = e^{i\\frac{2\\pi}{3}} = -\\frac{1}{2} + i\\frac{\\sqrt{3}}{2}$.",
+    "id": 251
+}, {
+    "type": "proposition",
+    "titre": "Propriétés de j",
+    "hypotheses": "",
+    "resultat": "<ol><li>$j^3 = 1$, donc $j^n = j^r$, où $r$ est le reste de la division de $n$ par $3$</li> <li>$\\ol{j\\ } = j^2$</li> <li>$j^2 + j + 1 = 0$</li></ol>",
+    "id": 252
+}, {
+    "type": "proposition",
+    "titre": "Racines 6-ièmes de 1",
+    "hypotheses": "",
+    "resultat": "Les racines 6-ièmes de 1 sont, par ordre croissant d'arguments positifs : <br/> $1, -j^2, j, -1, j^2, -j$",
+    "id": 253
+}, {
+    "type": "methode",
+    "titre": "Recherche de racines carrées sous forme algébrique",
+    "hypotheses": "Soit $z=a+ib$ un nombre complexe sous forme algébrique $(a, b \\in \\R)$.",
+    "resultat": "Pour trouver les racines carrées sous forme algébrique : <br/> <ol> <li>Considérer une racine $z'=c+id$</li> <li>Identifier les parties imaginaires et réelles dans l'égalité $(z')^2 = z$ : en retenir essentiellement la valeur de $c^2 - d^2$ et le signe de $cd$</li> <li>Donner l'égalité des modules de $(z')^4$ et de $z^2$. Cela donne la valeur de $c^2+d^2$</li> <li>Résoudre le système en $c^2$ et $d^2$ donné par les équations ci-dessus.</li> <li>Des quatres solutions pour le couple $(c,d)$ garder les deux seules qui donnent le bon signe de $cd$</li> </ol>",
+    "id": 254
+}, {
+    "type": "definition",
+    "titre": "Affixes",
+    "hypotheses": "",
+    "resultat": "<ol><li>L'affixe d'un point $(a,b)\\in\\R^2$ est le complexe $z_A = a+ib$</li> <li>L'affixe d'un vecteur $\\vec{u} =\\!\\binom{a}{b}$ de $\\R^2$ est le complexe $z_{\\vec{u}} = a+ib$</li></ol>",
+    "id": 255
+}, {
+    "type": "proposition",
+    "titre": "Affixe d'un vecteur défini par un bipoint",
+    "hypotheses": "Soient $A$ et $B$ deux points d'affixe $z_A$ et $z_B$.",
+    "resultat": "$z_{\\vec{AB}} = z_B - z_A$",
+    "id": 256
+}, {
+    "type": "proposition",
+    "titre": "Norme d'un vecteur",
+    "hypotheses": "Soit $\\vec{u}$ un vecteur de $\\R^2$ d'affixe $z_{\\vec{u}}$",
+    "resultat": "||\\vec{u}|| = |z_{\\vec{u}|",
+    "id": 257
+}, {
+    "type": "proposition",
+    "titre": "Interprétation géométrique de $\\frac{b-a}{c-a}$",
+    "hypotheses": "Soient $a$, $b$ et $c$ trois complexes, et $A$, $B$ et $C$ les points de $\\R^2$ d'affixe $a$, $b$ et $c$.",
+    "resultat": "$$\\arg{\\frac{b-a}{c-a} = (\\vec{AC}, \\vec{AB})$$",
+    "id": 258
+}, {
+    "type": "proposition",
+    "titre": "Caractérisation de l'alignement et de l'orthogonalité",
+    "hypotheses": "Soient $A$, $B$ et $C$ trois points distincts, d'affixes $a$, $b$ et $c$.",
+    "resultat": "<ol><li>$A$, $B$ et $C$ sont alignés si et seulement si $\\frac{b-a}{c-a} \\in \\R$</li> <li>$(AB) et (AC)$ sont perpendiculaires si et seulement si $\\frac{b-a}{c-a} \\in i\\R$</li></ol>",
+    "id": 259
+}, {
+    "type": "proposition",
+    "titre": "Interprétation complexe des transformations du plan",
+    "hypotheses": "Soientt $\\vec{u}$ un vecteur du plan d'affixe $z_u$, $A$ un point du pla, d'affixe $z_A$, $\\theta$ et $\\lambda$ des réels, et $D$ une droite passant par le point $A$ et de vecteur directeur $\\vec{u}$",
+    "resultat": "<ol><li>La translation de vecteur $\\vec{u}$ correspond dans $\\C$ à la fonction $z \\rightarrow z + z_u$</li> <li>La rotation de centre $A$ et d'angle $\\theta$ (dans le sens trigonométrique, ou direct) correspond dans $\\C$ à la fonction $z \\rightarrow z_A + e^{i\\theta}(z-z_A)$</li> <li>L'homothétie de centre $A$ et de rapport $\\lambda$ correspond dans $\\C$ à la fonction $z \\rightarrow z_A + \\lambda(z-z_A)$</li> <li>La symétrie orthogonale d'axe $D$ (ou reflexion d'axe $D$) est donnée par la fonction $z\\rightarrow z_u^2 (\\ol{z\\ } - \\ol{z_A}) + z_A$</li></ol>",
+    "id": 260
+}, {
+    "type": "texte",
+    "titre": "rotation d'angle $\\frac{\\pi}{2}$(Cas particulier)",
+    "hypotheses": "",
+    "resultat": "La rotation d'angle $\\frac{\\pi}{2}$ se traduit par une multiplication par $i$ (s'en souvenir dans des contextes d'orthogonalité !)",
+    "id": 261
+}, {
+    "type": "texte",
+    "titre": "rotation d'angle $\\frac{\\pi}{3}$",
+    "hypotheses": "",
+    "resultat": "La rotation d'angle $\\frac{\\pi}{3}$ se traduit par la multiplication par $j$.",
+    "id": 262
+}, {
+    "type": "texte",
+    "titre": "rotation d'angle $\\frac{\\pi}{6}$",
+    "hypotheses": "",
+    "resultat": "La rotation d'angle $\\frac{\\pi}{6}$ se traduit par la multiplication par $-\\ol{j\\ } = -j^2$.",
+    "id": 263
+}, {
+    "type": "theoreme",
+    "titre": "Interprétation des transformations affines de $\\C$",
+    "hypotheses": "Soit $\\varphi : z \\rightarrow ax+b, a \\neq 0$ ",
+    "resultat": "<ul><li>Si $a=1$, $\\varphi$ représente une translation</li> <li>Si $a = \\lambda e^{i\\theta} \\neq 1$, il existe un point $C$ tel que $\\varphi$ représente la composée d'une rotation d'angle $\\theta$ de centre $C$ et d'une homothétie de rapport $\\lambda$ de même centre $C$.</li></ul>",
+    "id": 264
+}, {
+    "type": "definition",
+    "titre": "Isométries et similitudes",
+    "hypotheses": "Soit $F: \\R^2 \\longrightarrow R^2$ une application.",
+    "resultat": "<ol> <li>On dit que $F$ est une isométrie affine si $F$ conserve les longueurs, donc si pour tout $(A, B) \\in (\\R^2)^2$, $||F(A)F(B)|| = ||AB||$. Cela se traduit par une application $\\varphi: \\C \\longrightarrow \\C$ vérifiant $|\\varphi(z_2) - \\varphi(z_1)| = |z_2 - z_1|$, pour tous $z_1$ et $z_2$</li> <li>On dit que $F$ est une isométrie vectorielle si $F$ est une isométrie affine telle que $F(O) = O$, où $O = (0,0)$</li> <li>On dit que $F$ est une similitude affine s'il existe $\\lambda \\in \\R_+^*$ tel que pour tout $(A, B) \\in (\\R^2)^2$, $||f(A)f(B)|| = \\lambda||AB||$, ce qui se traduit par $|\\varphi(z_2) - \\varphi(z_1)| = \\lambda|z_2 - z_1|$</li> <li>On dit que $F$ est une similitude vectorielle si $F$ est une similitude affine telle que $F(O) = O$</li> </ol>",
+    "id": 265
+}, {
+    "type": "theoreme",
+    "titre": "Les $z\\rightarrow az + b$ ou $z\\rightarrow a\\ol{z\\ }+b$",
+    "hypotheses": "",
+    "resultat": "Les applications $z\\rightarrow az + b$ ou $z\\rightarrow a\\ol{z\\ }+b$ correspondent à des similitudes, qui sont des isométries si de plus $|a| = 1$",
+    "id": 266
+}, {
+    "type": "proposition",
+    "titre": "Caractérisation des droites",
+    "hypotheses": "",
+    "resultat": "La droite passant par $A$ d'affixe $a$ et $B$ d'affixe $b$ est l'ensemble constitué des points $M$ d'affixe $z$ tels que l'une des propriétés équivalentes suivantes soit vérifié : <br/> <ol><li>il existe $t \\in \\R$ tel que $z = (1-t)a + tb$</li> <li>$z=a$, ou $z\\neq a$ et $\\arg(z-a) \\equiv \\arg(b-a) [\\pi]$</li> <li>$\\frac{z-a}{b-a} \\in \\R$</li></ol>",
+    "id": 267
+}, {
+    "type": "proposition",
+    "titre": "Caractérisation des cercles",
+    "hypotheses": "",
+    "resultat": "Un sous ensemble $C$ de $\\C$ est un cercle éventuellement vide si et seulement si il existe un complexe $\\alpha$ et un réel $\\beta$ tels que $C$ soit l'ensemble des points d'affixe $z$ vérifiant : <br/> $z \\times \\ol{z\\ } + \\alpha \\times z + \\ol{\\alpha}\\times \\ol{z\\ } + \\beta = 0$<br/>L'ensemble $C$ est dans ce cas non vide si et seulement si $\\beta \\leqslant \\alpha\\ol{\\alpha}$ et dans ce cas, son centre est le point d'affixe $-\\ol{\\alpha}$ et son rayon est $r = \\sqrt{\\alpha\\ol{\\alpha} - \\beta}$",
+    "id": 268
 }];
 
 const quiz_trigo = [{
@@ -1266,174 +1458,6 @@ const quiz_trigo = [{
     "hypotheses": "Soit $a$ et $b$ deux réels, avec $b\\not\\equiv0[2\\pi]$.",
     "resultat": "$$\\text{Soit } C = \\cos(a) + \\cos(a+b) + \\cos(a+2b) + \\ldots + \\cos(a+nb) = \\sum_{k=0}^n\\cos(a+kb)$$.<br/>$$\\text{Alors : } C = \\cos(a + \\frac{bn}{2}) \\times \\frac{\\sin(\\frac{n+\\! 1}{2}\\times b)}{\\sin(\\frac{b}{2})}$$",
     "id": 236
-}, {
-    "type": "definition",
-    "titre": "Exponentielle complexe",
-    "hypotheses": "Soit $z$ un nombre complexe.",
-    "resultat": "On définit alors $e^z = e^{\\Re(z)}\\times e^{i\\Im(z)}$",
-    "id": 237
-}, {
-    "type": "proposition",
-    "titre": "$Re(e^z)$",
-    "hypotheses": "",
-    "resultat": "$\\Re(e^z) = e^{\\Re(z)}\\cos(\\Im(z))$",
-    "id": 238
-}, {
-    "type": "proposition",
-    "titre": "$\\Im(z)$",
-    "hypotheses": "",
-    "resultat": "$\\Im(e^z) = e^{\\Re(z)}\\sin(\\Im(z))$",
-    "id": 239
-}, {
-    "type": "proposition",
-    "titre": "$|e^z|$",
-    "hypotheses": "",
-    "resultat": "$|e^z| = e^{\\Re(z)}$",
-    "id": 240
-}, {
-    "type": "proposition",
-    "titre": "$\\arg(e^z)$",
-    "hypotheses": "",
-    "resultat": "$\\arg(e^z) = \\Im(z) [2\\pi]$",
-    "id": 241
-}, {
-    "type": "theoreme",
-    "titre": "Propriété d'addition (exponentielle complexe)",
-    "hypotheses": "Soit $(z, z') \\in \\C$",
-    "resultat": "$e^{z+z'} = e^ze^{z'}$",
-    "id": 242
-}, {
-    "type": "proposition",
-    "titre": "Cas d'égalité (exponentielle complexe)",
-    "hypotheses": "Soit $(z,z') \\in \\C^2$",
-    "resultat": "On a $e^z = e^{z'}$ si et seulement si $\\Re(z) = \\Re(z')$ et $\\Im(z) = \\Im(z')\\mod[2\\pi]$, autrement dit, si $z-z' \\in 2i\\pi\\Z$.",
-    "id": 243
-}, {
-    "type": "proposition",
-    "titre": "Recherche de l'image réciproque",
-    "hypotheses": "Soit $a \\in \\C^2$",
-    "resultat": "<ul><li>si $a = 0$, l'équation $e^z=a$ n'a pas de solutions</li> <li>si $a \\neq 0$, l'équation $e^z = a$ a une infinité de solutions, décrites par : <br/> $\\Re(z) = \\ln(|a|)$  et  $\\Im(z) \\equiv \\arg(a)[2\\pi]$</li></ul>",
-    "id": 244
-}, {
-    "type": "definition",
-    "titre": "Racines n-ièmes, groupe $\\bb{U}_n$",
-    "hypotheses": "",
-    "resultat": "<ul><li>Soit $n \\in \\N^*$ et $z\\in\\Z$. Une racine n-ième de $z$ est une racine (complexe) du polynôme $X^n - z$, donc un nombre complexe $\\omega$ tel que $\\omega^n=z$</li> <li>Une racine n-ième de l'unité est une racine n-ième de 1</li> <li>L'ensemble des racines n-ième de l'unité est noté $\\bb{U}_n$.</li></ul>",
-    "id": 245
-}, {
-    "type": "proposition",
-    "titre": "Explicitation des racines de l'unité",
-    "hypotheses": "",
-    "resultat": "Le groupe $\\bb{U}_n$ des racines n-ièmes de l'unité est constitué de $n$ éléments deux à deux distincts et donnés par : <br/> $$\\bb{U}_n = \\{ \\omega_k = e^{i\\frac{2\\pi k}{n}}, k \\in [\\![0, n-1]\\!] \\}$$",
-    "id": 246
-}, {
-    "type": "proposition",
-    "titre": "Racines n-ième de $z$",
-    "hypotheses": "Soit $z = re^{i\\theta}$ un nombre complexe",
-    "resultat": "<ol><li>Une racine n-ième particulière de $z$ est $\\z_0 = \\sqrt[n]{r}\\times e^{i\\frac{\\theta}{n}}$</li> <li>$z$ possède exactement $n$ racines n-ièmes, données par : <br/> $\\xi_k = z_0\\omega, \\omega \\in \\bb{U}_n$, <br/>où $\\omega_0, \\ldots, \\omega_{n-1}$ sont les racines n-ièmes de l'unité</li> <li>Ainsi, pour $z = re^{i\\theta}$, on obtient la description explicite des racines n-ièmes : <br/> $$\\xi_k = \\sqrt[n]{r}\\times e^{i\\frac{\\theta + 2k\\pi}{n}}, k \\in [\\![0, n-1]\\!]$$ </li></ol> <br/> <img class=\"imgc\" src=\"res/n_roots.png\" />",
-    "id": 247
-}, {
-    "type": "proposition",
-    "titre": "$$\\sum_{i=0}^{n-1}\\omega^i$$",
-    "hypotheses": "Soit $\\omega \\in \\bb{U}_n \\backslash \\{1\\}.$",
-    "resultat": "$$\\sum_{i=0}^{n-1}\\omega^i = 0$$",
-    "id": 248
-}, {
-    "type": "corollaire",
-    "titre": "Somme des racines n-ièmes de l'unité",
-    "hypotheses": "Soit $n \\in \\N \\backslash \\{1\\}.$",
-    "resultat": "$$\\sum_{\\omega \\in \\bb{U}_n} \\omega = 0$$",
-    "id": 249
-}, {
-    "type": "corollaire",
-    "titre": "Somme des racines n-ième de $z$",
-    "hypotheses": "Soit $n \\geqslant 2$, et $\\{\\xi_0, \\ldots, \\xi_{n-1}\\}$ l'ensemble des racines n-ièmes de $z$",
-    "resultat": "$$\\sum_{k=0}^{n-1} \\xi_k = 0$$",
-    "id": 250
-}, {
-    "type": "definition",
-    "titre": "Le complexe $j$",
-    "hypotheses": "",
-    "resultat": "On note $j$ la racine cubique de l'unité $j = e^{i\\frac{2\\pi}{3}} = -\\frac{1}{2} + i\\frac{\\sqrt{3}}{2}$.",
-    "id": 251
-}, {
-    "type": "proposition",
-    "titre": "Propriétés de j",
-    "hypotheses": "",
-    "resultat": "<ol><li>$j^3 = 1$, donc $j^n = j^r$, où $r$ est le reste de la division de $n$ par $3$</li> <li>$\\ol{j\\ } = j^2$</li> <li>$j^2 + j + 1 = 0$</li></ol>",
-    "id": 252
-}, {
-    "type": "proposition",
-    "titre": "Racines 6-ièmes de 1",
-    "hypotheses": "",
-    "resultat": "Les racines 6-ièmes de 1 sont, par ordre croissant d'arguments positifs : <br/> $1, -j^2, j, -1, j^2, -j$",
-    "id": 253
-}, {
-    "type": "methode",
-    "titre": "Recherche de racines carrées sous forme algébrique",
-    "hypotheses": "Soit $z=a+ib$ un nombre complexe sous forme algébrique $(a, b \\in \\R)$.",
-    "resultat": "Pour trouver les racines carrées sous forme algébrique : <br/> <ol> <li>Considérer une racine $z'=c+id$</li> <li>Identifier les parties imaginaires et réelles dans l'égalité $(z')^2 = z$ : en retenir essentiellement la valeur de $c^2 - d^2$ et le signe de $cd$</li> <li>Donner l'égalité des modules de $(z')^4$ et de $z^2$. Cela donne la valeur de $c^2+d^2$</li> <li>Résoudre le système en $c^2$ et $d^2$ donné par les équations ci-dessus.</li> <li>Des quatres solutions pour le couple $(c,d)$ garder les deux seules qui donnent le bon signe de $cd$</li> </ol>",
-    "id": 254
-}, {
-    "type": "definition",
-    "titre": "Affixes",
-    "hypotheses": "",
-    "resultat": "<ol><li>L'affixe d'un point $(a,b)\\in\\R^2$ est le complexe $z_A = a+ib$</li> <li>L'affixe d'un vecteur $\\vec{u} =\\!\\binom{a}{b}$ de $\\R^2$ est le complexe $z_{\\vec{u}} = a+ib$</li></ol>",
-    "id": 255
-}, {
-    "type": "proposition",
-    "titre": "Affixe d'un vecteur défini par un bipoint",
-    "hypotheses": "Soient $A$ et $B$ deux points d'affixe $z_A$ et $z_B$.",
-    "resultat": "$z_{\\vec{AB}} = z_B - z_A$",
-    "id": 256
-}, {
-    "type": "proposition",
-    "titre": "Norme d'un vecteur",
-    "hypotheses": "Soit $\\vec{u}$ un vecteur de $\\R^2$ d'affixe $z_{\\vec{u}}$",
-    "resultat": "||\\vec{u}|| = |z_{\\vec{u}|",
-    "id": 257
-}, {
-    "type": "proposition",
-    "titre": "Interprétation géométrique de $\\frac{b-a}{c-a}$",
-    "hypotheses": "Soient $a$, $b$ et $c$ trois complexes, et $A$, $B$ et $C$ les points de $\\R^2$ d'affixe $a$, $b$ et $c$.",
-    "resultat": "$$\\arg{\\frac{b-a}{c-a} = (\\vec{AC}, \\vec{AB})$$",
-    "id": 258
-}, {
-    "type": "proposition",
-    "titre": "Caractérisation de l'alignement et de l'orthogonalité",
-    "hypotheses": "Soient $A$, $B$ et $C$ trois points distincts, d'affixes $a$, $b$ et $c$.",
-    "resultat": "<ol><li>$A$, $B$ et $C$ sont alignés si et seulement si $\\frac{b-a}{c-a} \\in \\R$</li> <li>$(AB) et (AC)$ sont perpendiculaires si et seulement si $\\frac{b-a}{c-a} \\in i\\R$</li></ol>",
-    "id": 259
-}, {
-    "type": "proposition",
-    "titre": "Interprétation complexe des transformations du plan",
-    "hypotheses": "Soientt $\\vec{u}$ un vecteur du plan d'affixe $z_u$, $A$ un point du pla, d'affixe $z_A$, $\\theta$ et $\\lambda$ des réels, et $D$ une droite passant par le point $A$ et de vecteur directeur $\\vec{u}$",
-    "resultat": "<ol><li>La translation de vecteur $\\vec{u}$ correspond dans $\\C$ à la fonction $z \\rightarrow z + z_u$</li> <li>La rotation de centre $A$ et d'angle $\\theta$ (dans le sens trigonométrique, ou direct) correspond dans $\\C$ à la fonction $z \\rightarrow z_A + e^{i\\theta}(z-z_A)$</li> <li>L'homothétie de centre $A$ et de rapport $\\lambda$ correspond dans $\\C$ à la fonction $z \\rightarrow z_A + \\lambda(z-z_A)$</li> <li>La symétrie orthogonale d'axe $D$ (ou reflexion d'axe $D$) est donnée par la fonction $z\\rightarrow z_u^2 (\\ol{z\\ } - \\ol{z_A}) + z_A$</li></ol>",
-    "id": 260
-}, {
-    "type": "texte",
-    "titre": "rotation d'angle $\\frac{\\pi}{2}$(Cas particulier)",
-    "hypotheses": "",
-    "resultat": "La rotation d'angle $\\frac{\\pi}{2}$ se traduit par une multiplication par $i$ (s'en souvenir dans des contextes d'orthogonalité !)",
-    "id": 261
-}, {
-    "type": "texte",
-    "titre": "rotation d'angle $\\frac{\\pi}{3}$",
-    "hypotheses": "",
-    "resultat": "La rotation d'angle $\\frac{\\pi}{3}$ se traduit par la multiplication par $j$.",
-    "id": 262
-}, {
-    "type": "texte",
-    "titre": "rotation d'angle $\\frac{\\pi}{6}$",
-    "hypotheses": "",
-    "resultat": "La rotation d'angle $\\frac{\\pi}{6}$ se traduit par la multiplication par $-\\ol{j\\ } = -j^2$.",
-    "id": 263
-}, {
-    "type": "theoreme",
-    "titre": "Interprétation des transformations affines de $\\C$",
-    "hypotheses": "Soit $\\varphi : z \\rightarrow ax+b, a \\neq 0$ ",
-    "resultat": "<ul><li>Si $a=1$, $\\varphi$ représente une translation</li> <li>Si $a = \\lambda e^{i\\theta} \\neq 1$, il existe un point $C$ tel que $\\varphi$ représente la composée d'une rotation d'angle $\\theta$ de centre $C$ et d'une homothétie de rapport $\\lambda$ de même centre $C$.</li></ul>",
-    "id": 264
 }];
 
 const quiz_combi = [{
@@ -1662,7 +1686,7 @@ const quiz_combi = [{
 
 /*
 
-    NEXT ID : 224
+    NEXT ID : 269
 
     ,{
         "type": "",
