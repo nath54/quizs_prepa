@@ -515,5 +515,5 @@ const quiz_cinematique_point = [{
 const Quizs = {
     "Propagation signaux": quiz_propagation_signal,
     "Superposition de signaux/interférences de deux ondes": quiz_superposition_signaux_interference_ondes,
-    "Cinématique du point": quiz_cinematique_point
+    "Cinématique du point - incomplet": quiz_cinematique_point
 };
