@@ -1456,7 +1456,7 @@ const quiz_trigo = [{
     "type": "texte",
     "titre": "Exemple du noyau de Dirichlet",
     "hypotheses": "Soit $a$ et $b$ deux réels, avec $b\\not\\equiv0[2\\pi]$.",
-    "resultat": "$$\\text{Soit } C = \\cos(a) + \\cos(a+b) + \\cos(a+2b) + \\ldots + \\cos(a+nb) = \\sum_{k=0}^n\\cos(a+kb)$$.<br/>$$\\text{Alors : } C = \\cos(a + \\frac{bn}{2}) \\times \\frac{\\sin(\\frac{n+\\! 1}{2}\\times b)}{\\sin(\\frac{b}{2})}$$",
+    "resultat": "$$\\text{Soit } C = \\cos(a) + \\cos(a+b) + \\cos(a+2b) + \\ldots + \\cos(a+nb) = \\sum_{k=0}^n\\cos(a+kb)$$<br/>$$\\text{Alors : } C = \\cos(a + \\frac{bn}{2}) \\times \\frac{\\sin(\\frac{n+\\! 1}{2}\\times b)}{\\sin(\\frac{b}{2})}$$",
     "id": 236
 }];
 
