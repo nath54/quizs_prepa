@@ -494,6 +494,59 @@ const quiz_cinematique_point = [{
     "titre": "Trajectoire d'un point",
     "resultat": "La trajectoire de $M$ dans un référentiel $\\cal{R}$ est l'ensemble des positions successivement occupées par le point $M$ au cours du temps. Cette trajectoire dépend du choix du référentiel $\\cal{R}$, c'est à dire l'observateur.",
     "id": 97
+}, {
+    "type": "texte",
+    "titre": "Equation paramétriques du mouvement",
+    "resultat": "On peut donner directement les composantes fonctoins scalaires de $t$ : ce qu'on appelle : les \"equations paramétriques du mouvement\".<br/> Exemple : s$x(t)$, $y(t)$, $z(t)$ ou encore $r(t)$ ou $\\theta(t)$ dans le plan $xOy$.",
+    "id": 98
+}, {
+    "type": "texte",
+    "titre": "Equation de la trajectoire",
+    "resultat": "On peut \"éliminer la variable de temps\" et donner alors l'équation de la trajectoire : <br/><ul> <li>En coordonnées cartésiennes: $y = f(x)$ ou plus simplement $y(x)$</li> <li>En coordonnées polaires : $r = f(\\theta)$ ou plus simplement $r(\\theta)$.</li> </ul>",
+    "id": 99
+}, {
+    "type": "texte",
+    "titre": "Dérivée scalaire",
+    "hypotheses": "Soit une fonction scalaire $f(t)$. Soit en $t_0$ la valeur $f(t_0)$. Soit en $t$, un instant voisin tel que $t = t_0 + \\Delta t$.",
+    "resultat": "$f(t) = f(t_0 + \\Delta t) = f(t_0) + \\Delta$.<br/>$$\\lim\\limits_{\\Delta t \\to 0}\\frac{f(t_0 + \\Delta t) - f(t_0)}{\\Delta t} = \\frac{df}{dt})_{t_0}$$. <br/> $f(t) = f(t_0)+df$ ou encore $df = f(t_0+dt) - f(t_0)$.",
+    "id": 100
+}, {
+    "type": "propriete",
+    "titre": "Quelques propriétés sur la dérivation scalaire",
+    "resultat": "-$d(f+g) = df + dg$<br/>-$d(\\lambda f) = \\lambda \\times df$<br/>-$d(fg) = f\\times d(g)+g\\times d(f)$<br/>-$d(ln(f)) = \\frac{df}{f}$",
+    "id": 101
+}, {
+    "type": "texte",
+    "titre": "Derivée vectorielle",
+    "hypotheses": "Soit $\\vec{A}(t)$ une fonction vectorielle dans la base cartésienne : $\\vec{A}(t) = A_x(t)\\times\\vec{u_x} + A_y(t)\\vec{u_y} + A_z(t)\\vec{u_z}$. Soit $\\vec{A}(t_0)$ la valeur de cette fonction à l'instant $t_0$ : son extrémité est représentée par le point $M_0$. Soit un instant $t = t_0 + \\Delta t$. Son extrémitée est représentée par le point $M$.",
+    "resultat": "$\\Delta\\vec{A} = \\vec{A}(t) - \\vec{A}(t_0)$<br/>On rapproche $M$ de $M_0$, $$\\lim\\limits_{\\Delta t \\to 0}\\frac{\\vec{A}(t_0 + \\Delta t)-\\vec{A}(t_0)}{\\Delta t} = \\frac{d\\vec{A}}{dt})_{t_0}$$<br/>$d\\vec{A} \\approx \\vec{M_0M}$ assimilé à la tangente à la courbe décrite par l'extrémité du vecteur $\\vec{A}$ au point $M_0$.",
+    "id": 102
+}, {
+    "type": "texte",
+    "titre": "Composantes du vecteur $\\frac{d\\vec{A}}{dt})_{t_0}$",
+    "resultat": "Le vecteur $\\frac{d\\vec{a}}{dt})_{t_0}$ a pour composantes (cartésiennes par ex) les trois dérivées $(\\frac{dA_x}{dt}, \\frac{dA_y}{dt}, \\frac{dA_z}{dt})$",
+    "id": 103
+}, {
+    "type": "texte",
+    "titre": "Dérivée d'un vecteur constant",
+    "resultat": "La dérivée d'un vecteur constant est le vecteur nul.",
+    "id": 104
+}, {
+    "type": "propriete",
+    "titre": "Quelques propriétés de la dérivation vectorielle",
+    "resultat": "$\\bullet\\ \\frac{d}{dt}(\\vec{A}+\\vec{B}) = \\frac{d\\vec{A}}{dt}+\\frac{d\\vec{B}}{dt}$<br/>$\\bullet\\ \\frac{d}{dt}(\\lambda\\vec{A}) = \\lambda\\frac{d\\vec{A}}{dt}$<br/>$\\bullet\\ \\frac{d}{dt}(\\vec{A}\\times\\vec{B}) = \\frac{d\\vec{A}}{dt}\\times \\vec{B} + \\vec{A} + \\frac{d\\vec{B}}{dt}$<br/>$\\bullet\\ \\frac{d}{dt}(\\vec{A}\\land\\vec{B}) = \\frac{d\\vec{A}}{dt}\\land\\vec{B} + \\vec{A}\\frac{d\\vec{B}}{dt}$",
+    "id": 105
+}, {
+    "type": "definition",
+    "titre": "Vecteur vitesse d'un point $M$",
+    "hypotheses": "Soit un référentiel d'étude $\\cal{R}$.",
+    "resultat": "Le point matériel évolue en fonction du temps et sa position est repérée par le vecteur position $\\vec{OM}(t)$<br/>$\\vec{v}(M)_{\\cal{R}} = \\frac{d\\vec{OM}(t)}{dt})_{\\cal{R}}$<br/>$\\bullet$ La direction et le sens du vecteur vitesse $\\vec{v}$ sont ceux du déplacement.<br/>$\\bullet$ Le vecteur $\\vec{v}$ est tangent à la trajectoire du mobile dans le sens du mouvement<br/>$\\bullet$ La norme du vecteur vitesse est exprimée en mètres par secondes (m/s)",
+    "id": 106
+}, {
+    "type": "propriete",
+    "titre": "Uniformité d'un mouvement",
+    "resultat": "Un mouvement, dont la norme du vecteur vitesse $||\\vec{v}||| = v$ est une constante, est dit uniforme.",
+    "id": 107
 }];
 
 /*
