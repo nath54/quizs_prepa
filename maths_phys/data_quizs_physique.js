@@ -557,6 +557,16 @@ const quiz_cinematique_point = [{
     "titre": "Vecteur vitesse",
     "resultat": "La vitesse est le déplacement par unité de temps soit $\\frac{d\\vec{OM}}{dt}$.<br/>Vecteur vitesse en coordonnées cartésiennes : <br/> $\\vec{v}(M) = \\frac{dx}{dt}\\vec{u_x} + \\frac{dy}{dt}\\vec{u_y} + \\frac{dz}{dt}\\vec{u_z}$<br/>Sa norme exprimée dans ce système de coordonnées<br/>$||\\vec{v}|| = \\sqrt{(\\frac{dx}{dt})^2 + (\\frac{dy}{dt})^2 + (\\frac{dz}{dt})^2}$",
     "id": 109
+}, {
+    "type": "texte",
+    "titre": "Vecteur vitesse en coordonnées cylindriques",
+    "resultat": "$\\vec{v}(M) = \\frac{dr}{dt}\\vec{u_r} + r\\frac{d\\theta}{dt}\\vec{u_{\\theta}} + \\frac{dz}{dt}\\vec{u_z}$",
+    "id": 110
+}, {
+    "type": "texte",
+    "titre": "Vecteur vitesse en coordonnées polaires",
+    "resultat": "La restriction aux deux premieres coordonnées des cylindriques donne le vecteur vitesse en coordonnées polaires dans le plan $xOy$:<br/>$\\vec{v}(M) = \\frac{dr}{dt}\\vec{u} + r\\frac{d\\theta}{dt}\\vec{u_{\\theta}}$.<br/>On en déduit sa norme dans le plan : <br/>$||\\vec{v}|| = \\sqrt{(\\frac{dr}{dt})^2 + (r\\frac{d\\theta}{dt})^2}$",
+    "id": 111
 }];
 
 /*
