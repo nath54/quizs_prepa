@@ -293,3 +293,16 @@ function card_not_known() {
 function retour_index() {
     window.location.href = "index.html?matiere=" + window.matiere;
 }
+
+function decoche_reussies() {
+    for (q of window.questions_justes) {
+        if (!window.disabled.includes(q.id)) {
+            window.disabled.push(q.id);
+        } else {
+            console.log("TEST ", q);
+        }
+    }
+    save_cookie(window.disabled, window.matiere);
+    //
+    alert("Opération effectuée.");
+}

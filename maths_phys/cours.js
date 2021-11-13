@@ -4,10 +4,16 @@ window.cours = {
 }
 
 var view = false;
+var toggle_cache = false; // Indique si c'est activé ou pas (le fait de cacher les "connaissances" qui ont été décochées)
 
 function init_2() {
     // ON RECUPERE LES COOKIES
     window.disabled = load_cookie(window.matiere);
+    var cook_cache = getCookie("toggle_cache");
+    if (cook_cache != "") {
+        if (cook_cache == "true") toggle_cache = true;
+        else toggle_cache = false;
+    }
     // ON RECUPERE LE THEME
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -133,6 +139,9 @@ function affMots() {
             //
             if (is_disabled) {
                 box.classList.add("disabled");
+                if (toggle_cache) {
+                    box.style.display = "none";
+                }
             }
             for (node of box.children) {
                 if (node.tagName != "DIV") {
@@ -161,10 +170,15 @@ function cb_pressed(cb) {
     var box = cb.parentNode.parentNode;
     //
     if (cb.checked) {
+        if (toggle_cache) {
+            box.style.display = "block";
+        }
         box.classList.remove("disabled");
         window.disabled = arrayRemove(window.disabled, id_elt);
     } else {
-
+        if (toggle_cache) {
+            box.style.display = "none";
+        }
         box.classList.add("disabled");
         if (!window.disabled.includes(id_elt)) {
             window.disabled.push(id_elt);
@@ -196,6 +210,7 @@ function toggle_view() {
         document.getElementById("bt_view").classList.replace("btn-primary", "btn-outline-primary");
         document.getElementById("bt_inverse").style.display = "none";
         document.getElementById("bt_reset").style.display = "none";
+        document.getElementById("bt_hider").style.display = "none";
     } else {
         view = true;
         for (n of document.getElementsByClassName("check_box_bt")) {
@@ -207,6 +222,7 @@ function toggle_view() {
         document.getElementById("bt_view").classList.replace("btn-outline-primary", "btn-primary");
         document.getElementById("bt_inverse").style.display = "initial";
         document.getElementById("bt_reset").style.display = "initial";
+        document.getElementById("bt_hider").style.display = "initial";
     }
 }
 
@@ -221,5 +237,27 @@ function reset() {
         if (!bt.checked) {
             bt.click();
         }
+    }
+}
+
+function toggle_hide() {
+    for (bt of document.getElementsByClassName("check_box_bt")) {
+        var box = bt.parentNode.parentNode;
+        if (toggle_cache) { // Il faut rendre visible tous ceux qui ont été cachés
+            // if (box.style.display == "none") {
+            box.style.display = "block";
+            // }
+        } else { // Il faut cacher tous ceux qui ont été décochés
+            if (!bt.checked) {
+                box.style.display = "none";
+            }
+        }
+    }
+    if (toggle_cache) {
+        toggle_cache = false;
+        setCookie("toggle_cache", "false");
+    } else {
+        toggle_cache = true;
+        setCookie("toggle_cache", "true");
     }
 }
