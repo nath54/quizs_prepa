@@ -547,6 +547,16 @@ const quiz_cinematique_point = [{
     "titre": "Uniformité d'un mouvement",
     "resultat": "Un mouvement, dont la norme du vecteur vitesse $||\\vec{v}||| = v$ est une constante, est dit uniforme.",
     "id": 107
+}, {
+    "type": "definition",
+    "titre": "Vecteur de déplacement élémentaire",
+    "resultat": "On appelle vecteur de \"déplacement élémentaire\" la variation du vecteur position $\\vec{OM}(t)$ pendant un intervalle de temps infinitésimal : <br/>$\\vec{OM}(t+dt) - \\vec{OM}(t) = d\\vec{OM} = d\\vec{l}$",
+    "id": 108
+}, {
+    "type": "texte",
+    "titre": "Vecteur vitesse",
+    "resultat": "La vitesse est le déplacement par unité de temps soit $\\frac{d\\vec{OM}}{dt}$.<br/>Vecteur vitesse en coordonnées cartésiennes : <br/> $\\vec{v}(M) = \\frac{dx}{dt}\\vec{u_x} + \\frac{dy}{dt}\\vec{u_y} + \\frac{dz}{dt}\\vec{u_z}$<br/>Sa norme exprimée dans ce système de coordonnées<br/>$||\\vec{v}|| = \\sqrt{(\\frac{dx}{dt})^2 + (\\frac{dy}{dt})^2 + (\\frac{dz}{dt})^2}$",
+    "id": 109
 }];
 
 /*
