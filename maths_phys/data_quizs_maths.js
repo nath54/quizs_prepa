@@ -896,7 +896,7 @@ const quiz_nb_complexes = [{
     "type": "proposition",
     "titre": "Racines n-ième de $z$",
     "hypotheses": "Soit $z = re^{i\\theta}$ un nombre complexe",
-    "resultat": "<ol><li>Une racine n-ième particulière de $z$ est $\\z_0 = \\sqrt[n]{r}\\times e^{i\\frac{\\theta}{n}}$</li> <li>$z$ possède exactement $n$ racines n-ièmes, données par : <br/> $\\xi_k = z_0\\omega, \\omega \\in \\bb{U}_n$, <br/>où $\\omega_0, \\ldots, \\omega_{n-1}$ sont les racines n-ièmes de l'unité</li> <li>Ainsi, pour $z = re^{i\\theta}$, on obtient la description explicite des racines n-ièmes : <br/> $$\\xi_k = \\sqrt[n]{r}\\times e^{i\\frac{\\theta + 2k\\pi}{n}}, k \\in [\\![0, n-1]\\!]$$ </li></ol> <br/> <img class=\"imgc\" src=\"res/n_roots.png\" />",
+    "resultat": "<ol><li>Une racine n-ième particulière de $z$ est $z_0 = \\sqrt[n]{r}\\times e^{i\\frac{\\theta}{n}}$</li> <li>$z$ possède exactement $n$ racines n-ièmes, données par : <br/> $\\xi_k = z_0\\omega, \\omega \\in \\bb{U}_n$, <br/>où $\\omega_0, \\ldots, \\omega_{n-1}$ sont les racines n-ièmes de l'unité</li> <li>Ainsi, pour $z = re^{i\\theta}$, on obtient la description explicite des racines n-ièmes : <br/> $$\\xi_k = \\sqrt[n]{r}\\times e^{i\\frac{\\theta + 2k\\pi}{n}}, k \\in [\\![0, n-1]\\!]$$ </li></ol> <br/> <img class=\"imgc\" src=\"res/n_roots.png\" />",
     "id": 247
 }, {
     "type": "proposition",
@@ -956,13 +956,13 @@ const quiz_nb_complexes = [{
     "type": "proposition",
     "titre": "Norme d'un vecteur",
     "hypotheses": "Soit $\\vec{u}$ un vecteur de $\\R^2$ d'affixe $z_{\\vec{u}}$",
-    "resultat": "||\\vec{u}|| = |z_{\\vec{u}|",
+    "resultat": "$||\\vec{u}|| = |z_{\\vec{u}}|$",
     "id": 257
 }, {
     "type": "proposition",
     "titre": "Interprétation géométrique de $\\frac{b-a}{c-a}$",
     "hypotheses": "Soient $a$, $b$ et $c$ trois complexes, et $A$, $B$ et $C$ les points de $\\R^2$ d'affixe $a$, $b$ et $c$.",
-    "resultat": "$$\\arg{\\frac{b-a}{c-a} = (\\vec{AC}, \\vec{AB})$$",
+    "resultat": "$$\\arg{\\frac{b-a}{c-a}} = (\\vec{AC}, \\vec{AB})$$",
     "id": 258
 }, {
     "type": "proposition",
