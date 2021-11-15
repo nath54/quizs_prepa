@@ -18,7 +18,9 @@ MathJax = {
             D: "\\mathbb{D}",
             Q: "\\mathbb{Q}",
             C: "\\mathbb{C}",
-            R: "\\mathbb{R}"
+            R: "\\mathbb{R}",
+            dpdot: ["  \\dot{ \\raisebox{2pt}{#1} }", 1],
+            dpddot: ["\\ddot{ \\raisebox{0pt}[\\dimexpr\\height+#1][\\depth]{#2} }", 2]
         }
     }
 };

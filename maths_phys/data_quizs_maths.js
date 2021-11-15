@@ -824,7 +824,7 @@ const quiz_nb_complexes = [{
     "type": "propriete",
     "titre": "Propriétés du module",
     "hypotheses": "Soit $z$ et $z'$ deux nombres complexes.",
-    "resultat": "<ol><li>$z = 0 \\iff |z| = 0$</li> <li>$|\\Re(z)| \\leqslant |z| \\ $   et   $\\ |\\Im(z)| \\leqslant |z|$</li> <li>$|z|^2 = z\\ol{z\\ }$</li> <li>$|zz'| = |z|\\times|z'| \\ $ et si $z' \\neq 0$, $|\\frac{z}{z'}| = \\frac{|z|}{|z'|}$</li> <li>$|z| = |\\ol{z\\ }|$</li> <li>$|z + z'| = |z| + |z'|$</li></ol>",
+    "resultat": "<ol><li>$z = 0 \\iff |z| = 0$</li> <li>$|\\Re(z)| \\leqslant |z| \\ $   et   $\\ |\\Im(z)| \\leqslant |z|$</li> <li>$|z|^2 = z\\ol{z\\ }$</li> <li>$|zz'| = |z|\\times|z'| \\ $ et si $z' \\neq 0$, $|\\frac{z}{z'}| = \\frac{|z|}{|z'|}$</li> <li>$|z| = |\\ol{z\\ }|$</li> <li>$|z + z'| \\leqslant |z| + |z'|$</li></ol>",
     "id": 126
 }, {
     "type": "methode",

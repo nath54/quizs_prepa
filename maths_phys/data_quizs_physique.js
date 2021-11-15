@@ -567,6 +567,27 @@ const quiz_cinematique_point = [{
     "titre": "Vecteur vitesse en coordonnées polaires",
     "resultat": "La restriction aux deux premieres coordonnées des cylindriques donne le vecteur vitesse en coordonnées polaires dans le plan $xOy$:<br/>$\\vec{v}(M) = \\frac{dr}{dt}\\vec{u} + r\\frac{d\\theta}{dt}\\vec{u_{\\theta}}$.<br/>On en déduit sa norme dans le plan : <br/>$||\\vec{v}|| = \\sqrt{(\\frac{dr}{dt})^2 + (r\\frac{d\\theta}{dt})^2}$",
     "id": 111
+}, {
+    "type": "texte",
+    "titre": "Vecteur vitesse du mouvement circulaire",
+    "resultat": "Mouvement plan avec la distance $r = cste = R$ (rayon du cercle). La trajectoire circulaire est de rayon $R$ => La vitesse est uniquement portée par $\\vec{u_0}$. <br/> $(\\vec{v})_{circ} = R \\cdot d(\\theta) \\cdot \\vec{u_0}$",
+    "id": 112
+}, {
+    "type": "texte",
+    "titre": "Vecteur vitesse en coordonnées sphériques",
+    "resultat": "$\\vec{v}(M) = d(r) \\cdot \\vec{u_r} + r \\cdot d(\\theta) \\times \\vec{u_0} + r \\cdot \\sin(\\theta) \\cdot d(\\varphi) \\cdot \\vec{u_{\\varphi}}$",
+    "id": 113
+}, {
+    "type": "definition",
+    "titre": "Accélération d'un point matériel $\\vec{a}(M)$",
+    "hypotheses": "Dans un référentiel défini $\\cal{R}$ : ",
+    "resultat": "$$\\vec{a}(M)_{\\cal{R}} = \\frac{d\\vec{v}(M)}{dt} = \\frac{d^2\\vec{OM}}{dt^2})_{\\cal{R}}$$",
+    "id": 114
+}, {
+    "type": "definition",
+    "titre": "Mouvement rectiligne",
+    "resultat": "Le mouvement rectiligne selon l'axe cartésien $(O, x)$ est défini par : <br/> $\\vec{OM} = x(t)\\vec{u_x}$, $\\vec{v} = d(x)\\vec{u_x}$, $\\vec{a} = d^2(x)\\vec{u_x}$",
+    "id": 115
 }];
 
 /*
