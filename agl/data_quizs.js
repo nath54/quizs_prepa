@@ -769,6 +769,33 @@ const quiz_internet = [
     ["to fine somebody", "condammer quelqu'un à une amende"]
 ];
 
+
+const quiz_climate_change = [
+    [
+        ["climate science", "climatology"], "la climatologie", 623
+    ],
+    ["the climate crisis", "la crise climatique", 624],
+    ["climate advocates", "les défenseurs du climat", 625],
+    [
+        ["man-made", "anthropogenic"], "anthropogénique", 626
+    ],
+    [
+        ["a climate scientist", "a climatologist"], "un climatologue", 627
+    ],
+    ["global warming", ["le réchauffement climatique", "le réchauffement de la planète", "le réchauffement de l'atmosphère"], 628],
+    ["a rise in temperatures", "une augmentation des températures", 629],
+    ["to forecast", "prévoir", 630],
+    ["a weather station", "une station météorologique", 631],
+    ["rain patterns", "régime des précipitations", 632],
+    ["to monitor temperatures", "surveiller l'évolution des températures", 633],
+    ["the burning of fossil fuels", "la combustion d'énergies fossiles", 634],
+    [""]
+];
+
+// NEXT FREE ID : 623 
+// console.log("NEXT FREE ID : ", id_q);
+
+
 // TOUS LES QUIZS SONT DANS LA VARIABLE QUIZS
 
 const Quizs = {
@@ -777,10 +804,12 @@ const Quizs = {
     "abortion": quiz_abortion,
     "computer science": quiz_computer_science,
     "internet": quiz_internet,
+    "climate change": quiz_climate_change,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action
 };
+
 
 const VERSION_DATA_AGL = 1;
 // Ceci ne caractérise pas la version réelle de ce fichier
@@ -803,6 +832,3 @@ for (theme of Object.keys(Quizs)) {
         }
     }
 }
-
-// NEXT FREE ID : 623 
-// console.log("NEXT FREE ID : ", id_q);
