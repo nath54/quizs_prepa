@@ -854,8 +854,100 @@ const quiz_climate_change = [
     ["actions speak louder than words", "les gestes sont plus éloquents que les mots", 685]
 ];
 
-// NEXT FREE ID : 623 
-// console.log("NEXT FREE ID : ", id_q);
+const quiz_environment = [
+    ["environmental", ["écologique", "lié à l'environnement"], 686],
+    [
+        ["an environmentally-friendly policy", "an environment-friendly policy", "an eco-friendly policy"], "une politique qui respecte l'environnement", 687
+    ],
+    [
+        ["to protect the environment", "to preserve the environment"], "protéger l'environnement", 688
+    ],
+    ["the preservation of the environment", "la protection de l'environnement", 689],
+    ["nature", "la nature", 690],
+    ["nature conservation", "la protection de la nature", 691],
+    ["wildlife", "la faune et la flore", 692],
+    ["a conservationist", "un défenseur de l'environnement", 693],
+    [
+        ["an environmentalist", "an ecologist"], "un écologiste", 694
+    ],
+    [
+        ["a green activist", "an eco-warrior"], "un militant écologiste", 695
+    ],
+    ["a tree-hugger", "un écolo", 696],
+    ["to make people aware of the problem", "sensibiliser les gens à un problème", 697],
+    ["an awareness(-raising) campaign", "une campagne de sensibilisation", 698],
+    [
+        ["a natural reserve", "a national park"], "un parc naturel", 699
+    ],
+    ["eco-tourism", "le tourisme écologique", 700],
+    ["to destroy the biosphere", "détruire la biosphère", 701],
+    [
+        ["to be a threath to something", "to pose a threat to something"],
+        ["être une menace pour quelque chose", "représenter une menace pour quelque chose"], 702
+    ],
+    [
+        ["to jeopardize something", "to endanger something"], "mettre en danger quelque chose", 703
+    ],
+    ["to put something at risk", "mettre quelque chose en danger", 704],
+    [
+        ["to be at rist", "to be in danger"], "être en danger", 705
+    ],
+    [
+        ["to harm the environment", "to do harm the environment"], "nuire à l'environnement", 706
+    ],
+    ["harmful", ["nuisible", "nocif"], 707],
+    ["harmless", ["inoffensif", "sans danger"], 708],
+    ["damage", "dégâts", 709],
+    ["to damage something", ["endommager quelque chose", "porter atteinte à quelque chose"], 710],
+    [
+        ["to do damage", "to cause damage"], "causer des dégâts", 711
+    ],
+    ["to détériorate", ["se détériorer", "détériorer"], 712],
+    ["natural resources", "les ressources naturelles", 713],
+    ["the depletion of resources", "l'épuisement des ressources", 714],
+    ["scarity", "la rareté", 715],
+    ["raw materials", "les matières premières", 716],
+    ["biodiversity", "la biodiversité", 717],
+    ["habitat", "l'habitat", 718],
+    ["a niche", "une niche", 719],
+    ["a conservation area", ["un secteur sauvegardé", "une zone protégée"], 720],
+    ["an ecosystem", "un écosystème", 721],
+    ["a species", "une espèce", 722],
+    ["an animal species", "une espèce animale", 723],
+    ["a plant species", "une espèce végétale", 724],
+    ["a mammal", "un mammifère", 725],
+    ["animal trafficking", "le trafic d'animaux", 726],
+    ["an endangered species", "une espèce en voie de disparition", 727],
+    ["to be threatened with extinction", "être menacé d'extinction", 728],
+    ["to become extinct", "disparaître", 729],
+    ["overdishing", "la surpêche", 730],
+    ["bluefin tuna", "le thong rouge", 731],
+    ["a doplhin", "un dolphin", 732],
+    ["a whale", "une baleine", 733],
+    ["whaling", "la pêche à la baleine", 734],
+    ["the ozone layer", "la couche d'ozone", 735],
+    ["ultra-violets rays", "les rayons ultra-violets", 736],
+    ["the hole in the ozone layer", "le trou dans la couche d'ozone", 737],
+    ["ozone depletion", "la diminution de la couche d'ozone", 738],
+    ["CFCs", "les CFC", 739],
+    ["ozone-friendly", "respectueux de la couche d'ozone", 740],
+    [
+        ["a rainforest", "a tropical forest"], "une forêt tropicale", 741
+    ],
+    ["sustainable development", "le développement durable", 742],
+    [
+        ["to fell trees", "to cut down trees"], "abattre des arbres", 743
+    ],
+    ["deforestation", ["le déboisement", "la déforestation"], 744],
+    ["logging", "l'exploitation du bois", 745],
+    ["the logging industry", "l'industrie du bois", 746],
+    ["the rainforest is shrinking", "la forêt tropicale se réduit", 747],
+    ["to reforest", "reboiser", 748],
+    ["reforestation", "le reboisement", 749]
+];
+
+// NEXT FREE ID : 750
+
 
 
 // TOUS LES QUIZS SONT DANS LA VARIABLE QUIZS
@@ -867,6 +959,7 @@ const Quizs = {
     "computer science": quiz_computer_science,
     "internet": quiz_internet,
     "climate change": quiz_climate_change,
+    "the environment": quiz_environment,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action
@@ -894,3 +987,6 @@ for (theme of Object.keys(Quizs)) {
         }
     }
 }
+
+
+// console.log("NEXT FREE ID : ", id_q);
