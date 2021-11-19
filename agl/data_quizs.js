@@ -789,7 +789,69 @@ const quiz_climate_change = [
     ["rain patterns", "régime des précipitations", 632],
     ["to monitor temperatures", "surveiller l'évolution des températures", 633],
     ["the burning of fossil fuels", "la combustion d'énergies fossiles", 634],
-    [""]
+    ["carbon dioxide", ["le dioxide de carbone", "CO2"], 635],
+    ["the greenhouse effect", "l'effet de serre", 636],
+    ["greenhouse gases", "les gaz à effet de serre", 637],
+    ["greenhouse gas emission", ["les émissions de gaz à effet de serre", "les rejets de gas à effet de serre"], 638],
+    ["carbon emissions", "les émissions de dioxyde de carbone", 639],
+    [
+        ["to cut carbon emissions", "to curb carbon emssions"], "réduire les émissions de carbone", 640
+    ],
+    ["to reduce one's carbon imprint", "réduire son empreinte carbone", 641],
+    ["overconsumption", "la surconsommation", 642],
+    ["the sea level", "le niveau de la mer", 643],
+    ["a rise in sea level", "une élévation du niveau de la mer", 644],
+    ["to flood", "inonder", 645],
+    ["a flood", "une inondation", 646],
+    ["above sea level", "au-dessus du niveau de la mer", 647],
+    ["below sea level", "en-dessous du niveau de la mer", 648],
+    ["damage", "des dégâts", 649],
+    [
+        ["to cause damage", "to do damage"],
+        ["provoquer des dégâts", "causes des dégâts"], 650
+    ],
+    ["harmful", ["nocif", "néfaste"], 651],
+    [
+        ["to be at risk", "to be in danger"],
+        ["être en danger", "être menacé"], 652
+    ],
+    ["a glacier", "un glacier", 653],
+    ["the polar icecap", ["la calotte glaciaire", "la calotte polaire"], 654],
+    ["the North/South Pole", "le pôle Nord/Sud", 655],
+    [
+        ["icefield", "ice floe"], "la banquise", 656
+    ],
+    ["a polar bear", ["un ours polaire", "un ours blanc"], 657],
+    ["to thaw", ["fondre", "dégeler"], 658],
+    ["thaw", "dégel", 659],
+    ["to melt", "fondre", 660],
+    ["fresh water", "l'eau douce", 661],
+    ["sea water", "eau de mer", 662],
+    ["groundwater", "la nappe phréatique", 663],
+    ["to cap", ["plafonner", "imposer un plafond à"], 664],
+    ["carbon trading", "le commerce des droits d'émission du carbone", 665],
+    ["cap and trade", "plafonner et échanger (les quotas d'émissions)", 666],
+    ["a green tax", "une taxe verte", 667],
+    ["to introduce a carbon tax", "instaurer une taxe carbone", 668],
+    [
+        ["a climate change denier", "a climate sceptic"], "un climatosceptique", 669
+    ],
+    ["to stop wasting energy", "arrêter de gaspiller de l'énergie", 670],
+    ["low-energy lightbulbs", "des ampoules basse consommation", 671],
+    ["to switch off electrical appliances", "éteindre les appareils électriques", 672],
+    ["to insulate a room", "isoler une pièce", 673],
+    ["insulation", "l'isolation (thermique)", 674],
+    ["to cycle to work", "aller au travail en bicyclette", 675],
+    ["a bicycle-sharing system", "un système de vélos en libre-service", 676],
+    ["climate justice", "justice climatique", 677],
+    ["to make people aware of a problem", "sensibiliser le public à un problème", 678],
+    ["an awareness(-raising) campaign", "une campagne de sensibilisation", 679],
+    ["to sound the alarm", "tirer la sonnette d'alarme", 680],
+    ["to give the alert", "donner l'alerte", 681],
+    ["a wake-up call", "un avertissement", 682],
+    ["to pay lip-service to a cause", "faire des promesses sans jamais prendre de mesures concrètes", 683],
+    ["to put your money where your mouth is", "joindre le geste à la parole", 684],
+    ["actions speak louder than words", "les gestes sont plus éloquents que les mots", 685]
 ];
 
 // NEXT FREE ID : 623 
