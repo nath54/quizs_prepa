@@ -68,6 +68,7 @@ function init_2() {
             // window.questions = window.questions.concat(Quizs[theme]);
             for (question of Quizs[theme]) {
                 if (!window.disabled.includes(question.id)) {
+                    question.chapitre = theme;
                     window.questions.push(question);
                 }
             }
@@ -115,6 +116,7 @@ function next_question() {
                 break
         }
         document.getElementById("bt_known").style.display = "none";
+        document.getElementById("card_chapitre").innerHTML = compile_txt(window.questions[window.question_actu_id].chapitre);
         document.getElementById("card_titre").innerHTML = txt_comp + compile_txt(window.questions[window.question_actu_id].titre);
         document.getElementById("card_hypotheses").innerHTML = "";
         document.getElementById("card_resultat").innerHTML = "";
@@ -144,7 +146,7 @@ function reveal() {
     if (window.state == 1) {
         var date = new Date();
         if (date.getTime() - window.deb_att >= tps_attente) {
-            if (window.matiere == "maths") {
+            if (window.questions[window.question_actu_id].hasOwnProperty("hypothese")) {
                 document.getElementById("card_hypotheses").innerHTML = compile_txt(window.questions[window.question_actu_id].hypotheses);
             }
             document.getElementById("card_resultat").innerHTML = compile_txt(window.questions[window.question_actu_id].resultat);

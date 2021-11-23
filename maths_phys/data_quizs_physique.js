@@ -586,8 +586,69 @@ const quiz_cinematique_point = [{
 }, {
     "type": "definition",
     "titre": "Mouvement rectiligne",
-    "resultat": "Le mouvement rectiligne selon l'axe cartésien $(O, x)$ est défini par : <br/> $\\vec{OM} = x(t)\\vec{u_x}$, $\\vec{v} = d(x)\\vec{u_x}$, $\\vec{a} = d^2(x)\\vec{u_x}$",
+    "resultat": "Le mouvement rectiligne selon l'axe cartésien $(O, x)$ est défini par : <br/> $\\ \\ \\vec{OM} = x(t)\\vec{u_x}\\ $, $\\ \\ \\vec{v} = d(x)\\vec{u_x}\\ $, $\\ \\ \\vec{a} = d^2(x)\\vec{u_x}$",
     "id": 115
+}, {
+    "type": "definition",
+    "titre": "Mouvement rectiligne uniforme",
+    "resultat": "Le mouvement rectiligne uniforme à la vitesse constante $v_0 \\vec{u_x}$ est définit par : <br/> $\\ \\ \\vec{a} = \\vec{0}\\ $, $\\ \\ \\vec{v} = v_0 \\vec{u_x}\\ $, $\\ \\ x(t) = v_0 t + x_0$",
+    "id": 116
+}, {
+    "type": "definition",
+    "titre": "Mouvement rectiligne uniformément varié",
+    "hypotheses": "Soit $\\vec{v_0}$ la vitesse initiale portée par l'axe $x(v_O\\vec{u_x})$ et $x_0$ est l'abscisse initiale du mobile à la date $t=0$.",
+    "resultat": "Le mouvement rectiligne uniformément varié d'accélération constante $a\\vec{u_x}$ est définit par : <br/> $\\vec{a} = a\\vec{u_x}, \\ $, $\\ \\ \\vec{v} = (at + v_0)\\vec{u_x}\\ $, et $\\ \\ x(t) = \\frac{1}{2}at^2 + v_0t + x_0$",
+    "id": 117
+}, {
+    "type": "definition",
+    "titre": "Mouvement rectiligne sinusoïdal",
+    "resultat": "$\\vec{a}(M) = -\\omega^2\\vec{OM}$ <br/> La caractéristique principale des mouvements harmoniques est donc que l'accélération et la position sont reliées par une équation différentielle linéaire du deuxième ordre (célèbre équation d'oscillateur harmonique)<br/>$d^2(x) + \\omega_0^2 x = 0$.",
+    "id": 118
+}, {
+    "type": "definition",
+    "titre": "Amplitude d'une oscillation harmonique ",
+    "resultat": "L'amplitude d'une oscillation harmonique est l'écart maximal à la valeur médiane (qui est en général la position d'équilibre, et qui est de plus la \"valeur moyenne\" du signal du fait de la symétrie des alternances)",
+    "id": 119
+}, {
+    "type": "definition",
+    "titre": "Fréquence d'un mouvement oscillatoire mécanique",
+    "resultat": "Tout mouvement oscillatoire mécanique ici (même non sinusoïdal) possède une propriété importante, sa fréquence, qui est le nombre d'oscillations effectuées chaque secondes. Le symbole est $f$ et l'unité est le herz. <br/> 1 hertz = 1Hz = 1 oscillation par seconde = $1s^{-1}$ <br/> La période du signal vaut : $T = \\frac{1}{f}$: (dimension : temps et unité : seconde): temps requis pour effectuer une oscillation complète (ou cycle).",
+    "id": 120
+}, {
+    "type": "definition",
+    "titre": "Mouvement circulaire",
+    "resultat": "Le point $M$ suit un mouvement circulaire s'il se déplace sur un cercle de rayon $R$; sa vitesse angulaire est $\\omega = d(\\theta)$ et dans le repère cylindrique réduit au plan du cercle, le vecteur position s'écrit $\\vec{OM} = R\\vec{u_r}$.",
+    "id": 121
+}, {
+    "type": "texte",
+    "titre": "Mouvement circulaire uniforme",
+    "resultat": "$d(\\theta) = \\omega = \\frac{2\\pi}{T}$<br/> où $T$ est la période de révolution. On en déduit alors l'équation paramétrique du mouvement : $\\theta = \\omega t + \\theta_0$ où $\\theta_0$ est l'angle de repérage à $t=0$. <br/> Dans la base polaire, on a : <br/>$$\\vec{OM} = \\left | \\begin{array}{ll} R \\\\ 0 \\end{array} \\right.$$ $$\\vec{v} = \\left | \\begin{array}{ll} 0 \\\\ R\\omega \\end{array} \\right.$$ $$\\vec{a} = \\left | \\begin{array}{ll} -R\\omega^2 = -\\frac{v^2}{R} \\\\ 0 \\end{array} \\right.$$",
+    "id": 122
+}, {
+    "type": "propriete",
+    "titre": "Propriété du mouvement circulaire uniforme",
+    "resultat": "Dans un mouvement circulaire uniforme : <br/> $||\\vec{v}|| = v = R\\omega$ et $||\\vec{a}|| = R\\omega^2 = \\frac{v^2}{R}$",
+    "id": 123
+}, {
+    "type": "texte",
+    "titre": "Mouvement uniforme",
+    "resultat": "Mouvement uniforme $\\iff$ $v = ||\\vec{v}|| = $ constante $\\iff$ $\\frac{dv}{dt} = 0$",
+    "id": 124
+}, {
+    "type": "texte",
+    "titre": "Mouvement accéléré",
+    "resultat": "Mouvement accéléré $\\iff$ $v$ est croissante $\\iff$ $\\frac{dv}{dt} \\gt 0$",
+    "id": 125
+}, {
+    "type": "texte",
+    "titre": "Mouvement décéléré",
+    "resultat": "Mouvement décéléré $\\iff$ $v$ est décroissante $\\iff$ $\\frac{dv}{dt} \\lt 0$",
+    "id": 126
+}, {
+    "type": "texte",
+    "titre": "Vecteur accélération dans l'étude des mouvements circulaires",
+    "resultat": "Dans l'étude des mouvements circulaires, le vecteur accélération peut s'écrire : $\\vec{a} = -\\frac{v^2}{R} \\vec{u_r} + \\frac{dv}{dt} \\vec{u_{\\theta}}$",
+    "id": 127
 }];
 
 /*
@@ -609,5 +670,5 @@ const quiz_cinematique_point = [{
 const Quizs = {
     "Propagation signaux": quiz_propagation_signal,
     "Superposition de signaux/interférences de deux ondes": quiz_superposition_signaux_interference_ondes,
-    "Cinématique du point - incomplet": quiz_cinematique_point
+    "Cinématique du point": quiz_cinematique_point
 };

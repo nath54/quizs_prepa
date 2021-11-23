@@ -878,7 +878,7 @@ const quiz_nb_complexes = [{
     "type": "proposition",
     "titre": "Recherche de l'image réciproque",
     "hypotheses": "Soit $a \\in \\C^2$",
-    "resultat": "<ul><li>si $a = 0$, l'équation $e^z=a$ n'a pas de solutions</li> <li>si $a \\neq 0$, l'équation $e^z = a$ a une infinité de solutions, décrites par : <br/> $\\Re(z) = \\ln(|a|)$  et  $\\Im(z) \\equiv \\arg(a)[2\\pi]$</li></ul>",
+    "resultat": "<ul><li>si $a = 0$, l'équation $e^z=a$ n'a pas de solutions</li> <li>si $a \\neq 0$, l'équation $e^z = a$ a une inftyité de solutions, décrites par : <br/> $\\Re(z) = \\ln(|a|)$  et  $\\Im(z) \\equiv \\arg(a)[2\\pi]$</li></ul>",
     "id": 244
 }, {
     "type": "definition",
@@ -1682,8 +1682,46 @@ const quiz_combi = [{
     "hypotheses": "",
     "resultat": "Remarquez qu'un signe $(-1)^n$ associé à un coefficient binomial correspond souvent à une comparaison de parités de cardinaux. On peut passer d'un cardinal pair à un cardinal impair, et vice-versa, en \"allumant ou éteignant\" un élément fixé à l'avance suivant qu'il est déjà ou non dans notre ensemble (plus précisement, il s'agit de l'opération $X \\rightarrow X \\Delta \\{x\\}$.)",
     "id": 224
-}]
+}];
 
+
+const quiz_limites = [{
+    "type": "remarque",
+    "titre": "Adhérence",
+    "hypotheses": "",
+    "resultat": "Si $X$ est un sous(ensemble quelconque de $\\R$, on peut considérer la limite en un point $a$ de l'adhérence $\\ol{X}$ de $X$, défini comme étant le plus petit fermé contenant $X$, ou de façon équivalente, l'ensemble des points $x$ pouvant être approché d'aussi près qu'on veut par des points de $X$ (i.e. tout voisinage de $x$ rencontre $X$)",
+    "id": 269
+}, {
+    "type": "definition",
+    "titre": "Limite réelle lorsque $x$ tend vers $a$",
+    "hypotheses": "Soit $a \\in \\ol{X} \\cap \\R$",
+    "resultat": "Soit $b \\in \\R$. On dit que $f(x)$ tend vers $b$ lorsque $x$ tend vers $a$ si :    $\\forall \\varepsilon \\gt 0, \\exists \\eta \\gt 0, \\forall x \\in X, |x − a| \\leqslant \\eta \\implies |f(x)−b| \\leqslant \\varepsilon$",
+    "id": 270
+}, {
+    "type": "definition",
+    "titre": "Limite $+\\infty$ lorsque $x$ tend vers $a$",
+    "hypotheses": "Soit $a \\in \\ol{X} \\cap \\R$",
+    "resultat": "On dit que $f(x)$ tend vers $+\\infty$ lorsque $x$ tend vers $a$ si :    $\\forall A \\in \\R, \\exists \\eta \\gt 0, \\forall x \\in X, |x - a| \\leqslant \\eta \\implies f(x) \\geqslant A$",
+    "id": 271
+}, {
+    "type": "definition",
+    "titre": "Limite $-\\infty$ lorsque $x$ tend vers $a$",
+    "hypotheses": "Soit $a \\in \\ol{X} \\cap \\R$",
+    "resultat": "On dit que $f(x)$ tend vers $-\\infty$ lorsque $x$ tend vers $a$ si :    $\\forall A \\in \\R, \\exists \\eta \\gt 0, \\forall x \\in X, |x - a| \\leqslant \\eta \\implies f(x) \\leqslant A$",
+    "id": 272
+}, {
+    "type": "proposition",
+    "titre": "Limite en un point du domaine",
+    "hypotheses": "Soit $a \\in X$",
+    "resultat": "Si $f(x)$ admet une limite en $a$, alors cette limite est nécessairement égale à $f(a)$.",
+    "id": 273
+}, {
+    "type": "definition",
+    "titre": "Limites dans des espaces métriques",
+    "hypotheses": "Soit $(E, d)$ et $(F, d')$ deux espaces métriques, et $X \\subset E$. Soit $f : X \\longrightarrow F$. <br/> Soit $a \\in \\ol{X}$, et $b \\in F$.",
+    "resultat": "Comme dans le cas de $\\R$, on peut considérer l'adhérence $\\ol{X}$ de $X$ dans $E$. On dit que $f$ admet une limite $b$ en $a$ si : <br/>$\\forall \\varepsilon \\gt 0, \\exists \\eta \\gt 0, \\forall x \\in X, d(x, a) \\lt \\eta \\implies d'(f(x), b) \\lt \\varepsilon$",
+    "id": 274
+}];
 /*
 
     NEXT ID : 269
@@ -1706,5 +1744,6 @@ const Quizs = {
     "Nombres réels": quiz_reels,
     "Complexes": quiz_nb_complexes,
     "Trigonométrie": quiz_trigo,
-    "Combinatoire": quiz_combi
+    "Combinatoire": quiz_combi,
+    "Limites - incomplet": quiz_limites
 };
