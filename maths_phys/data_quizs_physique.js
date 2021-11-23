@@ -651,6 +651,142 @@ const quiz_cinematique_point = [{
     "id": 127
 }];
 
+const quiz_dynamique_point = [{
+    "type": "definition",
+    "titre": "Système mécanique",
+    "resultat": "Un système mécanique est un esemble de points matériels.",
+    "id": 128
+}, {
+    "type": "definition",
+    "titre": "Point matériel",
+    "resultat": "Un point matériel est un sytème de petite taille (ou encore on dit aussi \"un objet physique\") pouvant être assimilé à un point mathématique. Sa position peut être décrite à l'aide de trois coordonnées seulement.",
+    "id": 129
+}, {
+    "type": "texte",
+    "titre": "Masse d'un système",
+    "resultat": "Quelque soit le système mécanique, on peut lui attribuer une masse $m$ (en kg) qui caractérise les propriétés d'inertie du corps (c'est-à-dire la difficulté à le mettre en mouvement ou à modifier son mouvement).<br/> <b>La masse est une grandeur intrinsèque</b> indépendante de tout référentiel et indépendante de l'état du mouvement du système (donc indépendante de la vitesse par exemple !).",
+    "id": 130
+}, {
+    "type": "definition",
+    "titre": "Centre d'inertie",
+    "hypotheses": "Soit un système (S) formé de deux points matériels $M_1$ et $M_2$ de masse respective $m_1$ et $m_2$ en mouvement dans un référentiel $\\cal{R}$ et de masse totale du système $m = m_1 + m_2$",
+    "resultat": "Le centre d'inertie du système est le point $G$ défini par la relation $$m_1 \\vec{GM_1} + m_2 \\vec{GM_2} = \\vec{O}$$",
+    "id": 131
+}, {
+    "type": "definition",
+    "titre": "Barycentre",
+    "hypotheses": "Soit un système (S) formé de deux points matériels $M_1$ et $M_2$ de masse respective $m_1$ et $m_2$ en mouvement dans un référentiel $\\cal{R}$ et de masse totale du système $m = m_1 + m_2$",
+    "resultat": "On peut définir le barycentre $G$ par sa position tel que : $$\\vec{OG} = \\frac{m_1\\vec{OM_1}+m_2\\vec{OM_2}}{m_1 + m_2}$$",
+    "id": 132
+}, {
+    "type": "definition",
+    "titre": "Quantité de mouvement",
+    "resultat": "La quantité de mouvement d'un point matériel $M$ de masse $m$ et de vecteur vitesse $\\vec{v}$ dans un référentiel d'étude $\\cal{R}$ est le vecteur : <br/> $\\vec{p}(P) = m\\vec{v}(M)$<br/>La directoin et le sens ceux du vecteur vitesse, et sa norme est exprimée en $kg \\times m \\times s^{-1}$",
+    "id": 133
+}, {
+    "type": "propriete",
+    "titre": "Propriété du centre d'inertie $G$",
+    "resultat": "La quantité de mouvement <b>totale</b> d'un système, de masse $m_{tot}=m$ et de centre d'inertie $G$, (dont la vitesse dans $\\cal{R}$ vaut $\\vec{v_G}$) vaut : <br/> $\\vec{p} = m\\vec{v_g}$",
+    "id": 134
+}, {
+    "type": "definition",
+    "titre": "Actions mécaniques",
+    "resultat": "On appelle les actions exercées par un système extérieur \"actions mécaniques\" ($\\iff$ efforts mécaniques). Ce sont les causes du mouvement : plus précisément, ces actions permettent de modifier le vecteur vitesse $\\vec{v}(M)$ du système donc de modifier son mouvement (ou le déformer).<br/>Une action exercée sur un point matériel ou un système en général est modélisé par une représentation mathématique vectorielle appelée <b>\"vecteur force $\\vec{f}$\"</b>",
+    "id": 135
+}, {
+    "type": "texte",
+    "titre": "Point matériel/Système <b>isolé</b>",
+    "resultat": "Un point matériel ou un système est dit <b>isolé</b> s'il n'est soumis à aucune force.",
+    "id": 136
+}, {
+    "type": "texte",
+    "titre": "Répartition des forces d'un système",
+    "resultat": "Les forces subies par tout matériel d'un système (S) se répartissent en : <ul><li><b>Les forces intérieures</b> subies de la part d'un autre point du système (S)</li><li><b>Les forces extérieures</b> subies de la part d'un point matériel n'appartenant pas au système (S)</li></ul>",
+    "id": 137
+}, {
+    "type": "definition",
+    "titre": "$3^{ème}$ loi de Newtom : Principe d'action réaction",
+    "hypotheses": "Soient deux points matériels $M_1$ et $M_2$ en intéraction mécanique. Soit $\\vec{f_{M_1 \\to M_2}} = \\vec{f_{21}}$ la foce subie par $M_2$ de la part de $M_1$ et $\\vec{f_{M_2 \\to M_2}} = \\vec{f_{12}}$ alors : ",
+    "resultat": "$\\vec{f_{21}} = -\\vec{f_{12}}$<br/>La force exercée âr $M_1$ sur $m_2$ et celle exercée par $M_2$ sur $M_1$ sont opposées.<br/>Ces forces sont colinéaires à la froite $M_1M_2$",
+    "id": 138
+}, {
+    "type": "definition",
+    "titre": "$1^{ère}$ loi de Newton : Principe d'inertie",
+    "resultat": "On postule qu'il existe une classe de référentiels privilégiés, appelés \"référentiels galiléens $\\cal{R}$\" pour lesquels tout point (ou système) isolé (ou pseudo-isolé) est en mouvement rectiligne uniforme ou au repos. $\\implies$ $\\vec{v} = \\vec{\\text{constante}}$.",
+    "id": 139
+}, {
+    "type": "definition",
+    "titre": "Autre définition d'un référentiel Galiléen",
+    "resultat": "Un référentiel est galiléen si et seulement si la quantité de mouvement d'un système (S) isolé est constante dans ce référentiel, c'est à dire si son centre d'inertie $G$ y est animé d'un mouvement rectiligne uniforme (ou au repos)<br/>$\\vec{p} = \\vec{\\text{constante}}$",
+    "id": 140
+}, {
+    "type": "propriete",
+    "titre": "Existence de référentiels galiléens",
+    "resultat": "Il existe une infinité de référentiels galiléens, tous en translation rectiligne uniforme, les uns en rapport aux autres.",
+    "id": 141
+}, {
+    "type": "definition",
+    "titre": "$2^{ème}$ loi de Newton : Loi de quantité de mouvement (ou PFD)",
+    "resultat": "Cette loi est tout simplement le \"principe fondamental de la dynamique\" appelé PFD : c'est un principe d'évolution du point matériel $M$.<br/> Ce PFD peut aussi s'appeler \"loi de la quantité de mouvement\" s'il s'écrit plus spécialement avec le vecteur quantité de mouvement, dans une formulation plus général pour les systèmes.",
+    "id": 142
+}, {
+    "type": "propriete",
+    "titre": "PFD dans un référentiel galiléen",
+    "resultat": "Dans un référentiel galiléen $\\cal{R_g}$<br/>$\\rightarrow$ Pour un point matériel $M$ : $$\\sum\\vec{f_i} = \\vec{F} = \\frac{d\\vec{p}(M)}{dt}$$, ou $\\vec{F} = m\\vec{a}(M)$<br/>$\\rightarrow$ Pour un système (S) de point matériels (dont le solide) : $$\\sum\\vec{f_{i, ext}} = \\vec{F} = \\frac{d\\vec{p}}{dt}$$, ou $\\vec{F} = m\\vec{a}(G)$ si $m$ = constante.",
+    "id": 143
+}, {
+    "type": "definition",
+    "titre": "Point en équilibre",
+    "resultat": "Un point $M$ est dit en équilibre s'il est au repos dans le référentiel $\\cal{R}$ choisi $\\implies$ la résultante des vecteurs forces doit être réduite au vecteur nul + vitesse initiale nulle. Soit $\\vec{F} = \\vec{O}$ <b>et</b> $\\vec{v_0} = \\vec{O}$",
+    "id": 144
+}, {
+    "type": "definition",
+    "titre": "Force de gravitation - Loi de Newton",
+    "resultat": "$\\vec{f} = -G\\frac{m_0m}{r^2}\\vec{u_r}$",
+    "id": 145
+}, {
+    "type": "definition",
+    "titre": "Poids d'un corps",
+    "resultat": "C'est l'effet de l'interaction gravitationnelle de la Terre pour un point sur la Terre ou à son voisinage. <br/> $\\vec{P} = m\\vec{g}$",
+    "id": 146
+}, {
+    "type": "texte",
+    "titre": "Champs de pesanteur de la Terre",
+    "resultat": "Le champs de pesanteur ne dépend que de la position de $M$ mais en général on le considerera comme uniforme; sa direction définit la verticale au lieu de $M$ et sa norme vaut $g = 9,8ms^{-2}$",
+    "id": 147
+}, {
+    "type": "texte",
+    "titre": "Loi de Coulomb",
+    "resultat": "$\\vec{f} = \\frac{1}{4\\pi \\epsilon_0}\\frac{q_0q}{r^2}\\vec{u_r}",
+    "id": 148
+}, {
+    "type": "definition",
+    "titre": "Forces Newtonniennes : ",
+    "resultat": "Les forces newtoniennes sont des forces colinéaires à $\\vec{OM}$ inversement proportionnelles à $r^2$<br/> $\\vec{f} = -\\frac{K}{r^2}\\vec{u_r}$, avec $K \\gt 0$ attraction et $K \\lt 0$ répulsion.",
+    "id": 149
+}, {
+    "type": "definition",
+    "titre": "Force de Lorentz électromagnétique",
+    "resultat": "$\\vec{f} = q(\\vec{E} + \\vec{v} \\land \\vec{B})$ = $qE + q\\vec{v} \\land \\vec{B}$ = $\\vec{f_E} + \\vec{f_B}$",
+    "id": 150
+}, {
+    "type": "definition",
+    "titre": "Loi de Hooke pour un ressort",
+    "resultat": "$\\vec{f}$ ou $\\vec{T}$ = $-l(l-l_0)\\vec{u}$",
+    "id": 151
+}, {
+    "type": "texte",
+    "titre": "Mouvement d'un solide et support",
+    "resultat": "Un solide en mouvement sur un support, n'est pas soumis aux mêmes contraintes que lorsqu'il est soumis en mouvement <b>sans</b> le support.s",
+    "id": 152
+}, {
+    "type": "texte",
+    "titre": "Modélisation des interactions de contact (ou de liaison)",
+    "resultat": "Le solide d'étude $(S_1)$, appelé <b>mobile</b> interagit avec un autre solide $(S_2)$, appelé <b>support</b> qui exerce une action mécanique de contact appelé <b>réaction de support</b><br/>On suppose qu'il existe un plan tangent $\\cal{P}$ en tout point de contact entre deux solides $(S_1)$ et $(S_2)$. On note $\\vec{n} = \\vec{n_{2 \\to 1}} = \\vec{n_{\\text{support}\\to\\text{objet}}}$ la normale au plan $\\cal{P}$ de contact.<br/><b>La réaction du support est notée en général $\\vec{R} = \\vec{R_{2\\to 1}}$ et se décompose alors de la façon suivante : $\\vec{R}$ = $\\vec{R_{2 \\to 1}}$ = $\\vec{R_t} + \\vec{R_N}$</b><br/>$R_t \\in \\cal{P}$, réaction tangentielle traduit le <b>frottement solide</b> dû au contact avec le support.<br/>$\\vec{R_N} \\perp \\cal{P}$, réaction normale (orthogonale au support) empêche le solide de traverser le support, elle est dirigée suivant $\\vec{n} = \\vec{n_{2 \\to 1}}$. <br/> <br/> On admet aussi que les action  de $S_1$ sur $S_2$ sont reliées à celles de $S_2$ sur $S_1$ par $\\vec{R_{1\\to 2}} = -\\vec{R_{2 \\to 1}}$ : ceci est un conséquence de l'absence de déformation des deux solides lors du contact. <br/> $\\rightarrow$ Si le contact est <b>sans frottements</b> : $\\vec{R_t} = \\vec{O}$ et $\\vec{R} = \\vec{R_N}$ la réaction est seulement normale au support.<br/>$\\rightarrow$ Lorsque l'objet est contraint de rester en contact avec le support, on parle de liaison bilatérale.<br/>$\\rightarrow$ Lorsque l'objet est simplement posé sur une surface, il peut s'en détacher: la liaison est dite unilatérale. Dès que $\\vec{R_N} = \\vec{0}$, l'objet n'est plus lié au support et son mouvement est modifé.",
+    "id": 153
+}];
+
+
 /*
 
     ,{
@@ -660,7 +796,7 @@ const quiz_cinematique_point = [{
         "id": 0
     }
 
-    NEXT ID : 72
+    NEXT ID : 127
 
 */
 
@@ -670,5 +806,6 @@ const quiz_cinematique_point = [{
 const Quizs = {
     "Propagation signaux": quiz_propagation_signal,
     "Superposition de signaux/interférences de deux ondes": quiz_superposition_signaux_interference_ondes,
-    "Cinématique du point": quiz_cinematique_point
+    "Cinématique du point": quiz_cinematique_point,
+    "Loi de la quantité de mouvement (incomplet)": quiz_dynamique_point
 };
