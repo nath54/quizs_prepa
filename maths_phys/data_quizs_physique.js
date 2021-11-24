@@ -482,7 +482,7 @@ const quiz_cinematique_point = [{
 }, {
     "type": "texte",
     "titre": "Base de Frenet",
-    "resultat": "En chaque point $M$ de la courbe on définit la base de Frenet $\\{\\vec{u_T}, \\vec{u_N}\\} avec : <br/> $\\rightarrow \\vec{u_T}$ Vecteur unitaire tangent à la courbe en $M$ et orienté dans le sens positif choisi.<br/> $\\rightarrow \\vec{u_N} Vecteur perpendiculaire à $\\vec{u_T}$ et orienté vers le centre de courbure (de $M$ vers $C$).<br/>Cette base est \"mobile\" dans le repère.",
+    "resultat": "En chaque point $M$ de la courbe on définit la base de Frenet $\\{\\vec{u_T}, \\vec{u_N}\\}$ avec : <br/> $\\rightarrow \\vec{u_T}$ Vecteur unitaire tangent à la courbe en $M$ et orienté dans le sens positif choisi.<br/> $\\rightarrow \\vec{u_N}$ Vecteur perpendiculaire à $\\vec{u_T}$ et orienté vers le centre de courbure (de $M$ vers $C$).<br/>Cette base est \"mobile\" dans le repère.",
     "id": 95
 }, {
     "type": "texte",
@@ -757,7 +757,7 @@ const quiz_dynamique_point = [{
 }, {
     "type": "texte",
     "titre": "Loi de Coulomb",
-    "resultat": "$\\vec{f} = \\frac{1}{4\\pi \\epsilon_0}\\frac{q_0q}{r^2}\\vec{u_r}",
+    "resultat": "$\\vec{f} = \\frac{1}{4\\pi \\epsilon_0}\\frac{q_0q}{r^2}\\vec{u_r}$",
     "id": 148
 }, {
     "type": "definition",
@@ -814,6 +814,51 @@ const quiz_dynamique_point = [{
     "titre": "Force centrale",
     "resultat": "Une force $\\vec{f}(M)$ est dite centrale quand son support passe constament par un point fixe $O$ dans $\\cal{R}$, quelque soit le mouvement du point matériel.<br/>Cela se traduit mathématiquement par la relation : <br/>$\\vec{OM} \\land \\vec{f}(M) = \\vec{0}$",
     "id": 159
+}, {
+    "type": "methode",
+    "titre": "Méthode de \"résolution mécanique\"",
+    "resultat": "<ol> <li>Définir le système étudié</li> <li>Définir un référentiel $\\mathcal{R}$ d'étude</li> <li>Faire un bilan des actions</li> <li>Ecrire la loi de la quantité de mouvement ou PFD dans le référentiel d'étude</li> <li>Projeter cette relation vectorielle sur une \"base de projection\" imposée ou adabptée au problème</li> <li>Si le mouvement est supposé plan et que l'on connait à priori la trajectoire, la projection du PFD se fait souvent dans deux directions privilégiées (direction tangente, direction orthogonale)</li> <li>La projection du PFD sur la direction tangente à la trajectoire permet en général de trouver l'équation différentielle du mouvement dans le référentiel d'étude</li> <li>Les conditions initiales</li> </ol>",
+    "id": 160
+}, {
+    "type": "texte",
+    "titre": "La chute libre - Résultats importants",
+    "resultat": "Les équations initiales sont très importantes pour les équations du mouvement. <br/> $\\frac{d\\vec{p}}{dt} = m\\vec{g} \\implies \\vec{a} = \\vec{g}$ <br/> $d^2(z) = -g \\implies d(z) = -gt \\implies z = - \\frac{1}{2} gt^2 + h$",
+    "id": 161
+}, {
+    "type": "definition",
+    "titre": "Frottement visqueux linéaire",
+    "resultat": "La vitesse du mobile tend vers la vitesse limite quand le temps tend vers l'infini et évolue en deux phases : <br/>$\\rightarrow$ Une phase transitoire qui dure quelques $\\tau$ : on peut définir un temps caractéristique de mise à l'équilibre dans la résolution $\\tau = \\frac{v_t}{g} = \\frac{m}{\\lambda}$ <br/> cela permet au mobile d'accélérer jusqu'à la vitesse limite.<br/>$\\rightarrow$ Une phase de régime permanent lors de laquelle la vitesse est constante est égale à $v_t = \\frac{mg}{\\lambda}$.",
+    "id": 162
+}, {
+    "type": "texte",
+    "titre": "Equation différentielle pour la chute libre avec frottements",
+    "resultat": "$m\\frac{dv}{dt} + \\lambda v^2 = +mg$",
+    "id": 163
+}, {
+    "type": "definition",
+    "titre": "Frottement visqueux quadratique",
+    "resultat": "La vitesse du mobile tend vers la vitesse limite quand le temps tend vers l'infini et évolue en deux phases : <br/>$\\rightarrow$ Une phase transitoire qui dure quelques $\\tau$ : on peut définir un temps caractéristique de mise à l'équilibre dans la résolution $\\tau = \\frac{v_t}{g} = \\sqrt{\\frac{m}{\\lambda g}}$; cela permet au mobile d'accélerer jusqu'à la vitesse limite.<br/>$\\rightarrow$ Une phase de régime permanent lors de laquelle la vitesse est constante et égale à $$v_t = \\sqrt{\\frac{mg}{\\lambda}}$$",
+    "id": 164
+}, {
+    "type": "texte",
+    "titre": "Le pendule simple",
+    "resultat": "Un pendule simple est constitué d'un solide de petite taille (assimilé à un point matériel) de masse $m$ accroché à une potence par l'intermédiaire d'un fil de longueur $l$.",
+    "id": 165
+}, {
+    "type": "texte",
+    "titre": "Système du pendule simple",
+    "resultat": "<ul> <li><b>Système : </b> solide de masse $m$ assimilé à un point matériel $M$</li> <li><b>Choix du référentiel : </b>le référentiel terrestre supposé galiléen</li> <li><b>Bilan des forces : </b> sans frottements : Le poids $\\vec{P} = m\\vec{g}$ et la tension du fil $\\vec{T} = -T\\vec{u_r}$ </li> <li><b>Loi de la quantité de mouvement : </b> $\\frac{d\\vec{p}}{dt}$ = $m \\frac{d\\vec{v}}{dt}$ = $\\vec{P}$ = $\\vec{T}$</li></ul>",
+    "id": 166
+}, {
+    "type": "texte",
+    "titre": "Cas particulier du pendule simple avec oscillation de faible amplitude",
+    "resultat": "$$d^2(\\theta) + \\omega_0^2 \\theta = 0$$ $$\\omega_0 = \\sqrt{\\frac{g}{l}}$$<br/> Il y a isochronisme des oscillations.",
+    "id": 167
+}, {
+    "type": "texte",
+    "titre": "Equation différentielle d'un ressort simple",
+    "resultat": "$d^2(x) + \\omega_0^2 x = 0$, avec $\\omega_0^2 = \\frac{k}{m}$",
+    "id": 168
 }];
 
 
@@ -837,5 +882,5 @@ const Quizs = {
     "Propagation signaux": quiz_propagation_signal,
     "Superposition de signaux/interférences de deux ondes": quiz_superposition_signaux_interference_ondes,
     "Cinématique du point": quiz_cinematique_point,
-    "Loi de la quantité de mouvement (incomplet)": quiz_dynamique_point
+    "Loi de la quantité de mouvement": quiz_dynamique_point
 };
