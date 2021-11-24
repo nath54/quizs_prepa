@@ -784,6 +784,36 @@ const quiz_dynamique_point = [{
     "titre": "Modélisation des interactions de contact (ou de liaison)",
     "resultat": "Le solide d'étude $(S_1)$, appelé <b>mobile</b> interagit avec un autre solide $(S_2)$, appelé <b>support</b> qui exerce une action mécanique de contact appelé <b>réaction de support</b><br/>On suppose qu'il existe un plan tangent $\\cal{P}$ en tout point de contact entre deux solides $(S_1)$ et $(S_2)$. On note $\\vec{n} = \\vec{n_{2 \\to 1}} = \\vec{n_{\\text{support}\\to\\text{objet}}}$ la normale au plan $\\cal{P}$ de contact.<br/><b>La réaction du support est notée en général $\\vec{R} = \\vec{R_{2\\to 1}}$ et se décompose alors de la façon suivante : $\\vec{R}$ = $\\vec{R_{2 \\to 1}}$ = $\\vec{R_t} + \\vec{R_N}$</b><br/>$R_t \\in \\cal{P}$, réaction tangentielle traduit le <b>frottement solide</b> dû au contact avec le support.<br/>$\\vec{R_N} \\perp \\cal{P}$, réaction normale (orthogonale au support) empêche le solide de traverser le support, elle est dirigée suivant $\\vec{n} = \\vec{n_{2 \\to 1}}$. <br/> <br/> On admet aussi que les action  de $S_1$ sur $S_2$ sont reliées à celles de $S_2$ sur $S_1$ par $\\vec{R_{1\\to 2}} = -\\vec{R_{2 \\to 1}}$ : ceci est un conséquence de l'absence de déformation des deux solides lors du contact. <br/> $\\rightarrow$ Si le contact est <b>sans frottements</b> : $\\vec{R_t} = \\vec{O}$ et $\\vec{R} = \\vec{R_N}$ la réaction est seulement normale au support.<br/>$\\rightarrow$ Lorsque l'objet est contraint de rester en contact avec le support, on parle de liaison bilatérale.<br/>$\\rightarrow$ Lorsque l'objet est simplement posé sur une surface, il peut s'en détacher: la liaison est dite unilatérale. Dès que $\\vec{R_N} = \\vec{0}$, l'objet n'est plus lié au support et son mouvement est modifé.",
     "id": 153
+}, {
+    "type": "texte",
+    "titre": "Loi de Coulomb - équilibre stable",
+    "resultat": "<img class=\"imgc\" src= \"res/coulomb_41.jpg\" />",
+    "id": 154
+}, {
+    "type": "texte",
+    "titre": "Loi de Coulomb - pas d'équilibre",
+    "resultat": "<img class=\"imgc\" src= \"res/coulomb_43.jpg\" />",
+    "id": 155
+}, {
+    "type": "texte",
+    "titre": "Modèle linéaire de frottement visqueux",
+    "resultat": "$\\vec{f} = -a\\vec{v}\\ \\ $ ou $\\ \\ -\\lambda\\vec{v}\\ \\ $ ou $\\ \\ -h\\vec{v}$<br/>où $a, \\lambda, h$ sont des constantes. Ce modèle linéaire s'utilise pour des \"vitesses faibles\" et les fluides relativement visqueux. Il est intéressant car il conduit à des équationsd différentielles linéaires. Il est utilisé pour un ressort par exemple freiné dans un fluide visqueux.",
+    "id": 156
+}, {
+    "type": "texte",
+    "titre": "Modèle quadratique de frottement visqueux",
+    "resultat": "Pour des vitesses élevées, dans l'air par exemple, ou pour un fluide peu visqueux, on peut introduire une force de frottement quadratique qu'on appelle \"force de trainée\" exercée sur un corps en mouvement<br/>$\\vec{f}$ = $-\\frac{1}{2}C\\rho S ||\\vec{v}||^2 \\vec{u}$ = $-\\frac{1}{2}C \\rho S ||\\vec{v}|| \\vec{v}$<br/>Avec $\\vec{u} = \\frac{\\vec{v}}{||\\vec{v}||}$ et $||\\vec{v}|| = v$<br/>$C$ est le coefficient de trainée (ou de pénétration dans l'air) sans dimension qui dépend de la forme géométrique de l'objet.<br/>$\\rho$ la masse volumique de l'aif en $k\\times g\\times m \\times s^{-3}$<br/>$S$ est la surface caractéristique du solide en $m^2$ et $\\vec{v}$ son vecteur vitesse<br/>On note souvent $k=\\frac{1}{2}C\\rho S$ le coefficient de frottement de traînée (en $k \\times g \\times m^{-1}$, soit donc <br/> $\\vec{f}$ = $-\\lambda v^2 \\frac{\\vec{v}}{||\\vec{v}||}$ = $-\\lambda ||\\vec{v}|| \\vec{v}$",
+    "id": 157
+}, {
+    "type": "definition",
+    "titre": "Poussée d'achimède",
+    "resultat": "La résultante des forces de pression sur un corps totalement immergé dans un fluide au repos s'appelle la \"poussée d'Archimède\" $\\vec{\\Pi}$; elle est égale et opposée au vecteur poids du fluide déplacé par le solide : <br/> $\\vec{\\Pi} = -M\\vec{g} = -\\rho V \\vec{g}$",
+    "id": 158
+}, {
+    "type": "definition",
+    "titre": "Force centrale",
+    "resultat": "Une force $\\vec{f}(M)$ est dite centrale quand son support passe constament par un point fixe $O$ dans $\\cal{R}$, quelque soit le mouvement du point matériel.<br/>Cela se traduit mathématiquement par la relation : <br/>$\\vec{OM} \\land \\vec{f}(M) = \\vec{0}$",
+    "id": 159
 }];
 
 
