@@ -565,7 +565,7 @@ const quiz_cinematique_point = [{
 }, {
     "type": "texte",
     "titre": "Vecteur vitesse en coordonnées polaires",
-    "resultat": "La restriction aux deux premieres coordonnées des cylindriques donne le vecteur vitesse en coordonnées polaires dans le plan $xOy$:<br/>$\\vec{v}(M) = \\frac{dr}{dt}\\vec{u} + r\\frac{d\\theta}{dt}\\vec{u_{\\theta}}$.<br/>On en déduit sa norme dans le plan : <br/>$||\\vec{v}|| = \\sqrt{(\\frac{dr}{dt})^2 + (r\\frac{d\\theta}{dt})^2}$",
+    "resultat": "La restriction aux deux premieres coordonnées des cylindriques donne le vecteur vitesse en coordonnées polaires dans le plan $xOy$:<br/>$\\vec{v}(M) = \\frac{dr}{dt}\\vec{u_r} + r\\frac{d\\theta}{dt}\\vec{u_{\\theta}}$.<br/>On en déduit sa norme dans le plan : <br/>$||\\vec{v}|| = \\sqrt{(\\frac{dr}{dt})^2 + (r\\frac{d\\theta}{dt})^2}$",
     "id": 111
 }, {
     "type": "texte",
