@@ -816,7 +816,7 @@ const quiz_dynamique_point = [{
     "id": 159
 }, {
     "type": "methode",
-    "titre": "Méthode de \"résolution mécanique\"",
+    "titre": "Méthode de \"résolution dynamique\"",
     "resultat": "<ol> <li>Définir le système étudié</li> <li>Définir un référentiel $\\mathcal{R}$ d'étude</li> <li>Faire un bilan des actions</li> <li>Ecrire la loi de la quantité de mouvement ou PFD dans le référentiel d'étude</li> <li>Projeter cette relation vectorielle sur une \"base de projection\" imposée ou adabptée au problème</li> <li>Si le mouvement est supposé plan et que l'on connait à priori la trajectoire, la projection du PFD se fait souvent dans deux directions privilégiées (direction tangente, direction orthogonale)</li> <li>La projection du PFD sur la direction tangente à la trajectoire permet en général de trouver l'équation différentielle du mouvement dans le référentiel d'étude</li> <li>Les conditions initiales</li> </ol>",
     "id": 160
 }, {
