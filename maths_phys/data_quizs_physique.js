@@ -632,7 +632,7 @@ const quiz_cinematique_point = [{
 }, {
     "type": "texte",
     "titre": "Mouvement uniforme",
-    "resultat": "Mouvement uniforme $\\iff$ $v = ||\\vec{v}|| = $ constante $\\iff$ $\\frac{dv}{dt} = 0$",
+    "resultat": "Mouvement uniforme $\\iff$ $v = ||\\vec{v}|| = $ constante",
     "id": 124
 }, {
     "type": "texte",
