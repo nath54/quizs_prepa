@@ -154,7 +154,7 @@ const quiz_modelisation_geometrique_systemes_solides = [{
 }, {
     "type": "definition",
     "titre": "Base orthonormée",
-    "resultat": "L'association de trois vecteurs non liés forme  une base $\\cal{B}$. On utilisera en SI unique des bases orthonormée directes $(\\vec{x}, \\vec{y}, \\vec{z})$ telles que : <ul><li>Les trois vecteurs sont <b>orthogonaux deux à deux</b></li> <li>Les trois vecteurs sont de <b>norme unitaire</b></li> <li>L'orientation des trois vecteurs est <b>directe</b>.</li> </ul> <br/> <img class=\"imgc\" src=\"res/base_ortho.png\" />",
+    "resultat": "L'association de trois vecteurs non liés forme  une base $\\B$. On utilisera en SI unique des bases orthonormée directes $(\\vec{x}, \\vec{y}, \\vec{z})$ telles que : <ul><li>Les trois vecteurs sont <b>orthogonaux deux à deux</b></li> <li>Les trois vecteurs sont de <b>norme unitaire</b></li> <li>L'orientation des trois vecteurs est <b>directe</b>.</li> </ul> <br/> <img class=\"imgc\" src=\"res/base_ortho.png\" />",
     "id": 30
 }, {
     "type": "texte",
@@ -189,7 +189,7 @@ const quiz_modelisation_geometrique_systemes_solides = [{
 }, {
     "type": "texte",
     "titre": "Changement de base",
-    "resultat": "Soient deux base$\\cal{B}_1$ et$\\cal{B}_2$ mobiles l'une par rapport à l'autre et $\\vec{V}$ un vecteur.<br/>Les composantes du vecteur $\\vec{V}$ dans la base$\\cal{B}_1$ sont notées $u_1$, $v_1$ et $w_1$. C'est à dire $\\vec{V} = \\left(\\begin{array}{ll} u_1\\\\ v_1\\\\ w_1 \\end{array}\\right)_{\\cal{B}_1}$<br/>Changer $\\vec{V}$ de base consiste à déterminer les composantes de $\\vec{V}$ dans$\\cal{B}_2$ telles que $\\vec{V} = \\left(\\begin{array}{ll} u_2 \\\\ v_2 \\\\ w_2 \\end{array}\\right)_{\\cal{B}_2}$<br/>Le mouvement de$\\cal{B}_2$ par rapport à$\\cal{B}_1$ est caractérisé par trois rotations élémentaires. En SI, on décompose toujours les rotations en rotations élémentaires autour d'un vecteur de la base et on projette dans ces bases successives.",
+    "resultat": "Soient deux base$\\B_1$ et$\\B_2$ mobiles l'une par rapport à l'autre et $\\vec{V}$ un vecteur.<br/>Les composantes du vecteur $\\vec{V}$ dans la base$\\B_1$ sont notées $u_1$, $v_1$ et $w_1$. C'est à dire $\\vec{V} = \\left(\\begin{array}{ll} u_1\\\\ v_1\\\\ w_1 \\end{array}\\right)_{\\B_1}$<br/>Changer $\\vec{V}$ de base consiste à déterminer les composantes de $\\vec{V}$ dans$\\B_2$ telles que $\\vec{V} = \\left(\\begin{array}{ll} u_2 \\\\ v_2 \\\\ w_2 \\end{array}\\right)_{\\B_2}$<br/>Le mouvement de$\\B_2$ par rapport à$\\B_1$ est caractérisé par trois rotations élémentaires. En SI, on décompose toujours les rotations en rotations élémentaires autour d'un vecteur de la base et on projette dans ces bases successives.",
     "id": 37
 }, {
     "type": "texte",
@@ -303,10 +303,102 @@ const quiz_notions_prel_model_cin_sys = [{
     "titre": "Produit vectoriel",
     "resultat": "Le produit vectoriel est défini par la relation $\\vec{u} \\land \\vec{v} = ||\\vec{u}||\\circ||\\vec{v}||\\circ\\sin(\\theta)\\circ\\vec{n}$ <br/> <ul><li>où $\\theta = (\\vec{u}, \\vec{v})$</li><li>$\\vec{n}$ est le vecteur unitaire normal à $\\vec{u}$ et $\\vec{v}$ tel que $(\\vec{u}, \\vec{v}, \\vec{n})$ soit une base directe lorsque $\\theta$ est positif.</li></ul>",
     "id": 59
+}, {
+    "type": "propriete",
+    "titre": "Propriétés du produit vectoriel",
+    "resultat": "Le produit vectoriel est antisymétrique et distributif<br/>$\\vec{u} \\land \\vec{v}= -\\vec{v} \\land \\vec{u}$<br/>$\\vec{u} \\land (\\alpha .\\vec{v} + \\beta . \\vec{w})$ = $\\alpha .\\vec{u} \\land \\vec{v}$ $+$ $\\beta . \\vec{u} \\land \\vec{v}$",
+    "id": 60
+}, {
+    "type": "texte",
+    "titre": "Relations des produits vectoriels",
+    "resultat": "$\\vec{x} \\land \\vec{y} = \\vec{z}$ $\\ \\ \\ \\ $ $\\vec{y} \\land \\vec{x} = -\\vec{z}$ <br/> $\\vec{y} \\land \\vec{z} = \\vec{x}$ $\\ \\ \\ \\ $ $\\vec{z}\\land\\vec{y} = -\\vec{x}$ <br/> $\\vec{z}\\land \\vec{x} = \\vec{y}$ $\\ \\ \\ \\ $ $\\vec{x}\\land\\vec{z} = -\\vec{y}$",
+    "id": 61
+}, {
+    "type": "definition",
+    "titre": "Dérivation d'un vecteur par rapport au temps",
+    "resultat": "La dérivation d'un vecteur en fonction du temps nécessite de préciser la base de dérivation, c'est-à-dire de préciser la base dont les 3 vecteurs seront supposés fixes au cours du temps.<br/><br/>Si $\\vec{u}(t)$ est un vecteur fonction du temps, sa dérivée par rapport à la base $\\B_0$ s'écrit $$\\left. \\frac{d\\vec{u}(t)}{dt} \\right |_{\\B_0}$$",
+    "id": 62
+}, {
+    "type": "texte",
+    "titre": "Dérivation d'un vecteur / Composantes",
+    "resultat": "En exprimant les composantes de $\\vec{u}(t)$ dans $\\B_0$, la dérivée de $\\vec{u}(t)$ dans $\\B_0$ est obtenue en dérivant chacune des composantes par rapport au temps.<br/> Si $\\vec{u}(t)$ $ = $ $x_0(t).\\vec{x_0} + y_0(t).\\vec{y_0} + z_0(t).\\vec{z_0}$, alors $$\\left. \\frac{d\\vec{u}(t)}{dt} \\right |_{\\B_0}$$ $=$ $\\dot{x_0}(t).\\vec{x_0}$ + $\\dot{y_0}(t).\\vec{y_0}$ + $\\dot{z_0}(t).\\vec{z_0}$",
+    "id": 63
+}, {
+    "type": "propriete",
+    "titre": "Formule de Bour",
+    "hypotheses": "Soit deux bases $\\B_1$ et $\\B_2$. Pour tout $\\vec{u}(t)$ de l'espace :",
+    "resultat": "$\\left. \\frac{d\\vec{u}(t)}{dt} \\right |_{\\B_1}$ = $\\left. \\frac{d\\vec{u}(t)}{dt} \\right |_{\\B_2}$ = $\\vec{\\Omega} (\\B_1 / \\B_2) \\land \\vec{u}(t)$",
+    "id": 64
+}, {
+    "type": "propriete",
+    "titre": "Somme de dérivation de vecteurs",
+    "resultat": "$\\left. \\frac{d(\\vec{V_1}(t)+\\vec{V_2}(t))}{dt} \\right |_{\\B}$ = $\\left. \\frac{d\\vec{V_1}(t)}{dt} \\right |_{\\B}$ + $\\left. \\frac{d\\vec{V_2}(t)}{dt} \\right |_{\\B}$",
+    "id": 65
+}, {
+    "type": "propriete",
+    "titre": "Produit par une fonction scalaire de vecteurs dérivés",
+    "resultat": "$\\left. \\frac{d(f(t).\\vec{V}(t))}{dt} \\right |_{\\B}$ = $f(t). \\left. \\frac{d\\vec{V}}{dt} \\right |_{\\B}$ + $\\frac{df(t)}{dt}.\\vec{V}(t)$",
+    "id": 66
+}, {
+    "type": "propriete",
+    "titre": "Dérivée du produit scalaire",
+    "resultat": "$\\left. \\frac{d(\\vec{V_1}(t).\\vec{V_2}(t))}{dt} \\right |_{\\B}$ = $\\left. \\frac{d\\vec{V_1}(t)}{dt} \\right |_{\\B}.\\vec{V_2}(t)$ + $\\vec{V_1}(t).\\left. \\frac{d\\vec{V_2}}{dt} \\right |_{\\B}$",
+    "id": 67
+}, {
+    "type": "propriete",
+    "titre": "Dérivée d'un produit vectoriel",
+    "resultat": "$\\left. \\frac{d(\\vec{V_1}(t) \\land \\vec{V_2}(t))}{dt} \\right |_{\\B}$ = $\\left. \\frac{d\\vec{V_1}(t)}{dt} \\right |_{\\B} \\land \\vec{V_2}$ + $\\vec{V_1}(t) \\land \\left. \\frac{d\\vec{V_2}(t)}{dt} \\right |_{\\B}$",
+    "id": 68
+}, {
+    "type": "definition",
+    "titre": "Torseur",
+    "resultat": "On appele torseur $\\{\\cal{T} \\}$ l'ensemble d'un champ de vecteurs antysymétriques $\\vec{M}$ et d'un vecteur $\\vec{R}$ associé.<br/>$\\vec{R}$ est appelée la résultante et $\\vec{M_A}$ le moment d'un point $A$.<br/>Pour définir complètement un torseur, il suffit de préciser sa résultante et son moment en un point quelconque $A$ de l'espace. Ces deux vecteurs sont appelées les <b>éléments de réduction</b> du torseur au point $A$.",
+    "id": 69
+}, {
+    "type": "texte",
+    "titre": "Notation d'un torseur",
+    "resultat": "$\\{\\cal{T}\\}$ = $\\left \\{ \\begin{array}{tt} \\vec{R} \\\\ \\vec{M_A} \\end{array} \\right\\}_A$ = $\\left \\{ \\begin{array}{ll} R_x.\\vec{x} + R_y.\\vec{y} + R_z.\\vec{z} \\\\ M_{Ax}.\\vec{x} + M_{Ay}.\\vec{y} + M_{Az}.\\vec{z} \\end{array} \\right \\}_A$ = $\\left \\{ \\begin{array}{ll} R_x \\ M_{Ax} \\\\ R_y \\ M_{Ay} \\\\ R_z \\ M_{Az} \\end{array} \\right \\}_{A, (\\vec{x}, \\vec{y}, \\vec{z})}$",
+    "id": 70
+}, {
+    "type": "propriete",
+    "titre": "Formule de Varignon",
+    "resultat": "Un champs de vecteur $\\vec{M}$ est antisymétrique si, et seulement si, pour deux points $A$ et $B$ quelconques de l'espace : <br/> $\\vec{M_B} = \\vec{M_A} + \\vec{BA} \\land \\vec{R}$.<br/>Cette propriété permet de calculer les coordonnées d'un torseur en différents points.",
+    "id": 71
+}, {
+    "type": "propriete",
+    "titre": "Somme de deux torseurs",
+    "hypotheses": "Soient deux torseurs $ \\{ \\cal{T}_1 \\} $ et $ \\{ \\cal{T}_2 \\} $ tels que $\\{ \\cal{T}_1 \\}$ = $\\left \\{ \\begin{array}{ll} \\vec{R_1} \\\\ \\vec{M_{A,1}} \\end{array} \\right \\}_A $ et $\\{ \\cal{T}_2 \\}$ = $\\left \\{ \\begin{array}{ll} \\vec{R_2} \\\\ \\vec{M_{A,2}} \\end{array} \\right \\}_A $",
+    "resultat": "$\\{\\cal{T}_1\\}$ + $\\{\\cal{T}_2\\}$ = $\\left\\{ \\begin{array}{ll} \\vec{R_1} + \\vec{R_2} \\\\ \\vec{M_{A,1}} + \\vec{M_{A,2}}\\end{array}\\right\\}_A$<br/><b>Attention ! Sommer deux torseurs dont les éléments de réduction sont exprimés en des points différents n'a aucun sens !</b>",
+    "id": 72
+}, {
+    "type": "propriete",
+    "titre": "Multiplication d'un torseur par un scalaire",
+    "hypotheses": "Soit $\\{\\cal{T}\\}$ un torseur et $\\alpha$ un réel.",
+    "resultat": "$\\alpha . \\{\\cal{T}\\}$ = $\\left\\{ \\begin{array}{ll} \\alpha . \\vec{R_1} \\\\ \\alpha.\\vec{M_{A,1}} \\end{array} \\right\\}_A$",
+    "id": 73
+}, {
+    "type": "propriete",
+    "titre": "Comoment de deux torseurs",
+    "resultat": "$\\{\\cal{T_1}\\} \\bigotimes \\{\\cal{T_2}\\}$ = $\\vec{R_1}.\\vec{M_{A,2}} + \\vec{R_2}.\\vec{M_{A,1}}$<br/><b>Les moments doivent impérativement être exprimés au même point.</b> Mais le résultat ne dépend pas du point $A$ choisi/",
+    "id": 74
+}, {
+    "type": "definition",
+    "titre": "Axe central d'un torseur",
+    "resultat": "On appelle axe central d'un torseur $\\{\\cal{T}\\}$ l'ensemble des points $I$ pour lesquels le champ $\\vec{M}$ est colinéaire à $\\vec{R}$. Soit $\\vec{M_I} = \\alpha . \\vec{R}$, avec $\\alpha \\in \\R$.<br/>On remarque que l'axe centrale est toujours une droite parallèle à $\\vec{R}$",
+    "id": 75
+}, {
+    "type": "texte",
+    "titre": "Torseur glisseur",
+    "resultat": "Un glisseur est un tourseur dont l'automoment $\\cal{A} = \\vec{R_1}.\\vec{M_{A,1}}$ est nul avec $\\vec{R} \\neq \\vec{0}$.<br/>Le moment est donc toujours perpendiculaire à la résultante et il est nul sur l'axe central pour ce type de torseur.<br/>En pratique, il suffit de trouver un point $A$ tel que $\\{\\cal{T}\\}$=$\\left\\{ \\begin{array}{ll} \\vec{R} \\\\ \\vec{0} \\end{array} \\right\\}_A$",
+    "id": 76
+}, {
+    "type": "texte",
+    "titre": "Torseur couple",
+    "resultat": "Un couple est un torseur dont la résultante est nulle : $\\vec{R} = \\vec{0}$.<br/>Le moment est donc constant en tout point de l'espace et il n'y a pas d'axe central pour ce torseur.<br/>Ainsi $\\{\\cal{T}\\}$=$\\left\\{ \\begin{array}{ll} \\vec{0} \\\\ \\vec{M} = \\vec{\\cal{C}} \\end{array} \\right\\}_{\\forall M \\in \\R^3}$",
+    "id": 77
 }];
 
 /*
-
     ,{
         "type": "texte",
         "titre": "",
@@ -324,4 +416,5 @@ const quiz_notions_prel_model_cin_sys = [{
 const Quizs = {
     "Analyse des systèmes complexes": quiz_analyse_systemes_complexes,
     "Modélisation géométrique des systèmes solides": quiz_modelisation_geometrique_systemes_solides,
+    "Notions préliminaires au modèle cinématique": quiz_notions_prel_model_cin_sys
 };
