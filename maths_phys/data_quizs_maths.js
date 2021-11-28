@@ -1,21 +1,21 @@
 const quiz_logique = [{
         "type": "definition",
         "titre": "Formule propositionnelle",
-        "hypotheses": "",
+
         "resultat": "Une formule propositionnelle est une formule liant des propositions élémentaires représentées par des lettres (ou variables propositionnelles), à l'aide d'un certain nombre de symboles représentant des opérations logiques.",
         "id": 0
     },
     {
         "type": "definition",
         "titre": "Formules équivalentes",
-        "hypotheses": "",
+
         "resultat": "Deux formules $A$ et $B$ sont dites équivalentes si elles prennent la même valeur de vérité l'une et l'autre, quelle que soit la distribution de vérités données sur l'ensemble des variables propositionnelles intervenant dans ces formules. Autrement dit, elles sont vraies et fausses sous les mêmes conditions sur les variables propositionnelles.",
         "id": 1
     },
     {
         "type": "definition",
         "titre": "Tautologie",
-        "hypotheses": "",
+
         "resultat": "Ce sont des formules toujours vraies (pour toute distribution de vérité).",
         "id": 2
     },
@@ -67,21 +67,21 @@ const quiz_logique = [{
 const quiz_relations = [{
         "type": "definition",
         "titre": "Relation binaire",
-        "hypotheses": "",
+
         "resultat": "Une relation binaire entre deux ensembles $E$ et $F$ est un sous-ensemble $G$ de $E \\times F$.",
         "id": 9
     },
     {
         "type": "definition",
         "titre": "Relation fonctionnelle",
-        "hypotheses": "",
+
         "resultat": "Une relation $\\cal{R}$ entre $E$ et $F$ est fonctionnelle si pout tout $x$ de $E$ il existe au plus un $y$ de $F$ tel que $x\\cal{R}y$.",
         "id": 10
     },
     {
         "type": "definition",
         "titre": "Relation applicationnelle",
-        "hypotheses": "",
+
         "resultat": "Une relation $\\cal{R}$ entre $E$ et $F$ est applicationnelle si pout tout $x$ de $E$ il existe un et un seul $y$ de $F$ tel que $x\\cal{R}y$.",
         "id": 11
     },
@@ -130,7 +130,7 @@ const quiz_relations = [{
     {
         "type": "definition",
         "titre": "Relation d'équivalence",
-        "hypotheses": "",
+
         "resultat": "Une relation d'équivalence sur $E$ est une relation réflexive, symétrique et transitive.",
         "id": 18
     },
@@ -144,7 +144,7 @@ const quiz_relations = [{
     {
         "type": "lemme",
         "titre": "Classe d'équivalence",
-        "hypotheses": "",
+
         "resultat": "Si y et x sont dans une même classe d'équivalence, alors $y\\cal{R}x$.",
         "id": 20
     },
@@ -158,14 +158,14 @@ const quiz_relations = [{
     {
         "type": "definition",
         "titre": "Ensemble quotient",
-        "hypotheses": "",
+
         "resultat": "L'ensemble des classes sous la relation $\\cal{R}$ s'appelle l'ensemble quotient de $E$ par $\\cal{R}$, et est noté $E/\\cal{R}$. C'est un sous-ensemble de $\\cal{P}(E)$.",
         "id": 22
     },
     {
         "type": "definition",
         "titre": "Projection canonique",
-        "hypotheses": "",
+
         "resultat": "On appelle projection canonique de $E$ sur $E/\\cal{R}$ l'application $\\pi\\cal{R}$ qui à $x$ associe sa classe $\\ol{x}$. Par définition, $\\pi\\cal{R}$ est surjective, et vérifie : $\\forall (x, y) \\in E^2$, $x\\cal{R}y\\iff\\pi\\cal{R}(x)=\\pi\\cal{R}(y)$.",
         "id": 23
     },
@@ -186,7 +186,7 @@ const quiz_relations = [{
     {
         "type": "proposition",
         "titre": "Congruence des entiers",
-        "hypotheses": "",
+
         "resultat": "La relation de congruence des entiers $\\equiv[n]$ est une congruence sur $(\\Z, +, \\times)$",
         "id": 26
     },
@@ -200,42 +200,42 @@ const quiz_relations = [{
     {
         "type": "corollaire",
         "titre": "Addition et multiplication de $\\Z/n\\Z$",
-        "hypotheses": "",
+
         "resultat": "On peut munir $\\Z/n\\Z$ d'une addition $+$ et d'une multiplication $\\times$ telles que :<br/>$\\forall (x, y) \\in \\Z^2$, $(\\ol{x} + \\ol{y\\ }= \\ol{x + y})\\ $   et   $\\ (\\ol{x} \\times \\ol{y\\ }= \\ol{x \\times y})$.",
         "id": 28
     },
     {
         "type": "definition",
         "titre": "relation d'ordre large",
-        "hypotheses": "",
+
         "resultat": "Une relation d'ordre sur $E$ est une relation réflexive, antisymétrique et transitive.",
         "id": 29
     },
     {
         "type": "definition",
         "titre": "relation d'ordre stricte",
-        "hypotheses": "",
+
         "resultat": "Une relation d'ordre sur $E$ est une relation antiréflexive et transitive.",
         "id": 30
     },
     {
         "type": "proposition",
         "titre": "Antisimétrie d'une relation d'ordre stricte",
-        "hypotheses": "",
+
         "resultat": "Une relation d'ordre stricte est antisymétrique",
         "id": 31
     },
     {
         "type": "proposition",
         "titre": "D'une relation d'ordre large à une relation d'ordre stricte",
-        "hypotheses": "",
+
         "resultat": "Toute relation d'ordre large $\\leqslant$ définit une relation d'ordre stricte par $x < y$ si et seulement si $x \\leqslant y$ et $x \\neq y$",
         "id": 32
     },
     {
         "type": "proposition",
         "titre": "D'une relation d'ordre stricte à une relation d'ordre large",
-        "hypotheses": "",
+
         "resultat": "Toute relation d'ordre stricte $<$ définit une relation d'ordre large $\\leqslant$ par $x \\leqslant y$ si et seulement si $x < y$ ou $x=y$ ",
         "id": 33
     },
@@ -265,7 +265,7 @@ const quiz_relations = [{
     {
         "type": "proposition",
         "titre": "Unicité du minimum",
-        "hypotheses": "",
+
         "resultat": "S'il existe, le plus petit élément de E (resp de $A \\subset E$) est unique. De même pour le plus grand élémént.",
         "id": 37
     },
@@ -353,7 +353,7 @@ const quiz_relations = [{
     {
         "type": "theoreme",
         "titre": "lemme de Zorn",
-        "hypotheses": "",
+
         "resultat": "Tout ensemble inductif admet un élément maximal.",
         "id": 49
     },
@@ -368,19 +368,19 @@ const quiz_reels = [{
     }, {
         "type": "theoreme",
         "titre": "propriété fondamentale de $\\N$",
-        "hypotheses": "",
+
         "resultat": "Tout sous-ensemble non vide et majoré de $\\N$ admet un plus grand élément",
         "id": 51
     }, {
         "type": "corollaire",
         "titre": "Corollaire  de la propriété fondamentale de $\\N$",
-        "hypotheses": "",
+
         "resultat": "Tout sous-ensemble non vide de $\\N$ admet un plus petit élément.",
         "id": 52
     }, {
         "type": "theoreme",
         "titre": "équivalence de la propriété fondamentale de $\\N$",
-        "hypotheses": "",
+
         "resultat": "La propriété fondamentale de $\\N$ est équivalente à l'axiome de récurrence.",
         "id": 53
     }, {
@@ -398,37 +398,37 @@ const quiz_reels = [{
     }, {
         "type": "proposition",
         "titre": "$\\Z$ peut être vu comme un prolongement de $\\N$",
-        "hypotheses": "",
+
         "resultat": "L'application : <br />$i: \\N \\rightarrow \\Z$ <br />$\\ n \\rightarrow \\ol{(n, 0)}$ <br /> est une injection compatible avec les lois $+$ et $\\times$.",
         "id": 56
     }, {
         "type": "proposition",
         "titre": "Compatibilité de la relation d'ordre avec le produit",
-        "hypotheses": "",
+
         "resultat": "<ol> <li>Soit $c \\in \\N^*$. Alors, $\\forall (a,b) \\in \\Z^2$, <br /> $a \\lt b \\iff ac \\lt bc$ et $a \\leqslant b \\iff ac \\leqslant bc$</li> <br /> <li>Soit $c \\in \\Z^*$, <br /> $a \\lt b \\iff ac \\gt bc$ et $a \\leqslant b \\iff ac \\geqslant bc$</li> </ol>",
         "id": 57
     }, {
         "type": "definition",
         "titre": "Notation usuelle pour un rationnel",
-        "hypotheses": "",
+
         "resultat": "La classe $\\ol{(a,b)}$ du couple $(a, b)$ est notée $\\frac{a}{b}$.",
         "id": 58
     }, {
         "type": "theoreme",
         "titre": "Définition de l'addition et du produit de rationnels",
-        "hypotheses": "",
+
         "resultat": "Les lois définies sur $\\Z\\times\\N^*$ par $(a,b) + (c,d) = (ad+bc, bd)$ et $(a, b) \\times (c,d) = (ac, bd)$ passent au quotient, définissant sur $\\Q$ les lois pouvant être décrites avec les notations usuelles par : <br /> $\\frac{a}{b} + \\frac{c}{d} = \\frac{ad + bc}{bd}$ et $\\frac{a}{b} \\times \\frac{c}{d} = \\frac{ac}{bd}$",
         "id": 59
     }, {
         "type": "theoreme",
         "titre": "Propriétés des lois de $\\Q$",
-        "hypotheses": "",
+
         "resultat": "<ul> <li>Les lois $+$ et $\\times$ sont associatives</li> <li>Les lois $+$ et $\\times$ sont commutatives</li> <li>La loi $\\times$ est distributive sur $+$</li> <li>L'élément $0=\\frac{0}{1}$ est neutre pour $+$, et tout élément $\\frac{a}{b}$ admet un opposé $\\frac{-a}{b}$</li> <li>Le rationnel $\\frac{a}{b}$ est égal = $0$ si et seulement si $a=0$</li> <li>L'élément $1=\\frac{1}{1}$ est neutre pour $\\times$, et tout élément $\\frac{a}{b}$ non nul est inversible, d'inverse $\\frac{b}{a}$</li> </ul> Ainsi que $\\Q$ est un corps.",
         "id": 60
     }, {
         "type": "remarque",
         "titre": "inclusion de $\\Z$ dans $\\Q$",
-        "hypotheses": "",
+
         "resultat": "Les entiers $a \\in \\Z$ peuvent être identifiés aux rationnels $\\frac{a}{1}$ (dans le sens où $a \\rightarrow \\frac{a}{1}$ définit une injection de $\\Z$ dans $\\Q$). Via cette identification, on peut considérer que $\\Z \\subset \\Q$.",
         "id": 61
     }, {
@@ -440,7 +440,7 @@ const quiz_reels = [{
     }, {
         "type": "theoreme",
         "titre": "Relation $\\leqslant$ sur $\\Q$",
-        "hypotheses": "",
+
         "resultat": "La relation $\\leqslant$ ainsi difinie sur $\\Q$ est une relation d'ordre total.",
         "id": 63
     }, {
@@ -452,7 +452,7 @@ const quiz_reels = [{
     }, {
         "type": "proposition",
         "titre": "Existence de nombres irrationnels",
-        "hypotheses": "",
+
         "resultat": "Si $n$ n'est pas un carré parfait (donc si $n$ ne s'écrit pas sous la forme $n = m^2$ pour un certain entier $m$), alors $\\sqrt(N)$ est irrationnel.",
         "id": 65
     }, {
@@ -470,7 +470,7 @@ const quiz_reels = [{
     }, {
         "type": "propriete",
         "titre": "Relation d'ordre sur $\\R$",
-        "hypotheses": "",
+
         "resultat": "La relation d'ordre sur $\\R$ vérifie les 4 propriétés élémentaires suivants : <ol> <li>C'est une relation d'ordre totale</li> <li>$\\forall (x,y) \\in\\R^2$, $x \\leqslant y \\iff y - x \\in\\R_+$</li> <li> $\\forall (x,y) \\in (\\R_+)^2$, $x+y \\geqslant 0$ avec égalité si et seulement si $x = y = 0$ </li> <li>$\\forall (x,y) \\in (\\R_+)^2$, $xy \\geqslant 0$</li> </ol>",
         "id": 68
     }, {
@@ -488,7 +488,7 @@ const quiz_reels = [{
     }, {
         "type": "methode",
         "titre": "Majorer, minorer",
-        "hypotheses": "",
+
         "resultat": "Pour obtenir des inégalités, on peut : <ul> <li>Tout passer du même côté (si l'inégalité est donnée) et essayer de factoriser pour déterminer le signe.</li> <li>Procéder par étude de fonction, si l'inégalité est donnée : on passe tout du même côté, et on étudie le signe de la fonction obtenue, grâce à une étude de variations.</li> <li>Utiliser une propriété de convexité ou de concavité : une fonction dérivable $f$ est convexe si $f'$ est croissante (donc la pente est de plus en plus forte). Intuitivement, la convexité se traduit par le fait que les tangentes sont sous la courbe, et les cordes sont au-dessus de la courbe.</li> <li>Utiliser des inégalités classiques (en premiere lieu l'inéaglité triangulaire, l'inégalité de Cauchy-Schwarz, l'inégalité arithmético-géométrique...). L'inégalité triangulaire est à utiliser dès lors qu'on cherche à majorer la valeur absolue (ou le module) d'une somme dont on sait majorer la valeur absolue de chaque terme : il faut d'abord sortir ces termes de la valeur absolue globale et ce grâce à l'inégalité triangulaire.</li> </ul>",
         "id": 71
     }, {
@@ -500,7 +500,7 @@ const quiz_reels = [{
     }, {
         "type": "remarque",
         "titre": "Utilisation de la valeur absolue",
-        "hypotheses": "",
+
         "resultat": "La valeur absolue est souvent utilisée lorsqu'on veut montrer qu'une quantité reste bornée, c'est-à-dire peut être à la fois majorée et minorée. En effet, majorer $|A|$ revient à majorer et minorer $A$, puisque $|A| \\leqslant B$ équivaut à $-B \\leqslant A \\leqslant$",
         "id": 73
     }, {
@@ -542,7 +542,7 @@ const quiz_reels = [{
     }, {
         "type": "theoreme",
         "titre": "Inégalité arithmético-géométrique",
-        "hypotheses": "",
+
         "resultat": "Pour tout $X = (x_1, ..., x_n) \\in (\\R_+^*)^n$, <br /> $\\frac{1}{n}(x_1 + ... + x_n) \\geqslant \\sqrt[\\leftroot{10}\\uproot{10}n]{x_1 \\times ... \\times x_n}$",
         "id": 80
     }, {
@@ -554,7 +554,7 @@ const quiz_reels = [{
     }, {
         "type": "corollaire",
         "titre": "Propriété d'Archimède appliquée au rationnels",
-        "hypotheses": "",
+
         "resultat": "Pour tout $x \\gt 0$ et tout $y \\gt 0$, il existe un rationnel $r$ tel que $0 \\lt rx \\lt y$.",
         "id": 82
     }, {
@@ -566,13 +566,13 @@ const quiz_reels = [{
     }, {
         "type": "definition",
         "titre": "Densité dans $\\R$",
-        "hypotheses": "",
+
         "resultat": "Un sous ensemble $E$ de $\\R$ est dense dans $\\R$ si pour tout $(x,y) \\in \\R^2$ tel que que $x < y$, il existe $z \\in E$ tel que $x \\lt z \\lt y$",
         "id": 84
     }, {
         "type": "theoreme",
         "titre": "Densité des rationnels et des irrationnels dans $\\R$",
-        "hypotheses": "",
+
         "resultat": "Les ensembles $\\Q$ et $\\R\\backslash\\Q$ sont denses dans $\\R$.",
         "id": 85
     }, {
@@ -584,13 +584,13 @@ const quiz_reels = [{
     }, {
         "type": "definition",
         "titre": "Partie entière",
-        "hypotheses": "",
+
         "resultat": "La partie entière d'un réel $x$, notée $\\lfloor x\\rfloor$ est le quotient de la division euclidienne par $1$. Il s'agit donc de l'unique entier $n$ tel qu'il existe $r \\in [0, 1[$ tel que $x=n + r$",
         "id": 87
     }, {
         "type": "definition",
         "titre": "Partie décimale",
-        "hypotheses": "",
+
         "resultat": "Le réel $r$ de la définition de la partie entière (reste de la division euclidienne d'un réel $x$ par $1$) est parfois notée $\\{x\\}$, lorsqu'il n'y a pas de confusion possible avec la notation ensembliste désignant le singleton dont l'unique élément est $x$.",
         "id": 88
     }, {
@@ -602,7 +602,7 @@ const quiz_reels = [{
     }, {
         "type": "definition",
         "titre": "partie entière par excès",
-        "hypotheses": "",
+
         "resultat": "On définit parfois aussi la partie entière par excès, notée $\\lceil x \\rceil$, comme étant le plus petit entier supérieur ou égal à $x$ : <br /> $\\lceil x \\rceil = \\min\\{ n \\in \\N | n \\geqslant x\\}$",
         "id": 90
     }, {
@@ -614,13 +614,13 @@ const quiz_reels = [{
     }, {
         "type": "propriete",
         "titre": "Propriétés de la partie entière",
-        "hypotheses": "",
+
         "resultat": "<ol> <li>$\\forall x,y \\in \\R, \\lfloor x \\rfloor + \\lfloor y \\rfloor + 1 \\geq \\lfloor x + y \\rfloor \\geq \\lfloor x \\rfloor + \\lfloor y \\rfloor$</li> <li>$\\forall x,y \\in \\R_+, \\lfloor xy \\rfloor \\geq \\lfloor x \\rfloor \\times \\lfloor y \\rfloor $</li> <li>$\\forall x \\in \\R, \\forall n \\in \\Z, \\lfloor x + n \\rfloor = \\lfloor x \\rfloor + n$</li></ol>",
         "id": 92
     }, {
         "type": "remarque",
         "titre": "Notation des nombres décimaux",
-        "hypotheses": "",
+
         "resultat": "<ul> <li>Nous notons $\\D$ l'ensemble des nombres décimaux, c'est à dire des réels $x$ tels qu'il existe $n \\in \\N$ tel que $10^{n}x$ est entier</li> <li>Etant donné $n \\in \\N$, nous notons $\\D_n$ l'ensemble des nombres décimaux tels que $10^{n}x \\in \\Z$. Par exemble $\\D_0 = \\Z$ et $\\D_1$ sont les décimaux s'écrivant avec au plus un chiffre après la virgule.</li></ul>",
         "id": 93
     }, {
@@ -633,7 +633,7 @@ const quiz_reels = [{
     {
         "type": "lemme",
         "titre": "Aproximation des décimales",
-        "hypotheses": "",
+
         "resultat": "Pour tout $n \\in \\N^*$, il existe $a_n \\in [\\![0, 9]\\!]$ tel que $y_n - y_{n-1} = \\frac{a_n}{10^n}$",
         "id": 95
     },
@@ -652,7 +652,7 @@ const quiz_reels = [{
     }, {
         "type": "definition",
         "titre": "Développement propre",
-        "hypotheses": "",
+
         "resultat": "On appelle développement décimal propre de $x$ l'unique développement de $x$ si $x$ n'est pas décimal, ou l'unique développement de $x$ terminant par des $0$ si $x$ est décimal. Ainsi, tout réel admet un unique développement décimal propre.",
         "id": 98
     }, {
@@ -664,19 +664,19 @@ const quiz_reels = [{
     }, {
         "type": "definition",
         "titre": "Intervalle",
-        "hypotheses": "",
+
         "resultat": "Un intervalle $I$ est un sous-ensemble convexe $I$ de $\\R$, c'est-à-dire tel que : <br /> $\\forall (a,b) \\in I^2, \\forall x \\in \\R, a \\leqslant x \\leqslant b \\implies x \\in I$",
         "id": 100
     }, {
         "type": "theoreme",
         "titre": "Inventaire des intervalles réels",
-        "hypotheses": "",
+
         "resultat": "Tout intervalle $I$ de $\\R$ est d'une des formes suivantes, pour certaines valeurs réelles $a$ et $b$ : <ul> <li>$[a, b] = \\{x \\in \\R, a \\leqslant x \\leqslant b \\}, a \\leqslant b$</li> <li>$]a, b[ = \\{x \\in \\R, a \\lt x \\lt b \\}, a \\lt b$</li>  <li>$[a, b[ = \\{x \\in \\R, a \\leqslant x \\lt b \\}, a \\lt b$</li> <li>$]a, b] = \\{x \\in \\R, a \\lt x \\leqslant b \\}, a \\lt b$</li> <li>$[a, +\\infty[ = \\{x \\in \\R, x \\geqslant a \\}$</li> <li>$]a, +\\infty[ = \\{x \\in \\R, x \\gt a \\}$</li> <li>$]-\\infty, b] = \\{x \\in \\R, x \\leqslant b \\}$</li> <li>$]-\\infty, b[ = \\{x \\in \\R, x \\lt b \\}$</li> <li>$]-\\infty, +\\infty = \\R$</li> <li>$\\emptyset$</li> </ul>",
         "id": 101
     }, {
         "type": "definition",
         "titre": "Intervalles ouverts, fermés, semi-ouverts",
-        "hypotheses": "",
+
         "resultat": "<ul> <li>On dit qu'un intervalle est ouvert s'il est de la forme $]a, b[, ]a, +\\infty[, ]-\\infty, b[, \\R$ ou $\\emptyset$</li> <li>On dit qu'un intervalle est fermé s'il est de la forme $[a, b], [a, +\\infty[, ]-\\infty, b]$ ou $\\emptyset$</li> <li>On dit qu'un intervalle est semi-ouvert s'il est de la forme $[a, b[$ ou $]a, b]$</li> </ul>",
         "id": 102
     }, {
@@ -688,7 +688,7 @@ const quiz_reels = [{
     }, {
         "type": "remarque",
         "titre": "Lien entre majoration de valeur absolue et appartenance à une boule",
-        "hypotheses": "",
+
         "resultat": "Il est important de retenir qu'une majoration de certaines valeurs absolues se traduit par l'appartenance à une boule : <ul> <li>une majoration du type $|x - a| \\leqslant r$ traduit l'appartenance de $x$ à la boule fermée $\\ol{B}(a, r)$ de centre $a$ et de rayon $r$, donc à l'intervalle $[a-r,a+r]$</li> <li>une majoration du type $|x - a| \\lt r$ traduit l'appartenance de $x$ à la boule ouverte $B(a, r)$ de centre $a$ et de rayon $r$, donc à l'intervalle $]a-r,a+r[$</li> </ul>",
         "id": 104
     }, {
@@ -700,55 +700,55 @@ const quiz_reels = [{
     }, {
         "type": "definition",
         "titre": "Sous-ensemble ouvert",
-        "hypotheses": "",
+
         "resultat": "<ul> <li>Un <b>ouvert</b> de $U$ de $\\R^n$ est un sous-ensemble $U$ de $\\R^n$ qui est voisinage de tous ses points</li> <li>De manière équivalente, $U \\subset \\R^n$ est ouvesrt si et seulement si : <br /> $\\forall x \\in U, \\exists \\varepsilon \\gt 0, B(x, \\varepsilon) \\subset U$ </li> </ul>",
         "id": 106
     }, {
         "type": "definition",
         "titre": "Sous-ensemble fermé",
-        "hypotheses": "",
+
         "resultat": "Un sous-ensemble $F$ de $\\R^n$ est <b>fermé</b> si son complémentaire $C_E F$ est <b>ouvert</b>",
         "id": 107
     }, {
         "type": "proposition",
         "titre": "Union/intersections d'ouverts et de fermés",
-        "hypotheses": "",
+
         "resultat": "<ol> <li>Toute union quelconque d'ouverts est un ouvert</li> <li>Toute intersection d'un nombre fini d'ouverts est un ouvert</li> <li>Toute intersection quelconque de fermés est un fermé</li> <li>Toute union d'un nombre fini de fermés est un fermé</li> </ol>",
         "id": 108
     }, {
         "type": "definition",
         "titre": "Droite achevée réelle",
-        "hypotheses": "",
+
         "resultat": "La droite achevée réelle, notée $\\ol{\\R}$, est l'ensemble $\\R \\cup \\{-\\infty, + \\infty\\}$.",
         "id": 109
     }, {
         "type": "definition",
         "titre": "Relation d'ordre sur $\\ol{\\R}$",
-        "hypotheses": "",
+
         "resultat": "On peut prolonger l'ordre de $\\R$ en un ordre de $\\ol{\\R}$ en posant : <br /> $\\forall x \\in \\ol{\\R}, -\\infty \\leqslant x \\leqslant +\\infty$.",
         "id": 110
     }, {
         "type": "definition",
         "titre": "Règles calculatoires dans $\\ol{\\R}$",
-        "hypotheses": "",
+
         "resultat": "On peut prolonger partiellement les opérations de $\\R$ sur $\\ol{\\R}$, en posant : <ul> <li>$-(+\\infty) = - \\infty$</li> <li>$\\forall x \\in \\ol{\\R}\\text{\\ }\\{-\\infty\\}, x + (+\\infty) = +\\infty$</li> <li>$\\forall x \\in \\ol{\\R}\\text{\\ }\\{+\\infty\\}, x + (-\\infty) = -\\infty$</li> <li>$\\frac{1}{+\\infty} = \\frac{1}{-\\infty} = 0$</li> <li>$\\forall x \\in \\ol{\\R}_+^*, x \\times (+\\infty) = +\\infty, x \\times (-\\infty) = -\\infty$</li> <li>$\\forall x \\in \\ol{\\R}_-^*, x \\times (+\\infty) = -\\infty, x \\times (-\\infty) = +\\infty$</li> </ul>",
         "id": 111
     }, {
         "type": "definition",
         "titre": "Formes indéterminées dans $\\ol{\\R}$",
-        "hypotheses": "",
+
         "resultat": "Les opérations suivantes ne sont pas définies, et définissent les formes indéterminées de la somme et du produit dans $\\ol{\\R}$ : <ul> <li>$-\\infty + (+\\infty)$</li> <li>$0 \\times (+\\infty)$</li> <li>$0 \\times (-\\infty)$</li> </ul>",
         "id": 112
     }, {
         "type": "proposition",
         "titre": "Bornes supérieures dans $\\ol{\\R}$",
-        "hypotheses": "",
+
         "resultat": "Tous sous-ensemble $E$ de $\\ol{\\R}$ admet une borne supérieure dans $\\ol{\\R}$",
         "id": 113
     }, {
         "type": "proposition",
         "titre": "Bornes inférieures dans $\\ol{\\R}$",
-        "hypotheses": "",
+
         "resultat": "Tous sous-ensemble $E$ de $\\ol{\\R}$ admet une borne inférieure dans $\\ol{\\R}$",
         "id": 114
     }
@@ -757,37 +757,37 @@ const quiz_reels = [{
 const quiz_nb_complexes = [{
     "type": "definition",
     "titre": "Ensemble $\\C$ des nombres complexes",
-    "hypotheses": "",
+
     "resultat": "L'ensemble des nombres complexes $\\C$ est l'ensemble $\\R^2$, muni des opérations suivantes : <ul><li>$(a, b) + (a',b') = (a+a', b+b')$</li> <li>$(a, b) \\times (a', b') = (aa' - bb', ab' + a'b)$</li></ul>",
     "id": 115
 }, {
     "type": "remarque",
     "titre": "Injection de $\\R$ dans $\\C$",
-    "hypotheses": "",
+
     "resultat": "L'application $\\lambda \\rightarrow (\\lambda, 0)$ étant injective, on identifie un réel $\\lambda$ au complexe $(\\lambda, 0)$. Via cette définition, on peut considérer que $\\R \\in \\C$, et on vérifie facilement que la somme et le produit défini sur $\\C$ prolongent les lois de $\\R$.",
     "id": 116
 }, {
     "type": "definition",
     "titre": "definition de la forme algébrique",
-    "hypotheses": "",
+
     "resultat": "<ul><li>On note $1 = (1,0)$ et $i = (0, 1)$</li><li>On a alors, pour tout $z = (a,b) \\in \\C$, <br/> $z = a\\times 1 + b\\times i =  a+ib$<br/>C'est la forme algébrique du nombre complexe $z$.</li></ul>",
     "id": 117
 }, {
     "type": "definition",
     "titre": "Parties réelle/imaginaire",
-    "hypotheses": "",
+
     "resultat": "<ul><li>Soit $z=a+ib$, avec $a,b \\in \\R$. <br/> * Le réel $a$ est appelé <b>partie réelle de $z$</b>, et est noté $\\Re(z)$<br/> * Le réel $b$ est appelé <b>partie imaginaire de $z$</b>, et est noté $\\Im(z)$</li> <li>Un nombre $z \\in \\C$ tel que $\\Re(z) = 0$ est appelé <b>nombre imaginaire pur</b></li> <li>Un nombre $z \\in \\C$ vérifie $\\Im(z) = 0$ si et seulement si $z \\in \\R$</li> </ul>",
     "id": 118
 }, {
     "type": "proposition",
     "titre": "Propriétés liées au produit (nb complexes)",
-    "hypotheses": "",
+
     "resultat": "<ol><li>$i^2=-1$</li> <li>Le produit $(a+ib)(a'+ib')$ est simplement obtenu par utilisation des règles de distributivité et par la relation $i^2=-1$</li> <li>Si $z\\neq0$, alors $z$ est inversible, et, si $z=a+ib$ avec $(a,b) \\in \\R^2$, on a l'expression de l'inverse : <br/> $z^{-1} = \\frac{a-ib}{a^2+b^2}$</li></ol>",
     "id": 119
 }, {
     "type": "theoreme",
     "titre": "Structure de $\\C$",
-    "hypotheses": "",
+
     "resultat": "L'ensemble $\\C$ muni des opérations ci-dessus est un corps.",
     "id": 120
 }, {
@@ -799,7 +799,7 @@ const quiz_nb_complexes = [{
 }, {
     "type": "theoreme",
     "titre": "Théorème d'Alembert-Gauss",
-    "hypotheses": "",
+
     "resultat": "Tout polynôme non constant à coefficients complexes admet au moins une racine dans $\\C$.",
     "id": 122
 }, {
@@ -841,25 +841,25 @@ const quiz_nb_complexes = [{
 }, {
     "type": "proposition",
     "titre": "$Re(e^z)$",
-    "hypotheses": "",
+
     "resultat": "$\\Re(e^z) = e^{\\Re(z)}\\cos(\\Im(z))$",
     "id": 238
 }, {
     "type": "proposition",
     "titre": "$\\Im(z)$",
-    "hypotheses": "",
+
     "resultat": "$\\Im(e^z) = e^{\\Re(z)}\\sin(\\Im(z))$",
     "id": 239
 }, {
     "type": "proposition",
     "titre": "$|e^z|$",
-    "hypotheses": "",
+
     "resultat": "$|e^z| = e^{\\Re(z)}$",
     "id": 240
 }, {
     "type": "proposition",
     "titre": "$\\arg(e^z)$",
-    "hypotheses": "",
+
     "resultat": "$\\arg(e^z) = \\Im(z) [2\\pi]$",
     "id": 241
 }, {
@@ -883,13 +883,13 @@ const quiz_nb_complexes = [{
 }, {
     "type": "definition",
     "titre": "Racines n-ièmes, groupe $\\bb{U}_n$",
-    "hypotheses": "",
+
     "resultat": "<ul><li>Soit $n \\in \\N^*$ et $z\\in\\Z$. Une racine n-ième de $z$ est une racine (complexe) du polynôme $X^n - z$, donc un nombre complexe $\\omega$ tel que $\\omega^n=z$</li> <li>Une racine n-ième de l'unité est une racine n-ième de 1</li> <li>L'ensemble des racines n-ième de l'unité est noté $\\bb{U}_n$.</li></ul>",
     "id": 245
 }, {
     "type": "proposition",
     "titre": "Explicitation des racines de l'unité",
-    "hypotheses": "",
+
     "resultat": "Le groupe $\\bb{U}_n$ des racines n-ièmes de l'unité est constitué de $n$ éléments deux à deux distincts et donnés par : <br/> $$\\bb{U}_n = \\{ \\omega_k = e^{i\\frac{2\\pi k}{n}}, k \\in [\\![0, n-1]\\!] \\}$$",
     "id": 246
 }, {
@@ -919,19 +919,19 @@ const quiz_nb_complexes = [{
 }, {
     "type": "definition",
     "titre": "Le complexe $j$",
-    "hypotheses": "",
+
     "resultat": "On note $j$ la racine cubique de l'unité $j = e^{i\\frac{2\\pi}{3}} = -\\frac{1}{2} + i\\frac{\\sqrt{3}}{2}$.",
     "id": 251
 }, {
     "type": "proposition",
     "titre": "Propriétés de j",
-    "hypotheses": "",
+
     "resultat": "<ol><li>$j^3 = 1$, donc $j^n = j^r$, où $r$ est le reste de la division de $n$ par $3$</li> <li>$\\ol{j\\ } = j^2$</li> <li>$j^2 + j + 1 = 0$</li></ol>",
     "id": 252
 }, {
     "type": "proposition",
     "titre": "Racines 6-ièmes de 1",
-    "hypotheses": "",
+
     "resultat": "Les racines 6-ièmes de 1 sont, par ordre croissant d'arguments positifs : <br/> $1, -j^2, j, -1, j^2, -j$",
     "id": 253
 }, {
@@ -943,7 +943,7 @@ const quiz_nb_complexes = [{
 }, {
     "type": "definition",
     "titre": "Affixes",
-    "hypotheses": "",
+
     "resultat": "<ol><li>L'affixe d'un point $(a,b)\\in\\R^2$ est le complexe $z_A = a+ib$</li> <li>L'affixe d'un vecteur $\\vec{u} =\\!\\binom{a}{b}$ de $\\R^2$ est le complexe $z_{\\vec{u}} = a+ib$</li></ol>",
     "id": 255
 }, {
@@ -979,19 +979,19 @@ const quiz_nb_complexes = [{
 }, {
     "type": "texte",
     "titre": "rotation d'angle $\\frac{\\pi}{2}$(Cas particulier)",
-    "hypotheses": "",
+
     "resultat": "La rotation d'angle $\\frac{\\pi}{2}$ se traduit par une multiplication par $i$ (s'en souvenir dans des contextes d'orthogonalité !)",
     "id": 261
 }, {
     "type": "texte",
     "titre": "rotation d'angle $\\frac{\\pi}{3}$",
-    "hypotheses": "",
+
     "resultat": "La rotation d'angle $\\frac{\\pi}{3}$ se traduit par la multiplication par $j$.",
     "id": 262
 }, {
     "type": "texte",
     "titre": "rotation d'angle $\\frac{\\pi}{6}$",
-    "hypotheses": "",
+
     "resultat": "La rotation d'angle $\\frac{\\pi}{6}$ se traduit par la multiplication par $-\\ol{j\\ } = -j^2$.",
     "id": 263
 }, {
@@ -1009,19 +1009,19 @@ const quiz_nb_complexes = [{
 }, {
     "type": "theoreme",
     "titre": "Les $z\\rightarrow az + b$ ou $z\\rightarrow a\\ol{z\\ }+b$",
-    "hypotheses": "",
+
     "resultat": "Les applications $z\\rightarrow az + b$ ou $z\\rightarrow a\\ol{z\\ }+b$ correspondent à des similitudes, qui sont des isométries si de plus $|a| = 1$",
     "id": 266
 }, {
     "type": "proposition",
     "titre": "Caractérisation des droites",
-    "hypotheses": "",
+
     "resultat": "La droite passant par $A$ d'affixe $a$ et $B$ d'affixe $b$ est l'ensemble constitué des points $M$ d'affixe $z$ tels que l'une des propriétés équivalentes suivantes soit vérifié : <br/> <ol><li>il existe $t \\in \\R$ tel que $z = (1-t)a + tb$</li> <li>$z=a$, ou $z\\neq a$ et $\\arg(z-a) \\equiv \\arg(b-a) [\\pi]$</li> <li>$\\frac{z-a}{b-a} \\in \\R$</li></ol>",
     "id": 267
 }, {
     "type": "proposition",
     "titre": "Caractérisation des cercles",
-    "hypotheses": "",
+
     "resultat": "Un sous ensemble $C$ de $\\C$ est un cercle éventuellement vide si et seulement si il existe un complexe $\\alpha$ et un réel $\\beta$ tels que $C$ soit l'ensemble des points d'affixe $z$ vérifiant : <br/> $z \\times \\ol{z\\ } + \\alpha \\times z + \\ol{\\alpha}\\times \\ol{z\\ } + \\beta = 0$<br/>L'ensemble $C$ est dans ce cas non vide si et seulement si $\\beta \\leqslant \\alpha\\ol{\\alpha}$ et dans ce cas, son centre est le point d'affixe $-\\ol{\\alpha}$ et son rayon est $r = \\sqrt{\\alpha\\ol{\\alpha} - \\beta}$",
     "id": 268
 }];
@@ -1029,7 +1029,7 @@ const quiz_nb_complexes = [{
 const quiz_trigo = [{
     "type": "definition",
     "titre": "Cercle trigonométrique",
-    "hypotheses": "",
+
     "resultat": "Le cercle trigonométrique (ou cercle unité) est le sous ensemble de $\\C$, noté $\\bb{U}$ (comme \"unité\"), constitué des nombres complexes de module $1$ : <br/> $\\bb{U} = \\{z \\in \\C, |z| = 1\\}$. <br/> Le cercle trigonométrique correspond dans l'interprétation géométrique des complexes au cercle de centre $(0, 0)$ et de rayon $1$, de $\\R^2$. <br/> <img style=\"background-color:white!important;\" class=\"imgc\" src=\"res/cercle_trigo.svg\" />",
     "id": 128
 }, {
@@ -1053,193 +1053,193 @@ const quiz_trigo = [{
 }, {
     "type": "proposition",
     "titre": "Domaines de définition des fonctions trigonométriques",
-    "hypotheses": "",
+
     "resultat": "<ol><li>Les fonctions sin et cos sont définies sur $\\R$</li> <li>La fonction tan est définie sur $\\R\\backslash \\{\\frac{\\pi}{2} + n\\pi, n \\in \\Z\\}$</li> <li>La fonction cotan est définie sur $\\R\\backslash \\{n\\pi, n \\in \\Z\\}$.</li></ol>",
     "id": 132
 }, {
     "type": "proposition",
     "titre": "Périodicité de sin et cos",
-    "hypotheses": "",
+
     "resultat": "sin et cos sont $2\\pi$-périodiques",
     "id": 133
 }, {
     "type": "proposition",
     "titre": "Parité de sin et cos",
-    "hypotheses": "",
+
     "resultat": "sin est impaire et cos est paire",
     "id": 134
 }, {
     "type": "proposition",
     "titre": "$\\cos(\\pi+x)$",
-    "hypotheses": "",
+
     "resultat": "$\\cos(\\pi+x) = -\\cos(x)$",
     "id": 135
 }, {
     "type": "proposition",
     "titre": "$\\sin(\\pi+x)$",
-    "hypotheses": "",
+
     "resultat": "$\\sin(\\pi+x) = -\\sin(x)$",
     "id": 136
 }, {
     "type": "proposition",
     "titre": "$\\cos(\\pi-x)$",
-    "hypotheses": "",
+
     "resultat": "$\\cos(\\pi-x) = -\\cos(x)$",
     "id": 137
 }, {
     "type": "proposition",
     "titre": "$\\sin(\\pi-x)$",
-    "hypotheses": "",
+
     "resultat": "$\\sin(\\pi-x) = \\sin(x)$",
     "id": 138
 }, {
     "type": "proposition",
     "titre": "$\\cos(\\frac{\\pi}{2}-x)$",
-    "hypotheses": "",
+
     "resultat": "$\\cos(\\frac{\\pi}{2}-x) = \\sin(x)$",
     "id": 139
 }, {
     "type": "proposition",
     "titre": "$\\sin(\\frac{\\pi}{2}-x)$",
-    "hypotheses": "",
+
     "resultat": "$\\sin(\\frac{\\pi}{2}-x) = \\cos(x)$",
     "id": 140
 }, {
     "type": "proposition",
     "titre": "$\\cos(\\frac{\\pi}{2}+x)$",
-    "hypotheses": "",
+
     "resultat": "$\\cos(\\frac{\\pi}{2}+x) = -\\sin(x)$",
     "id": 141
 }, {
     "type": "proposition",
     "titre": "$\\sin(\\frac{\\pi}{2}+x)$",
-    "hypotheses": "",
+
     "resultat": "$\\sin(\\frac{\\pi}{2}+x) = \\cos(x)$",
     "id": 142
 }, {
     "type": "proposition",
     "titre": "Périodicité de tan et cotan",
-    "hypotheses": "",
+
     "resultat": "tan et cotan sont $\\pi$-périodiques",
     "id": 143
 }, {
     "type": "proposition",
     "titre": "Parité de tan et cotan",
-    "hypotheses": "",
+
     "resultat": "tan et cotan sont impaires",
     "id": 144
 }, {
     "type": "proposition",
     "titre": "$\\sin(0)$",
-    "hypotheses": "",
+
     "resultat": "$\\sin(0) = 0$",
     "id": 145
 }, {
     "type": "proposition",
     "titre": "$\\sin(\\frac{\\pi}{6})$",
-    "hypotheses": "",
+
     "resultat": "$\\sin(\\frac{\\pi}{6}) = \\frac{1}{2}$",
     "id": 146
 }, {
     "type": "proposition",
     "titre": "$\\sin(\\frac{\\pi}{4})$",
-    "hypotheses": "",
+
     "resultat": "$\\sin(\\frac{\\pi}{4}) = \\frac{\\sqrt{2}}{2}$",
     "id": 147
 }, {
     "type": "proposition",
     "titre": "$\\sin(\\frac{\\pi}{3})$",
-    "hypotheses": "",
+
     "resultat": "$\\sin(\\frac{\\pi}{3}) = \\frac{\\sqrt{3}}{2}$",
     "id": 148
 }, {
     "type": "proposition",
     "titre": "$\\sin(\\frac{\\pi}{2})$",
-    "hypotheses": "",
+
     "resultat": "$\\sin(\\frac{\\pi}{2}) = 1$",
     "id": 149
 }, {
     "type": "proposition",
     "titre": "$\\cos(0)$",
-    "hypotheses": "",
+
     "resultat": "$\\cos(0) = 1$",
     "id": 150
 }, {
     "type": "proposition",
     "titre": "$\\cos(\\frac{\\pi}{6})$",
-    "hypotheses": "",
+
     "resultat": "$\\cos(\\frac{\\pi}{6}) = \\frac{\\sqrt{3}}{2}$",
     "id": 151
 }, {
     "type": "proposition",
     "titre": "$\\cos(\\frac{\\pi}{4})$",
-    "hypotheses": "",
+
     "resultat": "$\\cos(\\frac{\\pi}{4}) = \\frac{\\sqrt{2}}{2}$",
     "id": 152
 }, {
     "type": "proposition",
     "titre": "$\\cos(\\frac{\\pi}{3})$",
-    "hypotheses": "",
+
     "resultat": "$\\cos(\\frac{\\pi}{3}) = \\frac{1}{2}$",
     "id": 153
 }, {
     "type": "proposition",
     "titre": "$\\cos(\\frac{\\pi}{2})$",
-    "hypotheses": "",
+
     "resultat": "$\\cos(\\frac{\\pi}{2}) = 0$",
     "id": 154
 }, {
     "type": "proposition",
     "titre": "$\\tan(0)$",
-    "hypotheses": "",
+
     "resultat": "$\\tan(0) = 0$",
     "id": 155
 }, {
     "type": "proposition",
     "titre": "$\\tan(\\frac{\\pi}{6})$",
-    "hypotheses": "",
+
     "resultat": "$\\tan(\\frac{\\pi}{6}) = \\frac{1}{\\sqrt{3}}$",
     "id": 156
 }, {
     "type": "proposition",
     "titre": "$\\tan(\\frac{\\pi}{4})$",
-    "hypotheses": "",
+
     "resultat": "$\\tan(\\frac{\\pi}{4}) = 1$",
     "id": 157
 }, {
     "type": "proposition",
     "titre": "$\\tan(\\frac{\\pi}{3})$",
-    "hypotheses": "",
+
     "resultat": "$\\tan(\\frac{\\pi}{3}) = \\sqrt{3}$",
     "id": 158
 }, {
     "type": "proposition",
     "titre": "$\\text{cotan}(\\frac{\\pi}{6})$",
-    "hypotheses": "",
+
     "resultat": "$\\text{cotan}(\\frac{\\pi}{6}) = \\sqrt{3}$",
     "id": 159
 }, {
     "type": "proposition",
     "titre": "$\\text{cotan}(\\frac{\\pi}{4})$",
-    "hypotheses": "",
+
     "resultat": "$\\text{cotan}(\\frac{\\pi}{4}) = 1$",
     "id": 160
 }, {
     "type": "proposition",
     "titre": "$\\text{cotan}(\\frac{\\pi}{3})$",
-    "hypotheses": "",
+
     "resultat": "$\\text{cotan}(\\frac{\\pi}{3}) = \\frac{1}{\\sqrt{3}}$",
     "id": 161
 }, {
     "type": "proposition",
     "titre": "$\\text{cotan}(\\frac{\\pi}{2})$",
-    "hypotheses": "",
+
     "resultat": "$\\text{cotan}(\\frac{\\pi}{2}) = 0$",
     "id": 162
 }, {
     "type": "proposition",
     "titre": "Identité remarquable ou théorème de Pythagore",
-    "hypotheses": "",
+
     "resultat": "Pour tout $x \\in \\R$, $\\sin^2(x) + \\cos^2(x) = 1$",
     "id": 163
 }, {
@@ -1389,25 +1389,25 @@ const quiz_trigo = [{
 }, {
     "type": "definition",
     "titre": "Exponentielle complexe",
-    "hypotheses": "",
+
     "resultat": "On définit l'exponentielle complexe sur les nombres imaginaires purs par : <br/> $\\forall \\theta \\in \\R, e^{i\\theta} = \\cos(\\theta) + i\\sin(\\theta)$",
     "id": 225
 }, {
     "type": "proposition",
     "titre": "Surjectivité de $e^{i\\theta}$",
-    "hypotheses": "",
+
     "resultat": "La fonction $\\theta \\rightarrow e^{i\\theta}$ est surjective de $\\R$ sur $\\bb{U}$. Plus précisément, c'est une bijection de tout intervalle $]\\alpha, \\alpha + 2\\pi]$ sur $\\bb{U}$, ainsi que de tout intervalle $[\\alpha, \\alpha+2\\pi[$ sur $\\bb{U}$",
     "id": 226
 }, {
     "type": "corollaire",
     "titre": "Propriété de la fonction définie par $(r, 0) \\rightarrow re^{i\\theta}$",
-    "hypotheses": "",
+
     "resultat": "La fonction de $\\R_+^* \\times ]-\\pi, \\pi]$, sur $\\C^*$ définie par $(r, 0) \\rightarrow re^{i\\theta}$",
     "id": 227
 }, {
     "type": "definition",
     "titre": "Forme trigonométrique de l'exponentielle complexe",
-    "hypotheses": "",
+
     "resultat": "<ul> <li>Tout nombre complexe non nul $z$ s'écrit sous la forme $z = re^{i\\theta}$ appelé forme trigonométrique</li> <li>$r$ est unique, égal au module de $z$.</li> <li>$\\theta$ est unique modulo $2\\pi$, appelé argument de $z$.</li> <li>L'unique argument $\\theta$ de l'intervalle $]-\\pi, \\pi]$ est appelé argument principal de $z$, et est noté $\\arg(z)$</li></ul>",
     "id": 228
 }, {
@@ -1419,37 +1419,37 @@ const quiz_trigo = [{
 }, {
     "type": "theoreme",
     "titre": "Formules trigonométriques d'addition",
-    "hypotheses": "",
+
     "resultat": "Pour tout $(\\theta, \\theta') \\in \\R^2$, $e^{i(\\theta+\\theta')} = e^{i\\theta}e^{i\\theta'}$",
     "id": 230
 }, {
     "type": "corollaire",
     "titre": "Formule de De Moivre",
-    "hypotheses": "",
+
     "resultat": "Pour tout $\\theta \\in \\R$ et $n \\in \\N$ : <br/> $e^{in\\theta} = (e^{i\\theta})^n$, soit : $\\cos(n\\theta) + i\\sin(n\\theta) = (\\cos(\\theta) + i\\sin(\\theta))^n$",
     "id": 231
 }, {
     "type": "methode",
     "titre": "Principe de symétrisation des arguments",
-    "hypotheses": "",
+
     "resultat": "Cette méthode permet d'exprimer une somme ou une différence de deux exponentielles à l'aide des fonctions trigonométriques. C'est notamment intéressant pour obtenir la partie réelle et la partie imaginaire sous forme factorisée.<br/> Soit $a$ et $b$ deux réels. Alors : <ul><li>$$e^{ia} + e^{ib} = e^{i\\frac{a+b}{2}}(e^{i\\frac{a-b}{2}} + e^{-i\\frac{a-b}{2}}) = 2\\cos(\\frac{a-b}{2})e^{i\\frac{a+b}{2}}$$</li> <li>$$e^{ia} - e^{ib} = e^{i\\frac{a+b}{2}}(e^{i\\frac{a-b}{2}} - e^{-i\\frac{a-b}{2}}) = 2i\\sin(\\frac{a-b}{2})e^{i\\frac{a+b}{2}}$$</li></ul>",
     "id": 232
 }, {
     "type": "methode",
     "titre": "Linéarisation",
-    "hypotheses": "",
+
     "resultat": "Le but est d'exprimer $\\cos^n(\\theta)$ ou $\\sin^n(\\theta)$ en fonction de $\\cos(k\\theta)$ et $\\sin(k\\theta)$, $k \\in \\N$. Principe du calcul : <ol><li>Exprimer $\\cos(\\theta)$ ou $\\sin(\\theta)$ à l'aide des formules d'Euler.</li> <li>Développer à l'aide de la formule du binôme de Newton</li> <li>Regrouper dans le développement les exponentielles conjuguées et les réexprimer à l'aide des fonctions sin et cos en utilisant la formule d'Euler dans l'autre sens.</li></ol>",
     "id": 233
 }, {
     "type": "methode",
     "titre": "\"délinéarisation\", ou les polynômes de Tchébychev",
-    "hypotheses": "",
+
     "resultat": "Cela consiste à écrire $\\cos(n\\theta)$ ou $\\sin(n\\theta)$ en fonction des puissances de $\\cos(x)$ et/ou $\\sin(x)$. Le principe du calcul : <ol><li>On utilise la formule de De Moivre pour exprimer $\\cos(n\\theta)$ ou $\\sin(n\\theta)$ comme une partie réelle ou imaginaire de $\\cos(\\theta)+i\\sin(\\theta))^n$</li> <li>On développe cette expression à l'aide de la formule du binôme de Newton</li> <li>On utilise l'identité remarquable $\\sin^2(x)+\\cos^2(x) = 1$ pour exprimer la partie réelle (ou imaginaire) sous forme d'un polynôme en $\\cos(x)$(pour $\\cos(n\\theta)$) ou le produit de $\\cos(x)$ par un polynôme en $\\sin(x)$(pour $\\sin(n\\theta)$)</li></ol>",
     "id": 234
 }, {
     "type": "methode",
     "titre": "Sommes de sin et cos",
-    "hypotheses": "",
+
     "resultat": "Le principe général est d'écrire une somme de sin (ou de cos) sous la forme de la partie imaginaire (ou réelle) d'une somme exponentielles. On peut alors souvent exploiter le caractère géométrique du terme $e^{in\\theta}$, par utilisation des propriétés des sommes géométriques, ou de la formule du binôme, etc...",
     "id": 235
 }, {
@@ -1463,7 +1463,7 @@ const quiz_trigo = [{
 const quiz_combi = [{
     "type": "definition",
     "titre": "Définition de la cardinalité selon Frege",
-    "hypotheses": "",
+
     "resultat": "On dit que deux ensembles $E$ et $F$ ont le même cardinal s'il existe une bijection de $E$ à $F$. On note $\\text{Card}(E) = \\text{Card}(F)$",
     "id": 188
 }, {
@@ -1481,7 +1481,7 @@ const quiz_combi = [{
 }, {
     "type": "lemme",
     "titre": "Bijections de $[\\![1, n]\\!]$ et $[\\![1, m]\\!]$",
-    "hypotheses": "",
+
     "resultat": "Tout sous ensemble $F$ de $[\\![1, n]\\!]$ peut être mis en bijection avec un ensemble $[\\![1, m]\\!]$",
     "id": 191
 }, {
@@ -1505,13 +1505,13 @@ const quiz_combi = [{
 }, {
     "type": "proposition",
     "titre": "Cardinal d'un complémentaire",
-    "hypotheses": "",
+
     "resultat": "Si $a \\subset B$, alors $|\\text{C}_BA|$ = |B| - |A|",
     "id": 195
 }, {
     "type": "corollaire",
     "titre": "Cardinal d'un sous-ensemble",
-    "hypotheses": "",
+
     "resultat": "Si $A \\subset B$, alors $|A| \\leqslant |B|$, avec égalité si et seulement si $A=B$.",
     "id": 196
 }, {
@@ -1565,19 +1565,19 @@ const quiz_combi = [{
 }, {
     "type": "definition",
     "titre": "p-listes",
-    "hypotheses": "",
+
     "resultat": "Une p-liste d'éléments de $F$ (ou p-uplet) est un élément ($x_1$, ..., $x_p$) de $F^p$.",
     "id": 205
 }, {
     "type": "proposition",
     "titre": "Nombre de p-liste",
-    "hypotheses": "",
+
     "resultat": "Le nombre de p-listes d'éléments de $F$ est $|F|^p$",
     "id": 206
 }, {
     "type": "proposition",
     "titre": "Cardinal de l'ensemble des parties",
-    "hypotheses": "",
+
     "resultat": "$|\\mathcal{P}(E)| = 2^{|E|}$",
     "id": 207
 }, {
@@ -1607,19 +1607,19 @@ const quiz_combi = [{
 }, {
     "type": "definition",
     "titre": "Coefficient binomial",
-    "hypotheses": "",
+
     "resultat": "Le coefficient binomial $\\binom{n}{k}$ est le nombre de parties à $k$ éléments de $[\\![1,n]\\!]$",
     "id": 212
 }, {
     "type": "proposition",
     "titre": "Sens général du coefficient binomial",
-    "hypotheses": "",
+
     "resultat": "Le coefficient binomial $\\binom{n}{k}$ est plus généralement le nombre de sous-ensemble de cardinal $k$ de n'importe quel ensemble $E$ de cardinal $n$.",
     "id": 213
 }, {
     "type": "proposition",
     "titre": "Expression factorielle du coefficient binomial",
-    "hypotheses": "",
+
     "resultat": "Pour $k \\in [\\![0, n]\\!]$, $\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$",
     "id": 214
 }, {
@@ -1631,97 +1631,205 @@ const quiz_combi = [{
 }, {
     "type": "theoreme",
     "titre": "Formule du binôme",
-    "hypotheses": "",
+
     "resultat": "Pour $n \\in \\N$, $$(a+b)^n = \\sum_{k=0}^n\\binom{n}{k}a^kb^{n-k}$$",
     "id": 216
 }, {
     "type": "methode",
     "titre": "Principe fondamental du dénombrement",
-    "hypotheses": "",
+
     "resultat": "Pour montrer que deux ensembles ont le même cardinal, il suffit de construire une bijection entre eux. Ainsi, pour déterminer le cardinal d'un ensemble, on le met souvent en bijection avec un ensemble \"de référence\" dont on connaît le cardinal.",
     "id": 217
 }, {
     "type": "methode",
     "titre": "Démonstration combinatoire d'une formule",
-    "hypotheses": "",
+
     "resultat": "<ol><li>Trouver un modèle adapté de la formule, autrement dit un ensemble d'objets dont le dénombrement fournira un des membres de l'égalité. Pour cela, il est préférable de s'aider du membre le plus simple de l'égalité</li> <li>Dénombrer cet ensemble de deux façons différentes. Souvent, on procède d'une part à un dénombrement direct, et d'autre part à un dénombrement après avoir effectué le tri (de façon formelle, cela revient à définir une partition de l'ensemble). Le résultat d'un dénombrement par tri se traduit par une somme.</li> <li>Evidemment, cette méhode n'est adaptée qu'à des formules portant sur des nombres entiers, si possible positifs. Il est parfois possible de se ramener à cette situation par un prétraitement de la formule à démontrer.</li></ol>",
     "id": 218
 }, {
     "type": "proposition",
     "titre": "Formule de Pascal (coefficients binomiaux)",
-    "hypotheses": "",
+
     "resultat": "$$\\binom{n}{k} = \\binom{n-1}{k-1} + \\binom{n-1}{k}$$",
     "id": 219
 }, {
     "type": "proposition",
     "titre": "$$\\sum_{k=0}^n \\binom{n}{k}$$",
-    "hypotheses": "",
+
     "resultat": "$$\\sum_{k=0}^n \\binom{n}{k} = 2^n$$",
     "id": 220
 }, {
     "type": "proposition",
     "titre": "Formule de Vandermonde (coefficients binomiaux)",
-    "hypotheses": "",
+
     "resultat": "$$\\sum_{k=0}^n\\binom{N}{k}\\binom{M}{n-k} = \\binom{N+M}{n}$$",
     "id": 221
 }, {
     "type": "proposition",
     "titre": "Formule de sommation sur une colonne",
-    "hypotheses": "",
+
     "resultat": "$$\\sum_{k=0}^p\\binom{n+k}{n} = \\binom{n+p+1}{n+1}$$",
     "id": 222
 }, {
     "type": "proposition",
     "titre": "$$\\sum_{k=0}^n = \\binom{k}{N}\\binom{n-k}{M}$$",
-    "hypotheses": "",
+
     "resultat": "$$\\sum_{k=0}^n = \\binom{k}{N}\\binom{n-k}{M} = \\binom{n+1}{M+N+1}$$",
     "id": 223
 }, {
     "type": "methode",
     "titre": "simplifier un $(-1)^n$ associé à un coefficient binomial",
-    "hypotheses": "",
+
     "resultat": "Remarquez qu'un signe $(-1)^n$ associé à un coefficient binomial correspond souvent à une comparaison de parités de cardinaux. On peut passer d'un cardinal pair à un cardinal impair, et vice-versa, en \"allumant ou éteignant\" un élément fixé à l'avance suivant qu'il est déjà ou non dans notre ensemble (plus précisement, il s'agit de l'opération $X \\rightarrow X \\Delta \\{x\\}$.)",
     "id": 224
 }];
 
 
 const quiz_limites = [{
-    "type": "remarque",
-    "titre": "Adhérence",
-    "hypotheses": "",
-    "resultat": "Si $X$ est un sous(ensemble quelconque de $\\R$, on peut considérer la limite en un point $a$ de l'adhérence $\\ol{X}$ de $X$, défini comme étant le plus petit fermé contenant $X$, ou de façon équivalente, l'ensemble des points $x$ pouvant être approché d'aussi près qu'on veut par des points de $X$ (i.e. tout voisinage de $x$ rencontre $X$)",
-    "id": 269
-}, {
-    "type": "definition",
-    "titre": "Limite réelle lorsque $x$ tend vers $a$",
-    "hypotheses": "Soit $a \\in \\ol{X} \\cap \\R$",
-    "resultat": "Soit $b \\in \\R$. On dit que $f(x)$ tend vers $b$ lorsque $x$ tend vers $a$ si :    $\\forall \\varepsilon \\gt 0, \\exists \\eta \\gt 0, \\forall x \\in X, |x − a| \\leqslant \\eta \\implies |f(x)−b| \\leqslant \\varepsilon$",
-    "id": 270
-}, {
-    "type": "definition",
-    "titre": "Limite $+\\infty$ lorsque $x$ tend vers $a$",
-    "hypotheses": "Soit $a \\in \\ol{X} \\cap \\R$",
-    "resultat": "On dit que $f(x)$ tend vers $+\\infty$ lorsque $x$ tend vers $a$ si :    $\\forall A \\in \\R, \\exists \\eta \\gt 0, \\forall x \\in X, |x - a| \\leqslant \\eta \\implies f(x) \\geqslant A$",
-    "id": 271
-}, {
-    "type": "definition",
-    "titre": "Limite $-\\infty$ lorsque $x$ tend vers $a$",
-    "hypotheses": "Soit $a \\in \\ol{X} \\cap \\R$",
-    "resultat": "On dit que $f(x)$ tend vers $-\\infty$ lorsque $x$ tend vers $a$ si :    $\\forall A \\in \\R, \\exists \\eta \\gt 0, \\forall x \\in X, |x - a| \\leqslant \\eta \\implies f(x) \\leqslant A$",
-    "id": 272
-}, {
-    "type": "proposition",
-    "titre": "Limite en un point du domaine",
-    "hypotheses": "Soit $a \\in X$",
-    "resultat": "Si $f(x)$ admet une limite en $a$, alors cette limite est nécessairement égale à $f(a)$.",
-    "id": 273
-}, {
-    "type": "definition",
-    "titre": "Limites dans des espaces métriques",
-    "hypotheses": "Soit $(E, d)$ et $(F, d')$ deux espaces métriques, et $X \\subset E$. Soit $f : X \\longrightarrow F$. <br/> Soit $a \\in \\ol{X}$, et $b \\in F$.",
-    "resultat": "Comme dans le cas de $\\R$, on peut considérer l'adhérence $\\ol{X}$ de $X$ dans $E$. On dit que $f$ admet une limite $b$ en $a$ si : <br/>$\\forall \\varepsilon \\gt 0, \\exists \\eta \\gt 0, \\forall x \\in X, d(x, a) \\lt \\eta \\implies d'(f(x), b) \\lt \\varepsilon$",
-    "id": 274
-}];
+        "type": "remarque",
+        "titre": "Adhérence",
+        "resultat": "Si $X$ est un sous(ensemble quelconque de $\\R$, on peut considérer la limite en un point $a$ de l'adhérence $\\ol{X}$ de $X$, défini comme étant le plus petit fermé contenant $X$, ou de façon équivalente, l'ensemble des points $x$ pouvant être approché d'aussi près qu'on veut par des points de $X$ (i.e. tout voisinage de $x$ rencontre $X$)",
+        "id": 269
+    }, {
+        "type": "definition",
+        "titre": "Limite réelle lorsque $x$ tend vers $a$",
+        "hypotheses": "Soit $a \\in \\ol{X} \\cap \\R$",
+        "resultat": "Soit $b \\in \\R$. On dit que $f(x)$ tend vers $b$ lorsque $x$ tend vers $a$ si :    $\\forall \\varepsilon \\gt 0, \\exists \\eta \\gt 0, \\forall x \\in X, |x − a| \\leqslant \\eta \\implies |f(x)−b| \\leqslant \\varepsilon$",
+        "id": 270
+    }, {
+        "type": "definition",
+        "titre": "Limite $+\\infty$ lorsque $x$ tend vers $a$",
+        "hypotheses": "Soit $a \\in \\ol{X} \\cap \\R$",
+        "resultat": "On dit que $f(x)$ tend vers $+\\infty$ lorsque $x$ tend vers $a$ si :    $\\forall A \\in \\R, \\exists \\eta \\gt 0, \\forall x \\in X, |x - a| \\leqslant \\eta \\implies f(x) \\geqslant A$",
+        "id": 271
+    }, {
+        "type": "definition",
+        "titre": "Limite $-\\infty$ lorsque $x$ tend vers $a$",
+        "hypotheses": "Soit $a \\in \\ol{X} \\cap \\R$",
+        "resultat": "On dit que $f(x)$ tend vers $-\\infty$ lorsque $x$ tend vers $a$ si :    $\\forall A \\in \\R, \\exists \\eta \\gt 0, \\forall x \\in X, |x - a| \\leqslant \\eta \\implies f(x) \\leqslant A$",
+        "id": 272
+    }, {
+        "type": "proposition",
+        "titre": "Limite en un point du domaine",
+        "hypotheses": "Soit $a \\in X$",
+        "resultat": "Si $f(x)$ admet une limite en $a$, alors cette limite est nécessairement égale à $f(a)$.",
+        "id": 273
+    }, {
+        "type": "definition",
+        "titre": "Limites dans des espaces métriques",
+        "hypotheses": "Soit $(E, d)$ et $(F, d')$ deux espaces métriques, et $X \\subset E$. Soit $f : X \\longrightarrow F$. <br/> Soit $a \\in \\ol{X}$, et $b \\in F$.",
+        "resultat": "Comme dans le cas de $\\R$, on peut considérer l'adhérence $\\ol{X}$ de $X$ dans $E$. On dit que $f$ admet une limite $b$ en $a$ si : <br/>$\\forall \\varepsilon \\gt 0, \\exists \\eta \\gt 0, \\forall x \\in X, d(x, a) \\lt \\eta \\implies d'(f(x), b) \\lt \\varepsilon$",
+        "id": 274
+    },
+    //  {
+    //     "type": "definition",
+    //     "titre": "Limite caractérisée par deux espaces métriques",
+    //     "hypotheses": "Soit $(E,d)$ et $(F, d')$ deux espaces métriques, et $X \\subset E$. Soit $f: X \\longrightarrow F$. Comme dans le cas de $\\R$, on peut considérer l'adhérence $\\ol{x}$ de $X$ dans $E$. Soit $a \\in \\ol{X}$ et $b \\in F$.",
+    //     "resultat": "On dit que $f$ admet une limite $b$ en $a$ si : <br/> $\\forall \\varepsilon \\gt 0$, $\\exists \\eta \\gt 0$, $\\forall x \\in X$, $d(x,a) \\lt \\eta$ $\\implies$ $d'(f(x), b) \\lt \\varepsilon$.",
+    //     "id": 275
+    // },
+    {
+        "type": "definition",
+        "titre": "limite $b$ quand $x$ tend vers $+\\infty$",
+        "hypotheses": "On suppose que $+\\infty$ est adhérent à $X$ (i.e. $X$ est non majoré).<br/>Soit $b \\in \\R$.",
+        "resultat": "On dit que $f(x)$ tend vers $b$ lorsque $x$ tend vers $+\\infty$ si : <br/> $\\forall \\epsilon \\gt 0$, $\\exists B \\in \\R$, $\\forall x \\in X$, $x \\geqslant B$ $\\implies$ $|f(x)-b| \\leqslant \\epsilon$",
+        "id": 276
+    }, {
+        "type": "definition",
+        "titre": "limite $+\\infty$ quand $x$ tend vers $+\\infty$",
+        "hypotheses": "On suppose que $+\\infty$ est adhérent à $X$ (i.e. $X$ est non majoré).",
+        "resultat": "On dit que $f(x)$ tend vers $+\\infty$ lorsque $x$ tend vers $+\\infty$ si :<br/>$\\forall A \\in \\R$, $\\exists B \\in \\R$, $\\forall x \\in X$, $x \\geqslant B$ $\\implies$ $f(x) \\geqslant A$",
+        "id": 277
+    }, {
+        "type": "definition",
+        "titre": "limite $-\\infty$ quand $x$ tend vers $+\\infty$",
+        "hypotheses": "On suppose que $+\\infty$ est adhérent à $X$ (i.e. $X$ est non majoré).",
+        "resultat": "On dit que $f(x)$ tend vers $-\\infty$ lorsque $x$ tend vers $+\\infty$ si :<br/>$\\forall A \\in \\R$, $\\exists B \\in \\R$, $\\forall x \\in X$, $x \\geqslant B$ $\\implies$ $f(x) \\leqslant A$",
+        "id": 278
+    },
+    {
+        "type": "definition",
+        "titre": "limite $b$ quand $x$ tend vers $-\\infty$",
+        "hypotheses": "On suppose que $-\\infty$ est adhérent à $X$ (i.e. $X$ est non minoré).<br/>Soit $b \\in \\R$.",
+        "resultat": "On dit que $f(x)$ tend vers $b$ lorsque $x$ tend vers $-\\infty$ si : <br/> $\\forall \\epsilon \\gt 0$, $\\exists B \\in \\R$, $\\forall x \\in X$, $x \\leqslant B$ $\\implies$ $|f(x)-b| \\leqslant \\epsilon$",
+        "id": 279
+    }, {
+        "type": "definition",
+        "titre": "limite $+\\infty$ quand $x$ tend vers $+\\infty$",
+        "hypotheses": "On suppose que $-\\infty$ est adhérent à $X$ (i.e. $X$ est non minoré).",
+        "resultat": "On dit que $f(x)$ tend vers $+\\infty$ lorsque $x$ tend vers $-\\infty$ si :<br/>$\\forall A \\in \\R$, $\\exists B \\in \\R$, $\\forall x \\in X$, $x \\leqslant B$ $\\implies$ $f(x) \\geqslant A$",
+        "id": 280
+    }, {
+        "type": "definition",
+        "titre": "limite $-\\infty$ quand $x$ tend vers $+\\infty$",
+        "hypotheses": "On suppose que $-\\infty$ est adhérent à $X$ (i.e. $X$ est non minoré).",
+        "resultat": "On dit que $f(x)$ tend vers $-\\infty$ lorsque $x$ tend vers $-\\infty$ si :<br/>$\\forall A \\in \\R$, $\\exists B \\in \\R$, $\\forall x \\in X$, $x \\leqslant B$ $\\implies$ $f(x) \\leqslant A$",
+        "id": 281
+    }, {
+        "type": "definition",
+        "titre": "Voisinage de +\\infty",
+        "resultat": "On dit que $V \\subset \\R$ est un voisinage de $+\\infty$ s'il existe $a \\in \\R$ tel que $]a, +\\infty[ \\subset V$",
+        "id": 282
+    }, {
+        "type": "remarque",
+        "titre": "Notation : Ensemble des voisinages de $b$",
+        "resultat": "Pour $b \\in \\ol{\\R}$, on note $\\cal{V}(b)$ l'ensemble des voisinages de $b$/",
+        "id": 283
+    }, {
+        "type": "proposition",
+        "titre": "Définition topologique des voisinages",
+        "hypotheses": "Soit $V$ un sous-ensemble de $\\R$ et $b\\in \\R$.",
+        "resultat": "Les propositions suivantes sont équivalentes : <ol><li>$V$ est un voisinage de $b$</li><li>Il existe $U$ un ouvert de $\\R$ tel que $b \\in U \\subset V$</li></ol>",
+        "id": 284
+    }, {
+        "type": "theoreme",
+        "titre": "Caractérisation des limites par voisinages",
+        "hypotheses": "Soit $a \\in \\ol{X}$ (fini ou infini) et $b \\in \\ol{R}$",
+        "resultat": "Les propositions suivantes sont équivalents : <ol> <li style=\"margin-bottom: 10px;\"><i><b>(métrique/métrique)</b></i> <br/>  $f$ admet une limite $b$ lorsque $x$ tend vers $a$</li> <li style=\"margin-bottom: 10px;\"><i><b>(métrique/topologique)</b></i><br/> $(i)$ Si $a$ est fini : $\\forall \\varepsilon \\gt 0$, $\\exists U \\in \\cal{V}(a)$, $\\forall x \\in X$, $|x-a| \\lt 0$ $\\implies$ $f(x) \\in V$<br/>$(ii)$ Si $a = +\\infty$ : $\\forall V \\in \\cal{V}(b)$, $\\exists A > 0$, $\\forall x \\in X$, $x \\gt A$ $\\implies$ $f(x) \\in V$ </li> <li style=\"margin-bottom: 10px;\"><i><b>(topologique/métrique)</b></i> <br/> $(i)$ Si $b$ est fini : $\\forall \\varepsilon \\gt 0$, $\\exists U \\in \\cal{V}(a)$, $\\forall x \\in X$, $x \\in U$ $\\implies$ $|f(x)-b| \\gt \\varepsilon$ <br/> $(ii)$ si $b = +\\infty$ : $\\forall A \\gt 0$, $\\exists U \\in \\cal{V}(a)$, $\\forall x \\in X$, $x \\in U$ $\\implies$ $f(x) \\gt A$</li> <li><i><b>(topologique/topologique)</b></i> <br/> $\\forall V \\in \\cal{V}(b)$, $\\exists U \\in \\cal{V}(a)$, $f(U \\cap X) \\subset V$</li> </ol>",
+        "id": 284
+    }, {
+        "type": "proposition",
+        "titre": "",
+        "hypotheses": "Soit $f$ une fonction admettant une limite finie en un point $a$ de $\\ol{X}$",
+        "resultat": "Alors, $f$ est bornée au voisinage de $a$.",
+        "id": 285
+    }, {
+        "type": "definition",
+        "titre": "Coïncidence de deux fonctions",
+        "hypotheses": "Soit $f$ et $g$ deux fonctions définies sur $X$ et $Y$ et $a$ tel que $a \\in \\ol{X}$ et $a \\in \\ol{Y}$",
+        "resultat": "On dit que $f$ et $g$ coincident au voisinage de $a$ si et seulement s'il existe un voisinage $V$ de $a$ dans $\\R$ tel que $\\X \\cap Y = Y \\cap V$ et que <br/> $\\forall x \\in X \\cap V$, $f(x) = g(x)$",
+        "id": 286
+    }, {
+        "type": "proposition",
+        "titre": "Comparaison des limites de deux fonctions coïncidant au voisinage de $a$",
+        "hypotheses": "Soit $f$ et $g$ deux fonction coïncidant au voisinage d'un point $a$.",
+        "resultat": "Alors, si $f$ admet une limite (finie ou infinie) en $a$, alors $g$ aussi et $\\lim\\limits_{x \\to a} f(x) = \\lim\\limits_{x \\to a} g(x)$",
+        "id": 287
+    }, {
+        "type": "lemme",
+        "titre": "Lemme de séparation",
+        "hypotheses": "Soit $(x, y) \\in \\ol{R}^2$ tels que $x\\neq y$.",
+        "resultat": "Alors il existe des voisinages $U$ de $x$ et $V$ de $y$ tels que $U \\cap V = \\emptyset$. <br/> Si, de plus, $x \\lt y$, on peut choisir $U$ et $V$ tels que $U \\lt V$ (dans le sens où pour tout $u \\in U$ et tout $v \\in V$, $u \\lt v$)",
+        "id": 288
+    }, {
+        "type": "theoreme",
+        "titre": "Unicité de la limite, cas réel",
+        "hypotheses": "Soit $a \\in \\ol{X}$ et $f$ une fonction réelle.",
+        "resultat": "Sous réserve d'existence, la limite de $f(x)$ lorsque $x$ tend vers $a$ est unique.",
+        "id": 289
+    }, {
+        "type": "remarque",
+        "titre": "Notation : Limite en $a$",
+        "resultat": "En cas d'existence de la limite en $a$, on note $\\lim\\limits_{x \\to a} f(x)$ LA limite de $f(x)$ lorsque $x$ tend vers $a$.",
+        "id": 290
+    }, {
+        "type": "remarque",
+        "titre": "Notation : limite en $a$, avec restrictions",
+        "hypotheses": "Soit $f$ définie sur $X$. Soit $Y$ un sous-ensemble tel que $a \\in \\ol{X \\cap Y}$.",
+        "resultat": "Si la limite (finie ou infinie) en $a$ de la restriction $f_{|X\\cap Y}$ existe, on utilise la notation suivante : <br/> $\\lim\\limits_{x \\to a} f_{|X\\cap Y}(x)$ = $\\lim\\limits_{\\begin{array}{ll} x \\to a \\\\ x \\in Y \\end{array}} f(x)$<br/>Dans cette notation, il est sous entendu que $x$ doit bien sûr aussi être élément du domaine de définition $X$ de $f$.",
+        "id": 291
+    }
+];
 /*
 
     NEXT ID : 269
