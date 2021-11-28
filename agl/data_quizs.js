@@ -943,7 +943,24 @@ const quiz_environment = [
     ["the logging industry", "l'industrie du bois", 746],
     ["the rainforest is shrinking", "la forêt tropicale se réduit", 747],
     ["to reforest", "reboiser", 748],
-    ["reforestation", "le reboisement", 749]
+    ["reforestation", "le reboisement", 749],
+    ["a charity", "une organisation caritative", 750],
+    ["to halt", "stopper", 751],
+    ["biome", "biome", 752],
+    ["bottom trawling", "pêche au chalutier", 753],
+    ["welfare", "bien-être", 754],
+    ["to be at loggerheads", "être en désaccord", 755],
+    ["to run out", "s'épuiser", 756],
+    ["to defile", "souiller", 757],
+    ["a driver", "un facteur", 758],
+    ["to dwell", "habiter", 759],
+    ["to dwell at length on", ["s'attarder longuement sur", "s'étend sur"], 760],
+    ["to funnel", ["canaliser", "diriger"], 761],
+    ["readily", "facilement", 762],
+    ["striking", "frappant", 763],
+    ["intermingled", "entremêlés", 764],
+    ["to voice", "exprimer", 765],
+    ["to loosen", "relâcher", 766]
 ];
 
 // NEXT FREE ID : 750
