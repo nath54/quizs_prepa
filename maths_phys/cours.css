@@ -17,15 +17,15 @@
 }
 
 .definition {
-    border: 1px solid rgb(34, 211, 18);
+    border: 2px solid rgb(34, 211, 18);
 }
 
 .proposition {
-    border: 1px solid rgb(185, 175, 32);
+    border: 2px solid rgb(185, 175, 32);
 }
 
 .propriete {
-    border: 1px solid rgb(199, 94, 8);
+    border: 2px solid rgb(199, 94, 8);
 }
 
 .theoreme {
@@ -58,13 +58,13 @@
 
 .disabled {
     background-color: rgb(26, 16, 16);
-    border: 1px solid grey;
+    border: 2px solid grey;
     border-radius: 0;
 }
 
 .disabled * {
     background-color: rgb(26, 16, 16);
-    /* border: 1px solid grey;
+    /* border: 2px solid grey;
     border-radius: 0; */
 }
 

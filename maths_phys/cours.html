@@ -23,6 +23,16 @@
     .MathJax * {
         background-color: transparent !important;
     }
+    
+    @media print {
+        .no-print {
+            display: none;
+        }
+        .box {
+            display: block;
+            page-break-inside: avoid;
+        }
+    }
 </style>
 
 <body onload="init();">
@@ -33,9 +43,9 @@
         <div class="col-lg-8 ml-auto mx-auto mt-4" style="text-align:center;">
             <h1 style="text-align:center;" id="question">Cours :</h1>
 
-            <hr />
+            <hr class="no-print" />
 
-            <div>
+            <div class="no-print">
                 <button id="bt_view" onclick="toggle_view();" class="btn btn-outline-primary m-1">Selectionner les connaissances à apprendre/tester</button>
                 <button id="bt_inverse" onclick="inverse_all();" class="btn btn-primary m-1" style="display:none;">Tout inverser</button>
                 <button id="bt_reset" onclick="reset();" class="btn btn-primary m-1" style="display:none;">Reset</button>
@@ -54,7 +64,7 @@
 
             <hr />
 
-            <button onclick="retour_index();" class="btn btn-dark m-1">Retour</button>
+            <button onclick="retour_index();" class="btn btn-dark m-1 no-print">Retour</button>
 
         </div>
 
