@@ -261,3 +261,20 @@ function toggle_hide() {
         setCookie("toggle_cache", "true");
     }
 }
+
+function export_data(remove_disabled = true) {
+    if (!remove_disabled) {
+        download(JSON.stringify(window.cours), "export.json", "json");
+    } else {
+        var data = {};
+        for (theme of Object.keys(window.cours)) {
+            data[theme] = [];
+            for (cour of window.cours[theme]) {
+                if (!window.disabled.includes(cour.id)) {
+                    data[theme].push(cour);
+                }
+            }
+        }
+        download(JSON.stringify(data), "export.json", "json");
+    }
+}
