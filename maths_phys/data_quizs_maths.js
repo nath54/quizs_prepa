@@ -1942,5 +1942,5 @@ const Quizs = {
     "Trigonométrie": quiz_trigo,
     "Combinatoire": quiz_combi,
     "Limites": quiz_limites,
-    "Continuité - incomplet": quiz_continuite
+    "Continuité": quiz_continuite
 };
