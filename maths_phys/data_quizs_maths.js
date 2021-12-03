@@ -1828,11 +1828,55 @@ const quiz_limites = [{
         "hypotheses": "Soit $f$ définie sur $X$. Soit $Y$ un sous-ensemble tel que $a \\in \\ol{X \\cap Y}$.",
         "resultat": "Si la limite (finie ou infinie) en $a$ de la restriction $f_{|X\\cap Y}$ existe, on utilise la notation suivante : <br/> $\\lim\\limits_{x \\to a} f_{|X\\cap Y}(x)$ = $\\lim\\limits_{\\begin{array}{ll} x \\to a \\\\ x \\in Y \\end{array}} f(x)$<br/>Dans cette notation, il est sous entendu que $x$ doit bien sûr aussi être élément du domaine de définition $X$ de $f$.",
         "id": 291
+    }, {
+        "type": "definition",
+        "titre": "Limite à gauche",
+        "resultat": "La limite à gauche correspond au cas où $Y = ]-\\infty, a[$. On utilise l'une des notations suivantes : <br/> $\\lim\\limits_{\\begin{array}{ll} x \\to a \\\\ x \\in ]-\\infty, a[ \\end{array}} f(x)$ = $\\lim\\limits_{\\begin{array}{ll} x \\to a \\\\ x \\lt a \\end{array}} f(x)$ = $\\lim\\limits_{x \\to a^-} f(x)$ = $f(a - 0)$",
+        "id": 292
+    }, {
+        "type": "definition",
+        "titre": "Limite à droite",
+        "resultat": "La limite à droite correspond au cas où $Y = ]a, +\\infty[$. On utilise l'une des notations suivantes : <br/> $\\lim\\limits_{\\begin{array}{ll} x \\to a \\\\ x \\in ]a, +\\infty[ \\end{array}} f(x)$ = $\\lim\\limits_{\\begin{array}{ll} x \\to a \\\\ x \\gt a \\end{array}} f(x)$ = $\\lim\\limits_{x \\to a^+} f(x)$ = $f(a + 0)$",
+        "id": 293
+    }, {
+        "type": "theoreme",
+        "titre": "Caractérisation de la limite par limites à gauche et à droite",
+        "hypotheses": "Soit $a \\in \\ol{X}$.",
+        "resultat": "La fonction $f$ admet une limite $l$ en $a$ si et seulement si, parmis les quantités $f(a_0)$, $f(a+0)$ et $f(a)$, celles qui sont envisageables existent et sont égales à $l$.",
+        "id": 294
+    }, {
+        "type": "theoreme",
+        "titre": "Régularité des fonctions monotones",
+        "resultat": "Une fonction monotone admet des limites à gauche et à droite en tout point pour lequel c'est envisageable (y compris les infinis, s'ils sont adhérents au domaine).",
+        "id": 295
+    }, {
+        "type": "proposition",
+        "titre": "Composition des limites",
+        "hypotheses": "Soit $f$ et $g$ deux fonctions et $a$, $b$ et $c$ des éléments de $\\ol{R}$.",
+        "resultat": "Si $\\lim\\limits_{x \\to a} f(x) = b$ et $\\lim\\limits_{x \\to b} g(x) = c$, alors $g \\circ f$ admet une limite en $a$, et <br/> $\\lim\\limits_{x \\to a} g \\circ f(x) = c$.",
+        "id": 296
+    }, {
+        "type": "definition",
+        "titre": "Limite d'une fonctgion à valeurs dans $\\C$",
+        "resultat": "Si $a$ est fini, $f$ admet une limite $l \\in \\C$ en $a$ si : <br/> $\\forall \\varepsilon \\gt 0$, $\\exists \\eta \\gt 0$, $\\forall x \\in X$, $|x-a| \\leqslant \\eta$ $\\implies$ $|f(x)-l| \\leqslant \\varepsilon$",
+        "id": 297
+    }, {
+        "type": "theoreme",
+        "titre": "Caractérisation de la limite d'une fonction à valeurs complexes",
+        "hypotheses": "Soit $f = f_r + if_i$, où $f_r$ et $f_i$ sont à valeurs réelles (donc correspondent à la partie réelle et à la partie imaginaire de $f$).",
+        "resultat": "Alors $f$ admet une limite $l$ en $a$ si et seulement si $f_r$ et $f_i$ admettent des limites en $a$ vérifiant : <br/> $\\lim\\limits_{x \\to a} f_r(x) = \\Re(l)$ et $\\lim\\limits_{x \\to a} f_i(x) = \\Im(l)$",
+        "id": 298
+    }, {
+        "type": "corollaire",
+        "titre": "Unicité de la limite, cas complexe",
+        "hypotheses": "Soit $f$ une fonction de la variable réelle $a$ à valeurs dans $\\C$",
+        "resultat": "La limite de $f$ en $a$, si elle existe, est unique.",
+        "id": 299
     }
 ];
 /*
 
-    NEXT ID : 269
+    NEXT ID : 300
 
     ,{
         "type": "",
@@ -1853,5 +1897,5 @@ const Quizs = {
     "Complexes": quiz_nb_complexes,
     "Trigonométrie": quiz_trigo,
     "Combinatoire": quiz_combi,
-    "Limites - incomplet": quiz_limites
+    "Limites": quiz_limites
 };
