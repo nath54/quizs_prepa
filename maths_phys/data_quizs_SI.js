@@ -421,7 +421,7 @@ const quiz_modelisation_cinematique_solides = [{
     }, {
         "type": "definition",
         "titre": "Accélération d'un point $M$",
-        "resultat": "L'accélération d'un point $M$ par rapport à un référentiel $R_k(O_k, \\vec{x_k}, \\vec{y_k}, \\vec{z_k})$ est égale à la dérivée du vecteur vitesse $\\vec{V}(M/R_k)$ en utilisant la base $B_k$ comme base de dérivation : <br/>$$\\vec{\\Gamma}(M/R_k) = \\left. \\frac{d\\vec{V}(M/R_k){dt} |_{B_k}$$",
+        "resultat": "L'accélération d'un point $M$ par rapport à un référentiel $R_k(O_k, \\vec{x_k}, \\vec{y_k}, \\vec{z_k})$ est égale à la dérivée du vecteur vitesse $\\vec{V}(M/R_k)$ en utilisant la base $B_k$ comme base de dérivation : <br/>$$\\vec{\\Gamma}(M/R_k) = \\left. \\frac{d\\vec{V}(M/R_k)}{dt} \\right|_{B_k}$$",
         "id": 82
     }, {
         "type": "propriete",
@@ -541,7 +541,7 @@ const quiz_modelisation_cinematique_solides = [{
     }, {
         "type": "definition",
         "titre": "Notation, vecteur taux de rotation",
-        "resultat": "Le vecteur taux de rotation (ou vitesse angulaire) peut s'écrire sous la forme d'une somme de deux vecteurs, l'un perpendiculaire au plan tangent, l'autre dans le plan tangent : <br/> $\\vec{\\Omega}(S_k / S_i)$ = $\\vec{\\Omega_t}(S_k / S_i)$ + $\\vec{\\Omega_n}(S_k / Si)$<br/> <ul><li>$\\vec{\\Omega_n}(S_k / S_i)$ = $(\\vec{\\Omega}(S_k/S_i).\\vec{n})$  $\\vec{n}$ est appelé <b>vecteur pibotement</b> du solide $S_k$ par rapport au solide $S_i$.</li> <li>$\\vec{\\Omega_t}(S_k / S_i)$ = $(\\vec{n} \\land \\vec{\\Omega}(S_k / S_i)) $\\land$ $\\vec{n}$ est appelé <b>vecteur roulement</b> du solide $S_k$ par rapport au solide $S_i$</li></ul>",
+        "resultat": "Le vecteur taux de rotation (ou vitesse angulaire) peut s'écrire sous la forme d'une somme de deux vecteurs, l'un perpendiculaire au plan tangent, l'autre dans le plan tangent : <br/> $\\vec{\\Omega}(S_k / S_i)$ = $\\vec{\\Omega_t}(S_k / S_i)$ + $\\vec{\\Omega_n}(S_k / Si)$<br/> <ul><li>$\\vec{\\Omega_n}(S_k / S_i)$ = $(\\vec{\\Omega}(S_k/S_i).\\vec{n})$  $\\vec{n}$ est appelé <b>vecteur pibotement</b> du solide $S_k$ par rapport au solide $S_i$.</li> <li>$\\vec{\\Omega_t}(S_k / S_i)$ = $(\\vec{n} \\land \\vec{\\Omega}(S_k / S_i))$ $\\land$ $\\vec{n}$ est appelé <b>vecteur roulement</b> du solide $S_k$ par rapport au solide $S_i$</li></ul>",
         "id": 106
     }
     // , {
