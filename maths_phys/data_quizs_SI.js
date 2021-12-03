@@ -399,86 +399,158 @@ const quiz_notions_prel_model_cin_sys = [{
 }];
 
 const quiz_modelisation_cinematique_solides = [{
-    "type": "definition",
-    "titre": "Vecteur taux de rotation",
-    "resultat": "Le vecteur taux de rotation $\\vec{\\Omega}_{R_k/r_i}$ caractérise la vitesse de changement d'orientation du repère $R_k$ associé au solide $S_k$ par rapport au repère $R_i$. L'expression de ce vecteur $\\vec{\\Omega}_{R_k/R_i}$ dépend uniquement de la variation de l'orientation du repère $R_k$ par rapport au repère $R_i$",
-    "id": 78
-}, {
-    "type": "definition",
-    "titre": "Vitesse d'un point $M$",
-    "resultat": "La vitesse d'un point $M$ par rapport au référentiel $R_k (O_k, \\vec{x_k}, \\vec{y_k}, \\vec{z_k})$ est égale à la dérivée du vecteur position $\\vec{O_kM(t)}$ en utilisant la base $B_k$ comme base de dérivation : <br/>$$\\vec{V}(M / R_k) = \\left. \\frac{d\\vec{O_kM(t)}}{dt} \\right |_{B_k}$$<br/>avec $O_k$ fixe dans le repère $B_k$.",
-    "id": 79
-}, {
-    "type": "propriete",
-    "titre": "Composition des vecteurs vitesse",
-    "resultat": "$\\vec{V}(M/R_i)$ = $\\vec{V}(M/R_k)$ + $\\vec{V}(O_k/R_i)$ + $\\vec{Mo_k} \\land \\Omega(R_k/R_i)$<br/><ul><li>$\\vec{V}(M/R_i)$ est la vitesse du point $M$ pour un observateur lié au repère $R_i$</li><li>$\\vec{V}(M/R_k)$ est la vitesse du point $M$ pour un observateur lié au repère $R_k$</li><li>$\\Omega(R_k/R_i)$ est le vecteur vitesse de rotation du repère $R_k$ par rapport au repère $R_i$</li><li>Le terme $\\vec{V}(O_k/O_i)$ + $\\vec{MO_k} \\land \\vec{\\Omega}(R_k/R_i)$ est appelé <b>vitesse d'entraînement</b> du poinjt $M$ dans le mouvement du repère $R_k$ par rapport au repère $R_i$, noté $\\vec{V}(M \\in R_k/R_i)$. Il s'agit de la vitesse qu'aurait le point $M$ s'il était physiquement attaché au repère $R_k$ et que l'on observait son mouvement par rapport au repère $R_i$.</li></ul>",
-    "id": 80
-}, {
-    "type": "propriete",
-    "titre": "Antisymétrie du vecteur vitesse d'entraînement",
-    "resultat": "<ul><li>$\\vec{V}(M \\in R_k/R_i)$ = $-\\vec{V}(M \\in R_i/R_k)$</li> <li>$\\vec{V}(M \\in R_k/R_i)$ = $\\vec{V}(M/R_i)$ - $\\vec{V}(M/R_k)$</li></ul>",
-    "id": 81
-}, {
-    "type": "definition",
-    "titre": "Accélération d'un point $M$",
-    "resultat": "L'accélération d'un point $M$ par rapport à un référentiel $R_k(O_k, \\vec{x_k}, \\vec{y_k}, \\vec{z_k})$ est égale à la dérivée du vecteur vitesse $\\vec{V}(M/R_k)$ en utilisant la base $B_k$ comme base de dérivation : <br/>$$\\vec{\\Gamma}(M/R_k) = \\left. \\frac{d\\vec{V}(M/R_k){dt} |_{B_k}$$",
-    "id": 82
-}, {
-    "type": "propriete",
-    "titre": "Champ de vecteurs vitesse",
-    "resultat": "Le champ des vecteurs-vitesse du solide $S_k$ parn rapport au repère $R_i$ s'écrit donc : <br/>$\\vec{V}(A \\in S_k/rR_i)$ = $\\vec{V}(O_k \\in S_k / R_i)$ + $\\vec{AO}$ $\\land$ $\\vec{\\Omega}(R_k / R_i)$",
-    "id": 83
-}, {
-    "type": "definition",
-    "titre": "Résultante du torseur cinématique",
-    "resultat": "$\\vec{\\Omega}(R_k/R_i)$<br/><b>Indépendante du point A</b> choisi pour exprimer le torseur cinématique.<br/>Vecteur vitesse de rotation du repère $R_k$ par rapport au repère $R_i$. <br/> <i>Unité : rad.s^{-1}</i>",
-    "id": 84
-}, {
-    "type": "definition",
-    "titre": "Moment au point $A$ du torseur cinématique",
-    "resultat": "$\\vec{V}(A \\in R_k / R_i)$<br/><b>Dépendant du point A</b> choisi pour exprimer le torseur cinématique.<br/>Vecteur vitesse du point $A$ appartenant au solide $S_k$ par rapport au repère $R_i$.<br/><i>Unité : m.s^{-1}</i>",
-    "id": 85
-}, {
-    "type": "definition",
-    "titre": "Torseur cinématique",
-    "resultat": "Le torseur cinématique caractéristique du mouvement du solide $S_k$ par rapport au solide $S_i$, s'écrit au point $A$ : $$\\{\\cal{V}(S_k/R_i)\\} = \\left\\{ \\begin{array}{ll} \\vec{\\Omega}(R_k/R_i) \\\\ \\vec{V}(A \\in R_k / R_i) \\end{array} \\right\\}_A$$<br/><ul><li>$\\vec{\\Omega}(R_k / R_i)$ est appelé <b>résultante</b> du torseur cinématique de $S_k$ par rapport à $R_i$</li><li>$\\vec{V}(A \\in R_k / R_i)$ est appelé <b>moment en $A$</b> du torseur cinématique de $S_k$ par rapport à $R_i$</li></ul>",
-    "id": 86
-}, {
-    "type": "propriete",
-    "titre": "Formule de BABAR",
-    "resultat": "Le champs de vecteurs vitesse est équiprojectif et défini en tout point de l'espace. La formule de changement de point permet de trouver la relation entre les vitesses en deux points $A$ et $B$ dans le mouvemnet du solide $S_k$ par rapport à $R_i$ : <br/> $\\vec{V}(B \\in S_k / R_i)$ = $\\vec{V}(A \\in S_k / R_i)$ + $\\vec{BA}$ $\\land$ $\\vec{\\Omega}(R_k/R_i)$",
-    "id": 87
-}, {
-    "type": "definition",
-    "titre": "Torseur cinématique",
-    "resultat": "Connaissant l'expression du torseur cinématique au point $A$, il est possible d'en déduire son expression en tout point $B$ (relation de changement de point): $$\\{\\cal{V}(k/i)\\}$$ $$=\\left\\{\\begin{array}{ll} \\vec{\\Omega}(k/i) \\\\ \\vec{V}(B \\in k/i) \\end{array}\\right\\}_B$$ $$=\\left\\{\\begin{array}{ll} \\vec{\\Omega}(k/i) \\\\ \\vec{V}(A \\in k/i) + \\vec{BA} \\land \\vec{\\Omega}(k/i) \\end{array}\\right\\}_B$$ <br/> Il n'est pas nécessaire que le point $B$ soit physiquement un point du solide $S_k$. Il faut et il suffit qu'il soit considéré comme fixe dans le repère $R_k$ lié au solide $S_k$.",
-    "id": 88
-}, {
-    "type": "definition",
-    "titre": "Mouvement de translation",
-    "resultat": "Un solide $S_k$ est animé d'un mouvement de translation par rapport au repère $R_i$, si deux vecteurs non parallèles $\\vec{AB}$ et $\\vec{AC}$ appartenant à $S_k$ restent constants au cours du mouvement.",
-    "id": 89
-}, {
-    "type": "definition",
-    "titre": "Torseur cinématique d'un mouvement de translation",
-    "resultat": "Un solide $S_k$ est animé d'un mouvement de translation par rapport au repère $R_i$, alors le torseur cinématique caractérisant le mouvement de $S_k$ par rapport à $R_i$ s'écrit sous la forme suivante : <br/> $\\{\\cal{V}(k/i)\\}$ = $\\left\\{\\begin{array}{ll} \\vec{0} \\\\ \\vec{V}(A \\in k/i) \\neq \\vec{0} \\end{array}\\right\\}_A$<br/>Ce torseur est un torseur couple.",
-    "id": 90
-}, {
-    "type": "definition",
-    "titre": "Mouvement de rotation",
-    "resultat": "Un solide $S_k$ est animé d'un mouvement de rotation par rapport à un repère $R_i$ autour de la droite $(AB)$ si tous les points situés à l'intersection du solide $S_k$ et de la droite $AB$ restent fixes au cours du mouvment. La droite $(AB)$ est appelé axe de rotation.",
-    "id": 91
-}, {
-    "type": "propriete",
-    "titre": "Torseur cinématique d'un mouvement de rotation",
-    "resultat": "Le torseur cinématique caractérisant le mouvement de $S_k$ par rapport à $R_i$ a alors la forme suivante : <br/> $\\{\\cal{V}(S_k/R_i)\\}$ = $\\left\\{\\begin{array}{ll} \\vec{\\Omega}(k/i) \\\\ \\vec{0} \\end{array}\\right\\}_{*}$<br/> * : $\\forall M \\in $ axe de rotation.",
-    "id": 92
-}, {
-    "type": "propriete",
-    "titre": "La vitesse pour un mouvement de rotation",
-    "resultat": "<b>Propriété 1 : </b> La norme du vecteur vitesse d'un point $M_j$ appartenant à un solide $S_k$ en rotation par rapport à un repère $R_i$, est proportionnelle à la distance du point $M_j$ à l'axe de rotation ($\\Delta$) et à la vitesse de rotation $\\omega$ du solide $S_k$ dans le repère $R_i$.<br/>$||\\vec{V}(M_j \\in k/i)||$ = $V_{m_j}$ = $R_i . \\omega$ = $R_i . d \\theta$ <br/><b>Propriété 2 : </b>Tous les points situés à une même distance de l'axe de rotation ($\\Delta$) ont des vecteurs vitesse de même norme. <br/><b>Propriété 3 : </b>Tous les points situés sur une même génératrice parallèle à l'axe de rotation ont des vecteurs vitesse de même direction, même sens et même norme.",
-    "id": 93
-}];
+        "type": "definition",
+        "titre": "Vecteur taux de rotation",
+        "resultat": "Le vecteur taux de rotation $\\vec{\\Omega}_{R_k/r_i}$ caractérise la vitesse de changement d'orientation du repère $R_k$ associé au solide $S_k$ par rapport au repère $R_i$. L'expression de ce vecteur $\\vec{\\Omega}_{R_k/R_i}$ dépend uniquement de la variation de l'orientation du repère $R_k$ par rapport au repère $R_i$",
+        "id": 78
+    }, {
+        "type": "definition",
+        "titre": "Vitesse d'un point $M$",
+        "resultat": "La vitesse d'un point $M$ par rapport au référentiel $R_k (O_k, \\vec{x_k}, \\vec{y_k}, \\vec{z_k})$ est égale à la dérivée du vecteur position $\\vec{O_kM(t)}$ en utilisant la base $B_k$ comme base de dérivation : <br/>$$\\vec{V}(M / R_k) = \\left. \\frac{d\\vec{O_kM(t)}}{dt} \\right |_{B_k}$$<br/>avec $O_k$ fixe dans le repère $B_k$.",
+        "id": 79
+    }, {
+        "type": "propriete",
+        "titre": "Composition des vecteurs vitesse",
+        "resultat": "$\\vec{V}(M/R_i)$ = $\\vec{V}(M/R_k)$ + $\\vec{V}(O_k/R_i)$ + $\\vec{Mo_k} \\land \\Omega(R_k/R_i)$<br/><ul><li>$\\vec{V}(M/R_i)$ est la vitesse du point $M$ pour un observateur lié au repère $R_i$</li><li>$\\vec{V}(M/R_k)$ est la vitesse du point $M$ pour un observateur lié au repère $R_k$</li><li>$\\Omega(R_k/R_i)$ est le vecteur vitesse de rotation du repère $R_k$ par rapport au repère $R_i$</li><li>Le terme $\\vec{V}(O_k/O_i)$ + $\\vec{MO_k} \\land \\vec{\\Omega}(R_k/R_i)$ est appelé <b>vitesse d'entraînement</b> du poinjt $M$ dans le mouvement du repère $R_k$ par rapport au repère $R_i$, noté $\\vec{V}(M \\in R_k/R_i)$. Il s'agit de la vitesse qu'aurait le point $M$ s'il était physiquement attaché au repère $R_k$ et que l'on observait son mouvement par rapport au repère $R_i$.</li></ul>",
+        "id": 80
+    }, {
+        "type": "propriete",
+        "titre": "Antisymétrie du vecteur vitesse d'entraînement",
+        "resultat": "<ul><li>$\\vec{V}(M \\in R_k/R_i)$ = $-\\vec{V}(M \\in R_i/R_k)$</li> <li>$\\vec{V}(M \\in R_k/R_i)$ = $\\vec{V}(M/R_i)$ - $\\vec{V}(M/R_k)$</li></ul>",
+        "id": 81
+    }, {
+        "type": "definition",
+        "titre": "Accélération d'un point $M$",
+        "resultat": "L'accélération d'un point $M$ par rapport à un référentiel $R_k(O_k, \\vec{x_k}, \\vec{y_k}, \\vec{z_k})$ est égale à la dérivée du vecteur vitesse $\\vec{V}(M/R_k)$ en utilisant la base $B_k$ comme base de dérivation : <br/>$$\\vec{\\Gamma}(M/R_k) = \\left. \\frac{d\\vec{V}(M/R_k){dt} |_{B_k}$$",
+        "id": 82
+    }, {
+        "type": "propriete",
+        "titre": "Champ de vecteurs vitesse",
+        "resultat": "Le champ des vecteurs-vitesse du solide $S_k$ parn rapport au repère $R_i$ s'écrit donc : <br/>$\\vec{V}(A \\in S_k/rR_i)$ = $\\vec{V}(O_k \\in S_k / R_i)$ + $\\vec{AO}$ $\\land$ $\\vec{\\Omega}(R_k / R_i)$",
+        "id": 83
+    }, {
+        "type": "definition",
+        "titre": "Résultante du torseur cinématique",
+        "resultat": "$\\vec{\\Omega}(R_k/R_i)$<br/><b>Indépendante du point A</b> choisi pour exprimer le torseur cinématique.<br/>Vecteur vitesse de rotation du repère $R_k$ par rapport au repère $R_i$. <br/> <i>Unité : rad.s^{-1}</i>",
+        "id": 84
+    }, {
+        "type": "definition",
+        "titre": "Moment au point $A$ du torseur cinématique",
+        "resultat": "$\\vec{V}(A \\in R_k / R_i)$<br/><b>Dépendant du point A</b> choisi pour exprimer le torseur cinématique.<br/>Vecteur vitesse du point $A$ appartenant au solide $S_k$ par rapport au repère $R_i$.<br/><i>Unité : m.s^{-1}</i>",
+        "id": 85
+    }, {
+        "type": "definition",
+        "titre": "Torseur cinématique",
+        "resultat": "Le torseur cinématique caractéristique du mouvement du solide $S_k$ par rapport au solide $S_i$, s'écrit au point $A$ : $$\\{\\cal{V}(S_k/R_i)\\} = \\left\\{ \\begin{array}{ll} \\vec{\\Omega}(R_k/R_i) \\\\ \\vec{V}(A \\in R_k / R_i) \\end{array} \\right\\}_A$$<br/><ul><li>$\\vec{\\Omega}(R_k / R_i)$ est appelé <b>résultante</b> du torseur cinématique de $S_k$ par rapport à $R_i$</li><li>$\\vec{V}(A \\in R_k / R_i)$ est appelé <b>moment en $A$</b> du torseur cinématique de $S_k$ par rapport à $R_i$</li></ul>",
+        "id": 86
+    }, {
+        "type": "propriete",
+        "titre": "Formule de BABAR",
+        "resultat": "Le champs de vecteurs vitesse est équiprojectif et défini en tout point de l'espace. La formule de changement de point permet de trouver la relation entre les vitesses en deux points $A$ et $B$ dans le mouvemnet du solide $S_k$ par rapport à $R_i$ : <br/> $\\vec{V}(B \\in S_k / R_i)$ = $\\vec{V}(A \\in S_k / R_i)$ + $\\vec{BA}$ $\\land$ $\\vec{\\Omega}(R_k/R_i)$",
+        "id": 87
+    }, {
+        "type": "definition",
+        "titre": "Torseur cinématique",
+        "resultat": "Connaissant l'expression du torseur cinématique au point $A$, il est possible d'en déduire son expression en tout point $B$ (relation de changement de point): $$\\{\\cal{V}(k/i)\\}$$ $$=\\left\\{\\begin{array}{ll} \\vec{\\Omega}(k/i) \\\\ \\vec{V}(B \\in k/i) \\end{array}\\right\\}_B$$ $$=\\left\\{\\begin{array}{ll} \\vec{\\Omega}(k/i) \\\\ \\vec{V}(A \\in k/i) + \\vec{BA} \\land \\vec{\\Omega}(k/i) \\end{array}\\right\\}_B$$ <br/> Il n'est pas nécessaire que le point $B$ soit physiquement un point du solide $S_k$. Il faut et il suffit qu'il soit considéré comme fixe dans le repère $R_k$ lié au solide $S_k$.",
+        "id": 88
+    }, {
+        "type": "definition",
+        "titre": "Mouvement de translation",
+        "resultat": "Un solide $S_k$ est animé d'un mouvement de translation par rapport au repère $R_i$, si deux vecteurs non parallèles $\\vec{AB}$ et $\\vec{AC}$ appartenant à $S_k$ restent constants au cours du mouvement.",
+        "id": 89
+    }, {
+        "type": "definition",
+        "titre": "Torseur cinématique d'un mouvement de translation",
+        "resultat": "Un solide $S_k$ est animé d'un mouvement de translation par rapport au repère $R_i$, alors le torseur cinématique caractérisant le mouvement de $S_k$ par rapport à $R_i$ s'écrit sous la forme suivante : <br/> $\\{\\cal{V}(k/i)\\}$ = $\\left\\{\\begin{array}{ll} \\vec{0} \\\\ \\vec{V}(A \\in k/i) \\neq \\vec{0} \\end{array}\\right\\}_A$<br/>Ce torseur est un torseur couple.",
+        "id": 90
+    }, {
+        "type": "definition",
+        "titre": "Mouvement de rotation",
+        "resultat": "Un solide $S_k$ est animé d'un mouvement de rotation par rapport à un repère $R_i$ autour de la droite $(AB)$ si tous les points situés à l'intersection du solide $S_k$ et de la droite $AB$ restent fixes au cours du mouvment. La droite $(AB)$ est appelé axe de rotation.",
+        "id": 91
+    }, {
+        "type": "propriete",
+        "titre": "Torseur cinématique d'un mouvement de rotation",
+        "resultat": "Le torseur cinématique caractérisant le mouvement de $S_k$ par rapport à $R_i$ a alors la forme suivante : <br/> $\\{\\cal{V}(S_k/R_i)\\}$ = $\\left\\{\\begin{array}{ll} \\vec{\\Omega}(k/i) \\\\ \\vec{0} \\end{array}\\right\\}_{*}$<br/> * : $\\forall M \\in $ axe de rotation.",
+        "id": 92
+    }, {
+        "type": "propriete",
+        "titre": "La vitesse pour un mouvement de rotation",
+        "resultat": "<b>Propriété 1 : </b> La norme du vecteur vitesse d'un point $M_j$ appartenant à un solide $S_k$ en rotation par rapport à un repère $R_i$, est proportionnelle à la distance du point $M_j$ à l'axe de rotation ($\\Delta$) et à la vitesse de rotation $\\omega$ du solide $S_k$ dans le repère $R_i$.<br/>$||\\vec{V}(M_j \\in k/i)||$ = $V_{m_j}$ = $R_i . \\omega$ = $R_i . d \\theta$ <br/><b>Propriété 2 : </b>Tous les points situés à une même distance de l'axe de rotation ($\\Delta$) ont des vecteurs vitesse de même norme. <br/><b>Propriété 3 : </b>Tous les points situés sur une même génératrice parallèle à l'axe de rotation ont des vecteurs vitesse de même direction, même sens et même norme.",
+        "id": 93
+    }, {
+        "type": "propriete",
+        "titre": "Composition des vecteurs vitesse de rotation",
+        "resultat": "$\\vec{\\Omega}(R_n / R_0)$ = $\\vec{\\Omega}(R_n / R_{n-1})$ + $\\dots$ + $\\vec{\\Omega}(R_1 / R_0)$",
+        "id": 94
+    }, {
+        "type": "propriete",
+        "titre": "Composition des vecteurs vitesse en $A$",
+        "resultat": "$\\vec{V}(A \\in R_n / R_0)$ = $\\vec{V}(A \\in R_n/R_{n-1}$ + $\\dots$ + $\\vec{V}(A \\in R_1/R_0)$",
+        "id": 95
+    }, {
+        "type": "propriete",
+        "titre": "Composition des torseurs cinématiques",
+        "resultat": "$\\{\\cal{V}(R_n/R_0\\}$ = $\\{\\cal{V}(R_n / R_{n-1}\\}$ + $\\dots$ + $\\{\\cal{V}(R_1/R_0)\\}$",
+        "id": 96
+    }, {
+        "type": "propriete",
+        "titre": "Détermination de l'accélération d'un point $M$",
+        "resultat": "Pour déterminer l'accélération du point $A$ appartenant au solide $S_k$ par rapport au repère $R_i$, il faut dériver le vecteur vitesse dans la base $B_i$ : <br/>$\\vec{\\Gamma}(A \\in S_k / R_i)$ = $\\left. \\frac{d\\vec{V}(A \\in S_k / R_i)}{dt} \\right |_{B_i}$",
+        "id": 97
+    }, {
+        "type": "definition",
+        "titre": "Liaison équivalente",
+        "resultat": "Une liaison entre les deux solides $S_1$ et $S_2$ est cinématiquement équivalente à l'ensemble des liaisons situées entre ces deux solides si elle autorise les mêmes mouvements relatifs entre eux.",
+        "id": 98
+    }, {
+        "type": "methode",
+        "titre": "Liaisons en parallèle - Cinématique",
+        "resultat": "$\\{\\cal{V}_{2/1}^{L_{eq}}\\}$ = $\\{\\cal{V}_{2/1}^{L_1}\\}$ = ... = $\\{\\cal{V}_{2/1}^{L_n}\\}$",
+        "id": 99
+    }, {
+        "type": "methode",
+        "titre": "Liaisons en série - Cinématique",
+        "resultat": "$\\{\\cal{V}_{0/n}\\}$ = $\\{\\cal{V}_{0/1}\\}$ + $\\dots$ + $\\{\\cal{V}_{n-1/n}\\}$",
+        "id": 100
+    }, {
+        "type": "definition",
+        "titre": "Nombre cyclomatique",
+        "resultat": "Dans le cas d'un mécanisme en chaîne fermée, on appelle cycle un chemin fermé du graphe ne passant pas deux fois par le même sommet. Parmi les cycles qui peuvent être mis en évidence dans un graphe, un certain nombre sont indépendants.<br/>Le nombre $\\gamma$ de cycles indépendants, appelés nombre cyclomatique, peut être calculé par la relation $\\gamma = n_L - n_p +1$ avec $n_p$ le nombre de solides (bâti compris) constituant le mécanisme et $n_L$ le nombre de liaisons reliant les solides.",
+        "id": 101
+    }, {
+        "type": "definition",
+        "titre": "Loi E/S chaîne fermée",
+        "resultat": "Une relation de fermeture cinématique est une somme de torseur égale au torseur nul, écrite par composition des mouvements dans une chaîne cinématique fermée.",
+        "id": 102
+    }, {
+        "type": "definition",
+        "titre": "Vitesse de glissement",
+        "resultat": "On appelle vitesse deglissement du solide $S_k$ par rapport au solide $S_i$, dans le repère $R_0$, au point $I$ le vecteur : <br/>$\\vec{G}_{/\\cal{R}_0}(I)$ = $\\vec{V}(I \\in S_k // \\cal{R}_0)$ - $\\vec{V}(I \\in S_i / \\cal{R}_0)$",
+        "id": 103
+    }, {
+        "type": "propriete",
+        "titre": "Vitesse de glissement : notation",
+        "resultat": "La vitesse de glissement notée $\\vec{V}(I \\in S_k / S_i)$ est indépendante du repère de référence.",
+        "id": 104
+    }, {
+        "type": "propriete",
+        "titre": "Vitesse de glissement : direction",
+        "resultat": "La vitesse du glissement du solide $S_k$ par rapport au solide $S_i$, au point $I$, est contenue dans le plan tangent commun $\\pi$.",
+        "id": 105
+    }, {
+        "type": "definition",
+        "titre": "Notation, vecteur taux de rotation",
+        "resultat": "Le vecteur taux de rotation (ou vitesse angulaire) peut s'écrire sous la forme d'une somme de deux vecteurs, l'un perpendiculaire au plan tangent, l'autre dans le plan tangent : <br/> $\\vec{\\Omega}(S_k / S_i)$ = $\\vec{\\Omega_t}(S_k / S_i)$ + $\\vec{\\Omega_n}(S_k / Si)$<br/> <ul><li>$\\vec{\\Omega_n}(S_k / S_i)$ = $(\\vec{\\Omega}(S_k/S_i).\\vec{n})$  $\\vec{n}$ est appelé <b>vecteur pibotement</b> du solide $S_k$ par rapport au solide $S_i$.</li> <li>$\\vec{\\Omega_t}(S_k / S_i)$ = $(\\vec{n} \\land \\vec{\\Omega}(S_k / S_i)) $\\land$ $\\vec{n}$ est appelé <b>vecteur roulement</b> du solide $S_k$ par rapport au solide $S_i$</li></ul>",
+        "id": 106
+    }
+    // , {
+    //     "type": "remarque",
+    //     "titre": "Roulement sans glissement",
+    //     "resultat": "Un cas particulier fréquemment rencontré est le cas du roulement sans glissement (contact d'une roue sur le sol, engrènement, etc.). La condition cinématique de roulement sans glissement du solide $S_k$ par rapport au solide $S_i$ en contact au point $I$, s'écrit : <br/>$\\vec{V}(I \\in S_k / S_i)$",
+    //     "id": 107
+    // }
+];
 
 /*
     ,{
@@ -499,5 +571,5 @@ const Quizs = {
     "Analyse des systèmes complexes": quiz_analyse_systemes_complexes,
     "Modélisation géométrique des systèmes solides": quiz_modelisation_geometrique_systemes_solides,
     "Notions préliminaires au modèle cinématique": quiz_notions_prel_model_cin_sys,
-    "Modélisation cinématique des systèmes solides - incomplet": quiz_modelisation_cinematique_solides
+    "Modélisation cinématique des systèmes solides": quiz_modelisation_cinematique_solides
 };
