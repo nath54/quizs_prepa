@@ -1918,9 +1918,35 @@ const quiz_continuite = [{
     "id": 306
 }];
 
+const quiz_derivation = [{
+        "type": "definition",
+        "titre": "Dérivabilité, dérivée",
+        "hypotheses": "Soit $f$ une fonction définie sur un intervalle ouvert $I$, et $x_0 \\in I$.",
+        "resultat": "On dit que $f$ est dérivable en $x_0$ si le taux d'accroissement $x \\rightarrow \\frac{f(x) - f(x_0)}{x - x_0}$ définie sur $I\\backslash\\{x_0\\}$ admet une limite finie en $x_0$.<br/>Dans ce cas, on définit la dérivée de $f$ en $x_0$ (ou le nombre dérivé de $f$ en $x_0$) par : $$f'(x_0) = \\lim\\limits_{x \\to x_0} \\frac{f(x) - f(x_0)}{x - x_0}$$<br/>Si $f$ admet des nombres dérivés en tout $x \\in J \\subset I$, on dit que $f$ est dérivable sur $J$, et l'application $x \\rightarrow f'(x)$ qui à $x$ de $J$ associe le nombre dérivé de $f$ en $x$ est appelé fonction dérivée de $f$ sur $J$.",
+        "id": 307
+    }, {
+        "type": "remarque",
+        "titre": "Remarques sur la dérivation",
+        "resultat": "1. La dérivation est une notion <b>locale</b> et <b>non ponctuelle</b> ($f$ doit être défini sur un voisinage de $x_0$).<br/>2. La dérivation est une notion <b>locale</b> et <b>non globale</b> (ne dépend que de la description de $f$ sur un voisinage de $x_0$, quel qu'il soit, et non de sa description globale).",
+        "id": 308
+    }, {
+        "type": "proposition",
+        "titre": "Caractérisation de la dérivabilité par DL",
+        "resultat": "$f$ est dérivable de dérivé $p$ en $x_0$ si et seulement s'il existe une application $\\varepsilon$ définie sur une voisinage $V$ de $x_0$, de limite nulle lorsque $x$ tend vers $x_0$, et telle que : <br/> $\\forall x \\in V \\cap I$, $f(x)$ = $f(x_0)$ + $(x-x_0)p$ + $(x-x_0)\\varepsilon (x)$",
+        "id": 309
+    }, {
+        "type": "definition",
+        "titre": "Tangente",
+        "hypotheses": "Soit $f$ une fonction dérivable sur un intervalle ouvert $I$ et $x_0 \\in I$.",
+        "resultat": "Alors la tangente à la courbe de $f$ en $x_0$ est la droite d'équation $y$=$f'(x_0)(x-x_0)$ + $f(x_0)$",
+        "id": 310
+    }
+
+];
+
 /*
 
-    NEXT ID : 300
+    NEXT ID : 307
 
     ,{
         "type": "",
@@ -1942,5 +1968,6 @@ const Quizs = {
     "Trigonométrie": quiz_trigo,
     "Combinatoire": quiz_combi,
     "Limites": quiz_limites,
-    "Continuité": quiz_continuite
+    "Continuité": quiz_continuite,
+    "Dérivation - incomplet": quiz_derivation
 };
