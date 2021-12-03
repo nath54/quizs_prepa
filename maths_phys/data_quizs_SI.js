@@ -552,6 +552,87 @@ const quiz_modelisation_cinematique_solides = [{
     // }
 ];
 
+const quiz_equilibre_systemes_solides = [{
+        "type": "definition",
+        "titre": "Moment d'une force au point $G$",
+        "resultat": "Soit l'effort exercé au point $M$ par un solide 1 sur un solide 2 et représenté par le vecteur $\\vec{F}_{1 \\to 2}$. On exprime le moment exercé au point $G$ par le solide 1 sur le solide 2 de la façon suivante : <br/> $\\vec{M}_{G, 1\\to 2}$ = $\\vec{GM} \\land \\vec{F}_{1\\to2}$",
+        "id": 108
+    }, {
+        "type": "definition",
+        "titre": "Résultante du torseur cinématique",
+        "resultat": "$\\vec{F}_{i\\to k}$<br/><b>Indépentant du point 0</b> choisi pour exprimer le torseur d'action mécanique.<br>Effort exercé par le solide $S_i$ sur le solide $S_k$<br/><i>Unité : N</i>",
+        "id": 109
+    }, {
+        "type": "definition",
+        "titre": "Moment au point $A$ du torseur cinématique",
+        "resultat": "$\\vec{M}_{O, i \\to k}$<br/><b>Dépendant du point O</b> choisi pour exprimer le torseur d'action mécanique<br/>Moment (ou couple) exercé par le solide $S_i$ sur le solide $S_k$ au point $O$.<br/><i>Unité : N.m</i>",
+        "id": 110
+    }, {
+        "type": "definition",
+        "titre": "Torseur d'une action mécanique",
+        "resultat": "Le torseur modélisant l'action mécanique exercée par un solide $j$ sur un solide $i$ s'écrit : <br/> $\\{\\cal{T}_{i \\to j}\\}$ = $\\left\\{\\begin{array}{ll} \\vec{F}_{j\\to i} \\\\ \\vec{M}_{M, j\\to i} \\end{array} \\right\\}_M$<br/>Ce torseur est défini en tout point $M$ de l'espace par deux vecteurs appelés <b>éléments de réduction du torseur</b> : <br> - $\\vec{F}_{j \\to i}$ est appelé <b>résultante</b> (la force) du torseur d'action mécanique de $j$ sur $i$<br/>- $\\vec{M}_{M, j\\to i}$ est appelée <b>moment en M</b> (le couple) du torseur d'action mécanique de $j$ sur $i$. Le moment se calcule en un point $N$ par la relation habituelle de changement de point : $\\vec{M}_{M, j\\to i}$ + $\\vec{NM} \\land \\vec{F}_{j \\to i}$",
+        "id": 111
+    }
+    // , {
+    //     "type": "definition",
+    //     "titre": "Torseur glisseur",
+    //     "resultat": "",
+    //     "id": 112
+    // }, {
+    //     "type": "definition",
+    //     "titre": "Torseur couple",
+    //     "resultat": "",
+    //     "id": 113
+    // }
+    , {
+        "type": "definition",
+        "titre": "Torseur des actions mécanique extérieures",
+        "resultat": "Soit un ensemble matériel ($\\sum$), on définit le torseur des actions mécaniques extérieures comme la somme des actions mécaniques des sous-systèmes $j$ de ($\\sum$) s'appliquant sur ($\\sum$) : <br/> $\\{\\cal{T}_{\\ol{\\sum}\\to \\sum}\\}$ = $\\sum_j\\{\\cal{T}_{j \\to \\sum}\\}$<br/>- Tous les torseurs doivent être réduits au même point pour être sommés<br/>- Le bâti ne sera jamais isolé car il n'a pas de limites, donc pas de frontières !",
+        "id": 114
+    }, {
+        "type": "definition",
+        "titre": "Equilibre",
+        "resultat": "Un ensemble matériel ($\\sum$) est en <b>équilibre</b> par rapport à un référentiel $O$ (muni d'un repère $\\cR_0$) si, au cours du temps, chaque point de ($\\sum$) conserve une position fixe par rapport à $O$.",
+        "id": 115
+    }, {
+        "type": "definition",
+        "titre": "Référentiel Galiléen",
+        "resultat": "Il existe un référentiel dit <b>galiléen</b> pour lequel tout corps libre (non influencé par une force) est soit immobile, soit animé d'un mouvement de translation rectiligne uniforme au cours du temps.",
+        "id": 116
+    }, {
+        "type": "definition",
+        "titre": "Principe Fondamental de la Statique",
+        "resultat": "Si un système matériel ($\\sum$) est en équilibre par rapport à un repère galiléen alors le torseur des actoins mécaniques extérieures appliquées à ($\\sum$) est nul : <br/>$\\{\\cal{T}_{\\ol{\\sum} \\to \\sum}\\}$ = $\\left\\{\\begin{array}{ll} \\vec{0} \\\\ \\vec{0}\\end{array}\\right\\}_M$.<br/> Cette égalité torsorielle peut se traduite sous la forme de deux égalités vectorielles, appelées <b>Théorème de la Résultante Statique</b> et <b>Théorème du Moment Statique</b>.",
+        "id": 117
+    }, {
+        "type": "definition",
+        "titre": "Théorème de la Résultante Statique (TRS)",
+        "resultat": "$\\vec{F}_{\\ol{\\sum} \\to \\sum} = \\vec{0}$",
+        "id": 118
+    }, {
+        "type": "definition",
+        "titre": "Théorème du Moment Statique au point $A$(TMS)",
+        "resultat": "$\\vec{M}_{A, \\ol{\\sum} \\to \\sum} = \\vec{0}$",
+        "id": 119
+    }, {
+        "type": "theoreme",
+        "titre": "Actions réciproques",
+        "resultat": "Si un système matériel $j$ exerce sur un système matériel $i$ un torseur d'actions mécaniques $\\{\\cal{T}_{l \\to i}\\}$, alors le système matériel $i$ exerce sur le système matériel $j$ un torseur d'actions mécaniques $\\{\\cal{T}_{i\\to j}\\}$, tel que : <br/> $\\{\\cal{T}_{i \\to j}\\}$ = $-\\{\\cal{T}_{j \\to i}\\}$",
+        "id": 120
+    }, {
+        "type": "theoreme",
+        "titre": "Solide soumis à deux glisseurs",
+        "hypotheses": "Soit un solide soumis à deux glisseurs respectivement en $A$ et en $B$.",
+        "resultat": "Alors : <br/>- Les deux glisseurs sont de même direction, norme et de sens opposées<br/>-La direction des glisseurs est donnée par la droite $(AB)$",
+        "id": 121
+    }, {
+        "type": "methode",
+        "titre": "Résolution d'un problème d'équilibre",
+        "resultat": "1- Dresser le bilan des actions mécaniques données et des actions mécaniques recherchées<br/>2- Déterminer un isolement coupant la liaison aux inconnues recherchées et coupant le moins de liaison non recherchées pour éviter les inconnues<br/>3- Choisir le point de réduction et les équations vectorielles ne sollicitant par les inconnues non recherchées<br/>Eviter de déplacer un torseur contenant beaucoup d'inconnues non recherchées<br/>4- Choisir une base de projection permettant d'isoler les inconnues non recherchées<br/>5- Ecrire le système d'équations. S'il ne peut être résolu, identifier les inconnues à rechercher et proposer un nouvel isolement intelligent.",
+        "id": 122
+    }
+];
+
 /*
     ,{
         "type": "texte",
@@ -560,7 +641,7 @@ const quiz_modelisation_cinematique_solides = [{
         "id": 0
     }
 
-    NEXT ID : 78
+    NEXT ID : 112
 
 */
 
@@ -571,5 +652,6 @@ const Quizs = {
     "Analyse des systèmes complexes": quiz_analyse_systemes_complexes,
     "Modélisation géométrique des systèmes solides": quiz_modelisation_geometrique_systemes_solides,
     "Notions préliminaires au modèle cinématique": quiz_notions_prel_model_cin_sys,
-    "Modélisation cinématique des systèmes solides": quiz_modelisation_cinematique_solides
+    "Modélisation cinématique des systèmes solides": quiz_modelisation_cinematique_solides,
+    "Equilibre des systemes de solides": quiz_equilibre_systemes_solides
 };
