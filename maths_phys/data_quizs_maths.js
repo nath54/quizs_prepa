@@ -1874,6 +1874,50 @@ const quiz_limites = [{
         "id": 299
     }
 ];
+
+const quiz_continuite = [{
+    "type": "definition",
+    "titre": "Continuité",
+    "hypotheses": "Soit $f$ définie sur $X$ et $a \\in X$.",
+    "resultat": "On dit que $f$ est continue en $a$ si $f$ admet une limite en $a$.",
+    "id": 300
+}, {
+    "type": "proposition",
+    "titre": "Propositions équivalentes à la continuité",
+    "hypotheses": "Soit $a \\in X$.",
+    "resultat": "Les propriétés suivantes sont équivalents : <ol> <li>$f$ est continue en $a$</li> <li>$\\forall \\varepsilon \\gt 0$, $\\exists \\eta \\gt 0$, $\\forall x \\in X$, $|x-a| \\lt \\eta$ $\\implies$ $|f(x)-f(a)| \\lt \\varepsilon$</li> <li>Pour tout voisinage $V$ de $f(a)$, il existe un voisinage $U$ de $a$ tel que $f(U\\cap X) \\subset V$</li> </ol>",
+    "id": 301
+}, {
+    "type": "proposition",
+    "titre": "Restriction de l'ensemble source",
+    "resultat": "Si $f$ et $g$ coïncident sur un voisinage de $a$, $f$ est continue en $a$ si et seulement si $g$ est continue en $a$.",
+    "id": 302
+}, {
+    "type": "corollaire",
+    "titre": "",
+    "hypotheses": "Soit $f$ et $g$ définies sur $X \\subset \\R$, et $U$ un ouvert tel que U \\cap X \\neq \\emptyset$.",
+    "resultat": "Alors si $f_{|U \\cap X}$ = $g_{|U \\cap X}$ et si $g$ est continue sur $U \\cap X$, alors $f$ aussi.",
+    "id": 303
+}, {
+    "type": "theoreme",
+    "titre": "Prolongement par continuité",
+    "hypotheses": "Soient $a \\in \\R$, $b \\in \\ol{R}$ tel que $b \\gt a$, et $I = ]a, b]$. On suppose que $f$ est continue sur $I$ et admet une limite finie $l$ en $a$.",
+    "resultat": "Alors il existe une unique application continue $g: [a, b] \\longrightarrow \\R$, telle que $g_{|I} =f$. Cette application vérifie $g(a) = l$, et est appelée prolongement par continuité de $f$ sur $[a, b]$.",
+    "id": 304
+}, {
+    "type": "definition",
+    "titre": "Continuité d'une fonction de 2 variables",
+    "hypotheses": "Soit $f$ une fonction définie sur un sous-ensemble $D$ de $\\R^2$, et $(x_0, y_0) \\in D$.",
+    "resultat": "On dit que $f$ est continue en $X_O = (x_0, y_0)$ si l'une des propriétés équivalentes suivantes est vérifiée : <ol> <li>$\\forall \\varepsilon \\gt 0$, $\\exists \\eta$,$\\forall X \\in D$, $||X - X_0|| \\leqslant \\eta$ $\\implies$ $||f(X) - f(X_0)|| \\leqslant \\varepsilon$</li> <li>$\\forall V \\in \\cal{V}(f(X_0))$, $\\exists U \\in \\cal{V}(X_0)$,$f(U \\cap D) \\subset V$</li> </ol>",
+    "id": 305
+}, {
+    "type": "proposition",
+    "titre": "Continuité d'une composée",
+    "hypotheses": "Soit $X$ et $Y$ deux sous-ensembles de $\\R$, $D$ un sous-ensemble de $\\R^2$. On se donne $f: D \\longrightarrow Y$, $\\varphi_1$, $\\varphi_2$ : $X \\longrightarrow D$ et $g: Y \\longrightarrow \\R$",
+    "resultat": "1. Si $f$ est continue en $(x_0, y_0)$ et $g$ continue en $f(x_0, y_0)$, alors $(x, y) \\rightarrow g(f(x,y))$ est continue en $(x_0, y_0)$<br/>2. Si $\\varphi_1$ et $\\varphi_2$ sont continues en $t_0$, et $f$ est continue en $(\\varphi_1(t_0), \\varphi_2(t_0))$, alors $t \\rightarrow f(\\varphi_1(t), \\varphi_2(t))$ est continue en $t_0$",
+    "id": 306
+}];
+
 /*
 
     NEXT ID : 300
@@ -1897,5 +1941,6 @@ const Quizs = {
     "Complexes": quiz_nb_complexes,
     "Trigonométrie": quiz_trigo,
     "Combinatoire": quiz_combi,
-    "Limites": quiz_limites
+    "Limites": quiz_limites,
+    "Continuité - incomplet": quiz_continuite
 };
