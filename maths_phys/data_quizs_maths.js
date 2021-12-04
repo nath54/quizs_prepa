@@ -75,56 +75,56 @@ const quiz_relations = [{
         "type": "definition",
         "titre": "Relation fonctionnelle",
 
-        "resultat": "Une relation $\\cal{R}$ entre $E$ et $F$ est fonctionnelle si pout tout $x$ de $E$ il existe au plus un $y$ de $F$ tel que $x\\cal{R}y$.",
+        "resultat": "Une relation $cR$ entre $E$ et $F$ est fonctionnelle si pout tout $x$ de $E$ il existe au plus un $y$ de $F$ tel que $xcRy$.",
         "id": 10
     },
     {
         "type": "definition",
         "titre": "Relation applicationnelle",
 
-        "resultat": "Une relation $\\cal{R}$ entre $E$ et $F$ est applicationnelle si pout tout $x$ de $E$ il existe un et un seul $y$ de $F$ tel que $x\\cal{R}y$.",
+        "resultat": "Une relation $cR$ entre $E$ et $F$ est applicationnelle si pout tout $x$ de $E$ il existe un et un seul $y$ de $F$ tel que $xcRy$.",
         "id": 11
     },
     {
         "type": "definition",
         "titre": "Reflexivité",
-        "hypotheses": "Soit $\\cal{R}$ une relation sur $E$.",
-        "resultat": "On dit que $\\cal{R}$ est réflexive si pour tout $x \\in E$, $x\\cal{R}x$.",
+        "hypotheses": "Soit $cR$ une relation sur $E$.",
+        "resultat": "On dit que $cR$ est réflexive si pour tout $x \\in E$, $xcRx$.",
         "id": 12
     },
     {
         "type": "definition",
         "titre": "Irréflexivité",
-        "hypotheses": "Soit $\\cal{R}$ une relation sur $E$.",
-        "resultat": "On dit que $\\cal{R}$ est irréflexive si pour tout $x \\in E$, on a $\\ne  (x\\cal{R}x)$.",
+        "hypotheses": "Soit $cR$ une relation sur $E$.",
+        "resultat": "On dit que $cR$ est irréflexive si pour tout $x \\in E$, on a $\\ne  (xcRx)$.",
         "id": 13
     },
     {
         "type": "definition",
         "titre": "Symétrie",
-        "hypotheses": "Soit $\\cal{R}$ une relation sur $E$.",
-        "resultat": "On dit que $\\cal{R}$ est symétrique si pour tout $(x, y) \\in E^2$, $(x\\cal{R}y) \\implies (y\\cal{R}x)$.",
+        "hypotheses": "Soit $cR$ une relation sur $E$.",
+        "resultat": "On dit que $cR$ est symétrique si pour tout $(x, y) \\in E^2$, $(xcRy) \\implies (ycRx)$.",
         "id": 14
     },
     {
         "type": "definition",
         "titre": "Antisymétrie",
-        "hypotheses": "Soit $\\cal{R}$ une relation sur $E$.",
-        "resultat": "On dit que $\\cal{R}$ est antisymétrique si pour tout $(x, y) \\in E^2$, $(x\\cal{R}y) \\land (y\\cal{R}x) \\implies x=y$.",
+        "hypotheses": "Soit $cR$ une relation sur $E$.",
+        "resultat": "On dit que $cR$ est antisymétrique si pour tout $(x, y) \\in E^2$, $(xcRy) \\land (ycRx) \\implies x=y$.",
         "id": 15
     },
     {
         "type": "definition",
         "titre": "Asymétrie",
-        "hypotheses": "Soit $\\cal{R}$ une relation sur $E$.",
-        "resultat": "On dit que $\\cal{R}$ est asymétrique si pour tout $(x, y) \\in E^2$, $(x\\cal{R}y) \\implies \\neq (y\\cal{R}x)$.",
+        "hypotheses": "Soit $cR$ une relation sur $E$.",
+        "resultat": "On dit que $cR$ est asymétrique si pour tout $(x, y) \\in E^2$, $(xcRy) \\implies \\neq (ycRx)$.",
         "id": 16
     },
     {
         "type": "definition",
         "titre": "Transitivité",
-        "hypotheses": "Soit $\\cal{R}$ une relation sur $E$.",
-        "resultat": "On dit que $\\cal{R}$ est transitive si pour tout $(x, y, z) \\in E^3$, $(x\\cal{R}y) \\land (y\\cal{R}z) \\implies x\\cal{R}z$.",
+        "hypotheses": "Soit $cR$ une relation sur $E$.",
+        "resultat": "On dit que $cR$ est transitive si pour tout $(x, y, z) \\in E^3$, $(xcRy) \\land (ycRz) \\implies xcRz$.",
         "id": 17
     },
     {
@@ -137,50 +137,50 @@ const quiz_relations = [{
     {
         "type": "definition",
         "titre": "Classe d'équivalence",
-        "hypotheses": "Soit $\\cal{R}$ une relation d'équivalence sur $E$, et $x \\in E$.",
-        "resultat": "La classe d'équivalence de $x$ sous la relation $\\cal{R}$ est le sous ensemble $C_x$ de $E$ constitué des éléments en relation avec $x$ : $C_x = \\{x \\in E | x\\cal{R}y\\}$.",
+        "hypotheses": "Soit $cR$ une relation d'équivalence sur $E$, et $x \\in E$.",
+        "resultat": "La classe d'équivalence de $x$ sous la relation $cR$ est le sous ensemble $C_x$ de $E$ constitué des éléments en relation avec $x$ : $C_x = \\{x \\in E | xcRy\\}$.",
         "id": 19
     },
     {
         "type": "lemme",
         "titre": "Classe d'équivalence",
 
-        "resultat": "Si y et x sont dans une même classe d'équivalence, alors $y\\cal{R}x$.",
+        "resultat": "Si y et x sont dans une même classe d'équivalence, alors $ycRx$.",
         "id": 20
     },
     {
         "type": "theoreme",
         "titre": "Partition formée par les classes d'équivalence",
-        "hypotheses": "Soit $E$ un ensemble, et $\\cal{R}$ une relation d'équivalence sur $E$",
-        "resultat": "L'ensemble des classes d'équivalence sous $\\cal{R}$ forme une partition de $E$.",
+        "hypotheses": "Soit $E$ un ensemble, et $cR$ une relation d'équivalence sur $E$",
+        "resultat": "L'ensemble des classes d'équivalence sous $cR$ forme une partition de $E$.",
         "id": 21
     },
     {
         "type": "definition",
         "titre": "Ensemble quotient",
 
-        "resultat": "L'ensemble des classes sous la relation $\\cal{R}$ s'appelle l'ensemble quotient de $E$ par $\\cal{R}$, et est noté $E/\\cal{R}$. C'est un sous-ensemble de $\\cal{P}(E)$.",
+        "resultat": "L'ensemble des classes sous la relation $cR$ s'appelle l'ensemble quotient de $E$ par $cR$, et est noté $E/cR$. C'est un sous-ensemble de $\\cP(E)$.",
         "id": 22
     },
     {
         "type": "definition",
         "titre": "Projection canonique",
 
-        "resultat": "On appelle projection canonique de $E$ sur $E/\\cal{R}$ l'application $\\pi\\cal{R}$ qui à $x$ associe sa classe $\\ol{x}$. Par définition, $\\pi\\cal{R}$ est surjective, et vérifie : $\\forall (x, y) \\in E^2$, $x\\cal{R}y\\iff\\pi\\cal{R}(x)=\\pi\\cal{R}(y)$.",
+        "resultat": "On appelle projection canonique de $E$ sur $E/cR$ l'application $\\picR$ qui à $x$ associe sa classe $\\ol{x}$. Par définition, $\\picR$ est surjective, et vérifie : $\\forall (x, y) \\in E^2$, $xcRy\\iff\\picR(x)=\\picR(y)$.",
         "id": 23
     },
     {
         "type": "theoreme",
         "titre": "Factorisation d'une application constante sur les classes d'équivalence",
         "hypotheses": "Soit $f: E \\rightarrow F$. Alors les deux propriétés suivantes sont équivalentes.",
-        "resultat": "($i$) Pour tout $(x, y) \\in E^2$, $x\\cal{R}y \\implies f(x) = f(y)$<br/>($ii$) Il existe $g: E/\\cal{R} \\rightarrow F$ tel que $f = g \\circ \\pi\\cal{R}$",
+        "resultat": "($i$) Pour tout $(x, y) \\in E^2$, $xcRy \\implies f(x) = f(y)$<br/>($ii$) Il existe $g: E/cR \\rightarrow F$ tel que $f = g \\circ \\picR$",
         "id": 24
     },
     {
         "type": "definition",
         "titre": "Congruence",
         "hypotheses": "Soit $E$ un ensemble, muni d'un certain nombre d'opération $\\times_1, \\times_2, \\ldots, \\times_n$.",
-        "resultat": "On dit qu'une relation d'équivalence $\\cal{R}$ est une congruence sur $(E, \\times_1,\\ldots,\\times_n)$ si <br/> $\\forall (x,y,x',y') \\in E^4$, $\\forall i \\in [\\![1, n]\\!]$, $(x\\cal{R}x') \\land (y\\cal{R}y') \\implies (x\\times_i y)\\cal{R}(x'\\times_iy')$.",
+        "resultat": "On dit qu'une relation d'équivalence $cR$ est une congruence sur $(E, \\times_1,\\ldots,\\times_n)$ si <br/> $\\forall (x,y,x',y') \\in E^4$, $\\forall i \\in [\\![1, n]\\!]$, $(xcRx') \\land (ycRy') \\implies (x\\times_i y)cR(x'\\times_iy')$.",
         "id": 25
     },
     {
@@ -193,8 +193,8 @@ const quiz_relations = [{
     {
         "type": "proposition",
         "titre": "Passage au quotient des opérations",
-        "hypotheses": "Soit $(E, \\times_1, \\ldots, \\times_n)$ un ensemble muni de $n$ lois d'opérations, et $\\cal{R}$ une congruence sur $(E, \\times_1, \\ldots, \\times_n)$.",
-        "resultat": "Alors on peut définir sur $E/\\cal{R}$ des lois $\\times_1, \\ldots, \\times_n$ telles que pour tout $i \\in [\\![1, n]\\!]$ et tout $(x, y) \\in E^2$ <br/> $$\\ol{x} \\times_i \\ol{y\\ } = \\ol{x \\times_i y}$$",
+        "hypotheses": "Soit $(E, \\times_1, \\ldots, \\times_n)$ un ensemble muni de $n$ lois d'opérations, et $cR$ une congruence sur $(E, \\times_1, \\ldots, \\times_n)$.",
+        "resultat": "Alors on peut définir sur $E/cR$ des lois $\\times_1, \\ldots, \\times_n$ telles que pour tout $i \\in [\\![1, n]\\!]$ et tout $(x, y) \\in E^2$ <br/> $$\\ol{x} \\times_i \\ol{y\\ } = \\ol{x \\times_i y}$$",
         "id": 27
     },
     {
@@ -242,15 +242,15 @@ const quiz_relations = [{
     {
         "type": "definition",
         "titre": "Ordre total/partiel",
-        "hypotheses": "Soit $\\cal{R}$ une relation d'ordre sur un ensemble $E$.",
-        "resultat": "On dit que $\\cal{R}$ est une relation d'ordre total si pour tout $(x, y) \\in E^2$, soit $x \\leqslant y$ soit $y \\leqslant x$.<br/>Dans le cas contraire, on dit que $\\cal{R}$ est une relation d'ordre partiel.",
+        "hypotheses": "Soit $cR$ une relation d'ordre sur un ensemble $E$.",
+        "resultat": "On dit que $cR$ est une relation d'ordre total si pour tout $(x, y) \\in E^2$, soit $x \\leqslant y$ soit $y \\leqslant x$.<br/>Dans le cas contraire, on dit que $cR$ est une relation d'ordre partiel.",
         "id": 34
     },
     {
         "type": "definition",
         "titre": "Restriction d'une relation d'ordre",
-        "hypotheses": "Soit $E$ un ensemble muni d'une relation d'ordre $\\cal{R}$, et $A$ un sous-ensemble de $E$.",
-        "resultat": "Alors $\\cal{R}$ définition sur $A$, une relation d'ordre $\\cal{R}'$ par : <br/> $\\forall (x, y) \\in A^2$, $x\\cal{R}'y \\iff x\\cal{R}y$.<br/>Il s'agit de la restriction à $A$ de la relation $\\cal{R}$, ou de la relation induite par $\\cal{R}$ sur $A$.",
+        "hypotheses": "Soit $E$ un ensemble muni d'une relation d'ordre $cR$, et $A$ un sous-ensemble de $E$.",
+        "resultat": "Alors $cR$ définition sur $A$, une relation d'ordre $cR'$ par : <br/> $\\forall (x, y) \\in A^2$, $xcR'y \\iff xcRy$.<br/>Il s'agit de la restriction à $A$ de la relation $cR$, ou de la relation induite par $cR$ sur $A$.",
         "id": 35
     },
     {
@@ -259,7 +259,7 @@ const quiz_relations = [{
         "hypotheses": "Soit $(E, \\leqslant )$ un ensemble muni d'une relation d'ordre.",
         "resultat": "1) Un élément $m$ de $E$ est appelé plus petit élément de $E$ si : $\\forall m' \\in E$, $m \\leqslant m'$.<br/>\
         2) Un élément $M$ de $E$ est appelé plus grand élément de $E$ si : $\\forall m' \\in E$, $M\\geqslant m'$.<br/>\
-        3) Etant donné un sous-ensemble $A$ de $E$, un élément minimum (resp maximum) de $A$ est un élément minimum (resp maximum) pour la relation d'ordre $\\cal{R}'$ induite par $\\cal{R}$ sur $A$.",
+        3) Etant donné un sous-ensemble $A$ de $E$, un élément minimum (resp maximum) de $A$ est un élément minimum (resp maximum) pour la relation d'ordre $cR'$ induite par $cR$ sur $A$.",
         "id": 36
     },
     {
@@ -1773,7 +1773,7 @@ const quiz_limites = [{
     }, {
         "type": "remarque",
         "titre": "Notation : Ensemble des voisinages de $b$",
-        "resultat": "Pour $b \\in \\ol{\\R}$, on note $\\cal{V}(b)$ l'ensemble des voisinages de $b$/",
+        "resultat": "Pour $b \\in \\ol{\\R}$, on note $\\cV(b)$ l'ensemble des voisinages de $b$/",
         "id": 283
     }, {
         "type": "proposition",
@@ -1785,7 +1785,7 @@ const quiz_limites = [{
         "type": "theoreme",
         "titre": "Caractérisation des limites par voisinages",
         "hypotheses": "Soit $a \\in \\ol{X}$ (fini ou infini) et $b \\in \\ol{R}$",
-        "resultat": "Les propositions suivantes sont équivalents : <ol> <li style=\"margin-bottom: 10px;\"><i><b>(métrique/métrique)</b></i> <br/>  $f$ admet une limite $b$ lorsque $x$ tend vers $a$</li> <li style=\"margin-bottom: 10px;\"><i><b>(métrique/topologique)</b></i><br/> $(i)$ Si $a$ est fini : $\\forall \\varepsilon \\gt 0$, $\\exists U \\in \\cal{V}(a)$, $\\forall x \\in X$, $|x-a| \\lt 0$ $\\implies$ $f(x) \\in V$<br/>$(ii)$ Si $a = +\\infty$ : $\\forall V \\in \\cal{V}(b)$, $\\exists A > 0$, $\\forall x \\in X$, $x \\gt A$ $\\implies$ $f(x) \\in V$ </li> <li style=\"margin-bottom: 10px;\"><i><b>(topologique/métrique)</b></i> <br/> $(i)$ Si $b$ est fini : $\\forall \\varepsilon \\gt 0$, $\\exists U \\in \\cal{V}(a)$, $\\forall x \\in X$, $x \\in U$ $\\implies$ $|f(x)-b| \\gt \\varepsilon$ <br/> $(ii)$ si $b = +\\infty$ : $\\forall A \\gt 0$, $\\exists U \\in \\cal{V}(a)$, $\\forall x \\in X$, $x \\in U$ $\\implies$ $f(x) \\gt A$</li> <li><i><b>(topologique/topologique)</b></i> <br/> $\\forall V \\in \\cal{V}(b)$, $\\exists U \\in \\cal{V}(a)$, $f(U \\cap X) \\subset V$</li> </ol>",
+        "resultat": "Les propositions suivantes sont équivalents : <ol> <li style=\"margin-bottom: 10px;\"><i><b>(métrique/métrique)</b></i> <br/>  $f$ admet une limite $b$ lorsque $x$ tend vers $a$</li> <li style=\"margin-bottom: 10px;\"><i><b>(métrique/topologique)</b></i><br/> $(i)$ Si $a$ est fini : $\\forall \\varepsilon \\gt 0$, $\\exists U \\in \\cV(a)$, $\\forall x \\in X$, $|x-a| \\lt 0$ $\\implies$ $f(x) \\in V$<br/>$(ii)$ Si $a = +\\infty$ : $\\forall V \\in \\cV(b)$, $\\exists A > 0$, $\\forall x \\in X$, $x \\gt A$ $\\implies$ $f(x) \\in V$ </li> <li style=\"margin-bottom: 10px;\"><i><b>(topologique/métrique)</b></i> <br/> $(i)$ Si $b$ est fini : $\\forall \\varepsilon \\gt 0$, $\\exists U \\in \\cV(a)$, $\\forall x \\in X$, $x \\in U$ $\\implies$ $|f(x)-b| \\gt \\varepsilon$ <br/> $(ii)$ si $b = +\\infty$ : $\\forall A \\gt 0$, $\\exists U \\in \\cV(a)$, $\\forall x \\in X$, $x \\in U$ $\\implies$ $f(x) \\gt A$</li> <li><i><b>(topologique/topologique)</b></i> <br/> $\\forall V \\in \\cV(b)$, $\\exists U \\in \\cV(a)$, $f(U \\cap X) \\subset V$</li> </ol>",
         "id": 284
     }, {
         "type": "proposition",
@@ -1908,7 +1908,7 @@ const quiz_continuite = [{
     "type": "definition",
     "titre": "Continuité d'une fonction de 2 variables",
     "hypotheses": "Soit $f$ une fonction définie sur un sous-ensemble $D$ de $\\R^2$, et $(x_0, y_0) \\in D$.",
-    "resultat": "On dit que $f$ est continue en $X_O = (x_0, y_0)$ si l'une des propriétés équivalentes suivantes est vérifiée : <ol> <li>$\\forall \\varepsilon \\gt 0$, $\\exists \\eta$,$\\forall X \\in D$, $||X - X_0|| \\leqslant \\eta$ $\\implies$ $||f(X) - f(X_0)|| \\leqslant \\varepsilon$</li> <li>$\\forall V \\in \\cal{V}(f(X_0))$, $\\exists U \\in \\cal{V}(X_0)$,$f(U \\cap D) \\subset V$</li> </ol>",
+    "resultat": "On dit que $f$ est continue en $X_O = (x_0, y_0)$ si l'une des propriétés équivalentes suivantes est vérifiée : <ol> <li>$\\forall \\varepsilon \\gt 0$, $\\exists \\eta$,$\\forall X \\in D$, $||X - X_0|| \\leqslant \\eta$ $\\implies$ $||f(X) - f(X_0)|| \\leqslant \\varepsilon$</li> <li>$\\forall V \\in \\cV(f(X_0))$, $\\exists U \\in \\cV(X_0)$,$f(U \\cap D) \\subset V$</li> </ol>",
     "id": 305
 }, {
     "type": "proposition",
@@ -1976,24 +1976,24 @@ const quiz_derivation = [{
     "id": 316
 }, {
     "type": "definition",
-    "titre": "Fonctions de classe $\\cal{C}^n$",
-    "resultat": "Une fonction $f$ est dite de classe $\\cal{C}^n$ sur un intervalle $I$ si elle est n fois dérivable sur $I$ et que $f^{(n)}$ est continue",
+    "titre": "Fonctions de classe $\\cC^n$",
+    "resultat": "Une fonction $f$ est dite de classe $\\cC^n$ sur un intervalle $I$ si elle est n fois dérivable sur $I$ et que $f^{(n)}$ est continue",
     "id": 317
 }, {
     "type": "texte",
-    "titre": "Notations : $\\cal{C}^n(I)$, $\\cal{D}^n(I)$",
+    "titre": "Notations : $\\cC^n(I)$, $cD^n(I)$",
     "hypotheses": "Soit $I$ un intervalle et $n \\in \\N$.",
-    "resultat": "On note $\\cal{D}^n(I)$ l'ensemble des fonctions définies sur $I$ et n fois dérivables sur $I$.<br/>On note $\\cal{C}^n(I)$ l'ensemble des fonctions n fois dérivables sur $I$ et de dérivée n-ième continue.",
+    "resultat": "On note $cD^n(I)$ l'ensemble des fonctions définies sur $I$ et n fois dérivables sur $I$.<br/>On note $\\cC^n(I)$ l'ensemble des fonctions n fois dérivables sur $I$ et de dérivée n-ième continue.",
     "id": 318
 }, {
     "type": "proposition",
     "titre": "Chaîne d'inclusion avec les $C^n(I)$ et $D^n(I)$",
-    "resultat": "On a une chaîne d'inclusion : <br/> $\\dots$ $\\subset$ $\\cal{C}^n(I)$ $\\subset$ $\\cal{D}^n(I)$ $\\subset$ $\\cal{C}^{n-1}(I)$ $\\subset$ $\\cal{D}^{n-1}(I)$ $\\subset$ $\\dots$ $\\subset$ $\\cal{C}^1(I)$ $\\subset$ $\\cal{D}^1(I)$ $\\subset$ $\\cal{C}^0(I)$ $\\subset$ $\\cal{D}^0(I)$",
+    "resultat": "On a une chaîne d'inclusion : <br/> $\\dots$ $\\subset$ $\\cC^n(I)$ $\\subset$ $cD^n(I)$ $\\subset$ $\\cC^{n-1}(I)$ $\\subset$ $cD^{n-1}(I)$ $\\subset$ $\\dots$ $\\subset$ $\\cC^1(I)$ $\\subset$ $cD^1(I)$ $\\subset$ $\\cC^0(I)$ $\\subset$ $cD^0(I)$",
     "id": 319
 }, {
     "type": "definition",
-    "titre": "Fonctions de classe $\\cal{C}^{\\infty}$",
-    "resultat": "On dit que $f$ est de classe $\\cal{C}^{\\infty}$ sur $I$ si $f$ est de classe $\\cal{C}^n$ pour tout $n\\in\\N$, donc si $f$ est infiniment dérivable.<br/>$\\cal{C}^{\\infty}(I)$ l'ensemble des fonctions de classe $\\cal{C}^{\\infty}$ sur $I$.",
+    "titre": "Fonctions de classe $\\cC^{\\infty}$",
+    "resultat": "On dit que $f$ est de classe $\\cC^{\\infty}$ sur $I$ si $f$ est de classe $\\cC^n$ pour tout $n\\in\\N$, donc si $f$ est infiniment dérivable.<br/>$\\cC^{\\infty}(I)$ l'ensemble des fonctions de classe $\\cC^{\\infty}$ sur $I$.",
     "id": 320
 }, {
     "type": "theoreme",
@@ -2039,9 +2039,9 @@ const quiz_derivation = [{
     "id": 327
 }, {
     "type": "theoreme",
-    "titre": "Théorème de la classe $\\cal{C}^n$ par prolongement",
-    "hypotheses": "Soit $I$ un intervalle et $x_0 \\in I$. Soit $f$ une fonction définie en $\\cal{C}^n$ sur $I\\backslash\\{x_0\\}$.",
-    "resultat": "Si pour tout $k \\in [\\![0, n]\\!]$, $f^{(k)}$ admet une limite finie en $x_0$, alors $f$ peut être prolongée sur $I$ en une fonction $\\widetilde{f}$ de classe $\\cal{C}^n$ sur $I$. De plus, on aura alors : <br/> $\\forall k \\in [\\![0, n]\\!]$, $\\widetilde{f}^{(k)}(x_0)$ = $\\lim\\limits_{x\\to x_0} f^{(k)}(x)$",
+    "titre": "Théorème de la classe $\\cC^n$ par prolongement",
+    "hypotheses": "Soit $I$ un intervalle et $x_0 \\in I$. Soit $f$ une fonction définie en $\\cC^n$ sur $I\\backslash\\{x_0\\}$.",
+    "resultat": "Si pour tout $k \\in [\\![0, n]\\!]$, $f^{(k)}$ admet une limite finie en $x_0$, alors $f$ peut être prolongée sur $I$ en une fonction $\\widetilde{f}$ de classe $\\cC^n$ sur $I$. De plus, on aura alors : <br/> $\\forall k \\in [\\![0, n]\\!]$, $\\widetilde{f}^{(k)}(x_0)$ = $\\lim\\limits_{x\\to x_0} f^{(k)}(x)$",
     "id": 328
 }, {
     "type": "proposition",
@@ -2162,15 +2162,15 @@ const quiz_derivation = [{
     "id": 347
 }, {
     "type": "corollaire",
-    "titre": "Règle de stabilité dans $\\cal{D}^n(I)$",
+    "titre": "Règle de stabilité dans $cD^n(I)$",
     "hypotheses": "Soit $n \\in \\N^*$",
-    "resultat": "1. L'ensemble $\\cal{D}^n(I)$ est stable par combinaison linéaires, produits et quotients par une fonction ne s'annulant pas<br/>2. Soit $f \\in \\cal{D}^n(I)$ à valeurs dans un intervalle $J$, et $g \\in \\cal{D}^n(I)$<br/>3. Soit $f \\in \\cal{D}^n(I)$, bijective de $I$ dans $J$, et telle que $f'$ ne s'annule pas sur $I$. Alors $f^{-1} \\in \\cal{D}^n(J)$",
+    "resultat": "1. L'ensemble $cD^n(I)$ est stable par combinaison linéaires, produits et quotients par une fonction ne s'annulant pas<br/>2. Soit $f \\in cD^n(I)$ à valeurs dans un intervalle $J$, et $g \\in cD^n(I)$<br/>3. Soit $f \\in cD^n(I)$, bijective de $I$ dans $J$, et telle que $f'$ ne s'annule pas sur $I$. Alors $f^{-1} \\in cD^n(J)$",
     "id": 348
 }, {
     "type": "corollaire",
-    "titre": "Règle de stabilité dans $\\cal{C}^n(I)$",
+    "titre": "Règle de stabilité dans $\\cC^n(I)$",
     "hypotheses": "Soit $n \\in \\N^*$",
-    "resultat": "1. L'ensemble $\\cal{C}^n(I)$ est stable par combinaison linéaires, produits et quotients par une fonction ne s'annulant pas<br/>2. Soit $f \\in \\cal{C}^n(I)$ à valeurs dans un intervalle $J$, et $g \\in \\cal{C}^n(I)$<br/>3. Soit $f \\in \\cal{C}^n(I)$, bijective de $I$ dans $J$, et telle que, si $n\\neq0$, $f'$ ne s'annule pas sur $I$. Alors $f^{-1} \\in \\cal{C}^n(J)$",
+    "resultat": "1. L'ensemble $\\cC^n(I)$ est stable par combinaison linéaires, produits et quotients par une fonction ne s'annulant pas<br/>2. Soit $f \\in \\cC^n(I)$ à valeurs dans un intervalle $J$, et $g \\in \\cC^n(I)$<br/>3. Soit $f \\in \\cC^n(I)$, bijective de $I$ dans $J$, et telle que, si $n\\neq0$, $f'$ ne s'annule pas sur $I$. Alors $f^{-1} \\in \\cC^n(J)$",
     "id": 348
 }, {
     "type": "definition",
@@ -2184,11 +2184,94 @@ const quiz_derivation = [{
     "hypotheses": "Soit $f:I \\to \\C$, définissons les fonctions $f_r$ et $f_i$ de $I$ dans $\\C$ par : <br/> $\\forall x \\in I$, $f_r(x) = \\Re(f(x))$, $f_i(x)=\\Im(f(x))$",
     "resultat": "Alors $f$ est dérivable en $x_0$, si et seulement si $f_r$ et $f_i$ le sont, et dans ce cas, <br/>$f'(x_0)$ = $f'_r(x_0)$ + $f'_i(x_0)$",
     "id": 350
+}, {
+    "type": "proposition",
+    "titre": "Principales règles de dérivation des fonctions complexes",
+    "hypotheses": "Soit $f,g : I \\to \\C$ deux fonctions complexes définies sur un intervalle ouvert $I$ de $\\R$ et dérivables en $x_0 \\in I$. Alors :",
+    "resultat": "$(i)$ $f+g$ est dérivable en $x_0$ et $(f+g)'(x_0)$ = $f'(x_0)$ + $g'(x_0)$<br/>$(ii)$ Pour tout $\\alpha \\in \\C$, $\\alpha f$ est dérivable en $x_0$ et $(\\alpha f)'(x_0)$ = $\\alpha f'(x_0)$<br/>$(iii)$ $fg$ est dérivable en $x_0$ et $(fg)'(x_0)$ = $f'(x_0)g(x_0)$ + $f(x_0)g'(x_0)$<br/>$(iv)$ si $g(x_0) \\neq 0$, $\\frac{f}{g}$ est dérivable en $x_0$ et $\\left(\\frac{f}{g}\\right)'(x_0)$ = $\\frac{f'(x_0)g(x_0)-f(x_0)g'(x_0)}{g^2(x_0)}$",
+    "id": 351
+}, {
+    "type": "proposition",
+    "titre": "Dérivée de $t \\to e^{\\varphi(t)}$",
+    "hypotheses": "Soit $\\varphi:I\\to\\C$ une fonction à valeurs complexes définie sur un intervalle $I$ ouvert de $\\R$ et soit $x_0\\in I$. Soit $\\psi: x\\to e^{\\varphi(t)}$",
+    "resultat": "Si $\\varphi$ est dérivable en $x_0$, alors $\\psi$ aussi, et <br/>$\\psi'(x_0)$ = $\\varphi'(x_0)e^{\\varphi(x_0)}$",
+    "id": 352
+}, {
+    "type": "definition",
+    "titre": "Application partielle",
+    "resultat": "Les deux applications partielles de $f$ en $(x_0, y_0)$ sont les deux applicatiosn $f_1$ et $f_2$ définies sur $I_1$ et $I_2$ respectivement par : <br/> $f_1(x) = f(x,y_0)$ et $f_2(y) = f(x_0, y)$",
+    "id": 353
+}, {
+    "type": "definition",
+    "titre": "Dérivée partielle",
+    "resultat": "On dit que $f$ admet une dérivée partielle par rapport à $x$ en $X_0$ si $f_1$ est dérivable en $x_0$, et on note alors <br/>$\\frac{\\partial f}{\\partial x}(X_0)$ = $f'_1(x_0)$",
+    "id": 354
+}, {
+    "type": "remarque",
+    "titre": "Continuité et dérivées partielles",
+    "resultat": "L'existence des deux dérivées partielles en un point $X_0$ n'assure pas la continuité en $x_0$",
+    "id": 355
+}, {
+    "type": "definition",
+    "titre": "Fonction de classe $\\cC^1$ sur un ouvert de $\\R^2$",
+    "hypotheses": "Soit $U$ un ouvert de $\\R^2$, et $f:U \\to \\R$.",
+    "resultat": "On dit que $f$ est de classe $\\cC^1$ si $f$ admet des dérivées partielles $\\frac{\\partial f}{\\partial x}$ et $\\frac{\\partial f}{\\partial y}$ en tout point de $U$, et que les applications <br/> $X \\mto \\frac{\\partial f}{\\partial x}(X)$ et $X \\mto \\frac{\\partial f}{\\partial y}(X)$ soient continues sur $U$",
+    "id": 356
+}, {
+    "type": "definition",
+    "titre": "Gradient",
+    "hypotheses": "Soit $f$ une fonction de classe $\\cC^1$ sur un ouvert $U$ de $\\R^2$",
+    "resultat": "Le gradiant de $f$ est défini sur $U$ par :<br/>$\\forallX \\in U$, $\\nabla f(X) = \\left(\\begin{array}{ll} \\frac{\\partial f}{\\partial x}(X) \\\\ \\frac{\\partial f}{\\partial y}(X) \\end{array}\\right)$",
+    "id": 357
+}, {
+    "type": "theoreme",
+    "titre": "Règle de la chaîne",
+    "hypotheses": "Soit $f$ une fonction de classe $\\cC^1$ sur un ouvert de $U$ et $x,y : I \\ra U$ deux applications de classe $\\cC^1$ sur un intervalle ouvert $I$ de $\\R$.",
+    "resultat": "Alors la fonction $t\\mto f(x(t),y(t))$ est de classe $\\cC^1$ sur $I$ et <br/> $\\frac{d}{dt}(f(x(t),y(t))$ = $x'(t) . \\frac{\\partial f}{\\partial x}(x(t),y(t))$ + $y'(t) . \\frac{\\partial f}{\\partial y}(x(t), y(t))$",
+    "id": 358
+},{
+    "type": "remarque",
+    "titre": "Dérivée le long d'un chemin",
+    "resultat": "La fonction $\\gamma$ peut être vue un chemin dans $\\R^2$, paramétré par $t$, parcouru à une certaine vitesse donnée par l'évolution de $x(t)$ et $y(t)$ au fil du temps.<br/>C'est ce qu'on appelle un arc paramétré.<br/>Ainsi la règle de la chaîne peut être interprétée comme une dérivée le long d'un arc.",
+    "id": 359
+},{
+    "type": "corollaire",
+    "titre": "Dérivée partielle de composée",
+    "hypotheses": "Soit $f$ une fonction de classe $\\cC^1$ sur un ouvert $U$ de $\\R^2$, $\\varphi$ et $\\psi$ deux fonctions de classe $\\cC^1$ sur un ouvert $V$ de $\\R^2$ tel que $\\varphi(V) \\subset U$ et $\\psi(V) \\subset U$.",
+    "resultat": "Alors la fonction $(u,v) \\mto f(\\varphi(u,v), \\psi(u,v))$ est de classe $\\cC^1$ sur $V$, et : <br/> $\\left\\{ \\begin{array}{ll} \\frac{\\partial}{\\partial u}f(\\varphi(u,b), \\psi(u,v)) = \\frac{\\partial f}{\\partial x}(\\varphi(u,v), \\psi(u,v))\\frac{\\partial \\varphi}{\\partial u}(u,v) + \\frac{\\partial f}{\\partial y}(\\varphi(u,v), \\psi(u,v))\\frac{\\partial \\psi}{\\partial u}(u,v) \\\\ \\frac{\\partial}{\\partial v}f(\\varphi(u,b), \\psi(u,v)) = \\frac{\\partial f}{\\partial x}(\\varphi(u,v), \\psi(u,v))\\frac{\\partial \\varphi}{\\partial v}(u,v) + \\frac{\\partial f}{\\partial y}(\\varphi(u,v), \\psi(u,v))\\frac{\\partial \\psi}{\\partial v}(u,v) \\end{array} \\right.$ ",
+    "id": 360
+},{
+    "type": "definition",
+    "titre": "Ligne de niveau",
+    "resultat": "La ligne de niveau de $f$ de hauteur $a$ est l'ensemble des points $(x,y) \\in \\R^2$ tels que $f(x,y) = a$<br/>Autrement dit, il s'agit de $f^{-1}(\\{a\\})$",
+    "id": 361
+},{
+    "type": "remarque",
+    "titre": "Le gradient est orthogonal aux courbes de niveau",
+    "resultat": "Si $\\gamma$ est un arc parcourant une ligne de niveau de $f$ (i.e. $f \\circ \\gamma$ est contante), alors <br/> $\\langle \\nabla f(\\gamma(t)), \\gamma'(t))\\rangle = 0$<br/>Ainsi, \\nabla f(\\gamma(t))$ est orthogonal à $\\gamma'(t)$, lui-même tangent à l'arc $\\gamma$.<br/>En d'autre terme, le gradient est orthogonal aux lignes de niveau.",
+    "id": 362
+},{
+    "type": "definition",
+    "titre": "Dérivée selon un vecteur $u$",
+    "hypotheses": "Soit $u = (a,b)$ un vecteur de $\\R^2$ et $f$ une application de classe $\\cC^1$ sur un ouvert de $U$.",
+    "resultat": "La dérivée directionnelle de $f$ en $X = (x,y) \\in U$ selon le vecteur $u$ est la dérivée en $0$ de la fonction $t \\mto f(X+tu)$, notée $D_uf(X)$",
+    "id": 363
+},{
+    "type": "proposition",
+    "titre": "Expression de la dérivée directionnelle avec $\\nabla$",
+    "hypotheses": "si $f$ est de classe $\\cC^1$ au voisinage de $X$,",
+    "resultat": "$\\D_uf(X)$ = $\\langle \\nabla f(X), u\\rangle$ = $a\\frac{\\partial f}{\\partial x}(X)$ + $b\\frac{\\partial f}{\\partial y}(X)$",
+    "id": 364
+},{
+    "type": "texte",
+    "titre": "Dérivées partielles d'ordre supérieur",
+    "resultat": "Chaque dérivée partielle de $f$ est elle même une fonction de 2 variables. Si elles admettent elles-mêmes des dérivées partielles, on les notes : $$\\left\\{ \\begin{array}{ll} \\frac{\\partial^2 f}{\\partial x^2}(x,y) = \\frac{\\partial}{\\partial x}(\\frac{\\partial f}{\\partial x}(x,y)) \\\\ \\frac{\\partial^2 f}{\\partial y\\partial x}(x,y) = \\frac{\\partial}{\\partial y}(\\frac{\\partial f}{\\partial x}(x,y)) \\\\ \\frac{\\partial^2 f}{\\partial x \\partial y}(x,y) = \\frac{\\partial}{\\partial x}(\\frac{\\partial f}{\\partial y}(x,y) )\\\\ \\frac{\\partial^2 f}{\\partial y^2}(x,y) = \\frac{\\partial}{\\partial y}(\\frac{\\partial f}{\\partial y}(x,y))\\end{array}\\right.$$",
+    "id": 365
 }];
 
 /*
 
-    NEXT ID : 349
+    NEXT ID : 361
 
     ,{
         "type": "",
@@ -2212,4 +2295,4 @@ const Quizs = {
     "Limites": quiz_limites,
     "Continuité": quiz_continuite,
     "Dérivation - incomplet": quiz_derivation
-};
+}; 

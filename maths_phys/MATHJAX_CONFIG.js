@@ -22,7 +22,12 @@ MathJax = {
             cR: "\\cal{R}",
             B: "\\cal{B}",
             dpdot: ["  \\dot{ \\raisebox{2pt}{#1} }", 1],
-            dpddot: ["\\ddot{ \\raisebox{0pt}[\\dimexpr\\height+#1][\\depth]{#2} }", 2]
+            dpddot: ["\\ddot{ \\raisebox{0pt}[\\dimexpr\\height+#1][\\depth]{#2} }", 2],
+            mto: "\\longmapsto",
+            cC: "\\cal{C}",
+            cD: "\\cal{D}",
+            cV: "\\cal{V}",
+            cP: "\\cal{P}"
         }
     }
 };
