@@ -2137,6 +2137,29 @@ const quiz_derivation = [{
     "titre": "Formule de Leibniz",
     "resultat": "Si $f$ et $g$ sont $n$ fois dérivables en $x_0$, alors $fg$ aussi et : <br/>$$(fg)^{(n)}(x_0) = \\sum_{k=0}^{n}\\binom{n}{k}f^{n}(x_0)g^{(n-k)}(x_0)$$",
     "id": 343
+}, {
+    "type": "proposition",
+    "titre": "$(\\frac{f}{g})^{(n)}$",
+    "resultat": "Si $f$ et $g$ sont $n$ fois dérivables en $x_0$ et si $g$ ne s'annule pas en $x_0$, alors $\\frac{f}{g}$ est $n$ fois dérivable en $x_0$ (pas de formule simple).",
+    "id": 344
+}, {
+    "type": "proposition",
+    "titre": "Composition de fonction $n$ fois dérivables",
+    "hypotheses": "Soit $I$ et $J$ deux intervalles, et $f$ une fonction de $I$ dans $J$, $g$ une fonction de $J$ dans $\\R$. Soit $x_0 \\in I$",
+    "resultat": "Si $f$ est $n$ fois dérivable en $x_0$ et $g$ est $n$ fois dérivable en $f(x_0)$, alors $g \\circ f$ est $n$ fois dérivable en $x_0$.<br/>Si de plus $f^{(n)}$ et $g^{(n)}$ sont continues en $x_0$, alors $g \\circ f$ également.",
+    "id": 345
+}, {
+    "type": "proposition",
+    "titre": "Formule de Faà di Bruno",
+    "hypotheses": "",
+    "resultat": "Il existe explicite pour la dérivée d'ordre $n$ d'une composition (formule de Faà di Bruno) : $$(g \\circ f)^{(n)} = \\sum_{\\begin{array}{ll} (m_1,\\dots,m_n)\\in \\ \\N^n \\\\ 1m_1+2m_2+\\dots+nm_n = n \\end{array}} \\frac{n!}{m_1!m_2!\\dots m_n!} \\prod_{k=1}^{n}\\left(\\frac{f^{(n)}}{k!}\\right)^{mk} \\times g^{(m_1+\\dots+m_n)}\\circ f$$",
+    "id": 346
+}, {
+    "type": "theoreme",
+    "titre": "Dérivée de $x \\to f(ax + b)$",
+    "hypotheses": "Soit $a$ et $b$ deux réels, $x_0 \\in \\R$ et $f$ une application $n$ fois dérivable en $ax_0+b$.",
+    "resultat": "Alors la fonction $g:x\\to f(ax+b)$ est $n$ fois dérivable en $x_0$ et <br/> $g^{(n)}(x_0)$ = $a^nf^{(n)}(ax+b)$",
+    "id": 347
 }];
 
 /*
