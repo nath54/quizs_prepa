@@ -2172,6 +2172,18 @@ const quiz_derivation = [{
     "hypotheses": "Soit $n \\in \\N^*$",
     "resultat": "1. L'ensemble $\\cal{C}^n(I)$ est stable par combinaison linéaires, produits et quotients par une fonction ne s'annulant pas<br/>2. Soit $f \\in \\cal{C}^n(I)$ à valeurs dans un intervalle $J$, et $g \\in \\cal{C}^n(I)$<br/>3. Soit $f \\in \\cal{C}^n(I)$, bijective de $I$ dans $J$, et telle que, si $n\\neq0$, $f'$ ne s'annule pas sur $I$. Alors $f^{-1} \\in \\cal{C}^n(J)$",
     "id": 348
+}, {
+    "type": "definition",
+    "titre": "Dérivation d'une fonction de $\\R$ dans $\\C$",
+    "hypotheses": "Soit $I = ]a,b[$ un intervalle ouvert de $\\R$ ($a, b \\in \\ol{\\R}$) et $x_0 \\in I$. Soit $f : I \\to \\C$ une fonction à valeurs complexes.",
+    "resultat": "On dit que $f$ est dérivable en $x_0$ si l'expression $\\frac{f(x_0+h) - f(x_0)}{h}$ admet une limite dans $\\C$ lorsque le réel $h$ tend vers $0$, c'est-à-dire s'il existe $l \\in \\C$ tel que $$\\lim\\limits_{h \\to 0}\\left|\\frac{f(x_0 + h) - f(x_0)}{h}-l\\right| = 0$$<br/>Dans ce cas, on définit la dérivée de $f$ en $x_0$ par : $$f'(x_0)=\\lim\\limits_{x \\to 0}\\frac{f(x_0+h) - f(x_0)}{h}$$",
+    "id": 349
+}, {
+    "type": "proposition",
+    "titre": "Dérivation des parties réelles et imaginaires",
+    "hypotheses": "Soit $f:I \\to \\C$, définissons les fonctions $f_r$ et $f_i$ de $I$ dans $\\C$ par : <br/> $\\forall x \\in I$, $f_r(x) = \\Re(f(x))$, $f_i(x)=\\Im(f(x))$",
+    "resultat": "Alors $f$ est dérivable en $x_0$, si et seulement si $f_r$ et $f_i$ le sont, et dans ce cas, <br/>$f'(x_0)$ = $f'_r(x_0)$ + $f'_i(x_0)$",
+    "id": 350
 }];
 
 /*
