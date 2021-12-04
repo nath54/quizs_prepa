@@ -1894,8 +1894,8 @@ const quiz_continuite = [{
     "id": 302
 }, {
     "type": "corollaire",
-    "titre": "",
-    "hypotheses": "Soit $f$ et $g$ définies sur $X \\subset \\R$, et $U$ un ouvert tel que U \\cap X \\neq \\emptyset$.",
+    "titre": "Continuité de fonctions égales sur un ouvert",
+    "hypotheses": "Soit $f$ et $g$ définies sur $X \\subset \\R$, et $U$ un ouvert tel que $U \\cap X \\neq \\emptyset$.",
     "resultat": "Alors si $f_{|U \\cap X}$ = $g_{|U \\cap X}$ et si $g$ est continue sur $U \\cap X$, alors $f$ aussi.",
     "id": 303
 }, {
@@ -1919,30 +1919,73 @@ const quiz_continuite = [{
 }];
 
 const quiz_derivation = [{
-        "type": "definition",
-        "titre": "Dérivabilité, dérivée",
-        "hypotheses": "Soit $f$ une fonction définie sur un intervalle ouvert $I$, et $x_0 \\in I$.",
-        "resultat": "On dit que $f$ est dérivable en $x_0$ si le taux d'accroissement $x \\rightarrow \\frac{f(x) - f(x_0)}{x - x_0}$ définie sur $I\\backslash\\{x_0\\}$ admet une limite finie en $x_0$.<br/>Dans ce cas, on définit la dérivée de $f$ en $x_0$ (ou le nombre dérivé de $f$ en $x_0$) par : $$f'(x_0) = \\lim\\limits_{x \\to x_0} \\frac{f(x) - f(x_0)}{x - x_0}$$<br/>Si $f$ admet des nombres dérivés en tout $x \\in J \\subset I$, on dit que $f$ est dérivable sur $J$, et l'application $x \\rightarrow f'(x)$ qui à $x$ de $J$ associe le nombre dérivé de $f$ en $x$ est appelé fonction dérivée de $f$ sur $J$.",
-        "id": 307
-    }, {
-        "type": "remarque",
-        "titre": "Remarques sur la dérivation",
-        "resultat": "1. La dérivation est une notion <b>locale</b> et <b>non ponctuelle</b> ($f$ doit être défini sur un voisinage de $x_0$).<br/>2. La dérivation est une notion <b>locale</b> et <b>non globale</b> (ne dépend que de la description de $f$ sur un voisinage de $x_0$, quel qu'il soit, et non de sa description globale).",
-        "id": 308
-    }, {
-        "type": "proposition",
-        "titre": "Caractérisation de la dérivabilité par DL",
-        "resultat": "$f$ est dérivable de dérivé $p$ en $x_0$ si et seulement s'il existe une application $\\varepsilon$ définie sur une voisinage $V$ de $x_0$, de limite nulle lorsque $x$ tend vers $x_0$, et telle que : <br/> $\\forall x \\in V \\cap I$, $f(x)$ = $f(x_0)$ + $(x-x_0)p$ + $(x-x_0)\\varepsilon (x)$",
-        "id": 309
-    }, {
-        "type": "definition",
-        "titre": "Tangente",
-        "hypotheses": "Soit $f$ une fonction dérivable sur un intervalle ouvert $I$ et $x_0 \\in I$.",
-        "resultat": "Alors la tangente à la courbe de $f$ en $x_0$ est la droite d'équation $y$=$f'(x_0)(x-x_0)$ + $f(x_0)$",
-        "id": 310
-    }
-
-];
+    "type": "definition",
+    "titre": "Dérivabilité, dérivée",
+    "hypotheses": "Soit $f$ une fonction définie sur un intervalle ouvert $I$, et $x_0 \\in I$.",
+    "resultat": "On dit que $f$ est dérivable en $x_0$ si le taux d'accroissement $x \\rightarrow \\frac{f(x) - f(x_0)}{x - x_0}$ définie sur $I\\backslash\\{x_0\\}$ admet une limite finie en $x_0$.<br/>Dans ce cas, on définit la dérivée de $f$ en $x_0$ (ou le nombre dérivé de $f$ en $x_0$) par : $$f'(x_0) = \\lim\\limits_{x \\to x_0} \\frac{f(x) - f(x_0)}{x - x_0}$$<br/>Si $f$ admet des nombres dérivés en tout $x \\in J \\subset I$, on dit que $f$ est dérivable sur $J$, et l'application $x \\rightarrow f'(x)$ qui à $x$ de $J$ associe le nombre dérivé de $f$ en $x$ est appelé fonction dérivée de $f$ sur $J$.",
+    "id": 307
+}, {
+    "type": "remarque",
+    "titre": "Remarques sur la dérivation",
+    "resultat": "1. La dérivation est une notion <b>locale</b> et <b>non ponctuelle</b> ($f$ doit être défini sur un voisinage de $x_0$).<br/>2. La dérivation est une notion <b>locale</b> et <b>non globale</b> (ne dépend que de la description de $f$ sur un voisinage de $x_0$, quel qu'il soit, et non de sa description globale).",
+    "id": 308
+}, {
+    "type": "proposition",
+    "titre": "Caractérisation de la dérivabilité par DL",
+    "resultat": "$f$ est dérivable de dérivé $p$ en $x_0$ si et seulement s'il existe une application $\\varepsilon$ définie sur une voisinage $V$ de $x_0$, de limite nulle lorsque $x$ tend vers $x_0$, et telle que : <br/> $\\forall x \\in V \\cap I$, $f(x)$ = $f(x_0)$ + $(x-x_0)p$ + $(x-x_0)\\varepsilon (x)$",
+    "id": 309
+}, {
+    "type": "definition",
+    "titre": "Tangente",
+    "hypotheses": "Soit $f$ une fonction dérivable sur un intervalle ouvert $I$ et $x_0 \\in I$.",
+    "resultat": "Alors la tangente à la courbe de $f$ en $x_0$ est la droite d'équation $y$=$f'(x_0)(x-x_0)$ + $f(x_0)$",
+    "id": 310
+}, {
+    "type": "texte",
+    "titre": "notion intuitive de la tangente",
+    "resultat": "La tangente est la droite approchant \"au mieux\" la courbe de $f$ au voisinage de $x_0$",
+    "id": 311
+}, {
+    "type": "theoreme",
+    "titre": "Continuité des fonctions dérivables",
+    "resultat": "Si $f$ est dérivable en $x_0$, alors $f$ est continue en $x_0$ <br/> <b>La réciproque est fausse !!!</b>",
+    "id": 312
+}, {
+    "type": "definition",
+    "titre": "Dérivées à droite",
+    "hypotheses": "Soit $x_0 \\in I$.",
+    "resultat": "On dit que $f$ est dérivable à droite en $x_0$ si l'expression $\\frac{f(x)-f(x_0)}{x - x_0}$ admet une limite à droite lorsque $x$ tend vers $x_0$. On note alors : <br/> $f'_d(x_0)$ = $\\lim\\limits_{x \\to x_0^+} {f(x)-f(x_0)}{x-x_0}$ = $\\lim\\limits_{h \\to 0^+} \\frac{f(x_0 + h) - f(x_0)}{h}$",
+    "id": 313
+}, {
+    "type": "definition",
+    "titre": "Dérivées à gauche",
+    "hypotheses": "Soit $x_0 \\in I$.",
+    "resultat": "On dit que $f$ est dérivable à gauche en $x_0$ si l'expression $\\frac{f(x)-f(x_0)}{x - x_0}$ admet une limite à gauche lorsque $x$ tend vers $x_0$. On note alors : <br/> $f'_d(x_0)$ = $\\lim\\limits_{x \\to x_0^-} {f(x)-f(x_0)}{x-x_0}$ = $\\lim\\limits_{h \\to 0^-} \\frac{f(x_0 + h) - f(x_0)}{h}$",
+    "id": 314
+}, {
+    "type": "proposition",
+    "titre": "Caractérisation de la dérivabilité par $f'_g$ et $f'_d$",
+    "hypotheses": "Soit $x_0 \\in I$, non égal à une des bornes de $I$.",
+    "resultat": "Alors $f$ est dérivable en $x_0$ si et seulement si $f$ est dérivable à gauche et à droite en $x_0$, et $f'_g(x_0)$ = $f'_d(x_0)$.<br/>Dans ce cas, $f'(x_0) = f'_d(x_0) = f'_g(x_0)$",
+    "id": 315
+}, {
+    "type": "definition",
+    "titre": "Dérivées d'ordre supérieur",
+    "hypotheses": "Soit $I$ un intervalle de $\\R$.",
+    "resultat": "On dit que $f$ est n-fois dérivable si on peut dériver $f$ sur $I$, n fois de suite.<br/>Cela définit alors une fonction $f^{(n)}$, appelée dérivée n-ième de la fonction $f$.",
+    "id": 316
+}, {
+    "type": "definition",
+    "titre": "Fonctions de classe $C^n$",
+    "resultat": "Une fonction $f$ est dite de classe $C^n$ sur un intervalle $I$ si elle est n fois dérivable sur $I$ et que $f^{(n)}$ est continue",
+    "id": 317
+}, {
+    "type": "texte",
+    "titre": "Notations : $C^n(I)$, $D^n(I)$",
+    "hypotheses": "Soit $I$ un intervalle et $n \\in \\N$.",
+    "resultat": "On note $D^n(I)$ l'ensemble des fonctions définies sur $I$ et n fois dérivables sur $I$.<br/>On note $C^n(I)$ l'ensemble des fonctions n fois dérivables sur $I$ et de dérivée n-ième continue.",
+    "id": 318
+}];
 
 /*
 

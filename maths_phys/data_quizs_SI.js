@@ -239,7 +239,7 @@ const quiz_modelisation_geometrique_systemes_solides = [{
 }, {
     "type": "texte",
     "titre": "Positionnement des repères en fonction des mouvements autorisés",
-    "resultat": "L'étude des mouvements autorisés entre les différents solides permet de proposer un paramétrage optimal du modèle cinématique en positionnant les repères de la façon suivante : <ul><li>Lorsque les deux solides sont en translation l'un par rapport à l'autre, les deux repères associés à ces solides sont positionnés de façon à avoir un axe commun qui coïncide avec l'axe de rotation</li> <li>Lorsque les deux solides sont en translation l'un par rapport à l'autre, les deux repères associés à ces solides sont positionnés de façon à avoir leurs trois axes parallèles, et l'un de ces axes coïncide avec la direction de la translation.</li></ul>",
+    "resultat": "L'étude des mouvements autorisés entre les différents solides permet de proposer un paramétrage optimal du modèle cinématique en positionnant les repères de la façon suivante : <ul><li>Lorsque les deux solides sont en rotation l'un par rapport à l'autre, les deux repères associés à ces solides sont positionnés de façon à avoir un axe commun qui coïncide avec l'axe de rotation</li> <li>Lorsque les deux solides sont en translation l'un par rapport à l'autre, les deux repères associés à ces solides sont positionnés de façon à avoir leurs trois axes parallèles, et l'un de ces axes coïncide avec la direction de la translation.</li></ul>",
     "id": 47
 }, {
     "type": "definition",
