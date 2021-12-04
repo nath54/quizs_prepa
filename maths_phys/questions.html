@@ -4,8 +4,8 @@
 <script src="MATHJAX_CONFIG.js"></script>
 
 <style>
-    .MathJax {
-        font-size: 1em !important;
+    .html {
+        font-size: 1.1em;
     }
     
     html {
@@ -17,7 +17,7 @@
     <meta charset="utf-8" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <title>Cards - Maths</title>
+    <title>Questions - Maths</title>
     <link href="../style.css" rel="stylesheet" />
     <link href="../bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,52 +37,52 @@
 
 <body onload="init();">
 
-    <div class="modal-body">
+    <div class="modal-body d-flex justify-content-center">
 
-        <div class="col-md-4 ml-auto mx-auto mt-4" style="text-align:center;">
+        <div class="ml-auto mx-auto mt-4 text-center">
 
-            <hr />
-
-            <div id="bt_known" style="display: none;">
-                <button onclick="card_not_known();" class="btn btn-danger m-2">Non su / Oublié</button>
-                <button onclick="card_known();" class="btn btn-success m-2">Connu</button>
-            </div>
-
-            <hr />
 
             <div id="block_input">
                 <div class="p-auto d-flex flex-column">
-                    <div id="card" onclick="reveal();" onmousedown="card_mouse_down(event);" ontouchstart="card_mouse_down(event, true);" class="">
+                    <i id="card_chapitre" style="margin-top: auto;">Chapitre</i>
 
-                        <i id="card_chapitre" unselectable="on" class="unselectable" style="margin-top: auto;">Chapitre</i>
+                    <hr />
 
-                        <hr style="height:25px;" />
+                    <h1 id="card_titre" style="text-decoration: bold; margin-bottom: auto;">Titre</h1>
 
-                        <h1 id="card_titre" unselectable="on" class="unselectable" style="margin-bottom: auto;">Titre</h1>
+                    <hr/>
 
-                        <hr style="height:25px;" />
-
-                        <i id="card_hypotheses" unselectable="on" class="unselectable" style="margin-top: auto;">Hypothèses</i>
-
-                        <p id="card_resultat" unselectable="on" class="unselectable">Résultat</p>
-
+                    <div class="mx-auto ">
+                        <button id="bt_devoile" onclick="devoiler();" class="btn btn-secondary m-1">Dévoiler</button>
                     </div>
+
+                    <i id="card_hypotheses" style="margin-top: auto;">Hypothèses</i>
+
+                    <div class="">
+                        <p id="card_resultat">Résultat</p>
+                    </div>
+
+                    <div id="bt_known" style="display: none;">
+                        <button onclick="card_not_known();" class="btn btn-danger m-2">Non su / Oublié</button>
+                        <button onclick="card_known();" class="btn btn-success m-2">Connu</button>
+                    </div>
+
                 </div>
             </div>
 
             <div id="block_fin" style="display:none;">
-                <h2>Vous avez parcouru toutes les cartes</h2>
+                <h2>Vous avez fait toutes les questions</h2>
                 <p>Votre score est de : <span id="span_score">0/0</span></p>
                 <div class="row">
 
                     <div class="col">
-                        <p>Vous avez réussi <span id="nb_cartes_justes">0</span> cartes</p>
-                        <button onclick="restart_all();" class="btn btn-success m-2">Recommencer avec toutes les cartes</button>
+                        <p>Vous avez réussi <span id="nb_cartes_justes">0</span> questions</p>
+                        <button onclick="restart_all();" class="btn btn-success m-2">Recommencer avec tout</button>
                     </div>
                     <div class="col">
                         <p>Vous avez raté <span id="nb_cartes_fausses">0</span> cartes</p>
-                        <button onclick="restart_only_ratees();" class="btn btn-danger m-2">Recommencer avec les cartes ratées</button>
-                        <button onclick="decoche_reussies();" class="btn btn-dark m-1">Désactiver les cartes réussies</button>
+                        <button onclick="restart_only_ratees();" class="btn btn-danger m-2">Recommencer avec les questions ratées</button>
+                        <button onclick="decoche_reussies();" class="btn btn-dark m-1">Désactiver les questions réussies</button>
                     </div>
 
                 </div>
@@ -112,7 +112,7 @@
     <script src="lib.js " type="text/javascript "></script>
     <script src="../lib.js " type="text/javascript "></script>
     <!-- <script src="data_quizs_maths.js " type="text/javascript "></script> -->
-    <script src="main_cards.js " type="text/javascript "></script>
+    <script src="main_questions.js " type="text/javascript "></script>
 </body>
 
 </html>

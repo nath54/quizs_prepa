@@ -3,24 +3,11 @@ window.questions_justes = [];
 window.questions_fausses = [];
 window.question_actu_id = 0;
 
-window.click_x = 0;
-window.click_y = 0;
-window.is_clicked = false;
-
 window.disabled = [];
 
 window.score = 0;
 window.nb_question = 0;
 window.state = 0;
-
-window.agl = 0;
-
-window.deb_att = 0;
-const tps_attente = 100;
-
-const lim_agl = 0.4;
-
-var IS_OVERFLOWING = false;
 
 function init() {
     const queryString = window.location.search;
@@ -115,22 +102,18 @@ function next_question() {
             default:
                 break
         }
+        document.getElementById("bt_devoile").style.display = "initial";
         document.getElementById("bt_known").style.display = "none";
         document.getElementById("card_chapitre").innerHTML = compile_txt(window.questions[window.question_actu_id].chapitre);
         document.getElementById("card_titre").innerHTML = txt_comp + compile_txt(window.questions[window.question_actu_id].titre);
         document.getElementById("card_hypotheses").innerHTML = "";
         document.getElementById("card_resultat").innerHTML = "";
         MathJax.typesetPromise();
-        card.style.rotate = "0rad";
-        card.style.boxShadow = "none";
         window.state = 1;
         // On affiche le score
         document.getElementById("score").innerHTML = "Score : " + score + " / " + nb_question;
         document.getElementById("restant").innerHTML = "Question : " + nb_question + " / " + (window.questions.length + nb_question);
         window.nb_question++;
-        // On fait atextettendre un peu avant de pouvoir reveal
-        var date = new Date();
-        window.deb_att = date.getTime();
     } // Sinon, on renvoie vers la page de fin
     else {
         window.state = 3;
@@ -145,19 +128,13 @@ function next_question() {
 
 function reveal() {
     if (window.state == 1) {
-        var date = new Date();
-        if (date.getTime() - window.deb_att >= tps_attente) {
-            if (window.questions[window.question_actu_id]["hypotheses"] != undefined) {
-                document.getElementById("card_hypotheses").innerHTML = compile_txt(window.questions[window.question_actu_id]["hypotheses"]);
-            }
-            document.getElementById("card_resultat").innerHTML = compile_txt(window.questions[window.question_actu_id].resultat);
-            MathJax.typesetPromise();
-            window.state = 2;
+        console.log(window.questions[window.question_actu_id]);
+        if (window.questions[window.question_actu_id]["hypotheses"] != undefined) {
+            document.getElementById("card_hypotheses").innerHTML = compile_txt(window.questions[window.question_actu_id]["hypotheses"]);
         }
-        IS_OVERFLOWING = isOverflown(document.getElementById("card"));
-        if (IS_OVERFLOWING) {
-            document.getElementById("bt_known").style.display = "block";
-        }
+        document.getElementById("card_resultat").innerHTML = compile_txt(window.questions[window.question_actu_id].resultat);
+        MathJax.typesetPromise();
+        window.state = 2;
     }
 }
 
@@ -189,95 +166,10 @@ function restart_only_ratees() {
     }
 }
 
-
-function card_mouse_down(e, touchscreen = false) {
-    if (window.state == 2) {
-        if (touchscreen) {
-            // console.log(e);
-            window.click_x = e.changedTouches[0].clientX;
-            window.click_y = e.changedTouches[0].clientY;
-        } else {
-            window.click_x = e.clientX;
-            window.click_y = e.clientY;
-        }
-        window.is_clicked = true;
-        card.style.rotate = "0rad";
-        card.style.boxShadow = "none";
-        window.agl = 0;
-    }
-}
-
-document.body.addEventListener('mousemove', e => { rotate(e); });
-document.body.addEventListener('drag', e => { rotate(e); });
-document.body.addEventListener('touchmove', e => { if (!IS_OVERFLOWING) { rotate(e, true); } });
-
-function rotate(e, touchscreen = false) {
-    var x, y, dy;
-    if (window.state == 2 && window.is_clicked) {
-        var card = document.getElementById("card");
-        if (touchscreen) {
-            // console.log(e);
-            x = e.changedTouches[0].clientX;
-            y = e.changedTouches[0].clientY;
-        } else {
-            x = e.clientX;
-            y = e.clientY;
-        }
-        var dx = x - window.click_x;
-        dy = y - window.click_y;
-        if (Math.abs(dy) > Math.abs(dx)) {
-            card.style.rotate = "0rad";
-            window.agl = 0;
-            card.style.boxShadow = "none";
-            return;
-        }
-        dy = 100;
-        //
-        if (dy > 0) {
-            var agl = Math.atan(dx / dy);
-            if (agl < -lim_agl) { agl = -lim_agl; }
-            if (agl > lim_agl) { agl = lim_agl; }
-            // console.log("agl : ", agl);
-            card.style.rotate = "" + agl + "rad";
-            window.agl = agl;
-            //
-            if (agl < 0) {
-                var aa = Math.abs(agl);
-                card.style.boxShadow = "0 0 0 " + (aa / 2.0) + "rem red";
-            } else if (agl > 0) {
-                card.style.boxShadow = "0 0 0 " + (agl / 2.0) + "rem green";
-            } else {
-                card.style.boxShadow = "none";
-            }
-        }
-    }
-}
-
-document.body.addEventListener('mouseup', e => { click_up(e); });
-document.body.addEventListener('mouseleave', e => { click_up(e); });
-document.body.addEventListener('touchend', e => { if (!IS_OVERFLOWING) { click_up(e); } });
-
-function click_up(e) {
-    if (window.state == 2) {
-        window.click_x = 0;
-        window.click_y = 0;
-        window.is_clicked = false;
-        card.style.rotate = "0rad";
-        card.style.boxShadow = "none";
-        if (window.agl == -lim_agl) {
-            // C'est raté
-            window.questions_fausses.push(window.questions[window.question_actu_id]);
-            window.questions.splice(window.question_actu_id, 1);
-            next_question();
-        } else if (window.agl == lim_agl) {
-            // C'est juste
-            window.questions_justes.push(window.questions[window.question_actu_id]);
-            window.questions.splice(window.question_actu_id, 1);
-            window.score += 1;
-            next_question();
-        }
-        window.agl = 0;
-    }
+function devoiler() {
+    document.getElementById("bt_devoile").style.display = "none";
+    reveal();
+    document.getElementById("bt_known").style.display = "block";
 }
 
 function card_known() {

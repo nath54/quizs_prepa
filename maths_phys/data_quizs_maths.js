@@ -2100,8 +2100,8 @@ const quiz_derivation = [{
 }, {
     "type": "proposition",
     "titre": "Dérivation d'une composition itérée",
-    "hypotheses": "Soit $f_1$,$\\dots$,$f_n$ des fonctions dérivables respectivement en $x_1$, en $x_2 = f_1(x_1)$, $\\dots$, en $x_n$ = $f_{n-1}(x_{n-1})$. Alors $f_n \\circ \\dots\\circ f_1$ est dérivable en $x_1$ et : <br/>$(f_n \\circ \\dots f_1)'(x_1)$ <br/> $=f'_n(x_n)\\dots f'_1(x_1)$<br/>$=[f'_n \\circ \\dots f_1(x_1)] \\times [f'_{n-1} \\circ \\dots f_1(x_1)] \\times \\dots \\times f'_1(x_1)$",
-    "resultat": "",
+    "hypotheses": "Soit $f_1$,$\\dots$,$f_n$ des fonctions dérivables respectivement en $x_1$, en $x_2 = f_1(x_1)$, $\\dots$, en $x_n$ = $f_{n-1}(x_{n-1})$. ",
+    "resultat": "Alors $f_n \\circ \\dots\\circ f_1$ est dérivable en $x_1$ et : <br/>$(f_n \\circ \\dots f_1)'(x_1)$ <br/> $=f'_n(x_n)\\dots f'_1(x_1)$<br/>$=[f'_n \\circ \\dots f_1(x_1)] \\times [f'_{n-1} \\circ \\dots f_1(x_1)] \\times \\dots \\times f'_1(x_1)$",
     "id": 337
 }, {
     "type": "lemme",
