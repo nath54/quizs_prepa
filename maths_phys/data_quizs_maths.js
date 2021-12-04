@@ -1530,7 +1530,7 @@ const quiz_combi = [{
     "type": "proposition",
     "titre": "Cardinal d'un produit cartésien",
     "hypotheses": "Soient $A$, $B$, $A1,...,A_n$ des ensembles finis.",
-    "resultat": "<ol><li>$|A \\times B| = |A| \\times |B|$</li> <li>Plus généralement, $|A_1 \\times ... \\times A_n| = \\Pi_{i=1}^n|A_i|$</li></ol>",
+    "resultat": "<ol><li>$|A \\times B| = |A| \\times |B|$</li> <li>Plus généralement, $|A_1 \\times ... \\times A_n| = \\prod_{i=1}^n|A_i|$</li></ol>",
     "id": 199
 }, {
     "type": "proposition",
@@ -1976,15 +1976,167 @@ const quiz_derivation = [{
     "id": 316
 }, {
     "type": "definition",
-    "titre": "Fonctions de classe $C^n$",
-    "resultat": "Une fonction $f$ est dite de classe $C^n$ sur un intervalle $I$ si elle est n fois dérivable sur $I$ et que $f^{(n)}$ est continue",
+    "titre": "Fonctions de classe $\\cal{C}^n$",
+    "resultat": "Une fonction $f$ est dite de classe $\\cal{C}^n$ sur un intervalle $I$ si elle est n fois dérivable sur $I$ et que $f^{(n)}$ est continue",
     "id": 317
 }, {
     "type": "texte",
-    "titre": "Notations : $C^n(I)$, $D^n(I)$",
+    "titre": "Notations : $\\cal{C}^n(I)$, $\\cal{D}^n(I)$",
     "hypotheses": "Soit $I$ un intervalle et $n \\in \\N$.",
-    "resultat": "On note $D^n(I)$ l'ensemble des fonctions définies sur $I$ et n fois dérivables sur $I$.<br/>On note $C^n(I)$ l'ensemble des fonctions n fois dérivables sur $I$ et de dérivée n-ième continue.",
+    "resultat": "On note $\\cal{D}^n(I)$ l'ensemble des fonctions définies sur $I$ et n fois dérivables sur $I$.<br/>On note $\\cal{C}^n(I)$ l'ensemble des fonctions n fois dérivables sur $I$ et de dérivée n-ième continue.",
     "id": 318
+}, {
+    "type": "proposition",
+    "titre": "Chaîne d'inclusion avec les $C^n(I)$ et $D^n(I)$",
+    "resultat": "On a une chaîne d'inclusion : <br/> $\\dots$ $\\subset$ $\\cal{C}^n(I)$ $\\subset$ $\\cal{D}^n(I)$ $\\subset$ $\\cal{C}^{n-1}(I)$ $\\subset$ $\\cal{D}^{n-1}(I)$ $\\subset$ $\\dots$ $\\subset$ $\\cal{C}^1(I)$ $\\subset$ $\\cal{D}^1(I)$ $\\subset$ $\\cal{C}^0(I)$ $\\subset$ $\\cal{D}^0(I)$",
+    "id": 319
+}, {
+    "type": "definition",
+    "titre": "Fonctions de classe $\\cal{C}^{\\infty}$",
+    "resultat": "On dit que $f$ est de classe $\\cal{C}^{\\infty}$ sur $I$ si $f$ est de classe $\\cal{C}^n$ pour tout $n\\in\\N$, donc si $f$ est infiniment dérivable.<br/>$\\cal{C}^{\\infty}(I)$ l'ensemble des fonctions de classe $\\cal{C}^{\\infty}$ sur $I$.",
+    "id": 320
+}, {
+    "type": "theoreme",
+    "titre": "Théorème des accroissements finis, TAF",
+    "hypotheses": "Soit $a \\lt b$ et $f$ une application continue sur le segment $[a,b]$, dérivable sur $]a,b[$.",
+    "resultat": "Alors il esiste un point $c \\in ]a,b[$ tel, que <br/>$\\frac{f(b)-f(a)}{b-a} = f'(c)$",
+    "id": 321
+}, {
+    "type": "corollaire",
+    "titre": "Inégalité des accroissements finis, IAF",
+    "hypotheses": "Soit $f$ une fonction continue sur le segment $[a,b]$, dérivable sur $]a,b[$. On suppose que pour tout $x \\in ]a,b[$, $m$ $\\leqslant$ $f'(x)$ $\\leqslant$ $M$",
+    "resultat": "Alors $m$ $\\leqslant$ $\\frac{f(b)-f(a)}{b - a}$ $\\leqslant$ $M$ <br/> <br/> Ecrite sous cette forme, l'IAD est valide aussi si $b \\lt a$<br/>En particulier, on peut prendre $m$ = $\\inf\\limits_{x\\in ]a,b[} f'(x)$ et $M$ = $\\sup\\limits_{x \\in ]a,b[}f'(x)$, s'ils existent dans $\\R$<br/>Si $|f'| \\leqslant M$ sur $]a,b[$, alors <br/> $|f(b)-f(a)|$ $\\leqslant$ $M|a-b|$",
+    "id": 322
+}, {
+    "type": "definition",
+    "titre": "Fonction lipschitzienne, fonction contractante",
+    "hypotheses": "Soit $f$ une fonction définie sur un intervalle $I$, à valeurs dans $\\R$.",
+    "resultat": "On dit que $f$ est $L$-lipsichtzienne sur $I$ si pour tout $(x,y) \\in I^2$, <br/>$|f(x)-f(y)|$ $\\leqslant$ $L|x-y|$<br/>Le réel $L$ est appelé facteur de Lipschitz de $f$. Si de plus, $L \\lt 1$, on dit que $f$ est contractante.",
+    "id": 323
+}, {
+    "type": "proposition",
+    "titre": "Continuité des fonctiosn lipschitziennes",
+    "hypotheses": "Soit $f$ une fonction d'un intervalle $I$ dans $\\R$, lipschitzienne sur $I$.",
+    "resultat": "Alors $f$ est continue sur $I$",
+    "id": 324
+}, {
+    "type": "proposition",
+    "titre": "Caractère lipschitzien des fonctions à dérivées bornée",
+    "hypotheses": "Soit $f$ une application dérivable sur un intervalle $I$, et à dérivée bornée sur $I$.",
+    "resultat": "Alors $f$ est lipschitzienne",
+    "id": 325
+}, {
+    "type": "theoreme",
+    "titre": "Prolongement par continuité",
+    "hypotheses": "Soit $f$ une fonction continue sur $]a,b]$, et admettant une limite $l$ en $a$.",
+    "resultat": "Il existe une unique fonction $g$ continue sur $[a,b]$ et coïncidant avec $f$ sur $]a,b]$.<br/>Elle vérifie $g(a)=l$.<br/>La fonction $g$ est appelée prolongement par continuité de $f$ sur $[a,b]$",
+    "id": 326
+}, {
+    "type": "theoreme",
+    "titre": "Théorème de la limite de la dérivée",
+    "hypotheses": "Soit $I$ un intervalle de $\\R$, et $a \\in I$. Soit $f$ une fonction $I$ dans $\\R$, continue sur $I$, dérivable sur $I\\backslash\\{a\\}$",
+    "resultat": "<ul> <li>Si^$f'$ admet une limite $l \\in \\R$ lorsque $x\\to a$ ($x \\neq a)$, alors $f$ est dérivable en $a$ et $f'(a) = l$. La fonction $f'$ est alors continue en $a$.</li> <li>Si $f'(x) \\to +\\infty$ lorsque $x \\to a$, alors le taux d'accroissement $\\frac{f(x)-f(a)}{x-a}$ tend aussi vers $+\\infty$ (et la courbe admet donc une tangente verticale en $a$)</li> </ul>",
+    "id": 327
+}, {
+    "type": "theoreme",
+    "titre": "Théorème de la classe $\\cal{C}^n$ par prolongement",
+    "hypotheses": "Soit $I$ un intervalle et $x_0 \\in I$. Soit $f$ une fonction définie en $\\cal{C}^n$ sur $I\\backslash\\{x_0\\}$.",
+    "resultat": "Si pour tout $k \\in [\\![0, n]\\!]$, $f^{(k)}$ admet une limite finie en $x_0$, alors $f$ peut être prolongée sur $I$ en une fonction $\\widetilde{f}$ de classe $\\cal{C}^n$ sur $I$. De plus, on aura alors : <br/> $\\forall k \\in [\\![0, n]\\!]$, $\\widetilde{f}^{(k)}(x_0)$ = $\\lim\\limits_{x\\to x_0} f^{(k)}(x)$",
+    "id": 328
+}, {
+    "type": "proposition",
+    "titre": "$(\\lambda f)'(x)$",
+    "hypotheses": "", //TODO
+    "resultat": "$(\\lambda f)'(x)$ = $\\lambda f'(x)$",
+    "id": 329
+}, {
+    "type": "proposition",
+    "titre": "$(f+g)'(x)$",
+    "hypotheses": "", //TODO
+    "resultat": "$(f+g)'(x)$ = $(f'+g')(x)$",
+    "id": 329
+}, {
+    "type": "proposition",
+    "titre": "$(fg)'(x)$",
+    "hypotheses": "", //TODO
+    "resultat": "$(fg)'(x)$ = $f'(x)g(x) + f(x)g'(x)$",
+    "id": 330
+}, {
+    "type": "proposition",
+    "titre": "$(\\frac{1}{g})'(x)$",
+    "hypotheses": "", //TODO
+    "resultat": "$(\\frac{1}{g}'(x)$ = $\\frac{-g'(x)}{g^2(x)}$",
+    "id": 331
+}, {
+    "type": "proposition",
+    "titre": "$(\\frac{f}{g})'(x)$",
+    "hypotheses": "", //TODO
+    "resultat": "$(\\frac{f}{g})'(x)$ = $\\frac{f'(x)g(x) - f(x)g'(x)}{g^2(x)}$",
+    "id": 332
+}, {
+    "type": "corollaire",
+    "titre": "Dérivée d'un produit de n-termes",
+    "hypotheses": "Soit $f_1$, $\\dots$, $f_n$ : $I \\to \\R$ et $x_0 \\in I$.",
+    "resultat": "Si $f_1$, $\\dots$, $f_n$ sont dérivables en $x_0$, alors leur produit aussi, et : <br/> $$(f_1\\dots f_n)'(x_0) = \\sum_{k=1}^{n} f'_k(x_0) \\prod_{i \\in [\\![1, n]\\!]\\backslash k}f_i(x_0)$$<br/><br/>Si les $f_i(x_0)$ sont tous nuls, ceci se réexprime sous la forme $$(f_1\\dots f_n)'(x_0) = (\\prod_{i\\in [\\![1,n]\\!]}f_i)\\sum_{i=1}^{n}\\frac{f'_i(x_0)}{f_i(x_0)}$$<br/><br/>S'il existe $i_0$ tel que $f_{i_0} = 0$, alors la plupart des termes s'annulent : $$(f_1\\dots f_n)'(x_0) = f'_{i_0}(x_0)\\prod_{i \\neq i_0}f_i(x_0)$$",
+    "id": 333
+}, {
+    "type": "proposition",
+    "titre": "Dérivées successives des puissances",
+    "hypotheses": "Soit $f : x \\to x^n$, et $k \\in \\N$",
+    "resultat": "<ul> <li>Si $k \\leqslant n$, pour tout $x \\in \\R$, $f^{(k)}(x)$ = $\\frac{n!}{(n-k)!}x^{n-k}$</li> <li>Si $k \\gt n$, pour tout $x\\in \\R$, $f^{(k)}(x) = 0$</li> </ul>",
+    "id": 334
+}, {
+    "type": "proposition",
+    "titre": "dérivées successives des puissances",
+    "hypotheses": "Soit $I$ et $J$ deux intervalles ouverts de $\\R$, et $f$:$I \\to J$. Soit $x \\in I$.",
+    "resultat": "Si $f$ est dérivable en $x$ et $g$ dérivable en $y=f(x)$, alors $g \\circ f$ est dérivable en $x$, et :<br/>$(g\\circ f)'(x)$ = $f'(x)g'(y)$ = $f'(x).g' \\circ f (x)$<br/>Ainsi $(g\\circ f)' = f'.(g'\\circ f)$",
+    "id": 335
+}, {
+    "type": "proposition",
+    "titre": "Dérivée logarithmique",
+    "hypotheses": "Soit $f$ une fonction dérivable d'un intervalle $I$ dans $\\R_+^*$.",
+    "resultat": "Alors $\\ln \\circ f$ est dérivable, de dérivée : <br/>$(\\ln \\circ f)' = \\frac{f'}{f}$<br/>L'expression $\\frac{f'}{f}$ s'appelle dérivée logarithmique de $f$.",
+    "id": 336
+}, {
+    "type": "proposition",
+    "titre": "Dérivation d'une composition itérée",
+    "hypotheses": "Soit $f_1$,$\\dots$,$f_n$ des fonctions dérivables respectivement en $x_1$, en $x_2 = f_1(x_1)$, $\\dots$, en $x_n$ = $f_{n-1}(x_{n-1})$. Alors $f_n \\circ \\dots\\circ f_1$ est dérivable en $x_1$ et : <br/>$(f_n \\circ \\dots f_1)'(x_1)$ <br/> $=f'_n(x_n)\\dots f'_1(x_1)$<br/>$=[f'_n \\circ \\dots f_1(x_1)] \\times [f'_{n-1} \\circ \\dots f_1(x_1)] \\times \\dots \\times f'_1(x_1)$",
+    "resultat": "",
+    "id": 337
+}, {
+    "type": "lemme",
+    "titre": "Continuité des réciproques",
+    "hypotheses": "Soit $I$ et $J$ dux intervalles et $f$ une application bijective continue de $I$ dans $J$.",
+    "resultat": "Alors $f^{-1} : J \\to I$ est continue sur $J$",
+    "id": 338
+}, {
+    "type": "theoreme",
+    "titre": "Dérivation des fonctions réciproques",
+    "hypotheses": "Soit $I$ et $J$ deux intervalles, et soit $f$ une application bijective continue de $I$ dans $J$. Soit $t_0 \\in I$, et $x_0 = f(t_0)$",
+    "resultat": "Alors si $f$ est dérivable en $t_0$, et si $f'(t_0) \\neq 0$, alors $f^{-1}$ est dérivable en $x_0$, et : <br/> $(f^{-1})'(x_0)$ = $\\frac{1}{f'(t_0)}$ = $\\frac{1}{$f' \\circ f^{-1}(x_0)}$",
+    "id": 339
+}, {
+    "type": "proposition",
+    "titre": "Limites remarquables pour exp, ln, les puissanes",
+    "resultat": "On a (pour $\\alpha \\in \\R$)<br/>$$\\lim\\limits_{x \\to 0}\\frac{\\ln(1+x)}{x}=1$$<br/> $$\\lim\\limits_{x \\to 0}\\frac{e^x - 1}{x} = 1$$ <br/> $$\\lim\\limits_{x \\to 0}\\frac{(1+x)^{\\alpha} - 1}{x} = \\alpha$$",
+    "id": 340
+}, {
+    "type": "proposition",
+    "titre": "$(\\lambda f)^{(n)}$",
+    "hypotheses": "", //TODO
+    "resultat": "$(\\lambda f)^{(n)}(x_0)$ = $\\lambda f^{(n)}(x_0)$",
+    "id": 341
+}, {
+    "type": "proposition",
+    "titre": "$(f+g)^{(n)}$",
+    "hypotheses": "$(f+g)^{(n)}(x_0)$ = $(f^{(n)} + g^{(n)})(x_0)$",
+    "resultat": "", //TODO
+    "id": 342
+}, {
+    "type": "proposition",
+    "titre": "Formule de Leibniz",
+    "resultat": "Si $f$ et $g$ sont $n$ fois dérivables en $x_0$, alors $fg$ aussi et : <br/>$$(fg)^{(n)}(x_0) = \\sum_{k=0}^{n}\\binom{n}{k}f^{n}(x_0)g^{(n-k)}(x_0)$$",
+    "id": 343
 }];
 
 /*
