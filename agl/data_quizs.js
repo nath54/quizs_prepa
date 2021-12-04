@@ -921,8 +921,8 @@ const quiz_environment = [
     ["to be threatened with extinction", "être menacé d'extinction", 728],
     ["to become extinct", "disparaître", 729],
     ["overdishing", "la surpêche", 730],
-    ["bluefin tuna", "le thong rouge", 731],
-    ["a doplhin", "un dolphin", 732],
+    ["bluefin tuna", "le thon rouge", 731],
+    ["a doplhin", "un dauphin", 732],
     ["a whale", "une baleine", 733],
     ["whaling", "la pêche à la baleine", 734],
     ["the ozone layer", "la couche d'ozone", 735],
@@ -963,7 +963,168 @@ const quiz_environment = [
     ["to loosen", "relâcher", 766]
 ];
 
-// NEXT FREE ID : 750
+const quiz_energy = [
+    ["fuel", ["le combustible", "le carburant"], 767],
+    [
+        ["oil supplies", "oil reserves"], "les réserves de pétrole", 768
+    ],
+    [
+        ["to run out", "to become depleted"], "les réserves de pétrole", 769
+    ],
+    ["the depletion of ressources", "l'épuisement des ressources", 770],
+    ["to exhaust oil supplies", "épuiser les réserves de pétrole", 771],
+    ["the exhaustion of oil supplies", "l'épuisement des réserves de pétrole", 772],
+    ["to run out of energy", "venir à manquer d'énergie", 773],
+    ["to be short of oil", "manquer de pétrole", 774],
+    [
+        ["the energy gap", "the energy shortfall", "the energy shortage"], "la pénurie d'énergie", 775
+    ],
+    ["to secure", "assurer", 776],
+    ["to exert pressure on", "faire pression sur", 777],
+    ["energy production", "la production d'énergie", 778],
+    ["energy consumption", "la consommation d'énergie", 779],
+    ["the demand for energy", "la demande d'énergie", 780],
+    [
+        ["energy needs", "energy requirements"], "les besoins en énergie", 781
+    ],
+    ["a glut", ["un surplus", "un excès"], 782],
+    ["overproduction", "la surproduction", 783],
+    ["hydrocarbons", "les hydrocarbures", 784],
+    ["fossil fuels", "les énergies fossiles", 785],
+    [
+        ["oil", "petroleum"], "le pétrole", 786
+    ],
+    ["crude oil", "le pétrole brut", 787],
+    ["gas", "le gaz", 788],
+    ["coal", "le charbon", 789],
+    ["oil shale", "les schistes bitumineux", 790],
+    [
+        ["shale oil", "gas"],
+        ["l'huile", "le gaz de schiste"], 791
+    ],
+    ["tar sands", "les sables bitumineux", 792],
+    ["fracking", "l'hydrofracturation", 793],
+    ["an oil tanker", "un pétrolier", 794],
+    [
+        ["an oil rig", "an oil platform"], "une plateforme pétrolière", 795
+    ],
+    ["an oil well", "un puit de pétrole", 796],
+    ["an oil pipeline", "un oléoduc", 797],
+    ["a gas pipeline", "un gazoduc", 798],
+    ["oil prices", "les prix du pétrole", 799],
+    ["an oil producing country", "un pays producteur de pétrole", 800],
+    ["an oil exporting country", "un pays exportateur de pétrole", 801],
+    ["$65 a barrel", "65 dollars le baril", 802],
+    [
+        ["an oil crisis", "an oil shock"],
+        ["un crise pétrolière", "un choc pétrolier"], 803
+    ],
+    ["a gas-guzzler", "une voiture qui consomme beaucoup", 804],
+    [
+        ["a SUV", "a sport utility vehicle", "a four-wheel drive"], "un quatre-quatre", 805
+    ],
+    ["to reduce oil consumption", "réduire la consommation de pétrole", 806],
+    ["to save energy", "économiser l'énergie", 807],
+    ["to waste energy", "gaspiller l'énergie", 808],
+    ["energy savings", "les économies d'énergie", 809],
+    ["energy-saving measures", "des mesures d'économie d'énergie", 810],
+    ["energy policy", "politique énergétique", 811],
+    [
+        ["a power station", "a power plant"], "une centrale électrique", 812
+    ],
+    ["to generate electricity", "produire de l'électricité", 813],
+    ["an oil refinery", "une raffinerie de pétrole", 814],
+    ["oil products", "les dérivés du pétrole", 815],
+    [
+        ["petrol", "gas"],
+        "l'essence", 816
+    ],
+    ["heating oil", ["le fioul", "le mazout"], 817],
+    ["kerosene", "le kérosène", 818],
+    ["a planned city", "une ville en projet", 819],
+    ["renewable", "renouvelable", 820],
+    [
+        ["renewable energy sources", "renewables"], "les sources d'énergies renouvelable", 821
+    ],
+    ["wind power", "l'énergie éolienne", 822],
+    [
+        ["a windmill", "a windpump", "a wind turbine"], "une éolienne", 823
+    ],
+    ["a windfarm", ["un parc d'éoliennes", "un parc éolien", "une ferme éolienne", "un champs d'éoliennes"], 824],
+    [
+        ["solar power", "solar energy"], "l'énergie solaire", 825
+    ],
+    ["a solar cell", "une cellule solaire", 826],
+    ["a photovoltaic cell", ["une cellule photovoltaique", "une photopile"], 827],
+    ["a solar pannel", "un panneau solaire", 828],
+    ["wintering", "hiberner", 829],
+    ["biofuels", ["les bio-carburants", "les agro-carburants"], 830],
+    ["biomass", "la biomasse", 831],
+    ["bioethanol", "le bioéthanol", 832],
+    ["palm oil", "huile de palme", 833],
+    [
+        ["geothermal energy", "geothermal power"], "énergie géothermique", 834
+    ],
+    ["a heat pump", "une pompe à chaleur", 835],
+    [
+        ["nuclear power", "nuclear energy"], "l'énergie nucléaire", 836
+    ],
+    ["uranium enrichment", "l'enrichissement de l'uranium", 837],
+    ["fusion / fission", "fusion / fission", 838],
+    ["the nuclear industry", "le nucléaire", 839],
+    ["a fast breeder (reactor)", "un (réacteur) surgénérateur", 840],
+    ["a nuclear plant", "une centrale nucléaire", 841],
+    ["a nuclear reactor", "un réacteur nucléaire", 842],
+    ["nuclear facilities", "des installations nucléaires", 843],
+    ["to go nuclear", "se convertir au nucléaire", 844],
+    [
+        ["to abandon nuclear energy", "to phase out nuclear energy"], "sortir du nucléaire", 845
+    ],
+    ["to worsen", "aggraver", 846],
+    ["to require", "nécessiter", 847],
+    ["nuclear waste", "les déchets nucléaires", 848],
+    ["to process waste", "traiter les déchets", 849],
+    ["to dispose of nuclear waste", "éliminer les déchets nucléaires", 850],
+    ["to store", "stocker", 851],
+    ["storage", "le stockage", 852],
+    ["a container", "un conteneur", 853],
+    ["nuclear waste disposal", "l'élimination des déchets nucléaires", 854],
+    ["to bury", "enfouir", 855],
+    ["a meltdown", "une fusion", 856],
+    ["radioactivity", "la radioactivité", 857],
+    ["radioactive material", "des matériaux radioactifs", 858],
+    ["nuclear fallout", "des retombées radioactives", 859],
+    ["safety", "la sécurité", 860],
+    [
+        ["hydroelectricity", "hydropower"], "l'hydroélectricité", 861
+    ],
+    [
+        ["a dam", "a barrage"], "un barrage", 862
+    ],
+    [
+        ["tidal energy", "tidal power"],
+        ["l'énergie marémotrice", "la houille bleue"], 863
+    ],
+    ["a tidal power station", "une usine marémotrice", 864],
+    [
+        ["a tidal turbine", "a marine turbine"], "une hydrolienne", 865
+    ],
+    [
+        ["a battery powered car", "an electric car"], "une voiture électrique", 866
+    ],
+    ["a hybrid car", "une voiture hybride", 867],
+    ["the distribution of electricity", "la distribution de l'électricité", 868],
+    [
+        ["the electric grid", "the powergrid", "national grid"], "le réseau électrique", 869
+    ],
+    ["a provider", "un fournisseur", 870],
+    ["a subscriber", "un abonné", 871],
+    ["an electrical appliance", "un appareil électrique", 872],
+    ["domestic appliances", "les appareils électroménagers", 873],
+    ["a smart meter", "un compteur intelligent", 874]
+]
+
+// NEXT FREE ID : 767
 
 
 
@@ -977,6 +1138,7 @@ const Quizs = {
     "internet": quiz_internet,
     "climate change": quiz_climate_change,
     "the environment": quiz_environment,
+    "energy": quiz_energy,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action
