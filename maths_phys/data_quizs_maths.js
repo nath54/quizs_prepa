@@ -2160,11 +2160,23 @@ const quiz_derivation = [{
     "hypotheses": "Soit $a$ et $b$ deux réels, $x_0 \\in \\R$ et $f$ une application $n$ fois dérivable en $ax_0+b$.",
     "resultat": "Alors la fonction $g:x\\to f(ax+b)$ est $n$ fois dérivable en $x_0$ et <br/> $g^{(n)}(x_0)$ = $a^nf^{(n)}(ax+b)$",
     "id": 347
+}, {
+    "type": "corollaire",
+    "titre": "Règle de stabilité dans $\\cal{D}^n(I)$",
+    "hypotheses": "Soit $n \\in \\N^*$",
+    "resultat": "1. L'ensemble $\\cal{D}^n(I)$ est stable par combinaison linéaires, produits et quotients par une fonction ne s'annulant pas<br/>2. Soit $f \\in \\cal{D}^n(I)$ à valeurs dans un intervalle $J$, et $g \\in \\cal{D}^n(I)$<br/>3. Soit $f \\in \\cal{D}^n(I)$, bijective de $I$ dans $J$, et telle que $f'$ ne s'annule pas sur $I$. Alors $f^{-1} \\in \\cal{D}^n(J)$",
+    "id": 348
+}, {
+    "type": "corollaire",
+    "titre": "Règle de stabilité dans $\\cal{C}^n(I)$",
+    "hypotheses": "Soit $n \\in \\N^*$",
+    "resultat": "1. L'ensemble $\\cal{C}^n(I)$ est stable par combinaison linéaires, produits et quotients par une fonction ne s'annulant pas<br/>2. Soit $f \\in \\cal{C}^n(I)$ à valeurs dans un intervalle $J$, et $g \\in \\cal{C}^n(I)$<br/>3. Soit $f \\in \\cal{C}^n(I)$, bijective de $I$ dans $J$, et telle que, si $n\\neq0$, $f'$ ne s'annule pas sur $I$. Alors $f^{-1} \\in \\cal{C}^n(J)$",
+    "id": 348
 }];
 
 /*
 
-    NEXT ID : 307
+    NEXT ID : 349
 
     ,{
         "type": "",
