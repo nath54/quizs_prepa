@@ -2294,5 +2294,5 @@ const Quizs = {
     "Combinatoire": quiz_combi,
     "Limites": quiz_limites,
     "Continuité": quiz_continuite,
-    "Dérivation - incomplet": quiz_derivation
+    "Dérivation": quiz_derivation
 }; 
