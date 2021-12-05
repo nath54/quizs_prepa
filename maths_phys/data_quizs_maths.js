@@ -200,6 +200,26 @@ const quiz_logique = [{
         "titre": "Démonstration par récurrence simple",
         "resultat": "Pour montrer une propriété $\\cP(n)$ dépendant d'un entier $n \\in \\N$, on procède suivant le schéma suivant : <ul><li><b>Initialisation : </b> monter que $\\cP(0)$ est vraie.</li> <li><b>Hérédité : </b> montrer que pour tout $n\\in \\N$, ($\\cP(n) \\implies \\cP(n+1)$, ce qui se fait en posant $n$ quelconque, (<i>\"Soit $n \\in \\N$\"</i>), en supposant que pour ce $n$, $\\cP(n)$ est vrai, et en montrant qu'alors $\\cP(n+1)$ l'est aussi</li> <li><b>Conclusion : </b> Conclure, en faisant référence au principe de récurrence</li></ul>",
         "id": 424
+    },{
+        "type": "methode",
+        "titre": "Récurrence d'ordre $k$",
+        "resultat": "<div style=\"text-align:left\">Il s'agit d'une variante du principe de récurrence, s'exprimant ainsi <br/> (($\\cP(O)$ $\\land$ $\\dots$ $\\land$ $\\cP(k-1)$)) $\\land$ ($\\forall k \\in \\N$, $\\cP(n)$ $\\land$ $\\dots$ $\\land$ $\\cP(n+k-1)$ $\\implies$ $\\cP(n+k)$)) $\\implies$ $\\forall n \\in \\N$, $\\cP(n)$.<br/><ul><li>Principe : on utilise la propriété au $k$ rangs précédents pour montrer l'hérédité</li> <li>Schéma de rédaction : <ul><li>Initialisation : montrer $\\cP(O)$,...,$\\cP(k-1)$</li><li>Hérédité : poser $n \\geqslant 0$, supposer $\\cP(n)$,...,$\\cP(n+k-1)$, en déduire $\\cP(n+k)$</li><li>Conclure en faisant appel au principe de récurrence d'ordre $k$</li></ul></li></ul></div>",
+        "id": 425
+    },{
+        "type": "methode",
+        "titre": "Récurrence forte",
+        "resultat": "La récurrence forte est basée sur la propriété formelle suivante : <br/> ($\\cP(0)$ $\\land$ ($\\forall n \\geqslant 1$, $\\cP(0)$ $\\land$ ... $\\land$ $\\cP(n-1)$ $\\implies$ $\\cP(n)$)) $\\implies$ $\\forall n \\in \\N$, $\\cP(n)$",
+        "id": 426
+    },{
+        "type": "theoreme",
+        "titre": "Equivalence des trois principes de récurrence",
+        "resultat": "Les trois principes de récurrence sont équivalents (récurrence simple/d'ordre $k$/forte)",
+        "id": 427
+    },{
+        "type": "methode",
+        "titre": "Descente infine",
+        "resultat": "Le principe de la descente infinie est un mélange de démonstration par l'absurde et de démonstration par récurrence. Soit $(\\cP(n))_{n \\in \\N}$ une propriété dont on veut démontrer qu'elle est fausse pour tout $n\\in \\N$ : <br/>il suffit de montre que si elle est supposée vraie à un certain rang $n$, il existe alors un rang $0 \\leqslant m \\lt n$ tel qu'elle soit encore vraie.",
+        "id": 428
     }
 ];
 
@@ -2589,7 +2609,7 @@ const quiz_convexite = [{
 
 /*
 
-    NEXT ID : 397
+    NEXT ID : 429
 
     ,{
         "type": "",
@@ -2604,7 +2624,7 @@ const quiz_convexite = [{
 // TOUS LES QUIZS SONT DANS LA VARIABLE QUIZS
 
 const Quizs = {
-    "Logique - incomplet": quiz_logique,
+    "Logique": quiz_logique,
     "Relations": quiz_relations,
     "Nombres réels": quiz_reels,
     "Complexes": quiz_nb_complexes,
