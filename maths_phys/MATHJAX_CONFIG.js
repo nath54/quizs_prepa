@@ -6,7 +6,6 @@ MathJax = {
         ],
         displayMath: [
             ['$$', '$$'],
-            ['\[', '\]']
         ],
         macros: {
             bb: ["\\mathbb{#1}", 1],
@@ -29,7 +28,8 @@ MathJax = {
             cC: "\\cal{C}",
             cD: "\\cal{D}",
             cV: "\\cal{V}",
-            cP: "\\cal{P}"
+            cP: "\\cal{P}",
+            eq: "\\equiv"
         }
     }
 };

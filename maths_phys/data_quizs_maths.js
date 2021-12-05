@@ -64,14 +64,14 @@ const quiz_logique = [{
         "type": "proposition",
         "titre": "Equivalence de l'impliquation",
         "hypotheses": "$A$ et $B$ désignent des variables propositionnelles",
-        "resultat": "$(A \\implies B) \\iff (B \\lor \\neq A)$",
+        "resultat": "$(A \\implies B) \\iff (B \\lor \\neg A)$",
         "id": 7
     },
     {
         "type": "proposition",
-        "titre": "Contraposée",
+        "titre": "Equivalence de la contraposée",
         "hypotheses": "$A$ et $B$ désignent des variables propositionnelles",
-        "resultat": "$(A \\implies B) \\iff (\\neq B \\implies \\neq A)$",
+        "resultat": "$(A \\implies B) \\iff (\\neg B \\implies \\neg A)$",
         "id": 8
     },{
         "type": "definition",
@@ -85,6 +85,121 @@ const quiz_logique = [{
         "hypotheses": "Soit $F(x)$ une propriété dépendant d'une variable $x$",
         "resultat": "$\\exists x$, $F(x)$ est satisfait si et seulement si il existe $x$ tel que $F(x)$ soit satisfait.<br/>Dans ce cas, même s'il n'est bien souvent pas possible d'expliciter $x$, on peut se donner un $x$ qui satisfait $F(x)$.",
         "id": 401
+    },{
+        "type": "remarque",
+        "titre": "Ordre des quantificateurs",
+        "resultat": "Attention ! En général, on ne peut pas intervertir $\\exists$ et $\\forall$ !",
+        "id": 402
+    },{
+        "type": "propriete",
+        "titre": "$\\neg\\neg P$",
+        "resultat": "$\\neg\\neg P \\eq P$",
+        "id": 403
+    },{
+        "type": "propriete",
+        "titre": "Négation du ou - Loi de De Morgan",
+        "resultat": "$\\neg(P \\lor Q) \\eq \\neg P \\land \\neg Q$",
+        "id": 404
+    },{
+        "type": "propriete",
+        "titre": "Négation du et - Loi de De Morgan",
+        "resultat": "$\\neg(P \\land Q) \\eq \\neg P \\lor \\neg Q$",
+        "id": 405
+    },{
+        "type": "propriete",
+        "titre": "$\\neg(P \\implies Q)$",
+        "resultat": "$\\neg(P \\implies Q) \\eq P \\land \\neg Q$",
+        "id": 406
+    },{
+        "type": "propriete",
+        "titre": "$\\neg(P \\iff Q)$",
+        "resultat": "$\\neg(P \\iff Q)$ $\\eq$ $(P \\iff (\\neg Q))$ $\\eq$ $((\\neg P) \\iff Q)$",
+        "id": 407
+    },{
+        "type": "propriete",
+        "titre": "Négation des quantificateurs",
+        "resultat": "$(i)$ $\\neg(\\forall x P)$ $\\eq$ $\\exists x (\\neg P)$ <br/> $(ii)$ $\\neg(\\exists x P)$ $\\eq$ $\\forall x (\\neg P)$",
+        "id": 408
+    },{
+        "type": "texte",
+        "titre": "Composition d'un texte mathématique",
+        "resultat": "<div style=\"text-align:left\">Un texte mathématique est constitué de : <ol><li><b>définitions : </b> des descriptions de certains objets constituant les briques de la théorie. C'est à voir comme un raccourcis de langage</li> <li><b>résultats : </b> des énoncés mettant en jeu les objets définis dans la théorie, et donnant des propriétés vérifiées par ces objets. Un résultat s'énonce sous la forme $A \\implies B$. On distingue <ul> <li> les <i>axiomes</i> : des résultats qui sont des vérités de la théorie, et qu'on ne démontre pas</li> <li>les <i>théorèmes</i> : les résultats les plus significatis, démontrés à partir des axiomes et de résultats démontrés antérieurement</li> <li>les <i>propositions</i> : des résultats de moindre envergure</li> <li>les <i>lemmes</i> : des résultats à voir comme des étapes vers dés résultats plus consistants (résultats préliminaires, mais pouvant avoir leurs intérêts en soi)</li> <li>les <i>corollaires</i> : des conséquences assez immédiates d'autres résultats, par exemple des cas particuliers intéressants</li></ul> </li> <li><b>démonstrations : </b> des justifications de la véracité des résultats</li> <li><b>conjectures : </b> des énoncés qu'on pense être vrais, mais qu'on a pas encore réussi à prouver</li></ol></div>",
+        "id": 409
+    },{
+        "type": "methode",
+        "titre": "Prouver une implication $A \\implies B$",
+        "resultat": "On suppose que $A$ est vrai, on démontre $B$. La rédaction commence par <i>\"Supposons que $A$ soit vrai\"</i><br/>Dans certaines situations, il peut être plus simple de montrer l'implication contraposée.",
+        "id": 410
+    },{
+        "type": "methode",
+        "titre": "Prouver une équivalence $A \\iff B$",
+        "resultat": "On prouve en deux temps $A \\implies B$ et $B \\implies A$.<br/>On peut aussi raisonner par équivalences successives, mais dans ce cas, raisonner d'abord dans un sens, puis vérifier scrupuleusement qu'on peut \"remonter\" toutes les implications.",
+        "id": 411
+    },{
+        "type": "methode",
+        "titre": "Prouver une conjonction $A \\land B$",
+        "resultat": "On prouve en deux temps: on prouve $A$, puis on prouve $B$",
+        "id": 412
+    },{
+        "type": "methode",
+        "titre": "Prouver une disjonction $A \\lor B$",
+        "resultat": "On prouve $\\neg A \\implies B$, ce qui revient à supposer que $A$ n'est pas vrai, et à en déduire que $B$ est vrai. <br/>On peut bien sur intervertir $A$ et $B$ : un bon choix dans la propriété que l'on nie peut parfois simplifier la démonstration",
+        "id": 413
+    },{
+        "type": "methode",
+        "titre": "Prouver $\\forall x A(x)$",
+        "resultat": "La proposition $A$ doit être vraie pour tout choix de $x$.<br/>On pose donc un $x$ <b>supposé quelconque</b> (c'est à dire sur lequel on n'impose pas de conditions), et on se montre que pour ce $x$, $A(x)$ est vérifié.<br/>Le fait d'avoir choisi $x$ quelconque montre qu'alors $A(x)$ est vrai pour tout $x$.<br/>La démonstration débute alors systématiquement par <i>\"Soit x ...\"</i>, puis on démontre $A(x)$.",
+        "id": 414
+    },{
+        "type": "methode",
+        "titre": "Prouver $\\exists x A(x)$",
+        "resultat": "Montrer une propriété existentielle est souvent ce qu'il y a de plus délicat.<br/>Dans le meilleur des cas, on construit explicitement $x$ qui convient.<br/>Pour s'aider à définir $x$ convenable, on peut faire une analyse synthèse.",
+        "id": 415
+    },{
+        "type": "remarque",
+        "titre": "Direction d'une preuve",
+        "resultat": "C'est le but qui dirige une preuve ! On se fixe un cap, et on le garde. A aucun moment, il ne faut le perdre de vue.",
+        "id": 416
+    },{
+        "type": "methode",
+        "titre": "Modus Ponens",
+        "resultat": "Pour que $B$ soit vrai, il suffit que $A$ soit vrai, et que $A \\implies B$.<br/>Formellement, il s'agit d'exploiter la tautologie : <br/>$(A \\land (A\\implies B) \\implies B$",
+        "id": 417
+    },{
+        "type": "methode",
+        "titre": "Demonstration par contraposée",
+        "resultat": "Pour montrer $A \\implies B$, on peut adopter la démarche suivante : on suppose que la conclusion $B$ est fausse, et on montre dans ce cas, l'hypothèse $A$ ne peut pas être vraie.<br/>Cela revient à montrer <br/> $\\neg B \\implies \\neg A$",
+        "id": 418
+    },{
+        "type": "definition",
+        "titre": "Contraposée",
+        "resultat": "L'expression $\\neg B \\implies \\neg A$ est la contraposée de $A \\implies B$",
+        "id": 419
+    },{
+        "type": "methode",
+        "titre": "Démonstration par l'absurde",
+        "resultat": "Pour démontrer $B$, il suffit de montrer que le fait de supposer que $B$ est fausse conduit à une contradiction",
+        "id": 420
+    },{
+        "type": "methode",
+        "titre": "Disjonction de cas, ou discussion",
+        "resultat": "Pour montrer $A \\lor B \\implies B$, on peut séparer en deux cas : voir ce qu'il se passe sous l'hypothèse $A$, puis sous l'hypothèse $B$. Ainsi on montre que si on suppose que $A$ est vérifié, alors $C$ aussi, et de même, si $B$ est vérifié, $C$ aussi.",
+        "id": 421
+    },{
+        "type": "methode",
+        "titre": "Analyse-synthèse",
+        "resultat": "<div style=\"text-align:left\"><ul><li><b>Phase d'analyse</b> (ou recherche de CN) : On suppose dans un premier temps l'existence d'un objet tel que souhaité, et à l'aide des propriétés qu'il est censé vérifier, on obtient autant d'informations que possible sur la façon de construire un tel objet</li> <li><b>Phase de synthèse</b> (ou vérifiant CS) : lorsqu'on a suffisament d'informations sur une façon de construire l'objet recherché, on construit un objet de la sorte, de façon explicite, et on vérifie qu'il répond au problème.</ul> Bonus : si la phase d'analyse fournis une expression explicite de l'objet recherché, ne laissant pas le choix pour cet objet, cela fournis l'unicité</div>",
+        "id": 422
+    },{
+        "type": "definition",
+        "titre": "Principe de récurrence",
+        "resultat": "[$\\cP(0)$ $\\land$ ($\\forall n \\in \\N$, ($\\cP(n)$ $\\implies$ $\\cP(n+1)$))] $\\implies$ ($\\forall n \\in \\N$, $\\cP(n)$)",
+        "id": 423
+    },{
+        "type": "methode",
+        "titre": "Démonstration par récurrence simple",
+        "resultat": "Pour montrer une propriété $\\cP(n)$ dépendant d'un entier $n \\in \\N$, on procède suivant le schéma suivant : <ul><li><b>Initialisation : </b> monter que $\\cP(0)$ est vraie.</li> <li><b>Hérédité : </b> montrer que pour tout $n\\in \\N$, ($\\cP(n) \\implies \\cP(n+1)$, ce qui se fait en posant $n$ quelconque, (<i>\"Soit $n \\in \\N$\"</i>), en supposant que pour ce $n$, $\\cP(n)$ est vrai, et en montrant qu'alors $\\cP(n+1)$ l'est aussi</li> <li><b>Conclusion : </b> Conclure, en faisant référence au principe de récurrence</li></ul>",
+        "id": 424
     }
 ];
 
