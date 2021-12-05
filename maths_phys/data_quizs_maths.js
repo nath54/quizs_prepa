@@ -2104,7 +2104,7 @@ const quiz_derivation = [{
 }, {
     "type": "lemme",
     "titre": "Continuité des réciproques",
-    "hypotheses": "Soit $I$ et $J$ dux intervalles et $f$ une application bijective continue de $I$ dans $J$.",
+    "hypotheses": "Soit $I$ et $J$ deux intervalles et $f$ une application bijective continue de $I$ dans $J$.",
     "resultat": "Alors $f^{-1} : J \\to I$ est continue sur $J$",
     "id": 338
 }, {
@@ -2219,7 +2219,7 @@ const quiz_derivation = [{
     "type": "definition",
     "titre": "Gradient",
     "hypotheses": "Soit $f$ une fonction de classe $\\cC^1$ sur un ouvert $U$ de $\\R^2$",
-    "resultat": "Le gradiant de $f$ est défini sur $U$ par :<br/>$\\forallX \\in U$, $\\nabla f(X) = \\left(\\begin{array}{ll} \\frac{\\partial f}{\\partial x}(X) \\\\ \\frac{\\partial f}{\\partial y}(X) \\end{array}\\right)$",
+    "resultat": "Le gradient de $f$ est défini sur $U$ par :<br/>$\\forall X \\in U$, $\\nabla f(X) = \\left(\\begin{array}{ll} \\frac{\\partial f}{\\partial x}(X) \\\\ \\frac{\\partial f}{\\partial y}(X) \\end{array}\\right)$",
     "id": 357
 }, {
     "type": "theoreme",
@@ -2246,7 +2246,7 @@ const quiz_derivation = [{
 },{
     "type": "remarque",
     "titre": "Le gradient est orthogonal aux courbes de niveau",
-    "resultat": "Si $\\gamma$ est un arc parcourant une ligne de niveau de $f$ (i.e. $f \\circ \\gamma$ est contante), alors <br/> $\\langle \\nabla f(\\gamma(t)), \\gamma'(t))\\rangle = 0$<br/>Ainsi, \\nabla f(\\gamma(t))$ est orthogonal à $\\gamma'(t)$, lui-même tangent à l'arc $\\gamma$.<br/>En d'autre terme, le gradient est orthogonal aux lignes de niveau.",
+    "resultat": "Si $\\gamma$ est un arc parcourant une ligne de niveau de $f$ (i.e. $f \\circ \\gamma$ est contante), alors <br/> $\\langle \\nabla f(\\gamma(t)), \\gamma'(t))\\rangle = 0$<br/>Ainsi, $\\nabla f(\\gamma(t))$ est orthogonal à $\\gamma'(t)$, lui-même tangent à l'arc $\\gamma$.<br/>En d'autre terme, le gradient est orthogonal aux lignes de niveau.",
     "id": 362
 },{
     "type": "definition",
