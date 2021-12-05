@@ -2,20 +2,33 @@ const quiz_logique = [{
         "type": "definition",
         "titre": "Formule propositionnelle",
 
-        "resultat": "Une formule propositionnelle est une formule liant des propositions élémentaires représentées par des lettres (ou variables propositionnelles), à l'aide d'un certain nombre de symboles représentant des opérations logiques.",
+        "resultat": "Une formule propositionnelle est une formule liant des propositions élémentaires représentées par des lettres (ou variables propositionnelles), à l'aide d'un certain nombre de symboles représentant des opérations logiques: <ul><li>$\\land$ : et</li><li>$\\lor$ : ou</li><li>$\\implies$ : implique</li><li>$\\iff$ : équivalent</li><li>$\\neg$ : non</li></ul>.<br/>A part $\\neg$ qui se met devant une unique proposition, les autres symboles permettent de lier 2 propositions.<br/>Un parenthésage rigoureux est nécessaire afin de rendre l'expression non ambiguë quant à l'ordre des opérations à effectuer.",
         "id": 0
+    },{
+        "type": "remarque",
+        "titre": "Conditions nécessaire",
+        "resultat": "$P \\implies Q$ : $P$ est un condition nécessaire à $Q$",
+        "id": 397
+    },{
+        "type": "remarque",
+        "titre": "Condition suffisante",
+        "resultat": "$Q \\implies P$ : $P$ est une condition suffisante à $Q$",
+        "id": 398
+    },{
+        "type": "remarque",
+        "titre": "Condition nécessaire et suffisante",
+        "resultat": "$P \\iff Q$ : $P$ est une condition nécessaire et suffisante à $Q$",
+        "id": 399
     },
     {
         "type": "definition",
         "titre": "Formules équivalentes",
-
         "resultat": "Deux formules $A$ et $B$ sont dites équivalentes si elles prennent la même valeur de vérité l'une et l'autre, quelle que soit la distribution de vérités données sur l'ensemble des variables propositionnelles intervenant dans ces formules. Autrement dit, elles sont vraies et fausses sous les mêmes conditions sur les variables propositionnelles.",
         "id": 1
     },
     {
         "type": "definition",
         "titre": "Tautologie",
-
         "resultat": "Ce sont des formules toujours vraies (pour toute distribution de vérité).",
         "id": 2
     },
@@ -60,6 +73,18 @@ const quiz_logique = [{
         "hypotheses": "$A$ et $B$ désignent des variables propositionnelles",
         "resultat": "$(A \\implies B) \\iff (\\neq B \\implies \\neq A)$",
         "id": 8
+    },{
+        "type": "definition",
+        "titre": "Quantificateur universel $\\forall$",
+        "hypotheses": "Soit $F(x)$ une propriété dépendant d'une variable $x$",
+        "resultat": "$\\forall x$, $F(x)$ satisfait si et seulement si pour toute valeur possible prise par $x$, $F(x)$ est vraie.",
+        "id": 400
+    },{
+        "type": "definition",
+        "titre": "Quantificateur existentiel $\\exists$",
+        "hypotheses": "Soit $F(x)$ une propriété dépendant d'une variable $x$",
+        "resultat": "$\\exists x$, $F(x)$ est satisfait si et seulement si il existe $x$ tel que $F(x)$ soit satisfait.<br/>Dans ce cas, même s'il n'est bien souvent pas possible d'expliciter $x$, on peut se donner un $x$ qui satisfait $F(x)$.",
+        "id": 401
     }
 ];
 
