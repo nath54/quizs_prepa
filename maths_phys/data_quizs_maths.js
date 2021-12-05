@@ -2379,12 +2379,77 @@ const quiz_convexite = [{
     "hypotheses": "Soit $f$ une fonction périodique et soit $\\cal{T}^+$ l'ensemble des périodes strictements positives de $f$.",
     "resultat": "Si $\\cal{T}^+$ admet un minimum $T$, alors $T$ est appelée <b>période minimale</b> de $f$, ou <b>plus petite période</b> de $f$.",
     "id": 384
+},{
+    "type": "remarque",
+    "titre": "Avertissement : Croissance sur deux intervalles",
+    "resultat": "Si $f$ est croissante (ou décroissante) sur deux intervalles $I$ et $J$, elle n'est pas nécessairement croissante (ou décroissante) sur l'intervalle $I \\cup J$.",
+    "id": 385
+},{
+    "type": "proposition",
+    "titre": "Monotonie et composition",
+    "hypotheses": "Soit $f$ et $g$ deux fonctions définies sur les sous-ensembles $E$ et $F$ de $\\R$, et telles que $f(E) \\subset F$.",
+    "resultat": "Alors : <ul><li>Si $f$ et $g$ sont toutes les deux croissantes (ou décroissantes), alors $g \\circ g$ est croissante</li> <li>Si $f$ est croissante et $g$ décroissante (ou l'inverse), alors $g \\circ f$ est décroissante</li> </ul><br/>De plus, si la monotonie de $f$ et $g$ est stricte, celle de $g\\circ f$ l'est également",
+    "id": 386
+},{
+    "type": "remarque",
+    "titre": "Utilisation de la proposition sur la Monotonie de la composition",
+    "resultat": "Cette règle des monotonies composées est très utile en pratique, et permet souvent d'obtenir les variations de certaines fonctions de façon beaucoup plus élégante, efficace et rapide que par étude de fonction.<br/>C'est la premier réflexe à avoir lorsqu'on vous demande les variations d'une fonction composée",
+    "id": 387
+},{
+    "type": "proposition",
+    "titre": "Monotonie et injectivité",
+    "resultat": "Une fonction strictement monotone sur un sous ensemble de $\\R$ est injective sur ce sous-ensemble",
+    "id": 388
+},{
+    "type": "thoreme",
+    "titre": "Caractérisation des fonctions croissantes dérivables",
+    "hypotheses": "Soit $f: X \\to \\R$, et $I$ un intervalle tel que $f$ est dérivable sur $I$.",
+    "resultat": "Alors : <br/> 1. $f$ est croissante sur $I$ $iff$ $\\forall x \\in I$, $f'(x) \\geqslant 0$<br/>2. $f$ est constante sur $I$ $\\iff$ $f' = 0$ sur $I$<br/>3. $f$ est strictement croissante sur $I$ si et seulement si $f' \\geqlsant 0$ sur $I$, et que pour tout $(a,b) \\in I^2$ tel que $a \\lt b$, $f'$ n'est pas nulle sur $]a,b[$<br/>4. Enoncés similaires pour la décroissance",
+    "id": 389
+},{
+    "type": "methode",
+    "titre": "Etide des variations d'une fonction",
+    "resultat": "Pour étudier les variations d'une fonction, on étudiera le signe de $f'$. On pourra dresser un tableau de variation, consignant le signe de $f'$ suivant les valeurs de $x$, et le sens de variation de $f$ qu'on en déduit",
+    "id": 390
+},{
+    "type": "definition",
+    "titre": "Maximum, maximum local",
+    "hypotheses": "Soit $f$ définit sur $X$",
+    "resultat": "<ul> <li>On dit que $f$ admet en $x$ un maximum si pour tout $y \\in X$, $f(y) \\leqslant f(x)$</li> <li>Ce maximum est strict s'il n'est atteint en aucun autre $y$ (donc $f(y)\\lt f(x)$ pour tout $y \\neq x$)</li> <li>$f$ admet en $x$ un maximum local s'il existe un voisinage $V$ de $x$ tel que pour tout $y \\in V$, $f(y) \\leqslant f(x)$ (donc si $f_{|V}$ admet un maximum en $x$)</li></ul>",
+    "id": 391
+},{
+    "type": "theoreme",
+    "titre": "Condition nécessaire pour un extremum",
+    "hypotheses": "Soit $f$ dérivable sur un intervalle ouvert $I$",
+    "resultat": "Si $f$ admet un extremum local (minimum ou maximum), alors $f'(x) = 0$",
+    "id": 392
+},{
+    "type": "definition",
+    "titre": "Point critique",
+    "hypotheses": "Soit ^une fonction dérivable sur un ouvert $I$, et $x \\in I$.",
+    "resultat": "On dit que $x$ est un point critique de $f$ si $f'(x) = 0$",
+    "id": 393
+},{
+    "type": "definition",
+    "titre": "asymptotes",
+    "resultat": "<ul> <li>asymptote verticale en $a$ : droite d'équation $x=a$ en $a$ telle que $\\lim\\limits_{x \\to a^+} = \\pm \\infty$</li> <li>Asymptote en $+ \\infty$ : la droite $D$ d'équation $y=ax+b$ est dite asymptote à la courbe $\\cC$ de $f$ en $+\\infty$ si <br/>$\\lim\\limits_{x \\to +\\infty}f(x)-(ax+b) = 0$</li> On définit évidemment une notion similaire en $-\\infty$</ul>",
+    "id": 394
+},{
+    "type": "methode",
+    "titre": "Déterminer une droite asymptote (non verticale)",
+    "resultat": "On verra plus tard comment obtenir les asymptotes à l'aide de développements asymptotiques<br/>De façon plus élémentaire, si $a$ existe, c'est nécessairement la limite de $\\frac{f(x)}{x}$ lorsque $x$ tends vers $+\\infty$, le cas échéant, il ne reste qu'à vérifier que $f(x)-ax$ tend vers une limite finie $b$.",
+    "id": 395
+},{
+    "type": "definition",
+    "titre": "Point d'inflexion",
+    "resultat": "Un point d'inflexion de la courbe de $f$ est un point en lequel $f$ change de convexité",
+    "id": 396
 }
 ]
 
 /*
 
-    NEXT ID : 366
+    NEXT ID : 397
 
     ,{
         "type": "",
@@ -2408,5 +2473,5 @@ const Quizs = {
     "Limites": quiz_limites,
     "Continuité": quiz_continuite,
     "Dérivation": quiz_derivation,
-    "Convexité - incomplet": quiz_convexite
+    "Convexité": quiz_convexite
 }; 
