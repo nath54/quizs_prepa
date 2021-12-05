@@ -2271,13 +2271,13 @@ const quiz_convexite = [{
     "type": "definition",
     "titre": "Convexité",
     "hypotheses": "Soit $I$ un intervalle, et $f: I \\to \\R$",
-    "resultat": "On dit que $f$ est <b>convexe</b> sur $I$ si : <br/> $\\forall (x,y) \\in I^2$,$ \\forall \\lambda \\in [0,1]$,$f(\\lambda x+(1-\\lamda)y)$ $\\leqslant$ $\\lambda f(x)$ + $(1-\\lambda)f(y)$",
+    "resultat": "On dit que $f$ est <b>convexe</b> sur $I$ si : <br/> $\\forall (x,y) \\in I^2$,$ \\forall \\lambda \\in [0,1]$,$f(\\lambda x+(1-\\lambda)y)$ $\\leqslant$ $\\lambda f(x)$ + $(1-\\lambda)f(y)$",
     "id": 366
 },{
     "type": "definition",
     "titre": "Concavité",
     "hypotheses": "Soit $I$ un intervalle, et $f: I \\to \\R$",
-    "resultat": "On dit que $f$ est <b>concave</b> sur $I^si : <br/> $\\forall (x,y) \\in I^2$, $\\forall \\lambda \\in [0,1]$, $f(\\lambda x + (1-\\lambda)y)$ $\\geqslant$ $\\lambda(f(x))$ + $(1-\\lambda)f(y)$",
+    "resultat": "On dit que $f$ est <b>concave</b> sur $I$ si : <br/> $\\forall (x,y) \\in I^2$, $\\forall \\lambda \\in [0,1]$, $f(\\lambda x + (1-\\lambda)y)$ $\\geqslant$ $\\lambda(f(x))$ + $(1-\\lambda)f(y)$",
     "id": 367
 },{
     "type": "remarque",
@@ -2293,7 +2293,7 @@ const quiz_convexite = [{
 },{
     "type": "lemme",
     "titre": "Lemme des pentes",
-    "hypotheses": "Soit $f$ une fonction convexe sur un intervalle $I$, et $x \\lt y \\t z$ trois points de $I$.",
+    "hypotheses": "Soit $f$ une fonction convexe sur un intervalle $I$, et $x \\lt y \\lt z$ trois points de $I$.",
     "resultat": "Alors <br/>$\\frac{f(y)-f(x)}{y-x}$ $\\leqslant$ $\\frac{f(z)-f(x)}{z-x}$ $\\leqslant$ $\\frac{f(z)-f(y)}{y-z}$",
     "id": 370
 },{
@@ -2404,7 +2404,7 @@ const quiz_convexite = [{
     "type": "thoreme",
     "titre": "Caractérisation des fonctions croissantes dérivables",
     "hypotheses": "Soit $f: X \\to \\R$, et $I$ un intervalle tel que $f$ est dérivable sur $I$.",
-    "resultat": "Alors : <br/> 1. $f$ est croissante sur $I$ $iff$ $\\forall x \\in I$, $f'(x) \\geqslant 0$<br/>2. $f$ est constante sur $I$ $\\iff$ $f' = 0$ sur $I$<br/>3. $f$ est strictement croissante sur $I$ si et seulement si $f' \\geqlsant 0$ sur $I$, et que pour tout $(a,b) \\in I^2$ tel que $a \\lt b$, $f'$ n'est pas nulle sur $]a,b[$<br/>4. Enoncés similaires pour la décroissance",
+    "resultat": "Alors : <br/> 1. $f$ est croissante sur $I$ $iff$ $\\forall x \\in I$, $f'(x) \\geqslant 0$<br/>2. $f$ est constante sur $I$ $\\iff$ $f' = 0$ sur $I$<br/>3. $f$ est strictement croissante sur $I$ si et seulement si $f' \\geqslant 0$ sur $I$, et que pour tout $(a,b) \\in I^2$ tel que $a \\lt b$, $f'$ n'est pas nulle sur $]a,b[$<br/>4. Enoncés similaires pour la décroissance",
     "id": 389
 },{
     "type": "methode",
