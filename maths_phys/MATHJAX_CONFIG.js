@@ -24,6 +24,8 @@ MathJax = {
             dpdot: ["  \\dot{ \\raisebox{2pt}{#1} }", 1],
             dpddot: ["\\ddot{ \\raisebox{0pt}[\\dimexpr\\height+#1][\\depth]{#2} }", 2],
             mto: "\\longmapsto",
+            lra: "\\longrightarrow",
+            ra: "\\rightarrow",
             cC: "\\cal{C}",
             cD: "\\cal{D}",
             cV: "\\cal{V}",

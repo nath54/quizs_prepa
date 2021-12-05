@@ -63,7 +63,6 @@ const quiz_logique = [{
     }
 ];
 
-
 const quiz_relations = [{
         "type": "definition",
         "titre": "Relation binaire",
@@ -1684,7 +1683,6 @@ const quiz_combi = [{
     "id": 224
 }];
 
-
 const quiz_limites = [{
         "type": "remarque",
         "titre": "Adhérence",
@@ -2269,9 +2267,124 @@ const quiz_derivation = [{
     "id": 365
 }];
 
+const quiz_convexite = [{
+    "type": "definition",
+    "titre": "Convexité",
+    "hypotheses": "Soit $I$ un intervalle, et $f: I \\to \\R$",
+    "resultat": "On dit que $f$ est <b>convexe</b> sur $I$ si : <br/> $\\forall (x,y) \\in I^2$,$ \\forall \\lambda \\in [0,1]$,$f(\\lambda x+(1-\\lamda)y)$ $\\leqslant$ $\\lambda f(x)$ + $(1-\\lambda)f(y)$",
+    "id": 366
+},{
+    "type": "definition",
+    "titre": "Concavité",
+    "hypotheses": "Soit $I$ un intervalle, et $f: I \\to \\R$",
+    "resultat": "On dit que $f$ est <b>concave</b> sur $I^si : <br/> $\\forall (x,y) \\in I^2$, $\\forall \\lambda \\in [0,1]$, $f(\\lambda x + (1-\\lambda)y)$ $\\geqslant$ $\\lambda(f(x))$ + $(1-\\lambda)f(y)$",
+    "id": 367
+},{
+    "type": "remarque",
+    "titre": "Interprétation géométrique de la convexité",
+    "resultat": "$f$ est convexe si la courbe reste sous les cordes (i.e. sous les segments reliant deux points de la courbe)",
+    "id": 368
+},{
+    "type": "theoreme",
+    "titre": "Inégalité de Jensen",
+    "hypotheses": "Soit $f$ une fonction convexe sur un intervalle $I$, et soit ($\\lambda_1$,$\\dots$, $\\lambda_n$) $\\in \\R_+^*$ tels que $$\\sum_{k=1}^{n}\\lambda_k = 1$$",
+    "resultat": "Alors pour tout ($x_1$, $\\dots$, $x_n$) $\\in I^n$, le réel $\\sum_{k=1}^{+\\infty}\\lambda_k x_k$ est dans $I$, et <br/>$$f\\left(\\sum_{k=1}^{n}\\lambda_k x_j\\right) \\leqslant \\sum_{k=1}^{n} \\lambda_k f(x_k)$$",
+    "id": 369
+},{
+    "type": "lemme",
+    "titre": "Lemme des pentes",
+    "hypotheses": "Soit $f$ une fonction convexe sur un intervalle $I$, et $x \\lt y \\t z$ trois points de $I$.",
+    "resultat": "Alors <br/>$\\frac{f(y)-f(x)}{y-x}$ $\\leqslant$ $\\frac{f(z)-f(x)}{z-x}$ $\\leqslant$ $\\frac{f(z)-f(y)}{y-z}$",
+    "id": 370
+},{
+    "type": "definition",
+    "titre": "Fonction taux d'accroissement",
+    "hypotheses": "Soit $f$ une fonction définie sur un intervalle $I$.",
+    "resultat": "On note $F_u$ la fonction taux d'accroissement, définie comme usuellement sur $I$ par : <br/> $\\forall t \\in I$, $F_u(t) = \\frac{f(t)-f(u)}{t-u}$",
+    "id": 371
+},{
+    "type": "theoreme",
+    "titre": "Convexité lié au taux d'accroissement",
+    "hypotheses": "Soit $I$ un intervalle de $\\R$, et $f: I \\to \\R$ une fonction. Soit $F_u(t) la fonction taux d'accroissement de $f$.",
+    "resultat": "La fonction est convexe sur $I$ si et seulement si pour tout $u \\in I$, l'application $F_u$ est croissante sur $I \\backslash \\{u\\}$",
+    "id": 372
+},{
+    "type": "proposition",
+    "titre": "Positionnement de la courbe par rapport à la sécante",
+    "hypotheses": "Soit $f$ une fonction convexe sur un intervalle $I$, et $x\\lt y$ deux points de $I$.",
+    "resultat": "La sécante aux points $x$ et $y$ est au-dessus de la courbe (au sens large) sur $[x,y]$ et en-dessous sur $I \\backslash [x,y]$",
+    "id": 373
+},{
+    "type": "theoreme",
+    "titre": "Dérivabilité des fonctions convexes",
+    "hypotheses": "Soit $I$ un intervalle ouvert, et $f: I \\to \\R$ une fonction convexe.",
+    "resultat": "Alors $f$ est dérivable à droite et à gauche en tout point de $I$, et : <br/> 1. $\\forall x \\in I$, $f'_g(x)$ $\\leqslant$ $f'_d(x)$<br/>2. $\\forall (x,y) \\in I^2$, $x\\lt y$ $\\implies$ $f'_d(x)$ $\\leqslant$ $f'_g(x)$<br/>3. $f'_g$ et $f'_d$ sont croissantes sur $I$",
+    "id": 374
+},{
+    "type": "corollaire",
+    "titre": "Continuité d'une fonction convexe",
+    "hypotheses": "Soit $I$ un intervalle ouvert, et $f$ convexe sur $I$",
+    "resultat": "Alors $f$ est continue sur $I$",
+    "id": 375
+},{
+    "type": "remarque",
+    "titre": "Continuité d'une fonction convexe sur un non-ouvert",
+    "resultat": "Le théorème de la dérivabilité des fonctions convexes et son corollaire sont faux si on ne suppose pas que $I$ est ouvert.",
+    "id": 376
+},{
+    "type": "proposition",
+    "titre": "Dérivabilité / Tangente et courbes",
+    "hypotheses": "Soit $I$ un intervalle ouvert et $x_0 \\in I$. Soit $f: I \\to \\R$ une fonction convexe sur $I$.",
+    "resultat": "Puisque $f$ est dérivable à gauche et à droite, sa courbe admet une tangente à gauche et une tangente à droite en $x_0$.<br/> Alors la courbe de $f$ est au-dessus de sa tangente à gauche, et au-dessus de sa tangente à droite",
+    "id": 377
+},{
+    "type": "theoreme",
+    "titre": "Caractérisation des fonctions convexes dérivables",
+    "hypotheses": "Soit $I$ un intervalle ouvert, et $f: I \\to \\R$ une fonction dérivable sur $I$.",
+    "resultat": "Les propriétés suivantes sont équivalentes : <br/>$(i)$ $f$ est convexe<br/>$(ii)$ $f'$ est croissante<br/>$(iii)$ la courbe de $f$ se trouve au-dessus de toutes ses tangentes",
+    "id": 378
+},{
+    "type": "corollaire",
+    "titre": "Caractérisation des fonctions convexes deux fois dérivables",
+    "hypotheses": "Soit $I$ un intervalle ouvert, et $f:I \\to \\R$ une fonction deux fois dérivable sur $I$",
+    "resultat": "Alors $f$ est convexe si et seulement si pour tout $x \\in I$, $f''(x) \\geqslant 0$",
+    "id": 379
+},{
+    "type": "proposition",
+    "titre": "Graphe d'une fonction réciproque",
+    "hypotheses": "Soit $I, J \\in \\R$, et $f : I \\to $ une bijection",
+    "resultat": "Alors le graphe de $f^{-1}$ est l'image du graphge de $f$ par la symétrie d'axe $D$, où $D$ est la droite d'équation $y=x$",
+    "id": 380
+},{
+    "type": "definition",
+    "titre": "Fonction paire",
+    "hypotheses": "Soit $f$ une fonction de domaine de définition $D_f \\in \\R$, à valeurs dans $\\R$.",
+    "resultat": "On dit que $f$ est <b>paire</b> si $D_f$ est symétrique par rapport à $0$ (donc $D_f$ = $-D_f$ = $\\{-x, x\\in D_f\\}$, et <br/>$\\forall x \\in D_f$, $f(-x)$ = $f(x)$",
+    "id": 381
+},{
+    "type": "definition",
+    "titre": "Fonction impaire",
+    "hypotheses": "Soit $f$ une fonction de domaine de définition $D_f \\in \\R$, à valeurs dans $\\R$.",
+    "resultat": "On dit que $f$ est <b>impaire</b> si $D_f$ est symétrique par rapport à $0$, et <br/>$\\forall x \\in D_f$, $f(-x)$ = $-f(x)$",
+    "id": 382
+},{
+    "type": "definition",
+    "titre": "Fonction périodique",
+    "hypotheses": "Soit $f$ une fonction du domaine de définition $D_f \\in \\R$, à valeurs dans $\\R$",
+    "resultat": "On dit que $f$ est périodique de période $T$ si $D_f + T = D_f$ et <br/> $\\forall x \\in D_f$, $f(x+T)$ = $f(x)$",
+    "id": 383
+},{
+    "type": "definition",
+    "titre": "période minimale",
+    "hypotheses": "Soit $f$ une fonction périodique et soit $\\cal{T}^+$ l'ensemble des périodes strictements positives de $f$.",
+    "resultat": "Si $\\cal{T}^+$ admet un minimum $T$, alors $T$ est appelée <b>période minimale</b> de $f$, ou <b>plus petite période</b> de $f$.",
+    "id": 384
+}
+]
+
 /*
 
-    NEXT ID : 361
+    NEXT ID : 366
 
     ,{
         "type": "",
@@ -2294,5 +2407,6 @@ const Quizs = {
     "Combinatoire": quiz_combi,
     "Limites": quiz_limites,
     "Continuité": quiz_continuite,
-    "Dérivation": quiz_derivation
+    "Dérivation": quiz_derivation,
+    "Convexité - incomplet": quiz_convexite
 }; 
