@@ -861,6 +861,50 @@ const quiz_dynamique_point = [{
     "id": 168
 }];
 
+const quiz_energetique_mvmt = [
+    {
+        "type": "texte",
+        "titre": "Approche énergétique",
+        "resultat": "L'approche énergétique est une autre formulation des lois de la mécanique qui permet d'accéder plus facilement et plus rapidement à des résultats intéressants, particulièrement pour les problèmes qui nous concernent dans le programme, à savoir les problèmes à 1 degrés de liberté (1 seule variable).",
+        "id": 169
+    },{
+        "type": "texte",
+        "titre": "Les différentes formes d'énergies",
+        "resultat": "$\\bullet$ <b>Energie cinétique $E_c$</b> : Traduit le mouvement du point (ou de G) sans information sur la direction<br/>$\\bullet$ <b>Energie potentielle $E_p$</b> : Traduit une sorte \"d'énergie disponible\" qu'un point ou qu'un système peut emmagasiner<<br/>$\\bullet$ <b>Energie mécanique $E_m$</b> = $E_c$ + $E_p$",
+        "id": 170
+    },{
+        "type": "definition",
+        "titre": "Puissance d'une force",
+        "resultat": "On appelle <b>puissance d'une force $\\vec{f}$ la grandeur scalaire et instantannée : <br/> $P = \\vec{f} . \\vec{v}$<br/>avec $P$ en Watt, $f$ en Newton et $v$ en m/s",
+        "id": 171
+    },{
+        "type": "texte",
+        "titre": "Propriétés de la puissance d'une force",
+        "resultat": "$\\bullet$ <b>Une force dont $P \\gt 0$ est dite motrice</b> : la composante tangentielle de cette force est de même sens que $\\vec{v}$ et son effet est d'augmenter la vitesse du point<br/>$\\bullet$ <b>Une force dont $P \\lt 0$ est dire résistante</b> : la composante tangentielle de cette force est dans le sens contraire à $\\vec{v}$ et son effet est de diminuer la vitesse (comme le frottement)<br/>$\\bullet$ <b> Une force dont $P=0$ </b> est sans effet sur la vitesse $\\vec{v}$ car son action se limite à modifier la directiond du mouvement",
+        "id": 172
+    },{
+        "type": "definition",
+        "titre": "Travail d'une force",
+        "resultat": "Le travail d'une force $\\vec{f}$ agissant sur un point matériel $M$ qui se déplace le long d'un chemin élémentaire $\\vec{dl}$ est <b/> $\\delta W$ = $Pdt$ = $\\vec{f} . \\vec{v} dt$ = $\\vec{f} . \\vec{dl}$ = $\\vec{f} . \\vec{dOM}$",
+        "id": 173
+    },{
+        "type": "texte",
+        "titre": "Travail global d'une force $\\vec{f}$",
+        "resultat": "$W_{M_1 \\to M_2}$ = $\\int_{M_1}^{M_2} \\vec{f} . \\vec{dl}$ = $\\int_{t_1}^{t_2}\\vec{f}.\\vec{v}dt$ = $\\int_{t_1}^{t_2} P dt$",
+        "id": 174
+    },{
+        "type": "texte",
+        "titre": "Travail du poids",
+        "resultat": "Le poids est une force constante dans le référentiel terrestre, donc son travail s'écrit : <br/>$W$ = $m\\vec{g} . \\vec{M_1 M_2}$",
+        "id": 175
+    }
+    // ,{
+    //     "type": "texte",
+    //     "titre": "Travail de la force élastique d'un ressort",
+    //     "resultat": "Il s'écrit dans ce cas ",
+    //     "id": 176
+    // }
+];
 
 /*
 
@@ -871,7 +915,7 @@ const quiz_dynamique_point = [{
         "id": 0
     }
 
-    NEXT ID : 127
+    NEXT ID : 169
 
 */
 
@@ -882,5 +926,6 @@ const Quizs = {
     "Propagation signaux": quiz_propagation_signal,
     "Superposition de signaux/interférences de deux ondes": quiz_superposition_signaux_interference_ondes,
     "Cinématique du point": quiz_cinematique_point,
-    "Loi de la quantité de mouvement": quiz_dynamique_point
+    "Loi de la quantité de mouvement": quiz_dynamique_point,
+    "Approche energetique du mouvement - incomplet": quiz_energetique_mvmt
 };
