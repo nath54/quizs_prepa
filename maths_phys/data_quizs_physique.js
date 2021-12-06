@@ -904,6 +904,37 @@ const quiz_energetique_mvmt = [
     //     "resultat": "Il s'écrit dans ce cas ",
     //     "id": 176
     // }
+    ,{
+        "type": "texte",
+        "titre": "Forces conservatrices",
+        "resultat": "Il existe un cas particulier de forces, non constantes, pour lesquelles, le travail $W$ est indépendant du chemin suivi entre deux points<br/>Ces forces ont alors des propriétés exceptionnelles (dont celle de conserver l'énergie totale).<br/>Ces forces, dont le travail est indépendant du chemin suivi, seront alors appelées \"forces conservatrices\"",
+        "id": 177
+    },{
+        "type": "theoreme",
+        "titre": "Théorème de la puissance cinétique",
+        "resultat": "Dans un référentiel galiléen, la variation d'énergie cinétique par unité de temps d'un point matériel de masse $m$, est égale à la somme des puissances de <b>toutes</b> les forces appliquées au point $M$.",
+        "id": 178
+    },{
+        "type": "texte",
+        "titre": "Energie cinétique",
+        "resultat": "$\\bullet$ Point matériel : $E_c = \\frac{1}{2}mv^2$<br/>$\\bullet$ Système quelconque de masse $m$ et de centre d'inertie $G$ : $E_c = \\frac{1}{2}mv_G^2<br/>L'énergie cinétique n'existe qu'en présence de mouvement, elle n'est donc pas une forme d'énergie stockable",
+        "id": 179
+    },{
+        "type": "theoreme",
+        "titre": "Théorème de l'énergie cinétique (TEC) - referentiel Galiléen",
+        "resultat": "Dans un référentiel galiléen, la variation de d'énergie cinétrique d'un point matériel entre deux instants $t_1$ et $t_2$ est égale à la somme de <b>TOUS</b> les travaux des forces exercées sur le point matériel $M$<br/>$E_{c_2} - E_{c_1}$ = $W_{tot}$ = $\\sum W_{M_1 \\to M_2} (\\vec{f})$",
+        "id": 180
+    },{
+        "type": "texte",
+        "titre": "Les deux formes du théorème de l'énergie cinétique",
+        "resultat": "$\\bullet$ La forme instantannée du TEC est le théorème de la puissance cinétique : $\\frac{dE_c}{dt} = P_{tot}$<br/>$\\bullet$ La version intégrale est le TEC classique : $\\Delta E_c = W_{tot}$",
+        "id": 181
+    },{
+        "type": "definition",
+        "titre": "Champ de scalaire",
+        "resultat": "On appelle champ de scalaire une fonction $\\vec{r} \\to f(\\vec{r})$ = $f(x,y,z)$ ) valeurs réelles><br/><i>Ex: champ de pression ... fonction énergie potentielle du point</i>",
+        "id": 182
+    }
 ];
 
 /*
