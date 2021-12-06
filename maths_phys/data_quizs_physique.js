@@ -917,7 +917,7 @@ const quiz_energetique_mvmt = [
     },{
         "type": "texte",
         "titre": "Energie cinétique",
-        "resultat": "$\\bullet$ Point matériel : $E_c = \\frac{1}{2}mv^2$<br/>$\\bullet$ Système quelconque de masse $m$ et de centre d'inertie $G$ : $E_c = \\frac{1}{2}mv_G^2<br/>L'énergie cinétique n'existe qu'en présence de mouvement, elle n'est donc pas une forme d'énergie stockable",
+        "resultat": "$\\bullet$ Point matériel : $E_c = \\frac{1}{2}mv^2$<br/>$\\bullet$ Système quelconque de masse $m$ et de centre d'inertie $G$ : $E_c = \\frac{1}{2}mv_G^2$<br/>L'énergie cinétique n'existe qu'en présence de mouvement, elle n'est donc pas une forme d'énergie stockable",
         "id": 179
     },{
         "type": "theoreme",
@@ -934,6 +934,31 @@ const quiz_energetique_mvmt = [
         "titre": "Champ de scalaire",
         "resultat": "On appelle champ de scalaire une fonction $\\vec{r} \\to f(\\vec{r})$ = $f(x,y,z)$ ) valeurs réelles><br/><i>Ex: champ de pression ... fonction énergie potentielle du point</i>",
         "id": 182
+    },{
+        "type": "definition",
+        "titre": "Champ de vecteur",
+        "resultat": "On appelle champ de vecteur une fonction vectorielle $\\vec{r} \\to \\vec{A}(\\vec{r})$ = $\\vec{A}(M)$ dont la valeur est définie par ses composantes $\\left\\{\\begin{array}{ll} A_x(x,y,z) \\\\ A_y(x,y,z) \\\\ A_z(x,y,z) \\end{array} \\right.$; ce champ de vecteur peut aussi dépendre en plus de $t$",
+        "id": 183
+    },{
+        "type": "propriete",
+        "titre": "Champ indépendant d'un point $M$",
+        "resultat": "Un champ indépendant de la position du point $M$ est dit uniforme",
+        "id": 184
+    },{
+        "type": "definition",
+        "titre": "Force conservatrice",
+        "resultat": "Lorsqu'une force $\\vec{f}$ appliquée à un point matériel $M$ ne dépend que de la position de ce point $M$, on dit que ce point est dans \"un champ de forces\" indépendant de $t$.<br/><b>On dit qu'une force est conservatrice si son travail entre deux points quelconques ne dépend pas du chemin suivi<b>, mais seulement de la position initiale et de la position finale du point $M$ (ou $G$).",
+        "id": 185
+    },{
+        "type": "definition",
+        "titre": "Energie potentielle",
+        "resultat": "Si le travail d'une force conservatrice $\\vec{f}(M)$ ne dépend que de la position initiale et de la position finale, alors on peut définir une fonction salaire $E_p$ du point $M$ (appelée énergie potentielle de la force) telle que : <br/> $\\ra$ de façon infinitésimale<br/>$\\delta W_{\\vec{f}}$ = $\\vec{f(M)} \\cdot \\vec{dl}$ = $-dE_p$<br/>$\\ra$ ou entre deux points $M_1$ et $M_2$ <br/> $W_{\\vec{f}}$ = $\\int_{M_1}^{M_2} \\vec{f(M)} \\cdot \\vec{dl}$ = $-\\Delta E_p$ = $E_{pM_1} - E_{pM_2}$<br/>On dit alors que cette force conservatrice dérive de la fonction énergie potentielle $E_p$ ou tout simplement que cette force \"<b>dérive d'un potentielle</b>\"",
+        "id": 186
+    },{
+        "type": "methode",
+        "titre": "Méthode de calcul de $E_p$",
+        "resultat": "$E_p$ se calcule concrètement par la propriété $dE_p$ = $-\\vec{f(M)} \\cdot \\vec{dOM}$ = $-f.\\vec{dl}$<br/>$E_p(\\vec{f}_{conservatrice})$ = $-\\int \\vec{f(M)}\\cdot\\vec{dOM}$ + constante<br/> $\\ra$ On exprime $\\vec{f}$ et $\\vec{dOM}$ dans <b>la même base de projection</b>; on effectue le produit scalaire.<br/>Pour les problèmes unidimensionnels, ce produit scalaire s'exprimera à l'aide d'une seule variable<br/>$\\ra$ On obtient alors la dérivée de $E_p$ par rapport à cette variable de position<br/>On calcule alors la primitive en fonction de la variable adéquate, à une constante près.",
+        "id": 187
     }
 ];
 
