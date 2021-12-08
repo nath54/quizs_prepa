@@ -2271,7 +2271,7 @@ const quiz_derivation = [{
     "type": "theoreme",
     "titre": "Dérivation des fonctions réciproques",
     "hypotheses": "Soit $I$ et $J$ deux intervalles, et soit $f$ une application bijective continue de $I$ dans $J$. Soit $t_0 \\in I$, et $x_0 = f(t_0)$",
-    "resultat": "Alors si $f$ est dérivable en $t_0$, et si $f'(t_0) \\neq 0$, alors $f^{-1}$ est dérivable en $x_0$, et : <br/> $(f^{-1})'(x_0)$ = $\\frac{1}{f'(t_0)}$ = $\\frac{1}{$f' \\circ f^{-1}(x_0)}$",
+    "resultat": "Alors si $f$ est dérivable en $t_0$, et si $f'(t_0) \\neq 0$, alors $f^{-1}$ est dérivable en $x_0$, et : <br/> $(f^{-1})'(x_0)$ = $\\frac{1}{f'(t_0)}$ = $\\frac{1}{f' \\circ f^{-1}(x_0)}$",
     "id": 339
 }, {
     "type": "proposition",
