@@ -959,6 +959,72 @@ const quiz_energetique_mvmt = [
         "titre": "Méthode de calcul de $E_p$",
         "resultat": "$E_p$ se calcule concrètement par la propriété $dE_p$ = $-\\vec{f(M)} \\cdot \\vec{dOM}$ = $-f.\\vec{dl}$<br/>$E_p(\\vec{f}_{conservatrice})$ = $-\\int \\vec{f(M)}\\cdot\\vec{dOM}$ + constante<br/> $\\ra$ On exprime $\\vec{f}$ et $\\vec{dOM}$ dans <b>la même base de projection</b>; on effectue le produit scalaire.<br/>Pour les problèmes unidimensionnels, ce produit scalaire s'exprimera à l'aide d'une seule variable<br/>$\\ra$ On obtient alors la dérivée de $E_p$ par rapport à cette variable de position<br/>On calcule alors la primitive en fonction de la variable adéquate, à une constante près.",
         "id": 187
+    },{
+        "type": "texte",
+        "titre": "Force conservatrice dans un cas tourné autour d'une variable de longueur $x$.",
+        "resultat": "$f_{\\text{conservative}}(x)$ = $-\\frac{dE_p}{dx}$ ou bien $E_p$ = $-\\int f(x)dx$ + constante",
+        "id": 188
+    },{
+        "type": "texte",
+        "titre": "Recherche de la force conservative dans un cas tourné autour d'une variable d'angle",
+        "resultat": "Les frces (ou les composantes des forces) qui comptent pour la recherche de l'énergie potentielle sont celles qui sont projetées sur la direction tangente à la trajectoire <i>(qui est le plus souvent dans les exemples classiques une portion de cercle avec ou sans support, comme l'exemple du pendule de longueur $l$ ou d'un rail circulaire de rayon $R$)</i><br/>Si le problème est à un degré de liberté et en coordonnées polaires, la variable sera en général $\\theta(t)$ et ($r$ = constante = $R$)<br/>Le vecteur de déplacement se simplifie alors $\\vec{dOM}$ = $\\vec{dl}$ = $Rd\\theta\\vec{u_{\\theta}}$, donc $dE_p$ = $-f_{\\theta}(\\theta)Rd\\theta$<br/><br/>$f_{\\theta}(\\theta)$ = $-\\frac{1}{R}\\frac{dE_p}{d\\theta}$ ou $E_p(\\theta)$ = $-\\int f_{\\theta}(\\theta)Rd\\theta$ + constante",
+        "id": 189
+    },{
+        "type": "texte",
+        "titre": "Force concervatrice représentant une force centrale ne dépendant que de $r$",
+        "resultat": "$f_{\\text{conservatrice}}(r)$ = $-\\frac{dE_p}{dr}$ ou $E_p(r)$ = $-\\int f(r)dr$ + constante",
+        "id": 190
+    },{
+        "type": "definition",
+        "titre": "Energie potentielle de pesanteur",
+        "resultat": "Si l'axe $z$ est orienté vers le haut :<br/>$E_{pp}$ = $+mgz$ + constante<br/>Mais si l'axe $z$ est orienté vers le bas, on a :<br/>$E_{pp}$ = $-mgz$ + constante",
+        "id": 191
+    },{
+        "type": "definition",
+        "titre": "Energie potentielle de gravitation",
+        "resultat": "$E_{pG}$ = $-G\\frac{m_0m}{r}$ + constante, souvent égal à $-G\\frac{m_0m}{r}$<br/>La constante est en général nulle car la référence de l'énergie potentielle est en $r\\to \\infty$ sans interaction",
+        "id": 192
+    },{
+        "type": "texte",
+        "titre": "Energie potentielle électrostatique",
+        "hypotheses": "On considère un point matériel $M$ de charge $q$ soumis à la force coulombienne exercée par une charge $q_0$ placée en $O$.",
+        "resultat": "$E_pe$ = $\\frac{1}{4\\pi\\varepsilon_0}\\frac{q_0q}{r}$ + constante",
+        "id": 193
+    },{
+        "type": "definition",
+        "titre": "Energie potentielle électrostatique d'une charge placée dans un champs $\\vec{E}$ constant",
+        "resultat": "$E_p$ = $-qE_y$ + constante<br/>Si la référence est prise par exemple en $y=0$, alors l'énergie potentielle s'écrit : $E_p$ = $-qE.y$",
+        "id": 194
+    },{
+        "type": "definition",
+        "titre": "Energie potentielle élastique associée à la tension du ressort $\\vec{T}$",
+        "resultat": "$E_{\\text{pelas}}$ = $\\frac{1}{2}k(l-l_0)^2$ + constante",
+        "id": 195
+    },{
+        "type": "definition",
+        "titre": "Energie mécanique",
+        "resultat": "L'énergie mécanique $E_m$ (en Joules) est la somme de l'énergie cinétique et des énergies potentielles des forces conservatrives<br/>$E_m$ = $E_c$ + $E_{ptot}$ = $E_c$ + $\\sum E_p(\\vec{f_i})$",
+        "id": 196
+    },{
+        "type": "propriete",
+        "titre": "Conservation de l'énergie mécanique",
+        "resultat": "Dans le cas d'un mouvement \"conservatif\" (soumis uniquement à des forces conservatives), l'énergie mécanique $E_m$ d'un point matériel (ou d'un système plus complexe) est une grandeur qui se conserve au cours du mouvement (donc de $t$) dans un référentiel galiléen.<br/>$E_m$ n'est fonction que de la position du point matériel (ou du centre $G$ du système) et de ses dérivées premières par rapport au temps : <b>on dit que l'énergie $E_m$ est alors une intégrale première du mouvement<b>",
+        "id": 197
+    },{
+        "type": "theoreme",
+        "titre": "Théorème de l'énergie mécanique TEM",
+        "resultat": "Dans un référentiel galiléen, la variation d'énergie mécanique d'un système au cours du mouvement est égale au travail des forces qui ne dérivent pas d'un potentiel autrement dit des forces non conservatives (la plupart du temps qui sont dissipatives)<br/>$\\Delta E_m$ = $\\Delta E_c$ + $\\Delta E_p$ = $W_{nc}$",
+        "id": 198
+    },{
+        "type": "texte",
+        "titre": "Equation différentielle à partir de $E_m$",
+        "resultat": "En dérivant la relation énergétique à une variable <b>par rapport au temps</b>, on retrouve l'équation différentielle du mouvement vérifié par $X$",
+        "id": 199
+    },{
+        "type": "definition",
+        "titre": "Intégrale première du mouvement",
+        "resultat": "Une intégrale première du mouvement est d'une façon plus générale une grandeur conservative qui ne dépend que des variables qui caractérisent la position, et de ses dérivées premières.<br/>On distingue deux sortes d'intégrales première : <br/>$\\ra$ <b>L'intégrale première de l'énergie</b><br/>$\\ra$<b>L'intégrale première du mouvement cinétique</b><br/>Elles permettent de retrouver les informations principales sur le mouvement du point.",
+        "id": 200
     }
 ];
 
@@ -971,7 +1037,7 @@ const quiz_energetique_mvmt = [
         "id": 0
     }
 
-    NEXT ID : 169
+    NEXT ID : 196
 
 */
 
