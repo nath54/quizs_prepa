@@ -1925,7 +1925,7 @@ const quiz_limites = [{
         "id": 281
     }, {
         "type": "definition",
-        "titre": "Voisinage de +\\infty",
+        "titre": "Voisinage de $+\\infty$",
         "resultat": "On dit que $V \\subset \\R$ est un voisinage de $+\\infty$ s'il existe $a \\in \\R$ tel que $]a, +\\infty[ \\subset V$",
         "id": 282
     }, {
@@ -2015,7 +2015,7 @@ const quiz_limites = [{
         "id": 296
     }, {
         "type": "definition",
-        "titre": "Limite d'une fonctgion à valeurs dans $\\C$",
+        "titre": "Limite d'une fonction à valeurs dans $\\C$",
         "resultat": "Si $a$ est fini, $f$ admet une limite $l \\in \\C$ en $a$ si : <br/> $\\forall \\varepsilon \\gt 0$, $\\exists \\eta \\gt 0$, $\\forall x \\in X$, $|x-a| \\leqslant \\eta$ $\\implies$ $|f(x)-l| \\leqslant \\varepsilon$",
         "id": 297
     }, {
@@ -2066,7 +2066,7 @@ const quiz_continuite = [{
     "type": "definition",
     "titre": "Continuité d'une fonction de 2 variables",
     "hypotheses": "Soit $f$ une fonction définie sur un sous-ensemble $D$ de $\\R^2$, et $(x_0, y_0) \\in D$.",
-    "resultat": "On dit que $f$ est continue en $X_O = (x_0, y_0)$ si l'une des propriétés équivalentes suivantes est vérifiée : <ol> <li>$\\forall \\varepsilon \\gt 0$, $\\exists \\eta$,$\\forall X \\in D$, $||X - X_0|| \\leqslant \\eta$ $\\implies$ $||f(X) - f(X_0)|| \\leqslant \\varepsilon$</li> <li>$\\forall V \\in \\cV(f(X_0))$, $\\exists U \\in \\cV(X_0)$,$f(U \\cap D) \\subset V$</li> </ol>",
+    "resultat": "On dit que $f$ est continue en $X_O = (x_0, y_0)$ si l'une des propriétés équivalentes suivantes est vérifiée : <ol> <li>$\\forall \\varepsilon \\gt 0$, $\\exists \\eta$,$\\forall X \\in D$, $||X - X_0|| \\leqslant \\eta$ $\\implies$ $|f(X) - f(X_0)| \\leqslant \\varepsilon$</li> <li>$\\forall V \\in \\cV(f(X_0))$, $\\exists U \\in \\cV(X_0)$,$f(U \\cap D) \\subset V$</li> </ol>",
     "id": 305
 }, {
     "type": "proposition",
@@ -2173,7 +2173,7 @@ const quiz_derivation = [{
     "id": 323
 }, {
     "type": "proposition",
-    "titre": "Continuité des fonctiosn lipschitziennes",
+    "titre": "Continuité des fonctions lipschitziennes",
     "hypotheses": "Soit $f$ une fonction d'un intervalle $I$ dans $\\R$, lipschitzienne sur $I$.",
     "resultat": "Alors $f$ est continue sur $I$",
     "id": 324
@@ -2245,7 +2245,7 @@ const quiz_derivation = [{
     "id": 334
 }, {
     "type": "proposition",
-    "titre": "dérivées successives des puissances",
+    "titre": "dérivées successives des composées",
     "hypotheses": "Soit $I$ et $J$ deux intervalles ouverts de $\\R$, et $f$:$I \\to J$. Soit $x \\in I$.",
     "resultat": "Si $f$ est dérivable en $x$ et $g$ dérivable en $y=f(x)$, alors $g \\circ f$ est dérivable en $x$, et :<br/>$(g\\circ f)'(x)$ = $f'(x)g'(y)$ = $f'(x).g' \\circ f (x)$<br/>Ainsi $(g\\circ f)' = f'.(g'\\circ f)$",
     "id": 335
