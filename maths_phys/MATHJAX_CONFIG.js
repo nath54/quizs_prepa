@@ -1,12 +1,17 @@
 MathJax = {
     tex: {
         inlineMath: [
-            ['$', '$'],
-            ['\\(', '\\)']
+            ['$', '$']
         ],
         displayMath: [
-            ['$$', '$$'],
+            ['$$', '$$']
         ],
+        chtml: {
+            scale: 1.3
+        },
+        svg: {
+            scale: 1.3
+        },
         macros: {
             bb: ["\\mathbb{#1}", 1],
             cal: ["\\mathcal{#1}", 1],
@@ -20,8 +25,8 @@ MathJax = {
             R: "\\bb{R}",
             cR: "\\cal{R}",
             B: "\\cal{B}",
-            dpdot: ["  \\dot{ \\raisebox{2pt}{#1} }", 1],
-            dpddot: ["\\ddot{ \\raisebox{0pt}[\\dimexpr\\height+#1][\\depth]{#2} }", 2],
+            bdot: ["\\dot{ \\raise{6pt}{} #1\\ } \\!", 1],
+            ddot: ["\\ddot{ \\raisebox{0pt}[\\dimexpr\\height+#1][\\depth]{#2} }", 2],
             mto: "\\longmapsto",
             lra: "\\longrightarrow",
             ra: "\\rightarrow",

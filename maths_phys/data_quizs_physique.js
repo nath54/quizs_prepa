@@ -1025,6 +1025,80 @@ const quiz_energetique_mvmt = [
         "titre": "Intégrale première du mouvement",
         "resultat": "Une intégrale première du mouvement est d'une façon plus générale une grandeur conservative qui ne dépend que des variables qui caractérisent la position, et de ses dérivées premières.<br/>On distingue deux sortes d'intégrales première : <br/>$\\ra$ <b>L'intégrale première de l'énergie</b><br/>$\\ra$<b>L'intégrale première du mouvement cinétique</b><br/>Elles permettent de retrouver les informations principales sur le mouvement du point.",
         "id": 200
+    },{
+        "type": "texte",
+        "titre": "Le puit de potentiel",
+        "resultat": "<img class=\"imgc\" style=\"background-color:white;\" src=\"res/puit_potentiel.svg\"/><br/>Le point matériel est astreint à rester dans un intervalle de positions définis par des limites<br/>Ces positions sont $X_1$ et $X_2$<br/>Le mouvement est complètement borné<br/>On dit que $M$ est dans un \"état lié\"<br/>Aux points d'intersections, $\\bdot{X}$ s'annule.<br/>En un point quelconque : <br/>$\\bdot{X}^2$ = $\\frac{2(E_m - E_p(x))}{m}$<br/>Le minimum de $E_p$ correspond au max de l'énergie cinétique.",
+        "id": 201
+    },{
+        "type": "texte",
+        "titre": "La barrière de potentiel",
+        "resultat": "<img class=\"imgc\" style=\"background-color:white;\" src=\"res/barriere_potentiel.svg\"/><br/>Le point est limité par une seule valeur de $X_1$, il n'est borné que d'un seul côté.<br/>On dit que le point est dans un état libre ou \"état de diffusion\"<br/>Le point matériel peut venir de l'infini mais ne peut dépasser la valeur de $X_1$<br/>Au point d'intersection, $\\bdot{X}$ s'annule.",
+        "id": 202
+    },{
+        "type": "texte",
+        "titre": "Energies mécaniques dans la chute libre",
+        "resultat": "$E_c$ = $\\frac{1}{2}m\\bdot{z}^2$<br/>$E_p$ = $mgz$<br/>Donc $E_m$ = $\\frac{1}{2}m\\bdot{z}^2$ + $mgz$",
+        "id": 203
+    },{
+        "type": "texte",
+        "titre": "Energies mécaniques dans un pendule rigide",
+        "resultat": "$E_c$ = $\\frac{1}{2}m(l\\bdot{\\theta})^2$<br/>$E_p$ = $mgl(1-\\cos(\\theta))$<br/>Donc $E_m$ = $\\frac{1}{2}m(l\\bdot{\\theta})^2$ + $mgl(1 - \\cos(\\theta))$",
+        "id": 204
+    }
+    ,{
+        "type": "texte",
+        "titre": "Condition d'équilibre",
+        "resultat": "$\\ra$ Un point ou un système est à l'équilibre (dans $R$ galiléen) s'il est immobile dans ce référentiel.<br/>Pour un point matériel, cela se traduit par une vitesse et une accélération nulle dont la résultante de toutes les forces est nulle<br/>$\\vec{F}$ = $\\sum\\vec{f_l}$ = $\\vec{0}$<br/>$\\ra$ Cela se traduit énergétiquement par : <br/>Un point est en équilibre repéré par la valeur $X$ = $X_{eq}$ si $E_p(X_{eq})$ est un extremum<br/>$\\frac{dE_p(X)}{dX})_{X = X_{eq}}$ = $0$",
+        "id": 205
+    }
+    ,{
+        "type": "definition",
+        "titre": "Equilibre stable/instable",
+        "resultat": "Un équilibre est dit stable si, lorsqu'on écarte très légèrement le point matériel ou le mobile de sa position d'équilibre, il y revient<br/>Inversement, si l'écart du point le conduit à s'éloigner de la position d'équilibre, alors cette position est dite instable",
+        "id": 206
+    }
+    // ,{
+    //     "type": "texte",
+    //     "titre": "Dérivée et équilibres",
+    //     "resultat": "Si $\\frac{dF}{dX})_{X_{eq}}$ $\\lt 0$ : l'équilibre est stable.<br/><br/>Si $\\frac{dF}{dX})_{X_{eq}}$ $\\gt 0$ : l'équilibre est instable",
+    //     "id": 207
+    // }
+    ,{
+        "type": "texte",
+        "titre": "Relation entre la force et l'énergie potentielle",
+        "resultat": "$F(X)$ = $\\frac{dE_p}{dX}$ et $\\frac{dF}{dX}$ = $\\frac{d^2E_p}{dX^2}$",
+        "id": 208
+    }
+    ,{
+        "type": "texte",
+        "titre": "Condition de stabilité pour un problème à un degré de liberté",
+        "resultat": "$\\ra$ Pour que la position d'équilibre $X_{eq}$ soit <b>stable</b>, l'énergie potentielle doit être minimale. En cette position si on connait la courbe ou encore l'expression de l'énergie potentielle alors : <br/> $\\frac{d^2E_p}{dX^2} \\gt 0$ pour $X = X_{eq}$<br/>Une position d'équilibre stable correspond pour la courbe représentative de $E_p(X)$ à un minimum local de la courbe : on dit qu'elle présente autour de ce point une cubette de potentiel (ou un puit)<br/><br/>$\\ra$ Dans le cas contraire, une position d'équilibre <b>instable</b> correspond à un sommet de la courbe de l'énergie potentielle et la relation s'écrit : <br/>$\\frac{d^2E_p}{dX^2} \\lt 0$ pour $X=X_{eq}$",
+        "id": 209
+    }
+    ,{
+        "type": "definition",
+        "titre": "Profil d'une énergie potentielle",
+        "resultat": "Un profil d'énergie potentielle est la courbe correspondant à l'énergie potentielle en fonction du degré de liberté<br/>Les points de tangente horizontale (extremum) sont des positions d'équilibre et les minima du graphe de $E_p(X)$ sont les positions d'équilibre stable.",
+        "id": 210
+    }
+    ,{
+        "type": "texte",
+        "titre": "Approximation harmonique de l'énergie potentielle",
+        "resultat": "En appelant par exemple l'écart à l'équilibre $X - X_{eq} = \\varepsilon$, quantité très petite par nature même d'une pertubation, alors : <br/>$E_p(X)$ $\\approxeq$ $E_p(X_{eq}) + \\frac{1}{2}K\\varepsilon^2$<br/>On reconnait l'énergie potentielle d'un oscillatoeur harmonique ! (à une constante près).<br/>On appelle cette approximation <b>\"l'approximation harmonique\"</b> de l'énergie potentielle au voisinage de l'équilibre stable.($\\iff$ approximation parabolique de la courbe autour de la position $X_{eq}$)",
+        "id": 211
+    }
+    ,{
+        "type": "definition",
+        "titre": "Portrait de phase",
+        "resultat": "Le portrait de phase est un ensemble de trajectoires de phases associés à des différentes conditions initiales",
+        "id": 212
+    }
+    ,{
+        "type": "texte",
+        "titre": "Approximation harmonique de l'énergie potentielle pour un pendule rigide avec de petits angles",
+        "resultat": "$E_p(\\theta)$ $\\approxeq$ $E_{p, harm}(\\theta)$ $\\approxeq$ $mgl\\frac{\\theta^2}{2}$, approximation harmonique de l'énergie potentielle au voisinage du point le plus bas pour le pendule.",
+        "id": 213
     }
 ];
 
@@ -1049,5 +1123,5 @@ const Quizs = {
     "Superposition de signaux/interférences de deux ondes": quiz_superposition_signaux_interference_ondes,
     "Cinématique du point": quiz_cinematique_point,
     "Loi de la quantité de mouvement": quiz_dynamique_point,
-    "Approche energetique du mouvement - incomplet": quiz_energetique_mvmt
+    "Approche energetique du mouvement": quiz_energetique_mvmt
 };
