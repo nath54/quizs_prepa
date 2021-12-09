@@ -6,12 +6,6 @@ MathJax = {
         displayMath: [
             ['$$', '$$']
         ],
-        chtml: {
-            scale: 1.3
-        },
-        svg: {
-            scale: 1.3
-        },
         macros: {
             bb: ["\\mathbb{#1}", 1],
             cal: ["\\mathcal{#1}", 1],
