@@ -20,7 +20,7 @@ MathJax = {
             cR: "\\cal{R}",
             B: "\\cal{B}",
             bdot: ["\\dot{ \\raise{6pt}{} #1\\ } \\!", 1],
-            ddot: ["\\ddot{ \\raisebox{0pt}[\\dimexpr\\height+#1][\\depth]{#2} }", 2],
+            bddot: ["\\ddot{ \\raise{6pt}{} #1\\ } \\!", 1],
             mto: "\\longmapsto",
             lra: "\\longrightarrow",
             ra: "\\rightarrow",

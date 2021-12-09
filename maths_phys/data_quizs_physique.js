@@ -1115,8 +1115,28 @@ const quiz_complement_osci_mec = [{
 },{
     "type": "texte",
     "titre": "Approximation (locale) harmonique d'un puits de potentiel",
-    "resultat": "On peut assimiler un puits de potentiel quelconque au voisinage de sa position d'équilibre stable à un potentiel harmonique de constante de rappel élastiqeu $K=\\frac{d^2E_p}}{dx^2})_{x_{eq}}$.<br/>C'est une cuvette parabolique et la fonction approximée peut donc se mettre sous la forme harmonique $E_p(\\varepsilon)$ = $+\\frac{1}{2}K\\varepsilon^2$",
+    "resultat": "On peut assimiler un puits de potentiel quelconque au voisinage de sa position d'équilibre stable à un potentiel harmonique de constante de rappel élastiqeu $K=\\frac{d^2E_p}}{dx^2})_{x_{eq}}$.<br/>C'est une cuvette parabolique et la fonction approximée peut donc se mettre sous la forme harmonique $E_p(\\varepsilon)$ = $+\\frac{1}{2}K\\varepsilon^2$ autour de la position stable",
     "id": 216
+},{
+    "type": "texte",
+    "titre": "Linéarisation de l'équation du mouvement",
+    "resultat": "<b>Pour uns système unidimensionnel, l'application de l'approximation harmonique à $E_p$ autour d'une position d'équilibre stable équivaut à la linéarisation de l'équation du mouvement</b><br/><br/>$\\ra$ Le mouvement dans le potentiel approximé harmonique est celui d'un oscillateur harmonique amorti ou non<br/>$\\ra$ Les mouvements de faibles amplitudes au voisinage d'une position d'équilibre stable peuvent donc être assimilés à des mouvements d'oscillations harmoniques centrées sur la position d'équilibre $x_{eq}$ et de pulsation $\\omega_0 = \\sqrt{\\frac{K}{m}}$ où la constante de rappel $K$ est donné par la relation : <br/> $K = \\frac{d^2E_p}{dx^2})x_e$",
+    "id": 217
+},{
+    "type": "texte",
+    "titre": "Elements de cours à retenir pour un oscillateur amorti",
+    "resultat": "$\\ra$ Absence de périodicité $\\iff$ trajectoires de phase ouverte<br/>$\\ra$ Irréversibilité de l'évolution (due aux frottements) $\\iff$ trajectoires de phase non symétriques par rapport à $Ox$<br/>$\\ra$ Evolution de l'oscillateur vers l'état d'équilibre stable $\\iff$ point \"attracteur\" en O quelles que soient les conditions initiales",
+    "id": 218
+},{
+    "type": "texte",
+    "titre": "Oscillateur mécanique",
+    "resultat": "Elongation $x$ ou $z$<br/>Masse $m$<br/>Constante $k$<br/>Vitesse $v$<br/>Frottement $h$<br/><br/><ul><li><b>Oscillateur harmonique</b>$m \\bddot{x} + kx = 0$<br/>$\\bddot{x} + \\omega_0^2 x = 0$<br/>Avec $\\omega_0^2$=$\\frac{k}{m}$<br/>$T = 2\\pi\\sqrt{\\frac{m}{k}}$<br/>Isochronisme des oscillations<br/></li> <li><b>Oscillation libres amorties</b><br/>$m\\bddot{x}$ + $h\\bdot{x}$ + $kx$ = $0$<br/>$\\bddot{x}$ + $\\frac{\\omega_0}{Q}\\bdot{x}$ + $\\omega_0^2x$ = $0$<br/>Avec $Q = \\frac{m\\omega_0}{h}$<br/> Régime critique : $Q=\\frac{1}{2}$</li> <li><b>Oscillations forcées sinusoïdales</b><br/>$m\\bddot{x}$ + $\\lambda\\bdot{x}$ + $kx$ = $F(t)$ = $F \\cos(\\omega t)$<br/>Méthode complexe : ($-m\\omega^2+j\\lambda\\omega$ + $k$)$X_m$ = $F$<br/>Élongation : $x_m$ = $\\frac{F_{/m}}{1 + \\frac{jx}{Q} - x^2}$</li> </ul>",
+    "id": 219
+},{
+    "type": "texte",
+    "titre": "Oscillateur électrique",
+    "resultat": "Charge $q$ (En pratique $u_c = q/C$<br/>Inductance $L$<br/>$1/C$<br/>Intensité $i$<br/>Résistance $R$<br/><br/><ul><li><b>Oscillateur harmonique</b><br/>$L\\bddot{q}$ + $\\frac{q}{C}$ = $0$<br/>En pratique $L\\bddot{u_c}$ + $\\frac{u_c}{C}$ = $0$<br/>$\\bddot{u_c}$ + $\\omega_0^2u_c$ = $0$<br/>Avec $\\omega_0^2$ = $\\frac{1}{LC}$<br/>$T = 2\\pi\\sqrt{LC}$<br/>Isochronisme des oscillations</li> <li><b>Oscillations libres amorties</b>$L\\bddot{q}$ + $R\\bdot{q}$ + $\\frac{q}{C}$ = $0$<br/>$\\bddot{q}$ + $\\frac{\\omega_0}{Q}\\bdot{q}$ + $\\omega_0^2q$ = $0$<br/>Avec $Q = \\frac{L\\omega_0}{R}$<br/>Régime critique : $Q = \\frac{1}{2}$</li> <li>$L\\bddot{q}$ + $R\\bdot{q}$ + $\\frac{q}{C}$ = $e(t)$ = $E\\cos{\\omega t}$<br/>Méthode complexe <br/> $(-LC\\omega^2$ + $jRC\\omega$ + $1$)$Q_m$ = $CE$<br/>Tension aux bornes de $C$ : <br/>$Q_m$ = $\\frac{CE}{1+\\frac{jx}{Q}-x^2}$<br/>Avec $x = \\omega/\\omega_0$<br/><i>La plupart du temps en électricité, c'est la variable $u_c$ qui est utilisée en pratique et donc attention à la correction dans les analogies</i></li></ul>",
+    "id": 220
 }];
 
 /*
@@ -1128,7 +1148,7 @@ const quiz_complement_osci_mec = [{
         "id": 0
     }
 
-    NEXT ID : 214
+    NEXT ID : 221
 
 */
 
@@ -1140,5 +1160,6 @@ const Quizs = {
     "Superposition de signaux/interférences de deux ondes": quiz_superposition_signaux_interference_ondes,
     "Cinématique du point": quiz_cinematique_point,
     "Loi de la quantité de mouvement": quiz_dynamique_point,
-    "Approche energetique du mouvement": quiz_energetique_mvmt
+    "Approche energetique du mouvement": quiz_energetique_mvmt,
+    "Complements oscillateurs mécaniques": quiz_complement_osci_mec
 };
