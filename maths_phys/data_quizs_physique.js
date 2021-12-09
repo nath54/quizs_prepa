@@ -1102,6 +1102,23 @@ const quiz_energetique_mvmt = [
     }
 ];
 
+const quiz_complement_osci_mec = [{
+    "type": "definition",
+    "titre": "Puit de potentiel",
+    "resultat": "Un puit de potentiel désigne le voisinage d'un minimum local d'énergie potentielle",
+    "id": 214
+},{
+    "type": "definition",
+    "titre": "Puit de potentiel harmonique",
+    "resultat": "De façon générale, un oscillateur harmonique à un degré de liberté $X$ est un système physique vérifiant l'équation différentielle $\\bddot{X} + \\omega_0X = 0$, $\\omega_0$ étant la pulsation propre de l'oscillateur (en radian par seconde) et $X$ étant un paramètre décrivant l'oscillateur.<br/>$\\ra$ Il évolue dans un puits de potentiel harmonique de la forme $E_p(X)$ = $\\frac{1}{2}kX^2$",
+    "id": 215
+},{
+    "type": "texte",
+    "titre": "Approximation (locale) harmonique d'un puits de potentiel",
+    "resultat": "On peut assimiler un puits de potentiel quelconque au voisinage de sa position d'équilibre stable à un potentiel harmonique de constante de rappel élastiqeu $K=\\frac{d^2E_p}}{dx^2})_{x_{eq}}$.<br/>C'est une cuvette parabolique et la fonction approximée peut donc se mettre sous la forme harmonique $E_p(\\varepsilon)$ = $+\\frac{1}{2}K\\varepsilon^2$",
+    "id": 216
+}];
+
 /*
 
     ,{
@@ -1111,7 +1128,7 @@ const quiz_energetique_mvmt = [
         "id": 0
     }
 
-    NEXT ID : 196
+    NEXT ID : 214
 
 */
 
