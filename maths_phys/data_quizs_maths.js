@@ -1132,7 +1132,7 @@ const quiz_nb_complexes = [{
 }, {
     "type": "proposition",
     "titre": "Interprétation complexe des transformations du plan",
-    "hypotheses": "Soientt $\\vec{u}$ un vecteur du plan d'affixe $z_u$, $A$ un point du pla, d'affixe $z_A$, $\\theta$ et $\\lambda$ des réels, et $D$ une droite passant par le point $A$ et de vecteur directeur $\\vec{u}$",
+    "hypotheses": "Soientt $\\vec{u}$ un vecteur du plan d'affixe $z_u$, $A$ un point du plan, d'affixe $z_A$, $\\theta$ et $\\lambda$ des réels, et $D$ une droite passant par le point $A$ et de vecteur directeur $\\vec{u}$",
     "resultat": "<ol><li>La translation de vecteur $\\vec{u}$ correspond dans $\\C$ à la fonction $z \\rightarrow z + z_u$</li> <li>La rotation de centre $A$ et d'angle $\\theta$ (dans le sens trigonométrique, ou direct) correspond dans $\\C$ à la fonction $z \\rightarrow z_A + e^{i\\theta}(z-z_A)$</li> <li>L'homothétie de centre $A$ et de rapport $\\lambda$ correspond dans $\\C$ à la fonction $z \\rightarrow z_A + \\lambda(z-z_A)$</li> <li>La symétrie orthogonale d'axe $D$ (ou reflexion d'axe $D$) est donnée par la fonction $z\\rightarrow z_u^2 (\\ol{z\\ } - \\ol{z_A}) + z_A$</li></ol>",
     "id": 260
 }, {
