@@ -965,7 +965,7 @@ const quiz_nb_complexes = [{
     "type": "definition",
     "titre": "Conjugué d'un nombre complexe",
     "hypotheses": "Soit $z = a+ib$ (avec $(a,b) \\in \\R^2$) un nombre complexe.",
-    "resultat": "Le conjugué de $z$ est le nombre complexe <br/> $\\ol{z\\ } a - ib$",
+    "resultat": "Le conjugué de $z$ est le nombre complexe <br/> $\\ol{z\\ } = a - ib$",
     "id": 123
 }, {
     "type": "propriete",
