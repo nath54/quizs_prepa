@@ -1245,7 +1245,70 @@ const quiz_space = [
     ["liability", "handicap", 971]
 ];
 
-// NEXT FREE ID : 875
+const quiz_genetics = [
+    ["a gene", "un gène", 972],
+    ["a cell", "une cellule", 973],
+    ["stem cells", "les cellules souches", 974],
+    ["stem-cell research", "la recherche sur les cellules souches", 975],
+    ["the human genome", "le génome humain", 976],
+    ["genome mapping", "le génome humain", 977],
+    ["genome mapping", "la cartographie du génome", 978],
+    [
+        ["gene map", "genetic map"], "carte génétique", 979
+    ],
+    ["gene sequence", "séquence génétique", 980],
+    ["sequencing", "le séquencage", 981],
+    ["gene splicing", "l'épissage du gène", 982],
+    ["gene pool", "patrimoine génétique", 983],
+    ["a geneticist", "un généticien", 984],
+    ["eugenics", "l'eugénisme", 985],
+    ["a eugenicist", ["un eugéniste", "un partisan de l'eugénisme"], 986],
+    ["double-helix", "une double hélice", 987],
+    ["DNA", "l'ADN", 988],
+    ["a DNA test", "un test génétique", 989],
+    [
+        [" DNA print", "genetic print"], "une empreinte génétique", 990
+    ],
+    ["DNA analysis", "l'analyse ADN", 991],
+    ["a DNA sample", "un prélèvement d'ADN", 992],
+    [
+        ["genetic make-up", "genetic profile"], "profil génétique", 993
+    ],
+    [
+        ["genetic profiling", "DNA fingerprinting"], "l'analyse de l'empreinte génétique", 994
+    ],
+    ["genetic screening", "le dépistage génétique", 995],
+    ["to be DNA-swabbed", "subir un prélèvement d'ADN", 996],
+    ["convicted", "condamné", 997],
+    ["samples", "échantillon", 998],
+    ["criminal records", "casier judiciaire", 999],
+    ["genetic engineering", ["les manipulations génétiques", "le génie génétique"], 1000],
+    ["transgenic", "transgénique", 1001],
+    ["a genetically modified organism", "un organisme génétiquement modifié", 1002],
+    ["GMOs", "les OGM", 1003],
+    ["GM food", "les aliments contenant des OGM", 1004],
+    ["GM potatoes", "les aliments contenant des OGM", 1005],
+    ["biotech products", "les produits trangéniques", 1006],
+    ["seed", ["la semande", "les graines"], 1007],
+    ["soyabeans", "le soja", 1008],
+    ["rapeseed", "le colza", 1009],
+    [
+        ["maize", "corn"], "le maïs", 1010
+    ],
+    ["wheat", "blé", 1011],
+    ["to be lured", "être trompé", 1012],
+    ["a crop", ["une culture", "une récolte"], 1013],
+    [
+        ["field trials", "crop trials"], "essais sur le terrain", 1014
+    ],
+    ["a GM crop", "une culture OGM", 1015],
+    ["yield", "le rendement", 1016],
+    ["agribusiness", "la filière agroalimentaire", 1017],
+    ["to improve fields", ["augmenter les rendements", "améliorer les rendements"], 1018],
+    ["resistant to disease", "résistant aux maladies", 1019]
+];
+
+// NEXT FREE ID : 972
 
 
 
@@ -1261,6 +1324,7 @@ const Quizs = {
     "the environment": quiz_environment,
     "energy": quiz_energy,
     "space": quiz_space,
+    "genetics (incomplet)": quiz_genetics,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action
