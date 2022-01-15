@@ -1156,7 +1156,7 @@ const quiz_space = [
     ["the aerospace industry", "l'industrie aérospatiale", 899],
     ["a mission to Mars", "une missoin sur Mars", 900],
     ["to explore", "explorer", 901],
-    ["an explorer", "un explorateur", 902]
+    ["an explorer", "un explorateur", 902],
     ["a manned flight", "un vol habité", 903],
     ["a unmanned flight", "un vol inhabité", 904],
     ["a space suit", "une combinaison spatiale", 905],
