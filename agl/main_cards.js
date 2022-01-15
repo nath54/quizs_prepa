@@ -68,7 +68,7 @@ function next_question() {
         card.style.boxShadow = "none";
         window.state = 1;
         // On affiche le score
-        document.getElementById("score").innerHTML = "Score : " + score + " / " + nb_question;
+        document.getElementById("score").innerHTML = "Score : " + score + " / " + nb_question + "    (" + window.questions.length + " restantes)";
         window.nb_question++;
         // On fait attendre un peu avant de pouvoir reveal
         var date = new Date();
