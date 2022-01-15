@@ -1124,6 +1124,127 @@ const quiz_energy = [
     ["a smart meter", "un compteur intelligent", 874]
 ]
 
+const quiz_space = [
+    ["the universe", "l'univers", 875],
+    ["the solar system", "le système solaire", 876],
+    ["a galaxy", "une galaxie", 877],
+    ["outer space", "l'espace", 878],
+    ["a light year", "une année-lumière", 879],
+    ["a planet", "une planète", 880],
+    ["a comet", "une comète", 881],
+    ["an asteroid", "un astéroïde", 882],
+    ["a black hole", "un trou noir", 883],
+    ["a meteorie", "une météorite", 884],
+    ["a monolith", "un monolithe", 885],
+    ["a megalith", "un mégalithe", 886],
+    ["astronomy", "l'astronomie", 887],
+    ["an astronomer", "un astronome", 888],
+    ["a space buff", "un fana de l'espace", 889],
+    [
+        ["NASA", "National Aeronautics and Space Administration"], "la NASA", 890
+    ],
+    [
+        ["the ESA", "the European Space Agency"], "L'Agence spatiale européenne", 891
+    ],
+    ["the conquest of space", "la conquête de l'espace", 892],
+    ["the space age", "l'ère spatiale", 893],
+    ["the space race", "la course dans l'espace", 894],
+    ["a space flight", "un vol dans l'espace", 895],
+    ["astronautics", "l'astronautique", 896],
+    ["avionics", "l'avionique", 897],
+    ["airspace", "l'espace aérien", 898],
+    ["the aerospace industry", "l'industrie aérospatiale", 899],
+    ["a mission to Mars", "une missoin sur Mars", 900],
+    ["to explore", "explorer", 901],
+    ["an explorer", "un explorateur", 902]
+    ["a manned flight", "un vol habité", 903],
+    ["a unmanned flight", "un vol inhabité", 904],
+    ["a space suit", "une combinaison spatiale", 905],
+    ["a space helmet", "un casque d'astronaute", 906],
+    ["a crew", "un équipage", 907],
+    ["a rocket", "une fusée", 908],
+    ["a retrorocket", "une rétrofusée", 909],
+    ["a telescope", "un téléscope", 910],
+    ["a probe", "une sonde", 911],
+    [
+        ["a spaceship, a rocket ship", "spacecraft"], "un vaisseau spatial", 912
+    ],
+    ["fuel", "le carburant", 913],
+    ["a shuttle", "une navette", 914],
+    ["a space station", "une station spatiale", 915],
+    ["a lander", "un véhicule spatial", 916],
+    ["a lunar rover", "un véhicule lunaire", 917],
+    ["to launch", "lancer", 918],
+    ["to blast off", "être mis à feux", 919],
+    ["a satellite launcher", "un lanceur de satellites", 920],
+    ["a launch pad", ["une rampe de lancement", "un pas de tir", 921]],
+    ["the countdown", "le compte à rebours", 922],
+    ["lift-off", "l'envol", 923],
+    ["an engine", "un moteur", 924],
+    ["a rocket engine", ["propulseur de fusée", "moteur-fusée"], 925],
+    ["to propel", "propulser", 926],
+    ["propellant", ["le combustible pour fusée", "le propergol"], 927],
+    ["rocket fuel", "kérosène (de fusée)", 928],
+    [
+        ["a launch vehicle", "a booster", "a booster rocket"], "une fusée de lancement", 929
+    ],
+    ["a space rocket", "une fusée interplanétaire", 930],
+    ["a multi-stage rocket", "une fusée à étages", 931],
+    ["an airlock", "un sas", 932],
+    ["a missile", "un missile", 933],
+    ["a communication satellite", "un satellite de télécommunication", 934],
+    ["a weather satellite", "un satellite météorologique", 935],
+    ["a surveillance satellite", "un satellite espion", 936],
+    ["remote-controlled", "télécommandé", 937],
+    ["to be in orbit", "être en orbite", 938],
+    ["to go into orbit", "se mettre en orbite", 939],
+    ["to put a satellite into orbit", ["mettre un satellite en orbite", "placer un satellite en orbite"], 940],
+    [
+        ["to land", "to touch down"], "atterir", 941
+    ],
+    ["touchdown", ["atterissage", "amerissage", "alunissage"], 942],
+    ["to land on the moon", "alunir", 943],
+    ["to splash down", "amerrir", 944],
+    ["splashdown", "amerissage", 945],
+    [
+        ["weightlessness", "zero gravity"], "l'apesanteur", 946
+    ],
+    ["microgravity", "la micro-gravité", 947],
+    ["space tourism", "le tourisme dans l'espace", 948],
+    [
+        ["space research", "rocket research"], "recherches aérospatiales", 949
+    ],
+    ["a space lab", "un laboratoire", 950],
+    ["space science", "la spatiologie", 951],
+    ["a spin-off", "une retombée", 952],
+    [
+        ["satnav", "global positionning system", "GPS"], "le GPS", 953
+    ],
+    ["a flying saucer", "une soucoupe volante", 954],
+    [
+        ["an unidentified flying object", "a UFO"], "un OVNI", 955
+    ],
+    [
+        ["an alien", "an alien being"], "un extra-terrestre", 956
+    ],
+    ["a Martian", "un martien", 957],
+    ["to ask for the moon", "demander la lune", 958],
+    ["to promise the moon", "promettre la lune", 959],
+    ["to shoot for the moon", "viser très haut", 960],
+    ["to be over the moon", ["être aux anges", "se croire au paradis"], 961],
+    ["to bay at the moon", "hurler à la lune", 962],
+    ["once in a blue moon", "tous les trente-six du mois", 963],
+    ["it was thrown together", "créé à la va-vite"],
+    ["impetus", "élan", 964],
+    ["journeyed", "voyagé", 965],
+    ["trainee astronaut", "astronaute stagiaire", 966],
+    ["a facility", "une installation", 967],
+    ["a byword", "un synonyme", 968],
+    ["to grasp", "saisir", 969],
+    ["humbling", "humiliant", 970],
+    ["liability", "handicap", 971],
+];
+
 // NEXT FREE ID : 875
 
 
@@ -1139,6 +1260,7 @@ const Quizs = {
     "climate change": quiz_climate_change,
     "the environment": quiz_environment,
     "energy": quiz_energy,
+    "space": quiz_space,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action
