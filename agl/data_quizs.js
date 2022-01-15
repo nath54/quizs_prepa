@@ -1242,7 +1242,7 @@ const quiz_space = [
     ["a byword", "un synonyme", 968],
     ["to grasp", "saisir", 969],
     ["humbling", "humiliant", 970],
-    ["liability", "handicap", 971],
+    ["liability", "handicap", 971]
 ];
 
 // NEXT FREE ID : 875
