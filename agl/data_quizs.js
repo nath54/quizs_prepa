@@ -1305,10 +1305,164 @@ const quiz_genetics = [
     ["yield", "le rendement", 1016],
     ["agribusiness", "la filière agroalimentaire", 1017],
     ["to improve fields", ["augmenter les rendements", "améliorer les rendements"], 1018],
-    ["resistant to disease", "résistant aux maladies", 1019]
+    ["resistant to disease", "résistant aux maladies", 1019],
+    ["insecticide", "insecticide", 1020],
+    ["pesticide", "pesticide", 1021],
+    ["herbicide", "herbicide", 1022],
+    ["to pollinate", "polliniser", 1023],
+    ["cross-pollination", "la pollinisation croisée", 1024],
+    ["to contaminate", "contaminer", 1025],
+    ["contamination", "la contamination", 1026],
+    ["a genetic disease", "une maladie génétique", 1027],
+    ["a faulty gene", "un gène défectueux", 1028],
+    ["a missing gene", "un gène manquant", 1029],
+    ["hereditary", "héréditaire", 1030],
+    ["an X/Y chromosome", "un chromosome X/Y", 1031],
+    ["cloning", "le clonage", 1032],
+    ["genetic counselling", "le conseil génétique", 1033],
+    ["a pharmaceutical company", "une companie pharmaceutique", 1034],
+    ["gene therapy", "la thérapie génétique", 1035],
+    ["genetic treatment", "traitement génétique", 1036],
+    ["for therapeutic purposes", "à des fins thérapeutiques", 1037],
+    ["pharming", "l'agriculture au service de la médecine", 1038],
+    ["to set up", "créer", 1039],
+    ["to play God", "jouer à l'apprenti-sorcier", 1040],
+    ["to tamper with nature", "toucher à la nature", 1041],
+    [
+        ["the precautionary principle", "the safety-first principle"], "le principe de précaution", 1042
+    ],
+    ["a label", "une étiquette", 1043],
+    ["labelling", "l'étiquetage", 1044],
+    ["to warn", "avertir", 1045],
+    ["a warning", "un avertissement", 1046],
+    ["tinkering", "tripatouillage", 1047],
+    ["traceable", "dont l'origine peut être établie", 1048],
+    ["traceability", "la traçabilité", 1049],
+    ["long-term effects", "les effets à long terme", 1050],
+    ["the food chain", "la chaîne alimentaire", 1051],
+    ["food security", "la sécurité alimentaire", 1052],
+    ["the pro-GM lobby", "le lobby OGM", 1053],
+    ["anti-GM activists", "militants contre les OGM", 1054],
+    ["an anti-GM campaign", "une campagne contre les OGM", 1055]
 ];
 
-// NEXT FREE ID : 972
+const quiz_bioethics = [
+    [
+        ["a thorny issue", "a tricky issue", "a sticky issue"],
+        ["un problème épineux", "un problème délicat"], 1056
+    ],
+    ["an ethical issue", "un problème éthique", 1057],
+    ["unethical", ["moralement contestable", "contraire à l'éthique"], 1058],
+    [
+        ["code of ethics", "code of conduct"],
+        ["déontologie", "code de conduite"], 1059
+    ],
+    [
+        ["the sacredness of life", "the sanctity of life"], "le caractère sacré de la vie", 1060
+    ],
+    ["human dignity", "la dignité humaine", 1061],
+    ["a value", "une valeur", 1062],
+    ["a controversy", "une polémique", 1063],
+    [
+        ["a controversial issue", "a contentious issue"], "un problème controversé", 1064
+    ],
+    ["a hot button issue", ["un problème sensible", "un problème qui suscite de vives réactions"], 1065],
+    ["to spark a debate", "proboquer un débat", 1066],
+    ["a heated debate", ["un débat enflammé", "un débat passionné"], 1067],
+    [
+        ["to be faced with a dilemma", "to be confronted with a dilemma"], "être face à un dilemme", 1068
+    ],
+    ["a permissive society", "une société permissive", 1069],
+    ["to cause an outcry", ["susciter un tollé", "suciter une levée de boucliers"], 1070],
+    ["the decision caused an uproar", "la décisoin a provoqué une tempête de protestations", 1071],
+    ["the news caused a furore", "la nouvelle a fait scandale", 1072],
+    ["to cause public outrage", "scandaliser l'opinion", 1073],
+    ["a concern", "une préoccupation", 1074],
+    ["to be a cause for concern", "être source d'inquiétude", 1075],
+    ["to outlaw questionable practices", "interdire des pratiques contestables", 1076],
+    ["a cell", "une cellule", 1077],
+    ["a nucleus", "un noyau", 1078],
+    ["a skin cell", "une cellule de peau", 1079],
+    ["stem cells", "les cellules souches", 1080],
+    ["stem-cell research", "la recherche sur les cellules souches", 1081],
+    ["funding", "fonds", 1082],
+    ["boundary", "frontière", 1083],
+    [
+        ["infertile", "sterile"],
+        ["stérile", "infertile"], 1084
+    ],
+    [
+        ["infertility", "sterility"], "la stérilité", 1085
+    ],
+    ["fertility treatment", "traitement pour la fertilité", 1086],
+    ["assisted reproduction", ["aide à la procréation", "procréation médicalement assistée", "PMA"], 1087],
+    ["conception", "conception", 1088],
+    ["to fertilize an egg", "fertiliser un ovule", 1089],
+    ["an oocyte", "un ovocyte", 1090],
+    [
+        ["sperm", "semen"], "le sperme", 1091
+    ],
+    ["sperm count", "nombre de spermatozoïde", 1092],
+    ["to donate an egg", "faire don d'un ovule", 1093],
+    ["to donate sperm", "faire don de sperme", 1094],
+    [
+        ["a semen donor", "a sperm donor"], "un donneur de sperme", 1095
+    ],
+    ["an egg donor", "une donneuse d'ovule", 1096],
+    ["an embryo", "un embryon", 1097],
+    ["to freeze an embryo", "congeler un embryon", 1098],
+    ["to freeze a sperm", "congeler du sperme", 1099],
+    [
+        ["a foetus", "a fetus"], "un foetus", 1100
+    ],
+    ["artificial insemination", "l'insémination artificielle", 1101],
+    [
+        ["in vitro fertilisation", "IVF"],
+        ["la fécondation in vitro", "FIV"], 1102
+    ],
+    ["a test tube baby", "un bébé-éprouvette", 1103],
+    [
+        ["womb", "uterus"], "l'utérus", 1104
+    ],
+    ["to implant an egg", "implanter un ovule", 1105],
+    ["to implant an embryo", "implanter un embryon", 1106],
+    [
+        ["a surrogate mother", "a tummy mummy"], "une mère porteuse", 1107
+    ],
+    ["surrogacy", ["gestation pour autrui", "GPA", "maternité de substitution"], 1108],
+    ["to give birth to a girl", "donner naissance à une fille", 1109],
+    ["to give birth to a boy", "donner naissance à un garçon", 1110],
+    ["a genetic mother", "une mère génétique", 1111],
+    ["organ donation", "le don d'organe", 1112],
+    ["an organ donor", "un donneur d'organe", 1113],
+    ["organ removal", "le prélèvement d'organe", 1114],
+    ["organ transplant", ["la greffe d'organe", "la transplantation d'organe"], 1115],
+    ["a recipient", ["un receveur", "une receveuse"], 1116],
+    ["to implant an organ", "implanter un organe", 1117],
+    ["organ rejection", "le rejet d'organe", 1118],
+    ["body parts", "organes et parties du corps humain", 1119],
+    ["the sale of body parts", "la marchandisation du corps humain", 1120],
+    ["medical tourism", "le tourisme médical", 1121],
+    ["cattle", "bovins", 1122],
+    ["mammal", "mammifère", 1123],
+    ["a clone", "un clone", 1124],
+    ["cloning", "le clonage", 1125],
+    ["a cloned egg", "un oeuf cloné", 1126],
+    ["human cloning", "le clonage des êtres humains", 1127],
+    ["therapeutic cloning", "le clonage thérapeutique", 1128],
+    ["a saviour sibling", "un bébé-médicament", 1129],
+    ["reproductive cloning", "le clonage reproductif", 1130],
+    ["to ensure", "garantir", 1131],
+    ["eugenics", "l'eugénisme", 1132],
+    ["a eugenicist", ["un eugéniste", "un partisan de l'eugénisme"], 1133],
+    ["a designer baby", "un bébé sur mesure", 1134],
+    ["baby-shoppers", "parents qui choisissent les caractéristiques de leur futur bébé", 1135],
+    ["to tamper with nature", ["porter atteinte à la nature", "toucher  à la nature"], 1136],
+    ["to play God", "jouer à l'apprenti sorcier", 1137],
+    ["to be on a slippery slope", "être sur une pente dangereuse", 1138]
+];
+
+// NEXT FREE ID : 1056
 
 
 
@@ -1324,7 +1478,8 @@ const Quizs = {
     "the environment": quiz_environment,
     "energy": quiz_energy,
     "space": quiz_space,
-    "genetics (incomplet)": quiz_genetics,
+    "genetics": quiz_genetics,
+    "bioethics": quiz_bioethics,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action
