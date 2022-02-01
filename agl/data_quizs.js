@@ -1251,7 +1251,6 @@ const quiz_genetics = [
     ["stem cells", "les cellules souches", 974],
     ["stem-cell research", "la recherche sur les cellules souches", 975],
     ["the human genome", "le génome humain", 976],
-    ["genome mapping", "le génome humain", 977],
     ["genome mapping", "la cartographie du génome", 978],
     [
         ["gene map", "genetic map"], "carte génétique", 979
