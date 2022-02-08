@@ -1397,7 +1397,7 @@ const quiz_bioethics = [
     ["assisted reproduction", ["aide à la procréation", "procréation médicalement assistée", "PMA"], 1087],
     ["conception", "conception", 1088],
     ["to fertilize an egg", "fertiliser un ovule", 1089],
-    ["an oocyte", "un ovocyte", 1090],
+    ["an ovocyte", "un ovocyte", 1090],
     [
         ["sperm", "semen"], "le sperme", 1091
     ],
