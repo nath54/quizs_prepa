@@ -1742,6 +1742,34 @@ const quiz_solidarity = [
     ["debt-rescheduling", "le ré-échelonnement de la dette", 1242],
     ["fair trade", "le commerce équitable", 1243],
     ["ethical investment", "investissement éthique", 1244],
+    ["philantropy", "la philantropie", 1245],
+    ["a philantropist", "un philantrope", 1246],
+    ["munificence", "la munificence", 1247],
+    ["to fund a project", "financer un projet", 1248],
+    [
+        ["to support an initiative", "to back an initiative"], "supporter une initiative", 1249
+    ],
+    ["financial backing", "soutien financier", 1250],
+    ["a sponsor", ["un parrain", "un mécène", "un sponsor"], 1251],
+    ["to sponsor", ["sponsoriser", "parrainer"], 1252],
+    ["corporate sponsorship", "le mécénat d'entreprise", 1253],
+    [
+        ["corporate social responsibility", "CSR"], "la responsabilité sociale d'entreprise", 1254
+    ],
+    ["social entrepreneurship", "entreprenariat social", 1255],
+    ["to endow", ["doter", "fonder"], 1256],
+    ["an endowment", ["une dotation", "une fondation"], 1257],
+    ["a foundation", "une fondation", 1258],
+    ["estate tax", "les droits de succession", 1259],
+    ["a tax break", "une réduction d'impôts", 1260],
+    ["a tax credit", "un crédit d'impôts", 1261],
+    ["to give somebody a leg up", "faire la courte échelle à quelqu'un", 1262],
+    [
+        ["to give somebody a hand", "to lend somebody a hand"], "donner un coup de main à quelqu'un", 1263
+    ],
+    ["Charity begins at home", "charité bien ordonnée commence par soi même", 1264],
+    ["to pledge solidarity with somebody", "assurer quelqu'un de sa solidarité", 1265],
+    ["to stand shoulder to shoulder", "être solidaire", 1266]
 ];
 
 // NEXT FREE ID : 1245
@@ -1763,6 +1791,7 @@ const Quizs = {
     "genetics": quiz_genetics,
     "bioethics": quiz_bioethics,
     "democracy": quiz_democracy,
+    "solidarity": quiz_solidarity,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action
