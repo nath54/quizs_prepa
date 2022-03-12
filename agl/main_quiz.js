@@ -169,9 +169,9 @@ function getPercentage(lst) {
 }
 
 function traiteText(txt) {
-    ntxt = txt
-    ntxt = txt.toLowerCase();
-    replacements = {
+    var ntxt = txt
+    var ntxt = txt.toLowerCase();
+    const replacements = {
         "é": "e",
         "è": "e",
         "ê": "e",
@@ -231,10 +231,18 @@ function traiteText(txt) {
         "µ": "",
         "’": ""
     }
+    const rem_deb = ["to ", "the ", "a ", "an ", "le ", "la ", "les ", "l'", "un ", "une"];
+    // Debs
+    for (d of rem_deb) {
+        if (ntxt.startsWith(d)) {
+            ntxt = ntx.substring(d.length);
+            break;
+        }
+    }
+    // Replacements
     for (k of Object.keys(replacements)) {
         while (ntxt.includes(k)) { ntxt = ntxt.replace(k, replacements[k]); }
     }
-
     return ntxt
 }
 
