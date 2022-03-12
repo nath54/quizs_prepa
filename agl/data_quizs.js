@@ -1475,7 +1475,7 @@ const quiz_democracy = [
     ["totalitarian", "totalitaire", 1065],
     ["totalitarianism", "le totalitarisme", 1066],
     ["a strongman", "un homme fort", 1067],
-    ["a tyrant", "un tirant", 1068]
+    ["a tyrant", "un tirant", 1068],
     ["an autocrat", "un autocrate", 1069],
     ["a despot", "un despote", 1070],
     ["an enlightened despot", "un despote éclairé", 1071],
@@ -1599,11 +1599,10 @@ const quiz_democracy = [
     ],
     ["to quell the protests", ["réprimer la contestation", "étouffer la contestation"], 1160],
     [
-        ["crackdown", "clampdown"],
-        ["des mesures de répression"], 1161
+        ["crackdown", "clampdown"], "des mesures de répression", 1161
     ],
     ["to send people to prison", "mettre les gens en prison", 1162],
-    ["to beat somebody up", "passer quelqu'un à tabac", 11630]
+    ["to beat somebody up", "passer quelqu'un à tabac", 1163]
 ];
 
 // NEXT FREE ID : 1056
