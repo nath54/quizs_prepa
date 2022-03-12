@@ -1604,7 +1604,147 @@ const quiz_democracy = [
     ["to beat somebody up", "passer quelqu'un à tabac", 1163]
 ];
 
-// NEXT FREE ID : 1056
+const quiz_solidarity = [
+    ["from the cradle to the grave", "du berceau à la tombe", 1164],
+    ["welfare", ["l'aide sociale", "les assurances sociales", "les prestations sociales", "le bien-être"], 1165],
+    ["the welfare state", "l'Etat-providence", 1166],
+    [
+        ["social insurance", "social protection"], "les protections sociales", 1167
+    ],
+    [
+        ["welfare rights", "welfare entitlements", "welfare payments"], "les allocations sociales", 1168
+    ],
+    [
+        ["a welfare worker", "a social worker"], "une assistante sociale", 1169
+    ],
+    ["to be entitled to something", "une assistante sociale", 1170],
+    ["to be entitled to something", "avoir droit à quelque chose", 1171],
+    ["social justice", "la justice sociale", 1172],
+    [
+        ["a benefit", "an allowance"],
+        ["une allocation", "une prestation sociale"], 1173
+    ],
+    ["unemployment benefit", "allocation chômage", 1174],
+    ["child benefit", "allocation familiale", 1175],
+    ["housing benefit", "allocation logement", 1176],
+    ["social benefits", "les acquis sociaux", 1177],
+    ["to claim benefits", "demander des prestations sociales", 1178],
+    ["a benefit claimant", "un demandeur de prestations sociales", 1179],
+    ["health insurance scheme", "l'assurance maladie", 1180],
+    [
+        ["health coverage", "medical coverage"], "la couverture médicale", 1181
+    ],
+    ["universal health coverage", ["la CMU", "la couverture médicale universelle"], 1182],
+    [
+        ["social security cover", "social security coverage"], "la couverture sociale", 1183
+    ],
+    ["a means-tested benefits", "une allocation soumise à des conditions de revenu", 1184],
+    ["to be on the dole", "recevoir des allocations chômages", 1185],
+    ["to contribute", "cotiser", 1186],
+    ["social contributions", "les cotisations sociales", 1187],
+    ["redistribution", "la redistribution", 1188],
+    ["income tax", "l'impôt sur le revenu", 1189],
+    ["the pension system", "le système de retraites", 1190],
+    [
+        ["the state pension-system", "the state pension-scheme"], "le régime d'assurance vieillesse", 1191
+    ],
+    ["to receive a pension", "toucher une retraite", 1192],
+    [
+        ["a pensioner", "an old age pensionner", "a retiree", "an OAP"], "un retraité", 1192
+    ],
+    ["to retire", "prendre sa retraite", 1193],
+    ["retirement", "la retraite", 1194],
+    ["retirement age", "l'âge de la retraite", 1195],
+    ["retired people", "les retraités", 1196],
+    ["a pension fund", "un fonds de pension", 1197],
+    ["an ageing population", "une population vieillissante", 1198],
+    ["the elderly", "les personnes agées", 1199],
+    ["numbing", "l'égourdissement", 1200],
+    ["the health-care system", "le système de santé", 1201],
+    [
+        ["health care", "medical treatment"],
+        ["les soins", "les traitements médicaux"], 1202
+    ],
+    ["health spending", "les dépenses de santé", 1203],
+    ["life expectancy", "l'espérance de vie", 1204],
+    ["to live to be hundred", "vivre jusqu'à cent ans", 1205],
+    ["to be on welfare", ["toucher des prestations sociales", "recevoir l'aide sociale"], 1206],
+    ["to live on welfare", "vivre des prestations sociales", 1207],
+    [
+        ["people living on state handouts", "welfare scroungers"], "les assistés", 1208
+    ],
+    ["welfare dependency", "l'assistanat", 1209],
+    ["a benefit cheat", "un fraudeur abusant du système d'allocations", 1210],
+    ["benefit fraud", "la fraude aux allocations", 1211],
+    ["a freeloader", ["un profiteur", "un parasite"], 1212],
+    [
+        ["parasitism", "freeloading"],
+        ["un profiteur", "un parasite"], 1213
+    ],
+    ["charity", ["la charité", "les oeuvres caricatives"], 1214],
+    [
+        ["a charity", "a charitable organization"], "une organistion caricative", 1215
+    ],
+    [
+        ["a non-profit making organization", "a not-for-profit organization"],
+        ["une organisation à but non lucratif"], 1216
+    ],
+    ["a charitable cause", ["une bonne cause", "une cause humanitaire"], 1217],
+    [
+        ["a volunteer", "a voluntary worker"], "un bénévole", 1218
+    ],
+    [
+        ["volunteering", "voluntary work"], "le bénévolat", 1219
+    ],
+    [
+        ["an NGO", "a non-governmental organization"],
+        ["une ONE", "une organisation non-gouvernementale"], 1220
+    ],
+    [
+        ["to show", "to express solidarity with somebody", "to support somebody", "to stand by somebody"],
+        ["être solidaire avec quelqu'un", "se solidariser avec quelqu'un"], 1221
+    ],
+    ["to dissociate oneself from somebody", "se désolidariser de quelqu'un", 1222],
+    [
+        ["to give away", "to donate money"],
+        ["faire un don", "donner de l'argent"], 1223
+    ],
+    ["to make a donation", "faire une donation", 1224],
+    ["a benefactor", "un bienfaiteur", 1225],
+    ["a recipient", "un bénéficiaire", 1226],
+    [
+        ["to pledge to give money", "to promise to give money"], "promettre de donner de l'argent", 1227
+    ],
+    ["generous", "généreux", 1228],
+    ["generosity", "la générosité", 1229],
+    ["disinterested", "désintéressé", 1230],
+    ["selfish", "égoïste", 1231],
+    ["selfishness", "l'égoïsme", 1232],
+    [
+        ["humanitarian aid", "humanitarian assistance"],
+        ["l'aide humanitaire", "l'assistance humanitaire"], 1233
+    ],
+    [
+        ["emergency aid", "emergency assistance"], "les secours d'urgence", 1234
+    ],
+    ["food aid", "l'aide alimentaire", 1235],
+    ["development aid", "l'aide au développement", 1236],
+    [
+        ["a relief agency", "a relief organization"], "une organisation humanitaire", 1237
+    ],
+    ["a relief worker", "un travailleur humanitaire", 1238],
+    ["to hand out blankets", "distribuer des couvertures", 1239],
+    ["debt relief", "l'allègement des dettes", 1240],
+    [
+        ["to cancel debts", "to write off debts"],
+        ["effacer des dettes", "annuler des dettes"], 1241
+    ],
+    ["debt-rescheduling", "le ré-échelonnement de la dette", 1242],
+    ["fair trade", "le commerce équitable", 1243],
+    ["ethical investment", "investissement éthique", 1244],
+];
+
+// NEXT FREE ID : 1245
 
 
 
