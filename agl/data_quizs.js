@@ -1462,6 +1462,150 @@ const quiz_bioethics = [
     ["to be on a slippery slope", "être sur une pente dangereuse", 1138]
 ];
 
+const quiz_democracy = [
+    ["monarchy", "la monarchie", 1056],
+    ["a monarch by divine right", "un monarque de droit divin", 1057],
+    ["sovereign", "souverain", 1058],
+    ["aristocracy", "l'aristocracie", 1059],
+    ["oligarchy", "oligarchie", 1060],
+    ["a dictator", "un dictateur", 1061],
+    ["dictatorship", "la dictature", 1062],
+    ["authoritarian", "autoritaire", 1063],
+    ["authoritarianism", "l'autoritarisme", 1064],
+    ["totalitarian", "totalitaire", 1065],
+    ["totalitarianism", "le totalitarisme", 1066],
+    ["a strongman", "un homme fort", 1067],
+    ["a tyrant", "un tirant", 1068]
+    ["an autocrat", "un autocrate", 1069],
+    ["a despot", "un despote", 1070],
+    ["an enlightened despot", "un despote éclairé", 1071],
+    ["to set out", "énoncer", 1072],
+    ["a military junta", "une junte militaire", 1073],
+    [
+        ["a coup", "a coup d'état"], "un coup d'Etat", 1074
+    ],
+    ["a regime", "un gouvernement autoritaire", 1075],
+    ["the Vichy regime", "le régime de Vichy", 1076],
+    ["a repressive regime", "un régime répressif", 1077],
+    ["a political system", "un régime politique", 1078],
+    ["to become more democratic", "se démocratiser", 1079],
+    [
+        ["to take power", "to seize power"],
+        ["prendre le pouvoir", "s'emparer du pouvoir"], 1080
+    ],
+    ["to come to power", "arriver au pouvoir", 1081],
+    ["to come into office", ["arriver au pouvoir démocratiquement", "arriver au pouvoir"], 1082],
+    ["to be in power", "être au pouvoir", 1083],
+    [
+        ["to remain in power", "to stay in power"], "rester au pouvoir", 1084
+    ],
+    ["to cling to power", "s'accrocher au pouvoir", 1085],
+    ["good governance", "la bonne gouvernance", 1086],
+    [
+        ["to misrule", "to mismanage"],
+        ["mal administrer", "mal gérer"], 1087
+    ],
+    ["misrule", "mauvaise administration", 1088],
+    ["mismanagement", "mauvaise gestion", 1089],
+    ["to hold a leader to account", "tenir un dirigeant pour responsable", 1090],
+    ["to be accountable to the electorate", "être responsable devant les électeur", 1091],
+    ["accountability", "la responsabilité", 1092],
+    [
+        ["corruption", "sleaze", "bribery"], "la corruption", 1093
+    ],
+    ["corrupt", "corrompu", 1094],
+    ["a bribe", "un pot de vin", 1095],
+    ["to brive somebody", ["acheter", "soudoyer quelqu'un"], 1096],
+    ["misconduct", ["mauvaise conduite", "abus"], 1097],
+    ["motion of no confidence", "motion de censure", 1098],
+    ["the rule of law", ["l'état de droit", "le règne de la loi"], 1099],
+    ["multi-party system", "le multipartisme", 1100],
+    ["single-party system", "le système de parti unique", 1101],
+    ["free and fair elections", "des élections libres et régulières", 1102],
+    [
+        ["vote rigging", "ballot rigging", "electoral fraud"], "la fraude électorale", 1103
+    ],
+    ["the election was rigged", "l'élection était truquée", 1104],
+    ["a political oponent", "un opposant politique", 1105],
+    ["a dissident", "un dissident", 1106],
+    ["to gag the press", "baîlloner la presse", 1107],
+    ["to muzzle the opposition", "museler l'opposition", 1108],
+    ["to declare a state of emergency", "déclarer l'état d'urgence", 1109],
+    ["to trample the constitution", "bafouer la constitution", 1110],
+    ["to censor", "censurer", 1111],
+    ["censorship", "la censure", 1112],
+    ["to block internet access", "bloquer l'accès à internet", 1113],
+    ["to restrict internet access", "restreindre l'accès à internet", 1114],
+    [
+        ["to circumvent censorship", "to bypass censorship"], "contourner la censure", 1115
+    ],
+    ["human rights", "les droits de l'homme", 1116],
+    [
+        ["human rights abuses", "human rights violations"], "des atteintes au droit de l'homme", 1117
+    ],
+    ["a crime against humanity", "un crime contre l'humanité", 1118],
+    [
+        ["the duty to intervene", "the duty to interfere"], "le devoir d'ingérence", 1119
+    ],
+    ["human-rights lobby", "association de défense des droits de l'homme", 1120],
+    ["China's human rights record", "le passé de la Chine en matière de droits de l'homme", 1121],
+    ["discontent", ["mécontentement", "malaise"], 1122],
+    ["to spark unrest", "provoquer des troubles", 1123],
+    ["turmoil", "de l'agitation", 1124],
+    ["an upheaval", "un bouleversement", 1125],
+    ["to stir up trouvle", "formenter des troubles", 1126],
+    ["an insurgent", "un insurgé", 1127],
+    ["an insurgency", "une insurrection", 1128],
+    [
+        ["a demonstration", "a protest march"], "une manifestation", 1129
+    ],
+    [
+        ["a demonstrator", "a protester"], "un manifestant", 1130
+    ],
+    ["to hold a rally", "organiser un rassemblement", 1131],
+    ["to attend a rally", "participer à un rassemblement", 1132],
+    ["a riot", "un émeute", 1133],
+    ["a rioter", ["un émeutier", "un casseur"], 1134],
+    ["riots broke out", "des émeutes on éclaté", 1135],
+    ["anti-riot police", "les CRS", 1136],
+    [
+        ["a petrol bomb", "a cocktail Molotov"], "un cocktail Molotov", 1137
+    ],
+    ["tear gas", "du gaz lacrimogène", 1138],
+    ["a clash", ["un heurt", "un affrontement"], 1139],
+    ["a skirmish", "une échauffourée", 1140],
+    ["to take to the streets", "descendre dans la rue", 1141],
+    ["a plot", "un complot", 1142],
+    ["a plotter", "un comploteur", 1143],
+    ["to revolt", "se révolter", 1144],
+    ["to rebel", "se rebeller", 1145],
+    ["a rebellion", "une rebellion", 1146],
+    ["to defy the authorities", "défier les autorités", 1147],
+    ["an uprising", "un soulèvement", 1148],
+    ["to rise up against", "se soulever contre", 1149],
+    [
+        ["to overthrow a dictator", "to topple a dictator"], "renverser un dictateur", 1150
+    ],
+    ["to oust a dictator", "évincer un dictateur", 1151],
+    ["the overthrow of a dictator", "le renversement d'un dictateur", 1152],
+    ["to depose a ruler", "déposer un dirigeant", 1153],
+    ["to collapse", "s'effondrer", 1154],
+    ["to restore democracy", "restaurer la démocratie", 1155],
+    ["the downfall of a government", "la chute d'un gouvernement", 1156],
+    ["to require", "nécessiter", 1157],
+    ["ruthless repression", "répression brutale", 1158],
+    [
+        ["to put down a rebellion", "to suppress a rebellion"], "réprimer une rébellion", 1159
+    ],
+    ["to quell the protests", ["réprimer la contestation", "étouffer la contestation"], 1160],
+    [
+        ["crackdown", "clampdown"],
+        ["des mesures de répression"], 1161
+    ],
+    ["to send people to prison", "mettre les gens en prison", 1162],
+    ["to beat somebody up", "passer quelqu'un à tabac", 11630]
+];
+
 // NEXT FREE ID : 1056
 
 
@@ -1480,6 +1624,7 @@ const Quizs = {
     "space": quiz_space,
     "genetics": quiz_genetics,
     "bioethics": quiz_bioethics,
+    "democracy": quiz_democracy,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action
