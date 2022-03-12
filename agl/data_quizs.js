@@ -1251,7 +1251,6 @@ const quiz_genetics = [
     ["stem cells", "les cellules souches", 974],
     ["stem-cell research", "la recherche sur les cellules souches", 975],
     ["the human genome", "le génome humain", 976],
-    ["genome mapping", "le génome humain", 977],
     ["genome mapping", "la cartographie du génome", 978],
     [
         ["gene map", "genetic map"], "carte génétique", 979
@@ -1398,7 +1397,7 @@ const quiz_bioethics = [
     ["assisted reproduction", ["aide à la procréation", "procréation médicalement assistée", "PMA"], 1087],
     ["conception", "conception", 1088],
     ["to fertilize an egg", "fertiliser un ovule", 1089],
-    ["an oocyte", "un ovocyte", 1090],
+    ["an ovocyte", "un ovocyte", 1090],
     [
         ["sperm", "semen"], "le sperme", 1091
     ],
