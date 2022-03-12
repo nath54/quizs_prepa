@@ -169,8 +169,8 @@ function getPercentage(lst) {
 }
 
 function traiteText(txt) {
-    var ntxt = txt
-    var ntxt = txt.toLowerCase();
+    ntxt = txt
+    ntxt = txt.toLowerCase();
     const replacements = {
         "é": "e",
         "è": "e",
@@ -235,7 +235,7 @@ function traiteText(txt) {
     // Debs
     for (d of rem_deb) {
         if (ntxt.startsWith(d)) {
-            ntxt = ntx.substring(d.length);
+            ntxt = ntxt.substring(d.length);
             break;
         }
     }
