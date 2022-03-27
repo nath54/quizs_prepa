@@ -1772,7 +1772,176 @@ const quiz_solidarity = [
     ["to stand shoulder to shoulder", "être solidaire", 1266]
 ];
 
-// NEXT FREE ID : 1245
+const quiz_media = [
+    [
+        ["the press", "the print media"], "la presse", 1267
+    ],
+    [
+        ["a newspaper", "a paper"], "un journal", 1268
+    ],
+    ["a glossy magazine", "un magazine de luxe", 1269],
+    ["a journal", "un magazine", 1270],
+    [
+        ["a journalist", "a newspaperman", "a newsman"], "un journaliste", 1271
+    ],
+    [
+        ["a commentator", "a news analyst"], "un commentateur", 1272
+    ],
+    ["a columnist", "un chroniqueur", 1273],
+    ["a correspondent", "un correspondant", 1274],
+    ["a reporter", "un reporter", 1275]
+    ["to report on something", "faire un reportage sur quelque chose", 1276],
+    ["a report", "un reportage", 1277],
+    ["to inform", "informer", 1278],
+    ["to investigate", "mener une enquête", 1279],
+    ["investigative journalism", "le journalisme d'investigation", 1280],
+    ["to cover an event", "couvrir un événement", 1281],
+    ["media coverage", "la couverture médiatique", 1282],
+    ["broadsheet", "grand format", 1283],
+    ["the gutter press", ["la presse à sensations", "la presse à scandales"], 1284],
+    [
+        ["a news agency", "a press agency"], "une agence de presse", 1285
+    ],
+    ["a news-stand", "un kiosque à journaux", 1286],
+    ["a newsagent", "un marchand de journaux", 1287],
+    ["a newspaper proprietor", "un propriétaire de journal", 1288],
+    [
+        ["a press baron", "a press tycoon", "a press magnate"], "un magnat de la presse", 1289
+    ],
+    [
+        ["a media mogul", "a media magnate"], "un grand patron des médias", 1290
+    ],
+    ["to publish", "publier", 1291],
+    ["to print", "imprimer", 1292],
+    ["media hype", "le battage médiatique", 1293],
+    ["journalese", "le jargon des journalistes", 1294],
+    ["an evening paper", "un journal du soir", 1295],
+    ["a morning paper", "un journal du matin", 1296],
+    ["a Sunday paper", "un journal dimanche", 1297],
+    ["daily", "quotidien", 1298],
+    ["weekly", "hebdomadaire", 1299],
+    ["monthly", "mensuel", 1300],
+    ["the headlines", "les gros titres", 1301],
+    ["to hit the headlines", "faire les gros titres", 1302],
+    ["the front-page", "la première page", 1303],
+    [
+        ["an editorial", "a leading article", "a leader"], "un éditorial", 1304
+    ],
+    [
+        ["a news editor", "the chief editor"], "rédacteur en chef", 1305
+    ],
+    [
+        ["the business section", "the business pages"], "les pages affaires", 1306
+    ],
+    ["a book review", "une critique de livre", 1307],
+    ["a film review", "une critique de film", 1308],
+    ["a literary critic", "un critique littéraire", 1309],
+    ["a film critic", "un critique cinématographique", 1310],
+    [
+        ["small ads", "personnal ads"], "les petits annonces", 1311
+    ],
+    ["agony column", "le courrier du coeur", 1312],
+    ["an agony aunt", "une rédactrice de la rubrique du courrier du coeur", 1313],
+    [
+        ["a graph", "a chart"],
+        ["un graphique", "un diagramme"], 1314
+    ],
+    ["a pie chart", ["un diagramme circulaire", "un camembert"], 1315],
+    ["a cartoon", "un dessin humoristique", 1316],
+    ["a caption", "une légende", 1317],
+    ["the comics", "les bandes dessinées", 1318],
+    ["bribery", "corrpution", 1319],
+    [
+        ["to subscribe to a magazine", "to take out a subscription to a magazine"], "s'abonner à un magazine", 1320
+    ],
+    ["a subscriber", "un abonné", 1321],
+    ["readership", ["le lectorat", "le nombre de lecteurs"], 1322],
+    ["circulation", "le tirage", 1323],
+    ["a copy", "un exemplaire", 1324],
+    ["an issue", "un numéro", 1325],
+    ["a newspaper cutting", "une coupure de journal", 1326],
+    [
+        ["current events", "current affairs"], "l'actualité", 1327
+    ],
+    ["a news item", "une information", 1328],
+    ["a topical issue", "un sujet d'actualité", 1329],
+    ["a scoop", "un scoop", 1330],
+    ["to reveal", "révéler", 1331],
+    ["to expose", "dénoncer", 1332],
+    ["a leak", "une fuite", 1333],
+    ["to check one's sources", "vérifier ses sources", 1334],
+    ["to disclose one's sources", "révéler ses sources", 1335],
+    ["reliable", "fiable", 1336],
+    ["unreliable", ["peu fiable", "sujet à cautions"], 1337],
+    [
+        ["biased", "prejudiced", "partial"], "partial", 1338
+    ],
+    [
+        ["unbiased", "impartial"], "impartial", 1339
+    ],
+    ["a draft", "une version", 1340],
+    ["steeply", "fortement", 1341],
+    ["go to great lengths", "se donnent beaucoup de mal", 1342],
+    ["broadcast media", "radio et télévision", 1343],
+    ["satellite television", "la télévision par satellite", 1344],
+    ["cable television", "la télévision par câble", 1345],
+    [
+        ["a TV channel", "a TV network"], "une chaîne de télévision", 1346
+    ],
+    [
+        ["a programe", "a program"], "une émission", 1347
+    ],
+    ["prime time", "les heures de grande écoute", 1348],
+    ["a TV show", "un émission de télé", 1349],
+    [
+        ["a talk show", "a chat show"], "un débat", 1350
+    ],
+    [
+        ["a host", "an anchorman"],
+        ["un présentateur d'émission télévisée", "un animateur d'émission télévisée"], 1351
+    ],
+    [
+        ["a soap opera", "a serial"], "un feuilleton", 1352
+    ],
+    ["a phone in", "une émission où les auditeurs ou les téléspectateurs participent en appelant", 1353],
+    ["reality TV", "la télé réalité", 1354],
+    ["live", "en direct", 1355],
+    ["a news bulletin", ["un bulletin d'information", "un journal télévisé"], 1356],
+    [
+        ["a newsflash", "newsflash"], "un flash d'information", 1357
+    ],
+    [
+        ["a newsreader", "a newscaster"], "un présentateur du journal télévisé", 1358
+    ],
+    ["to watch the news", ["regarder les informations", "regarder les actualités"], 1359],
+    ["a current affairs programme", "une émission d'actualité", 1360],
+    ["a documentary", "un documentaire", 1361],
+    ["a TV viewer", "un téléspectateur", 1362],
+    ["a couch potato", "quelqu'un qui passe son temps devant la télé", 1363],
+    ["a listener", "un auditeur", 1364],
+    [
+        ["audience ratings", "audience figures"], "l'audimat", 1365
+    ],
+    ["a commercial", "un spot publicitaire", 1366],
+    ["a commercial breaks", ["un page de publicité", "une pause publicitaire"], 1367],
+    ["to broadcast", "diffuser", 1368],
+    ["privacy", "la vie privée", 1369],
+    ["breach of privacy", "atteinte à la vie privée", 1370],
+    ["libel", "la diffamation", 1371],
+    ["slander", "la calomnie", 1372],
+    ["to censor", "censurer", 1373],
+    ["censorhip", "la censure", 1374],
+    [
+        ["to circumvent censorship", "to bypass censorship"], "contourner la censure", 1375
+    ],
+    [
+        ["to sound the alarm bell", "to ring the alarm bell"], "tirer la sonnette d'alarme", 1376
+    ],
+    ["to blow the whistle on somebody", "dénoncer quelqu'un", 1377],
+    ["a whistleblower", "un lanceur d'alerte", 1378],
+];
+
+// NEXT FREE ID : 1283
 
 
 
@@ -1792,6 +1961,7 @@ const Quizs = {
     "bioethics": quiz_bioethics,
     "democracy": quiz_democracy,
     "solidarity": quiz_solidarity,
+    "the media": quiz_media,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action
