@@ -1552,7 +1552,7 @@ const quiz_democracy = [
     ["to spark unrest", "provoquer des troubles", 1123],
     ["turmoil", "de l'agitation", 1124],
     ["an upheaval", "un bouleversement", 1125],
-    ["to stir up trouvle", "formenter des troubles", 1126],
+    ["to stir up trouble", "formenter des troubles", 1126],
     ["an insurgent", "un insurgé", 1127],
     ["an insurgency", "une insurrection", 1128],
     [
