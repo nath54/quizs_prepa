@@ -1789,7 +1789,7 @@ const quiz_media = [
     ],
     ["a columnist", "un chroniqueur", 1273],
     ["a correspondent", "un correspondant", 1274],
-    ["a reporter", "un reporter", 1275]
+    ["a reporter", "un reporter", 1275],
     ["to report on something", "faire un reportage sur quelque chose", 1276],
     ["a report", "un reportage", 1277],
     ["to inform", "informer", 1278],
