@@ -1941,7 +1941,171 @@ const quiz_media = [
     ["a whistleblower", "un lanceur d'alerte", 1378],
 ];
 
-// NEXT FREE ID : 1283
+const quiz_rich_poors = [
+    ["rich and poor", "riches et pauvres", 1379],
+    ["the gap is widening", "le fossé se creuse", 1380],
+    [
+        ["standard of living", " living-standards"], "le niveau de vie", 1381
+    ],
+    [
+        ["GPD per head", " per inhabitant"],
+        ["le PIB par tête", " par habitant"], 1382
+    ],
+    [
+        ["lifestyle", " way of life"], "mode de vie", 1383
+    ],
+    [
+        ["buying power", " spending power", " purchasing power"], "le pouvoir d'achat", 1384
+    ],
+    ["amount", "quantité", 1385],
+    ["income", "le revenu", 1386],
+    [
+        ["rich", " wealthy"], "riche", 1387
+    ],
+    ["wealth", "la richesse", 1388],
+    ["well-off", "aisé", 1389],
+    ["well-to-do", ["nanti", " riche"], 1390],
+    ["well-heeled", "fortuné", 1391],
+    ["to be affluent", ["être nanti", " vivre dans l'aisance"], 1392],
+    ["affluence", ["la richesse", " l'abondance"], 1393],
+    ["The Affluent Society", "la société d'abondance", 1394],
+    ["Influenza", "la grippe", 1395],
+    ["unfulfilled", ["insatisfait", " frustré"], 1396],
+    ["well-being", "le bien-être", 1397],
+    [
+        ["rich people", " the rich"], "les riches", 1398
+    ],
+    ["riches", "les richesses", 1399],
+    [
+        ["the super-rich", " the mega-rich"], "les grandes fortunes", 1400
+    ],
+    ["stinking rich", ["bourré de fric", " plein aux as"], 1401],
+    ["in moneyed circles", ["parmi les nantis", " les possédants"], 1402],
+    ["a millionaire", "un millionnaire", 1403],
+    ["a dollar millionaire", "un millionnaire en dollars", 1404],
+    ["a billionaire", "un milliardaire", 1405],
+    [
+        ["a zillionaire", " a multimillionaire"], "un multimilliardaire", 1406
+    ],
+    ["an oil magnate", "un magnat du pétrole", 1407],
+    ["a press baron", "un baron de la presse", 1408],
+    ["a media mogul", "un magnat des médias", 1409],
+    ["a software tycoon", "un roi des logiciels", 1410],
+    ["income tax", "l'impôt sur le revenu", 1411],
+    ["a tax haven", "un paradis fiscal", 1412],
+    ["tax evasion", "la fraude fiscale", 1413],
+    ["high-income / low-income families", "familles à hauts / bas revenus", 1414],
+    ["taxpayer", "un contribuable", 1415],
+    ["earnings", "les gains", 1416],
+    ["fat cat", "un gros richard", 1417],
+    ["poverty", "la pauvreté", 1418],
+    [
+        ["poor people", " the poor"], "les pauvres", 1419
+    ],
+    ["working poor", "les travailleurs pauvres", 1420],
+    [
+        ["poor", " impoverished"], "pauvre", 1421
+    ],
+    ["the needy", ["nécessiteux", " les idigents"], 1422],
+    [
+        ["extreme poverty", " dire poverty"], "la misère", 1423
+    ],
+    ["destitution", ["le dénuement", " la misère noire"], 1424],
+    ["the most destitute", "les plus démunis", 1425],
+    [
+        ["to fall on hard times", " to become destitute"], "tomber dans la misère", 1426
+    ],
+    ["to sink into poverty", "sombrer dans la pauvreté", 1427],
+    ["below/above the poverty line", "en-dessous/au-dessus du seuil de pauvreté", 1428],
+    ["join forces", "se mobiliser", 1429],
+    ["a low-income household", "un ménage à revenu modeste", 1430],
+    [
+        ["deprived", " disadvantaged", " underprivileged"], "défavorisé", 1431
+    ],
+    ["to live on 2$ a day", "vivre avec 2 dollars par jour", 1432],
+    [
+        ["to live on the benefit", " on welfare"], "vivre d'allocations", 1433
+    ],
+    ["pauperism", "le paupérisme", 1434],
+    ["pauperization", "la paupérisation", 1435],
+    ["powerhouse economy", "locomotive économique", 1436],
+    ["a staggering", "un stupéfiant", 1437],
+    ["inequality", "l'inégalité", 1438],
+    [
+        ["unequal", " uneven"], "inégal", 1439
+    ],
+    ["to share", "partager", 1440],
+    ["to share out", "répartir", 1441],
+    ["distribution of wealth", "la répartition de la richesse", 1442],
+    ["a two-tier society", "une société à deux vitesses", 1443],
+    ["social fabric", "le tissu social", 1444],
+    ["gap between rich and poor", "le fossé entre les riches et les pauvres", 1445],
+    ["the gap between the haves and the have-nots", "la fracture sociale", 1446],
+    [
+        ["to bridge", " to close the gap"], "combler le fossé", 1447
+    ],
+    [
+        ["the gap is closing", " narrowing"], "le fossé se comble", 1448
+    ],
+    ["the gap is widening", "le fossé se creuse", 1449],
+    ["the social divide", ["le fossé social", " la fracture sociale"], 1450],
+    ["a discrepancy", "un écart", 1451],
+    ["a chasm", ["un gouffre", " un abîme"], 1452],
+    ["balance/imbalance", "l'équilibre / le déséquilibre", 1453],
+    ["balanced/unbalanced", "équilibré/déséquilibré", 1454],
+    ["to redress the balance", "rétablir l'équilibre", 1455],
+    ["to torn", "déchirer", 1456],
+    ["strife", "rivalité", 1457],
+    ["social mobility", "la mobilité sociale", 1458],
+    ["social advancement", "la promotion sociale", 1459],
+    [
+        ["career advancement", " professional advancement"], "l'ascension professionnelle", 1460
+    ],
+    ["the social ladder", "l'ascenseur social", 1461],
+    [
+        ["to move up the social ladder", " to be upwardly mobile"], "monter dans l'échelle sociale", 1462
+    ],
+    ["upward social mobility", "l'ascension sociale", 1463],
+    ["self-made man", "un self-made man", 1464],
+    ["a rags-to-riches story", "l'histoire de quelqu'un qui est passé de la misère à la richesse", 1465],
+    ["start from scratch", "partir de rien", 1466],
+    [
+        ["to strike gold", " to strike it rich"], "faire fortune", 1467
+    ],
+    ["equality of opportunity", "l'égalité des chances", 1468],
+    ["egalitarian", "égalitaire", 1469],
+    ["Egalitarianism", "l'égalitarisme", 1470],
+    ["social standing", "le niveau social", 1471],
+    ["social status", "le statut social", 1472],
+    ["fall in status", "le déclassement", 1473],
+    ["landmark study", "une étude qui a fait date", 1474],
+    ["overhaul", "remaniement", 1475],
+    ["the decline of living standards", "une baisse du niveau de vie", 1476],
+    [
+        ["to struggle to get by", " struggle by"], "peiner à s'en sortir", 1477
+    ],
+    ["to have difficulty paying the bills", "avoir du mal à payer les factures", 1478],
+    ["make ends meet", "joindre les deux bouts", 1479],
+    ["live from hand to mouth", "vivre au jour le jour", 1480],
+    ["to scrape by", "vivoter", 1481],
+    ["to survive", "survivre", 1482],
+    ["survival", "la survie", 1483],
+    ["homeless", "sans abri", 1484],
+    ["homelessness is on the rise", "il y a de plus en plus de sans-abri", 1485],
+    [
+        ["a tramp", " a bum"], "un clodo", 1486
+    ],
+    ["a bag lady", "une clocharde", 1487],
+    [
+        ["a soup kitchen", " a bread line"], "une soupe populaire", 1488
+    ],
+    ["the underclass", "le quart-monde", 1489],
+    ["a slum", "un taudis", 1490],
+    ["mainstream society", "société normale", 1491],
+];
+
+
+// NEXT FREE ID : 1492
 
 
 
@@ -1962,6 +2126,7 @@ const Quizs = {
     "democracy": quiz_democracy,
     "solidarity": quiz_solidarity,
     "the media": quiz_media,
+    "rich-poor": quiz_rich_poor,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action
