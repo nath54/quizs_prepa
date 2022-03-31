@@ -2101,7 +2101,7 @@ const quiz_rich_poors = [
     ],
     ["the underclass", "le quart-monde", 1489],
     ["a slum", "un taudis", 1490],
-    ["mainstream society", "société normale", 1491],
+    ["mainstream society", "société normale", 1491]
 ];
 
 
@@ -2126,7 +2126,7 @@ const Quizs = {
     "democracy": quiz_democracy,
     "solidarity": quiz_solidarity,
     "the media": quiz_media,
-    "rich-poor": quiz_rich_poor,
+    "rich-poor": quiz_rich_poors,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action
