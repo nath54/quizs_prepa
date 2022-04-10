@@ -1,113 +1,121 @@
-rich and poor###riches et pauvres
-the gap is widening###le fossé se creuse
-standard of living, living-standards###le niveau de vie
-GPD per head, per inhabitant###le PIB par tête, par habitant
-lifestyle, way of life###mode de vie
-buying power, spending power, purchasing power###le pouvoir d'achat
-amount###quantité
-income###le revenu
-rich, wealthy###riche
-wealth###la richesse
-well-off###aisé
-well-to-do###nanti, riche
-well-heeled###fortuné
-to be affluent###être nanti, vivre dans l'aisance
-affluence###la richesse, l'abondance
-The Affluent Society###la société d'abondance
-Influenza###la grippe
-unfulfilled###insatisfait, frustré
-well-being###le bien-être
-rich people, the rich###les riches
-riches###les richesses
-the super-rich, the mega-rich###les grandes fortunes
-stinking rich###bourré de fric, plein aux as
-in moneyed circles###parmi les nantis, les possédants
-a millionaire###un millionnaire
-a dollar millionaire###un millionnaire en dollars
-a billionaire###un milliardaire
-a zillionaire, a multimillionaire###un multimilliardaire
-an oil magnate###un magnat du pétrole
-a press baron###un baron de la presse
-a media mogul###un magnat des médias
-a software tycoon###un roi des logiciels
-income tax###l'impôt sur le revenu
+globalization###la mondialisation
+a boon or a bane###aubaine ou calamité
+a border, a frontier###une frontière
+a borderless world###un monde sans frontières
+the global economy###l'économie mondiale
+trade###le commerce, les échanges
+overseas trade###le commerce extérieur
+free trade###le libre-échange
+a free trader###un partisan du libre-échange
+the free market, free-market economy###l'économie de marché
+a free-marketeer###un partisan du libéralisme
+liberalism###le libéralisme
+the liberalization of trade###la libéralisation des échanges
+deregulation###la déréglementation
+to deregulate the airline industry###déréglementer le transport aérien
+a free trade area###une zone de libre-échange
+a trading partner###un partenaire commercial
+trade figures###les chiffres du commerce extérieur
+the balance of trade###la balance commerciale
+a trade surplus###un excédent commercial
+a trade deficit###un déficit commercial
+the free flow of goods###la libre circulation des marchandises
+capital flow###les flux de capitaux
+flight of capital###la fuite de capitaux
 a tax haven###un paradis fiscal
-tax evasion###la fraude fiscale
-high-income / low-income families###familles à hauts / bas revenus
-taxpayer###un contribuable
-earnings###les gains
-fat cat###un gros richard
-poverty###la pauvreté
-poor people, the poor###les pauvres
-working poor###les travailleurs pauvres
-poor, impoverished###pauvre
-the needy###nécessiteux, les idigents
-extreme poverty, dire poverty###la misère
-destitution###le dénuement, la misère noire
-the most destitute###les plus démunis
-to fall on hard times, to become destitute###tomber dans la misère
-to sink into poverty###sombrer dans la pauvreté
-below/above the poverty line###en-dessous/au-dessus du seuil de pauvreté
-join forces###se mobiliser
-a low-income household###un ménage à revenu modeste
-deprived, disadvantaged, underprivileged###défavorisé
-to live on 2$ a day###vivre avec 2 dollars par jour
-to live on the benefit, on welfare###vivre d'allocations
-pauperism###le paupérisme
-pauperization###la paupérisation
-powerhouse economy###locomotive économique
-a staggering###un stupéfiant
-inequality###l'inégalité
-unequal, uneven###inégal
-to share###partager
-to share out###répartir
-distribution of wealth###la répartition de la richesse
-a two-tier society###une société à deux vitesses
-social fabric###le tissu social
-gap between rich and poor###le fossé entre les riches et les pauvres
-the gap between the haves and the have-nots###la fracture sociale
-to bridge, to close the gap###combler le fossé
-the gap is closing, narrowing###le fossé se comble
-the gap is widening###le fossé se creuse
-the social divide###le fossé social, la fracture sociale
-a discrepancy###un écart
-a chasm###un gouffre, un abîme
-balance/imbalance###l'équilibre / le déséquilibre
-balanced/unbalanced###équilibré/déséquilibré
-to redress the balance###rétablir l'équilibre
-to torn###déchirer
-strife###rivalité
-social mobility###la mobilité sociale
-social advancement###la promotion sociale
-career advancement, professional advancement###l'ascension professionnelle
-the social ladder###l'ascenseur social
-to move up the social ladder, to be upwardly mobile###monter dans l'échelle sociale
-upward social mobility###l'ascension sociale
-self-made man###un self-made man
-a rags-to-riches story###l'histoire de quelqu'un qui est passé de la misère à la richesse
-start from scratch###partir de rien
-to strike gold, to strike it rich###faire fortune
-equality of opportunity###l'égalité des chances
-egalitarian###égalitaire
-Egalitarianism###l'égalitarisme
-social standing###le niveau social
-social status###le statut social
-fall in status###le déclassement
-landmark study###une étude qui a fait date
-overhaul###remaniement
-the decline of living standards###une baisse du niveau de vie
-to struggle to get by, struggle by###peiner à s'en sortir
-to have difficulty paying the bills###avoir du mal à payer les factures
-make ends meet###joindre les deux bouts
-live from hand to mouth###vivre au jour le jour
-to scrape by###vivoter
-to survive###survivre
-survival###la survie
-homeless###sans abri
-homelessness is on the rise###il y a de plus en plus de sans-abri
-a tramp, a bum###un clodo
-a bag lady###une clocharde
-a soup kitchen, a bread line###une soupe populaire
-the underclass###le quart-monde
-a slum###un taudis
-mainstream society###société normale
+the benefits and pitfalls of globalization###les bienfaits et les dangers de la mondialisation
+the advantage and drawbacks (the pros and cons) of globalization###les avantages et inconvénients de la mondialisation
+the case for/ against globalization###les arguments pour/ contre la mondialisation
+to develop###se développer
+to industrialize###s'industrialiser
+economic growth###la croissance économique
+the rich world###les pays riches
+developed, industrialized countries###les pays du Nord, les pays dévelopés
+developing, industrializing countries###les pays du Sud, les pays en voie de développement
+the Third World###le Tiers-Monde
+an emerging country###un pays émergent
+LDCs, least develop countries###les PMA, les pays les moins avancés
+an emerging economy###un pays émergent, une économie émergente
+Chindia###la Chine et l'Inde
+fair trade###le commerce équitable
+handicrafts###les objets artisanaux
+an exporter###un exportateur
+an importer###un importateur
+an oil-exporting country###un pays exportateur de pétrole
+the exchange rate###le taux de change
+to break into a market###pénétrer sur un marché
+to corner, capture a market###s'emparer d'un marché
+protectionism###le protectionnisme
+protectionist measures###mesures protectionistes
+protectionist policies###politiques protectionistes
+tarrifs###les tarifs douaniers, les droits de douane
+customs duties###les droits de douane
+trade barriers###les barrières douanières
+tariff barriers###les barrières tarifaires
+non-tariff barriers###les barrières non-tarifaires
+to lower trade barriers###abaisser les barrières douanières
+to remove trade barriers###supprimer les barrières douanières
+a multinational (company)###une multinationale
+(outsourcing,) offshoring, relocating###les délocalisations
+to outsource, relocate production###délocaliser la production
+to outsource, relocate jobs###délocaliser des emplois
+to set up a factory###implanter une usine
+to settle abroad###s'implanter à l'étranger
+a supplier###un fournisseur
+economies of scale###économies d'échelle
+a call center###un centre d'appels
+manufacturing jobs###emplois du secteur secondaire
+the service industries, the service sector###le tertiaire, les services
+to take advantage of cheap labour###profiter de la main d'oeuvre bon marché
+child labour###le travail des enfants
+working conditions###les conditions de travail
+labour standards###les normes en matière d'emploi
+environmental standards###les normes en matière d'environnement
+production costs###les coûts de production
+wage costs###les coûts salariaux
+competition###la concurrence
+fierce competition###concurrence acharnée
+unfair competition###concurrence déloyale
+dumping###le dumping
+to trade at a loss###vendre à perte
+a competitor###un concurrent
+competitive###compétitif
+competitiveness###la compétitivité
+to compete with low-paid workers###être en concurrence avec des travailleurs peu payés
+to lag behind###être à la traîne
+to catch up with a competitor###rattraper un concurrent
+to keep up with a competitor###se maintenir au même niveau qu'un concurrent
+social dumping###le dumping social
+a subsidy###une subvention
+to subsidize###subventionner
+Americanization###l'américanisation
+Westernization###l'occidentalisation
+standardization###l'uniformisation
+cultural exception, cultural exemption###l'exception culturelle
+an antiglobalization activist, (potester, an antiglobalist)###un militant anti-mondialiste
+alter-globalization###l'altermondialisme
+deglobalization###la démondialisation
+a riot###une émeute
+coined###inventé
+The global village###by Marshall McLuhan
+enhanced###accrue
+The World Trade Organization (WTO)###OMC (organisation mondiale du commerce)
+The International Monetary Fund (IMF)###FMI (fond monétaire international)
+oversees###supervise
+fostering###encourager
+loans###prêts
+commodities###matières premières (marchandises)
+output###production
+BRICS###Brazil Russia India China South africa
+account for###represente
+Alter-globalization###altermondialisme
+shun###rejette
+as such###en tant que tel
+overshadowed###éclipsé
+complaints / griefs###plainte
+overwhelmed###submergé
+underpinned###soutenue
+currencies###devises
+thwarting###contrecarrer
+revived###remise à l'ordre du jour
+griefs###complaints / objections
