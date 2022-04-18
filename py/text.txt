@@ -1,121 +1,127 @@
-globalization###la mondialisation
-a boon or a bane###aubaine ou calamité
-a border, a frontier###une frontière
-a borderless world###un monde sans frontières
-the global economy###l'économie mondiale
-trade###le commerce, les échanges
-overseas trade###le commerce extérieur
-free trade###le libre-échange
-a free trader###un partisan du libre-échange
-the free market, free-market economy###l'économie de marché
-a free-marketeer###un partisan du libéralisme
-liberalism###le libéralisme
-the liberalization of trade###la libéralisation des échanges
-deregulation###la déréglementation
-to deregulate the airline industry###déréglementer le transport aérien
-a free trade area###une zone de libre-échange
-a trading partner###un partenaire commercial
-trade figures###les chiffres du commerce extérieur
-the balance of trade###la balance commerciale
-a trade surplus###un excédent commercial
-a trade deficit###un déficit commercial
-the free flow of goods###la libre circulation des marchandises
-capital flow###les flux de capitaux
-flight of capital###la fuite de capitaux
-a tax haven###un paradis fiscal
-the benefits and pitfalls of globalization###les bienfaits et les dangers de la mondialisation
-the advantage and drawbacks (the pros and cons) of globalization###les avantages et inconvénients de la mondialisation
-the case for/ against globalization###les arguments pour/ contre la mondialisation
-to develop###se développer
-to industrialize###s'industrialiser
-economic growth###la croissance économique
-the rich world###les pays riches
-developed, industrialized countries###les pays du Nord, les pays dévelopés
-developing, industrializing countries###les pays du Sud, les pays en voie de développement
-the Third World###le Tiers-Monde
-an emerging country###un pays émergent
-LDCs, least develop countries###les PMA, les pays les moins avancés
-an emerging economy###un pays émergent, une économie émergente
-Chindia###la Chine et l'Inde
-fair trade###le commerce équitable
-handicrafts###les objets artisanaux
-an exporter###un exportateur
-an importer###un importateur
-an oil-exporting country###un pays exportateur de pétrole
-the exchange rate###le taux de change
-to break into a market###pénétrer sur un marché
-to corner, capture a market###s'emparer d'un marché
-protectionism###le protectionnisme
-protectionist measures###mesures protectionistes
-protectionist policies###politiques protectionistes
-tarrifs###les tarifs douaniers, les droits de douane
-customs duties###les droits de douane
-trade barriers###les barrières douanières
-tariff barriers###les barrières tarifaires
-non-tariff barriers###les barrières non-tarifaires
-to lower trade barriers###abaisser les barrières douanières
-to remove trade barriers###supprimer les barrières douanières
-a multinational (company)###une multinationale
-(outsourcing,) offshoring, relocating###les délocalisations
-to outsource, relocate production###délocaliser la production
-to outsource, relocate jobs###délocaliser des emplois
-to set up a factory###implanter une usine
-to settle abroad###s'implanter à l'étranger
-a supplier###un fournisseur
-economies of scale###économies d'échelle
-a call center###un centre d'appels
-manufacturing jobs###emplois du secteur secondaire
-the service industries, the service sector###le tertiaire, les services
-to take advantage of cheap labour###profiter de la main d'oeuvre bon marché
-child labour###le travail des enfants
-working conditions###les conditions de travail
-labour standards###les normes en matière d'emploi
-environmental standards###les normes en matière d'environnement
-production costs###les coûts de production
-wage costs###les coûts salariaux
-competition###la concurrence
-fierce competition###concurrence acharnée
-unfair competition###concurrence déloyale
-dumping###le dumping
-to trade at a loss###vendre à perte
-a competitor###un concurrent
-competitive###compétitif
-competitiveness###la compétitivité
-to compete with low-paid workers###être en concurrence avec des travailleurs peu payés
-to lag behind###être à la traîne
-to catch up with a competitor###rattraper un concurrent
-to keep up with a competitor###se maintenir au même niveau qu'un concurrent
-social dumping###le dumping social
-a subsidy###une subvention
-to subsidize###subventionner
-Americanization###l'américanisation
-Westernization###l'occidentalisation
-standardization###l'uniformisation
-cultural exception, cultural exemption###l'exception culturelle
-an antiglobalization activist, (potester, an antiglobalist)###un militant anti-mondialiste
-alter-globalization###l'altermondialisme
-deglobalization###la démondialisation
-a riot###une émeute
-coined###inventé
-The global village###by Marshall McLuhan
-enhanced###accrue
-The World Trade Organization (WTO)###OMC (organisation mondiale du commerce)
-The International Monetary Fund (IMF)###FMI (fond monétaire international)
-oversees###supervise
-fostering###encourager
-loans###prêts
-commodities###matières premières (marchandises)
-output###production
-BRICS###Brazil Russia India China South africa
-account for###represente
-Alter-globalization###altermondialisme
-shun###rejette
-as such###en tant que tel
-overshadowed###éclipsé
-complaints / griefs###plainte
-overwhelmed###submergé
-underpinned###soutenue
-currencies###devises
-thwarting###contrecarrer
-revived###remise à l'ordre du jour
-griefs###complaints / objections
+A foreigner ###Un étranger
+A stranger ###Un inconnu
+Nationality ###La nationalité
+A foreign national ###Un ressortissant étranger
+French citizens ###Les personnes de nationalité française
+To emigrate to New Zealand ###Émigrer en Nouvelle-Zélande
+To immigrate to France ###Immigrer en France
+A wave of immigration ###Une vague d'immigration
+Large-scale / mass immigration ###Immigration à grande échelle / de masse
+An exodus ###Un exode
+A newcomer ###Un nouvel arrivant
+Native country, home country ###Pays natal, pays d'origine
+Homeland ###La patrie
+A host country ###Un pays d'accueil
+An adoptive country, a country of adoption ###Un pays d'adoption
+To welcome ###Accueillir
+Welcoming ###Accueillant
+Immigration policy ###La politique migratoire
+Selective immigration, controlled immigration ###Immigration choisie, immigration contrôlée
+Migration flows ###Les flux migratoires
+A stowaway ###Un passager clandestin
+Illegal immigration ###L'immigration clandestine, irrégulière
+Uncontrolled immigration ###L'immigration sauvage
+An illegal immigrant, an illegal alien, an undocumented alien ###Un immigrant clandestin, un sans-papiers
+His papers are not in order ###Il est en situation irrégulière
+A border, a frontier ###Une frontière
+To close one's border ###Fermer ses frontières
+Border controls ###Les contrôles aux frontières
+Identity checks ###Les contrôles d'identité
+A holding centre, a detention facility ###Un centre de rétention (administrative)
+A passport ###Un passeport
+An identity card ###Une carte d'identité
+A visa ###Un visa
+A refugee ###Un réfugié
+A displaced person ###Une personne déplacée
+A stateless person ###Un apatride
+To take refuge, take shelter ###Se réfugier
+To seek political asylum ###Demander l'asile politique
+An asylum-seeker ###Un demandeur d'asile
+To flee persecution / destitution ###Fuir la persécution / la misère
+To escape poverty ###Échapper à la pauvreté
+To be in search of better living-conditions ###Chercher de meilleures conditions de vie
+Human trafficking ###Le trafic des êtres humains
+A smuggler ###Un contrebandier, un passeur
+People-smugglers ###Les passeurs d'immigrants clandestins
+A smuggling ring ###Un réseau de passeurs
+A fake passport ###Un faux passeport
+To escort sb back to the border ###Reconduire qqn à la frontière
+To send an immigrant back to his native country ###Renvoyer un immigrant dans son pays d'origine
+To deport sb ###Expulser qqn
+To be turned away at the border ###Être refoulé à la frontière
+To be ordered out of the country ###Être expulsé
+To go into exile ###S'exiler
+An exile ###Un exilé
+To exile, banish sb ###Exiler, bannir qqn
+To expatriate oneself ###S'expatrier
+An expatriate, an expat ###Un expatrié
+To defect to the West / to the ennemy ###Passer à l'Ouest / à l'ennemi
+Brain drain / brain gain ###Fuite des cerveaux / afflux des cerveaux
+To start from scratch ###Partir de rien
+Moonlighting ###Le travail au noir
+A sweatshop ###Un atelier clandestin
+To exploit migrant workers ###Exploiter les travailleurs immigrés
+A work permit ###Un permis de travail, une carte de travail
+A residence permit, a resident permit ###Un permis de séjour, une carte de séjour
+A migrant worker ###Un travailleur migrant
+A guest worker ###Un travailleur invité (disposant d'un visa temporaire)
+To become integrated ###S'intégrer
+To integrate well into a society ###Bien s'intégrer dans une société
+Social integration ###L'insertion sociale
+To regularise the status of illegal immigrants ###Régulariser la situation des clandestins
+Regularisation ###La régularisation
+To be granted British citizenship, to become a British citizen ###Se faire naturaliser britannique, être naturalisé britannique, obtenir la nationalité britannique
+A quota ###Un quota
+Family reunion, reunification ###Le regroupement familial
+A benefit cheat ###Qqn qui abuse du système des prestations sociales
+Benefit fraud ###La fraude aux prestations sociales
+A freeloader ###Un parasite
+A sham marriage, a marriage of convenience ###Un mariage blanc
+To flood ###Inonder
+To be swamped with foreigners ###Être envahi par les étrangers
+The influx of workers ###L'arrivée massive, l'afflux de travailleurs
+To stem the flow of immigrants ###Endiguer l'afflux d'immigrés
+To restrict / curb immigration ###Limiter / freiner l'immigration
+A far-right party ###Un parti d'extrême droite
+To scare immigrants away ###Faire fuir les immigrants
+To keep out indesirables ###Empêcher les indésirables d'entrer
+Xenophobia ###La xénophobie
+Xenophobic ###Xénophobe
+Second-generation immigrants ###Des immigrés de deuxième génération
+To have a foreign-born grandfather ###Avoir un grand-père né à l'étranger
+Young men of Asian / Portuguese descent ###Des jeunes gens d'origine asiatique / portugaise
+A native of France ###Un Français de naissance
+A born and bred New Yorker ###Un New Yorkais de souche
+He's of French origin, of French extraction ###Il est français de souche
+North Africa ###Le Maghreb
+North Africans ###Les Maghrébins
+Pakistani / Bangladeshi ###Pakistanais / du Bangladesh
+Spanish-speaking / Hindi-speaking ###Hispanophone / parlant le Hindi
+Diaspora ###Diaspora
+Un fléau ###A scourge
+uproot ###se déraciner
+beggar ###mendiant
+Foreignness ###extranéité
+multiculturalism ###communautarisme
+which states ###qui affirme
+proponent ###un partisan
+conspiracy theory ###théorie du complot
+welfare ###bien-être
+magnaminous ###généreux
+Openness ###ouverture
+sweeping ###balayant
+On purely economic grounds ###Pour des raisons purement économiques
+Attributes ###attributs
+hardheaded ###réaliste
+green card ###un permis de séjour
+relief ###soulagement, aide
+A lawsuit / a trial ###procès
+willingness ###volonté
+bill ###un projet de loi
+fast-tracked ###accéléré
+crime ###un délit
+to cope ###faire face, s'en sortir
+thus ###Par conséquent, ainsi, de cette façon
+alleviate ###Alléger
+resettle ###réinstaller
+to a large extent ###en grande partie
