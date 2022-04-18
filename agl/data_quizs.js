@@ -2455,8 +2455,8 @@ const Quizs = {
     "solidarity": quiz_solidarity,
     "the media": quiz_media,
     "rich-poor": quiz_rich_poors,
-    "immigration": quiz_immigration,
     "globalization": quiz_globalization,
+    "immigration": quiz_immigration,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action
