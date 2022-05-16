@@ -2556,6 +2556,7 @@ const Quizs = {
     "rich-poor": quiz_rich_poors,
     "globalization": quiz_globalization,
     "immigration": quiz_immigration,
+    "racism": quiz_racism,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action
