@@ -2103,6 +2103,7 @@ const quiz_rich_poors = [
     ["a slum", "un taudis", 1490],
     ["mainstream society", "société normale", 1491]
 ];
+
 const quiz_globalization = [
     ["globalization", "la mondialisation", 1492],
     ["a boon or a bane", "aubaine ou calamité", 1493],
@@ -2433,7 +2434,105 @@ const quiz_immigration = [
     ["resettle ", "réinstaller", 1617],
     ["to a large extent ", "en grande partie", 1618],
 ];
-// NEXT FREE ID : 1613
+
+const quiz_racism = [
+    ["Propaganda ", "La propagande", 1619],
+    ["To spread racist theories ", "Répandre des théories racistes", 1620],
+    [
+        ["Racial bias", " racial prejudice "], "Les préjugés raciaux", 1621
+    ],
+    ["Skin color ", "La couleur de peau", 1622],
+    ["To be mixed-race ", "Être métis", 1623],
+    ["Segregation ", "La ségrégation", 1624],
+    ["Apartheid ", "L'apartheid", 1625],
+    ["Desegregation ", "La déségrégation", 1626],
+    ["To desegregate school ", "Supprimer la ségrégation raciale dans les écoles", 1627],
+    ["A slave ", "Un esclave", 1628],
+    ["Slavery ", "L'esclavage", 1629],
+    ["The slave trade ", "Le commerce des esclaves", 1630],
+    [
+        ["To abolish", " to do away with slavery "], "Abolir l'esclavage", 1631
+    ],
+    ["Narrow-minded ", ["Étroit d'esprit", " borné"], 1632],
+    ["To propagate hatred ", "Propager la haine", 1633],
+    ["Incitement to racial hatred ", "L'incitation à la haine raciale", 1634],
+    ["Hate speech ", "Des propos racistes", 1635],
+    [
+        ["A racist attack", " a racially motivated attack "], "Une agression à caractère racial", 1636
+    ],
+    [
+        ["Racial abuse", " racist abuse "], "Des insultes à caractère racial", 1637
+    ],
+    ["Racial tensions ", "Les tensions raciales", 1638],
+    ["To fuel tensions ", ["Alimenter", " nourrir les tensions"], 1639],
+    ["Jewish ", "Juif", 1640],
+    ["A Jew ", "Un juif", 1641],
+    ["Anti-Semitism ", "L'antisémitisme", 1642],
+    ["To desecrate a grave ", "Profaner une tombe", 1643],
+    ["Revisionism ", "Le négationnisme", 1644],
+    ["A revisionist ", "Un négationniste", 1645],
+    ["To deny ", "Nier", 1646],
+    ["A scapegoat ", "Un bouc émissaire", 1647],
+    ["Race relations ", "Les relations interraciales", 1648],
+    ["Racial discrimination ", "La discrimination raciale", 1649],
+    [
+        ["The color bar", " the color line "], "La discrimination raciale", 1650
+    ],
+    ["To be discriminated against ", "Être victime d'une discrimination", 1651],
+    [
+        ["African-American", " Afro-American "], "Afro-américain", 1652
+    ],
+    ["Asian-American ", "Américain d'origine asiatique", 1653],
+    ["A multiracial society ", "Une société multiraciale", 1654],
+    [
+        ["A mixed marriage", " a mixed-race marriage", " an interracial marriage "], "Un mariage mixte", 1655
+    ],
+    ["A ghetto ", "Un ghetto", 1656],
+    ["An ethnic minority ", "Une minorité ethnique", 1657],
+    [
+        ["To outlaw", " to ban "],
+        ["Proscrire", " déclarer hors la loi"], 1658
+    ],
+    ["Affirmative Action ", "La discrimination positive", 1659],
+    ["Color-blind ", "Sans discrimination raciale", 1660],
+    ["Regardless of race ", "Quelle que soit la race", 1661],
+    ["Racial profiling ", "Délit de faciès", 1662],
+    ["Identity checks ", "Les contrôles d'identité", 1663],
+    [
+        ["To feel alienated", " excluded "], "Se sentir exclu", 1664
+    ],
+    ["A two-tier society ", "Une société à deux vitesses", 1665],
+    ["Second-class citizens ", "Des citoyens de seconde zone", 1666],
+    ["To suffer a wrong ", "Subir une injustice", 1667],
+    ["To right a wrong ", "Réparer une injustice", 1668],
+    ["To apologize to sb ", "S'excuser auprès de qqn", 1669],
+    ["To coin ", "Inventer", 1670],
+    ["Police practices ", "Pratiques policières", 1671],
+    ["To open fire ", "Ouvrir le feu", 1672],
+    ["police brutality ", "Violences policières", 1673],
+    ["To manhandle a suspect ", "Malmener un suspect", 1674],
+    ["the Civil War ", "la Guerre de Sécession", 1675],
+    ["thousands of miles apart ", "à des milliers de kilomètres de distance", 1676],
+    ["dismantling ", "démantèlement", 1677],
+    ["restrooms ", "toilettes", 1678],
+    ["covert ", "indirect", 1679],
+    ["facilities ", "équipements", 1680],
+    ["indict ", "inculper", 1681],
+    ["indictment ", "mise en accusation formelle", 1682],
+    ["timely ", "opportun", 1683],
+    ["veterans ", "anciens combattants", 1684],
+    ["in the wake of ", "au lendemain de", 1685],
+    ["influentials ", "influents", 1686],
+    ["driving while intoxicated ", "conduite en état d'ébriété", 1687],
+    ["strife ", ["conflit", " dissensions", " luttes"], 1688],
+    ["veneer ", ["vernis", " apparence"], 1689],
+    ["purport ", "prétendre", 1690],
+    ["debunk ", "discréditer", 1691],
+];
+
+
+
+// NEXT FREE ID : 1692
 
 
 

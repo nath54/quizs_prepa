@@ -3,8 +3,8 @@ f = io.open('text.txt', 'r', encoding='utf-8')
 text = f.read()
 f.close()
 
-LID = 1492
-res = "const quiz_globalization = [\n"
+LID = 1619
+res = "const quiz_racism = [\n"
 
 for x in text.split('\n'):
     c = x.split('###')
