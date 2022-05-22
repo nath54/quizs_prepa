@@ -2474,9 +2474,8 @@ const quiz_racism = [
     ["To deny ", "Nier", 1646],
     ["A scapegoat ", "Un bouc émissaire", 1647],
     ["Race relations ", "Les relations interraciales", 1648],
-    ["Racial discrimination ", "La discrimination raciale", 1649],
     [
-        ["The color bar", " the color line "], "La discrimination raciale", 1650
+        ["The color bar", " the color line ", "Racial discrimination "], "La discrimination raciale", 1650
     ],
     ["To be discriminated against ", "Être victime d'une discrimination", 1651],
     [
