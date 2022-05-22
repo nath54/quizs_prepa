@@ -4,7 +4,7 @@ text = f.read()
 f.close()
 
 LID = 1619
-res = "const quiz_racism = [\n"
+res = "const quiz_multiculturalism = [\n"
 
 for x in text.split('\n'):
     c = x.split('###')

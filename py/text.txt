@@ -1,73 +1,109 @@
-Propaganda ###La propagande
-To spread racist theories ###Répandre des théories racistes
-Racial bias, racial prejudice ###Les préjugés raciaux
-Skin color ###La couleur de peau
-To be mixed-race ###Être métis
-Segregation ###La ségrégation
-Apartheid ###L'apartheid
-Desegregation ###La déségrégation
-To desegregate school ###Supprimer la ségrégation raciale dans les écoles
-A slave ###Un esclave
-Slavery ###L'esclavage
-The slave trade ###Le commerce des esclaves
-To abolish, to do away with slavery ###Abolir l'esclavage
-Narrow-minded ###Étroit d'esprit, borné
-To propagate hatred ###Propager la haine
-Incitement to racial hatred ###L'incitation à la haine raciale
-Hate speech ###Des propos racistes
-A racist attack, a racially motivated attack ###Une agression à caractère racial
-Racial abuse, racist abuse ###Des insultes à caractère racial
-Racial tensions ###Les tensions raciales
-To fuel tensions ###Alimenter, nourrir les tensions
-Jewish ###Juif
-A Jew ###Un juif
-Anti-Semitism ###L'antisémitisme
-To desecrate a grave ###Profaner une tombe
-Revisionism ###Le négationnisme
-A revisionist ###Un négationniste
-To deny ###Nier
-A scapegoat ###Un bouc émissaire
-Race relations ###Les relations interraciales
-Racial discrimination ###La discrimination raciale
-The color bar, the color line ###La discrimination raciale
-To be discriminated against ###Être victime d'une discrimination
-African-American, Afro-American ###Afro-américain
-Asian-American ###Américain d'origine asiatique
-A multiracial society ###Une société multiraciale
-A mixed marriage, a mixed-race marriage, an interracial marriage ###Un mariage mixte
-A ghetto ###Un ghetto
-An ethnic minority ###Une minorité ethnique
-To outlaw, to ban ###Proscrire, déclarer hors la loi
-Affirmative Action ###La discrimination positive
-Color-blind ###Sans discrimination raciale
-Regardless of race ###Quelle que soit la race
-Racial profiling ###Délit de faciès
-Identity checks ###Les contrôles d'identité
-To feel alienated, excluded ###Se sentir exclu
-A two-tier society ###Une société à deux vitesses
-Second-class citizens ###Des citoyens de seconde zone
-To suffer a wrong ###Subir une injustice
-To right a wrong ###Réparer une injustice
-To apologize to sb ###S'excuser auprès de qqn
-To coin ###Inventer
-Police practices ###Pratiques policières
-To open fire ###Ouvrir le feu
-police brutality ###Violences policières
-To manhandle a suspect ###Malmener un suspect
-the Civil War ###la Guerre de Sécession
-thousands of miles apart ###à des milliers de kilomètres de distance
-dismantling ###démantèlement
-restrooms ###toilettes
-covert ###indirect
-facilities ###équipements
-indict ###inculper
-indictment ###mise en accusation formelle
-timely ###opportun
-veterans ###anciens combattants
-in the wake of ###au lendemain de
-influentials ###influents
-driving while intoxicated ###conduite en état d'ébriété
-strife ###conflit, dissensions, luttes
-veneer ###vernis, apparence
-purport ###prétendre
-debunk ###discréditer
+an ethnic minority###une minorité ethnique
+minority students###les étudients issus des minorités
+a native country###un pays natal
+a host country###un pays d 'accueil
+to welcome immigrants###accueillir les immigrants
+a newcomer###un nouvel arrivant
+a citizen###un citoyen
+citizenship###la citoyenneté
+racial bias, racial prejudice###les préjugés raciaux (1)
+cultural diversity###la diversité culturelle
+a multiracial society###une société multiraciale
+mainstream culture###la culture dominante, majoritaire
+to assimilate into a society###être assimilé dans une société
+to become integrated into a society###s'integrer dans une société
+integration###l'integration
+social integration###l'integration sociale
+to mingle with other people, to mix###se mêler aux autres
+to socialize with one's neighbours###fréquenter ses voisins
+to live peaceably with other communities###vivre en paix avec d'autres communautés
+to cohabit with smb###cohabiter avec qqun
+to coexist with smb###coexister avec qqun
+peaceful coexistence###coexistance pacifique
+incomprehension, lack of understanding###l'incompréhension
+lack of understanding###l'imcompréhension (2)
+the language barrier###la barrière de la langue
+mistrust, distrust###méfiance
+they keep themselves to themselves###ils ne se mêlent pas aux autres
+to be cut off from the rest of society###être coupé du reste de la société
+to reject Western values###rejeter les valeurs occidentales
+the rejection of Western cultural standards###le rejet des normes culturelles occidentales
+secular###laïc
+secularism###laïcité
+the separation of church and state###la séparation de l'Eglise et de l'Etat
+chauvinism###le chauvinisme
+chauvinistic###chauviniste
+to foster hatred###favoriser la haine
+to fuel hatred###nourrir, alimenter, entretenir la haine
+to incite religious /racial hatred###inciter à la haine racial/ religieuse
+to threaten national cohesion###menacer à la cohésion nationale
+national identity###l'identité nationale
+segregation###la ségrégation
+desegregation###la déségrégation
+a black neighbourhood###un quartier noir
+a lily-white suburb###une banlieue entièrement blanche
+a ghetto###un ghetto
+ghettoization###la ghettoïsation
+an enclave###une enclave
+a gated community###une enclave résidentielle protégée
+inner-city areas###les quartiers déshérités des centres-villes américains
+disavantaged, underprivileged###défavorisé
+second-class citizens###des citoyens de seconde zone
+a two-tier society###une société à deux vitesse
+discrimination###la discrimination
+to be discriminated against###être victime de discrimination
+to promote a worker###promouvoir un salarié
+a glass ceiling###limite invisible à la promotion de certaines catégories de salariés
+to be victimized###être victime de brimades
+to exclude sbd###exclure qqun
+to ostracize sbd###ostraciser qqun
+to marginalize sbd###marginaliser qqun
+young men of Asian/Itaian descent origin, background###des jeunes hommes d'origines asiatique/italienne
+the Muslim population of Pakistani origin###la population musulmane d'origine pakistanaise
+second-generation immigrants###des immigrés de deuxième génération
+a forced/arranged marriage###un mariage forcé/arrangé
+a sham marriage, a marriage of convenience###un mariage blanc
+inter-ethnic marriage###le mariage interethnique
+a mixed marriage, a mixed-race marriage###un mariage mixte
+to be mixed-race###être métis
+to be dual heritage, to have dual heritage###avoir une double culture
+affirmative action###la discrimination positive
+equal opportunity###l'égalité des chances
+to introduce quotas###instaurer des quotas
+the introduction of quotas###l'instauration des quotas
+to apologize to smb for smth###s'excuser de qqchose auprès de qqun
+to set right wrongs###réparer des injustices
+to redress imbalances###corriger des déséquilibres
+to call smth into a question###remettre qqchose en cause
+to take the oath###prêter serment
+bear true allegiance###jurer allégeance
+fulfil my duties as a Canadian citizen###accomplir mes devoirs de citoyen canadien
+Rule of Law###l'état de droit
+Ghettoization###la ghettoïsation
+self-segregation###auto-ségrégation
+identity politics###Identité politique
+plight###situation critique
+of Pakistani descent###d'origine pakistanaise
+slightly veiled###à peine déguisé
+broad-mindedness###ouverture d'esprit
+come under fire###être vivement critiqué
+to feel alienated###se sentir exclu
+Downplaying###minimiser
+I opined that###J'étais d'avis que
+mainstream###courant dominant
+stifle###étouffer
+vacuum###vide
+embedded in###véhiculé par
+a play###une pièce de théâtre
+homogeneous###homogène
+the motto###la devise
+merge###fusionner, s'unir
+for instance###par exemple
+fulfil###satisfaire, réaliser, remplir
+heirs###héritiers
+Hindus###les hindous
+faiths###les confessions, les religions, les croyances
+customs###traditions
+emphasize###mettre l'accent sur
+withdraw###se retirer
+mainstream society###société dominante, normale
