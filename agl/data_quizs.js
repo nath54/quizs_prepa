@@ -2531,7 +2531,7 @@ const quiz_racism = [
 
 const quiz_multiculturalism = [
     ["an ethnic minority", "une minorité ethnique", 1619],
-    ["minority students", "les étudients issus des minorités", 1620],
+    ["minority students", "les étudiants issus des minorités", 1620],
     ["a native country", "un pays natal", 1621],
     ["a host country", "un pays d 'accueil", 1622],
     ["to welcome immigrants", "accueillir les immigrants", 1623],
@@ -2620,10 +2620,10 @@ const quiz_multiculturalism = [
     ["equal opportunity", "l'égalité des chances", 1689],
     ["to introduce quotas", "instaurer des quotas", 1690],
     ["the introduction of quotas", "l'instauration des quotas", 1691],
-    ["to apologize to smb for smth", "s'excuser de qqchose auprès de qqun", 1692],
+    ["to apologize to somebody for something", "s'excuser de quelque chose auprès de quelqu'un", 1692],
     ["to set right wrongs", "réparer des injustices", 1693],
     ["to redress imbalances", "corriger des déséquilibres", 1694],
-    ["to call smth into a question", "remettre qqchose en cause", 1695],
+    ["to call something into a question", "remettre quelque chose en cause", 1695],
     ["to take the oath", "prêter serment", 1696],
     ["bear true allegiance", "jurer allégeance", 1697],
     ["fulfil my duties as a Canadian citizen", "accomplir mes devoirs de citoyen canadien", 1698],
