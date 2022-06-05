@@ -84,7 +84,7 @@ function affMots() {
             agl.classList.add("tabcol2");
             //
             if (typeof mot[1] == "string") { fr.innerHTML = mot[1]; } else { fr.innerHTML = mot[1].join(" <i style='color: white'>ou</i> "); }
-            if (typeof mot[0] == "string") { agl.innerHTML = mot[0]; } else { agl.innerHTML = mot[0].join(" <i style='color: white'>ou</i> "); }
+            if (typeof mot[0] == "string") { agl.innerHTML = mot[0]; } else { agl.innerHTML = mot[0].join(" <i style='color: white'>or</i> "); }
             ligne.appendChild(fr);
             ligne.appendChild(agl);
             tab.appendChild(ligne);
