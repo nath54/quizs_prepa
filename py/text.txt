@@ -1,109 +1,115 @@
-an ethnic minority###une minorité ethnique
-minority students###les étudients issus des minorités
-a native country###un pays natal
-a host country###un pays d 'accueil
-to welcome immigrants###accueillir les immigrants
-a newcomer###un nouvel arrivant
-a citizen###un citoyen
-citizenship###la citoyenneté
-racial bias, racial prejudice###les préjugés raciaux (1)
-cultural diversity###la diversité culturelle
-a multiracial society###une société multiraciale
-mainstream culture###la culture dominante, majoritaire
-to assimilate into a society###être assimilé dans une société
-to become integrated into a society###s'integrer dans une société
-integration###l'integration
-social integration###l'integration sociale
-to mingle with other people, to mix###se mêler aux autres
-to socialize with one's neighbours###fréquenter ses voisins
-to live peaceably with other communities###vivre en paix avec d'autres communautés
-to cohabit with smb###cohabiter avec qqun
-to coexist with smb###coexister avec qqun
-peaceful coexistence###coexistance pacifique
-incomprehension, lack of understanding###l'incompréhension
-lack of understanding###l'imcompréhension (2)
-the language barrier###la barrière de la langue
-mistrust, distrust###méfiance
-they keep themselves to themselves###ils ne se mêlent pas aux autres
-to be cut off from the rest of society###être coupé du reste de la société
-to reject Western values###rejeter les valeurs occidentales
-the rejection of Western cultural standards###le rejet des normes culturelles occidentales
-secular###laïc
-secularism###laïcité
-the separation of church and state###la séparation de l'Eglise et de l'Etat
-chauvinism###le chauvinisme
-chauvinistic###chauviniste
-to foster hatred###favoriser la haine
-to fuel hatred###nourrir, alimenter, entretenir la haine
-to incite religious /racial hatred###inciter à la haine racial/ religieuse
-to threaten national cohesion###menacer à la cohésion nationale
-national identity###l'identité nationale
-segregation###la ségrégation
-desegregation###la déségrégation
-a black neighbourhood###un quartier noir
-a lily-white suburb###une banlieue entièrement blanche
-a ghetto###un ghetto
-ghettoization###la ghettoïsation
-an enclave###une enclave
-a gated community###une enclave résidentielle protégée
-inner-city areas###les quartiers déshérités des centres-villes américains
-disavantaged, underprivileged###défavorisé
-second-class citizens###des citoyens de seconde zone
-a two-tier society###une société à deux vitesse
-discrimination###la discrimination
-to be discriminated against###être victime de discrimination
-to promote a worker###promouvoir un salarié
-a glass ceiling###limite invisible à la promotion de certaines catégories de salariés
-to be victimized###être victime de brimades
-to exclude sbd###exclure qqun
-to ostracize sbd###ostraciser qqun
-to marginalize sbd###marginaliser qqun
-young men of Asian/Itaian descent origin, background###des jeunes hommes d'origines asiatique/italienne
-the Muslim population of Pakistani origin###la population musulmane d'origine pakistanaise
-second-generation immigrants###des immigrés de deuxième génération
-a forced/arranged marriage###un mariage forcé/arrangé
-a sham marriage, a marriage of convenience###un mariage blanc
-inter-ethnic marriage###le mariage interethnique
-a mixed marriage, a mixed-race marriage###un mariage mixte
-to be mixed-race###être métis
-to be dual heritage, to have dual heritage###avoir une double culture
-affirmative action###la discrimination positive
-equal opportunity###l'égalité des chances
-to introduce quotas###instaurer des quotas
-the introduction of quotas###l'instauration des quotas
-to apologize to smb for smth###s'excuser de qqchose auprès de qqun
-to set right wrongs###réparer des injustices
-to redress imbalances###corriger des déséquilibres
-to call smth into a question###remettre qqchose en cause
-to take the oath###prêter serment
-bear true allegiance###jurer allégeance
-fulfil my duties as a Canadian citizen###accomplir mes devoirs de citoyen canadien
-Rule of Law###l'état de droit
-Ghettoization###la ghettoïsation
-self-segregation###auto-ségrégation
-identity politics###Identité politique
-plight###situation critique
-of Pakistani descent###d'origine pakistanaise
-slightly veiled###à peine déguisé
-broad-mindedness###ouverture d'esprit
-come under fire###être vivement critiqué
-to feel alienated###se sentir exclu
-Downplaying###minimiser
-I opined that###J'étais d'avis que
-mainstream###courant dominant
-stifle###étouffer
-vacuum###vide
-embedded in###véhiculé par
-a play###une pièce de théâtre
-homogeneous###homogène
-the motto###la devise
-merge###fusionner, s'unir
-for instance###par exemple
-fulfil###satisfaire, réaliser, remplir
-heirs###héritiers
-Hindus###les hindous
-faiths###les confessions, les religions, les croyances
-customs###traditions
-emphasize###mettre l'accent sur
-withdraw###se retirer
-mainstream society###société dominante, normale
+a virus, viruses (pl)###un virus (pl)
+to mutate###muter
+contagious, catching, infectious###contagieux, infectieux
+to contaminate###contaminer
+underlying###sous-jacent
+to be infected with a virus###être contaminé par un virus
+a symptom###un symptôme
+asymptomatic###asymptomatique
+to cough###tousser
+to sneeze###éternuer
+to inhale airborne droplets###inhaler des goutelettes en suspension
+to have a runny nose###avoir le nez qui coule
+to have a sore throat###avoir mal a la gorge
+tiredness, fatigue###la fatigue
+headache###mal de tête
+to have difficulty/trouble breathing###avoir du mal à respirer
+to be short on breath, out of breath###être essoufflé, avoir le souffle court
+to have a temperature###avoir de la température
+to have a fever, to run a fever###avoir de la fièvre
+cruise ship###bateau de croisière
+smallpox###variole
+to test positive (for the virus)###être testé positif (pour le virus)
+to carry a virus###être porteur d'un virus
+the immune system###le système humanitaire
+herd immunity###immunité de groupe
+plague###la peste
+cholera###le choléra
+a curse, a plague, a scourge###un fléau
+a disaster###une catastrophe
+unexpected###inattendu
+unpredictable, unforeseeable###imprévisible
+to spread###se propager
+the spread of a virus###la propagation d'un virus
+an epidemic###une épidémie
+a pandemic###une pandémie
+an epicentre###un épicentre
+to break out###éclater, se déclarer
+an outbreak###le début, d'une épidémie
+the scope, the extent of the epidemic###l'ampleur, l'étendue de l'épidémie
+to affect a country###affecter, toucher un pays
+the hardest-hit area###la zone la plus durement touchée
+to stem, halt an outbreak###endiguer une épidémie
+to check an epidemic###enrayer une épidémie
+to eradicate###éradiquer
+endemic###endémique
+accuracy###exactitude
+the flu###la grippe
+swing flu, pig flu###la grippe porcine
+lethal###mortel
+lethality###létalité
+the death toll###le nombres de victimes
+the elderly###les personnes âgées
+a care home, a nursing home, a retirement house###une maison de retraite
+to hospatilize somebody###hospitaliser quelqu'un
+to be in intensive care###être en réanimation
+a ventilator###un ventilateur
+health workers, medical staff###les (personnels) soignants
+a nurse###une infirmière
+an assistant nurse###une aide-soignante
+a hero###un hero
+to clap###applaudir
+show solidarity with somebody###être solidaire de quelqu'un
+to monitor###contrôler
+to combat the virus###lutter contre le virus
+state of emergency###état d'urgence
+to flatten the curve###aplatir les courbes
+preventative measures, health precautions###les gestes barrières
+a tissue###un mouchoir
+social distancing###la distanciation sociale
+to wash your hands###se laver les mains
+to greet somebody###saluer quelqu'un
+to shake hands###se serrer la main
+to kiss somebody###faire la bise à quelqu'un
+to wear a (face) mask###porter un masque
+medical supplies###les fournitures médicales
+to stockpile###stocker
+to run out of protective equipment###ne plus avoir d'équipements de protection
+to be short on masks###manquer de masques
+a shortage###une pénurie
+gloves###gants
+to self-isolate###s'isoler
+bleach###l'eau de javel
+to disinfect public areas###désinfecter les lieux publics
+antibiotics###antibiotiques
+a vaccine###un vaccin
+to get vaccinated###se faire vacciner
+even as###alors même que
+an imposition###une atteinte
+to quarantine somebody###mettre quelqu'un en quarantaine
+to put/be under quarantine###mettre/être en quarantaine
+travel bank###interdiction de voyager
+travel restrictions###limitations de déplacement
+to issue a stay-at-home order###ordonner le confinement
+lockdown, confinement###confinement
+to work from/at home###télétravailler
+a videoconference###une vidéoconférence
+to furlough somebody###mettre quelqu'un au chômage partiel
+panic buying###achats (sous l'emprise de la) panique
+wrought havoc###faire des ravages
+pied pipers###joueurs de flute d'Hamelin
+a waiver###une dérogation
+to lift the lockdown###déconfiner
+to ease, to loosen restrictions###assouplir les restrictions
+fallout###retombées
+mitigate###atténuer
+calls for###demande
+come out of the blue###être complètement inattendu
+to spread like a wildfire###se répandre comme une traînée de poudre
+to go viral###se répandre/propager comme un virus
+to nip something from the bud###tuer quelque chose dans l'oeuf
+to be in the same boat###être dans le même bateau
+to take stock (of something)###faire le bilan (de quelque chose)
+to look on the bright side###regarder le bon côté des choses
+every cloud has a silver meaning###à quelque chose malheur est bon
+United we stand, divider we fall###l'union fait la force

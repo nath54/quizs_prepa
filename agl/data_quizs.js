@@ -2331,16 +2331,16 @@ const quiz_immigration = [
     ["People-smugglers ", "Les passeurs d'immigrants clandestins", 1536],
     ["A smuggling ring ", "Un réseau de passeurs", 1537],
     ["A fake passport ", "Un faux passeport", 1538],
-    ["To escort sb back to the border ", "Reconduire qqn à la frontière", 1539],
+    ["To escort somebody back to the border ", "Reconduire quelqu'un à la frontière", 1539],
     ["To send an immigrant back to his native country ", "Renvoyer un immigrant dans son pays d'origine", 1540],
-    ["To deport sb ", "Expulser qqn", 1541],
+    ["To deport somebody ", "Expulser quelqu'un", 1541],
     ["To be turned away at the border ", "Être refoulé à la frontière", 1542],
     ["To be ordered out of the country ", "Être expulsé", 1543],
     ["To go into exile ", "S'exiler", 1544],
     ["An exile ", "Un exilé", 1545],
     [
-        ["To exile", " banish sb "],
-        ["Exiler", " bannir qqn"], 1546
+        ["To exile", " banish somebody "],
+        ["Exiler", " bannir quelqu'un"], 1546
     ],
     ["To expatriate oneself ", "S'expatrier", 1547],
     [
@@ -2657,8 +2657,593 @@ const quiz_multiculturalism = [
     ["withdraw", "se retirer", 1726],
     ["mainstream society", ["société dominante", "la société normale"], 1727],
 ];
+const quiz_economic_crisis = [
+    [
+        ["a downturn", " a downswing "],
+        ["une phase de baisse", " un fléchissement de l'activité"], 1728
+    ],
+    ["a slowdown ", "un ralentissement", 1729],
+    ["to go through a bad patch ", "connaître une période difficile", 1730],
+    [
+        ["a recession", " a slump "], "une récession", 1731
+    ],
+    ["the global economic meltdown ", "l'effondrement de l'économie mondiale", 1732],
+    ["deflation ", "la déflation", 1733],
+    ["stagflation ", "la stagflation", 1734],
+    ["set something off ", "déclencher/ provoquer", 1735],
+    [
+        ["(vertically) pull (somebody) down", " drag (somebody) down "], "entraîner (vers le bas)", 1736
+    ],
+    [
+        ["(horizontally) pull (somebody) along", " drag (somebody) along "], "entraîner (traîner)", 1737
+    ],
+    ["word-wide ", "mondialement", 1738],
+    ["to drop ", ["baisser", " diminuer"], 1739],
+    ["to tumble ", ["s'effondrer", " plonger", " dégringoler"], 1740],
+    [
+        ["property", " real estate "], "l'immobilier", 1741
+    ],
+    [
+        ["an estate agent", " a realtor "], "un agent immobilier", 1742
+    ],
+    ["a developer ", "un promoteur immobilier", 1743],
+    ["the housing bubble / crisis ", "la bulle / crise immobilière", 1744],
+    [
+        ["housing prices", " real estate prices "], "les prix de l'immobilier", 1745
+    ],
+    ["the property market is in the doldrums ", "l'immobilier est dans le marasme", 1746],
+    ["the building industry ", "le bâtiment (secteur économique)", 1747],
+    ["subprime loan ", "un prêt à risque", 1748],
+    ["borrower ", "emprunteur", 1749],
+    ["perhaps ", "peut être", 1750],
+    [
+        ["they targeted people with No Income", " No Job or Asset (biens) "], "NINJA loan", 1751
+    ],
+    ["assets ", "biens", 1752],
+    ["adjustable rates ", "taux variables", 1753],
+    ["many subprime borrowers defaults (i.e. stopped paying theirs monthly installments) ", "beaucoup de d'emprunteurs à risque arrêtent de payer leurs mensualités", 1754],
+    ["to borrow money from a bank ", "emprunter de l'argent à une banque", 1755],
+    ["to lend money to somebody ", "prêter de l'argent à qn", 1756],
+    ["interest rate ", "taux d'interêt", 1757],
+    ["a loan ", ["un prêt", " un emprunt"], 1758],
+    ["a loan shark ", "un usurier", 1759],
+    ["to take out a loan ", "faire un emprunt", 1760],
+    ["a building society ", "une société de crédit immobilier", 1761],
+    ["to default on a loan ", "ne pas honorer ses engagements", 1762],
+    ["insolvent ", "insolvable", 1763],
+    ["insolvency ", "l'insolvabilité", 1764],
+    ["a mortgage ", ["un crédit hypothécaire", " un emprunt immobilier"], 1765],
+    [
+        ["to take out", " to raise a mortgage "], "contraster un emprunt immobilier", 1766
+    ],
+    ["to mortgage one's house ", "hypothéquer sa maison", 1767],
+    ["a monthly instalment ", "une mensualité", 1768],
+    ["to pay off a mortgage ", "rembourser un emprunt immobilier", 1769],
+    ["to foreclose a mortgage ", "saisir un bien immobilier", 1770],
+    ["to repossess propriety ", "reprendre possession d'un bien", 1771],
+    ["a foreclosure ", "une saisie (immobilière)", 1772],
+    ["homeless ", "sans abri", 1773],
+    ["moratorium ", "moratoire", 1774],
+    ["lender ", "prêteur/ prêteuse", 1775],
+    ["that passed Congress ", "adopté par le Congrès", 1776],
+    ["the breathing room ", "répit", 1777],
+    ["the credit bubble ", "la bulle du crédit", 1778],
+    ["the credit crunch ", "la crise du crédit/ le resserrement du crédit", 1779],
+    ["banking ", "le secteur bancaire", 1780],
+    ["an investment bank ", "une banque d'affaires", 1781],
+    ["a pension fund ", "un fonds de pension", 1782],
+    [
+        ["a rise in", " a hike in interest rate "], "une hausse des taux d'intérêt", 1783
+    ],
+    ["inflation rate ", "le taux d'inflation", 1784],
+    ["sharply ", ["vivement", " rapidement", " brusquement"], 1785],
+    ["huge ", ["énorme", " immense"], 1786],
+    ["dotcom bubble ", "la bulle internet", 1787],
+    ["recouped ", "récupérer", 1788],
+    ["to make a profit ", "réaliser des bénéfices", 1789],
+    ["a loss ", "une perte", 1790],
+    ["to go to bankrupt ", "faire faillite", 1791],
+    ["a bankrupt ", "une faillite", 1792],
+    ["debt ", "une dette", 1793],
+    ["to be in debt ", ["avoir des dettes", " être endetté"], 1794],
+    ["to be in the red ", "être dans le rouge", 1795],
+    ["to go out of the red ", "sortir du rouge", 1796],
+    ["to bail out a company ", "renflouer une entreprise", 1797],
+    ["bailout ", ["renflouement", " sauvetage"], 1798],
+    ["a taxpayer ", "un contribuable", 1799],
+    ["a rescue plan ", "un plan de sauvetage", 1800],
+    ["to take emergency measures ", "prendre des mesures d'urgence", 1801],
+    ["a subsidy ", "une subvention", 1802],
+    ["to subsidize ", "subventionner", 1803],
+    ["Securities and Exchange Commission (SEC) ", "Autorité des Marchés Financiers (AMF)", 1804],
+    ["enforcing ", "appliquer", 1805],
+    ["the securities ", "valeurs boursières", 1806],
+    ["stocks ", "actions", 1807],
+    [
+        ["the stock exchange", " the stock market "], "la bourse ( des valeurs) (le marché boursier)", 1808
+    ],
+    [
+        ["shares", " stock(s) "], "des actions", 1809
+    ],
+    ["a shareholder ", "un actionnaire", 1810],
+    ["to save ", "épargner", 1811],
+    ["savings ", "économies", 1812],
+    ["small savers ", "les petits épargnants", 1813],
+    ["a bond ", "une obligation", 1814],
+    ["a junk bond ", "une obligation pourrie", 1815],
+    ["an investor ", "un investisseur", 1816],
+    ["a speculator ", "un spéculateur", 1817],
+    ["a hedge fund ", "un fonds spéculatif", 1818],
+    ["sprawling ", ["vase", " étendu"], 1819],
+    ["shore up ", "consolider", 1820],
+    ["feeble ", ["faible", " fébrile"], 1821],
+    ["upturns ", ["progression", " reprise"], 1822],
+    ["peak ", "sommet", 1823],
+    ["with half a decade's hindsight ", "avec cinq ans de recul", 1824],
+    ["obvious ", "évident", 1825],
+    ["folly ", ["folie", " stupidité"], 1826],
+    ["the financialization of the economy ", "la financiarisation de l'économie", 1827],
+    ["de-industrialization ", "la désindustrialisation", 1828],
+    ["a financier ", "un financier", 1829],
+    ["a rogue trader ", "un trader véreux", 1830],
+    ["a rogue capitaliste ", "un capitaliste-voyou", 1831],
+    ["a fat cat ", ["un gros richard", " un gros capitaliste"], 1832],
+    ["a bonus ", "une prime", 1833],
+    [
+        ["insider dealing", " insider trading "], "délit d'initiés", 1834
+    ],
+    ["tax evasion ", "la fraude fiscale", 1835],
+    ["a tax dodger ", "un fraudeur", 1836],
+    ["a tax haven ", "un paradis fiscal", 1837],
+    ["bank secrecy ", "le secret bancaire", 1838],
+    ["a Ponzi scheme ", ["une chaîne de Ponzi", " une pyramide de Ponzi"], 1839],
+    ["a scam ", ["une escroquerie", " une arnaque"], 1840],
+    [
+        ["a crook", " a swindler", " a conman "], "un escroc", 1841
+    ],
+    ["Bernard Madoff ", "un escroc financier", 1842],
+    ["former chairman ", "ancien président", 1843],
+    ["economic policy ", "la politique économique", 1844],
+    ["austerity measures ", ["des mesures d'austérité", " une politique de rigueur"], 1845],
+    [
+        ["a stimulus plan", " a stimulus package "], "un plan de relance", 1846
+    ],
+    ["quantitative easing ", "l'assouplissement quantitatif", 1847],
+    ["to boost growth ", "stimuler la croissance", 1848],
+    ["deregulation ", "la déréglementation", 1849],
+    ["The Federal Reserve System (The Fed) ", "la banque centrale des Etats-Unis d'Amérique", 1850],
+    ["growth ", "la croissance", 1851],
+    ["public spending ", "les dépenses publiques", 1852],
+    ["to balance a budget ", "équilibrer un budget", 1853],
+    ["drastic budget cuts ", "réductions budgétaires drastiques", 1854],
+    ["a budget déficit ", "un déficit budgétaire", 1855],
+    ["a credit-rating agency ", "une agence de notation", 1856],
+    ["a tax rise ", "une augmentation des impôts", 1857],
+    ["investment ", "l'investissement", 1858],
+    ["consumer spending / demand ", "les dépenses / la demande des consommateurs", 1859],
+    ["General Motors Corporation ", ["a car-manufacturer found in 1908 in Flint", " Michigan"], 1860],
+    ["to reduce wage costs ", "réduire les coûts salariaux", 1861],
+    ["to reduce production costs ", "réduire les coûts de production", 1862],
+    ["to streamline ", "rationaliser", 1863],
+    ["to downsize ", "dégraisser ses effectifs", 1864],
+    ["restructuring ", "restructuration", 1865],
+    [
+        ["to make workers redundant", " to lay off workers "], "licencier des salariés", 1866
+    ],
+    ["to cut jobs ", "supprimer des emplois", 1867],
+    ["job losses ", ["des pertes d'emplois", " des suppressions d'emplois"], 1868],
+    ["The G8 ", ["forum", " France", " 1975 to face the consequences of the oil crisis (Canada", " France", " Germany", " Italy", " Japan", " Russia", " UK", " US)"], 1869],
+    ["gathers ", "rassemble", 1870],
+    ["The G-20 ", "eleven others countries + UE", 1871],
+    ["the economy is recovering ", "l'économie se redresse", 1872],
+    ["recovery ", "la reprise", 1873],
+    ["business is picking up ", "les affaires reprennent", 1874],
+    ["an upswing in economic growth ", "une remontée de la croissance", 1875],
+    [
+        ["to increase", " to go up", " to rise "],
+        ["augmenter", " monter"], 1876
+    ],
+    [
+        ["to soar", " to surge", " to rocket "], "monter en flèche", 1877
+    ],
+];
 
-// NEXT FREE ID : 1728
+const quiz_unemployment = [
+    ["Work ", "Du travail", 1878],
+    ["A job ", ["Un travail", " un emploi"], 1879],
+    ["An occupation ", ["Une profession", " une activité professionnelle"], 1880],
+    ["The professions ", "Les professions libérales", 1881],
+    ["A career ", "Une carrière", 1882],
+    ["The world of work ", "Le monde du travail", 1883],
+    ["To be at work ", "Être au travail", 1884],
+    ["The workplace ", "Le lieu de travail", 1885],
+    ["To work from home ", "Travailler chez soi", 1886],
+    ["To work part time ", "Travailler à temps partiel OU à mi-temps", 1887],
+    ["To work full time ", "Travailler à plein temps", 1888],
+    ["The working class ", "La classe ouvrière", 1889],
+    ["The working population ", "La population active", 1890],
+    ["The working life ", "La vie active", 1891],
+    ["Working conditions ", "Les conditions de travail", 1892],
+    ["A workshop ", "Un atelier", 1893],
+    [
+        ["A factory", " a plant "], "Une usine", 1894
+    ],
+    ["A sweatshop ", "Un atelier clandestin (où la main d'oeuvre est exploitée)", 1895],
+    ["To work hard ", "Travailler beaucoup", 1896],
+    ["To be hard-working ", "Être travailleur", 1897],
+    [
+        ["A hard worker", " a workaholic "],
+        ["Un travailleur acharné", " un bourreau de travail"], 1898
+    ],
+    ["A work permit ", "Un permis de travail", 1899],
+    ["To be on duty / off duty ", "Être / Ne pas être de service OU de garde", 1900],
+    ["To make ends meet ", "Joindre les deux bouts", 1901],
+    ["Poverty line ", "Seuil de pauvreté", 1902],
+    ["Trend ", "Phénomène", 1903],
+    ["The political spectrum ", "L'éventail politique", 1904],
+    ["Trickle-down effect ", "Effet de ruissellement", 1905],
+    ["To fund ", "Financer", 1906],
+    [
+        ["Unemployment", " joblessness "], "Le chômage", 1907
+    ],
+    [
+        ["To be unemployed", " jobless", " out of work "], "Être au chômage", 1908
+    ],
+    [
+        ["Unemployment rate", " jobless rate "], "Taux de chômage", 1909
+    ],
+    [
+        ["The unemployed", " the jobless "], "Les chômeurs", 1910
+    ],
+    ["Long-term unemployment ", "Le chômage de longue durée", 1911],
+    ["Youth unemployment ", "Le chômage des jeunes", 1912],
+    ["Unemployed benefit ", "Allocation chômage", 1913],
+    [
+        ["To be on the dole (GB)", " to be on welfare (US) "], "Toucher le chômage", 1914
+    ],
+    [
+        ["Job market", " labour market "],
+        ["Le marché du travail", " de l'emploi"], 1915
+    ],
+    ["A fixed-term contract ", "Un contrat à durée déterminée (CDD)", 1916],
+    ["An open-ended contract ", "Un contrat à durée indéterminée (CDI)", 1917],
+    ["Job flexibility ", "La flexibilité de l'emploi", 1918],
+    [
+        ["Work flexitime (GB)", " work flextime (US) "], "Avoir des horaires flexibles", 1919
+    ],
+    ["Job security / insecurity ", "La sécurité /.La précarité de l'emploi", 1920],
+    [
+        ["An internship", " a work placement "], "Un stage", 1921
+    ],
+    [
+        ["An intern", " a trainee "], "Un stagiaire", 1922
+    ],
+    ["A casual worker ", "Un travailleur précaire", 1923],
+    [
+        ["An odd job", " a casual job "], "Un petit boulot", 1924
+    ],
+    ["A summer job ", "Un boulot d'été", 1925],
+    ["A temporary worker ", "Un intérimaire", 1926],
+    [
+        ["To temp", " to work as a temp "], "Faire de l'intérim", 1927
+    ],
+    ["Shortages ", "Pénurie", 1928],
+    ["To help meet demands ", "Satisfaire les demandes", 1929],
+    ["To employ ", "Employer", 1930],
+    ["An employer ", "Un employeur", 1931],
+    ["An employee ", "Un employé", 1932],
+    ["To change jobs ", "Changer de travail", 1933],
+    [
+        ["To hire", " to take on a worker "], "Embaucher un travailleur", 1934
+    ],
+    ["To recruit ", "Recruter", 1935],
+    ["A trial period ", "Une période d'essai", 1936],
+    [
+        ["A post", " a position "], "Un poste", 1937
+    ],
+    ["To appoint somebody to a post ", "Nommer quelqu'un à un poste", 1938],
+    ["To transfer somebody ", "Muter quelqu'un", 1939],
+    ["A responsible job ", "Un poste à responsabilité(s)", 1940],
+    ["A menial job ", "Un emploi subalterne", 1941],
+    ["A job-seeker ", "Un demandeur d'emploi", 1942],
+    ["A Jobcenter (GB) ", "Une agence Pôle emploi", 1943],
+    [
+        ["A curriculum vitae", " a CV", " a résumé (US) "],
+        ["Un CV", " un curriculum vitae"], 1944
+    ],
+    ["Work experience ", "Expérience professionnelle", 1945],
+    ["Skills ", "Des compétences", 1946],
+    ["To apply for a job ", ["Être candidat à un emploi", " faire une demande d'emploi"], 1947],
+    ["An applicant ", "Un candidat à un poste", 1948],
+    ["A job interview ", "Un entretien d'embauche", 1949],
+    [
+        ["A job offer", " a job vacancy", " a job opportunity "], "Une offre d'emploi", 1950
+    ],
+    ["Labour ", "Teavail OU main d'oeuvre", 1951],
+    ["Female labour / child labour ", "La main d'oeuvre féminine / le travail des enfants", 1952],
+    ["Labour standards ", "Les normes en matière d'emploi", 1953],
+    [
+        ["Manpower", " workforce "], "La main d'oeuvre", 1954
+    ],
+    [
+        ["Staff", " personnel "], "Le personnel", 1955
+    ],
+    [
+        ["A colleague", " a co-worker", " a workmate "],
+        ["Un collègue", " un camarade de travail"], 1956
+    ],
+    ["Human resources ", "Les ressources humaines", 1957],
+    ["Manual labour ", "Travail manuel", 1958],
+    ["Labour Party ", "Parti travailliste", 1959],
+    ["A skilled / low-skilled / an unskilled job ", "Un travail qualifié / peu qualifié / non qualifié", 1960],
+    ["An unskilled worker ", ["Un ouvrier spécialisé", " OS"], 1961],
+    ["A blue-collar worker ", "Un ouvrier", 1962],
+    ["A white-collar worker ", "Un employé de bureau", 1963],
+    [
+        ["A state employee", " a civil servant "], "Un fonctionnaire", 1964
+    ],
+    ["A public-sector employee ", "Un salarié du secteur public", 1965],
+    ["A high-ranking civil servant ", "Un haut fonctionnaire", 1966],
+    ["To be self-employed ", ["Être indépendants", " travailler à son compte"], 1967],
+    ["The self-employed ", "Les travailleurs indépendants", 1968],
+    ["Fees ", "Des honoraires", 1969],
+    ["Make a fool of oneself ", "Se ridiculiser", 1970],
+    ["To highlight ", "Souligner", 1971],
+    ["Free enterprise ", "Libre entreprise", 1972],
+    ["Entrepreneurship ", "L'esprit d'entreprise", 1973],
+    ["Entrepreneurial ", "Entreprenant", 1974],
+    ["Pay ", ["Paie", " paye"], 1975],
+    ["Salary ", "Salaire", 1976],
+    ["Wages ", "Salaire (d'ouvrier)", 1977],
+    [
+        ["To earn money", " to make money "], "Gagner de l'argent", 1978
+    ],
+    [
+        ["To earn a living", " to earn obe's living", " to make a living "], "Gagner sa vie", 1979
+    ],
+    ["What does ge do for a living ? ", "Que fait-il dans la vie ?", 1980],
+    [
+        ["A badly-paid job", " a low-paid job "], "Un travail mal payé", 1981
+    ],
+    [
+        ["A well-payed job", " a highly-paid job "], "Un travail bien payé", 1982
+    ],
+    ["A wage-earner ", "Un salarié", 1983],
+    ["A bonus (pl : bonuses) ", "Une prime", 1984],
+    [
+        ["A perk", " a fringe benefit "],
+        ["Un avantage (en nature)", " avantage annexe"], 1985
+    ],
+    ["A company car ", "Une voiture de fonction", 1986],
+    ["Performance-related pay ", "Salaire au rendement", 1987],
+    ["To be on a company's payroll ", "Être employé dans une entreprise", 1988],
+    ["Across the country ", "Dans tout le pays", 1989],
+    ["Are set to ", "S'apprêtent à", 1990],
+    ["To keep up with ", "Faire face", 1991],
+    ["Hourly-paid workers ", "Salariés payés à l'heure", 1992],
+    [
+        ["Holiday", " vacation (US) "], "Des vacances", 1993
+    ],
+    ["Paid holiday ", "Les congés payés", 1994],
+    ["To be on holiday ", "Être en vacances", 1995],
+    ["A bank holiday ", "Un jour férié", 1996],
+    ["To be on sick leave ", "Être en congé maladie", 1997],
+    ["To take two days off ", "Prendre deux jours de congé", 1998],
+    ["Reduction of working hours ", ["Réduction du temps de travail", " RTT"], 1999],
+    ["The 35-hours working week ", ["Les 35 heures", " la semaine des 35 heures"], 2000],
+    ["Trapped ", "Prisonnier", 2001],
+    ["Make a point ", "Prendre soin de", 2002],
+    ["In a big way ", "À grande échelle", 2003],
+    ["Idleness ", "Oisiveté", 2004],
+    ["To cut jobs ", "Supprimer des emplois", 2005],
+    [
+        ["To slash", " to axe jobs "],
+        ["Faire des coupes sombres", " claires dans la main d'oeuvre"], 2006
+    ],
+    ["Job losses ", ["Des pertes d'emplois", " des suppressions d'emplois"], 2007],
+    ["To streamline ", "Rationnaliser", 2008],
+    ["To downsize ", "Dégraisser ses effectifs", 2009],
+    [
+        ["To lay off workers", " to make workers redundant "], "Licencier des salariés", 2010
+    ],
+    ["A redundancy ", "Un licenciement (économique)", 2011],
+    ["A voluntary redundancy ", "Un départ volontaire", 2012],
+    ["A redundancy plan ", "Un plan social", 2013],
+    [
+        ["Redundancy payment", " severance pay", " severance package "],
+        ["Indemnité de licenciement", " prime de départ"], 2014
+    ],
+    [
+        ["A golden parachute", " a golden handshake "], "Un parachute doré", 2015
+    ],
+    ["To dismiss somebody ", ["Renvoyer", " licencier", " congédier quelqu'un"], 2016],
+    [
+        ["To fire", " to sack", " to give somebody the sack "],
+        ["Mettre à la porte", " renvoyer", " virer"], 2017
+    ],
+    ["To get the sack ", "Être renvoyé", 2018],
+    ["Revile ", "Vilipender", 2019],
+    ["Encapsulate ", "Incarner", 2020],
+    ["Self-reliance ", "Autonomie", 2021],
+    ["An industrial dispute ", "Un conflit social", 2022],
+    ["To go on strike / To be on strike ", "Se mettre / Être en grève", 2023],
+    ["A striker ", "Un gréviste", 2024],
+    ["Management and workers ", "La direction et les salariés", 2025],
+    ["A shop steward ", "Un délégué syndical", 2026],
+    ["A (trade) union ", "Un syndicat", 2027],
+    ["A claim ", "Une revendication", 2028],
+    [
+        ["Wage claims", " wage demands "], "Des revendications salariales", 2029
+    ],
+    [
+        ["A payrise (GB)", " a payraise (UK) "], "Une augmentation de salaire", 2030
+    ],
+    ["To resume work ", "Reprendre le travail", 2031],
+    ["Flagged ", "A annonçé", 2032],
+    ["To retire ", "Prendre sa retraite", 2033],
+    [
+        ["To resign", " to step down "], "Démissionner", 2034
+    ],
+    [
+        ["A pensioner", " an old age pensioner", " a retiree (US) "], "Un retraité", 2035
+    ],
+    ["Retirement ", "La retraite", 2036],
+    ["To take early retirement ", "Partir en pré-retraite", 2037],
+    ["Retirement age ", "L'âge de la retraite", 2038],
+];
+
+const quiz_covid_crisis = [
+    ["a virus", "un virus", 2039],
+    ["to mutate", "muter", 2040],
+    [
+        ["contagious", " catching", " infectious"],
+        ["contagieux", " infectieux"], 2041
+    ],
+    ["to contaminate", "contaminer", 2042],
+    ["underlying", "sous-jacent", 2043],
+    ["to be infected with a virus", "être contaminé par un virus", 2044],
+    ["a symptom", "un symptôme", 2045],
+    ["asymptomatic", "asymptomatique", 2046],
+    ["to cough", "tousser", 2047],
+    ["to sneeze", "éternuer", 2048],
+    ["to inhale airborne droplets", "inhaler des goutelettes en suspension", 2049],
+    ["to have a runny nose", "avoir le nez qui coule", 2050],
+    ["to have a sore throat", "avoir mal a la gorge", 2051],
+    [
+        ["tiredness", " fatigue"], "la fatigue", 2052
+    ],
+    ["headache", "mal de tête", 2053],
+    ["to have difficulty/trouble breathing", "avoir du mal à respirer", 2054],
+    [
+        ["to be short on breath", " out of breath"],
+        ["être essoufflé", " avoir le souffle court"], 2055
+    ],
+    ["to have a temperature", "avoir de la température", 2056],
+    [
+        ["to have a fever", " to run a fever"], "avoir de la fièvre", 2057
+    ],
+    ["cruise ship", "bateau de croisière", 2058],
+    ["smallpox", "variole", 2059],
+    ["to test positive (for the virus)", "être testé positif (pour le virus)", 2060],
+    ["to carry a virus", "être porteur d'un virus", 2061],
+    ["the immune system", "le système humanitaire", 2062],
+    ["herd immunity", "immunité de groupe", 2063],
+    ["plague", "la peste", 2064],
+    ["cholera", "le choléra", 2065],
+    [
+        ["a curse", " a plague", " a scourge"], "un fléau", 2066
+    ],
+    ["a disaster", "une catastrophe", 2067],
+    ["unexpected", "inattendu", 2068],
+    [
+        ["unpredictable", " unforeseeable"], "imprévisible", 2069
+    ],
+    ["to spread", "se propager", 2070],
+    ["the spread of a virus", "la propagation d'un virus", 2071],
+    ["an epidemic", "une épidémie", 2072],
+    ["a pandemic", "une pandémie", 2073],
+    ["an epicentre", "un épicentre", 2074],
+    ["to break out", ["éclater", " se déclarer"], 2075],
+    ["an outbreak", ["le début", " d'une épidémie"], 2076],
+    [
+        ["the scope", " the extent of the epidemic"],
+        ["l'ampleur", " l'étendue de l'épidémie"], 2077
+    ],
+    ["to affect a country", ["affecter", " toucher un pays"], 2078],
+    ["the hardest-hit area", "la zone la plus durement touchée", 2079],
+    [
+        ["to stem", " halt an outbreak"], "endiguer une épidémie", 2080
+    ],
+    ["to check an epidemic", "enrayer une épidémie", 2081],
+    ["to eradicate", "éradiquer", 2082],
+    ["endemic", "endémique", 2083],
+    ["accuracy", "exactitude", 2084],
+    ["the flu", "la grippe", 2085],
+    [
+        ["swing flu", " pig flu"], "la grippe porcine", 2086
+    ],
+    ["lethal", "mortel", 2087],
+    ["lethality", "létalité", 2088],
+    ["the death toll", "le nombres de victimes", 2089],
+    ["the elderly", "les personnes âgées", 2090],
+    [
+        ["a care home", " a nursing home", " a retirement house"], "une maison de retraite", 2091
+    ],
+    ["to hospatilize somebody", "hospitaliser quelqu'un", 2092],
+    ["to be in intensive care", "être en réanimation", 2093],
+    ["a ventilator", "un ventilateur", 2094],
+    [
+        ["health workers", " medical staff"], "les (personnels) soignants", 2095
+    ],
+    ["a nurse", "une infirmière", 2096],
+    ["an assistant nurse", "une aide-soignante", 2097],
+    ["a hero", "un hero", 2098],
+    ["to clap", "applaudir", 2099],
+    ["show solidarity with somebody", "être solidaire de quelqu'un", 2100],
+    ["to monitor", "contrôler", 2101],
+    ["to combat the virus", "lutter contre le virus", 2102],
+    ["state of emergency", "état d'urgence", 2103],
+    ["to flatten the curve", "aplatir les courbes", 2104],
+    [
+        ["preventative measures", " health precautions"], "les gestes barrières", 2105
+    ],
+    ["a tissue", "un mouchoir", 2106],
+    ["social distancing", "la distanciation sociale", 2107],
+    ["to wash your hands", "se laver les mains", 2108],
+    ["to greet somebody", "saluer quelqu'un", 2109],
+    ["to shake hands", "se serrer la main", 2110],
+    ["to kiss somebody", "faire la bise à quelqu'un", 2111],
+    ["to wear a (face) mask", "porter un masque", 2112],
+    ["medical supplies", "les fournitures médicales", 2113],
+    ["to stockpile", "stocker", 2114],
+    ["to run out of protective equipment", "ne plus avoir d'équipements de protection", 2115],
+    ["to be short on masks", "manquer de masques", 2116],
+    ["a shortage", "une pénurie", 2117],
+    ["gloves", "gants", 2118],
+    ["to self-isolate", "s'isoler", 2119],
+    ["bleach", "l'eau de javel", 2120],
+    ["to disinfect public areas", "désinfecter les lieux publics", 2121],
+    ["antibiotics", "antibiotiques", 2122],
+    ["a vaccine", "un vaccin", 2123],
+    ["to get vaccinated", "se faire vacciner", 2124],
+    ["even as", "alors même que", 2125],
+    ["an imposition", "une atteinte", 2126],
+    ["to quarantine somebody", "mettre quelqu'un en quarantaine", 2127],
+    ["to put/be under quarantine", "mettre/être en quarantaine", 2128],
+    ["travel bank", "interdiction de voyager", 2129],
+    ["travel restrictions", "limitations de déplacement", 2130],
+    ["to issue a stay-at-home order", "ordonner le confinement", 2131],
+    [
+        ["lockdown", " confinement"], "confinement", 2132
+    ],
+    ["to work from/at home", "télétravailler", 2133],
+    ["a videoconference", "une vidéoconférence", 2134],
+    ["to furlough somebody", "mettre quelqu'un au chômage partiel", 2135],
+    ["panic buying", "achats (sous l'emprise de la) panique", 2136],
+    ["wrought havoc", "faire des ravages", 2137],
+    ["pied pipers", "joueurs de flute d'Hamelin", 2138],
+    ["a waiver", "une dérogation", 2139],
+    ["to lift the lockdown", "déconfiner", 2140],
+    [
+        ["to ease", " to loosen restrictions"], "assouplir les restrictions", 2141
+    ],
+    ["fallout", "retombées", 2142],
+    ["mitigate", "atténuer", 2143],
+    ["calls for", "demande", 2144],
+    ["come out of the blue", "être complètement inattendu", 2145],
+    ["to spread like a wildfire", "se répandre comme une traînée de poudre", 2146],
+    ["to go viral", "se répandre/propager comme un virus", 2147],
+    ["to nip something from the bud", "tuer quelque chose dans l'oeuf", 2148],
+    ["to be in the same boat", "être dans le même bateau", 2149],
+    ["to take stock (of something)", "faire le bilan (de quelque chose)", 2150],
+    ["to look on the bright side", "regarder le bon côté des choses", 2151],
+    ["every cloud has a silver meaning", "à quelque chose malheur est bon", 2152],
+    [
+        ["United we stand", " divider we fall"], "l'union fait la force", 2153
+    ],
+];
+
+// NEXT FREE ID : 2039
 
 
 
@@ -2684,6 +3269,9 @@ const Quizs = {
     "immigration": quiz_immigration,
     "racism": quiz_racism,
     "multiculturalism": quiz_multiculturalism,
+    "economic crisis": quiz_economic_crisis,
+    "unemployment": quiz_unemployment,
+    "covid crisis": quiz_covid_crisis,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action
