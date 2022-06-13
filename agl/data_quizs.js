@@ -2832,9 +2832,8 @@ const quiz_economic_crisis = [
     ],
     ["to cut jobs ", "supprimer des emplois", 1867],
     ["job losses ", ["des pertes d'emplois", " des suppressions d'emplois"], 1868],
-    ["The G8 ", ["forum", " France", " 1975 to face the consequences of the oil crisis (Canada", " France", " Germany", " Italy", " Japan", " Russia", " UK", " US)"], 1869],
+
     ["gathers ", "rassemble", 1870],
-    ["The G-20 ", "eleven others countries + UE", 1871],
     ["the economy is recovering ", "l'économie se redresse", 1872],
     ["recovery ", "la reprise", 1873],
     ["business is picking up ", "les affaires reprennent", 1874],
@@ -3076,7 +3075,7 @@ const quiz_unemployment = [
         ["Wage claims", " wage demands "], "Des revendications salariales", 2029
     ],
     [
-        ["A payrise (GB)", " a payraise (UK) "], "Une augmentation de salaire", 2030
+        ["A payrise", " a payraise"], "Une augmentation de salaire", 2030
     ],
     ["To resume work ", "Reprendre le travail", 2031],
     ["Flagged ", "A annonçé", 2032],
@@ -3113,7 +3112,7 @@ const quiz_covid_crisis = [
         ["tiredness", " fatigue"], "la fatigue", 2052
     ],
     ["headache", "mal de tête", 2053],
-    ["to have difficulty/trouble breathing", "avoir du mal à respirer", 2054],
+    [["to have difficulty breathing", "to have trouble breathing"], "avoir du mal à respirer", 2054],
     [
         ["to be short on breath", " out of breath"],
         ["être essoufflé", " avoir le souffle court"], 2055
