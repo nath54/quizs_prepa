@@ -2875,7 +2875,7 @@ const quiz_unemployment = [
         ["Un travailleur acharné", " un bourreau de travail"], 1898
     ],
     ["A work permit ", "Un permis de travail", 1899],
-    ["To be on duty / off duty ", "Être / Ne pas être de service OU de garde", 1900],
+    ["To be on / off duty", ["Être / Ne pas être de service", "Être / Ne pas être de garde"], 1900],
     ["To make ends meet ", "Joindre les deux bouts", 1901],
     ["Poverty line ", "Seuil de pauvreté", 1902],
     ["Trend ", "Phénomène", 1903],
@@ -3112,7 +3112,9 @@ const quiz_covid_crisis = [
         ["tiredness", " fatigue"], "la fatigue", 2052
     ],
     ["headache", "mal de tête", 2053],
-    [["to have difficulty breathing", "to have trouble breathing"], "avoir du mal à respirer", 2054],
+    [
+        ["to have difficulty breathing", "to have trouble breathing"], "avoir du mal à respirer", 2054
+    ],
     [
         ["to be short on breath", " out of breath"],
         ["être essoufflé", " avoir le souffle court"], 2055
