@@ -2933,7 +2933,7 @@ const quiz_unemployment = [
     ["An employee ", "Un employé", 1932],
     ["To change jobs ", "Changer de travail", 1933],
     [
-        ["To hire", " to take on a worker "], "Embaucher un travailleur", 1934
+        ["To hire a worker", " to take on a worker "], "Embaucher un travailleur", 1934
     ],
     ["To recruit ", "Recruter", 1935],
     ["A trial period ", "Une période d'essai", 1936],
