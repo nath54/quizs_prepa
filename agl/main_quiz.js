@@ -297,7 +297,8 @@ function prepareQuestion() {
         }
         document.getElementById("mot_a_traduire").innerHTML = txt;
     }
-    document.getElementById("block_input").style.display = "block";
+    document.getElementById("repondre_button").style.display = "block";
+    // document.getElementById("input_reponse").disabled = "false";
     document.getElementById("block_result").style.display = "none";
     document.getElementById("input_reponse").value = "";
 }
@@ -379,7 +380,8 @@ function traiteReponse() {
     }
     ajouteDernieresReponses(est_bonne_reponse);
     //
-    document.getElementById("block_input").style.display = "none";
+    document.getElementById("repondre_button").style.display = "none";
+    // document.getElementById("input_reponse").disabled = "true";
     document.getElementById("block_result").style.display = "block";
     window.nb_questions++;
     // ON VA S'OCCUPER DES POURCENTAGES ET DU GRAPHE
