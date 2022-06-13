@@ -2898,7 +2898,7 @@ const quiz_unemployment = [
     ["Youth unemployment ", "Le chômage des jeunes", 1912],
     ["Unemployed benefit ", "Allocation chômage", 1913],
     [
-        ["To be on the dole (GB)", " to be on welfare (US) "], "Toucher le chômage", 1914
+        ["To be on the dole", " to be on welfare"], "Toucher le chômage", 1914
     ],
     [
         ["Job market", " labour market "],
@@ -2908,7 +2908,7 @@ const quiz_unemployment = [
     ["An open-ended contract ", "Un contrat à durée indéterminée (CDI)", 1917],
     ["Job flexibility ", "La flexibilité de l'emploi", 1918],
     [
-        ["Work flexitime (GB)", " work flextime (US) "], "Avoir des horaires flexibles", 1919
+        ["Work flexitime", " work flextime"], "Avoir des horaires flexibles", 1919
     ],
     ["Job security / insecurity ", "La sécurité /.La précarité de l'emploi", 1920],
     [
@@ -2945,9 +2945,9 @@ const quiz_unemployment = [
     ["A responsible job ", "Un poste à responsabilité(s)", 1940],
     ["A menial job ", "Un emploi subalterne", 1941],
     ["A job-seeker ", "Un demandeur d'emploi", 1942],
-    ["A Jobcenter (GB) ", "Une agence Pôle emploi", 1943],
+    ["A Jobcenter", "Une agence Pôle emploi", 1943],
     [
-        ["A curriculum vitae", " a CV", " a résumé (US) "],
+        ["A curriculum vitae", " a CV", " a résumé"],
         ["Un CV", " un curriculum vitae"], 1944
     ],
     ["Work experience ", "Expérience professionnelle", 1945],
@@ -3021,7 +3021,7 @@ const quiz_unemployment = [
     ["To keep up with ", "Faire face", 1991],
     ["Hourly-paid workers ", "Salariés payés à l'heure", 1992],
     [
-        ["Holiday", " vacation (US) "], "Des vacances", 1993
+        ["Holiday", " vacation"], "Des vacances", 1993
     ],
     ["Paid holiday ", "Les congés payés", 1994],
     ["To be on holiday ", "Être en vacances", 1995],
@@ -3084,7 +3084,7 @@ const quiz_unemployment = [
         ["To resign", " to step down "], "Démissionner", 2034
     ],
     [
-        ["A pensioner", " an old age pensioner", " a retiree (US) "], "Un retraité", 2035
+        ["A pensioner", " an old age pensioner", " a retiree"], "Un retraité", 2035
     ],
     ["Retirement ", "La retraite", 2036],
     ["To take early retirement ", "Partir en pré-retraite", 2037],
