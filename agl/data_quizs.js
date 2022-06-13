@@ -2947,7 +2947,7 @@ const quiz_unemployment = [
     ["A job-seeker ", "Un demandeur d'emploi", 1942],
     ["A Jobcenter", "Une agence Pôle emploi", 1943],
     [
-        ["A curriculum vitae", " a CV", " a résumé"],
+        ["A curriculum vitae", "a CV", "a résumé"],
         ["Un CV", " un curriculum vitae"], 1944
     ],
     ["Work experience ", "Expérience professionnelle", 1945],
