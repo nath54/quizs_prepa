@@ -3008,7 +3008,7 @@ const quiz_unemployment = [
         ["A well-payed job", " a highly-paid job "], "Un travail bien payé", 1982
     ],
     ["A wage-earner ", "Un salarié", 1983],
-    ["A bonus (pl : bonuses) ", "Une prime", 1984],
+    ["A bonus", "Une prime", 1984],
     [
         ["A perk", " a fringe benefit "],
         ["Un avantage (en nature)", " avantage annexe"], 1985
