@@ -3035,10 +3035,8 @@ const quiz_unemployment = [
     ["In a big way ", "À grande échelle", 2003],
     ["Idleness ", "Oisiveté", 2004],
     ["To cut jobs ", "Supprimer des emplois", 2005],
-    [
-        ["To slash", " to axe jobs "],
-        ["Faire des coupes sombres", " claires dans la main d'oeuvre"], 2006
-    ],
+    ["to slash jobs", "faire des coupes sombres dans la main d'oeuvre", 2006],
+    ["to axe jobs", "faire des coupes claires dans la main d'oeuvre", 2039],
     ["Job losses ", ["Des pertes d'emplois", " des suppressions d'emplois"], 2007],
     ["To streamline ", "Rationnaliser", 2008],
     ["To downsize ", "Dégraisser ses effectifs", 2009],
@@ -3244,7 +3242,7 @@ const quiz_covid_crisis = [
     ],
 ];
 
-// NEXT FREE ID : 2039
+// NEXT FREE ID : 2040
 
 
 
