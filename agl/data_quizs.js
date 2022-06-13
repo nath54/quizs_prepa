@@ -2903,7 +2903,7 @@ const quiz_unemployment = [
     ],
     [
         ["Job market", " labour market "],
-        ["Le marché du travail", " de l'emploi"], 1915
+        ["Le marché du travail", "Le marché de l'emploi"], 1915
     ],
     ["A fixed-term contract ", "Un contrat à durée déterminée (CDD)", 1916],
     ["An open-ended contract ", "Un contrat à durée indéterminée (CDI)", 1917],
