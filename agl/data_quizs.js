@@ -2346,7 +2346,7 @@ const quiz_immigration = [
     [
         ["An expatriate", " an expat "], "Un expatrié", 1548
     ],
-    ["To defect to the West / to the ennemy ", "Passer à l'Ouest / à l'ennemi", 1549],
+    ["To defect to the West", "Passer à l'Ouest", 1549],
     ["Brain drain / brain gain ", "Fuite des cerveaux / afflux des cerveaux", 1550],
     ["To start from scratch ", "Partir de rien", 1551],
     ["Moonlighting ", "Le travail au noir", 1552],
@@ -2393,7 +2393,7 @@ const quiz_immigration = [
     ["Xenophobic ", "Xénophobe", 1580],
     ["Second-generation immigrants ", "Des immigrés de deuxième génération", 1581],
     ["To have a foreign-born grandfather ", "Avoir un grand-père né à l'étranger", 1582],
-    ["Young men of Asian / Portuguese descent ", "Des jeunes gens d'origine asiatique / portugaise", 1583],
+    ["Young men of Asian descent ", "Des jeunes gens d'origine asiatique", 1583],
     ["A native of France ", "Un Français de naissance", 1584],
     ["A born and bred New Yorker ", "Un New Yorkais de souche", 1585],
     [
@@ -3215,7 +3215,9 @@ const quiz_covid_crisis = [
     [
         ["lockdown", " confinement"], "confinement", 2132
     ],
-    ["to work from/at home", "télétravailler", 2133],
+    [
+        ["to work from home", "to work at home"], "télétravailler", 2133
+    ],
     ["a videoconference", "une vidéoconférence", 2134],
     ["to furlough somebody", "mettre quelqu'un au chômage partiel", 2135],
     ["panic buying", "achats (sous l'emprise de la) panique", 2136],
