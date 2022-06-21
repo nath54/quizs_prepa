@@ -91,7 +91,7 @@ function launch_quiz() {
     }
     //
     if (nb_themes == 0) {
-        alert("Il faut avoir au moins selectionné un theme !");
+        alert("Il faut avoir au moins sélectionné un thème !");
         return;
     }
     //
@@ -114,7 +114,7 @@ function launch_cours() {
     }
     //
     if (nb_themes == 0) {
-        alert("Il faut avoir au moins selectionné un theme !");
+        alert("Il faut avoir au moins sélectionné un thème !");
         return;
     }
     //
@@ -137,7 +137,7 @@ function launch_cards() {
     }
     //
     if (nb_themes == 0) {
-        alert("Il faut avoir au moins selectionné un theme !");
+        alert("Il faut avoir au moins sélectionné un thème !");
         return;
     }
     //
@@ -159,7 +159,7 @@ function launch_questions() {
     }
     //
     if (nb_themes == 0) {
-        alert("Il faut avoir au moins selectionné un theme !");
+        alert("Il faut avoir au moins sélectionné un thème !");
         return;
     }
     //
