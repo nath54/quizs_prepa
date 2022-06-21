@@ -3192,7 +3192,7 @@ const quiz_covid_crisis = [
     ["to greet somebody", "saluer quelqu'un", 2109],
     ["to shake hands", "se serrer la main", 2110],
     ["to kiss somebody", "faire la bise à quelqu'un", 2111],
-    ["to wear a (face) mask", "porter un masque", 2112],
+    ["to wear a mask", "porter un masque", 2112],
     ["medical supplies", "les fournitures médicales", 2113],
     ["to stockpile", "stocker", 2114],
     ["to run out of protective equipment", "ne plus avoir d'équipements de protection", 2115],
@@ -3231,14 +3231,14 @@ const quiz_covid_crisis = [
     ["calls for", "demande", 2144],
     ["come out of the blue", "être complètement inattendu", 2145],
     ["to spread like a wildfire", "se répandre comme une traînée de poudre", 2146],
-    ["to go viral", "se répandre/propager comme un virus", 2147],
+    ["to go viral", ["se répandre comme un virus", "se propager comme un virus"], 2147],
     ["to nip something from the bud", "tuer quelque chose dans l'oeuf", 2148],
     ["to be in the same boat", "être dans le même bateau", 2149],
-    ["to take stock (of something)", "faire le bilan (de quelque chose)", 2150],
+    ["to take stock of something", "faire le bilan de quelque chose", 2150],
     ["to look on the bright side", "regarder le bon côté des choses", 2151],
     ["every cloud has a silver meaning", "à quelque chose malheur est bon", 2152],
     [
-        ["United we stand", " divider we fall"], "l'union fait la force", 2153
+        "United we stand, divided we fall", "l'union fait la force", 2153
     ],
 ];
 
