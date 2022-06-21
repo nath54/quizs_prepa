@@ -3143,15 +3143,15 @@ const quiz_covid_crisis = [
     ["a pandemic", "une pandémie", 2073],
     ["an epicentre", "un épicentre", 2074],
     ["to break out", ["éclater", " se déclarer"], 2075],
-    ["an outbreak", ["le début", " d'une épidémie"], 2076],
+    ["an outbreak", ["le début d'une épidémie"], 2076],
     [
-        ["the scope", " the extent of the epidemic"],
+        ["the scope of the epidemic", " the extent of the epidemic"],
         ["l'ampleur", " l'étendue de l'épidémie"], 2077
     ],
     ["to affect a country", ["affecter", " toucher un pays"], 2078],
     ["the hardest-hit area", "la zone la plus durement touchée", 2079],
     [
-        ["to stem", " halt an outbreak"], "endiguer une épidémie", 2080
+        ["to stem an outbreak", " halt an outbreak"], "endiguer une épidémie", 2080
     ],
     ["to check an epidemic", "enrayer une épidémie", 2081],
     ["to eradicate", "éradiquer", 2082],
@@ -3166,7 +3166,7 @@ const quiz_covid_crisis = [
     ["the death toll", "le nombres de victimes", 2089],
     ["the elderly", "les personnes âgées", 2090],
     [
-        ["a care home", " a nursing home", " a retirement house"], "une maison de retraite", 2091
+        ["a care home", " a nursing home", "a retirement house"], "une maison de retraite", 2091
     ],
     ["to hospatilize somebody", "hospitaliser quelqu'un", 2092],
     ["to be in intensive care", "être en réanimation", 2093],
