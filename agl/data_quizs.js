@@ -3148,7 +3148,7 @@ const quiz_covid_crisis = [
         ["the scope of the epidemic", " the extent of the epidemic"],
         ["l'ampleur", " l'étendue de l'épidémie"], 2077
     ],
-    ["to affect a country", ["affecter", " toucher un pays"], 2078],
+    ["to affect a country", ["affecter un pays", " toucher un pays"], 2078],
     ["the hardest-hit area", "la zone la plus durement touchée", 2079],
     [
         ["to stem an outbreak", " halt an outbreak"], "endiguer une épidémie", 2080
