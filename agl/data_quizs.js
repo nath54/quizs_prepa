@@ -3296,28 +3296,36 @@ const quiz_euthanasia = [
     ["pain ", "la douleur", 2190],
     ["unbearable ", "insupportable", 2191],
     ["excruciating pain ", "douleur insoutenable", 2192],
-    ["to be in agony ", "souffrir le martyre (être à l'agonie ?)", 2193],
+    ["to be in agony ", ["souffrir le martyre", "être à l'agonie"], 2193],
     ["painful/painless ", "douloureux/indolore", 2194],
     ["a painkiller ", ["un analgésique", " un antalgique"], 2195],
     ["to be under sedation ", "être sous sédatifs", 2196],
-    ["to prescribe tranquilizers ", ["prescrire des tranquilisants", " des calmants"], 2197],
+    ["to prescribe tranquilizers ", ["prescrire des tranquilisants", " prescrire des calmants"], 2197],
     ["a prescription ", "une ordonnance", 2198],
     [
         ["to alleviate pain", " to relieve pain "], "soulager la douleur", 2199
     ],
     ["relief ", "soulagement", 2200],
     ["to ease somebody's suffering ", "alléger les souffrances de quelqu'un", 2201],
-    ["palliative treatment/care ", "les soins palliatifs", 2202],
+    [
+        ["palliative treatment", "palliative care"], "les soins palliatifs", 2202
+    ],
     [
         ["to practise", " carry out euthanasia "], "pratiquer l'euthanasie", 2203
     ],
-    ["to stop/to withhold/to withdraw medical treatment ", "arrêter les soins", 2204],
+    [
+        ["to stop medical treatment", "to withhold medical treatment", "to withdraw medical treatment"], "arrêter les soins", 2204
+    ],
     ["to disconnect a feeding tube ", "débrancher un tube d'alimentation", 2205],
     ["to turn off life support ", "débrancher un tube d'alimentation", 2206],
     ["to turn off life support ", "débrancher l'aide respiratoire", 2207],
-    ["the cessation/the withdrowal of treatment ", "l'arrêt des soins", 2208],
+    [
+        ["the cessation of treatment", "the withdrowal of treatment"], "l'arrêt des soins", 2208
+    ],
     ["to shorten somebody's life ", "abréger la vie de quelqu'un", 2209],
-    ["to speed/ to hasten somebody's death ", "accélérer la mort de quelqu'un", 2210],
+    [
+        ["to speed somebody's death", "to hasten somebody's death"], "accélérer la mort de quelqu'un", 2210
+    ],
     ["to inject somebody with a lethal substance ", "faire une piqûre mortelle à quelqu'un", 2211],
     ["a controversy ", "une polémique", 2212],
     [
@@ -3334,9 +3342,12 @@ const quiz_euthanasia = [
     ],
     ["to oppose euthanasia ", "être contre l'euthanasie", 2218],
     [
-        ["critics", " opponents of euthanasia "], "les opposants/adversaires à l'euthanasie", 2219
+        ["critics of euthanasia", "opponents of euthanasia"],
+        ["les opposants à l'euthanasie", "les adversaires à l'euthanasie"], 2219
     ],
-    ["to ban/to outlaw euthanasia ", "interdire l'euthanasie", 2220],
+    [
+        ["to ban euthanasia", "to outlaw euthanasia"], "interdire l'euthanasie", 2220
+    ],
 ];
 
 
