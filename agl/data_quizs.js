@@ -3244,7 +3244,103 @@ const quiz_covid_crisis = [
     ],
 ];
 
-// NEXT FREE ID : 2040
+const quiz_euthanasia = [
+    [
+        ["euthanasia", " mercy killing "], "l'euthanasie", 2154
+    ],
+    [
+        ["to commit suicide", " to kill oneself "], "se suicider", 2155
+    ],
+    ["to put an end to one's life ", "mettre un terme à sa vie", 2156],
+    ["a suicide attempt ", "une tentative de suicide", 2157],
+    ["assisted suicide ", "le suicide assisté", 2158],
+    ["doctor-assisted suicide ", "le suicide médicalement assisté", 2159],
+    ["to give one's consent ", "donner son consentement", 2160],
+    ["to die peacefully ", "mourir paisiblement", 2161],
+    ["to die with dignity ", "mourir dignement", 2162],
+    [
+        ["the sacredness", " the sanctity of life "], "le caractère sacré de la vie", 2163
+    ],
+    [
+        ["a terminal disease", " an incurable disease "], "une maladie incurable", 2164
+    ],
+    ["a degenerative disease ", "une maladie dégénérative", 2165],
+    ["to be terminally ill ", "être en phase terminale", 2166],
+    ["to be brain-damaged ", "être atteint de lésions cérébrales", 2167],
+    ["irreversible brain damage ", "des lésions cérébrales irréversibles", 2168],
+    ["to be in the coma ", "être dans le coma", 2169],
+    ["to be brain dead ", "être dans un coma dépassé (profond ?)", 2170],
+    ["to be in a vegetative state ", "être dans un état végétatif", 2171],
+    ["to be a burden for one's family ", "être un fardeau pour sa famille", 2172],
+    ["paralysis ", "la paralysie", 2173],
+    ["to be paraplegic (to be paralyzed from the waist down) ", "être paraplégique", 2174],
+    ["to be quadriplegic (to be paralyzed from the neck down) ", "être tétraplégique", 2175],
+    ["paralyzed on one side ", "hémiplégique", 2176],
+    ["to be bedridden ", "être grabataire", 2177],
+    [
+        ["to be on life support", " to be hooked up to a respirator "], "être sous assistance respiratoire", 2178
+    ],
+    ["to be hooked up to feeding tubes ", "être nourri artificiellement", 2179],
+    [
+        ["medical care", " health care "], "les soins médicaux", 2180
+    ],
+    ["a care unit for the terminally ill ", "une unité de soins palliatifs", 2181],
+    ["a doctor ", "un médecin", 2182],
+    ["a nurse ", "une infirmière", 2183],
+    ["a nursing auxiliary ", "un aide soignant", 2184],
+    ["to cure a patient ", "guérir un patient", 2185],
+    ["to keep somebody alive ", "maintenir quelqu'un en vie", 2186],
+    ["to prolong life ", "prolonger la vie", 2187],
+    ["prolonging life through medical means ", "l'acharnement thérpeutique", 2188],
+    ["suffering ", "la souffrance", 2189],
+    ["pain ", "la douleur", 2190],
+    ["unbearable ", "insupportable", 2191],
+    ["excruciating pain ", "douleur insoutenable", 2192],
+    ["to be in agony ", "souffrir le martyre (être à l'agonie ?)", 2193],
+    ["painful/painless ", "douloureux/indolore", 2194],
+    ["a painkiller ", ["un analgésique", " un antalgique"], 2195],
+    ["to be under sedation ", "être sous sédatifs", 2196],
+    ["to prescribe tranquilizers ", ["prescrire des tranquilisants", " des calmants"], 2197],
+    ["a prescription ", "une ordonnance", 2198],
+    [
+        ["to alleviate pain", " to relieve pain "], "soulager la douleur", 2199
+    ],
+    ["relief ", "soulagement", 2200],
+    ["to ease somebody's suffering ", "alléger les souffrances de quelqu'un", 2201],
+    ["palliative treatment/care ", "les soins palliatifs", 2202],
+    [
+        ["to practise", " carry out euthanasia "], "pratiquer l'euthanasie", 2203
+    ],
+    ["to stop/to withhold/to withdraw medical treatment ", "arrêter les soins", 2204],
+    ["to disconnect a feeding tube ", "débrancher un tube d'alimentation", 2205],
+    ["to turn off life support ", "débrancher un tube d'alimentation", 2206],
+    ["to turn off life support ", "débrancher l'aide respiratoire", 2207],
+    ["the cessation/the withdrowal of treatment ", "l'arrêt des soins", 2208],
+    ["to shorten somebody's life ", "abréger la vie de quelqu'un", 2209],
+    ["to speed/ to hasten somebody's death ", "accélérer la mort de quelqu'un", 2210],
+    ["to inject somebody with a lethal substance ", "faire une piqûre mortelle à quelqu'un", 2211],
+    ["a controversy ", "une polémique", 2212],
+    [
+        ["a controversial", " contentious issue "], "un problème controversé", 2213
+    ],
+    ["euthanasia is a divisive issue ", "l'euthanasie est une question qui divise (l'opinion)", 2214],
+    ["to be in favor of euthanasia ", "être pour l'euthanasie", 2215],
+    [
+        ["supporters", " advocates of euthanasia "], "les partisans de l'euthanasie", 2216
+    ],
+    [
+        ["to legalize", " decriminalize euthanasia "],
+        ["légaliser", " dépénaliser l'euthanasie"], 2217
+    ],
+    ["to oppose euthanasia ", "être contre l'euthanasie", 2218],
+    [
+        ["critics", " opponents of euthanasia "], "les opposants/adversaires à l'euthanasie", 2219
+    ],
+    ["to ban/to outlaw euthanasia ", "interdire l'euthanasie", 2220],
+];
+
+
+// NEXT FREE ID : 2221
 
 
 
@@ -3273,6 +3369,7 @@ const Quizs = {
     "economic crisis": quiz_economic_crisis,
     "unemployment": quiz_unemployment,
     "covid crisis": quiz_covid_crisis,
+    "euthanasia": quiz_euthanasia,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action

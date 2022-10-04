@@ -1,115 +1,67 @@
-a virus, viruses (pl)###un virus (pl)
-to mutate###muter
-contagious, catching, infectious###contagieux, infectieux
-to contaminate###contaminer
-underlying###sous-jacent
-to be infected with a virus###être contaminé par un virus
-a symptom###un symptôme
-asymptomatic###asymptomatique
-to cough###tousser
-to sneeze###éternuer
-to inhale airborne droplets###inhaler des goutelettes en suspension
-to have a runny nose###avoir le nez qui coule
-to have a sore throat###avoir mal a la gorge
-tiredness, fatigue###la fatigue
-headache###mal de tête
-to have difficulty/trouble breathing###avoir du mal à respirer
-to be short on breath, out of breath###être essoufflé, avoir le souffle court
-to have a temperature###avoir de la température
-to have a fever, to run a fever###avoir de la fièvre
-cruise ship###bateau de croisière
-smallpox###variole
-to test positive (for the virus)###être testé positif (pour le virus)
-to carry a virus###être porteur d'un virus
-the immune system###le système humanitaire
-herd immunity###immunité de groupe
-plague###la peste
-cholera###le choléra
-a curse, a plague, a scourge###un fléau
-a disaster###une catastrophe
-unexpected###inattendu
-unpredictable, unforeseeable###imprévisible
-to spread###se propager
-the spread of a virus###la propagation d'un virus
-an epidemic###une épidémie
-a pandemic###une pandémie
-an epicentre###un épicentre
-to break out###éclater, se déclarer
-an outbreak###le début, d'une épidémie
-the scope, the extent of the epidemic###l'ampleur, l'étendue de l'épidémie
-to affect a country###affecter, toucher un pays
-the hardest-hit area###la zone la plus durement touchée
-to stem, halt an outbreak###endiguer une épidémie
-to check an epidemic###enrayer une épidémie
-to eradicate###éradiquer
-endemic###endémique
-accuracy###exactitude
-the flu###la grippe
-swing flu, pig flu###la grippe porcine
-lethal###mortel
-lethality###létalité
-the death toll###le nombres de victimes
-the elderly###les personnes âgées
-a care home, a nursing home, a retirement house###une maison de retraite
-to hospatilize somebody###hospitaliser quelqu'un
-to be in intensive care###être en réanimation
-a ventilator###un ventilateur
-health workers, medical staff###les (personnels) soignants
-a nurse###une infirmière
-an assistant nurse###une aide-soignante
-a hero###un hero
-to clap###applaudir
-show solidarity with somebody###être solidaire de quelqu'un
-to monitor###contrôler
-to combat the virus###lutter contre le virus
-state of emergency###état d'urgence
-to flatten the curve###aplatir les courbes
-preventative measures, health precautions###les gestes barrières
-a tissue###un mouchoir
-social distancing###la distanciation sociale
-to wash your hands###se laver les mains
-to greet somebody###saluer quelqu'un
-to shake hands###se serrer la main
-to kiss somebody###faire la bise à quelqu'un
-to wear a (face) mask###porter un masque
-medical supplies###les fournitures médicales
-to stockpile###stocker
-to run out of protective equipment###ne plus avoir d'équipements de protection
-to be short on masks###manquer de masques
-a shortage###une pénurie
-gloves###gants
-to self-isolate###s'isoler
-bleach###l'eau de javel
-to disinfect public areas###désinfecter les lieux publics
-antibiotics###antibiotiques
-a vaccine###un vaccin
-to get vaccinated###se faire vacciner
-even as###alors même que
-an imposition###une atteinte
-to quarantine somebody###mettre quelqu'un en quarantaine
-to put/be under quarantine###mettre/être en quarantaine
-travel bank###interdiction de voyager
-travel restrictions###limitations de déplacement
-to issue a stay-at-home order###ordonner le confinement
-lockdown, confinement###confinement
-to work from/at home###télétravailler
-a videoconference###une vidéoconférence
-to furlough somebody###mettre quelqu'un au chômage partiel
-panic buying###achats (sous l'emprise de la) panique
-wrought havoc###faire des ravages
-pied pipers###joueurs de flute d'Hamelin
-a waiver###une dérogation
-to lift the lockdown###déconfiner
-to ease, to loosen restrictions###assouplir les restrictions
-fallout###retombées
-mitigate###atténuer
-calls for###demande
-come out of the blue###être complètement inattendu
-to spread like a wildfire###se répandre comme une traînée de poudre
-to go viral###se répandre/propager comme un virus
-to nip something from the bud###tuer quelque chose dans l'oeuf
-to be in the same boat###être dans le même bateau
-to take stock (of something)###faire le bilan (de quelque chose)
-to look on the bright side###regarder le bon côté des choses
-every cloud has a silver meaning###à quelque chose malheur est bon
-United we stand, divider we fall###l'union fait la force
+euthanasia, mercy killing ###l'euthanasie
+to commit suicide, to kill oneself ###se suicider
+to put an end to one's life ###mettre un terme à sa vie
+a suicide attempt ###une tentative de suicide
+assisted suicide ###le suicide assisté
+doctor-assisted suicide ###le suicide médicalement assisté
+to give one's consent ###donner son consentement
+to die peacefully ###mourir paisiblement
+to die with dignity ###mourir dignement
+the sacredness, the sanctity of life ###le caractère sacré de la vie
+a terminal disease, an incurable disease ###une maladie incurable
+a degenerative disease ###une maladie dégénérative
+to be terminally ill ###être en phase terminale
+to be brain-damaged ###être atteint de lésions cérébrales
+irreversible brain damage ###des lésions cérébrales irréversibles
+to be in the coma ###être dans le coma
+to be brain dead ###être dans un coma dépassé (profond ?)
+to be in a vegetative state ###être dans un état végétatif
+to be a burden for one's family ###être un fardeau pour sa famille
+paralysis ###la paralysie
+to be paraplegic (to be paralyzed from the waist down) ###être paraplégique
+to be quadriplegic (to be paralyzed from the neck down) ###être tétraplégique
+paralyzed on one side ###hémiplégique
+to be bedridden ###être grabataire
+to be on life support, to be hooked up to a respirator ###être sous assistance respiratoire
+to be hooked up to feeding tubes ###être nourri artificiellement
+medical care, health care ###les soins médicaux
+a care unit for the terminally ill ###une unité de soins palliatifs
+a doctor ###un médecin
+a nurse ###une infirmière
+a nursing auxiliary ###un aide soignant
+to cure a patient ###guérir un patient
+to keep somebody alive ###maintenir quelqu'un en vie
+to prolong life ###prolonger la vie
+prolonging life through medical means ###l'acharnement thérpeutique
+suffering ###la souffrance
+pain ###la douleur
+unbearable ###insupportable
+excruciating pain ###douleur insoutenable
+to be in agony ###souffrir le martyre (être à l'agonie ?)
+painful/painless ###douloureux/indolore
+a painkiller ###un analgésique, un antalgique
+to be under sedation ###être sous sédatifs
+to prescribe tranquilizers ###prescrire des tranquilisants, des calmants
+a prescription ###une ordonnance
+to alleviate pain, to relieve pain ###soulager la douleur
+relief ###soulagement
+to ease somebody's suffering ###alléger les souffrances de quelqu'un
+palliative treatment/care ###les soins palliatifs
+to practise, carry out euthanasia ###pratiquer l'euthanasie
+to stop/to withhold/to withdraw medical treatment ###arrêter les soins
+to disconnect a feeding tube ###débrancher un tube d'alimentation
+to turn off life support ###débrancher un tube d'alimentation
+to turn off life support ###débrancher l'aide respiratoire
+the cessation/the withdrowal of treatment ###l'arrêt des soins
+to shorten somebody's life ###abréger la vie de quelqu'un
+to speed/ to hasten somebody's death ###accélérer la mort de quelqu'un
+to inject somebody with a lethal substance ###faire une piqûre mortelle à quelqu'un
+a controversy ###une polémique
+a controversial, contentious issue ###un problème controversé
+euthanasia is a divisive issue ###l'euthanasie est une question qui divise (l'opinion)
+to be in favor of euthanasia ###être pour l'euthanasie
+supporters, advocates of euthanasia ###les partisans de l'euthanasie
+to legalize, decriminalize euthanasia ###légaliser, dépénaliser l'euthanasie
+to oppose euthanasia ###être contre l'euthanasie
+critics, opponents of euthanasia ###les opposants/adversaires à l'euthanasie
+to ban/to outlaw euthanasia ###interdire l'euthanasie
