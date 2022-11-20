@@ -1,67 +1,113 @@
-euthanasia, mercy killing ###l'euthanasie
-to commit suicide, to kill oneself ###se suicider
-to put an end to one's life ###mettre un terme à sa vie
-a suicide attempt ###une tentative de suicide
-assisted suicide ###le suicide assisté
-doctor-assisted suicide ###le suicide médicalement assisté
-to give one's consent ###donner son consentement
-to die peacefully ###mourir paisiblement
-to die with dignity ###mourir dignement
-the sacredness, the sanctity of life ###le caractère sacré de la vie
-a terminal disease, an incurable disease ###une maladie incurable
-a degenerative disease ###une maladie dégénérative
-to be terminally ill ###être en phase terminale
-to be brain-damaged ###être atteint de lésions cérébrales
-irreversible brain damage ###des lésions cérébrales irréversibles
-to be in the coma ###être dans le coma
-to be brain dead ###être dans un coma dépassé (profond ?)
-to be in a vegetative state ###être dans un état végétatif
-to be a burden for one's family ###être un fardeau pour sa famille
-paralysis ###la paralysie
-to be paraplegic (to be paralyzed from the waist down) ###être paraplégique
-to be quadriplegic (to be paralyzed from the neck down) ###être tétraplégique
-paralyzed on one side ###hémiplégique
-to be bedridden ###être grabataire
-to be on life support, to be hooked up to a respirator ###être sous assistance respiratoire
-to be hooked up to feeding tubes ###être nourri artificiellement
-medical care, health care ###les soins médicaux
-a care unit for the terminally ill ###une unité de soins palliatifs
-a doctor ###un médecin
-a nurse ###une infirmière
-a nursing auxiliary ###un aide soignant
-to cure a patient ###guérir un patient
-to keep somebody alive ###maintenir quelqu'un en vie
-to prolong life ###prolonger la vie
-prolonging life through medical means ###l'acharnement thérpeutique
-suffering ###la souffrance
-pain ###la douleur
-unbearable ###insupportable
-excruciating pain ###douleur insoutenable
-to be in agony ###souffrir le martyre (être à l'agonie ?)
-painful/painless ###douloureux/indolore
-a painkiller ###un analgésique, un antalgique
-to be under sedation ###être sous sédatifs
-to prescribe tranquilizers ###prescrire des tranquilisants, des calmants
-a prescription ###une ordonnance
-to alleviate pain, to relieve pain ###soulager la douleur
-relief ###soulagement
-to ease somebody's suffering ###alléger les souffrances de quelqu'un
-palliative treatment/care ###les soins palliatifs
-to practise, carry out euthanasia ###pratiquer l'euthanasie
-to stop/to withhold/to withdraw medical treatment ###arrêter les soins
-to disconnect a feeding tube ###débrancher un tube d'alimentation
-to turn off life support ###débrancher un tube d'alimentation
-to turn off life support ###débrancher l'aide respiratoire
-the cessation/the withdrowal of treatment ###l'arrêt des soins
-to shorten somebody's life ###abréger la vie de quelqu'un
-to speed/ to hasten somebody's death ###accélérer la mort de quelqu'un
-to inject somebody with a lethal substance ###faire une piqûre mortelle à quelqu'un
-a controversy ###une polémique
-a controversial, contentious issue ###un problème controversé
-euthanasia is a divisive issue ###l'euthanasie est une question qui divise (l'opinion)
-to be in favor of euthanasia ###être pour l'euthanasie
-supporters, advocates of euthanasia ###les partisans de l'euthanasie
-to legalize, decriminalize euthanasia ###légaliser, dépénaliser l'euthanasie
-to oppose euthanasia ###être contre l'euthanasie
-critics, opponents of euthanasia ###les opposants/adversaires à l'euthanasie
-to ban/to outlaw euthanasia ###interdire l'euthanasie
+disastrous###désastreux
+a tragedy###un drame, une tragédie
+tragic###dramatique, tragique
+a catastrophe###une catastrophe, un sinistre
+catastrophic###catastrophique
+a cataclysm###un cataclysme
+to affect a region###toucher une région
+a high-risk area###une zone à haut risque
+to strik, to hit###frapper
+to wreak havoc###faire des ravages
+to avert a disaster###éviter, prévenir une catastrophe
+the scope, the extent of the disaster###l'étendue, l'ampleur du sinistre
+severe, extreme weather###très mauvais temps
+to predict, to forecast the weather###prévoir le temps
+the weather forecast###les prévisions météo(rologiques)
+damage###les dégâts
+to damage sth###abîmer qch
+to do damage, to cause damage###causer des dégâts
+to devastate, to ravage a region###dévaster, ravager une région
+the worst-hit area###la zone la plus durement frappée
+to be declared a disaster area###être déclaré zone sinistrée
+to declare a state of emergency###déclarer l'état d'urgence
+a disaster victim###un sinistré
+to claim 25 lives###faire 25 morts
+the death toll###le nombre de victimes, le bilan
+a casualty###une victime
+a corpse###un cadavre
+to flee one's home###fuir son domicile
+a displaced person###une personne déplacée
+drought###la sécheresse
+a drought-stricken area###une zone frappée par la sécheresse
+a famine###une famine
+to be hungry###avoir faim
+hunger###la faim
+to die of thirst###mourir de soif
+to starve to death###mourir de faim
+to be threatened with starvation###risquer de mourir de faim
+malnutrition###la malnutrition
+to be malnourished, undernourished###souffrir de malnutrition
+a cold spell, a cold wave###une vague de froid
+a heat wave###une canicule
+a storm###une tempête, un orage
+a tornado, a twister###une tornade
+a hurricane, a cyclone###un ouragan, un cyclone
+a typhoon###un typhon
+to sweep across Thailand###balayer la Thaïlande
+thunder###le tonnerre
+lightning###les éclairs, la foudre
+a flash of lightning###un éclair
+heavy rainfall###de fortes précipitations, chutes de pluie
+torrential rain###des pluies torrentielles, diluviennes
+a flood###une inondation
+flooding###des inondations
+a flash flood###une crue subite
+a flood-risk area###une zone inondable
+to overflow###déborder
+a tsunami###un tsunami
+a tidal wave###un raz-de-marée
+a landslide###un glissement de terrain
+a mudslide###une coulée de boue
+a snowstorm###une tempête de neige
+an avalanche###une avalanche
+ice###la glace ou le verglas
+snowdrift###congère
+an earthquake###un tremblement de terre, un séisme
+a fault###une faille
+a fault line###une ligne de faille
+the epicentre###l'épicentre
+(earth) tremor###secousse tellurique, sismique
+the Richter scale###l'échelle de Richter
+of magnitude 6###de magnitude 6
+rubble, debris###les décombres
+to be trapped / buried in rubble###être prisonnier/enterré sous les décombres
+to be reported missing###être porté disparu
+the lack of drinking water###la pénurie d'eau potable
+the spread of diseases###la propagation de maladies
+to spread###se propager
+a volcano###un volcan
+a crater###un cratère
+to erupt###entrer en éruption
+an eruption###une éruption
+lava###la lave
+a lava flow###une coulée de lave
+ash###les cendres
+a fire###un incendie
+wildfire###des incendies de forêt
+bush fire###feu de brousse
+to rescue###sauver
+a rescuer, a rescue worker###un secouriste, un sauveteur
+a rescue party###une équipe de secours
+a fireman, a firefighter###un pompier
+to evacuate###évacuer
+an evacuee###un évacué
+to be safe###être en sécurité, hors de danger
+safe and sound###sain et sauf
+to escape unscathed, unharmed, unhurt from sth###sortir indemne de qch
+to survive###survivre
+a survivor###un survivant, un rescapé
+an NGO###une ONG
+a charity, a charitable organization###une organisation caritative
+a relief agency, a relief organization###une organisation humanitaire
+a relief worker###un travailleur humanitaire
+humanitarian aid, assistance###aide, assistance humanitaire
+emergency aid, emergency relief, emergency assistance###secours, aide d'urgence
+food aid###aide alimentaire
+to provide, supply aid###fournir de l'aide
+to insure sth###assurer qch
+an insurer###un assureur
+an insurance company###une compagnie d'assurance
+compensation###une indemnité, des indemnités
+to compensate sb for sth###indemniser qn de qch
+to get compensation, to get reimbursed###se faire indemniser
+the precautionary principle, the safety-first principle###le principe de précaution
