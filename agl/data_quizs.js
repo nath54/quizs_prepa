@@ -3351,124 +3351,297 @@ const quiz_euthanasia = [
 ];
 
 const quiz_natural_disasters = [
-    ["disastrous", "désastreux",2221],
-    ["a tragedy", ["un drame"," une tragédie"],2222],
-    ["tragic", ["dramatique"," tragique"],2223],
-    ["a catastrophe", ["une catastrophe"," un sinistre"],2224],
-    ["catastrophic", "catastrophique",2225],
-    ["a cataclysm", "un cataclysme",2226],
-    ["to affect a region", "toucher une région",2227],
-    ["a high-risk area", "une zone à haut risque",2228],
-    [["to strik"," to hit"], "frapper",2229],
-    ["to wreak havoc", "faire des ravages",2230],
-    ["to avert a disaster", ["éviter"," prévenir une catastrophe"],2231],
-    [["the scope of the disaster"," the extent of the disaster"], ["l'étendue du sinistre"," l'ampleur du sinistre"],2232],
-    [["severe weather"," extreme weather"], "très mauvais temps",2233],
-    [["to predict the weather"," to forecast the weather"], "prévoir le temps",2234],
-    ["the weather forecast", "les prévisions météo(rologiques)",2235],
-    ["damage", "les dégâts",2236],
-    ["to damage sth", "abîmer qch",2237],
-    [["to do damage"," to cause damage"], "causer des dégâts",2238],
-    [["to devastate"," to ravage a region"], ["dévaster"," ravager une région"],2239],
-    ["the worst-hit area", "la zone la plus durement frappée",2240],
-    ["to be declared a disaster area", "être déclaré zone sinistrée",2241],
-    ["to declare a state of emergency", "déclarer l'état d'urgence",2242],
-    ["a disaster victim", "un sinistré",2243],
-    ["to claim 25 lives", "faire 25 morts",2244],
-    ["the death toll", ["le nombre de victimes"," le bilan"],2245],
-    ["a casualty", "une victime",2246],
-    ["a corpse", "un cadavre",2247],
-    ["to flee one's home", "fuir son domicile",2248],
-    ["a displaced person", "une personne déplacée",2249],
-    ["drought", "la sécheresse",2250],
-    ["a drought-stricken area", "une zone frappée par la sécheresse",2251],
-    ["a famine", "une famine",2252],
-    ["to be hungry", "avoir faim",2253],
-    ["hunger", "la faim",2254],
-    ["to die of thirst", "mourir de soif",2255],
-    ["to starve to death", "mourir de faim",2256],
-    ["to be threatened with starvation", "risquer de mourir de faim",2257],
-    ["malnutrition", "la malnutrition",2258],
-    [["to be malnourished","to be undernourished"], "souffrir de malnutrition",2259],
-    [["a cold spell"," a cold wave"], "une vague de froid",2260],
-    ["a heat wave", "une canicule",2261],
-    ["a storm", ["une tempête"," un orage"],2262],
-    [["a tornado"," a twister"], "une tornade",2263],
-    [["a hurricane"," a cyclone"], ["un ouragan"," un cyclone"],2264],
-    ["a typhoon", "un typhon",2265],
-    ["to sweep across Thailand", "balayer la Thaïlande",2266],
-    ["thunder", "le tonnerre",2267],
-    ["lightning", ["les éclairs"," la foudre"],2268],
-    ["a flash of lightning", "un éclair",2269],
-    ["heavy rainfall", ["de fortes précipitations"," chutes de pluie"],2270],
-    ["torrential rain", ["des pluies torrentielles","des pluies diluviennes"],2271],
-    ["a flood", "une inondation",2272],
-    ["flooding", "des inondations",2273],
-    ["a flash flood", "une crue subite",2274],
-    ["a flood-risk area", "une zone inondable",2275],
-    ["to overflow", "déborder",2276],
-    ["a tsunami", "un tsunami",2277],
-    ["a tidal wave", "un raz-de-marée",2278],
-    ["a landslide", "un glissement de terrain",2279],
-    ["a mudslide", "une coulée de boue",2280],
-    ["a snowstorm", "une tempête de neige",2281],
-    ["an avalanche", "une avalanche",2282],
-    ["ice", "la glace ou le verglas",2283],
-    ["snowdrift", "congère",2284],
-    ["an earthquake", ["un tremblement de terre"," un séisme"],2285],
-    ["a fault", "une faille",2286],
-    ["a fault line", "une ligne de faille",2287],
-    ["the epicentre", "l'épicentre",2288],
-    ["(earth) tremor", ["secousse tellurique","secousse sismique"],2289],
-    ["the Richter scale", "l'échelle de Richter",2290],
-    ["of magnitude 6", "de magnitude 6",2291],
-    [["rubble"," debris"], "les décombres",2292],
-    ["to be trapped / buried in rubble", "être prisonnier/enterré sous les décombres",2293],
-    ["to be reported missing", "être porté disparu",2294],
-    ["the lack of drinking water", "la pénurie d'eau potable",2295],
-    ["the spread of diseases", "la propagation de maladies",2296],
-    ["to spread", "se propager",2297],
-    ["a volcano", "un volcan",2298],
-    ["a crater", "un cratère",2299],
-    ["to erupt", "entrer en éruption",2300],
-    ["an eruption", "une éruption",2301],
-    ["lava", "la lave",2302],
-    ["a lava flow", "une coulée de lave",2303],
-    ["ash", "les cendres",2304],
-    ["a fire", "un incendie",2305],
-    ["wildfire", "des incendies de forêt",2306],
-    ["bush fire", "feu de brousse",2307],
-    ["to rescue", "sauver",2308],
-    [["a rescuer"," a rescue worker"], ["un secouriste"," un sauveteur"],2309],
-    ["a rescue party", "une équipe de secours",2310],
-    [["a fireman"," a firefighter"], "un pompier",2311],
-    ["to evacuate", "évacuer",2312],
-    ["an evacuee", "un évacué",2313],
-    ["to be safe", ["être en sécurité","être hors de danger"],2314],
-    ["safe and sound", "sain et sauf",2315],
-    [["to escape unscathed from sth","to escape unharmed from sth","to escape unhurt from sth"], "sortir indemne de qch",2316],
-    ["to survive", "survivre",2317],
-    ["a survivor", ["un survivant"," un rescapé"],2318],
-    ["an NGO", "une ONG",2319],
-    [["a charity organization"," a charitable organization"], "une organisation caritative",2320],
-    [["a relief agency"," a relief organization"], "une organisation humanitaire",2321],
-    ["a relief worker", "un travailleur humanitaire",2322],
-    [["humanitarian aid","humanitarian assistance"], ["aide humanitaire"," assistance humanitaire"],2323],
-    [["emergency aid"," emergency relief"," emergency assistance"], ["secours d'urgence"," aide d'urgence"],2324],
-    ["food aid", "aide alimentaire",2325],
-    [["to provide aid","to supply aid"], "fournir de l'aide",2326],
-    ["to insure sth", "assurer qch",2327],
-    ["an insurer", "un assureur",2328],
-    ["an insurance company", "une compagnie d'assurance",2329],
-    ["compensation", ["une indemnité"," des indemnités"],2330],
-    ["to compensate sb for sth", "indemniser qn de qch",2331],
-    [["to get compensation"," to get reimbursed"], "se faire indemniser",2332],
-    [["the precautionary principle"," the safety-first principle"], "le principe de précaution",2333],
+    ["disastrous", "désastreux", 2221],
+    ["a tragedy", ["un drame", " une tragédie"], 2222],
+    ["tragic", ["dramatique", " tragique"], 2223],
+    ["a catastrophe", ["une catastrophe", " un sinistre"], 2224],
+    ["catastrophic", "catastrophique", 2225],
+    ["a cataclysm", "un cataclysme", 2226],
+    ["to affect a region", "toucher une région", 2227],
+    ["a high-risk area", "une zone à haut risque", 2228],
+    [
+        ["to strik", " to hit"], "frapper", 2229
+    ],
+    ["to wreak havoc", "faire des ravages", 2230],
+    ["to avert a disaster", ["éviter", " prévenir une catastrophe"], 2231],
+    [
+        ["the scope of the disaster", " the extent of the disaster"],
+        ["l'étendue du sinistre", " l'ampleur du sinistre"], 2232
+    ],
+    [
+        ["severe weather", " extreme weather"], "très mauvais temps", 2233
+    ],
+    [
+        ["to predict the weather", " to forecast the weather"], "prévoir le temps", 2234
+    ],
+    ["the weather forecast", "les prévisions météo(rologiques)", 2235],
+    ["damage", "les dégâts", 2236],
+    ["to damage sth", "abîmer qch", 2237],
+    [
+        ["to do damage", " to cause damage"], "causer des dégâts", 2238
+    ],
+    [
+        ["to devastate", " to ravage a region"],
+        ["dévaster", " ravager une région"], 2239
+    ],
+    ["the worst-hit area", "la zone la plus durement frappée", 2240],
+    ["to be declared a disaster area", "être déclaré zone sinistrée", 2241],
+    ["to declare a state of emergency", "déclarer l'état d'urgence", 2242],
+    ["a disaster victim", "un sinistré", 2243],
+    ["to claim 25 lives", "faire 25 morts", 2244],
+    ["the death toll", ["le nombre de victimes", " le bilan"], 2245],
+    ["a casualty", "une victime", 2246],
+    ["a corpse", "un cadavre", 2247],
+    ["to flee one's home", "fuir son domicile", 2248],
+    ["a displaced person", "une personne déplacée", 2249],
+    ["drought", "la sécheresse", 2250],
+    ["a drought-stricken area", "une zone frappée par la sécheresse", 2251],
+    ["a famine", "une famine", 2252],
+    ["to be hungry", "avoir faim", 2253],
+    ["hunger", "la faim", 2254],
+    ["to die of thirst", "mourir de soif", 2255],
+    ["to starve to death", "mourir de faim", 2256],
+    ["to be threatened with starvation", "risquer de mourir de faim", 2257],
+    ["malnutrition", "la malnutrition", 2258],
+    [
+        ["to be malnourished", "to be undernourished"], "souffrir de malnutrition", 2259
+    ],
+    [
+        ["a cold spell", " a cold wave"], "une vague de froid", 2260
+    ],
+    ["a heat wave", "une canicule", 2261],
+    ["a storm", ["une tempête", " un orage"], 2262],
+    [
+        ["a tornado", " a twister"], "une tornade", 2263
+    ],
+    [
+        ["a hurricane", " a cyclone"],
+        ["un ouragan", " un cyclone"], 2264
+    ],
+    ["a typhoon", "un typhon", 2265],
+    ["to sweep across Thailand", "balayer la Thaïlande", 2266],
+    ["thunder", "le tonnerre", 2267],
+    ["lightning", ["les éclairs", " la foudre"], 2268],
+    ["a flash of lightning", "un éclair", 2269],
+    ["heavy rainfall", ["de fortes précipitations", " chutes de pluie"], 2270],
+    ["torrential rain", ["des pluies torrentielles", "des pluies diluviennes"], 2271],
+    ["a flood", "une inondation", 2272],
+    ["flooding", "des inondations", 2273],
+    ["a flash flood", "une crue subite", 2274],
+    ["a flood-risk area", "une zone inondable", 2275],
+    ["to overflow", "déborder", 2276],
+    ["a tsunami", "un tsunami", 2277],
+    ["a tidal wave", "un raz-de-marée", 2278],
+    ["a landslide", "un glissement de terrain", 2279],
+    ["a mudslide", "une coulée de boue", 2280],
+    ["a snowstorm", "une tempête de neige", 2281],
+    ["an avalanche", "une avalanche", 2282],
+    ["ice", "la glace ou le verglas", 2283],
+    ["snowdrift", "congère", 2284],
+    ["an earthquake", ["un tremblement de terre", " un séisme"], 2285],
+    ["a fault", "une faille", 2286],
+    ["a fault line", "une ligne de faille", 2287],
+    ["the epicentre", "l'épicentre", 2288],
+    ["(earth) tremor", ["secousse tellurique", "secousse sismique"], 2289],
+    ["the Richter scale", "l'échelle de Richter", 2290],
+    ["of magnitude 6", "de magnitude 6", 2291],
+    [
+        ["rubble", " debris"], "les décombres", 2292
+    ],
+    ["to be trapped / buried in rubble", "être prisonnier/enterré sous les décombres", 2293],
+    ["to be reported missing", "être porté disparu", 2294],
+    ["the lack of drinking water", "la pénurie d'eau potable", 2295],
+    ["the spread of diseases", "la propagation de maladies", 2296],
+    ["to spread", "se propager", 2297],
+    ["a volcano", "un volcan", 2298],
+    ["a crater", "un cratère", 2299],
+    ["to erupt", "entrer en éruption", 2300],
+    ["an eruption", "une éruption", 2301],
+    ["lava", "la lave", 2302],
+    ["a lava flow", "une coulée de lave", 2303],
+    ["ash", "les cendres", 2304],
+    ["a fire", "un incendie", 2305],
+    ["wildfire", "des incendies de forêt", 2306],
+    ["bush fire", "feu de brousse", 2307],
+    ["to rescue", "sauver", 2308],
+    [
+        ["a rescuer", " a rescue worker"],
+        ["un secouriste", " un sauveteur"], 2309
+    ],
+    ["a rescue party", "une équipe de secours", 2310],
+    [
+        ["a fireman", " a firefighter"], "un pompier", 2311
+    ],
+    ["to evacuate", "évacuer", 2312],
+    ["an evacuee", "un évacué", 2313],
+    ["to be safe", ["être en sécurité", "être hors de danger"], 2314],
+    ["safe and sound", "sain et sauf", 2315],
+    [
+        ["to escape unscathed from sth", "to escape unharmed from sth", "to escape unhurt from sth"], "sortir indemne de qch", 2316
+    ],
+    ["to survive", "survivre", 2317],
+    ["a survivor", ["un survivant", " un rescapé"], 2318],
+    ["an NGO", "une ONG", 2319],
+    [
+        ["a charity organization", " a charitable organization"], "une organisation caritative", 2320
+    ],
+    [
+        ["a relief agency", " a relief organization"], "une organisation humanitaire", 2321
+    ],
+    ["a relief worker", "un travailleur humanitaire", 2322],
+    [
+        ["humanitarian aid", "humanitarian assistance"],
+        ["aide humanitaire", " assistance humanitaire"], 2323
+    ],
+    [
+        ["emergency aid", " emergency relief", " emergency assistance"],
+        ["secours d'urgence", " aide d'urgence"], 2324
+    ],
+    ["food aid", "aide alimentaire", 2325],
+    [
+        ["to provide aid", "to supply aid"], "fournir de l'aide", 2326
+    ],
+    ["to insure sth", "assurer qch", 2327],
+    ["an insurer", "un assureur", 2328],
+    ["an insurance company", "une compagnie d'assurance", 2329],
+    ["compensation", ["une indemnité", " des indemnités"], 2330],
+    ["to compensate sb for sth", "indemniser qn de qch", 2331],
+    [
+        ["to get compensation", " to get reimbursed"], "se faire indemniser", 2332
+    ],
+    [
+        ["the precautionary principle", " the safety-first principle"], "le principe de précaution", 2333
+    ],
+];
+
+const quiz_pollution = [
+    ["to pollute ", "polluer", 2334],
+    ["water pollution ", "la pollution de l'eau", 2335],
+    ["noise ", "pollution", 2336],
+    ["a polluter ", "un pollueur", 2337],
+    ["a pollutant ", ["un polluant", " une substance polluante"], 2338],
+    ["polluting ", "polluant", 2339],
+    ["to pollute little ", "être peu polluant", 2340],
+    ["to pollute a lot ", "être très polluant", 2341],
+    ["non-polluting products ", "produits non polluants", 2342],
+    [
+        ["to reduce pollution", " to curb pollution "], "diminuer la pollution", 2343
+    ],
+    ["to waste ", "gaspiller", 2344],
+    ["wastage ", ["le gaspillage", "les déchets"], 2345],
+    ["air pollution ", ["la pollution de l'air", "la pollution atmosphérique"], 2346],
+    ["smog ", "le smog", 2347],
+    ["a pollution peak ", "un pic de pollution", 2348],
+    [
+        ["factory fumes", " factory smokes "], "les fumées d'usine", 2349
+    ],
+    [
+        ["car exhausts", " exhaust fumes "], "les gaz d'échappement", 2350
+    ],
+    [
+        ["unleaded petrol", " lead-free petrol "], "l'essence sans plomb", 2351
+    ],
+    ["a catalytic converter ", "un pot catalytique", 2352],
+    ["to monitor air quality ", "surveiller la qualité de l'air", 2353],
+    ["to have dificulty breathing ", "avoir du mal à respirer", 2354],
+    ["asthma ", "l'asthme", 2355],
+    ["nitrates ", "les nitrates", 2356],
+    ["fertilizers ", "les engrais", 2357],
+    ["groundwater ", "la nappe phréatique", 2358],
+    ["to poison rivers ", "contaminer les rivières", 2359],
+    ["to cotaminate ", "contaminer", 2360],
+    ["a contaminant ", ["un contaminant", " une substance polluante"], 2361],
+    ["dioxin ", "la dioxine", 2362],
+    ["harmful ", "nocif", 2363],
+    ["the sewage system ", "les égouts", 2364],
+    ["a sewer ", "un égout", 2365],
+    [
+        ["sewage", " waste water "], "les eaux usées", 2366
+    ],
+    [
+        ["a sewage works", " sewage farm", " sewage plant"], "une station dépuration des eaux", 2367
+    ],
+    ["asbestos ", "l'amiante", 2368],
+    ["to remove asbestos from a building ", "désamianter un bâtiment", 2369],
+    ["lead-poisoning ", "le saturnisme", 2370],
+    ["PCBs ", "les PCB", 2371],
+    ["CFCs ", "les gaz CFC", 2372],
+    ["the ozone layer ", "la couche d'ozone", 2373],
+    ["acid rains ", "les pluies acides", 2374],
+    ["an oil slick ", "une marée noire", 2375],
+    ["an oil spill ", "un déversement accidentel de pétrole", 2376],
+    ["oil-covered birds ", "les oiseaux mazoutés", 2377],
+    [
+        ["to empty one's tank", " to flush out one's tank "], "dégazer", 2378
+    ],
+    [
+        ["oil tankers emptying their tanks", " discharging waste oil "], "le dégazage", 2379
+    ],
+    [
+        ["waste", " rubbish", " garbage "],
+        ["les ordures", " les déchets"], 2380
+    ],
+    ["toxic/organic waste ", "les déchets toxiques/organiques", 2381],
+    ["litter ", "les détritus", 2382],
+    ["to dispose of waste ", "éliminer les déchets", 2383],
+    ["hazardous waste ", "les déchets dangereux", 2384],
+    [
+        ["household rubbish", " household refuse "], "les ordures ménagères", 2385
+    ],
+    ["disposable ", "jetable", 2386],
+    ["biodegradable ", "biodégradable", 2387],
+    ["to collect waste ", "ramasser les déchets", 2388],
+    ["waste collection ", "le ramassage des ordures", 2389],
+    ["a waste collection centre ", "une déchetterie", 2390],
+    [
+        ["a dustman", " garbage man"], "un éboueur", 2391
+    ],
+    [
+        ["a bin", " a dust bin", " a garbage can"],
+        ["une boite a ordures", " une poubelle"], 2392
+    ],
+    ["A wheelie bin ", "Une poubelle à roulettes", 2393],
+    ["A bin lorry ", "Un camion poubelle", 2394],
+    ["A bin liner ", "Un sac poubelle", 2395],
+    ["To dump rubbish ", "Jeter des ordures", 2396],
+    ["To throw away ", "Jeter", 2397],
+    ["A rubbish dump ", "Une décharge", 2398],
+    ["an illicit rubbish dump ", "une décharge sauvage", 2399],
+    ["To burry ", "Enterrer", 2400],
+    ["A landfill ", "Un site d'enfouissement des ordures", 2401],
+    ["an incinerator ", "un incinérateur", 2402],
+    ["to melt ", "Fondre", 2403],
+    ["A leak ", "Une fuite", 2404],
+    ["nuclear waste ", "les déchets nucléaires", 2405],
+    ["radioactive fallout ", "retombées radioactives", 2406],
+    ["Radioactivity ", "La radioactivité", 2407],
+    ["carcinogenic ", "cancérigène", 2408],
+    ["To dispose of nuclear waste ", "Éliminer les déchets nucléaires", 2409],
+    ["nuclear waste disposal ", "l'élimination des déchets nucléaires", 2410],
+    ["A container ", "Un conteneur", 2411],
+    ["hermetically sealed containers ", "des conteneurs hermétiquement fermés", 2412],
+    ["the storage of nuclear waste ", "le stockage des déchets radioactifs", 2413],
+    ["the precautionary principle ", "le principe de précaution", 2414],
+    ["To process waste ", "Traiter des déchets", 2415],
+    ["To sort ", "Trier", 2416],
+    ["Sorting ", "Le tri sélectif", 2417],
+    ["A bottle bank ", "Un conteneur de verre", 2418],
+    ["Rags ", "Des chiffons", 2419],
+    ["Cardboard ", "Le carton", 2420],
+    ["scrap metal ", "la ferraille", 2421],
+    ["packaging ", "les emballages", 2422],
+    ["A beer can ", "Une boîte de bière", 2423],
+    ["A glut ", "Un excès", 2424],
+    ["recycling ", "le recyclage", 2425],
+    ["To recycle plastic ", "Recycler le plastic", 2426],
+    ["recyclable ", "Recyclable", 2427],
+    ["A recycling plant ", "Une usine de recyclage", 2428],
+    ["recycling costs ", "les coûts de recyclage", 2429],
 ];
 
 
 
-// NEXT FREE ID : 2334
+// NEXT FREE ID : 2430
 
 
 
@@ -3499,6 +3672,7 @@ const Quizs = {
     "covid crisis": quiz_covid_crisis,
     "euthanasia": quiz_euthanasia,
     "natural disasters": quiz_natural_disasters,
+    "pollution": quiz_pollution,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action
