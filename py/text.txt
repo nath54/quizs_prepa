@@ -1,113 +1,96 @@
-disastrous###désastreux
-a tragedy###un drame, une tragédie
-tragic###dramatique, tragique
-a catastrophe###une catastrophe, un sinistre
-catastrophic###catastrophique
-a cataclysm###un cataclysme
-to affect a region###toucher une région
-a high-risk area###une zone à haut risque
-to strik, to hit###frapper
-to wreak havoc###faire des ravages
-to avert a disaster###éviter, prévenir une catastrophe
-the scope, the extent of the disaster###l'étendue, l'ampleur du sinistre
-severe, extreme weather###très mauvais temps
-to predict, to forecast the weather###prévoir le temps
-the weather forecast###les prévisions météo(rologiques)
-damage###les dégâts
-to damage sth###abîmer qch
-to do damage, to cause damage###causer des dégâts
-to devastate, to ravage a region###dévaster, ravager une région
-the worst-hit area###la zone la plus durement frappée
-to be declared a disaster area###être déclaré zone sinistrée
-to declare a state of emergency###déclarer l'état d'urgence
-a disaster victim###un sinistré
-to claim 25 lives###faire 25 morts
-the death toll###le nombre de victimes, le bilan
-a casualty###une victime
-a corpse###un cadavre
-to flee one's home###fuir son domicile
-a displaced person###une personne déplacée
-drought###la sécheresse
-a drought-stricken area###une zone frappée par la sécheresse
-a famine###une famine
-to be hungry###avoir faim
-hunger###la faim
-to die of thirst###mourir de soif
-to starve to death###mourir de faim
-to be threatened with starvation###risquer de mourir de faim
-malnutrition###la malnutrition
-to be malnourished, undernourished###souffrir de malnutrition
-a cold spell, a cold wave###une vague de froid
-a heat wave###une canicule
-a storm###une tempête, un orage
-a tornado, a twister###une tornade
-a hurricane, a cyclone###un ouragan, un cyclone
-a typhoon###un typhon
-to sweep across Thailand###balayer la Thaïlande
-thunder###le tonnerre
-lightning###les éclairs, la foudre
-a flash of lightning###un éclair
-heavy rainfall###de fortes précipitations, chutes de pluie
-torrential rain###des pluies torrentielles, diluviennes
-a flood###une inondation
-flooding###des inondations
-a flash flood###une crue subite
-a flood-risk area###une zone inondable
-to overflow###déborder
-a tsunami###un tsunami
-a tidal wave###un raz-de-marée
-a landslide###un glissement de terrain
-a mudslide###une coulée de boue
-a snowstorm###une tempête de neige
-an avalanche###une avalanche
-ice###la glace ou le verglas
-snowdrift###congère
-an earthquake###un tremblement de terre, un séisme
-a fault###une faille
-a fault line###une ligne de faille
-the epicentre###l'épicentre
-(earth) tremor###secousse tellurique, sismique
-the Richter scale###l'échelle de Richter
-of magnitude 6###de magnitude 6
-rubble, debris###les décombres
-to be trapped / buried in rubble###être prisonnier/enterré sous les décombres
-to be reported missing###être porté disparu
-the lack of drinking water###la pénurie d'eau potable
-the spread of diseases###la propagation de maladies
-to spread###se propager
-a volcano###un volcan
-a crater###un cratère
-to erupt###entrer en éruption
-an eruption###une éruption
-lava###la lave
-a lava flow###une coulée de lave
-ash###les cendres
-a fire###un incendie
-wildfire###des incendies de forêt
-bush fire###feu de brousse
-to rescue###sauver
-a rescuer, a rescue worker###un secouriste, un sauveteur
-a rescue party###une équipe de secours
-a fireman, a firefighter###un pompier
-to evacuate###évacuer
-an evacuee###un évacué
-to be safe###être en sécurité, hors de danger
-safe and sound###sain et sauf
-to escape unscathed, unharmed, unhurt from sth###sortir indemne de qch
-to survive###survivre
-a survivor###un survivant, un rescapé
-an NGO###une ONG
-a charity, a charitable organization###une organisation caritative
-a relief agency, a relief organization###une organisation humanitaire
-a relief worker###un travailleur humanitaire
-humanitarian aid, assistance###aide, assistance humanitaire
-emergency aid, emergency relief, emergency assistance###secours, aide d'urgence
-food aid###aide alimentaire
-to provide, supply aid###fournir de l'aide
-to insure sth###assurer qch
-an insurer###un assureur
-an insurance company###une compagnie d'assurance
-compensation###une indemnité, des indemnités
-to compensate sb for sth###indemniser qn de qch
-to get compensation, to get reimbursed###se faire indemniser
-the precautionary principle, the safety-first principle###le principe de précaution
+to pollute ###polluer
+water pollution ###la pollution de l'eau
+noise ###pollution
+a polluter ###un pollueur
+a pollutant ###un polluant, une substance polluante
+polluting ###polluant
+to pollute little ###être peu polluant
+to pollute a lot ###être très polluant
+non-polluting products ###produits non polluants
+to reduce, to curb pollution ###diminuer la pollution
+to waste ###gaspiller
+wastage ###le gaspillage OU les déchets
+air pollution ###la pollution de l'air, atmosphérique
+smog ###le smog
+a pollution peak ###un pic de pollution
+factory fumes, factory smokes ###les fumées d'usine
+car exhausts, exhaust fumes ###les gaz d'échappement
+unleaded , lead-free petrol ###l'essence sans plomb
+a catalytic converter ###un pot catalytique
+to monitor air quality ###surveiller la qualité de l'air
+to have dificulty breathing ###avoir du mal à respirer
+asthma ###l'asthme
+nitrates ###les nitrates
+fertilizers ###les engrais
+groundwater ###la nappe phréatique
+to poison rivers ###contaminer les rivières
+to cotaminate ###contaminer
+a contaminant ###un contaminant, une substance polluante
+dioxin ###la dioxine
+harmful ###nocif
+the sewage system ###les égouts
+a sewer ###un égout
+sewage, waste water ###les eaux usées
+a sewage works, sewage farm (GB) , sewage plant (US) ###une station dépuration des eaux
+asbestos ###l'amiante
+to remove asbestos from a building ###désamianter un bâtiment
+lead-poisoning ###le saturnisme
+PCBs ###les PCB
+CFCs ###les gaz CFC
+the ozone layer ###la couche d'ozone
+acid rains ###les pluies acides
+an oil slick ###une marée noire
+an oil spill ###un déversement accidentel de pétrole
+oil-covered birds ###les oiseaux mazoutés
+to empty one's tank, to flush out one's tank ###dégazer
+oil tankers emptying their tanks, discharging waste oil ###le dégazage
+waste, rubbish (GB), garbage ###les ordures, les détruits, les déchets
+toxic waste/ organic waste ###les déchets toxiques/organiques
+litter ###les détritus
+to dispose of waste ###éliminer les déchets
+hazardous waste ###les déchets dangereux
+household rubbish, household refuse ###les ordures ménagères
+disposable ###jetable
+biodegradable ###biodégradable
+to collect waste ###ramasser les déchets
+waste collection ###le ramassage des ordures
+a waste collection centre ###une déchetterie
+a dustman (GB), garbage man (US) ###un éboueur
+a bin, a dust bin, a garbage can (US) ###une boite a ordures, une poubelle
+A wheelie bin ###Une poubelle (à roulettes)
+A bin lorry ###Un camion poubelle
+A bin liner ###Un sac poubelle
+To dump rubbish ###Jeter des ordures
+To throw away ###Jeter
+A rubbish dump ###Une décharge
+an illicit rubbish dump ###une décharge sauvage
+To burry ###Enterrer
+A landfill ###Un site d'enfouissement des ordures
+an incinerator ###un incinérateur
+to melt ###Fondre
+A leak ###Une fuite
+nuclear waste ###les déchets nucléaires
+radioactive fallout ###retombées radioactives
+Radioactivity ###La radioactivité
+carcinogenic ###cancérigène
+To dispose of nuclear waste ###Éliminer les déchets nucléaires
+nuclear waste disposal ###l'élimination des déchets nucléaires
+A container ###Un conteneur
+hermetically sealed containers ###des conteneurs hermétiquement fermés
+the storage of nuclear waste ###le stockage des déchets radioactifs
+the precautionary principle ###le principe de précaution
+To process waste ###Traiter des déchets
+To sort ###Trier
+Sorting ###Le tri sélectif
+A bottle bank ###Un conteneur de verre
+Rags ###Des chiffons
+Cardboard ###Le carton
+scrap metal ###la ferraille
+packaging ###les emballages
+A beer can ###Une boîte de bière
+A glut ###Un excès
+recycling ###le recyclage
+To recycle plastic ###Recycler le plastic
+recyclable ###Recyclable
+A recycling plant ###Une usine de recyclage
+recycling costs ###les coûts de recyclage
