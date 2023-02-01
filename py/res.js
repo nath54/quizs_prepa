@@ -1,124 +1,142 @@
-const quiz_pollution = [
-    ["to pollute ", "polluer", 2334],
-    ["water pollution ", "la pollution de l'eau", 2335],
-    ["noise ", "pollution", 2336],
-    ["a polluter ", "un pollueur", 2337],
-    ["a pollutant ", ["un polluant", " une substance polluante"], 2338],
-    ["polluting ", "polluant", 2339],
-    ["to pollute little ", "être peu polluant", 2340],
-    ["to pollute a lot ", "être très polluant", 2341],
-    ["non-polluting products ", "produits non polluants", 2342],
+const quiz_gun_violence = [
+    ["firearms", "les armes à feu", 2517],
+    ["a gun", "une arme à feu", 2518],
+    ["a handgun", "une arme de poing", 2519],
+    ["a revolver", "un revolver", 2520],
+    ["a pistol", "un pistolet", 2521],
+    ["a shotgun", "un fusil de chasse", 2522],
+    ["a semi-automatic rifle", "un fusil semi-automatique", 2523],
     [
-        ["to reduce pollution", " to curb pollution "], "diminuer la pollution", 2343
-    ],
-    ["to waste ", "gaspiller", 2344],
-    ["wastage ", ["le gaspillage", "les déchets"], 2345],
-    ["air pollution ", ["la pollution de l'air", "la pollution atmosphérique"], 2346],
-    ["smog ", "le smog", 2347],
-    ["a pollution peak ", "un pic de pollution", 2348],
-    [
-        ["factory fumes", " factory smokes "], "les fumées d'usine", 2349
+        ["an assault rifle", " an assault weapon"], "un fusil d'assaut", 2524
     ],
     [
-        ["car exhausts", " exhaust fumes "], "les gaz d'échappement", 2350
+        ["ammunition", " munitions"], "des munitions", 2525
+    ],
+    ["a bullet", "une balle", 2526],
+    ["a cartridge", "une cartouche", 2527],
+    ["a holster", "un étui (de revolver)", 2528],
+    ["a gun-owner", "propriétaire d'armes à feu", 2529],
+    ["a gun enthusiast", "un passionné d'armes à feu", 2530],
+    [
+        ["a rifle range", " a shooting range"], "un champ de tir", 2531
     ],
     [
-        ["unleaded petrol", " lead-free petrol "], "l'essence sans plomb", 2351
+        ["to bear a gun", " to carry a gun", " to wear a gun"], "porter une arme", 2532
     ],
-    ["a catalytic converter ", "un pot catalytique", 2352],
-    ["to monitor air quality ", "surveiller la qualité de l'air", 2353],
-    ["to have dificulty breathing ", "avoir du mal à respirer", 2354],
-    ["asthma ", "l'asthme", 2355],
-    ["nitrates ", "les nitrates", 2356],
-    ["fertilizers ", "les engrais", 2357],
-    ["groundwater ", "la nappe phréatique", 2358],
-    ["to poison rivers ", "contaminer les rivières", 2359],
-    ["to cotaminate ", "contaminer", 2360],
-    ["a contaminant ", ["un contaminant", " une substance polluante"], 2361],
-    ["dioxin ", "la dioxine", 2362],
-    ["harmful ", "nocif", 2363],
-    ["the sewage system ", "les égouts", 2364],
-    ["a sewer ", "un égout", 2365],
+    ["gun sales", "les ventes d'armes à feu", 2533],
     [
-        ["sewage", " waste water "], "les eaux usées", 2366
+        ["a gun permit", " a gun license"], "un permis de port d'arme", 2534
     ],
+    ["to take the law into one's own hands", "se faire justice", 2535],
+    ["self-defence", "la légitime défense", 2536],
+    ["to act in self-defence", "agir en état de légitime défense", 2537],
+    ["a vigilante", "un membre d'un groupe d'autodéfense", 2538],
+    ["The National Rifle Association (of America)", "La NRA", 2539],
     [
-        ["a sewage works", " sewage farm", " sewage plant"], "une station dépuration des eaux", 2367
+        ["a controversial issue", "a contentious issue"], "un problème controversé", 2540
     ],
-    ["asbestos ", "l'amiante", 2368],
-    ["to remove asbestos from a building ", "désamianter un bâtiment", 2369],
-    ["lead-poisoning ", "le saturnisme", 2370],
-    ["PCBs ", "les PCB", 2371],
-    ["CFCs ", "les gaz CFC", 2372],
-    ["the ozone layer ", "la couche d'ozone", 2373],
-    ["acid rains ", "les pluies acides", 2374],
-    ["an oil slick ", "une marée noire", 2375],
-    ["an oil spill ", "un déversement accidentel de pétrole", 2376],
-    ["oil-covered birds ", "les oiseaux mazoutés", 2377],
+    ["a hot-button issue", ["un problème sensible", "un problème qui suscite de vives réactions"], 2541],
+    ["the gun lobby", "le lobby des armes à feu", 2542],
+    ["the right to carry arms", "le droit de porter une arme", 2543],
+    ["gun-rights activists", "les défenseurs du droit de porter des armes", 2544],
     [
-        ["to empty one's tank", " to flush out one's tank "], "dégazer", 2378
+        ["a gun maker", " a gun manufacturer"], "un fabricant d'armes", 2545
+    ],
+    ["gun control", "la réglementation du port d'armes", 2546],
+    ["to have access to guns", "avoir accès aux armes à feu", 2547],
+    ["to restrict access to guns", "limiter l'accès aux armes", 2548],
+    ["a background check", "un contrôle des antécédents (d'un acheteur d'armes)", 2549],
+    ["to register a gun", "déclarer une arme", 2550],
+    ["a criminal record", "un casier judiciaire", 2551],
+    [
+        ["to outlaw guns", " to ban guns"], "interdire les armes à feu", 2552
     ],
     [
-        ["oil tankers emptying their tanks", " discharging waste oil "], "le dégazage", 2379
+        ["to pull the trigger", " to press the trigger", " to squeeze the trigger"], "appuyer sur la gâchette", 2553
+    ],
+    ["to be trigger-happy", "avoir la gâchette facile", 2554],
+    ["the death toll", "le nombre de victimes", 2555],
+    ["to slaughter sb", "tuer qqn sauvagement", 2556],
+    [
+        ["a slaughter", " a massacre"], "un massacre", 2557
+    ],
+    ["carnage", "un carnage", 2558],
+    ["bloodshed", ["une effusion de sang", " un massacre"], 2559],
+    ["to shoot", "tirer", 2560],
+    ["to shoot at sb", "tirer sur qqn", 2561],
+    ["to shoot sb dead", "abattre qqn", 2562],
+    ["a shooting", ["des coups de feu", " une fusillade"], 2563],
+    ["the shooting of a policeman", "le meurtre d'un policier", 2564],
+    ["a shoot-out", "une fusillade", 2565],
+    [
+        ["a shot", " a gunshot"], "un coup de feu", 2566
+    ],
+    ["to fire a shot at sb", "tirer un coup sur qqn", 2567],
+    [
+        ["to be fatally shot", " mortally wounded"],
+        ["être touché mortellement", " victime d'un coup de feu mortel"], 2568
     ],
     [
-        ["waste", " rubbish", " garbage "],
-        ["les ordures", " les déchets"], 2380
-    ],
-    ["toxic/organic waste ", "les déchets toxiques/organiques", 2381],
-    ["litter ", "les détritus", 2382],
-    ["to dispose of waste ", "éliminer les déchets", 2383],
-    ["hazardous waste ", "les déchets dangereux", 2384],
-    [
-        ["household rubbish", " household refuse "], "les ordures ménagères", 2385
-    ],
-    ["disposable ", "jetable", 2386],
-    ["biodegradable ", "biodégradable", 2387],
-    ["to collect waste ", "ramasser les déchets", 2388],
-    ["waste collection ", "le ramassage des ordures", 2389],
-    ["a waste collection centre ", "une déchetterie", 2390],
-    [
-        ["a dustman", " garbage man"], "un éboueur", 2391
+        ["gunfire", " gunfight"],
+        ["coups de feu", "fusillade"], 2569
     ],
     [
-        ["a bin", " a dust bin", " a garbage can"],
-        ["une boite a ordures", " une poubelle"], 2392
+        ["to commit suicide", " to kill oneself"], "se suicider", 2570
     ],
-    ["A wheelie bin ", "Une poubelle à roulettes", 2393],
-    ["A bin lorry ", "Un camion poubelle", 2394],
-    ["A bin liner ", "Un sac poubelle", 2395],
-    ["To dump rubbish ", "Jeter des ordures", 2396],
-    ["To throw away ", "Jeter", 2397],
-    ["A rubbish dump ", "Une décharge", 2398],
-    ["an illicit rubbish dump ", "une décharge sauvage", 2399],
-    ["To burry ", "Enterrer", 2400],
-    ["A landfill ", "Un site d'enfouissement des ordures", 2401],
-    ["an incinerator ", "un incinérateur", 2402],
-    ["to melt ", "Fondre", 2403],
-    ["A leak ", "Une fuite", 2404],
-    ["nuclear waste ", "les déchets nucléaires", 2405],
-    ["radioactive fallout ", "retombées radioactives", 2406],
-    ["Radioactivity ", "La radioactivité", 2407],
-    ["carcinogenic ", "cancérigène", 2408],
-    ["To dispose of nuclear waste ", "Éliminer les déchets nucléaires", 2409],
-    ["nuclear waste disposal ", "l'élimination des déchets nucléaires", 2410],
-    ["A container ", "Un conteneur", 2411],
-    ["hermetically sealed containers ", "des conteneurs hermétiquement fermés", 2412],
-    ["the storage of nuclear waste ", "le stockage des déchets radioactifs", 2413],
-    ["the precautionary principle ", "le principe de précaution", 2414],
-    ["To process waste ", "Traiter des déchets", 2415],
-    ["To sort ", "Trier", 2416],
-    ["Sorting ", "Le tri sélectif", 2417],
-    ["A bottle bank ", "Un conteneur de verre", 2418],
-    ["Rags ", "Des chiffons", 2419],
-    ["Cardboard ", "Le carton", 2420],
-    ["scrap metal ", "la ferraille", 2421],
-    ["packaging ", "les emballages", 2422],
-    ["A beer can ", "Une boîte de bière", 2423],
-    ["A glut ", "Un excès", 2424],
-    ["recycling ", "le recyclage", 2425],
-    ["To recycle plastic ", "Recycler le plastic", 2426],
-    ["recyclable ", "Recyclable", 2427],
-    ["A recycling plant ", "Une usine de recyclage", 2428],
-    ["recycling costs ", "les coûts de recyclage", 2429],
+    ["to take one's (own) life", ["se supprimer", " se donner la mort"], 2571],
+    ["he turned the gun on himself", "il a retourné l'arme contre lui-même", 2572],
+    [
+        ["to go on a killing spree", "to be on a shooting spree", "to be on a shooting rampage"], "être pris d'un accès de folie meurtrière", 2573
+    ],
+    [
+        ["crime", " criminality"], "la criminalité", 2574
+    ],
+    ["crime rate", "le taux de criminalité", 2575],
+    ["a gunman", "un homme armé", 2576],
+    ["a murder", "un meurtre", 2577],
+    ["a murderer", "un meurtrier", 2578],
+    [
+        ["to injure sb", " to wound sb"], "blesser qqn", 2579
+    ],
+    ["a wound", "une blessure", 2580],
+    [
+        ["injured", " wounded"], "blessé", 2581
+    ],
+    ["a corpse", "un cadavre", 2582],
+    ["a serial killer", "un tueur en série", 2583],
+    ["a psychopath", "un psychopathe", 2584],
+    ["gun violence", "la violence par arme à feu", 2585],
+    ["the right to bear arms", "le droit de porter des armes", 2586],
+    ["militia", "la milice", 2587],
+    ["to be infringed", ["a été bafoué", "a été transgressé"], 2588],
+    ["odd", "bizarre", 2589],
+    ["justices", "juges", 2590],
+    ["gun ownership", ["la détention d'une arme", "la possession d'une arme"], 2591],
+    ["the handling of", "le maniement de", 2592],
+    ["on balance", ["dans l'ensemble", " globalement"], 2593],
+    ["boasts", "se vanter", 2594],
+    ["prompted", ["suscité", " provoqué"], 2595],
+    ["deranged", "dérangé (dans le sens de pas net)", 2596],
+    ["folly", ["folie", " sottise"], 2597],
+    ["right-wing extremist", "d'extrême droite", 2598],
+    ["heavily", ["fortement", "lourdement"], 2599],
+    ["shooting spree", "une crise de folie meurtrière", 2600],
+    ["witness", "un témoin", 2601],
+    ["identity marker", "signe d'identité", 2602],
+    ["self-reliance", ["l'autonomie", " l'indépendance", " le fait de compter sur soi"], 2603],
+    ["tough", ["dur", " difficile"], 2604],
+    ["to reinforce", ["Renforcer", " solidifier", " consolider"], 2605],
+    ["obey", ["respecter", " obéir"], 2606],
+    ["the law-abiding", "ceux respectueux des lois", 2607],
+    ["strictness", ["rigueur", " sévérité"], 2608],
+    ["soaring profits", "hausse du bénéfice", 2609],
+    ["to owe", "Devoir quelque chose", 2610],
+    ["corporate citizen", "entreprise citoyenne", 2611],
+    ["to secure", "obtenir", 2612],
+    ["coverage", "couverture médiatique", 2613],
+    ["copycats", "copieurs", 2614],
+    ["homicide rate", "le taux d'homicides", 2615],
+    ["to hold a gun to sb's head", "mettre le couteau sous la gorge de qqn", 2616],
+    ["to stick to your guns", "camper sur sa position", 2617],
+    ["to jump the gun", ["agir prématurément", " aller vite en besogne"], 2618],
 ];

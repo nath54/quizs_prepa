@@ -3639,9 +3639,273 @@ const quiz_pollution = [
     ["recycling costs ", "les coûts de recyclage", 2429],
 ];
 
+const quiz_individual_freedom = [
+    [
+        ["Freedom of speech", " free speech", " freedom of expression "],
+        ["La liberté de parole", "La liberté d'expression"], 2430
+    ],
+    ["Freedom of the press ", "La liberté de la presse", 2431],
+    ["A free press ", "Une presse libre", 2432],
+    ["Freedom of worship ", ["La liberté de culte", " la liberté religieuse"], 2433],
+    ["Puts as much emphasis ", "N'attache autant d'importance", 2434],
+    ["Anthem ", "Hymne", 2435],
+    ["To live up to ", "Être fidèle à", 2436],
+    ["Boasts ", "Se vanter", 2437],
+    ["Order ", "Ordonnance", 2438],
+    ["Being charged ", "Être inculpé", 2439],
+    ["Arbitrary power ", "Le pouvoir arbitraire", 2440],
+    ["A lettre de cachet ", "Une lettre de cachet", 2441],
+    ["To infringe (on) people's rights ", "Empiéter sur les droits des gens", 2442],
+    ["An infringement on sb's rights ", ["Une atteinte", " une entorse aux droits de qqn"], 2443],
+    ["To encroach on basic liberties ", "Empiéter sur les libertés fondamentales", 2444],
+    ["An encroachment of the state ", "Un empiètement de l'état", 2445],
+    ["To restrict free speech ", ["Restreindre la liberté d'expression", " limiter la liberté d'expression"], 2446],
+    ["To erode individual freedoms ", "Rogner sur les libertés individuelles", 2447],
+    ["To detain a suspect without charge ", "Détenir un suspect sans l'inculper", 2448],
+    ["To be held without charge ", "Être détenu sans être inculpé", 2449],
+    ["To remand sb in custody ", "Placer qn en détention provisoire", 2450],
+    [
+        ["To jail sb", " to imprison sb "], "Emprisonner qqn", 2451
+    ],
+    ["Pushed through ", "Adopté à la hâte", 2452],
+    ["A court warrant ", "Un mandat", 2453],
+    ["Eavesdrop ", "Écouter indiscrètement", 2454],
+    ["Pry into ", "Mettre leur nez dans", 2455],
+    ["Bank statements ", "Relevés bancaires", 2456],
+    ["The right to vote ", "Le droit de vote", 2457],
+    ["Basic rights ", "Les droits fondamentaux", 2458],
+    [
+        ["Basic", " individual liberties "],
+        ["Les libertés fondamentales", "Les libertés individuelles"], 2459
+    ],
+    ["To be enshrined in the constitution ", "Être garanti par la constitution", 2460],
+    ["Civil liberties ", "Les libertés civiques", 2461],
+    ["To censor ", "Censurer", 2462],
+    ["Censorship ", "La censure", 2463],
+    ["Intrusive ", "Indiscret", 2464],
+    ["Vindicated ", "A défendu", 2465],
+    ["Scheme ", "Projet", 2466],
+    ["Benefit fraud ", "Fraude du système d'allocations", 2467],
+    ["Surveillance ", "La surveillance", 2468],
+    ["A surveillance society ", "Une société surveillée", 2469],
+    ["A police state ", "Un état policier", 2470],
+    ["The police force ", ["La police", " les forces de l'ordre"], 2471],
+    ["To stop and search ", "Interpeller et fouiller", 2472],
+    ["To arrest sb ", "Arrêter qqn", 2473],
+    ["Privacy ", ["(Le droit à) la vie privée", " l'intimité"], 2474],
+    ["Sb's private life ", "La vie privée de qqn", 2475],
+    [
+        ["To breach sb's privacy", " to violate sb's privacy "], "Violer la vie privée de qqn", 2476
+    ],
+    [
+        ["A breach of privacy", " an invasion of privacy", " a privacy violation "],
+        ["Une atteinte à la vie privée", " une violation de la vie privée"], 2477
+    ],
+    ["To intrude upon sb's privacy ", "Porter atteinte à la vie privée de qqn", 2478],
+    ["The promotion ", "Défense", 2479],
+    ["Video surveillance ", "La vidéo surveillance", 2480],
+    [
+        ["CCTV", " closed circuit television "], "Télévision en circuit fermé", 2481
+    ],
+    ["To record ", "Enregistrer", 2482],
+    ["To monitor sb's movements ", "Suivre de près les mouvements de qqn", 2483],
+    [
+        ["To keep tabs on sb", " to keep an eye on sb "], "Avoir qqn à l'œil", 2484
+    ],
+    [
+        ["To spy on sb", " to snoop on sb "], "Espionner qqn", 2485
+    ],
+    ["To track sb ", "Suivre la trace de qqn", 2486],
+    ["To monitor a border sb's mail ", "Surveiller le courrier de qqn", 2487],
+    ["A bug ", "Un micro caché", 2488],
+    ["To bug a room ", "Placer des micros dans une pièce", 2489],
+    ["To (wire) tap sb's phone ", "Mettre qqn sur écoute téléphonique", 2490],
+    [
+        ["Phone tapping", "Phone wiretapping "], "Les écoutes téléphoniques", 2491
+    ],
+    ["To eavesdrop on sb's phone conversations ", "Écouter les conversations téléphoniques de qqn", 2492],
+    ["To pry into sb's personal life ", "Mettre son nez dans la vie personnelle de qqn", 2493],
+    ["Data ", ["Des données", "Des informations"], 2494],
+    [
+        ["Personal data", "personal details "], "Des informations personnelles", 2495
+    ],
+    ["Sb's contact details ", "Les coordonnées de qqn", 2496],
+    ["Biometric data ", "Des données biométriques", 2497],
+    ["Sb's banking details ", "Les informations bancaires de qqn", 2498],
+    ["A record", "un dossier", 2499],
+    ["A criminal record ", "Un casier judiciaire", 2500],
+    ["A telephone bill ", "Un relevé de téléphone", 2501],
+    ["A bank statement ", "Un relevé bancaire", 2502],
+    [
+        ["To collect data", "To gather data "],
+        ["Rassembler des informations", " recueillir des informations"], 2503
+    ],
+    ["To glean information ", "Glaner des informations", 2504],
+    [
+        ["To record data", "to store data", "to retain data "],
+        ["Enregistrer des données", "conserver des données"], 2505
+    ],
+    ["To retrieve data ", "Rechercher et extraire des données", 2506],
+    ["To put a suspect on file ", "Ficher un suspect", 2507],
+    ["A database ", "Une base de données", 2508],
+    ["A DNA database ", "Une base de données ADN", 2509],
+    [
+        ["A DNA print", "A genetic print "], "Une empreinte génétique", 2510
+    ],
+    ["To be DNA-swabbed ", "Subir un test ADN", 2511],
+    ["Tax cheats ", "Contribuables qui fraudent", 2512],
+    ["Outlandish ", "Invraisemblable", 2513],
+    [
+        ["To sound the alarm bell", " to ring the alarm bell "], "Tirer la sonnette d'alarme", 2514
+    ],
+    ["To blow the whistle on sb ", "Dénoncer qqn", 2515],
+    ["A whistleblower ", "Un lanceur d'alerte", 2516],
+];
 
+const quiz_gun_violence = [
+    ["firearms", "les armes à feu", 2517],
+    ["a gun", "une arme à feu", 2518],
+    ["a handgun", "une arme de poing", 2519],
+    ["a revolver", "un revolver", 2520],
+    ["a pistol", "un pistolet", 2521],
+    ["a shotgun", "un fusil de chasse", 2522],
+    ["a semi-automatic rifle", "un fusil semi-automatique", 2523],
+    [
+        ["an assault rifle", " an assault weapon"], "un fusil d'assaut", 2524
+    ],
+    [
+        ["ammunition", " munitions"], "des munitions", 2525
+    ],
+    ["a bullet", "une balle", 2526],
+    ["a cartridge", "une cartouche", 2527],
+    ["a holster", "un étui (de revolver)", 2528],
+    ["a gun-owner", "propriétaire d'armes à feu", 2529],
+    ["a gun enthusiast", "un passionné d'armes à feu", 2530],
+    [
+        ["a rifle range", " a shooting range"], "un champ de tir", 2531
+    ],
+    [
+        ["to bear a gun", " to carry a gun", " to wear a gun"], "porter une arme", 2532
+    ],
+    ["gun sales", "les ventes d'armes à feu", 2533],
+    [
+        ["a gun permit", " a gun license"], "un permis de port d'arme", 2534
+    ],
+    ["to take the law into one's own hands", "se faire justice", 2535],
+    ["self-defence", "la légitime défense", 2536],
+    ["to act in self-defence", "agir en état de légitime défense", 2537],
+    ["a vigilante", "un membre d'un groupe d'autodéfense", 2538],
+    ["The National Rifle Association (of America)", "La NRA", 2539],
+    [
+        ["a controversial issue", "a contentious issue"], "un problème controversé", 2540
+    ],
+    ["a hot-button issue", ["un problème sensible", "un problème qui suscite de vives réactions"], 2541],
+    ["the gun lobby", "le lobby des armes à feu", 2542],
+    ["the right to carry arms", "le droit de porter une arme", 2543],
+    ["gun-rights activists", "les défenseurs du droit de porter des armes", 2544],
+    [
+        ["a gun maker", " a gun manufacturer"], "un fabricant d'armes", 2545
+    ],
+    ["gun control", "la réglementation du port d'armes", 2546],
+    ["to have access to guns", "avoir accès aux armes à feu", 2547],
+    ["to restrict access to guns", "limiter l'accès aux armes", 2548],
+    ["a background check", "un contrôle des antécédents (d'un acheteur d'armes)", 2549],
+    ["to register a gun", "déclarer une arme", 2550],
+    ["a criminal record", "un casier judiciaire", 2551],
+    [
+        ["to outlaw guns", " to ban guns"], "interdire les armes à feu", 2552
+    ],
+    [
+        ["to pull the trigger", " to press the trigger", " to squeeze the trigger"], "appuyer sur la gâchette", 2553
+    ],
+    ["to be trigger-happy", "avoir la gâchette facile", 2554],
+    ["the death toll", "le nombre de victimes", 2555],
+    ["to slaughter sb", "tuer qqn sauvagement", 2556],
+    [
+        ["a slaughter", " a massacre"], "un massacre", 2557
+    ],
+    ["carnage", "un carnage", 2558],
+    ["bloodshed", ["une effusion de sang", " un massacre"], 2559],
+    ["to shoot", "tirer", 2560],
+    ["to shoot at sb", "tirer sur qqn", 2561],
+    ["to shoot sb dead", "abattre qqn", 2562],
+    ["a shooting", ["des coups de feu", " une fusillade"], 2563],
+    ["the shooting of a policeman", "le meurtre d'un policier", 2564],
+    ["a shoot-out", "une fusillade", 2565],
+    [
+        ["a shot", " a gunshot"], "un coup de feu", 2566
+    ],
+    ["to fire a shot at sb", "tirer un coup sur qqn", 2567],
+    [
+        ["to be fatally shot", " mortally wounded"],
+        ["être touché mortellement", " victime d'un coup de feu mortel"], 2568
+    ],
+    [
+        ["gunfire", " gunfight"],
+        ["coups de feu", "fusillade"], 2569
+    ],
+    [
+        ["to commit suicide", " to kill oneself"], "se suicider", 2570
+    ],
+    ["to take one's (own) life", ["se supprimer", " se donner la mort"], 2571],
+    ["he turned the gun on himself", "il a retourné l'arme contre lui-même", 2572],
+    [
+        ["to go on a killing spree", "to be on a shooting spree", "to be on a shooting rampage"], "être pris d'un accès de folie meurtrière", 2573
+    ],
+    [
+        ["crime", " criminality"], "la criminalité", 2574
+    ],
+    ["crime rate", "le taux de criminalité", 2575],
+    ["a gunman", "un homme armé", 2576],
+    ["a murder", "un meurtre", 2577],
+    ["a murderer", "un meurtrier", 2578],
+    [
+        ["to injure sb", " to wound sb"], "blesser qqn", 2579
+    ],
+    ["a wound", "une blessure", 2580],
+    [
+        ["injured", " wounded"], "blessé", 2581
+    ],
+    ["a corpse", "un cadavre", 2582],
+    ["a serial killer", "un tueur en série", 2583],
+    ["a psychopath", "un psychopathe", 2584],
+    ["gun violence", "la violence par arme à feu", 2585],
+    ["the right to bear arms", "le droit de porter des armes", 2586],
+    ["militia", "la milice", 2587],
+    ["to be infringed", ["a été bafoué", "a été transgressé"], 2588],
+    ["odd", "bizarre", 2589],
+    ["justices", "juges", 2590],
+    ["gun ownership", ["la détention d'une arme", "la possession d'une arme"], 2591],
+    ["the handling of", "le maniement de", 2592],
+    ["on balance", ["dans l'ensemble", " globalement"], 2593],
+    ["boasts", "se vanter", 2594],
+    ["prompted", ["suscité", " provoqué"], 2595],
+    ["deranged", "dérangé (dans le sens de pas net)", 2596],
+    ["folly", ["folie", " sottise"], 2597],
+    ["right-wing extremist", "d'extrême droite", 2598],
+    ["heavily", ["fortement", "lourdement"], 2599],
+    ["shooting spree", "une crise de folie meurtrière", 2600],
+    ["witness", "un témoin", 2601],
+    ["identity marker", "signe d'identité", 2602],
+    ["self-reliance", ["l'autonomie", " l'indépendance", " le fait de compter sur soi"], 2603],
+    ["tough", ["dur", " difficile"], 2604],
+    ["to reinforce", ["Renforcer", " solidifier", " consolider"], 2605],
+    ["obey", ["respecter", " obéir"], 2606],
+    ["the law-abiding", "ceux respectueux des lois", 2607],
+    ["strictness", ["rigueur", " sévérité"], 2608],
+    ["soaring profits", "hausse du bénéfice", 2609],
+    ["to owe", "Devoir quelque chose", 2610],
+    ["corporate citizen", "entreprise citoyenne", 2611],
+    ["to secure", "obtenir", 2612],
+    ["coverage", "couverture médiatique", 2613],
+    ["copycats", "copieurs", 2614],
+    ["homicide rate", "le taux d'homicides", 2615],
+    ["to hold a gun to sb's head", "mettre le couteau sous la gorge de qqn", 2616],
+    ["to stick to your guns", "camper sur sa position", 2617],
+    ["to jump the gun", ["agir prématurément", " aller vite en besogne"], 2618],
+];
 
-// NEXT FREE ID : 2430
+// NEXT FREE ID : 2619
 
 
 
@@ -3673,6 +3937,8 @@ const Quizs = {
     "euthanasia": quiz_euthanasia,
     "natural disasters": quiz_natural_disasters,
     "pollution": quiz_pollution,
+    "individual freedom": quiz_individual_freedom,
+    "gun violence": quiz_gun_violence,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action

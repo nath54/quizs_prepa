@@ -1,96 +1,102 @@
-to pollute ###polluer
-water pollution ###la pollution de l'eau
-noise ###pollution
-a polluter ###un pollueur
-a pollutant ###un polluant, une substance polluante
-polluting ###polluant
-to pollute little ###être peu polluant
-to pollute a lot ###être très polluant
-non-polluting products ###produits non polluants
-to reduce, to curb pollution ###diminuer la pollution
-to waste ###gaspiller
-wastage ###le gaspillage OU les déchets
-air pollution ###la pollution de l'air, atmosphérique
-smog ###le smog
-a pollution peak ###un pic de pollution
-factory fumes, factory smokes ###les fumées d'usine
-car exhausts, exhaust fumes ###les gaz d'échappement
-unleaded , lead-free petrol ###l'essence sans plomb
-a catalytic converter ###un pot catalytique
-to monitor air quality ###surveiller la qualité de l'air
-to have dificulty breathing ###avoir du mal à respirer
-asthma ###l'asthme
-nitrates ###les nitrates
-fertilizers ###les engrais
-groundwater ###la nappe phréatique
-to poison rivers ###contaminer les rivières
-to cotaminate ###contaminer
-a contaminant ###un contaminant, une substance polluante
-dioxin ###la dioxine
-harmful ###nocif
-the sewage system ###les égouts
-a sewer ###un égout
-sewage, waste water ###les eaux usées
-a sewage works, sewage farm (GB) , sewage plant (US) ###une station dépuration des eaux
-asbestos ###l'amiante
-to remove asbestos from a building ###désamianter un bâtiment
-lead-poisoning ###le saturnisme
-PCBs ###les PCB
-CFCs ###les gaz CFC
-the ozone layer ###la couche d'ozone
-acid rains ###les pluies acides
-an oil slick ###une marée noire
-an oil spill ###un déversement accidentel de pétrole
-oil-covered birds ###les oiseaux mazoutés
-to empty one's tank, to flush out one's tank ###dégazer
-oil tankers emptying their tanks, discharging waste oil ###le dégazage
-waste, rubbish (GB), garbage ###les ordures, les détruits, les déchets
-toxic waste/ organic waste ###les déchets toxiques/organiques
-litter ###les détritus
-to dispose of waste ###éliminer les déchets
-hazardous waste ###les déchets dangereux
-household rubbish, household refuse ###les ordures ménagères
-disposable ###jetable
-biodegradable ###biodégradable
-to collect waste ###ramasser les déchets
-waste collection ###le ramassage des ordures
-a waste collection centre ###une déchetterie
-a dustman (GB), garbage man (US) ###un éboueur
-a bin, a dust bin, a garbage can (US) ###une boite a ordures, une poubelle
-A wheelie bin ###Une poubelle (à roulettes)
-A bin lorry ###Un camion poubelle
-A bin liner ###Un sac poubelle
-To dump rubbish ###Jeter des ordures
-To throw away ###Jeter
-A rubbish dump ###Une décharge
-an illicit rubbish dump ###une décharge sauvage
-To burry ###Enterrer
-A landfill ###Un site d'enfouissement des ordures
-an incinerator ###un incinérateur
-to melt ###Fondre
-A leak ###Une fuite
-nuclear waste ###les déchets nucléaires
-radioactive fallout ###retombées radioactives
-Radioactivity ###La radioactivité
-carcinogenic ###cancérigène
-To dispose of nuclear waste ###Éliminer les déchets nucléaires
-nuclear waste disposal ###l'élimination des déchets nucléaires
-A container ###Un conteneur
-hermetically sealed containers ###des conteneurs hermétiquement fermés
-the storage of nuclear waste ###le stockage des déchets radioactifs
-the precautionary principle ###le principe de précaution
-To process waste ###Traiter des déchets
-To sort ###Trier
-Sorting ###Le tri sélectif
-A bottle bank ###Un conteneur de verre
-Rags ###Des chiffons
-Cardboard ###Le carton
-scrap metal ###la ferraille
-packaging ###les emballages
-A beer can ###Une boîte de bière
-A glut ###Un excès
-recycling ###le recyclage
-To recycle plastic ###Recycler le plastic
-recyclable ###Recyclable
-A recycling plant ###Une usine de recyclage
-recycling costs ###les coûts de recyclage
+firearms###les armes à feu
+a gun###une arme à feu
+a handgun###une arme de poing
+a revolver###un revolver
+a pistol###un pistolet
+a shotgun###un fusil de chasse
+a semi-automatic rifle###un fusil semi-automatique
+an assault rifle, an assault weapon###un fusil d'assaut
+ammunition, munitions###des munitions
+a bullet###une balle
+a cartridge###une cartouche
+a holster###un étui (de revolver)
+a gun-owner###propriétaire d'armes à feu
+a gun enthusiast###un passionné d'armes à feu
+a rifle range, a shooting range###un champ de tir
+to bear, to carry, to wear a gun###porter une arme
+gun sales###les ventes d'armes à feu
+a gun permit, a gun license###un permis de port d'arme
+to take the law into one's own hands###se faire justice
+self-defence###la légitime défense
+to act in self-defence###agir en état de légitime défense
+a vigilante###un membre d'un groupe d'autodéfense
+The National Rifle Association (of America)###La NRA
+a controversial, contentious issue###un problème controversé
+a hot-button issue###un problème sensible, qui suscite de vives réactions
+the gun lobby###le lobby des armes à feu
+the right to carry arms###le droit de porter une arme
+gun-rights activists###les défenseurs du droit de porter des armes
+a gun maker, a gun manufacturer###un fabricant d'armes
+gun control###la réglementation du port d'armes
+to have access to guns###avoir accès aux armes à feu
+to restrict access to guns###limiter l'accès aux armes
+a background check###un contrôle des antécédents (d'un acheteur d'armes)
+to register a gun###déclarer une arme
+a criminal record###un casier judiciaire
+to outlaw, to ban guns###interdire les armes à feu
+to pull, to press, to squeeze the trigger###appuyer sur la gâchette
+to be trigger-happy###avoir la gâchette facile
+the death toll###le nombre de victimes
+to slaughter sb###tuer qn sauvagement
+a slaughter, a massacre###un massacre
+carnage###un carnage
+bloodshed###une effusion de sang, un massacre
+to shoot###tirer
+to shoot at sb###tirer sur qn
+to shoot sb dead###abattre qn
+a shooting###des coups de feu, une fusillade
+the shooting of a policeman###le meurtre d'un policier
+a shoot-out###une fusillade
+a shot, a gunshot###un coup de feu
+to fire a shot at sb###tirer un coup sur qn
+to be fatally shot, mortally wounded###être touché mortellement, victime d'un coup de feu mortel
+gunfire, gunfight###coups de feu, fusillade
+to commit suicide, to kill oneself###se suicider
+to take one's (own) life###se supprimer, se donner la mort
+he turned the gun on himself###il a retourné l'arme contre lui-même
+to go on a killing spree, a shooting spree, a shooting rampage, a shooting spree###être pris d'un accès de folie meurtrière
+crime, criminality###la criminalité
+crime rate###le taux de criminalité
+a gunman###un homme armé
+a murder###un meurtre
+a murderer###un meurtrier
+to injure sb, to wound sb###blesser qn
+a wound###une blessure
+injured, wounded###blessé
+a corpse###un cadavre
+a serial killer###un tueur en série
+a psychopath###un psychopathe
+gun violence###la violence par arme à feu
+the right to bear arms###le droit de porter des armes
+militia###la milice
+to be infringed###a été bafoué, transgressé
+odd###bizarre
+justices###juges
+gun ownership###la détention, possession d'une arme
+the handling of###le maniement de
+on balance###dans l'ensemble, globalement
+boasts###se vanter
+prompted###suscité, provoqué
+deranged###dérangé (dans le sens de pas net)
+folly###folie, sottise
+right-wing extremist###d'extrême droite
+heavily###fortement, lourdement
+shooting spree###une crise de folie meurtrière
+witness###un témoin
+identity marker###signe d'identité
+self-reliance###l'autonomie, l'indépendance, le fait de compter sur soi
+tough###dur, difficile
+to reinforce###Renforcer, solidifier, consolider
+obey###respecter, obéir
+the law-abiding###ceux respectueux des lois
+strictness###rigueur, sévérité
+soaring profits###hausse du bénéfice
+to owe###Devoir quelque chose
+corporate citizen###entreprise citoyenne
+to secure###obtenir
+coverage###couverture médiatique
+copycats###copieurs
+homicide rate###le taux d'homicides
+to hold a gun to sb's head###mettre le couteau sous la gorge de qn
+to stick to your guns###camper sur sa position
+to jump the gun###agir prématurément, aller vite en besogne
