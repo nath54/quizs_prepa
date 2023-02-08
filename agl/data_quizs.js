@@ -3904,8 +3904,569 @@ const quiz_gun_violence = [
     ["to stick to your guns", "camper sur sa position", 2617],
     ["to jump the gun", ["agir prématurément", " aller vite en besogne"], 2618],
 ];
+const quiz_crime = [
+    [
+        ["crime", " criminality "], "la criminalité", 2619
+    ],
+    ["the crime rate ", "le taux de criminalité", 2620],
+    ["organized crime ", ["la criminalité organisée", " le grand banditisme"], 2621],
+    ["white-collar crime ", "la criminalité en col blanc", 2622],
+    ["juvenile delinquency ", "la delinquance juvenile", 2623],
+    [
+        ["a juvenile delinquent", " a young offender "], "un delinquant juvénile", 2624
+    ],
+    ["petty crime ", "la petite délinquance", 2625],
+    [
+        ["a crime", " a felony "], "un crime", 2626
+    ],
+    ["to commit a crime ", "commettre un crime", 2627],
+    [
+        ["a criminal", " a felon "], "un criminel", 2628
+    ],
+    ["a criminal record ", "un casier judiciaire", 2629],
+    ["an offence ", ["un délit", " une infraction"], 2630],
+    ["a misdemeanour ", ["une infraction", " un délit"], 2631],
+    ["an offender ", ["un délinquant", " un contrevenant"], 2632],
+    [
+        ["a repeat offender", " a recidivist "], "un récidiviste", 2633
+    ],
+    ["murder ", "le meurtre", 2634],
+    ["a murderer ", "un meurtrier", 2635],
+    ["manslaughter ", "homicide", 2636],
+    ["a serial killer ", "un tueur en série", 2637],
+    ["theft ", "le vol", 2638],
+    [
+        ["a thief", " a robber "], "un voleur", 2639
+    ],
+    ["to steal a watch ", "voler une montre", 2640],
+    ["to rob sb of sth ", "voler qelque chose à quelqu'un", 2641],
+    ["rape ", "le viol", 2642],
+    ["armed robbery ", "vol à main armée", 2643],
+    ["a burglary ", "un cambriolage", 2644],
+    [
+        ["to mug somebody", " to attack somebody "], "agresser quelqu'un", 2645
+    ],
+    ["money-laundering ", "le blanchiment d'argent", 2646],
+    ["to break a law ", "enfreindre une loi", 2647],
+    ["lawful / unlawful ", "légal/illégal", 2648],
+    ["a lawbreaker ", ["un delinquant", " une personne qui enfreint la loi"], 2649],
+    ["wrongdoing ", "des méfaits", 2650],
+    ["a wrongdoer ", "un malfaiteur", 2651],
+    ["to flout the law ", "se moquer de la loi", 2652],
+    ["a no-go area ", "une zone de non-droit", 2653],
+    ["to obey the law ", "obéir à la loi", 2654],
+    ["to abide by the law ", "respecter la loi", 2655],
+    ["a law-abiding citizen ", "un citoyen respectueux des lois", 2656],
+    ["the justice system ", "la justice", 2657],
+    [
+        ["a court", " a court of law "], "un tribunal", 2658
+    ],
+    ["a judge ", "un juge", 2659],
+    [
+        ["a lawyer", " a barrister", " an attorney"], "un avocat", 2660
+    ],
+    ["the jury ", "le jury", 2661],
+    ["to prosecute somebody ", "poursuivre quelqu'un en justice", 2662],
+    [
+        ["to bring a lawsuit against somebody", " to sue somebody "],
+        ["intenter un procès à quelqu'un", " engager des poursuites contre quelqu'un"], 2663
+    ],
+    ["the prosecutor ", "le procureur", 2664],
+    ["a suspect ", "un suspect", 2665],
+    ["to charge somebody with murder ", ["accuser", " inculper quelqu'un de meutre"], 2666],
+    ["a charge ", ["une accusation", " un chef d'inculpation"], 2667],
+    ["to confess to a crime ", "avouer un crime", 2668],
+    ["to confess to embezzling money ", "avouer avoir détourné de l'argent", 2669],
+    ["a confession ", "un aveu", 2670],
+    ["a defendant ", ["un accusé", " un prévenu"], 2671],
+    ["a witness / an eye witness ", "Un témoin / un témoin oculaire", 2672],
+    ["a case ", "une affaire", 2673],
+    ["a trial ", "un procès", 2674],
+    [
+        ["To be tried", "to stand trial "],
+        ["passer en jugement", " être jugé"], 2675
+    ],
+    ["to await trial ", "être en attente de jugement", 2676],
+    ["the principle that a defendant is innocent until proven guilty ", "la présomption d'innocence", 2677],
+    ["forensic evidence ", "preuves relevées lors d'une expertise", 2678],
+    ["a culprit ", "un coupable", 2679],
+    ["to acquit somebody ", "acquitter quelqu'un", 2680],
+    ["acquittal ", "acquittement", 2681],
+    ["to find somebody guilty ", ["condamner quelqu'un", " reconnaître quelqu'un coupable"], 2682],
+    [
+        ["to convict somebody of rape/murder "],
+        ["reconnaître quelqu'un coupable de viol / de meutre"], 2683
+    ],
+    ["a conviction ", "une condamnation", 2684],
+    ["a fine ", "une amende", 2685],
+    ["to fine somebody for something ", "condamner quelqu'un à une amende pour quelque chose", 2686],
+    [
+        ["to be sentenced to five years' imprisonment", "to be sentenced to five years in jail "], "être condamné à 5 ans de prison", 2687
+    ],
+    ["a death sentence ", "une condamnation à mort", 2688],
+    ["a life sentence ", "une condamnation à perpétuité", 2689],
+    ["a suspended sentence ", "une condamnation avec sursis", 2690],
+    ["to be sent to prison ", "être mis en prison", 2691],
+    [
+        ["to incarcerate somebody", " to imprison somebody "], "incarcérer quelqu'un", 2692
+    ],
+    ["the incarceration rate ", "le taux d'incarcération", 2693],
+    ["a cell ", "une cellule", 2694],
+    [
+        ["a prisoner", " an inmate", " a detainee "],
+        ["un détenu", " un prisonnier"], 2695
+    ],
+    [
+        ["a prison officer", " a prison warder"], "un gardien de prison", 2696
+    ],
+    ["a high-security prison ", "une prison de haute sécurité", 2697],
+    ["solitary confinement ", "l'isolement carcéral", 2698],
+    ["prison overcrowding ", "la surpopulation carcérale", 2699],
+    ["a miscarriage of justice ", "une erreur judiciaire", 2700],
+    ["to fabricate evidence ", "fabriquer des preuves", 2701],
+    [
+        ["to be proved innocent", " to be exonerated "], "être innocenté", 2702
+    ],
+    [
+        ["to free a prisoner", " to release a prisoner "],
+        ["libérer un prisonnier", " relâcher un prisonnier"], 2703
+    ],
+    ["to parole somebody ", "mettre quelqu'un en liberté conditionnelle", 2704],
+    ["to pardon a convict ", "grâcier un condamné", 2705],
+    ["to be on parole ", "être en liberté conditionnelle", 2706],
+    ["to report to the police ", "se présenter à la police", 2707],
+    ["an electronic tag ", "Un bracelet de surveillance électronique", 2708],
+    ["To act in self-defense ", "agir en état de légitime défense", 2709],
+    ["To take the law into your own hands ", "se faire justice", 2710],
+    ["To be on the wrong side of the law ", "avoir des démêlés avec la justice", 2711],
+    ["To fall foul of the law ", "avoir des démêlés avec la justice", 2712],
+    ["to be behind bars ", "être derrière les barreaux", 2713],
+    ["To lay down the law ", "imposer sa loi", 2714],
+    ["To get away with murder ", "S'en tirer impunément", 2715],
+    ["behind closed doors ", "à huis clos", 2716],
+];
+const quiz_capital_punishment = [
+    ["murder ", "le meurtre", 2717],
+    ["to be guilty of murder ", "être coupable de meurtre", 2718],
+    ["a murderer ", "un meurtrier", 2719],
+    ["rape ", "le viol", 2720],
+    ["a sex offender ", "un délinquant sexuel", 2721],
+    [
+        ["a repeat offender", " a recidivist "], "un récidiviste", 2722
+    ],
+    ["guilt ", "la culpabilité", 2723],
+    ["to demand an eye for an eye ", "appliquer la loi du talion", 2724],
+    [
+        ["to convict sb", " to find sb guilty "],
+        ["déclarer qqn coupable", " condamner qqn"], 2725
+    ],
+    ["a conviction ", "une condamnation", 2726],
+    ["a wrongful conviction ", "une condamnation à tort", 2727],
+    ["to sentence sb to death ", "condamner qqn à mort", 2728],
+    ["to sentence sb to 25 years imprisonment ", "condamner qqn à 25 ans de prison", 2729],
+    ["a culprit ", "un coupable", 2730],
+    ["to deter sb from doing sth ", "dissuader qqn de faire qq chose", 2731],
+    ["to act as a deterrent ", "avoir un effet dissuasif", 2732],
+    ["a death sentence ", "une condamnation à mort", 2733],
+    ["a life sentence ", "une condamnation à perpétuité", 2734],
+    ["life whithout parole ", "perpétuité sans possibilité de remise de peine", 2735],
+    [
+        ["to jail sb", "to imprison sb "], "mettre qqn en prison", 2736
+    ],
+    [
+        ["a prisoner", " a inmate", " a detainee "],
+        ["un détenu", " un prisonnier"], 2737
+    ],
+    ["to be on death row ", "être dans les couloirs de la mort", 2738],
+    ["a cell ", "une cellule", 2739],
+    ["a lawyer ", "un avocat", 2740],
+    ["an appeal ", "un appel", 2741],
+    ["to appeal against a decision ", "faire appel d'une décision", 2742],
+    [
+        ["to quash a decision", " to overturn a decision "], "casser une décision (de justice)", 2743
+    ],
+    ["to commute a death sentence to life ", "commuer une condamnation à mort en réclusion à perpétuité", 2744],
+    [
+        "to grant a convict a stay of execution", "surseoir à l'exécution d'un condamné", 2745
+    ],
+    ["to pardon a criminal ", "gracier un criminel", 2746],
+    ["to execute a convict ", "exécuter un condamné", 2747],
+    ["to put sb to death ", "mettre qqn à mort", 2748],
+    ["an executioner ", "un bourreau", 2749],
+    ["a lethal injection ", "une piqûre mortelle", 2750],
+    ["to inject sb with a lethal substance ", "faire une piqûre mortelle à qqn", 2751],
+    ["to hang sb ", "pendre qqn", 2752],
+    ["the guillotine ", "la guillotine", 2753],
+    ["to guillotine sb ", "guillotiner qqn", 2754],
+    ["to electrocute sb ", "électrocuter qqn", 2755],
+    ["the electric chair ", "la chaise électrique", 2756],
+    ["to stone sb to death ", ["lapider qqn", " tuer qqn à coups de pierre"], 2757],
+    [
+        ["to abolish", " to do away with "], "abolir", 2758
+    ],
+    [
+        ["to reinstate", " to reintroduce", " to restore the death penalty "], "rétablir la peine de mort", 2759
+    ],
+    [
+        ["to apply the death penalty", " to enforce the death penalty "], "appliquer la peine de mort", 2760
+    ],
+    ["a miscarriage of justice ", "une erreur judiciaire", 2761],
+    [
+        ["DNA analysis", " DNA testing "], "les tests ADN", 2762
+    ],
+    [
+        ["to prove sb innocent", " to exonerate sb "], "innocenter qqn", 2763
+    ],
+    ["to be cleared by DNA ", "être innocenté grâce à l'ADN", 2764],
+    [
+        ["a controversial issue", "a contentious issue "], "un problème controversé", 2765
+    ],
+    ["a hot-button issue ", ["un problème sensible", "un problème qui suscite de vives réactions"], 2766],
+    [
+        ["advocates of the death penalty", " supporters of the death penalty", " proponents of the death penalty "], "partisans de la peine de mort", 2767
+    ],
+    [
+        ["critics of the death penalty", " opponents of the death penalty "],
+        ["opposants à la peine de mort", " adversaires de la peine de mort"], 2768
+    ],
+    [
+        ["to oppose the death penalty", " to be opposed to the death penalty "], "être contre la peine de mort", 2769
+    ],
+    ["an abolitionist ", ["un abolitionniste de la peine de mort", " un partisan de l'abolition de la peine de mort"], 2770],
+    ["a rapist ", "un violeur", 2771],
+    ["offenders ", "criminels", 2772],
+    ["contends ", "soutient", 2773],
+    ["is tantamount to ", "est équivalent à", 2774],
+    ["shifted ", "déplacé", 2775],
+    ["think-tank ", "groupe de réfléxion", 2776],
+    ["stonings ", "lapidations", 2777],
+    ["skewed ", "biaisée", 2778],
+    ["buried ", "enterrer", 2779],
+    ["capital punishment ", "la peine capitale", 2780],
+    ["the case against the death penalty ", "contre la peine de mort", 2781],
+    ["Abolition ", "l'abolition", 2782],
+    ["A condition of membership of ", "condition d'affiliation/d'adhésion", 2783],
+    ["moratorium ", "un moratoire", 2784],
+    ["Belarus ", "la Biélorussie", 2785],
+    ["parole ", "liberté conditionnelle", 2786],
+    ["avidly ", "avidement", 2787],
+    ["to carry out execution ", "procéder à des exécutions", 2788],
+    ["to enforce ", ["imposer", " appliquer"], 2789],
+    ["dwindling ", "en baisse", 2790],
+    ["death row ", "couloir de la mort", 2791],
+    ["to practice capital punishment ", "avoir recours à la peine de mort", 2792],
+    ["unusual ", ["inhabituel", " insolite"], 2793],
+    ["heinous ", "odieux", 2794],
+    ["unfairly administered ", "injustement géré/administré", 2795],
+    ["invoked ", "invoqué", 2796],
+    ["on the basis of ", "sur la base de", 2797],
+    ["subjected ", ["assujetti", " soumis"], 2798],
+    ["non-governmental organization (NGO) ", "une ONG", 2799],
+    ["think-tank ", "un groupe de réflexion", 2800],
+    ["have shifted ", "a déplacé", 2801],
+    ["the report ", "un rapport", 2802],
+    ["resulting ", "résultant", 2803],
+    ["Stoning ", "la lapidation", 2804],
+    ["widowed ", "veuf/veuve", 2805],
+    ["abetted ", "soutenu", 2806],
+    ["aided ", ["assisté", " aidé"], 2807],
+    ["Adultery ", "l'adultère", 2808],
+    ["burried up to the shoulders ", "enterré jusqu'aux épaules", 2809],
+    ["stoned to death ", "lapidé jusqu'à la mort", 2810],
+    ["stoned ", "défoncé (drogué)", 2811],
+];
 
-// NEXT FREE ID : 2619
+const quiz_international_tensions = [
+    ["foreign affairs", "les affaires étrangères", 2812],
+    ["foreign relations", "les relations extérieures", 2813],
+    ["The international community", "la communauté internationale", 2814],
+    ["A global issue", ["un problème mondial", " planétaire"], 2815],
+    ["A sovereign state", "Un État souverain", 2816],
+    ["Sovereignty", "la souveraineté", 2817],
+    ["A nation-state", "un État-nation", 2818],
+    [
+        ["A border", " a frontier"], "une frontière", 2819
+    ],
+    ["International law", "le droit international", 2820],
+    ["Geopolitics", "la géopolitique", 2821],
+    [
+        ["The international stage", " The international scene", " the world stage"], "la scène internationale", 2822
+    ],
+    [
+        ["To play a role", "to play a part in something"], "jouer un rôle dans quelque chose", 2823
+    ],
+    ["Western / eastern", "occidental / oriental", 2824],
+    ["Foreign policy", ["la politique étrangère", "la politique extérieure"], 2825],
+    ["an ambassador", "un ambassadeur", 2826],
+    ["An embassy", "une ambassade", 2827],
+    ["a cultural / commercial / military attaché", "un attaché culturel / commercial / militaire", 2828],
+    [
+        ["an envoy", " an emissary"],
+        ["un envoyé", " un émissaire"], 2829
+    ],
+    ["A diplomat", "un diplomate", 2830],
+    ["Diplomacy", "diplomatie", 2831],
+    ["to break off / resume diplomatic relations", "rompre / reprendre les relations", 2832],
+    [
+        ["tense relations", " strained relations"], "des relations tendues", 2833
+    ],
+    ["A thaw", "un réchauffement", 2834],
+    [
+        ["a chill", " a cooling off"], "un refroidissement", 2835
+    ],
+    ["to recall an ambassador", "rappeler un ambassadeur", 2836],
+    ["to normalize relations", "normaliser les relations", 2837],
+    ["A great power", "une grande puissance", 2838],
+    ["a superpower / a hyperpower", "une superpuissance / une hyperpuissance", 2839],
+    ["Hegemony", "l'hégémonie", 2840],
+    ["Imperialism", "l'impérialisme", 2841],
+    ["imperialistic", "impérialiste", 2842],
+    ["Expansionism", "l'expansionisme", 2843],
+    ["unilateralism / multilateralism", "l'unilatéralisme / le multilatéralisme", 2844],
+    ["Bilateral / multilateral", "bilatéral / multilatéral", 2845],
+    ["bipolar / multipolar", "bipolaire / multipolaire", 2846],
+    ["A bloc", "un bloc", 2847],
+    ["Balance of power", "l'équilibre des forces", 2848],
+    ["The UN system", "le système onusien", 2849],
+    ["A member state", ["un Etat-membre", " un pays membre"], 2850],
+    [
+        ["a founding member", "a founder member"], "un membre fondateur", 2851
+    ],
+    ["A contribution", "une cotisation", 2852],
+    ["to debate / to pass a resolution", "discuter/voter une résolution", 2853],
+    [
+        ["To implement a resolution", "to enforce a resolution"], "appliquer une résolution", 2854
+    ],
+    ["to authorize the use of force", "autoriser l'usage de la force", 2855],
+    ["An embargo", "un embargo", 2856],
+    ["A two-thirds majority", "une majorité des deux-tiers", 2857],
+    ["To maintain peace", "maintenir la paix", 2858],
+    ["a peace-keeping operation", "une opération de maintien de la paix", 2859],
+    ["A peacekeeper", "un soldat de la paix", 2860],
+    ["A blue helmet", "un casque bleu", 2861],
+    [
+        ["the duty to interfere", "the duty to intervene"], "le devoir d'ingérence", 2862
+    ],
+    ["military intervention", "intervention militaire", 2863],
+    [
+        ["NATO", " the North Atlantic Treaty Organization"], "l'OTAN", 2864
+    ],
+    ["To negotiate", "négocier", 2865],
+    ["negotiating table", "table des négociations", 2866],
+    [
+        ["negotiations", " talks"],
+        ["négociations", " pourparlers", " discussions"], 2867
+    ],
+    ["A round table", "une table ronde", 2868],
+    [
+        ["To make a statement", "to issue a statement", "to deliver a statement"], "faire une déclaration", 2869
+    ],
+    ["A communiqué", "un communiqué", 2870],
+    ["Under the aegis of", "sous l'égide de", 2871],
+    ["A summit (meeting)", ["une réunion au sommet", "un sommet"], 2872],
+    [
+        ["a spokesman", " spokeswoman", " spokesperson"], "un porte-parole", 2873
+    ],
+    [
+        ["a counterpart", " an opposite number"], "un homologue", 2874
+    ],
+    [
+        ["a stalemate", " a deadlock", " a standoff", " an impasse"], "une impasse", 2875
+    ],
+    ["to reach a stalemate", "aboutir à une impasse", 2876],
+    ["break the stalemate", "sortir d'une impasse", 2877],
+    ["an ultimatum", "un ultimatum", 2878],
+    ["A mediator", "un médiateur", 2879],
+    ["To broker an agreement", "négocier un accord", 2880],
+    ["To overcome an obstacle", "surmonter un obstacle", 2881],
+    ["Political will", "la volonté politique", 2882],
+    ["A compromise", "un compromis", 2883],
+    ["To compromise", "transiger", 2884],
+    ["To make a concession", "faire une concession", 2885],
+    ["to commit oneself to doing something", "s'engager à faire quelque chose", 2886],
+    ["To pledge to do something", ["promettre de faire", " s'engager à faire quelque chose"], 2887],
+    ["to sign / ratify a treaty", "signer / ratifier un traité", 2888],
+    ["A protocol", "un protocole", 2889],
+    [
+        ["an agreement", " an accord"], "un accord", 2890
+    ],
+    ["to reach a settlement", "conclure un accord", 2891],
+    ["To stipulate", "stipuler", 2892],
+    ["To reach a consensus", "parvenir à un consensus", 2893],
+    [
+        ["To prohibit", " to ban"], "interdire", 2894
+    ],
+    ["To veto a decision", "mettre son véto à une décision", 2895],
+    [
+        ["The European Union", " The EU"],
+        ["l'Union européenne", "l'UE"], 2896
+    ],
+    ["an EU directive", "une directive européenne", 2897],
+    ["To join the EU", "adhérer à l'UE", 2898],
+    [
+        ["To apply to join the EU", " to apply for EU membership"], "demander son adhésion à l'UE", 2899
+    ],
+    ["membership negotiations", "pourparlers d'adhésion", 2900],
+    ["A non-governmental organization (NGO)", "une organisation non gouvernementale (ONG)", 2901],
+    ["Human rights", "les droits de l'homme", 2902],
+    [
+        ["human rights abuses", "human rights violations"], "les violations des droits de l'homme", 2903
+    ],
+    ["To uphold a principle", "faire respecter un principe", 2904],
+    ["China's human-rights record", "Le passé de la Chine en matière de droits de l'Homme", 2905],
+    ["Decolonization", "la décolonisation", 2906],
+    [
+        ["to achieve independance", "to gain independance", "to attain independence"],
+        ["obtenir l'indépendance", " devenir indépendant"], 2907
+    ],
+    ["A former colony", "une ancienne colonie", 2908],
+    ["A colonial power", "une puissance coloniale", 2909],
+    ["a bone of contention", "une pomme de discorde", 2910],
+    ["to be at daggers drawn with sb", "être à couteaux tirés avec qqn", 2911],
+    ["to flex your muscles", "faire étalage de sa force", 2912],
+    ["a Mexican standoff", "une impasse", 2913],
+    ["to meet sb halfway", "couper la poire en deux", 2914],
+];
+
+const quiz_war_and_peace = [
+    ["a dispute", ["un conflit", "un litige", "un contentieux"], 2915],
+    ["a border dispute", "un litige frontalier", 2916],
+    ["an armed conflict", "un conflit armé", 2917],
+    ["be embroiled in a conflict", "être mêlé à un conflit", 2918],
+    ["enemy", "ennemi", 2919],
+    [
+        ["a disagreement", "a row"],
+        ["un désaccord", "une dispute", "une querelle"], 2920
+    ],
+    ["a showdown", "une épreuve de force/ un bras de fer", 2921],
+    ["military", "militaire", 2922],
+    ["civilian", "civil", 2923],
+    ["the military", "les militaires", 2924],
+    ["a warmonger", "un belliciste", 2925],
+    ["warmongering", "la propagande belliciste", 2926],
+    ["a militarist", "un militariste", 2927],
+    ["militaristic", "militariste", 2928],
+    ["to be at war/ to be at peace", "être en guerre/ être en paix", 2929],
+    ["to declare war on a country", "déclarer la guerre à un pays", 2930],
+    [
+        ["to wage war on an enemy", "to wage war against an enemy"], "faire la guerre à un ennemi", 2931
+    ],
+    ["an ally", "un allié", 2932],
+    ["to break out", "éclater", 2933],
+    ["to fight", "se battre", 2934],
+    ["to attack/ to defend", "attaquer/ défendre", 2935],
+    ["to conquer", "conquérir", 2936],
+    ["conquest", "la conquête", 2937],
+    ["to invade", "envahir", 2938],
+    ["to besiege", "assiéger", 2939],
+    ["armed forces", "les forces armées", 2940],
+    ["a task force", "un corps expéditionnaire", 2941],
+    ["troops", "les troupes", 2942],
+    ["air and sea forces", "les forces aéronavales", 2943],
+    ["a military campaign", "une campagne militaire", 2944],
+    ["the battlefield", "le champ de bataille", 2945],
+    ["to deploy", "déployer", 2946],
+    ["deployment", "le déploiement", 2947],
+    ["a bomber", "un bombardier", 2948],
+    ["to withdraw troops from a place", "retirer des troupes d'un endroid", 2949],
+    ["smart weapons", "des armes intelligentes", 2950],
+    ["withdrawal", "le retrait", 2951],
+    ["an air strike", ["une frappe aérienne", "une intervention aérienne"], 2952],
+    ["a surgical strike", "une frappe chirurgicale", 2953],
+    ["a blockade", "un blocus", 2954],
+    ["to defeat an adversary", "vaincre un adversaire", 2955],
+    ["a stealth bomber", "un bombardier furtif", 2956],
+    ["an aircraft carrier", "un porte-avions", 2957],
+    ["a setback", "un revers", 2958],
+    ["a fighter plane", ["un avion de chasse", "un chasseur"], 2959],
+    ["reprisals/ retaliation", "des représailles", 2960],
+    [
+        ["a drone", "an unmanned aerial vehicle", "an uav"],
+        ["un drone", "un avion téléguidé"], 2961
+    ],
+    ["to retaliate against somebody", "user de représailles envers quelqu'un", 2962],
+    ["a missile", "un missile", 2963],
+    ["a victor", "un vainqueur", 2964],
+    [
+        ["a serviceman", "a soldier"],
+        ["un militaire", "un soldat"], 2965
+    ],
+    [
+        ["war of nerves", "war of attrition"],
+        ["la guerre des nerfs", "la guerre d'usure"], 2966
+    ],
+    ["a professional soldier/ a career soldier", "un militaire de carrière", 2967],
+    ["nuclear / biological / chemical warfare", "la guerre nucléaire/ biologique/ chimique", 2968],
+    [
+        ["to join the air force", "to enlist in the air force"],
+        ["s'engager dans l'armée de l'air", "s'enrôler dans l'armée de l'air"], 2969
+    ],
+    [
+        ["a massacre", "aslaughter"], "un massacre", 2970
+    ],
+    ["to recruit", "recruter", 2971],
+    ["bloodshed", ["effusion de sang", "carnage", "boucherie"], 2972],
+    ["the wounded", "les blessés", 2973],
+    ["a recruit", "une recrue", 2974],
+    ["the casualties", "les morts et les blessés", 2975],
+    ["an officer", "un officier", 2976],
+    ["death toll", "bilan des victimes", 2977],
+    ["a conscientious objector", "un objecteur de conscience", 2978],
+    ["intelligence", "le renseignement", 2979],
+    ["to desert", "déserter", 2980],
+    ["to spy on an enemy", "espionner un ennemi", 2981],
+    ["a deserter", "un déserteur", 2982],
+    [
+        ["a spy satellite", "a surveillance satellite"], "un satellite-espion", 2983
+    ],
+    [
+        ["weapons", "arms"], "des armes", 2984
+    ],
+    ["a war crime", "un crime de guerre", 2985],
+    ["weapons of mass destruction", "des armes de destruction massive", 2986],
+    ["an arsenal", "un arsenal", 2987],
+    ["a war criminal", "un criminel de guerre", 2988],
+    [
+        ["ammunition", "munitions"], "des munitions", 2989
+    ],
+    ["a crime against humanity", "un crime contre l'humanité", 2990],
+    ["a bomb", "une bombe", 2991],
+    ["a genocide", "un génocide", 2992],
+    ["to bomb", "bombarder", 2993],
+    ["ethnic cleansing", "purification ethnique", 2994],
+    [
+        ["a bombing", "a bombardment"], "un bombardement", 2995
+    ],
+    ["to exterminate", "exterminer", 2996],
+    ["a ceasefire", "un cessez-le-feu", 2997],
+    ["a truce", "une trêve", 2998],
+    ["to surrender", "se rendre", 2999],
+    ["an armistice", "un armistice", 3000],
+    ["disarmament", "le désarmement", 3001],
+    [
+        ["a peace campaigner", "a pacifist", "a peacenik"], "un pacifiste", 3002
+    ],
+    ["a quagmire", "un bourbier", 3003],
+    ["stalemate", "l'enlisement", 3004],
+    ["peace talks", "des pourparlers de paix", 3005],
+    ["the peace process", "le processus de paix", 3006],
+    [
+        ["a peace agreement", "a peace accord", "a peace settlement"], "un accord de paix", 3007
+    ],
+    ["a peace treaty", "un traité de paix", 3008],
+    ["the peace dividend", "la dividende de la paix", 3009],
+    ["a prisoner of war", "un prisonnier de guerre", 3010],
+    ["to be reported missing", "être porté disparu", 3011],
+    ["to be absent without leave", ["s'absenter sans permission", "manquer à l'appel"], 3012],
+    [
+        ["a veteran", "a vet"], "un ancien combattant", 3013
+    ],
+    ["an amputee", "un amputé", 3014],
+    ["be maimed for life", ["être estropié", "être mutilé pour la vie"], 3015],
+    ["post traumatic stress diso", "névrose post-traumatique", 3016],
+];
+
+// NEXT FREE ID : 3017
 
 
 
@@ -3939,6 +4500,10 @@ const Quizs = {
     "pollution": quiz_pollution,
     "individual freedom": quiz_individual_freedom,
     "gun violence": quiz_gun_violence,
+    "crime": quiz_crime,
+    "capital punishment": quiz_capital_punishment,
+    "international tensions": quiz_international_tensions,
+    "war & peace": quiz_war_and_peace,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action

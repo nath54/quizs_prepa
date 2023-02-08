@@ -1,102 +1,102 @@
-firearms###les armes à feu
-a gun###une arme à feu
-a handgun###une arme de poing
-a revolver###un revolver
-a pistol###un pistolet
-a shotgun###un fusil de chasse
-a semi-automatic rifle###un fusil semi-automatique
-an assault rifle, an assault weapon###un fusil d'assaut
-ammunition, munitions###des munitions
-a bullet###une balle
-a cartridge###une cartouche
-a holster###un étui (de revolver)
-a gun-owner###propriétaire d'armes à feu
-a gun enthusiast###un passionné d'armes à feu
-a rifle range, a shooting range###un champ de tir
-to bear, to carry, to wear a gun###porter une arme
-gun sales###les ventes d'armes à feu
-a gun permit, a gun license###un permis de port d'arme
-to take the law into one's own hands###se faire justice
-self-defence###la légitime défense
-to act in self-defence###agir en état de légitime défense
-a vigilante###un membre d'un groupe d'autodéfense
-The National Rifle Association (of America)###La NRA
-a controversial, contentious issue###un problème controversé
-a hot-button issue###un problème sensible, qui suscite de vives réactions
-the gun lobby###le lobby des armes à feu
-the right to carry arms###le droit de porter une arme
-gun-rights activists###les défenseurs du droit de porter des armes
-a gun maker, a gun manufacturer###un fabricant d'armes
-gun control###la réglementation du port d'armes
-to have access to guns###avoir accès aux armes à feu
-to restrict access to guns###limiter l'accès aux armes
-a background check###un contrôle des antécédents (d'un acheteur d'armes)
-to register a gun###déclarer une arme
-a criminal record###un casier judiciaire
-to outlaw, to ban guns###interdire les armes à feu
-to pull, to press, to squeeze the trigger###appuyer sur la gâchette
-to be trigger-happy###avoir la gâchette facile
-the death toll###le nombre de victimes
-to slaughter sb###tuer qn sauvagement
-a slaughter, a massacre###un massacre
-carnage###un carnage
-bloodshed###une effusion de sang, un massacre
-to shoot###tirer
-to shoot at sb###tirer sur qn
-to shoot sb dead###abattre qn
-a shooting###des coups de feu, une fusillade
-the shooting of a policeman###le meurtre d'un policier
-a shoot-out###une fusillade
-a shot, a gunshot###un coup de feu
-to fire a shot at sb###tirer un coup sur qn
-to be fatally shot, mortally wounded###être touché mortellement, victime d'un coup de feu mortel
-gunfire, gunfight###coups de feu, fusillade
-to commit suicide, to kill oneself###se suicider
-to take one's (own) life###se supprimer, se donner la mort
-he turned the gun on himself###il a retourné l'arme contre lui-même
-to go on a killing spree, a shooting spree, a shooting rampage, a shooting spree###être pris d'un accès de folie meurtrière
-crime, criminality###la criminalité
-crime rate###le taux de criminalité
-a gunman###un homme armé
-a murder###un meurtre
-a murderer###un meurtrier
-to injure sb, to wound sb###blesser qn
-a wound###une blessure
-injured, wounded###blessé
-a corpse###un cadavre
-a serial killer###un tueur en série
-a psychopath###un psychopathe
-gun violence###la violence par arme à feu
-the right to bear arms###le droit de porter des armes
-militia###la milice
-to be infringed###a été bafoué, transgressé
-odd###bizarre
-justices###juges
-gun ownership###la détention, possession d'une arme
-the handling of###le maniement de
-on balance###dans l'ensemble, globalement
-boasts###se vanter
-prompted###suscité, provoqué
-deranged###dérangé (dans le sens de pas net)
-folly###folie, sottise
-right-wing extremist###d'extrême droite
-heavily###fortement, lourdement
-shooting spree###une crise de folie meurtrière
-witness###un témoin
-identity marker###signe d'identité
-self-reliance###l'autonomie, l'indépendance, le fait de compter sur soi
-tough###dur, difficile
-to reinforce###Renforcer, solidifier, consolider
-obey###respecter, obéir
-the law-abiding###ceux respectueux des lois
-strictness###rigueur, sévérité
-soaring profits###hausse du bénéfice
-to owe###Devoir quelque chose
-corporate citizen###entreprise citoyenne
-to secure###obtenir
-coverage###couverture médiatique
-copycats###copieurs
-homicide rate###le taux d'homicides
-to hold a gun to sb's head###mettre le couteau sous la gorge de qn
-to stick to your guns###camper sur sa position
-to jump the gun###agir prématurément, aller vite en besogne
+a dispute###conflit/ litige/ contentieux
+a border dispute###un litige frontalier
+an armed conflict###un conflit armé
+be embroiled in a conflict###être mêlé à un conflit
+enemy###ennemi
+disagreement/ row###un désaccord/ une dispute/ une querelle
+a showdown###une épreuve de force/ un bras de fer
+military###militaire
+civilian###civil
+the military###les militaires
+a warmonger###un belliciste
+warmongering###la propagande belliciste
+a militarist###un militariste
+militaristic###militariste
+to be at war/ to be at peace###être en guerre/ être en paix
+to declare war on a country###déclarer la guerre à un pays
+to wage war on an enemy/ against an enemy###faire la guerre à un ennemi
+an ally###un allié
+to break out###éclater
+to fight###se battre
+to attack/ to defend###attaquer/ défendre
+to conquer###conquérir
+conquest###la conquête
+to invade###envahir
+to besiege###assiéger
+armed forces###les forces armées
+a task force###un corps expéditionnaire
+troops###les troupes
+air and sea forces###les forces aéronavales
+a military campaign###une campagne militaire
+the battlefield###le champ de bataille
+to deploy###déployer
+deployment###le déploiement
+a bomber###un bombardier
+to withdraw troops from a place###retirer des troupes d'un endroid
+smart weapons###des armes intelligentes
+withdrawal###le retrait
+an air strike###une frappe aérienne / une intervention aérienne
+a surgical strike###une frappe chirurgicale
+a blockade###un blocus
+to defeat an adversary###vaincre un adversaire
+a stealth bomber###un bombardier furtif
+an aircraft carrier###un porte-avions
+a setback###un revers
+a fighter plane###un avion de chasse/ un chasseur
+reprisals/ retaliation###des représailles
+a drone/ an unmanned aerial vehicle/ uav###un drone/ un avion téléguidé
+to retaliate against somebody###user de représailles envers quelqu'un
+a missile###un missile
+a victor###un vainqueur
+a serviceman/ a soldier###un militaire/ un soldat
+war of nerves/ war of attrition###la guerre des nerfs/ la guerre d'usure
+a professional soldier/ a career soldier###un militaire de carrière
+nuclear / biological / chemical warfare###la guerre nucléaire/ biologique/ chimique
+to join the air force/ to enlist in the air force###s'engager/ s'enrôler dans l'armée de l'air
+massacre/ slaughter###massacre
+to recruit###recruter
+bloodshed###effusion de sang/ carnage/ boucherie
+the wounded###les blessés
+a recruit###une recrue
+the casualties###les morts et les blessés
+an officer###un officier
+death toll###bilan des victimes
+a conscientious objector###un objecteur de conscience
+intelligence###le renseignement
+to desert###déserter
+to spy on an enemy###espionner un ennemi
+a deserter###un déserteur
+a spy satellite/ a surveillance satellite###un satellite-espion
+weapons/ arms###des armes
+a war crime###un crime de guerre
+weapons of mass destruction/wmds###des armes de destruction massive
+an arsenal###un arsenal
+a war criminal###un criminel de guerre
+ammunition/ munitions###des munitions
+a crime against humanity###un crime contre l'humanité
+a bomb###une bombe
+a genocide###un génocide
+to bomb###bombarder
+ethnic cleansing###purification ethnique
+a bombing/ a bombardment###un bombardement
+to exterminate###exterminer
+a ceasefire###un cessez-le-feu
+a truce###une trêve
+to surrender###se rendre
+an armistice###un armistice
+disarmament###le désarmement
+a peace campaigner/ a pacifist/ a peacenik###un pacifiste
+a quagmire###un bourbier
+stalemate###l'enlisement
+peace talks###des pourparlers de paix
+the peace process###le processus de paix
+a peace agreement/ a peace accord/ a peace settlement###un accord de paix
+a peace treaty###un traité de paix
+the peace dividend###la dividende de la paix
+a prisoner of war/ a pow###un prisonnier de guerre
+to be reported missing###être porté disparu
+to be absent without leave/ awol###s'absenter sans permission/ manquer à l'appel
+a veteran/ a vet###un ancien combattant
+an amputee###un amputé
+be maimed for life###être estropié/ être mutilé pour la vie
+post traumatic stress diso###névrose post-traumatique

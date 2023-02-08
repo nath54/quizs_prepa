@@ -1,142 +1,137 @@
-const quiz_gun_violence = [
-    ["firearms", "les armes à feu", 2517],
-    ["a gun", "une arme à feu", 2518],
-    ["a handgun", "une arme de poing", 2519],
-    ["a revolver", "un revolver", 2520],
-    ["a pistol", "un pistolet", 2521],
-    ["a shotgun", "un fusil de chasse", 2522],
-    ["a semi-automatic rifle", "un fusil semi-automatique", 2523],
+const quiz_war_and_peace = [
+    ["a dispute", ["un conflit", "un litige", "un contentieux"], 2915],
+    ["a border dispute", "un litige frontalier", 2916],
+    ["an armed conflict", "un conflit armé", 2917],
+    ["be embroiled in a conflict", "être mêlé à un conflit", 2918],
+    ["enemy", "ennemi", 2919],
     [
-        ["an assault rifle", " an assault weapon"], "un fusil d'assaut", 2524
+        ["a disagreement", "a row"],
+        ["un désaccord", "une dispute", "une querelle"], 2920
+    ],
+    ["a showdown", "une épreuve de force/ un bras de fer", 2921],
+    ["military", "militaire", 2922],
+    ["civilian", "civil", 2923],
+    ["the military", "les militaires", 2924],
+    ["a warmonger", "un belliciste", 2925],
+    ["warmongering", "la propagande belliciste", 2926],
+    ["a militarist", "un militariste", 2927],
+    ["militaristic", "militariste", 2928],
+    ["to be at war/ to be at peace", "être en guerre/ être en paix", 2929],
+    ["to declare war on a country", "déclarer la guerre à un pays", 2930],
+    [
+        ["to wage war on an enemy", "to wage war against an enemy"], "faire la guerre à un ennemi", 2931
+    ],
+    ["an ally", "un allié", 2932],
+    ["to break out", "éclater", 2933],
+    ["to fight", "se battre", 2934],
+    ["to attack/ to defend", "attaquer/ défendre", 2935],
+    ["to conquer", "conquérir", 2936],
+    ["conquest", "la conquête", 2937],
+    ["to invade", "envahir", 2938],
+    ["to besiege", "assiéger", 2939],
+    ["armed forces", "les forces armées", 2940],
+    ["a task force", "un corps expéditionnaire", 2941],
+    ["troops", "les troupes", 2942],
+    ["air and sea forces", "les forces aéronavales", 2943],
+    ["a military campaign", "une campagne militaire", 2944],
+    ["the battlefield", "le champ de bataille", 2945],
+    ["to deploy", "déployer", 2946],
+    ["deployment", "le déploiement", 2947],
+    ["a bomber", "un bombardier", 2948],
+    ["to withdraw troops from a place", "retirer des troupes d'un endroid", 2949],
+    ["smart weapons", "des armes intelligentes", 2950],
+    ["withdrawal", "le retrait", 2951],
+    ["an air strike", ["une frappe aérienne", "une intervention aérienne"], 2952],
+    ["a surgical strike", "une frappe chirurgicale", 2953],
+    ["a blockade", "un blocus", 2954],
+    ["to defeat an adversary", "vaincre un adversaire", 2955],
+    ["a stealth bomber", "un bombardier furtif", 2956],
+    ["an aircraft carrier", "un porte-avions", 2957],
+    ["a setback", "un revers", 2958],
+    ["a fighter plane", ["un avion de chasse", "un chasseur"], 2959],
+    ["reprisals/ retaliation", "des représailles", 2960],
+    [
+        ["a drone", "an unmanned aerial vehicle", "an uav"],
+        ["un drone", "un avion téléguidé"], 2961
+    ],
+    ["to retaliate against somebody", "user de représailles envers quelqu'un", 2962],
+    ["a missile", "un missile", 2963],
+    ["a victor", "un vainqueur", 2964],
+    [
+        ["a serviceman", "a soldier"],
+        ["un militaire", "un soldat"], 2965
     ],
     [
-        ["ammunition", " munitions"], "des munitions", 2525
+        ["war of nerves", "war of attrition"],
+        ["la guerre des nerfs", "la guerre d'usure"], 2966
     ],
-    ["a bullet", "une balle", 2526],
-    ["a cartridge", "une cartouche", 2527],
-    ["a holster", "un étui (de revolver)", 2528],
-    ["a gun-owner", "propriétaire d'armes à feu", 2529],
-    ["a gun enthusiast", "un passionné d'armes à feu", 2530],
+    ["a professional soldier/ a career soldier", "un militaire de carrière", 2967],
+    ["nuclear / biological / chemical warfare", "la guerre nucléaire/ biologique/ chimique", 2968],
     [
-        ["a rifle range", " a shooting range"], "un champ de tir", 2531
-    ],
-    [
-        ["to bear a gun", " to carry a gun", " to wear a gun"], "porter une arme", 2532
-    ],
-    ["gun sales", "les ventes d'armes à feu", 2533],
-    [
-        ["a gun permit", " a gun license"], "un permis de port d'arme", 2534
-    ],
-    ["to take the law into one's own hands", "se faire justice", 2535],
-    ["self-defence", "la légitime défense", 2536],
-    ["to act in self-defence", "agir en état de légitime défense", 2537],
-    ["a vigilante", "un membre d'un groupe d'autodéfense", 2538],
-    ["The National Rifle Association (of America)", "La NRA", 2539],
-    [
-        ["a controversial issue", "a contentious issue"], "un problème controversé", 2540
-    ],
-    ["a hot-button issue", ["un problème sensible", "un problème qui suscite de vives réactions"], 2541],
-    ["the gun lobby", "le lobby des armes à feu", 2542],
-    ["the right to carry arms", "le droit de porter une arme", 2543],
-    ["gun-rights activists", "les défenseurs du droit de porter des armes", 2544],
-    [
-        ["a gun maker", " a gun manufacturer"], "un fabricant d'armes", 2545
-    ],
-    ["gun control", "la réglementation du port d'armes", 2546],
-    ["to have access to guns", "avoir accès aux armes à feu", 2547],
-    ["to restrict access to guns", "limiter l'accès aux armes", 2548],
-    ["a background check", "un contrôle des antécédents (d'un acheteur d'armes)", 2549],
-    ["to register a gun", "déclarer une arme", 2550],
-    ["a criminal record", "un casier judiciaire", 2551],
-    [
-        ["to outlaw guns", " to ban guns"], "interdire les armes à feu", 2552
+        ["to join the air force", "to enlist in the air force"],
+        ["s'engager dans l'armée de l'air", "s'enrôler dans l'armée de l'air"], 2969
     ],
     [
-        ["to pull the trigger", " to press the trigger", " to squeeze the trigger"], "appuyer sur la gâchette", 2553
+        ["a massacre", "aslaughter"], "un massacre", 2970
     ],
-    ["to be trigger-happy", "avoir la gâchette facile", 2554],
-    ["the death toll", "le nombre de victimes", 2555],
-    ["to slaughter sb", "tuer qqn sauvagement", 2556],
+    ["to recruit", "recruter", 2971],
+    ["bloodshed", ["effusion de sang", "carnage", "boucherie"], 2972],
+    ["the wounded", "les blessés", 2973],
+    ["a recruit", "une recrue", 2974],
+    ["the casualties", "les morts et les blessés", 2975],
+    ["an officer", "un officier", 2976],
+    ["death toll", "bilan des victimes", 2977],
+    ["a conscientious objector", "un objecteur de conscience", 2978],
+    ["intelligence", "le renseignement", 2979],
+    ["to desert", "déserter", 2980],
+    ["to spy on an enemy", "espionner un ennemi", 2981],
+    ["a deserter", "un déserteur", 2982],
     [
-        ["a slaughter", " a massacre"], "un massacre", 2557
-    ],
-    ["carnage", "un carnage", 2558],
-    ["bloodshed", ["une effusion de sang", " un massacre"], 2559],
-    ["to shoot", "tirer", 2560],
-    ["to shoot at sb", "tirer sur qqn", 2561],
-    ["to shoot sb dead", "abattre qqn", 2562],
-    ["a shooting", ["des coups de feu", " une fusillade"], 2563],
-    ["the shooting of a policeman", "le meurtre d'un policier", 2564],
-    ["a shoot-out", "une fusillade", 2565],
-    [
-        ["a shot", " a gunshot"], "un coup de feu", 2566
-    ],
-    ["to fire a shot at sb", "tirer un coup sur qqn", 2567],
-    [
-        ["to be fatally shot", " mortally wounded"],
-        ["être touché mortellement", " victime d'un coup de feu mortel"], 2568
+        ["a spy satellite", "a surveillance satellite"], "un satellite-espion", 2983
     ],
     [
-        ["gunfire", " gunfight"],
-        ["coups de feu", "fusillade"], 2569
+        ["weapons", "arms"], "des armes", 2984
     ],
+    ["a war crime", "un crime de guerre", 2985],
+    ["weapons of mass destruction", "des armes de destruction massive", 2986],
+    ["an arsenal", "un arsenal", 2987],
+    ["a war criminal", "un criminel de guerre", 2988],
     [
-        ["to commit suicide", " to kill oneself"], "se suicider", 2570
+        ["ammunition", "munitions"], "des munitions", 2989
     ],
-    ["to take one's (own) life", ["se supprimer", " se donner la mort"], 2571],
-    ["he turned the gun on himself", "il a retourné l'arme contre lui-même", 2572],
+    ["a crime against humanity", "un crime contre l'humanité", 2990],
+    ["a bomb", "une bombe", 2991],
+    ["a genocide", "un génocide", 2992],
+    ["to bomb", "bombarder", 2993],
+    ["ethnic cleansing", "purification ethnique", 2994],
     [
-        ["to go on a killing spree", "to be on a shooting spree", "to be on a shooting rampage"], "être pris d'un accès de folie meurtrière", 2573
+        ["a bombing", "a bombardment"], "un bombardement", 2995
     ],
+    ["to exterminate", "exterminer", 2996],
+    ["a ceasefire", "un cessez-le-feu", 2997],
+    ["a truce", "une trêve", 2998],
+    ["to surrender", "se rendre", 2999],
+    ["an armistice", "un armistice", 3000],
+    ["disarmament", "le désarmement", 3001],
     [
-        ["crime", " criminality"], "la criminalité", 2574
+        ["a peace campaigner", "a pacifist", "a peacenik"], "un pacifiste", 3002
     ],
-    ["crime rate", "le taux de criminalité", 2575],
-    ["a gunman", "un homme armé", 2576],
-    ["a murder", "un meurtre", 2577],
-    ["a murderer", "un meurtrier", 2578],
+    ["a quagmire", "un bourbier", 3003],
+    ["stalemate", "l'enlisement", 3004],
+    ["peace talks", "des pourparlers de paix", 3005],
+    ["the peace process", "le processus de paix", 3006],
     [
-        ["to injure sb", " to wound sb"], "blesser qqn", 2579
+        ["a peace agreement", "a peace accord", "a peace settlement"], "un accord de paix", 3007
     ],
-    ["a wound", "une blessure", 2580],
+    ["a peace treaty", "un traité de paix", 3008],
+    ["the peace dividend", "la dividende de la paix", 3009],
+    ["a prisoner of war", "un prisonnier de guerre", 3010],
+    ["to be reported missing", "être porté disparu", 3011],
+    ["to be absent without leave", ["s'absenter sans permission", "manquer à l'appel"], 3012],
     [
-        ["injured", " wounded"], "blessé", 2581
+        ["a veteran", "a vet"], "un ancien combattant", 3013
     ],
-    ["a corpse", "un cadavre", 2582],
-    ["a serial killer", "un tueur en série", 2583],
-    ["a psychopath", "un psychopathe", 2584],
-    ["gun violence", "la violence par arme à feu", 2585],
-    ["the right to bear arms", "le droit de porter des armes", 2586],
-    ["militia", "la milice", 2587],
-    ["to be infringed", ["a été bafoué", "a été transgressé"], 2588],
-    ["odd", "bizarre", 2589],
-    ["justices", "juges", 2590],
-    ["gun ownership", ["la détention d'une arme", "la possession d'une arme"], 2591],
-    ["the handling of", "le maniement de", 2592],
-    ["on balance", ["dans l'ensemble", " globalement"], 2593],
-    ["boasts", "se vanter", 2594],
-    ["prompted", ["suscité", " provoqué"], 2595],
-    ["deranged", "dérangé (dans le sens de pas net)", 2596],
-    ["folly", ["folie", " sottise"], 2597],
-    ["right-wing extremist", "d'extrême droite", 2598],
-    ["heavily", ["fortement", "lourdement"], 2599],
-    ["shooting spree", "une crise de folie meurtrière", 2600],
-    ["witness", "un témoin", 2601],
-    ["identity marker", "signe d'identité", 2602],
-    ["self-reliance", ["l'autonomie", " l'indépendance", " le fait de compter sur soi"], 2603],
-    ["tough", ["dur", " difficile"], 2604],
-    ["to reinforce", ["Renforcer", " solidifier", " consolider"], 2605],
-    ["obey", ["respecter", " obéir"], 2606],
-    ["the law-abiding", "ceux respectueux des lois", 2607],
-    ["strictness", ["rigueur", " sévérité"], 2608],
-    ["soaring profits", "hausse du bénéfice", 2609],
-    ["to owe", "Devoir quelque chose", 2610],
-    ["corporate citizen", "entreprise citoyenne", 2611],
-    ["to secure", "obtenir", 2612],
-    ["coverage", "couverture médiatique", 2613],
-    ["copycats", "copieurs", 2614],
-    ["homicide rate", "le taux d'homicides", 2615],
-    ["to hold a gun to sb's head", "mettre le couteau sous la gorge de qqn", 2616],
-    ["to stick to your guns", "camper sur sa position", 2617],
-    ["to jump the gun", ["agir prématurément", " aller vite en besogne"], 2618],
+    ["an amputee", "un amputé", 3014],
+    ["be maimed for life", ["être estropié", "être mutilé pour la vie"], 3015],
+    ["post traumatic stress diso", "névrose post-traumatique", 3016],
 ];
