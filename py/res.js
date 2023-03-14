@@ -1,137 +1,181 @@
-const quiz_war_and_peace = [
-    ["a dispute", ["un conflit", "un litige", "un contentieux"], 2915],
-    ["a border dispute", "un litige frontalier", 2916],
-    ["an armed conflict", "un conflit armé", 2917],
-    ["be embroiled in a conflict", "être mêlé à un conflit", 2918],
-    ["enemy", "ennemi", 2919],
+const quiz_health_issues = [
     [
-        ["a disagreement", "a row"],
-        ["un désaccord", "une dispute", "une querelle"], 2920
+        ["a disease", " an illness", " a sickness"], "une maladie", 3132
     ],
-    ["a showdown", "une épreuve de force/ un bras de fer", 2921],
-    ["military", "militaire", 2922],
-    ["civilian", "civil", 2923],
-    ["the military", "les militaires", 2924],
-    ["a warmonger", "un belliciste", 2925],
-    ["warmongering", "la propagande belliciste", 2926],
-    ["a militarist", "un militariste", 2927],
-    ["militaristic", "militariste", 2928],
-    ["to be at war/ to be at peace", "être en guerre/ être en paix", 2929],
-    ["to declare war on a country", "déclarer la guerre à un pays", 2930],
+    ["to suffer from a disease", "souffrir d'une maladie", 3133],
+    ["to die from cancer", "mourir du cancer", 3134],
+    ["carcinogenic", "cancérigène", 3135],
+    ["a serious disease", "une maladie grave", 3136],
+    ["a virus", "un virus", 3137],
+    ["to contract a virus / a disease", "contracter un virus/ une maladie", 3138],
+    ["bacteria", "des bactéries", 3139],
+    ["a germ", ["un microbe", " un germe"], 3140],
     [
-        ["to wage war on an enemy", "to wage war against an enemy"], "faire la guerre à un ennemi", 2931
+        ["contagious", " catching", " infectious"],
+        ["contagieux", " infectieux"], 3141
     ],
-    ["an ally", "un allié", 2932],
-    ["to break out", "éclater", 2933],
-    ["to fight", "se battre", 2934],
-    ["to attack/ to defend", "attaquer/ défendre", 2935],
-    ["to conquer", "conquérir", 2936],
-    ["conquest", "la conquête", 2937],
-    ["to invade", "envahir", 2938],
-    ["to besiege", "assiéger", 2939],
-    ["armed forces", "les forces armées", 2940],
-    ["a task force", "un corps expéditionnaire", 2941],
-    ["troops", "les troupes", 2942],
-    ["air and sea forces", "les forces aéronavales", 2943],
-    ["a military campaign", "une campagne militaire", 2944],
-    ["the battlefield", "le champ de bataille", 2945],
-    ["to deploy", "déployer", 2946],
-    ["deployment", "le déploiement", 2947],
-    ["a bomber", "un bombardier", 2948],
-    ["to withdraw troops from a place", "retirer des troupes d'un endroid", 2949],
-    ["smart weapons", "des armes intelligentes", 2950],
-    ["withdrawal", "le retrait", 2951],
-    ["an air strike", ["une frappe aérienne", "une intervention aérienne"], 2952],
-    ["a surgical strike", "une frappe chirurgicale", 2953],
-    ["a blockade", "un blocus", 2954],
-    ["to defeat an adversary", "vaincre un adversaire", 2955],
-    ["a stealth bomber", "un bombardier furtif", 2956],
-    ["an aircraft carrier", "un porte-avions", 2957],
-    ["a setback", "un revers", 2958],
-    ["a fighter plane", ["un avion de chasse", "un chasseur"], 2959],
-    ["reprisals/ retaliation", "des représailles", 2960],
+    ["to contaminate", "contaminer", 3142],
+    ["to mutate", "muter", 3143],
+    ["a health hazard", "un danger pour la santé", 3144],
     [
-        ["a drone", "an unmanned aerial vehicle", "an uav"],
-        ["un drone", "un avion téléguidé"], 2961
+        ["a curse", " a plague", " a scourge"], "un fléau", 3145
     ],
-    ["to retaliate against somebody", "user de représailles envers quelqu'un", 2962],
-    ["a missile", "un missile", 2963],
-    ["a victor", "un vainqueur", 2964],
+    ["smallpox", "variole", 3147],
+    ["to boost", "encourager", 3148],
+    ["lung / breast / skin cancer", "le cancer du poumon / du sein / de la peau", 3149],
+    ["malaria", ["la malaria", " la paludisme"], 3150],
+    ["plague", "la peste", 3151],
+    ["cholera", "le choléra", 3152],
     [
-        ["a serviceman", "a soldier"],
-        ["un militaire", "un soldat"], 2965
+        ["a sexually transmitted disease (STD) ", " a venereal disease (VD)"],
+        ["une maladie sexuellement transmissible (MST)", " une maladie vénérienne"], 3153
     ],
+    ["Alzeihemer's / Parkinson's disease", "la maladie d'Alzheimer / de Parkinson", 3154],
+    ["a neurodegenerative disease", "une maladie neurodégénérative", 3155],
+    ["Severe Acute Respiratory Syndrome (SARS)", "syndrome respiratoire aiguë sévère (SRAS)", 3156],
+    ["listless", "amorphe", 3157],
+    ["bloated", "gonflé", 3158],
+    ["widespread", "répandu", 3159],
+    ["to shrivel", "se flétrir", 3160],
+    ["to go down with the flu", "attraper la grippe", 3161],
     [
-        ["war of nerves", "war of attrition"],
-        ["la guerre des nerfs", "la guerre d'usure"], 2966
+        ["to be infected with a virus ", "to be infected by a virus"], "être contaminé par un virus", 3162
     ],
-    ["a professional soldier/ a career soldier", "un militaire de carrière", 2967],
-    ["nuclear / biological / chemical warfare", "la guerre nucléaire/ biologique/ chimique", 2968],
+    ["to carry a virus", "être porteur d'un virus", 3163],
+    ["the immune system", "le système immunitaire", 3164],
+    ["a carrier", "un porteur", 3165],
+    ["a symptom", "un symptôme", 3166],
+    ["to cough", "tousser", 3167],
+    ["to have a temperature", "avoir de la température", 3168],
     [
-        ["to join the air force", "to enlist in the air force"],
-        ["s'engager dans l'armée de l'air", "s'enrôler dans l'armée de l'air"], 2969
+        ["to have a fever", " to run a fever"], "avoir de la fièvre", 3169
     ],
+    ["an epidemic", "une épidémie", 3170],
+    ["a pandemic", "une pandémie", 3171],
+    ["to break out", ["éclater", " se déclarer"], 3172],
     [
-        ["a massacre", "aslaughter"], "un massacre", 2970
+        ["the scope of the epidemic", " the extent of the epidemic"],
+        ["l'ampleur de l'épidémie", " l'étendue de l'épidémie"], 3173
     ],
-    ["to recruit", "recruter", 2971],
-    ["bloodshed", ["effusion de sang", "carnage", "boucherie"], 2972],
-    ["the wounded", "les blessés", 2973],
-    ["a recruit", "une recrue", 2974],
-    ["the casualties", "les morts et les blessés", 2975],
-    ["an officer", "un officier", 2976],
-    ["death toll", "bilan des victimes", 2977],
-    ["a conscientious objector", "un objecteur de conscience", 2978],
-    ["intelligence", "le renseignement", 2979],
-    ["to desert", "déserter", 2980],
-    ["to spy on an enemy", "espionner un ennemi", 2981],
-    ["a deserter", "un déserteur", 2982],
+    ["to affect a country", ["affecter", " toucher un pays"], 3174],
+    ["to afflict 20% of the population", "toucher 20% de la population", 3175],
+    ["the hardest-hit area", "la zone la plus durement touché", 3176],
+    ["to eradicate", "éradiquer", 3177],
+    ["to check an epidemic", "enrayer une épidemie", 3178],
+    ["to spread", "se propager", 3179],
+    ["the spread of a virus", "la propagation d'un virus", 3180],
+    ["endemic", "endémique", 3181],
+    ["destitute", "dépourvu", 3182],
+    ["speaking out", "protester", 3183],
     [
-        ["a spy satellite", "a surveillance satellite"], "un satellite-espion", 2983
+        ["flu", " influenza"], "la grippe", 3184
+    ],
+    ["the A/ H1N1 virus", "le virus de la grippe A", 3185],
+    [
+        ["swine flu", " pig flu", " H1N1 flu"], "la grippe porcine", 3186
     ],
     [
-        ["weapons", "arms"], "des armes", 2984
+        ["bird flu", " avian flu", " avian influenza"], "la grippe aviaire", 3187
     ],
-    ["a war crime", "un crime de guerre", 2985],
-    ["weapons of mass destruction", "des armes de destruction massive", 2986],
-    ["an arsenal", "un arsenal", 2987],
-    ["a war criminal", "un criminel de guerre", 2988],
+    ["flu strain", "souche de grippe", 3188],
+    ["a case of avian flu", "un cas de grippe aviaire", 3189],
+    ["an outbreak of avian flu", "un foyer de grippe aviaire", 3190],
     [
-        ["ammunition", "munitions"], "des munitions", 2989
+        ["AIDS", " Acquired immune deficiency syndrome"],
+        ["le SIDA", " le syndrome d'immunodéficience acquise"], 3191
     ],
-    ["a crime against humanity", "un crime contre l'humanité", 2990],
-    ["a bomb", "une bombe", 2991],
-    ["a genocide", "un génocide", 2992],
-    ["to bomb", "bombarder", 2993],
-    ["ethnic cleansing", "purification ethnique", 2994],
+    ["HIV-positif the human immunodeficiency virus", "séropositif", 3192],
+    ["to develop AIDS", "contracter le SIDA", 3193],
     [
-        ["a bombing", "a bombardment"], "un bombardement", 2995
+        ["an AIDS sufferer", " an AIDS patient"], "un malade du SIDA", 3194
     ],
-    ["to exterminate", "exterminer", 2996],
-    ["a ceasefire", "un cessez-le-feu", 2997],
-    ["a truce", "une trêve", 2998],
-    ["to surrender", "se rendre", 2999],
-    ["an armistice", "un armistice", 3000],
-    ["disarmament", "le désarmement", 3001],
+    ["to screen sb for AIDS", "faire un test de dépistage du SIDA à qn", 3195],
+    ["an HIV screening centre", "un centre de dépistage du SIDA", 3196],
+    ["a screening test", "un test de dépistage", 3197],
+    ["sperm (semen)", "le sperme", 3198],
+    ["to have unprotected sex", "avoir des rapports non protégés", 3199],
+    ["a condom", "un préservatif", 3200],
+    ["abstinence", "l'abstinence", 3201],
+    ["faithfulness", "la fidélité", 3202],
+    ["a needle", "une aiguille", 3203],
+    ["anti-retroviral drugs", "les anti-rétroviraux", 3204],
     [
-        ["a peace campaigner", "a pacifist", "a peacenik"], "un pacifiste", 3002
+        ["triple therapy", " combinaison therapy"], "la trithérapie", 3205
     ],
-    ["a quagmire", "un bourbier", 3003],
-    ["stalemate", "l'enlisement", 3004],
-    ["peace talks", "des pourparlers de paix", 3005],
-    ["the peace process", "le processus de paix", 3006],
+    ["fuzzy", "imprécis", 3206],
+    ["heady", "grisant", 3207],
+    ["to trump", "compenser", 3208],
+    ["medical treatment", "un traitement médical", 3209],
+    ["medical staff (health workers)", "les personnels de santé", 3210],
+    ["medical confidentiality", "secret médical", 3211],
+    ["a hospital- acquired infection", "une infection nosocomiale", 3212],
+    ["acute", "aigu", 3213],
+    ["MRSA", ["MRSA", " un staphylocoque résistant à la méthicilline"], 3214],
+    ["a superbug", "une bactérie multi-résistante", 3215],
+    ["to prescribe", "prescrire", 3216],
+    ["a prescription", "une ordonnance", 3217],
     [
-        ["a peace agreement", "a peace accord", "a peace settlement"], "un accord de paix", 3007
+        ["a general practitioner", " a GP"], "un médecin généraliste", 3218
     ],
-    ["a peace treaty", "un traité de paix", 3008],
-    ["the peace dividend", "la dividende de la paix", 3009],
-    ["a prisoner of war", "un prisonnier de guerre", 3010],
-    ["to be reported missing", "être porté disparu", 3011],
-    ["to be absent without leave", ["s'absenter sans permission", "manquer à l'appel"], 3012],
+    ["a surgeon", "un chirurgien", 3219],
     [
-        ["a veteran", "a vet"], "un ancien combattant", 3013
+        ["to have surgery", " to have an operation"], "se faire opérer", 3220
     ],
-    ["an amputee", "un amputé", 3014],
-    ["be maimed for life", ["être estropié", "être mutilé pour la vie"], 3015],
-    ["post traumatic stress diso", "névrose post-traumatique", 3016],
+    ["to diagnose", "diagnostiquer", 3221],
+    ["diagnosis", "un diagnostic", 3222],
+    ["to cure a patient", "guérir un patient", 3223],
+    [
+        ["a remedy", " a cure"], "un remède", 3224
+    ],
+    [
+        ["a drug", " a medicine", " a medication"], "un médicament", 3225
+    ],
+    ["a generic drug", "un médicament générique", 3226],
+    ["a painkiller", ["un antalgique", " analgésique"], 3227],
+    ["a side effect", "un effet secondaire", 3228],
+    [
+        ["an injection", " a shot"], "une piqûre", 3229
+    ],
+    ["to be on antibiotics", ["prendre des antibiotiques", " être sous antibiotiques"], 3230],
+    ["a pharmaceutical laboratory", "un laboratoire pharmaceutique", 3231],
+    ["pharmaceuticals", "des produits pharmaceutiques", 3232],
+    ["a vaccine", "un vaccin", 3233],
+    ["a flu vaccine", "un vaccin contre la grippe", 3234],
+    ["to vaccinate", "vacciner", 3235],
+    ["a vaccination campaign", "une campagne de vaccination", 3236],
+    ["to quarantine sb", "mettre qn en quarantaine", 3237],
+    ["to recover", ["se rétablir", " guérir"], 3238],
+    ["recovery", ["guérison", " rétablissement"], 3239],
+    ["to relapse", "rechuter", 3240],
+    ["harmful", "nocif", 3241],
+    ["slums", "taudis", 3242],
+    ["greedy", "avide", 3243],
+    ["a food scare", "une alerte à l'intoxication alimentaire", 3244],
+    ["a health scare", ["un péril sanitaire", " une alerte aux risques sanitaire"], 3245],
+    ["an epizootic disease", "épizootie", 3246],
+    ["foot-and-mouth disease", "la fière aphteuse", 3247],
+    [
+        ["bovine spongiform encephalopathy", " BSE"],
+        ["l'encéphalopathie bovine spongiforme", " l'ESB"], 3248
+    ],
+    ["mad-cow disease", "la maladie de la vache folle", 3249],
+    ["Creutzfeldt-Jacob Disease (CJD)", "la maladie Creutzfeldt Jacob (MCJ)", 3250],
+    ["a prion disease", "une maladie à prions", 3251],
+    ["dioxin", "la dioxine", 3252],
+    ["the dioxin chicken scandal", "le scandal du poulet à la dioxine", 3253],
+    ["traceability", "la traçabilité", 3254],
+    ["iodine", "iode", 3255],
+    ["decays", "se désintégrer", 3256],
+    ["unleashed", "déclencher", 3257],
+    ["public health", "la santé publique", 3258],
+    ["health care", "les soins médicaux OU les services de santé", 3259],
+    ["public health officials", "les responsables de la santé publique", 3260],
+    ["the health authorities", "les autorités sanitaires", 3261],
+    [
+        ["the health care system ", " the health system"], "le système de santé", 3262
+    ],
+    ["health services", "les services de santé", 3263],
+    ["health expenses", "les dépenses de santé", 3264],
+    ["The National Health Service (NHS)", "sécurité sociale (NHS)", 3265],
+    ["headed", "dirigé", 3266],
 ];

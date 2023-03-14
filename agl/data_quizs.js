@@ -4465,8 +4465,344 @@ const quiz_war_and_peace = [
     ["be maimed for life", ["être estropié", "être mutilé pour la vie"], 3015],
     ["post traumatic stress diso", "névrose post-traumatique", 3016],
 ];
+const quiz_coronavirus = [
+    [
+        "a virus", "un virus", 3017
+    ],
+    ["to mutate", "muter", 3018],
+    [
+        ["contagious", " catching", " infectious"],
+        ["contagieux", " infectieux"], 3019
+    ],
+    ["to contaminate", "contaminer", 3020],
+    ["underlying", "sous-jacent", 3021],
+    ["to be infected with a virus", "être contaminé par un virus", 3022],
+    ["a symptom", "un symptôme", 3023],
+    ["asymptomatic", "asymptomatique", 3024],
+    ["to cough", "tousser", 3025],
+    ["to sneeze", "éternuer", 3026],
+    ["to inhale airborne droplets", "inhaler des goutelettes en suspension", 3027],
+    ["to have a runny nose", "avoir le nez qui coule", 3028],
+    ["to have a sore throat", "avoir mal a la gorge", 3029],
+    [
+        ["tiredness", " fatigue"], "la fatigue", 3030
+    ],
+    ["headache", "mal de tête", 3031],
+    [
+        ["to have difficulty breathing", "to have trouble breathing"], "avoir du mal à respirer", 3032
+    ],
+    [
+        ["to be short on breath", "to be out of breath"],
+        ["être essoufflé", " avoir le souffle court"], 3033
+    ],
+    ["to have a temperature", "avoir de la température", 3034],
+    [
+        ["to have a fever", " to run a fever"], "avoir de la fièvre", 3035
+    ],
+    ["cruise ship", "bateau de croisière", 3036],
+    ["smallpox", "variole", 3037],
+    ["to test positive (for the virus)", "être testé positif (pour le virus)", 3038],
+    ["to carry a virus", "être porteur d'un virus", 3039],
+    ["the immune system", "le système humanitaire", 3040],
+    ["herd immunity", "immunité de groupe", 3041],
+    ["plague", "la peste", 3042],
+    ["cholera", "le choléra", 3043],
+    [
+        ["a curse", " a plague", " a scourge"], "un fléau", 3044
+    ],
+    ["a disaster", "une catastrophe", 3045],
+    ["unexpected", "inattendu", 3046],
+    [
+        ["unpredictable", " unforeseeable"], "imprévisible", 3047
+    ],
+    ["to spread", "se propager", 3048],
+    ["the spread of a virus", "la propagation d'un virus", 3049],
+    ["an epidemic", "une épidémie", 3050],
+    ["a pandemic", "une pandémie", 3051],
+    ["an epicentre", "un épicentre", 3052],
+    ["to break out", ["éclater", " se déclarer"], 3053],
+    ["an outbreak", "le début d'une épidémie", 3054],
+    [
+        ["the scope of the epidemic", " the extent of the epidemic"],
+        ["l'ampleur de l'épidémie", " l'étendue de l'épidémie"], 3055
+    ],
+    ["to affect a country", ["affecter un pays", " toucher un pays"], 3056],
+    ["the hardest-hit area", "la zone la plus durement touchée", 3057],
+    [
+        ["to stem an outbreak", "to halt an outbreak"], "endiguer une épidémie", 3058
+    ],
+    ["to check an epidemic", "enrayer une épidémie", 3059],
+    ["to eradicate", "éradiquer", 3060],
+    ["endemic", "endémique", 3061],
+    ["accuracy", "exactitude", 3062],
+    ["the flu", "la grippe", 3063],
+    [
+        ["swing flu", " pig flu"], "la grippe porcine", 3064
+    ],
+    ["lethal", "mortel", 3065],
+    ["lethality", "létalité", 3066],
+    ["the death toll", "le nombres de victimes", 3067],
+    ["the elderly", "les personnes âgées", 3068],
+    [
+        ["a care home", " a nursing home", " a retirement house"], "une maison de retraite", 3069
+    ],
+    ["to hospatilize somebody", "hospitaliser quelqu'un", 3070],
+    ["to be in intensive care", "être en réanimation", 3071],
+    ["a ventilator", "un ventilateur", 3072],
+    [
+        ["health workers", " medical staff"], "les (personnels) soignants", 3073
+    ],
+    ["a nurse", "une infirmière", 3074],
+    ["an assistant nurse", "une aide-soignante", 3075],
+    ["a hero", "un hero", 3076],
+    ["to clap", "applaudir", 3077],
+    ["show solidarity with somebody", "être solidaire de quelqu'un", 3078],
+    ["to monitor", "contrôler", 3079],
+    ["to combat the virus", "lutter contre le virus", 3080],
+    ["state of emergency", "état d'urgence", 3081],
+    ["to flatten the curve", "aplatir les courbes", 3082],
+    [
+        ["preventative measures", " health precautions"], "les gestes barrières", 3083
+    ],
+    ["a tissue", "un mouchoir", 3084],
+    ["social distancing", "la distanciation sociale", 3085],
+    ["to wash your hands", "se laver les mains", 3086],
+    ["to greet somebody", "saluer quelqu'un", 3087],
+    ["to shake hands", "se serrer la main", 3088],
+    ["to kiss somebody", "faire la bise à quelqu'un", 3089],
+    ["to wear a (face) mask", "porter un masque", 3090],
+    ["medical supplies", "les fournitures médicales", 3091],
+    ["to stockpile", "stocker", 3092],
+    ["to run out of protective equipment", "ne plus avoir d'équipements de protection", 3093],
+    ["to be short on masks", "manquer de masques", 3094],
+    ["a shortage", "une pénurie", 3095],
+    ["gloves", "gants", 3096],
+    ["to self-isolate", "s'isoler", 3097],
+    ["bleach", "l'eau de javel", 3098],
+    ["to disinfect public areas", "désinfecter les lieux publics", 3099],
+    ["antibiotics", "antibiotiques", 3100],
+    ["a vaccine", "un vaccin", 3101],
+    ["to get vaccinated", "se faire vacciner", 3102],
+    ["even as", "alors même que", 3103],
+    ["an imposition", "une atteinte", 3104],
+    ["to quarantine somebody", "mettre quelqu'un en quarantaine", 3105],
+    ["to put/be under quarantine", "mettre/être en quarantaine", 3106],
+    ["travel bank", "interdiction de voyager", 3107],
+    ["travel restrictions", "limitations de déplacement", 3108],
+    ["to issue a stay-at-home order", "ordonner le confinement", 3109],
+    [
+        ["lockdown", " confinement"], "confinement", 3110
+    ],
+    ["to work from/at home", "télétravailler", 3111],
+    ["a videoconference", "une vidéoconférence", 3112],
+    ["to furlough somebody", "mettre quelqu'un au chômage partiel", 3113],
+    ["panic buying", "achats (sous l'emprise de la) panique", 3114],
+    ["wrought havoc", "faire des ravages", 3115],
+    ["pied pipers", "joueurs de flute d'Hamelin", 3116],
+    ["a waiver", "une dérogation", 3117],
+    ["to lift the lockdown", "déconfiner", 3118],
+    [
+        ["to ease restrictions", " to loosen restrictions"], "assouplir les restrictions", 3119
+    ],
+    ["fallout", "retombées", 3120],
+    ["mitigate", "atténuer", 3121],
+    ["calls for", "demande", 3122],
+    ["come out of the blue", "être complètement inattendu", 3123],
+    ["to spread like a wildfire", "se répandre comme une traînée de poudre", 3124],
+    ["to go viral", "se répandre/propager comme un virus", 3125],
+    ["to nip something from the bud", "tuer quelque chose dans l'oeuf", 3126],
+    ["to be in the same boat", "être dans le même bateau", 3127],
+    ["to take stock (of something)", "faire le bilan (de quelque chose)", 3128],
+    ["to look on the bright side", "regarder le bon côté des choses", 3129],
+    ["every cloud has a silver meaning", "à quelque chose malheur est bon", 3130],
+    [
+        ["United we stand", " divider we fall"], "l'union fait la force", 3131
+    ],
+];
 
-// NEXT FREE ID : 3017
+const quiz_health_issues = [
+    [
+        ["a disease", " an illness", " a sickness"], "une maladie", 3132
+    ],
+    ["to suffer from a disease", "souffrir d'une maladie", 3133],
+    ["to die from cancer", "mourir du cancer", 3134],
+    ["carcinogenic", "cancérigène", 3135],
+    ["a serious disease", "une maladie grave", 3136],
+    ["a virus", "un virus", 3137],
+    ["to contract a virus / a disease", "contracter un virus/ une maladie", 3138],
+    ["bacteria", "des bactéries", 3139],
+    ["a germ", ["un microbe", " un germe"], 3140],
+    [
+        ["contagious", " catching", " infectious"],
+        ["contagieux", " infectieux"], 3141
+    ],
+    ["to contaminate", "contaminer", 3142],
+    ["to mutate", "muter", 3143],
+    ["a health hazard", "un danger pour la santé", 3144],
+    [
+        ["a curse", " a plague", " a scourge"], "un fléau", 3145
+    ],
+    ["smallpox", "variole", 3147],
+    ["to boost", "encourager", 3148],
+    ["lung / breast / skin cancer", "le cancer du poumon / du sein / de la peau", 3149],
+    ["malaria", ["la malaria", " la paludisme"], 3150],
+    ["plague", "la peste", 3151],
+    ["cholera", "le choléra", 3152],
+    [
+        ["a sexually transmitted disease (STD) ", " a venereal disease (VD)"],
+        ["une maladie sexuellement transmissible (MST)", " une maladie vénérienne"], 3153
+    ],
+    ["Alzeihemer's / Parkinson's disease", "la maladie d'Alzheimer / de Parkinson", 3154],
+    ["a neurodegenerative disease", "une maladie neurodégénérative", 3155],
+    ["Severe Acute Respiratory Syndrome (SARS)", "syndrome respiratoire aiguë sévère (SRAS)", 3156],
+    ["listless", "amorphe", 3157],
+    ["bloated", "gonflé", 3158],
+    ["widespread", "répandu", 3159],
+    ["to shrivel", "se flétrir", 3160],
+    ["to go down with the flu", "attraper la grippe", 3161],
+    [
+        ["to be infected with a virus ", "to be infected by a virus"], "être contaminé par un virus", 3162
+    ],
+    ["to carry a virus", "être porteur d'un virus", 3163],
+    ["the immune system", "le système immunitaire", 3164],
+    ["a carrier", "un porteur", 3165],
+    ["a symptom", "un symptôme", 3166],
+    ["to cough", "tousser", 3167],
+    ["to have a temperature", "avoir de la température", 3168],
+    [
+        ["to have a fever", " to run a fever"], "avoir de la fièvre", 3169
+    ],
+    ["an epidemic", "une épidémie", 3170],
+    ["a pandemic", "une pandémie", 3171],
+    ["to break out", ["éclater", " se déclarer"], 3172],
+    [
+        ["the scope of the epidemic", " the extent of the epidemic"],
+        ["l'ampleur de l'épidémie", " l'étendue de l'épidémie"], 3173
+    ],
+    ["to affect a country", ["affecter", " toucher un pays"], 3174],
+    ["to afflict 20% of the population", "toucher 20% de la population", 3175],
+    ["the hardest-hit area", "la zone la plus durement touché", 3176],
+    ["to eradicate", "éradiquer", 3177],
+    ["to check an epidemic", "enrayer une épidemie", 3178],
+    ["to spread", "se propager", 3179],
+    ["the spread of a virus", "la propagation d'un virus", 3180],
+    ["endemic", "endémique", 3181],
+    ["destitute", "dépourvu", 3182],
+    ["speaking out", "protester", 3183],
+    [
+        ["flu", " influenza"], "la grippe", 3184
+    ],
+    ["the A/ H1N1 virus", "le virus de la grippe A", 3185],
+    [
+        ["swine flu", " pig flu", " H1N1 flu"], "la grippe porcine", 3186
+    ],
+    [
+        ["bird flu", " avian flu", " avian influenza"], "la grippe aviaire", 3187
+    ],
+    ["flu strain", "souche de grippe", 3188],
+    ["a case of avian flu", "un cas de grippe aviaire", 3189],
+    ["an outbreak of avian flu", "un foyer de grippe aviaire", 3190],
+    [
+        ["AIDS", " Acquired immune deficiency syndrome"],
+        ["le SIDA", " le syndrome d'immunodéficience acquise"], 3191
+    ],
+    ["HIV-positif the human immunodeficiency virus", "séropositif", 3192],
+    ["to develop AIDS", "contracter le SIDA", 3193],
+    [
+        ["an AIDS sufferer", " an AIDS patient"], "un malade du SIDA", 3194
+    ],
+    ["to screen sb for AIDS", "faire un test de dépistage du SIDA à qn", 3195],
+    ["an HIV screening centre", "un centre de dépistage du SIDA", 3196],
+    ["a screening test", "un test de dépistage", 3197],
+    ["sperm (semen)", "le sperme", 3198],
+    ["to have unprotected sex", "avoir des rapports non protégés", 3199],
+    ["a condom", "un préservatif", 3200],
+    ["abstinence", "l'abstinence", 3201],
+    ["faithfulness", "la fidélité", 3202],
+    ["a needle", "une aiguille", 3203],
+    ["anti-retroviral drugs", "les anti-rétroviraux", 3204],
+    [
+        ["triple therapy", " combinaison therapy"], "la trithérapie", 3205
+    ],
+    ["fuzzy", "imprécis", 3206],
+    ["heady", "grisant", 3207],
+    ["to trump", "compenser", 3208],
+    ["medical treatment", "un traitement médical", 3209],
+    ["medical staff (health workers)", "les personnels de santé", 3210],
+    ["medical confidentiality", "secret médical", 3211],
+    ["a hospital- acquired infection", "une infection nosocomiale", 3212],
+    ["acute", "aigu", 3213],
+    ["MRSA", ["MRSA", " un staphylocoque résistant à la méthicilline"], 3214],
+    ["a superbug", "une bactérie multi-résistante", 3215],
+    ["to prescribe", "prescrire", 3216],
+    ["a prescription", "une ordonnance", 3217],
+    [
+        ["a general practitioner", " a GP"], "un médecin généraliste", 3218
+    ],
+    ["a surgeon", "un chirurgien", 3219],
+    [
+        ["to have surgery", " to have an operation"], "se faire opérer", 3220
+    ],
+    ["to diagnose", "diagnostiquer", 3221],
+    ["diagnosis", "un diagnostic", 3222],
+    ["to cure a patient", "guérir un patient", 3223],
+    [
+        ["a remedy", " a cure"], "un remède", 3224
+    ],
+    [
+        ["a drug", " a medicine", " a medication"], "un médicament", 3225
+    ],
+    ["a generic drug", "un médicament générique", 3226],
+    ["a painkiller", ["un antalgique", " analgésique"], 3227],
+    ["a side effect", "un effet secondaire", 3228],
+    [
+        ["an injection", " a shot"], "une piqûre", 3229
+    ],
+    ["to be on antibiotics", ["prendre des antibiotiques", " être sous antibiotiques"], 3230],
+    ["a pharmaceutical laboratory", "un laboratoire pharmaceutique", 3231],
+    ["pharmaceuticals", "des produits pharmaceutiques", 3232],
+    ["a vaccine", "un vaccin", 3233],
+    ["a flu vaccine", "un vaccin contre la grippe", 3234],
+    ["to vaccinate", "vacciner", 3235],
+    ["a vaccination campaign", "une campagne de vaccination", 3236],
+    ["to quarantine sb", "mettre qn en quarantaine", 3237],
+    ["to recover", ["se rétablir", " guérir"], 3238],
+    ["recovery", ["guérison", " rétablissement"], 3239],
+    ["to relapse", "rechuter", 3240],
+    ["harmful", "nocif", 3241],
+    ["slums", "taudis", 3242],
+    ["greedy", "avide", 3243],
+    ["a food scare", "une alerte à l'intoxication alimentaire", 3244],
+    ["a health scare", ["un péril sanitaire", " une alerte aux risques sanitaire"], 3245],
+    ["an epizootic disease", "épizootie", 3246],
+    ["foot-and-mouth disease", "la fière aphteuse", 3247],
+    [
+        ["bovine spongiform encephalopathy", " BSE"],
+        ["l'encéphalopathie bovine spongiforme", " l'ESB"], 3248
+    ],
+    ["mad-cow disease", "la maladie de la vache folle", 3249],
+    ["Creutzfeldt-Jacob Disease (CJD)", "la maladie Creutzfeldt Jacob (MCJ)", 3250],
+    ["a prion disease", "une maladie à prions", 3251],
+    ["dioxin", "la dioxine", 3252],
+    ["the dioxin chicken scandal", "le scandal du poulet à la dioxine", 3253],
+    ["traceability", "la traçabilité", 3254],
+    ["iodine", "iode", 3255],
+    ["decays", "se désintégrer", 3256],
+    ["unleashed", "déclencher", 3257],
+    ["public health", "la santé publique", 3258],
+    ["health care", "les soins médicaux OU les services de santé", 3259],
+    ["public health officials", "les responsables de la santé publique", 3260],
+    ["the health authorities", "les autorités sanitaires", 3261],
+    [
+        ["the health care system ", " the health system"], "le système de santé", 3262
+    ],
+    ["health services", "les services de santé", 3263],
+    ["health expenses", "les dépenses de santé", 3264],
+    ["The National Health Service (NHS)", "sécurité sociale (NHS)", 3265],
+    ["headed", "dirigé", 3266],
+];
+
+// NEXT FREE ID : 3267
 
 
 
@@ -4504,6 +4840,8 @@ const Quizs = {
     "capital punishment": quiz_capital_punishment,
     "international tensions": quiz_international_tensions,
     "war & peace": quiz_war_and_peace,
+    "coronavirus": quiz_coronavirus,
+    "health issues": quiz_health_issues,
     "vocabulaire - réflexion": quizs_voc_reflexion,
     "vocabulaire - débat": quizs_voc_debat,
     "vocabulaire - action": quizs_voc_action
