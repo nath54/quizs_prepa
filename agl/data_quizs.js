@@ -4652,7 +4652,7 @@ const quiz_health_issues = [
         ["a sexually transmitted disease (STD) ", " a venereal disease (VD)"],
         ["une maladie sexuellement transmissible (MST)", " une maladie vénérienne"], 3153
     ],
-    ["Alzeihemer's / Parkinson's disease", "la maladie d'Alzheimer / de Parkinson", 3154],
+    ["Alzheimer's / Parkinson's disease", "la maladie d'Alzheimer / de Parkinson", 3154],
     ["a neurodegenerative disease", "une maladie neurodégénérative", 3155],
     ["Severe Acute Respiratory Syndrome (SARS)", "syndrome respiratoire aiguë sévère (SRAS)", 3156],
     ["listless", "amorphe", 3157],
