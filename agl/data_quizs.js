@@ -4616,7 +4616,7 @@ const quiz_coronavirus = [
     ["to look on the bright side", "regarder le bon côté des choses", 3129],
     ["every cloud has a silver meaning", "à quelque chose malheur est bon", 3130],
     [
-        ["United we stand", " divider we fall", "divided we fall"], "l'union fait la force", 3131
+        ["United we stand", "divided we fall"], "l'union fait la force", 3131
     ],
 ];
 
